@@ -1,0 +1,249 @@
+INDOOR AIR QUALITY IN EMERGENCIES
+==================================
+
+During emergencies, indoor air quality can become a serious concern.
+This guide covers threats and how to manage them.
+
+COMMON THREATS
+--------------
+
+CARBON MONOXIDE (CO):
+Source: Fuel-burning devices (generators, heaters, stoves)
+Risk: Colorless, odorless, deadly
+Prevention: Never use fuel-burning devices indoors
+Detection: CO detectors essential
+
+SMOKE:
+Source: Wildfires, structural fires
+Risk: Respiratory damage, long-term health effects
+Prevention: Air filtration, sealing home
+Detection: Visible, smell
+
+CHEMICAL CONTAMINATION:
+Source: Industrial accidents, spills
+Risk: Varies by chemical
+Prevention: Shelter-in-place, air sealing
+Detection: May have odor or may not
+
+MOLD:
+Source: Water damage, flooding
+Risk: Respiratory problems, allergies
+Prevention: Dry areas quickly, ventilation
+Detection: Visible growth, musty smell
+
+DUST AND PARTICULATES:
+Source: Building damage, dust storms
+Risk: Respiratory irritation
+Prevention: Air filtration, masks
+Detection: Visible, breathing difficulty
+
+CARBON MONOXIDE SAFETY
+----------------------
+
+CO SOURCES DURING EMERGENCIES:
+- Generators (NEVER indoors)
+- Portable heaters (some types)
+- Gas stoves used for heat
+- Vehicles running in garage
+- Charcoal/gas grills
+- Camp stoves
+
+CO DETECTOR REQUIREMENTS:
+- Battery backup essential
+- On every level of home
+- Near sleeping areas
+- Test monthly
+- Replace batteries annually
+- Replace unit per manufacturer guidelines
+
+CO POISONING SYMPTOMS:
+Early:
+- Headache
+- Dizziness
+- Weakness
+- Nausea
+- Confusion
+
+Severe:
+- Loss of consciousness
+- Death
+
+IF CO ALARM SOUNDS:
+1. Get everyone outside immediately
+2. Call 911
+3. Account for all people
+4. Don't re-enter until cleared
+5. Seek medical evaluation
+
+SMOKE AND WILDFIRE
+------------------
+
+INDOOR PROTECTION:
+1. Close all windows and doors
+2. Run air conditioner (recirculate mode)
+3. Use air purifiers with HEPA filters
+4. Seal gaps with damp towels
+5. Create clean air room
+
+AIR PURIFIERS:
+- HEPA filters most effective
+- DIY: Box fan + MERV 13 filter
+- Run continuously during smoke events
+- Replace filters as needed
+
+SIGNS TO EVACUATE:
+- Visible flames approaching
+- Air quality unbearable
+- Official evacuation orders
+- Breathing difficulty despite measures
+
+MASK PROTECTION:
+- N95 or P100 respirators effective
+- Surgical masks provide limited protection
+- Cloth masks provide minimal protection
+- Ensure proper fit (seal to face)
+
+SHELTER-IN-PLACE (CHEMICAL)
+---------------------------
+
+IF CHEMICAL RELEASE SUSPECTED:
+
+1. GET INDOORS
+   - Nearest building
+   - Close all doors and windows
+   - Turn off HVAC systems
+
+2. SEAL THE ROOM
+   - Choose interior room (above ground for most chemicals)
+   - Close door
+   - Seal gaps with wet towels
+   - Cover windows with plastic and tape
+   - Seal vents, outlets, and gaps
+
+3. REDUCE AIR EXCHANGE
+   - Fireplace dampers closed
+   - Bathroom/kitchen vents sealed
+   - Minimize door opening
+
+4. MONITOR INFORMATION
+   - Emergency radio
+   - Phone alerts
+   - Don't leave until all-clear
+
+IMPORTANT:
+- Sealed rooms have limited air
+- Don't seal for more than 2-3 hours
+- Be ready to ventilate when safe
+- Listen for official guidance
+
+WATER DAMAGE AND MOLD
+---------------------
+
+MOLD GROWTH CONDITIONS:
+- Moisture
+- Warmth
+- Organic material
+- Begins within 24-48 hours of water exposure
+
+PREVENTION:
+- Dry wet areas within 24 hours
+- Remove wet carpeting, padding
+- Ventilate damp areas
+- Use fans to circulate air
+- Dehumidify if possible
+- Discard porous items that can't dry
+
+CLEANING MOLD:
+Small areas (less than 10 sq ft):
+- Mix 1 cup bleach per gallon water
+- Or use commercial mold cleaner
+- Wear N95 mask, gloves, eye protection
+- Scrub affected area
+- Allow to dry completely
+
+Large areas:
+- Professional remediation recommended
+- Significant health risk
+- May require demolition
+
+IMPROVING AIR QUALITY
+---------------------
+
+VENTILATION:
+- Open windows when outdoor air is better
+- Cross-ventilation when possible
+- Use fans to circulate
+- Exhaust stale air
+
+AIR FILTRATION:
+- HEPA air purifiers
+- Furnace filters (MERV 13+)
+- DIY box fan filters
+- Replace filters regularly
+
+REDUCING POLLUTANTS:
+- Don't burn candles unnecessarily
+- Avoid aerosol products
+- Clean up mold and moisture
+- Remove damaged materials
+- Minimize dust-producing activities
+
+AIR QUALITY EQUIPMENT
+---------------------
+
+ESSENTIAL:
+- CO detectors (battery backup)
+- Smoke detectors (battery backup)
+- N95 masks
+- Wet towels (for sealing)
+
+RECOMMENDED:
+- HEPA air purifier
+- Plastic sheeting and tape
+- Extra HVAC filters
+- P100 respirators
+- Air quality monitor
+
+DIY BOX FAN FILTER:
+Materials:
+- 20" box fan
+- 20" MERV 13 filter
+- Tape or bungee cord
+
+Assembly:
+1. Tape filter to intake side of fan
+2. Arrow on filter points toward fan
+3. Run continuously as needed
+4. Replace filter when visibly dirty
+
+QUICK REFERENCE
+---------------
+
+CO SAFETY:
+- Never run fuel-burning devices indoors
+- CO detector on every level
+- Symptoms: Headache, dizziness, confusion
+- If alarm sounds: Get out, call 911
+
+SMOKE PROTECTION:
+- Close windows/doors
+- Run AC on recirculate
+- Use HEPA air purifier
+- Wear N95 mask
+
+SHELTER-IN-PLACE:
+- Interior room, above ground
+- Seal gaps with wet towels
+- Cover windows with plastic
+- Turn off HVAC
+- Monitor for all-clear
+
+MOLD PREVENTION:
+- Dry wet areas within 24 hours
+- Ventilate
+- Remove damaged materials
+
+==================================
+Last updated: January 2026
+License: CC-BY-SA 4.0
+==================================

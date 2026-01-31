@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rationing & Calorie Planning Calculator</title>
+    <style>
+        :root {
+            --bg-primary: #1a1a2e;
+            --bg-secondary: #16213e;
+            --bg-card: #1f4068;
+            --accent: #e43f5a;
+            --accent-green: #4ade80;
+            --text-primary: #f0f0f0;
+            --text-secondary: #a0aec0;
+            --border: #2d3748;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+        }
+
+        .card {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card h2 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--accent-green);
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 0.75rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            color: var(--text-primary);
+            font-size: 1rem;
+        }
+
+        input[type="number"]:focus {
+            outline: none;
+            border-color: var(--accent-green);
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        @media (max-width: 500px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .person-entry {
+            background: var(--bg-card);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr auto;
+            gap: 0.5rem;
+            align-items: end;
+        }
+
+        @media (max-width: 600px) {
+            .person-entry {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .person-entry input {
+            padding: 0.5rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            color: var(--text-primary);
+        }
+
+        .person-entry label {
+            font-size: 0.8rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: var(--bg-card);
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+        }
+
+        .btn-remove {
+            background: transparent;
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            padding: 0.5rem;
+        }
+
+        .btn-full {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1rem;
+        }
+
+        .results {
+            display: none;
+        }
+
+        .results.visible {
+            display: block;
+        }
+
+        .result-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .result-item {
+            background: var(--bg-card);
+            padding: 1.25rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .result-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-green);
+        }
+
+        .result-label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-top: 0.25rem;
+        }
+
+        .warning {
+            background: rgba(228, 63, 90, 0.1);
+            border: 1px solid var(--accent);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .warning h4 {
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .good {
+            background: rgba(74, 222, 128, 0.1);
+            border: 1px solid var(--accent-green);
+        }
+
+        .good h4 {
+            color: var(--accent-green);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: var(--bg-card);
+            font-weight: 600;
+        }
+
+        .info-section {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+        }
+
+        .info-section h3 {
+            margin-bottom: 1rem;
+            color: var(--accent-green);
+        }
+
+        .info-section ul {
+            padding-left: 1.5rem;
+        }
+
+        .info-section li {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Rationing & Calorie Planning Calculator</h1>
+            <p class="subtitle">Calculate how long your food supply will last</p>
+        </header>
+
+        <div class="card">
+            <h2>1. Your Household</h2>
+            <div id="peopleList">
+                <div class="person-entry">
+                    <div>
+                        <label>Name/Description</label>
+                        <input type="text" value="Adult 1" class="person-name">
+                    </div>
+                    <div>
+                        <label>Age</label>
+                        <input type="number" value="30" min="0" max="120" class="person-age">
+                    </div>
+                    <div>
+                        <label>Activity</label>
+                        <select class="person-activity">
+                            <option value="sedentary">Sedentary</option>
+                            <option value="moderate" selected>Moderate</option>
+                            <option value="active">Active</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-remove" onclick="removePerson(this)">✕</button>
+                </div>
+            </div>
+            <button class="btn btn-secondary" onclick="addPerson()">+ Add Person</button>
+        </div>
+
+        <div class="card">
+            <h2>2. Your Food Supply</h2>
+            <div class="grid-2">
+                <div class="form-group">
+                    <label>Total Calories Available</label>
+                    <input type="number" id="totalCalories" value="50000" min="0" step="1000">
+                </div>
+                <div class="form-group">
+                    <label>Days of Water Supply</label>
+                    <input type="number" id="waterDays" value="14" min="0">
+                </div>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                Tip: Check nutrition labels and add up total calories. Average canned good = 300-500 cal. Rice (dry): ~1600 cal/lb.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>3. Rationing Level</h2>
+            <div class="form-group">
+                <label>Calorie Reduction Level</label>
+                <select id="rationLevel" style="width: 100%; padding: 0.75rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 6px; color: var(--text-primary);">
+                    <option value="100">Full calories (no rationing)</option>
+                    <option value="80" selected>Light rationing (80% of normal)</option>
+                    <option value="60">Moderate rationing (60% of normal)</option>
+                    <option value="50">Severe rationing (50% of normal)</option>
+                    <option value="40">Survival rationing (40% of normal)</option>
+                </select>
+            </div>
+        </div>
+
+        <button class="btn btn-primary btn-full" onclick="calculate()">Calculate Supply Duration</button>
+
+        <div class="results" id="results">
+            <div class="card">
+                <h2>Results</h2>
+                <div class="result-grid">
+                    <div class="result-item">
+                        <div class="result-value" id="resultDays">-</div>
+                        <div class="result-label">Days Food Will Last</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-value" id="resultDailyCal">-</div>
+                        <div class="result-label">Calories/Person/Day</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-value" id="resultWater">-</div>
+                        <div class="result-label">Days of Water</div>
+                    </div>
+                </div>
+
+                <div id="statusMessage"></div>
+
+                <h3 style="margin-top: 1.5rem; margin-bottom: 1rem;">Per-Person Breakdown</h3>
+                <table id="personTable">
+                    <thead>
+                        <tr>
+                            <th>Person</th>
+                            <th>Full Need</th>
+                            <th>Rationed</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3>Understanding Calorie Needs</h3>
+            <ul>
+                <li><strong>Sedentary:</strong> Little or no exercise, desk work</li>
+                <li><strong>Moderate:</strong> Light exercise, some walking</li>
+                <li><strong>Active:</strong> Physical work, significant activity</li>
+            </ul>
+
+            <h3 style="margin-top: 1.5rem;">Rationing Guidelines</h3>
+            <ul>
+                <li><strong>80%:</strong> Comfortable for short-term, some hunger</li>
+                <li><strong>60%:</strong> Noticeable hunger, energy decrease</li>
+                <li><strong>50%:</strong> Significant discomfort, reduced activity</li>
+                <li><strong>40%:</strong> Survival only, not sustainable long-term</li>
+            </ul>
+
+            <h3 style="margin-top: 1.5rem;">Calorie Estimates for Common Foods</h3>
+            <ul>
+                <li>Rice (dry, 1 lb): ~1,600 calories</li>
+                <li>Dried beans (1 lb): ~1,500 calories</li>
+                <li>Peanut butter (16 oz jar): ~2,700 calories</li>
+                <li>Canned tuna (5 oz): ~100-150 calories</li>
+                <li>Canned soup (can): ~200-300 calories</li>
+                <li>Granola bar: ~100-200 calories</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Last updated: January 2026 | License: CC-BY-SA 4.0</p>
+            <p>This calculator provides estimates only. Individual needs vary.</p>
+        </footer>
+    </div>
+
+    <script>
+        function getCalorieNeeds(age, activity) {
+            let base;
+            
+            if (age < 1) base = 700;
+            else if (age < 4) base = 1200;
+            else if (age < 9) base = 1500;
+            else if (age < 14) base = 2000;
+            else if (age < 19) base = 2400;
+            else if (age < 31) base = 2200;
+            else if (age < 51) base = 2000;
+            else base = 1800;
+            
+            const multipliers = {
+                sedentary: 0.9,
+                moderate: 1.0,
+                active: 1.2
+            };
+            
+            return Math.round(base * multipliers[activity]);
+        }
+
+        function addPerson() {
+            const list = document.getElementById('peopleList');
+            const div = document.createElement('div');
+            div.className = 'person-entry';
+            div.innerHTML = `
+                <div>
+                    <label>Name/Description</label>
+                    <input type="text" value="Person" class="person-name">
+                </div>
+                <div>
+                    <label>Age</label>
+                    <input type="number" value="30" min="0" max="120" class="person-age">
+                </div>
+                <div>
+                    <label>Activity</label>
+                    <select class="person-activity">
+                        <option value="sedentary">Sedentary</option>
+                        <option value="moderate" selected>Moderate</option>
+                        <option value="active">Active</option>
+                    </select>
+                </div>
+                <button class="btn btn-remove" onclick="removePerson(this)">✕</button>
+            `;
+            list.appendChild(div);
+        }
+
+        function removePerson(btn) {
+            const entries = document.querySelectorAll('.person-entry');
+            if (entries.length > 1) {
+                btn.parentElement.remove();
+            }
+        }
+
+        function calculate() {
+            const entries = document.querySelectorAll('.person-entry');
+            const totalCalories = parseInt(document.getElementById('totalCalories').value) || 0;
+            const waterDays = parseInt(document.getElementById('waterDays').value) || 0;
+            const rationLevel = parseInt(document.getElementById('rationLevel').value) / 100;
+            
+            let people = [];
+            let totalDailyNeed = 0;
+            
+            entries.forEach(entry => {
+                const name = entry.querySelector('.person-name').value;
+                const age = parseInt(entry.querySelector('.person-age').value) || 30;
+                const activity = entry.querySelector('.person-activity').value;
+                const need = getCalorieNeeds(age, activity);
+                const rationed = Math.round(need * rationLevel);
+                
+                people.push({ name, age, need, rationed });
+                totalDailyNeed += rationed;
+            });
+            
+            const daysFood = totalDailyNeed > 0 ? Math.floor(totalCalories / totalDailyNeed) : 0;
+            const avgCalPerPerson = people.length > 0 ? Math.round(totalDailyNeed / people.length) : 0;
+            
+            document.getElementById('resultDays').textContent = daysFood;
+            document.getElementById('resultDailyCal').textContent = avgCalPerPerson;
+            document.getElementById('resultWater').textContent = waterDays;
+            
+            // Status message
+            const statusDiv = document.getElementById('statusMessage');
+            let limitingFactor = daysFood <= waterDays ? 'food' : 'water';
+            let effectiveDays = Math.min(daysFood, waterDays);
+            
+            if (effectiveDays >= 14) {
+                statusDiv.innerHTML = `<div class="warning good"><h4>✓ Good Supply</h4><p>You have approximately ${effectiveDays} days of supplies. ${limitingFactor === 'water' ? 'Water will run out first.' : 'Food will run out first.'}</p></div>`;
+            } else if (effectiveDays >= 7) {
+                statusDiv.innerHTML = `<div class="warning"><h4>⚠ Limited Supply</h4><p>You have approximately ${effectiveDays} days of supplies. Consider rationing more severely or acquiring more ${limitingFactor}.</p></div>`;
+            } else {
+                statusDiv.innerHTML = `<div class="warning"><h4>⚠ Critical Supply</h4><p>You only have approximately ${effectiveDays} days of supplies. Immediate action needed to extend or acquire more.</p></div>`;
+            }
+            
+            // Person table
+            const tbody = document.querySelector('#personTable tbody');
+            tbody.innerHTML = '';
+            people.forEach(p => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${p.name} (age ${p.age})</td>
+                    <td>${p.need} cal</td>
+                    <td>${p.rationed} cal</td>
+                `;
+                tbody.appendChild(tr);
+            });
+            
+            const totalRow = document.createElement('tr');
+            totalRow.innerHTML = `
+                <td><strong>Total Daily</strong></td>
+                <td><strong>${people.reduce((sum, p) => sum + p.need, 0)} cal</strong></td>
+                <td><strong>${totalDailyNeed} cal</strong></td>
+            `;
+            tbody.appendChild(totalRow);
+            
+            document.getElementById('results').classList.add('visible');
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

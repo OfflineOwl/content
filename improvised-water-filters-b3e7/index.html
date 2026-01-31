@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improvised Water Filters</title>
+    <style>
+        :root {
+            --bg-primary: #0a192f;
+            --bg-secondary: #112240;
+            --bg-card: #1d3557;
+            --accent: #64ffda;
+            --accent-secondary: #7ec8e3;
+            --warning: #ffc857;
+            --text-primary: #ccd6f6;
+            --text-secondary: #8892b0;
+            --border: #233554;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h1 {
+            color: var(--accent);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+        }
+
+        .warning-banner {
+            background: rgba(255, 200, 87, 0.1);
+            border: 1px solid var(--warning);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .warning-icon {
+            font-size: 1.5rem;
+        }
+
+        .warning-text h3 {
+            color: var(--warning);
+            margin-bottom: 0.25rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            color: var(--accent);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h3 {
+            color: var(--accent-secondary);
+            margin: 1.5rem 0 1rem;
+        }
+
+        .filter-diagram {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 1.5rem 0;
+        }
+
+        .filter-visual {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .filter-container {
+            width: 200px;
+            background: linear-gradient(to bottom, #333 0%, #555 100%);
+            border-radius: 8px 8px 20px 20px;
+            position: relative;
+            padding: 10px;
+        }
+
+        .filter-layer {
+            padding: 15px;
+            margin: 5px 0;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 0.85rem;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .layer-cloth {
+            background: #e8e4e1;
+            color: #333;
+        }
+
+        .layer-sand {
+            background: #c2b280;
+            color: #333;
+        }
+
+        .layer-charcoal {
+            background: #2a2a2a;
+            color: #fff;
+        }
+
+        .layer-gravel {
+            background: #6b6b6b;
+            color: #fff;
+        }
+
+        .layer-rocks {
+            background: #4a4a4a;
+            color: #fff;
+        }
+
+        .water-input {
+            text-align: center;
+            color: var(--accent-secondary);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .water-output {
+            text-align: center;
+            color: var(--accent);
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        .arrow-down {
+            text-align: center;
+            font-size: 1.5rem;
+            color: var(--accent-secondary);
+        }
+
+        .layer-info {
+            display: grid;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .layer-card {
+            background: var(--bg-card);
+            padding: 1rem;
+            border-radius: 8px;
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .layer-card-color {
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        .layer-card h4 {
+            margin-bottom: 0.25rem;
+        }
+
+        .layer-card p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .materials-list {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        .materials-list h4 {
+            margin-bottom: 1rem;
+            color: var(--accent-secondary);
+        }
+
+        .materials-list ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.5rem;
+        }
+
+        .materials-list li {
+            padding: 0.5rem;
+            background: var(--bg-card);
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        .materials-list li::before {
+            content: "✓ ";
+            color: var(--accent);
+        }
+
+        .steps {
+            counter-reset: step-counter;
+        }
+
+        .step {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            position: relative;
+            padding-left: 4rem;
+        }
+
+        .step::before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: 1.5rem;
+            top: 1.5rem;
+            width: 30px;
+            height: 30px;
+            background: var(--accent);
+            color: var(--bg-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        .step h4 {
+            color: var(--accent-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .effectiveness {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .effectiveness h4 {
+            margin-bottom: 1rem;
+        }
+
+        .effectiveness-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+
+        .effectiveness-label {
+            width: 180px;
+            font-size: 0.9rem;
+        }
+
+        .effectiveness-bar {
+            flex: 1;
+            height: 20px;
+            background: var(--bg-card);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-right: 1rem;
+        }
+
+        .effectiveness-fill {
+            height: 100%;
+            border-radius: 10px;
+            transition: width 0.5s;
+        }
+
+        .eff-high { background: var(--accent); }
+        .eff-med { background: var(--warning); }
+        .eff-low { background: #e63946; }
+
+        .effectiveness-value {
+            width: 60px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .alt-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .method-card {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .method-card h4 {
+            color: var(--accent-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .method-card p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .method-card ul {
+            font-size: 0.85rem;
+            padding-left: 1.5rem;
+        }
+
+        .method-card li {
+            margin-bottom: 0.25rem;
+        }
+
+        .note-box {
+            background: rgba(100, 255, 218, 0.1);
+            border: 1px solid var(--accent);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .note-box strong {
+            color: var(--accent);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            margin-top: 2rem;
+        }
+
+        @media print {
+            body { background: white; color: black; }
+            .filter-diagram { break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💧 Improvised Water Filters</h1>
+            <p class="subtitle">Visual guide to building emergency water filtration systems</p>
+        </header>
+
+        <div class="warning-banner">
+            <div class="warning-icon">⚠️</div>
+            <div class="warning-text">
+                <h3>Critical Warning</h3>
+                <p>Improvised filters remove particles and improve taste but <strong>do not make water safe to drink</strong>. Always disinfect filtered water through boiling, chemical treatment, or UV before drinking.</p>
+            </div>
+        </div>
+
+        <section>
+            <h2>Basic Sand/Charcoal Filter</h2>
+            <p>The most effective improvised filter uses layers of natural materials. Each layer serves a specific purpose in cleaning the water.</p>
+
+            <div class="filter-diagram">
+                <div class="water-input">↓ Dirty Water In ↓</div>
+                <div class="filter-visual">
+                    <div class="filter-container">
+                        <div class="filter-layer layer-cloth">Cloth/Grass</div>
+                        <div class="filter-layer layer-sand">Fine Sand</div>
+                        <div class="filter-layer layer-charcoal">Crushed Charcoal</div>
+                        <div class="filter-layer layer-gravel">Gravel</div>
+                        <div class="filter-layer layer-rocks">Rocks/Pebbles</div>
+                    </div>
+                </div>
+                <div class="arrow-down">↓</div>
+                <div class="water-output">✓ Filtered Water Out</div>
+
+                <div class="layer-info">
+                    <div class="layer-card">
+                        <div class="layer-card-color" style="background: #e8e4e1;"></div>
+                        <div>
+                            <h4>Cloth/Grass (Top)</h4>
+                            <p>Prevents sand from floating up. Use clean cotton, grass, or coffee filters.</p>
+                        </div>
+                    </div>
+                    <div class="layer-card">
+                        <div class="layer-card-color" style="background: #c2b280;"></div>
+                        <div>
+                            <h4>Fine Sand (2-3 inches)</h4>
+                            <p>Primary filtration layer. Removes small particles and some bacteria. Use cleanest sand available.</p>
+                        </div>
+                    </div>
+                    <div class="layer-card">
+                        <div class="layer-card-color" style="background: #2a2a2a;"></div>
+                        <div>
+                            <h4>Crushed Charcoal (2-3 inches)</h4>
+                            <p>Absorbs chemicals, removes odors, improves taste. Use hardwood charcoal, NOT briquettes.</p>
+                        </div>
+                    </div>
+                    <div class="layer-card">
+                        <div class="layer-card-color" style="background: #6b6b6b;"></div>
+                        <div>
+                            <h4>Gravel (1-2 inches)</h4>
+                            <p>Supports charcoal layer, prevents clogging. Pea-sized stones work best.</p>
+                        </div>
+                    </div>
+                    <div class="layer-card">
+                        <div class="layer-card-color" style="background: #4a4a4a;"></div>
+                        <div>
+                            <h4>Rocks/Pebbles (2-3 inches)</h4>
+                            <p>Drainage layer. Allows water to exit without carrying filter materials.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Materials You Can Use</h2>
+            <div class="materials-list">
+                <h4>Container Options</h4>
+                <ul>
+                    <li>2-liter plastic bottle (cut bottom off)</li>
+                    <li>5-gallon bucket with holes</li>
+                    <li>Large PVC pipe</li>
+                    <li>Bamboo section</li>
+                    <li>Birch bark cone</li>
+                    <li>Clean trash can</li>
+                </ul>
+            </div>
+            <div class="materials-list">
+                <h4>Charcoal Sources</h4>
+                <ul>
+                    <li>Hardwood fire (cooled completely)</li>
+                    <li>Aquarium charcoal</li>
+                    <li>Activated charcoal</li>
+                    <li>NOT charcoal briquettes (contain additives)</li>
+                </ul>
+            </div>
+            <div class="materials-list">
+                <h4>Sand/Gravel Sources</h4>
+                <ul>
+                    <li>Stream beds</li>
+                    <li>Lake shores</li>
+                    <li>Construction sites</li>
+                    <li>Hardware stores</li>
+                    <li>Aquarium gravel</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Building Instructions</h2>
+            <div class="steps">
+                <div class="step">
+                    <h4>Prepare Container</h4>
+                    <p>Cut bottom off plastic bottle, or drill holes in bottom of bucket. Create a way for water to exit while keeping materials in.</p>
+                </div>
+                <div class="step">
+                    <h4>Add Drainage Layer</h4>
+                    <p>Place 2-3 inches of rocks or large pebbles at the bottom (outlet end). This prevents clogging.</p>
+                </div>
+                <div class="step">
+                    <h4>Add Gravel Layer</h4>
+                    <p>Add 1-2 inches of pea-sized gravel on top of rocks. This supports the charcoal layer.</p>
+                </div>
+                <div class="step">
+                    <h4>Add Charcoal Layer</h4>
+                    <p>Crush charcoal into small pieces. Add 2-3 inches. This is the key filtration layer for chemicals and taste.</p>
+                </div>
+                <div class="step">
+                    <h4>Add Sand Layer</h4>
+                    <p>Add 2-3 inches of fine sand. Use cleanest sand available. This is the primary particle filter.</p>
+                </div>
+                <div class="step">
+                    <h4>Add Top Layer</h4>
+                    <p>Cover with cloth, grass, or coffee filter to prevent sand disturbance when adding water.</p>
+                </div>
+                <div class="step">
+                    <h4>Prime the Filter</h4>
+                    <p>Run water through 2-3 times before using. First runs will be cloudy. Discard until water runs clearer.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Filter Effectiveness</h2>
+            <div class="effectiveness">
+                <h4>What This Filter Removes</h4>
+                <div class="effectiveness-item">
+                    <span class="effectiveness-label">Sediment/Debris</span>
+                    <div class="effectiveness-bar">
+                        <div class="effectiveness-fill eff-high" style="width: 95%;"></div>
+                    </div>
+                    <span class="effectiveness-value">~95%</span>
+                </div>
+                <div class="effectiveness-item">
+                    <span class="effectiveness-label">Protozoa (Giardia)</span>
+                    <div class="effectiveness-bar">
+                        <div class="effectiveness-fill eff-med" style="width: 60%;"></div>
+                    </div>
+                    <span class="effectiveness-value">~60%</span>
+                </div>
+                <div class="effectiveness-item">
+                    <span class="effectiveness-label">Bacteria</span>
+                    <div class="effectiveness-bar">
+                        <div class="effectiveness-fill eff-med" style="width: 40%;"></div>
+                    </div>
+                    <span class="effectiveness-value">~40%</span>
+                </div>
+                <div class="effectiveness-item">
+                    <span class="effectiveness-label">Viruses</span>
+                    <div class="effectiveness-bar">
+                        <div class="effectiveness-fill eff-low" style="width: 10%;"></div>
+                    </div>
+                    <span class="effectiveness-value">~10%</span>
+                </div>
+                <div class="effectiveness-item">
+                    <span class="effectiveness-label">Chemicals/Taste</span>
+                    <div class="effectiveness-bar">
+                        <div class="effectiveness-fill eff-high" style="width: 80%;"></div>
+                    </div>
+                    <span class="effectiveness-value">~80%</span>
+                </div>
+            </div>
+            <div class="note-box">
+                <strong>Remember:</strong> This filter significantly improves water quality but does not make water safe to drink. Always follow filtration with disinfection (boiling for 1 minute, chemical treatment, or UV exposure).
+            </div>
+        </section>
+
+        <section>
+            <h2>Alternative Quick Filters</h2>
+            <div class="alt-methods">
+                <div class="method-card">
+                    <h4>Cloth Filter</h4>
+                    <p>Simplest emergency method</p>
+                    <ul>
+                        <li>Fold clean cloth 4+ times</li>
+                        <li>Pour water through slowly</li>
+                        <li>Removes large particles only</li>
+                        <li>Must disinfect after</li>
+                    </ul>
+                </div>
+                <div class="method-card">
+                    <h4>Coffee Filter</h4>
+                    <p>Better than cloth</p>
+                    <ul>
+                        <li>Use multiple filters</li>
+                        <li>Removes finer particles</li>
+                        <li>Good for pre-filtering turbid water</li>
+                        <li>Must disinfect after</li>
+                    </ul>
+                </div>
+                <div class="method-card">
+                    <h4>Settling</h4>
+                    <p>Requires only time</p>
+                    <ul>
+                        <li>Let water sit 30+ minutes</li>
+                        <li>Particles settle to bottom</li>
+                        <li>Carefully pour off top</li>
+                        <li>Must disinfect after</li>
+                    </ul>
+                </div>
+                <div class="method-card">
+                    <h4>Solar Still</h4>
+                    <p>Filters AND disinfects</p>
+                    <ul>
+                        <li>Evaporation removes all particles</li>
+                        <li>UV from sun disinfects</li>
+                        <li>Slow but effective</li>
+                        <li>See desalination guide</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Maintenance Tips</h2>
+            <div class="materials-list">
+                <h4>Keep Your Filter Working</h4>
+                <ul>
+                    <li>Replace charcoal every 50 gallons</li>
+                    <li>Backflush if flow slows</li>
+                    <li>Replace sand if odor persists</li>
+                    <li>Clean container regularly</li>
+                    <li>Pre-filter very dirty water</li>
+                    <li>Store filter upside down when not in use</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <p>Last updated: January 2026 | License: CC-BY-SA 4.0</p>
+            <p>Always disinfect filtered water before drinking</p>
+        </footer>
+    </div>
+</body>
+</html>

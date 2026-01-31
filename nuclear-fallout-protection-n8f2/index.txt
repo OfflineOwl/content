@@ -1,0 +1,157 @@
+NUCLEAR FALLOUT PROTECTION
+==========================
+CRITICAL SURVIVAL INFORMATION
+
+!!! YOU HAVE MINUTES TO ACT !!!
+
+If you receive warning of a nuclear event, immediately execute
+these steps. Do not wait to gather belongings. Do not wait for
+others. Every second counts.
+
+============================================================
+SECTION 1: IMMEDIATE ACTIONS (FIRST 10 MINUTES)
+============================================================
+
+STEP 1: GET INSIDE IMMEDIATELY
+------------------------------
+The single most important action. Any building > outside.
+
+BEST SHELTER:
++ Underground (basement, subway)
++ Center of large concrete building
++ Middle floors of high-rise
+
+AVOID:
+- Near windows
+- Exterior walls
+- Top floors
+- Vehicles (minimal protection)
+
+STEP 2: SEAL THE SPACE
+----------------------
+[ ] Close ALL windows
+[ ] Close ALL doors
+[ ] Turn OFF HVAC/ventilation
+[ ] Close fireplace damper
+[ ] Seal vents with tape or wet cloth
+
+STEP 3: IF YOU WERE OUTSIDE - DECONTAMINATE
+-------------------------------------------
+Do this BEFORE joining others inside:
+
+1. REMOVE clothing (removes ~90% of contamination)
+2. BAG clothing in plastic, seal, set aside
+3. SHOWER with soap and water, head to toe
+4. SHAMPOO hair - NO CONDITIONER (binds particles)
+5. PUT ON clean, uncontaminated clothes
+
+============================================================
+SECTION 2: THE CRITICAL FIRST 24 HOURS
+============================================================
+
+Radiation decreases significantly over time:
+
+Time After Event    | Radiation Level
+--------------------|----------------
+1 hour              | 100% (MOST DANGEROUS)
+7 hours             | ~10%
+24 hours            | ~1%
+2 weeks             | ~0.1%
+
+THE "7-10 RULE":
+For every 7x increase in time, radiation decreases 10x.
+
+STAY SHELTERED MINIMUM 24 HOURS unless official guidance
+says otherwise.
+
+============================================================
+SECTION 3: SHELTER PROTECTION FACTORS
+============================================================
+
+Different materials reduce radiation by different amounts:
+
+Material                    | Protection Factor
+----------------------------|------------------
+Open air                    | 1x (no protection)
+Wood frame house            | 2x
+Brick house                 | 10x
+Concrete building           | 40x
+Basement (3ft earth cover)  | 200x
+Underground shelter         | 1000x
+
+Higher = Better. Get as much mass between you and outside.
+
+============================================================
+SECTION 4: WATER & FOOD SAFETY
+============================================================
+
+WATER:
++ Sealed containers (bottles, cans) = SAFE
++ Municipal water (pipes underground) = Usually SAFE
+- Open containers = CONTAMINATED
+- Well water = TEST FIRST before using
+
+FOOD:
++ Sealed cans/packages = Safe (wash exterior first)
++ Refrigerator food = Safe if sealed
+~ Closed cabinet food = Wash containers first
+- Open food = DISCARD
+- Fresh outdoor produce = DISCARD
+
+============================================================
+SECTION 5: INFORMATION SOURCES
+============================================================
+
+Monitor these for official guidance:
+1. Emergency Alert System (EAS) - TV/Radio
+2. NOAA Weather Radio - All hazards
+3. Local emergency management
+4. FEMA - Federal guidance
+
+DO NOT leave shelter to seek information.
+Use radio. Leaving increases exposure.
+
+============================================================
+SECTION 6: WHEN TO LEAVE SHELTER
+============================================================
+
+DO NOT leave until:
+- Official all-clear given, OR
+- Minimum 24 hours passed AND critical need
+
+IF YOU MUST LEAVE EARLY:
+1. Minimize time outside (minutes only)
+2. Cover ALL skin
+3. Wear mask/cover nose and mouth
+4. Do NOT touch anything unnecessarily
+5. Decontaminate immediately upon return
+6. Do NOT bring outside items inside
+
+============================================================
+QUICK ACTION CHECKLIST
+============================================================
+
+[ ] GET INSIDE (any building, NOW)
+[ ] Go to interior room / basement
+[ ] CLOSE all windows and doors
+[ ] Turn OFF ventilation / HVAC
+[ ] SEAL gaps (tape, wet towels)
+[ ] DECONTAMINATE if exposed outside
+[ ] MONITOR radio for updates
+[ ] STAY INSIDE minimum 24 hours
+[ ] RATION supplies if needed
+
+============================================================
+
+Remember:
+TIME - Less time exposed = less dose
+DISTANCE - Further from source = less exposure
+SHIELDING - More mass between you and fallout = better
+
+============================================================
+Last updated: January 2026
+License: CC-BY-SA 4.0
+
+This is general preparedness information.
+Follow official guidance during any actual emergency.
+============================================================

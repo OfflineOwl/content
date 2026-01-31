@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Assessment for Your Region</title>
+    <style>
+        :root {
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-card: #334155;
+            --accent-primary: #3b82f6;
+            --accent-warning: #f59e0b;
+            --accent-danger: #ef4444;
+            --accent-success: #22c55e;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --border: #475569;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+        }
+
+        .intro-card {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--accent-primary);
+        }
+
+        .region-selector {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+        }
+
+        .region-selector h2 {
+            margin-bottom: 1rem;
+        }
+
+        .region-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .region-btn {
+            background: var(--bg-card);
+            border: 2px solid var(--border);
+            color: var(--text-primary);
+            padding: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: left;
+        }
+
+        .region-btn:hover {
+            border-color: var(--accent-primary);
+            background: rgba(59, 130, 246, 0.1);
+        }
+
+        .region-btn.active {
+            border-color: var(--accent-primary);
+            background: rgba(59, 130, 246, 0.2);
+        }
+
+        .region-btn h3 {
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .region-btn p {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .results-section {
+            display: none;
+        }
+
+        .results-section.visible {
+            display: block;
+        }
+
+        .risk-matrix {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+        }
+
+        .risk-matrix h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .risk-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            background: var(--bg-card);
+            border-radius: 8px;
+            margin-bottom: 0.75rem;
+        }
+
+        .risk-icon {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            width: 40px;
+            text-align: center;
+        }
+
+        .risk-info {
+            flex: 1;
+        }
+
+        .risk-name {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .risk-desc {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .risk-level {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .risk-bar {
+            width: 100px;
+            height: 8px;
+            background: var(--bg-primary);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .risk-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.5s;
+        }
+
+        .risk-fill.low {
+            background: var(--accent-success);
+        }
+
+        .risk-fill.medium {
+            background: var(--accent-warning);
+        }
+
+        .risk-fill.high {
+            background: var(--accent-danger);
+        }
+
+        .risk-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            width: 50px;
+        }
+
+        .risk-label.low { color: var(--accent-success); }
+        .risk-label.medium { color: var(--accent-warning); }
+        .risk-label.high { color: var(--accent-danger); }
+
+        .prep-priorities {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+        }
+
+        .prep-priorities h2 {
+            margin-bottom: 1rem;
+        }
+
+        .priority-list {
+            list-style: none;
+        }
+
+        .priority-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 1rem;
+            background: var(--bg-card);
+            border-radius: 8px;
+            margin-bottom: 0.75rem;
+        }
+
+        .priority-number {
+            background: var(--accent-primary);
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+
+        .priority-content h4 {
+            margin-bottom: 0.25rem;
+        }
+
+        .priority-content p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .resources-section {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 12px;
+        }
+
+        .resources-section h2 {
+            margin-bottom: 1rem;
+        }
+
+        .resource-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .resource-link {
+            display: block;
+            padding: 1rem;
+            background: var(--bg-card);
+            border-radius: 8px;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+
+        .resource-link:hover {
+            transform: translateY(-2px);
+        }
+
+        .resource-link h4 {
+            color: var(--accent-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .resource-link p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .disclaimer {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid var(--accent-warning);
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        .disclaimer h4 {
+            color: var(--accent-warning);
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        .print-btn {
+            background: var(--accent-primary);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+
+        .print-btn:hover {
+            opacity: 0.9;
+        }
+
+        @media print {
+            body { background: white; color: black; }
+            .region-selector { display: none; }
+            .print-btn { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📍 Risk Assessment for Your Region</h1>
+            <p class="subtitle">Understand the specific threats in your area to prepare effectively</p>
+        </header>
+
+        <div class="intro-card">
+            <p><strong>Why Regional Assessment Matters:</strong> Preparing for an earthquake in Florida wastes resources. Preparing for hurricanes in Colorado is equally misguided. This tool helps you identify the actual risks in your region so you can prepare for what's most likely to happen.</p>
+        </div>
+
+        <div class="region-selector">
+            <h2>Select Your Region</h2>
+            <div class="region-grid">
+                <button class="region-btn" onclick="showRegion('northeast')">
+                    <h3>🏙️ Northeast</h3>
+                    <p>ME, NH, VT, MA, RI, CT, NY, NJ, PA</p>
+                </button>
+                <button class="region-btn" onclick="showRegion('southeast')">
+                    <h3>🌴 Southeast</h3>
+                    <p>DE, MD, VA, WV, NC, SC, GA, FL</p>
+                </button>
+                <button class="region-btn" onclick="showRegion('gulf')">
+                    <h3>🌊 Gulf Coast</h3>
+                    <p>AL, MS, LA, TX coast</p>
+                </button>
+                <button class="region-btn" onclick="showRegion('midwest')">
+                    <h3>🌾 Midwest</h3>
+                    <p>OH, MI, IN, IL, WI, MN, IA, MO</p>
+                </button>
+                <button class="region-btn" onclick="showRegion('plains')">
+                    <h3>🌪️ Great Plains</h3>
+                    <p>ND, SD, NE, KS, OK, TX (interior)</p>
+                </button>
+                <button class="region-btn" onclick="showRegion('mountain')">
+                    <h3>⛰️ Mountain West</h3>
+                    <p>MT, ID, WY, CO, UT, NV, AZ, NM</p>
+                </button>
+                <button class="region-btn" onclick="showRegion('pacific')">
+                    <h3>🌲 Pacific Northwest</h3>
+                    <p>WA, OR</p>
+                </button>
+                <button class="region-btn" onclick="showRegion('california')">
+                    <h3>🔥 California</h3>
+                    <p>Northern & Southern CA</p>
+                </button>
+                <button class="region-btn" onclick="showRegion('alaska')">
+                    <h3>❄️ Alaska</h3>
+                    <p>Alaska</p>
+                </button>
+                <button class="region-btn" onclick="showRegion('hawaii')">
+                    <h3>🌺 Hawaii</h3>
+                    <p>Hawaiian Islands</p>
+                </button>
+            </div>
+        </div>
+
+        <div id="results" class="results-section">
+            <div class="risk-matrix">
+                <h2>⚠️ Risk Assessment: <span id="regionName"></span></h2>
+                <div id="riskList"></div>
+            </div>
+
+            <div class="prep-priorities">
+                <h2>🎯 Top Preparation Priorities</h2>
+                <ol class="priority-list" id="priorityList"></ol>
+            </div>
+
+            <div class="resources-section">
+                <h2>📚 Regional Resources</h2>
+                <div class="resource-links" id="resourceLinks"></div>
+            </div>
+
+            <button class="print-btn" onclick="window.print()">Print This Assessment</button>
+        </div>
+
+        <div class="disclaimer">
+            <h4>⚠️ Disclaimer</h4>
+            <p>This is general guidance based on historical patterns and geographic factors. Your specific location within a region may have different risk profiles. Always consult local emergency management agencies for the most accurate assessment of your area. Conditions change—review your assessment annually.</p>
+        </div>
+
+        <footer>
+            <p>Last updated: January 2026 | License: CC-BY-SA 4.0</p>
+        </footer>
+    </div>
+
+    <script>
+        const regionData = {
+            northeast: {
+                name: "Northeast",
+                risks: [
+                    { name: "Severe Winter Storms", icon: "❄️", level: "high", desc: "Nor'easters, ice storms, heavy snow" },
+                    { name: "Hurricane/Tropical Storm", icon: "🌀", level: "medium", desc: "Remnants and direct hits possible" },
+                    { name: "Flooding", icon: "🌊", level: "medium", desc: "River flooding, flash floods" },
+                    { name: "Power Outages", icon: "⚡", level: "high", desc: "Aging infrastructure, storm damage" },
+                    { name: "Extreme Cold", icon: "🥶", level: "high", desc: "Wind chill, prolonged cold snaps" },
+                    { name: "Earthquake", icon: "📳", level: "low", desc: "Minor seismic activity possible" },
+                    { name: "Wildfire", icon: "🔥", level: "low", desc: "Low but increasing risk" }
+                ],
+                priorities: [
+                    { title: "Winter Storm Preparedness", desc: "Snow removal equipment, heating alternatives, vehicle winterization" },
+                    { title: "Extended Power Outage Kit", desc: "Backup heating, lighting for long winter nights, battery reserves" },
+                    { title: "Hurricane Preparation", desc: "Water damage prevention, evacuation routes for coastal areas" },
+                    { title: "Home Insulation", desc: "Prevent frozen pipes, maintain warmth without power" }
+                ],
+                resources: [
+                    { title: "FEMA Region 1 & 2", url: "#", desc: "Federal emergency resources for Northeast" },
+                    { title: "NWS Winter Weather", url: "#", desc: "National Weather Service winter information" },
+                    { title: "State Emergency Management", url: "#", desc: "Your state's emergency agency" }
+                ]
+            },
+            southeast: {
+                name: "Southeast",
+                risks: [
+                    { name: "Hurricane", icon: "🌀", level: "high", desc: "Direct hits and storm surge" },
+                    { name: "Flooding", icon: "🌊", level: "high", desc: "Heavy rainfall, river flooding" },
+                    { name: "Tornado", icon: "🌪️", level: "medium", desc: "Especially Dixie Alley" },
+                    { name: "Extreme Heat", icon: "🌡️", level: "high", desc: "Heat waves, humidity" },
+                    { name: "Severe Thunderstorms", icon: "⛈️", level: "high", desc: "Lightning, damaging winds" },
+                    { name: "Wildfire", icon: "🔥", level: "medium", desc: "Drought periods increase risk" },
+                    { name: "Winter Storm", icon: "❄️", level: "low", desc: "Occasional ice storms" }
+                ],
+                priorities: [
+                    { title: "Hurricane Preparedness", desc: "Evacuation plan, window protection, flood insurance review" },
+                    { title: "Heat Emergency Plan", desc: "Cooling centers, hydration supplies, backup cooling" },
+                    { title: "Flood Mitigation", desc: "Sandbags, sump pump, elevated storage" },
+                    { title: "Tornado Safe Room", desc: "Interior shelter location, mobile home evacuation plan" }
+                ],
+                resources: [
+                    { title: "National Hurricane Center", url: "#", desc: "Official hurricane tracking and forecasts" },
+                    { title: "FEMA Region 4", url: "#", desc: "Federal resources for Southeast" },
+                    { title: "Ready.gov Hurricanes", url: "#", desc: "Hurricane preparation guide" }
+                ]
+            },
+            gulf: {
+                name: "Gulf Coast",
+                risks: [
+                    { name: "Hurricane", icon: "🌀", level: "high", desc: "Frequent major hurricane threats" },
+                    { name: "Storm Surge", icon: "🌊", level: "high", desc: "Life-threatening coastal flooding" },
+                    { name: "Flooding", icon: "💧", level: "high", desc: "Heavy rainfall, poor drainage" },
+                    { name: "Tornado", icon: "🌪️", level: "medium", desc: "Hurricane-spawned and seasonal" },
+                    { name: "Extreme Heat", icon: "🌡️", level: "high", desc: "Prolonged heat with humidity" },
+                    { name: "Industrial Hazards", icon: "🏭", level: "medium", desc: "Petrochemical facilities" },
+                    { name: "Subsidence", icon: "📉", level: "medium", desc: "Land sinking in some areas" }
+                ],
+                priorities: [
+                    { title: "Hurricane Evacuation Plan", desc: "Know your zone, plan routes, have destination" },
+                    { title: "Flood Insurance", desc: "Standard insurance doesn't cover floods" },
+                    { title: "Storm Surge Awareness", desc: "Know elevation, evacuation triggers" },
+                    { title: "Extended Self-Sufficiency", desc: "Major storms can mean weeks without services" }
+                ],
+                resources: [
+                    { title: "National Hurricane Center", url: "#", desc: "Official hurricane information" },
+                    { title: "Storm Surge Maps", url: "#", desc: "Know your surge risk" },
+                    { title: "Texas/Louisiana/AL/MS Emergency Management", url: "#", desc: "State resources" }
+                ]
+            },
+            midwest: {
+                name: "Midwest",
+                risks: [
+                    { name: "Tornado", icon: "🌪️", level: "high", desc: "Tornado Alley extends here" },
+                    { name: "Severe Thunderstorms", icon: "⛈️", level: "high", desc: "Damaging wind, hail, lightning" },
+                    { name: "Winter Storms", icon: "❄️", level: "high", desc: "Blizzards, ice storms" },
+                    { name: "Flooding", icon: "🌊", level: "high", desc: "River flooding, flash floods" },
+                    { name: "Extreme Cold", icon: "🥶", level: "high", desc: "Polar vortex events" },
+                    { name: "Extreme Heat", icon: "🌡️", level: "medium", desc: "Summer heat waves" },
+                    { name: "Earthquake", icon: "📳", level: "low", desc: "New Madrid zone (low frequency)" }
+                ],
+                priorities: [
+                    { title: "Tornado Safe Room", desc: "Basement or reinforced interior room" },
+                    { title: "Winter Preparedness", desc: "Heating alternatives, vehicle winter kit" },
+                    { title: "Severe Weather Alerting", desc: "NOAA radio, multiple alert sources" },
+                    { title: "Flood Awareness", desc: "Know flood zones, have evacuation plan" }
+                ],
+                resources: [
+                    { title: "FEMA Region 5", url: "#", desc: "Midwest federal resources" },
+                    { title: "Storm Prediction Center", url: "#", desc: "Severe weather forecasting" },
+                    { title: "NWS Severe Weather", url: "#", desc: "Local severe weather information" }
+                ]
+            },
+            plains: {
+                name: "Great Plains",
+                risks: [
+                    { name: "Tornado", icon: "🌪️", level: "high", desc: "Heart of Tornado Alley" },
+                    { name: "Severe Thunderstorms", icon: "⛈️", level: "high", desc: "Giant hail, damaging winds" },
+                    { name: "Drought", icon: "🏜️", level: "high", desc: "Extended dry periods" },
+                    { name: "Wildfire", icon: "🔥", level: "high", desc: "Grassland fires spread rapidly" },
+                    { name: "Winter Storms", icon: "❄️", level: "high", desc: "Blizzards, ice storms" },
+                    { name: "Extreme Heat", icon: "🌡️", level: "medium", desc: "Summer heat waves" },
+                    { name: "Flooding", icon: "🌊", level: "medium", desc: "Flash floods, river flooding" }
+                ],
+                priorities: [
+                    { title: "Tornado Shelter", desc: "Storm cellar or reinforced safe room essential" },
+                    { title: "Weather Monitoring", desc: "Multiple alert systems, storm spotting knowledge" },
+                    { title: "Wildfire Defensible Space", desc: "Clear vegetation, evacuation routes" },
+                    { title: "Water Storage", desc: "Drought can impact water availability" }
+                ],
+                resources: [
+                    { title: "Storm Prediction Center", url: "#", desc: "Tornado and severe weather outlooks" },
+                    { title: "FEMA Safe Room Grants", url: "#", desc: "Funding for storm shelters" },
+                    { title: "National Drought Monitor", url: "#", desc: "Current drought conditions" }
+                ]
+            },
+            mountain: {
+                name: "Mountain West",
+                risks: [
+                    { name: "Wildfire", icon: "🔥", level: "high", desc: "Increasing frequency and intensity" },
+                    { name: "Winter Storms", icon: "❄️", level: "high", desc: "Heavy snow, avalanches" },
+                    { name: "Flash Floods", icon: "🌊", level: "medium", desc: "Desert flash floods" },
+                    { name: "Drought", icon: "🏜️", level: "high", desc: "Long-term water concerns" },
+                    { name: "Extreme Heat", icon: "🌡️", level: "high", desc: "Desert regions, urban heat" },
+                    { name: "Earthquake", icon: "📳", level: "medium", desc: "Intermountain seismic zone" },
+                    { name: "Landslide", icon: "⛰️", level: "medium", desc: "Post-fire and steep terrain" }
+                ],
+                priorities: [
+                    { title: "Wildfire Preparedness", desc: "Defensible space, evacuation go-bag, air quality protection" },
+                    { title: "Water Conservation & Storage", desc: "Extended water supply, conservation practices" },
+                    { title: "Heat Emergency Plan", desc: "Cooling strategies, especially without AC" },
+                    { title: "Mountain Winter Kit", desc: "Vehicle emergency supplies, home heating backup" }
+                ],
+                resources: [
+                    { title: "InciWeb", url: "#", desc: "Current wildfire information" },
+                    { title: "FEMA Region 8", url: "#", desc: "Mountain region federal resources" },
+                    { title: "Avalanche Centers", url: "#", desc: "Regional avalanche forecasting" }
+                ]
+            },
+            pacific: {
+                name: "Pacific Northwest",
+                risks: [
+                    { name: "Earthquake", icon: "📳", level: "high", desc: "Cascadia Subduction Zone risk" },
+                    { name: "Tsunami", icon: "🌊", level: "high", desc: "Coastal areas post-earthquake" },
+                    { name: "Volcanic Activity", icon: "🌋", level: "medium", desc: "Cascade volcanoes" },
+                    { name: "Wildfire", icon: "🔥", level: "high", desc: "Increasing frequency" },
+                    { name: "Flooding", icon: "💧", level: "high", desc: "Atmospheric rivers, rain" },
+                    { name: "Landslide", icon: "⛰️", level: "high", desc: "Saturated soils, steep terrain" },
+                    { name: "Winter Storms", icon: "❄️", level: "medium", desc: "Ice, snow at elevation" }
+                ],
+                priorities: [
+                    { title: "Earthquake Readiness", desc: "Secure items, 2-week supplies, family plan" },
+                    { title: "Tsunami Evacuation", desc: "Know zones, routes to high ground" },
+                    { title: "Wildfire/Smoke Preparedness", desc: "Air filtration, evacuation readiness" },
+                    { title: "Extended Self-Sufficiency", desc: "Major earthquake could mean weeks without help" }
+                ],
+                resources: [
+                    { title: "Pacific NW Seismic Network", url: "#", desc: "Earthquake monitoring" },
+                    { title: "Tsunami Warning Centers", url: "#", desc: "Official tsunami information" },
+                    { title: "ShakeAlert", url: "#", desc: "Earthquake early warning system" }
+                ]
+            },
+            california: {
+                name: "California",
+                risks: [
+                    { name: "Wildfire", icon: "🔥", level: "high", desc: "Year-round threat in many areas" },
+                    { name: "Earthquake", icon: "📳", level: "high", desc: "Multiple active fault systems" },
+                    { name: "Drought", icon: "🏜️", level: "high", desc: "Chronic water challenges" },
+                    { name: "Extreme Heat", icon: "🌡️", level: "high", desc: "Inland heat waves" },
+                    { name: "Flooding", icon: "🌊", level: "high", desc: "Atmospheric rivers" },
+                    { name: "Landslide/Debris Flow", icon: "⛰️", level: "high", desc: "Post-fire and rain" },
+                    { name: "Tsunami", icon: "🌊", level: "medium", desc: "Coastal risk" }
+                ],
+                priorities: [
+                    { title: "Wildfire Go-Bag", desc: "Ready to evacuate with 15 minutes notice" },
+                    { title: "Earthquake Preparedness", desc: "Secure items, supplies, family plan" },
+                    { title: "Water Resilience", desc: "Storage, conservation, alternative sources" },
+                    { title: "Air Quality Protection", desc: "N95 masks, air purifier, indoor air plan" }
+                ],
+                resources: [
+                    { title: "CAL FIRE", url: "#", desc: "California fire information" },
+                    { title: "California Earthquake Authority", url: "#", desc: "Earthquake preparedness" },
+                    { title: "Cal OES", url: "#", desc: "California emergency services" }
+                ]
+            },
+            alaska: {
+                name: "Alaska",
+                risks: [
+                    { name: "Earthquake", icon: "📳", level: "high", desc: "Most seismically active state" },
+                    { name: "Tsunami", icon: "🌊", level: "high", desc: "Coastal communities at risk" },
+                    { name: "Extreme Cold", icon: "🥶", level: "high", desc: "Life-threatening temperatures" },
+                    { name: "Volcanic Activity", icon: "🌋", level: "medium", desc: "Active volcanoes" },
+                    { name: "Wildfire", icon: "🔥", level: "medium", desc: "Summer fire season" },
+                    { name: "Avalanche", icon: "🏔️", level: "high", desc: "Mountain terrain" },
+                    { name: "Isolation", icon: "🏠", level: "high", desc: "Cut off from supply chains" }
+                ],
+                priorities: [
+                    { title: "Extended Self-Sufficiency", desc: "Months of supplies, not days" },
+                    { title: "Extreme Cold Survival", desc: "Multiple heating options, cold weather gear" },
+                    { title: "Earthquake/Tsunami Plan", desc: "Know evacuation routes, have plan" },
+                    { title: "Communication Redundancy", desc: "Satellite, radio, multiple methods" }
+                ],
+                resources: [
+                    { title: "Alaska Earthquake Center", url: "#", desc: "Seismic monitoring" },
+                    { title: "Alaska DHS&EM", url: "#", desc: "State emergency management" },
+                    { title: "NWS Alaska", url: "#", desc: "Weather and tsunami warnings" }
+                ]
+            },
+            hawaii: {
+                name: "Hawaii",
+                risks: [
+                    { name: "Hurricane", icon: "🌀", level: "high", desc: "Pacific hurricane threats" },
+                    { name: "Tsunami", icon: "🌊", level: "high", desc: "Pacific Rim earthquakes" },
+                    { name: "Volcanic Activity", icon: "🌋", level: "high", desc: "Active volcanoes" },
+                    { name: "Earthquake", icon: "📳", level: "medium", desc: "Volcanic and tectonic" },
+                    { name: "Flooding", icon: "💧", level: "high", desc: "Flash floods, heavy rain" },
+                    { name: "Isolation", icon: "🏝️", level: "high", desc: "Supply chain vulnerability" },
+                    { name: "Wildfire", icon: "🔥", level: "medium", desc: "Dry leeward areas" }
+                ],
+                priorities: [
+                    { title: "Extended Supply Storage", desc: "2+ weeks of supplies (island isolation)" },
+                    { title: "Tsunami Evacuation", desc: "Know zones, routes, warning systems" },
+                    { title: "Hurricane Preparedness", desc: "Window protection, water storage" },
+                    { title: "Volcanic Hazard Awareness", desc: "Know vog, laze, evacuation zones" }
+                ],
+                resources: [
+                    { title: "Pacific Tsunami Warning Center", url: "#", desc: "Tsunami monitoring" },
+                    { title: "Hawaii Emergency Management", url: "#", desc: "State resources" },
+                    { title: "Hawaiian Volcano Observatory", url: "#", desc: "Volcanic activity" }
+                ]
+            }
+        };
+
+        function showRegion(regionId) {
+            const data = regionData[regionId];
+            
+            // Update active button
+            document.querySelectorAll('.region-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.closest('.region-btn').classList.add('active');
+            
+            // Show results
+            document.getElementById('results').classList.add('visible');
+            document.getElementById('regionName').textContent = data.name;
+            
+            // Populate risks
+            const riskList = document.getElementById('riskList');
+            riskList.innerHTML = data.risks.map(risk => {
+                const width = risk.level === 'high' ? '100%' : risk.level === 'medium' ? '60%' : '30%';
+                return `
+                    <div class="risk-item">
+                        <div class="risk-icon">${risk.icon}</div>
+                        <div class="risk-info">
+                            <div class="risk-name">${risk.name}</div>
+                            <div class="risk-desc">${risk.desc}</div>
+                        </div>
+                        <div class="risk-level">
+                            <div class="risk-bar">
+                                <div class="risk-fill ${risk.level}" style="width: ${width}"></div>
+                            </div>
+                            <span class="risk-label ${risk.level}">${risk.level}</span>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            
+            // Populate priorities
+            const priorityList = document.getElementById('priorityList');
+            priorityList.innerHTML = data.priorities.map((priority, index) => `
+                <li class="priority-item">
+                    <div class="priority-number">${index + 1}</div>
+                    <div class="priority-content">
+                        <h4>${priority.title}</h4>
+                        <p>${priority.desc}</p>
+                    </div>
+                </li>
+            `).join('');
+            
+            // Populate resources
+            const resourceLinks = document.getElementById('resourceLinks');
+            resourceLinks.innerHTML = data.resources.map(resource => `
+                <a href="${resource.url}" class="resource-link">
+                    <h4>${resource.title}</h4>
+                    <p>${resource.desc}</p>
+                </a>
+            `).join('');
+            
+            // Scroll to results
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

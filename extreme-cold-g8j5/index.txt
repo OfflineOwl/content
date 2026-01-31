@@ -1,0 +1,181 @@
+EXTREME COLD SURVIVAL
+=====================
+
+Extreme cold can kill in hours or even minutes with wind chill.
+Understanding the risks and how to protect yourself is essential.
+
+UNDERSTANDING COLD DANGER
+-------------------------
+
+WIND CHILL:
+Wind makes cold far more dangerous.
+Temperature + Wind = Effective temperature on skin
+
+Example:
+- 0°F + 15mph wind = -19°F wind chill
+- Frostbite can occur in 30 minutes or less
+
+HYPOTHERMIA STAGES:
+1. Mild (90-95°F body temp): Shivering, poor coordination
+2. Moderate (82-90°F): Violent shivering, confusion
+3. Severe (below 82°F): Shivering stops, unconsciousness
+4. Death below ~78°F body temperature
+
+FROSTBITE:
+Freezing of skin and underlying tissue
+- Ears, nose, fingers, toes most vulnerable
+- Can occur within minutes in extreme cold
+- Signs: Numbness, white/grayish skin, hard texture
+
+STAYING WARM
+------------
+
+LAYERING SYSTEM:
+1. Base layer: Moisture-wicking (NOT cotton)
+2. Mid layer: Insulating (fleece, wool)
+3. Outer layer: Wind/water resistant
+
+KEY AREAS TO PROTECT:
+- Head (25% heat loss)
+- Hands
+- Feet
+- Face
+
+SHELTER PRIORITIES:
+1. Get out of wind
+2. Get dry
+3. Create insulation from ground
+4. Trap warm air
+
+INDOOR SURVIVAL WITHOUT HEAT
+----------------------------
+
+CREATE WARM ROOM:
+- Choose smallest interior room
+- Close off rest of house
+- Cover windows with blankets
+- Block door drafts
+- Gather everyone together
+
+BODY HEAT CONSERVATION:
+- Stay together (shared body heat)
+- Use sleeping bags
+- Layer blankets
+- Stay dry
+- Stay active (but don't sweat)
+- Eat regularly (body needs fuel for heat)
+
+EMERGENCY HEAT SOURCES:
+Safe indoors:
+- Fireplace (with working chimney)
+- Indoor-rated propane heater (ventilated)
+
+NEVER use indoors:
+- Charcoal grills
+- Gas grills  
+- Generators
+- Outdoor heaters
+
+OUTDOOR SURVIVAL
+----------------
+
+IF STRANDED IN VEHICLE:
+1. Stay with vehicle (shelter, visible)
+2. Run engine 10-15 minutes per hour
+3. Clear exhaust pipe (CO danger)
+4. Open window slightly when running
+5. Move around periodically
+6. Use floor mats, seat covers for insulation
+
+IF CAUGHT OUTSIDE:
+1. Find or create shelter (from wind)
+2. Insulate from ground
+3. Cover exposed skin
+4. Stay dry
+5. Keep moving (but don't exhaust yourself)
+6. If with others, huddle together
+
+EMERGENCY SHELTERS:
+- Dig into snow (insulating)
+- Use vehicle as windbreak
+- Find natural windbreak
+- Create windbreak from available materials
+
+RECOGNIZING COLD EMERGENCIES
+----------------------------
+
+HYPOTHERMIA SIGNS:
+- Shivering (stops in severe hypothermia)
+- Confusion, poor judgment
+- Slurred speech
+- Drowsiness
+- Loss of coordination
+- Slow breathing
+
+HYPOTHERMIA RESPONSE:
+1. Get to warm environment
+2. Remove wet clothing
+3. Warm core first (not extremities)
+4. Warm, sweet drinks if conscious
+5. Skin-to-skin contact with warm person
+6. Don't rub or massage
+7. Seek medical care
+
+FROSTBITE SIGNS:
+- Numbness
+- White, grayish, or waxy skin
+- Hard or waxy texture
+- Blisters (after warming)
+
+FROSTBITE RESPONSE:
+1. Get to warm area
+2. DON'T rub affected area
+3. Don't walk on frostbitten feet if possible
+4. Immerse in warm (not hot) water
+5. Don't use direct heat
+6. Expect pain during rewarming
+7. Seek medical care
+
+WINTER SURVIVAL KIT (Vehicle)
+-----------------------------
+
+[ ] Blankets or sleeping bag
+[ ] Extra warm clothing
+[ ] Hand/toe warmers
+[ ] High-energy snacks
+[ ] Water (prevent freezing)
+[ ] Flashlight
+[ ] Candle and matches (heat/signal)
+[ ] Ice scraper and shovel
+[ ] Jumper cables
+[ ] Tow rope
+[ ] Cat litter or sand (traction)
+[ ] Cell phone charger
+[ ] Bright cloth (signal)
+
+QUICK REFERENCE
+---------------
+
+LAYER UP:
+Base = moisture-wicking
+Middle = insulation
+Outer = wind protection
+
+HYPOTHERMIA = EMERGENCY
+Warm the person, warm drinks, get help
+
+FROSTBITE = EMERGENCY
+Warm slowly in warm water, get help
+
+VEHICLE:
+Stay with it, run engine sparingly, clear exhaust
+
+HEAT SOURCES - NEVER INDOORS:
+- Grills
+- Generators
+- Outdoor heaters
+
+=====================
+Last updated: January 2026
+License: CC-BY-SA 4.0
+=====================

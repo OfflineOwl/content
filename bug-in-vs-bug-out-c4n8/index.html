@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug-In vs Bug-Out Decision Guide</title>
+    <style>
+        :root {
+            --bg-primary: #1a1a2e;
+            --bg-secondary: #16213e;
+            --bg-card: #0f3460;
+            --accent: #e94560;
+            --accent-green: #4ade80;
+            --accent-yellow: #fbbf24;
+            --text-primary: #ffffff;
+            --text-secondary: #a0aec0;
+            --border: #2d3748;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .intro-box {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--accent);
+        }
+
+        .decision-tool {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .decision-tool h2 {
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .question-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .question {
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .question-number {
+            background: var(--accent);
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            flex-shrink: 0;
+        }
+
+        .options {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .option {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .option input {
+            display: none;
+        }
+
+        .option label {
+            display: block;
+            padding: 1rem;
+            background: var(--bg-secondary);
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .option input:checked + label {
+            border-color: var(--accent-green);
+            background: rgba(74, 222, 128, 0.1);
+        }
+
+        .option label:hover {
+            border-color: var(--text-secondary);
+        }
+
+        .option-title {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .option-desc {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .result-container {
+            display: none;
+            margin-top: 2rem;
+            padding: 2rem;
+            border-radius: 12px;
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .result-bugin {
+            background: linear-gradient(135deg, #1e3a5f 0%, #0f3460 100%);
+            border: 2px solid #3b82f6;
+        }
+
+        .result-bugout {
+            background: linear-gradient(135deg, #3f1f1f 0%, #5c2626 100%);
+            border: 2px solid var(--accent);
+        }
+
+        .result-container h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .result-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .result-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .result-list li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .result-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent-green);
+        }
+
+        .action-btn {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: block;
+            width: 100%;
+            margin-top: 1.5rem;
+        }
+
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(233, 69, 96, 0.4);
+        }
+
+        .reset-btn {
+            background: transparent;
+            border: 2px solid var(--border);
+            color: var(--text-secondary);
+            margin-top: 1rem;
+        }
+
+        .reset-btn:hover {
+            border-color: var(--text-secondary);
+            color: var(--text-primary);
+            box-shadow: none;
+            transform: none;
+        }
+
+        .score-display {
+            text-align: center;
+            padding: 1rem;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .score-bar {
+            height: 20px;
+            background: var(--bg-primary);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 0.5rem;
+        }
+
+        .score-fill {
+            height: 100%;
+            transition: width 0.5s ease;
+            border-radius: 10px;
+        }
+
+        .comparison-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 600px) {
+            .comparison-section {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .comparison-card {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .comparison-card h3 {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .comparison-card ul {
+            list-style: none;
+        }
+
+        .comparison-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-secondary);
+        }
+
+        .comparison-card li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-green);
+        }
+
+        .warning-box {
+            background: rgba(251, 191, 36, 0.1);
+            border: 1px solid var(--accent-yellow);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+
+        .warning-box h4 {
+            color: var(--accent-yellow);
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏠 Bug-In vs Bug-Out Decision Guide</h1>
+            <p class="subtitle">An interactive tool to help you make the right choice in an emergency</p>
+        </header>
+
+        <div class="intro-box">
+            <strong>The Critical Question:</strong> When disaster strikes, should you shelter in place (bug-in) or evacuate (bug-out)? The wrong choice can be dangerous. Use this tool to assess your situation.
+        </div>
+
+        <div class="decision-tool">
+            <h2>📋 Situation Assessment</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Answer these questions based on your current situation. Be honest—your safety depends on it.</p>
+
+            <form id="decisionForm">
+                <div class="question-group">
+                    <div class="question">
+                        <span class="question-number">1</span>
+                        <span>Is your home structurally safe right now?</span>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" name="q1" id="q1a" value="bugin" required>
+                            <label for="q1a">
+                                <div class="option-title">Yes, safe</div>
+                                <div class="option-desc">No visible damage, stable structure</div>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q1" id="q1b" value="bugout">
+                            <label for="q1b">
+                                <div class="option-title">No / Unsure</div>
+                                <div class="option-desc">Damage visible, gas smell, flooding</div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question">
+                        <span class="question-number">2</span>
+                        <span>What are authorities recommending?</span>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" name="q2" id="q2a" value="bugin" required>
+                            <label for="q2a">
+                                <div class="option-title">Shelter in Place</div>
+                                <div class="option-desc">Or no specific guidance given</div>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q2" id="q2b" value="bugout">
+                            <label for="q2b">
+                                <div class="option-title">Evacuate</div>
+                                <div class="option-desc">Mandatory or voluntary evacuation</div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question">
+                        <span class="question-number">3</span>
+                        <span>Do you have adequate supplies at home?</span>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" name="q3" id="q3a" value="bugin" required>
+                            <label for="q3a">
+                                <div class="option-title">Yes, 72+ hours</div>
+                                <div class="option-desc">Water, food, medical, light sources</div>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q3" id="q3b" value="neutral">
+                            <label for="q3b">
+                                <div class="option-title">Minimal / None</div>
+                                <div class="option-desc">Would need to acquire supplies</div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question">
+                        <span class="question-number">4</span>
+                        <span>Is the threat ongoing or escalating?</span>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" name="q4" id="q4a" value="bugin" required>
+                            <label for="q4a">
+                                <div class="option-title">Threat has passed</div>
+                                <div class="option-desc">Or is stable/contained</div>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q4" id="q4b" value="bugout">
+                            <label for="q4b">
+                                <div class="option-title">Still dangerous</div>
+                                <div class="option-desc">Fire spreading, flooding rising, etc.</div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question">
+                        <span class="question-number">5</span>
+                        <span>Do you have a safe evacuation route?</span>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" name="q5" id="q5a" value="bugin" required>
+                            <label for="q5a">
+                                <div class="option-title">No / Routes blocked</div>
+                                <div class="option-desc">Roads flooded, gridlock, dangerous</div>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q5" id="q5b" value="bugout">
+                            <label for="q5b">
+                                <div class="option-title">Yes, clear route</div>
+                                <div class="option-desc">Can safely reach destination</div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question">
+                        <span class="question-number">6</span>
+                        <span>Do you have a planned destination?</span>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" name="q6" id="q6a" value="bugin" required>
+                            <label for="q6a">
+                                <div class="option-title">No destination</div>
+                                <div class="option-desc">Would be homeless/uncertain</div>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q6" id="q6b" value="bugout">
+                            <label for="q6b">
+                                <div class="option-title">Yes, planned location</div>
+                                <div class="option-desc">Family, friend, shelter arranged</div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question">
+                        <span class="question-number">7</span>
+                        <span>Family mobility considerations?</span>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" name="q7" id="q7a" value="bugin" required>
+                            <label for="q7a">
+                                <div class="option-title">Limited mobility</div>
+                                <div class="option-desc">Elderly, disabled, infants, pets</div>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q7" id="q7b" value="neutral">
+                            <label for="q7b">
+                                <div class="option-title">Fully mobile</div>
+                                <div class="option-desc">All members can travel easily</div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="action-btn">Analyze My Situation</button>
+            </form>
+
+            <div id="resultBugin" class="result-container result-bugin">
+                <div class="result-icon">🏠</div>
+                <h3>Recommendation: BUG-IN (Shelter in Place)</h3>
+                <div class="score-display">
+                    <div>Confidence Score</div>
+                    <div class="score-bar">
+                        <div class="score-fill" id="scoreBarBugin" style="background: linear-gradient(90deg, #3b82f6, #60a5fa);"></div>
+                    </div>
+                </div>
+                <p>Based on your answers, staying home is likely the safer option. Your home provides shelter, you have supplies, and evacuation presents more risk than benefit.</p>
+                <ul class="result-list">
+                    <li>Secure your home and seal if necessary</li>
+                    <li>Gather family in safest room</li>
+                    <li>Monitor emergency broadcasts</li>
+                    <li>Conserve resources</li>
+                    <li>Be ready to evacuate if situation changes</li>
+                </ul>
+                <button class="action-btn reset-btn" onclick="resetForm()">Start Over</button>
+            </div>
+
+            <div id="resultBugout" class="result-container result-bugout">
+                <div class="result-icon">🚗</div>
+                <h3>Recommendation: BUG-OUT (Evacuate)</h3>
+                <div class="score-display">
+                    <div>Confidence Score</div>
+                    <div class="score-bar">
+                        <div class="score-fill" id="scoreBarBugout" style="background: linear-gradient(90deg, #e94560, #f87171);"></div>
+                    </div>
+                </div>
+                <p>Based on your answers, leaving is likely the safer option. Staying presents significant risks that outweigh the challenges of evacuation.</p>
+                <ul class="result-list">
+                    <li>Grab your go-bag and essential documents</li>
+                    <li>Follow your planned evacuation route</li>
+                    <li>Notify your out-of-area contact</li>
+                    <li>Turn off utilities if time allows</li>
+                    <li>Don't return until authorities say it's safe</li>
+                </ul>
+                <button class="action-btn reset-btn" onclick="resetForm()">Start Over</button>
+            </div>
+        </div>
+
+        <div class="comparison-section">
+            <div class="comparison-card">
+                <h3>🏠 Bug-In When...</h3>
+                <ul>
+                    <li>Home is structurally safe</li>
+                    <li>You have adequate supplies</li>
+                    <li>Roads are dangerous/blocked</li>
+                    <li>No evacuation order issued</li>
+                    <li>Threat is external (civil unrest)</li>
+                    <li>Weather makes travel dangerous</li>
+                    <li>You have mobility limitations</li>
+                    <li>No safe destination available</li>
+                </ul>
+            </div>
+            <div class="comparison-card">
+                <h3>🚗 Bug-Out When...</h3>
+                <ul>
+                    <li>Mandatory evacuation ordered</li>
+                    <li>Home is damaged/unsafe</li>
+                    <li>Threat is approaching (fire, flood)</li>
+                    <li>Chemical/radiation hazard nearby</li>
+                    <li>Violence in your area</li>
+                    <li>Utilities failed long-term</li>
+                    <li>Safe route and destination exist</li>
+                    <li>Staying = certain danger</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="warning-box">
+            <h4>⚠️ Override Conditions</h4>
+            <p>Regardless of other factors, <strong>evacuate immediately</strong> if:</p>
+            <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
+                <li>You smell gas or see fire approaching</li>
+                <li>Floodwaters are rising to your level</li>
+                <li>Structure is collapsing or severely damaged</li>
+                <li>Active violence/threat at your location</li>
+                <li>Authorities order mandatory evacuation</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Last updated: January 2026 | License: CC-BY-SA 4.0</p>
+            <p style="margin-top: 0.5rem;">This tool provides guidance only. Trust your judgment and local authorities.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('decisionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            let buginScore = 0;
+            let bugoutScore = 0;
+            
+            for (let [key, value] of formData.entries()) {
+                if (value === 'bugin') buginScore++;
+                else if (value === 'bugout') bugoutScore++;
+            }
+            
+            const totalQuestions = 7;
+            const buginPercent = Math.round((buginScore / totalQuestions) * 100);
+            const bugoutPercent = Math.round((bugoutScore / totalQuestions) * 100);
+            
+            // Hide form questions
+            const questions = document.querySelectorAll('.question-group');
+            questions.forEach(q => q.style.display = 'none');
+            document.querySelector('.action-btn[type="submit"]').style.display = 'none';
+            
+            if (buginScore >= bugoutScore) {
+                document.getElementById('resultBugin').style.display = 'block';
+                document.getElementById('scoreBarBugin').style.width = Math.max(buginPercent, 50) + '%';
+            } else {
+                document.getElementById('resultBugout').style.display = 'block';
+                document.getElementById('scoreBarBugout').style.width = Math.max(bugoutPercent, 50) + '%';
+            }
+        });
+        
+        function resetForm() {
+            document.getElementById('decisionForm').reset();
+            
+            // Show form questions
+            const questions = document.querySelectorAll('.question-group');
+            questions.forEach(q => q.style.display = 'block');
+            document.querySelector('.action-btn[type="submit"]').style.display = 'block';
+            
+            // Hide results
+            document.getElementById('resultBugin').style.display = 'none';
+            document.getElementById('resultBugout').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

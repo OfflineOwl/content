@@ -1,0 +1,220 @@
+LOCKDOWN PROCEDURES
+===================
+
+Lockdown means securing yourself in place to protect against an
+external threat. This guide covers proper lockdown procedures.
+
+WHEN TO LOCKDOWN
+----------------
+
+LOCKDOWN MAY BE APPROPRIATE FOR:
+- Active threat in area
+- Civil unrest nearby
+- Dangerous person reported
+- Police activity
+- Unknown external threat
+
+LOCKDOWN IS NOT:
+- Shelter-in-place (for chemical/biological)
+- Evacuation (for fire, flood)
+- Hiding (different techniques)
+
+BASIC LOCKDOWN PROTOCOL
+-----------------------
+
+IMMEDIATE ACTIONS:
+
+1. GET INSIDE
+   - Enter nearest secure room
+   - Close and lock door
+   - Stay away from windows
+   - Keep others out of danger
+
+2. SECURE THE SPACE
+   - Lock all doors
+   - Barricade if possible
+   - Turn off lights
+   - Close blinds/curtains
+
+3. STAY QUIET
+   - Silence phones (not off)
+   - Minimize movement
+   - Whisper if communication needed
+   - Control children/pets
+
+4. WAIT FOR ALL-CLEAR
+   - Listen for official communication
+   - Don't open for unknown persons
+   - Be prepared for extended wait
+
+HOME LOCKDOWN
+-------------
+
+SECURE ENTRY POINTS:
+- Lock all exterior doors
+- Lock all windows
+- Close garage doors
+- Secure any pet doors
+
+ESTABLISH SAFE AREA:
+- Interior room preferred
+- Room with lockable door
+- Away from windows
+- Access to communication
+
+GATHER FAMILY:
+- Account for all members
+- Bring to safe area
+- Keep pets contained
+- Have supplies accessible
+
+COMMUNICATION:
+- Call 911 if threat imminent
+- Text if calling risks detection
+- Monitor emergency broadcasts
+- Contact out-of-area contact when safe
+
+WORKPLACE/SCHOOL LOCKDOWN
+-------------------------
+
+TYPICAL PROCEDURE:
+
+RUN-HIDE-FIGHT (if active threat):
+
+RUN:
+- If safe path exists, evacuate
+- Leave belongings
+- Help others if possible
+- Call 911 when safe
+
+HIDE:
+- If cannot escape, hide
+- Find lockable room
+- Barricade door
+- Turn off lights
+- Silence phone
+- Stay out of sight
+
+FIGHT:
+- Only as absolute last resort
+- If confronted directly
+- Use any available objects
+- Commit fully to action
+
+FOLLOWING INSTRUCTIONS:
+- Follow official lockdown procedures
+- Know your building's plan
+- Know emergency exits
+- Know rally points
+
+BARRICADE TECHNIQUES
+--------------------
+
+PURPOSE:
+- Delay entry
+- Create obstacle
+- Buy time
+
+METHODS:
+- Furniture against door (heavy items)
+- Door blocked open = remove hinge pins
+- Use belt/cord to secure door handles
+- Stack items high, low, throughout
+
+EFFECTIVE BARRIERS:
+- Heavy desks or tables
+- Filing cabinets
+- Chairs (wedged under handles)
+- Multiple items together
+
+COMMUNICATION DURING LOCKDOWN
+-----------------------------
+
+911 CALL:
+If safe to call:
+- State location
+- State situation
+- State number of people
+- Stay on line if possible
+
+IF CALLING IS UNSAFE:
+- Text 911 (where available)
+- Silent alert apps
+- Wait until safe to call
+
+VERIFYING ALL-CLEAR:
+- Don't trust unknown voices
+- Verify through official channels
+- May need to see credentials
+- When in doubt, stay locked down
+
+SPECIAL CONSIDERATIONS
+----------------------
+
+WITH CHILDREN:
+- Keep calm (they mirror adults)
+- Simple explanations
+- Practice lockdowns as drills
+- Have quiet activities ready
+- Reassure safety
+
+WITH ELDERLY/DISABLED:
+- Assist to safe location
+- Ensure medications accessible
+- Plan for mobility limitations
+- Consider hearing/vision issues
+
+PETS:
+- Contain to prevent noise
+- May need treats to keep quiet
+- Keep away from doors
+
+ENDING LOCKDOWN
+---------------
+
+ALL-CLEAR SIGNALS:
+- Official announcement
+- Verified messenger
+- Known authority figure
+- Emergency services present
+
+DON'T END EARLY:
+- Unknown voices may be threat
+- Sounds of normalcy not enough
+- Wait for verification
+- When in doubt, stay locked
+
+AFTER LOCKDOWN:
+- Account for all persons
+- Report any injuries
+- Document incident
+- Debrief with family/team
+- Address emotional needs
+
+QUICK REFERENCE
+---------------
+
+LOCKDOWN STEPS:
+1. Get inside secure room
+2. Lock and barricade door
+3. Turn off lights
+4. Stay away from windows
+5. Silence phones
+6. Stay quiet
+7. Wait for verified all-clear
+
+IF ACTIVE THREAT:
+RUN (if safe path)
+HIDE (if cannot escape)
+FIGHT (absolute last resort)
+
+DON'T:
+- Open door for unknown person
+- Make noise
+- Assume it's over without verification
+- Leave without all-clear
+
+===================
+Last updated: January 2026
+License: CC-BY-SA 4.0
+===================

@@ -1,0 +1,207 @@
+UNDERSTANDING SIRENS & ALERT SYSTEMS
+====================================
+
+When sirens sound or alerts appear on your phone, knowing what they
+mean and how to respond can save your life.
+
+TYPES OF ALERT SYSTEMS
+----------------------
+
+OUTDOOR WARNING SIRENS:
+- Public address speakers
+- Located throughout communities
+- Meant to warn those outdoors
+- Not meant to wake you up inside
+- Different sounds may mean different things
+
+EMERGENCY ALERT SYSTEM (EAS):
+- TV and radio interruption
+- Official government warnings
+- Distinctive attention tone
+- Specific message follows
+
+WIRELESS EMERGENCY ALERTS (WEA):
+- Cell phone alerts
+- No sign-up required
+- Three categories:
+  - Presidential alerts (cannot disable)
+  - Imminent threat alerts
+  - Amber alerts
+
+NOAA WEATHER RADIO:
+- 24/7 weather broadcasts
+- Can program for your county (SAME)
+- Automatic alerts
+- Works during power outages (battery)
+
+COMMUNITY NOTIFICATION:
+- Opt-in local systems
+- Phone calls, texts, emails
+- Local emergency management
+- Sign up in advance
+
+SIREN MEANINGS
+--------------
+
+IMPORTANT: Meanings vary by location!
+Know YOUR community's system.
+
+COMMON PATTERNS:
+
+STEADY TONE (1-3 minutes):
+Usually means: Take shelter/seek information
+Common for: Tornado warning, severe weather
+
+WAVERING/WARBLING TONE:
+Usually means: Take action immediately
+Common for: Various emergencies
+
+ALL-CLEAR:
+Many communities have no all-clear siren
+Listen to radio for all-clear announcement
+
+ATTACK WARNING (legacy):
+Warbling tone up and down
+Nuclear/attack warning
+Rarely tested, may not exist in your area
+
+WHAT TO DO WHEN YOU HEAR SIRENS
+-------------------------------
+
+1. GO INSIDE IMMEDIATELY
+   Sirens warn those outdoors
+
+2. SEEK INFORMATION
+   - Radio (AM/FM or weather radio)
+   - TV
+   - Phone alerts
+   - Internet (if available)
+
+3. DON'T ASSUME WHAT IT MEANS
+   Wait for official information
+
+4. TAKE PROTECTIVE ACTION
+   Based on the threat type
+
+5. WAIT FOR ALL-CLEAR
+   Don't go outside until cleared
+
+WIRELESS EMERGENCY ALERTS (WEA)
+-------------------------------
+
+PRESIDENTIAL ALERTS:
+- National-level emergencies
+- Cannot be disabled
+- Highest priority
+
+EXTREME THREATS:
+- Imminent danger to life
+- Tornado, tsunami, etc.
+- Can be disabled (not recommended)
+
+SEVERE THREATS:
+- Less immediate danger
+- Flash flood, etc.
+- Can be disabled
+
+AMBER ALERTS:
+- Missing children
+- Can be disabled
+
+TO ENABLE/DISABLE:
+Settings > Notifications > Emergency Alerts
+(Exact path varies by phone)
+
+RECOMMENDED: Keep all alerts enabled
+
+MONTHLY TEST ALERTS
+-------------------
+
+REGULAR TESTING:
+- First Wednesday of month (many areas)
+- Usually during daytime
+- Tests ensure systems work
+- Should be announced as tests
+
+IF YOU HEAR TEST:
+- No action needed
+- System is working
+- Pay attention to format for real event
+
+BUILDING YOUR ALERT SYSTEM
+--------------------------
+
+LAYERS OF ALERTS:
+
+1. NOAA Weather Radio
+   - Battery/hand-crank
+   - Automatic alerts
+   - Works without power/internet
+
+2. Wireless Emergency Alerts
+   - Already on your phone
+   - Keep enabled
+
+3. Local notification system
+   - Sign up with your county
+   - Provides local detail
+
+4. News apps
+   - Local TV station apps
+   - Weather apps
+   - Set up notifications
+
+5. Social media
+   - Follow local emergency management
+   - As backup, not primary
+
+RESPONDING TO ALERTS
+--------------------
+
+TORNADO WARNING:
+Shelter immediately
+Interior room, lowest floor
+Away from windows
+
+FLASH FLOOD WARNING:
+Move to higher ground
+Don't drive through water
+
+TSUNAMI WARNING:
+Move inland or to high ground immediately
+Don't wait for shaking
+
+SEVERE THUNDERSTORM WARNING:
+Go inside
+Avoid windows
+
+CHEMICAL/HAZMAT:
+Shelter in place
+Close windows/doors
+Turn off HVAC
+
+QUICK REFERENCE
+---------------
+
+WHEN SIRENS SOUND:
+1. Go inside
+2. Get information (radio, TV, phone)
+3. Take action based on threat
+4. Wait for all-clear
+
+WEA ALERTS:
+Presidential = can't disable
+Extreme threat = severe danger
+Severe threat = significant danger
+Amber = missing child
+
+IMPORTANT:
+Know YOUR local siren meanings
+Test alerts are normal
+Keep phone alerts enabled
+Have backup information sources
+
+====================================
+Last updated: January 2026
+License: CC-BY-SA 4.0
+====================================

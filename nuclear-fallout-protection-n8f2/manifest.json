@@ -1,0 +1,69 @@
+{
+  "id": "n8f2",
+  "title": "Nuclear Fallout Protection",
+  "description": "Critical survival information for nuclear fallout events. Covers immediate actions, shelter selection, decontamination, and long-term protection strategies.",
+  "version": "1.0.0",
+  "formats": {
+    "mdx": {
+      "file": "index.mdx",
+      "description": "Interactive guide with animations, diagrams, and step-by-step components",
+      "features": ["interactive", "animated", "components"],
+      "requirements": ["react", "mdx-runtime"],
+      "priority": 1
+    },
+    "txt": {
+      "file": "index.txt",
+      "description": "Plain text version for maximum compatibility and offline use",
+      "features": ["offline", "printable", "universal"],
+      "requirements": [],
+      "priority": 3
+    }
+  },
+  "assets": {
+    "images": [
+      {
+        "file": "shelter-diagram.svg",
+        "alt": "Diagram showing safe and danger zones within a house during nuclear fallout",
+        "type": "diagram"
+      },
+      {
+        "file": "radiation-decay.svg",
+        "alt": "Chart showing radiation decay over time following the 7-10 rule",
+        "type": "chart"
+      },
+      {
+        "file": "protection-factors.svg",
+        "alt": "Bar chart comparing protection factors of different shelter types",
+        "type": "chart"
+      }
+    ]
+  },
+  "metadata": {
+    "category": "survival",
+    "tags": ["nuclear", "fallout", "radiation", "shelter", "emergency", "cbr"],
+    "estimatedReadTime": "8 minutes",
+    "difficulty": "essential",
+    "lastUpdated": "2026-01-31",
+    "license": "cc-by-sa-4.0"
+  },
+  "formatSelection": {
+    "description": "System should select best format based on device capabilities",
+    "rules": [
+      {
+        "condition": "supports_mdx && supports_react",
+        "format": "mdx",
+        "reason": "Full interactive experience"
+      },
+      {
+        "condition": "supports_markdown",
+        "format": "txt",
+        "reason": "Readable fallback"
+      },
+      {
+        "condition": "default",
+        "format": "txt",
+        "reason": "Universal compatibility"
+      }
+    ]
+  }
+}

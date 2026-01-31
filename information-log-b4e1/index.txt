@@ -1,0 +1,215 @@
+EMERGENCY INFORMATION LOG
+=========================
+
+Maintaining a written log during emergencies helps track what's
+happening, decisions made, and creates a record for later use.
+
+WHY KEEP A LOG
+--------------
+
+DURING EMERGENCY:
+- Track changing situation
+- Remember what happened when
+- Record decisions and reasons
+- Track resources used
+- Note contacts made
+
+AFTER EMERGENCY:
+- Insurance claims
+- Legal documentation
+- Lessons learned
+- FEMA/assistance applications
+- Personal record
+
+WHAT TO LOG
+-----------
+
+BASIC ENTRIES:
+Date: __________
+Time: __________
+What happened: _________________________________
+Source of information: _________________________
+Actions taken: _________________________________
+Decisions made: ________________________________
+Why: __________________________________________
+
+SPECIFIC ITEMS TO RECORD:
+- Official announcements
+- Weather/conditions changes
+- Family status updates
+- Resource status
+- Contacts with authorities
+- Damage discovered
+- Expenses incurred
+- Photos taken (note numbers/files)
+
+LOG FORMAT OPTIONS
+------------------
+
+SIMPLE NOTEBOOK:
+Just write entries chronologically
+Include date, time, event, source
+
+STRUCTURED LOG:
+Pre-printed forms
+Consistent categories
+Easy to reference
+
+DIGITAL LOG:
+Phone notes app
+Photos with timestamps
+Voice memos
+
+MULTIPLE METHODS:
+Backup in case one is lost
+Paper + digital ideal
+
+SAMPLE LOG PAGE
+---------------
+
+EMERGENCY LOG - DAY ___
+
+Date: _______________
+Location: _______________
+Conditions: _______________
+
+TIME | EVENT/INFORMATION | SOURCE | ACTION TAKEN
+-----|-------------------|--------|-------------
+     |                   |        |
+     |                   |        |
+     |                   |        |
+     |                   |        |
+     |                   |        |
+
+RESOURCES USED TODAY:
+- Water: _______________
+- Food: _______________
+- Fuel: _______________
+- Other: _______________
+
+CONTACTS MADE:
+- _______________
+- _______________
+
+DAMAGE/ISSUES NOTED:
+- _______________
+- _______________
+
+DECISIONS MADE:
+Decision: _______________
+Reason: _______________
+
+PHOTOS TAKEN:
+- _______________
+
+TOMORROW'S PRIORITIES:
+1. _______________
+2. _______________
+
+LOGGING PRACTICES
+-----------------
+
+TIMING:
+- Log significant events as they happen
+- Review and summarize daily
+- Don't try to remember everything later
+
+ACCURACY:
+- Record exact times when possible
+- Note sources of information
+- Be factual, not emotional
+- Record what you observed vs. heard
+
+COMPLETENESS:
+- Better to over-document
+- Include "nothing happened" entries
+- Note routine activities too
+- Record resource usage
+
+PRESERVATION:
+- Keep log dry and safe
+- Take photos of written log
+- Store copies separately
+- Don't lose your documentation
+
+USING LOG FOR CLAIMS
+--------------------
+
+INSURANCE CLAIMS:
+Document before cleanup:
+- Photos of all damage
+- List of damaged items
+- Dates of damage discovered
+- Temporary repair costs
+- All related expenses
+
+FEMA APPLICATIONS:
+- Dates of disaster impact
+- Actions taken
+- Expenses incurred
+- Damage timeline
+
+LEGAL PURPOSES:
+- Chronological record
+- Factual observations
+- Decision rationale
+- Contacts and communications
+
+DIGITAL LOGGING TIPS
+--------------------
+
+PHOTOS:
+- Enable timestamps
+- Back up immediately
+- Note what each photo shows
+- Capture context, not just damage
+
+VOICE MEMOS:
+- Speak date and time
+- Describe situation
+- Note location
+- Summarize daily
+
+APPS:
+- Notes apps work
+- Emergency apps may have log features
+- Cloud backup when possible
+- Don't rely solely on digital
+
+QUICK LOG TEMPLATE
+------------------
+
+[Date] [Time]
+EVENT: _______________
+SOURCE: _______________
+ACTION: _______________
+NOTES: _______________
+
+QUICK REFERENCE
+---------------
+
+LOG DAILY:
+- Time of events
+- What happened
+- Source of information
+- Actions taken
+- Resources used
+- Contacts made
+- Damage noted
+- Decisions and why
+
+PRESERVE LOG:
+- Keep dry and safe
+- Photograph written pages
+- Store copies separately
+
+FOR CLAIMS:
+- Photos before cleanup
+- All expenses/receipts
+- Timeline of events
+- Specific damage descriptions
+
+=========================
+Last updated: January 2026
+License: CC-BY-SA 4.0
+=========================

@@ -1,0 +1,357 @@
+{/* Nuclear Fallout Protection - Advanced Interactive Guide */}
+
+import { useState } from 'react'
+import { AlertTriangle, Shield, Clock, Home, Droplets, Wind } from 'lucide-react'
+
+export const CriticalAlert = ({ children }) => (
+  <div className="bg-red-900/20 border-2 border-red-500 rounded-lg p-4 my-4 animate-pulse-slow">
+    <div className="flex items-center gap-2 text-red-400 font-bold mb-2">
+      <AlertTriangle className="w-6 h-6" />
+      <span className="text-lg">CRITICAL - DO THIS FIRST</span>
+    </div>
+    <div className="text-red-100">{children}</div>
+  </div>
+)
+
+export const TimelineBadge = ({ time, label }) => (
+  <div className="inline-flex items-center gap-2 bg-amber-900/30 border border-amber-500 rounded-full px-3 py-1 text-amber-300 text-sm">
+    <Clock className="w-4 h-4" />
+    <span className="font-mono font-bold">{time}</span>
+    <span className="opacity-75">|</span>
+    <span>{label}</span>
+  </div>
+)
+
+export const ProtectionMeter = ({ material, factor }) => {
+  const width = Math.min((factor / 1000) * 100, 100)
+  return (
+    <div className="my-2">
+      <div className="flex justify-between text-sm mb-1">
+        <span>{material}</span>
+        <span className="font-mono">{factor}x protection</span>
+      </div>
+      <div className="h-3 bg-gray-700 rounded-full overflow-hidden">
+        <div 
+          className="h-full bg-gradient-to-r from-green-500 to-emerald-400 transition-all duration-1000"
+          style={{ width: `${width}%` }}
+        />
+      </div>
+    </div>
+  )
+}
+
+export const ShelterDiagram = () => (
+  <div className="my-6 p-4 bg-gray-800/50 rounded-lg">
+    <svg viewBox="0 0 400 300" className="w-full max-w-md mx-auto">
+      {/* House outline */}
+      <path d="M50 150 L200 50 L350 150 L350 280 L50 280 Z" fill="#1a1a2e" stroke="#4a5568" strokeWidth="2"/>
+      
+      {/* Roof */}
+      <path d="M50 150 L200 50 L350 150" fill="none" stroke="#718096" strokeWidth="3"/>
+      
+      {/* Windows - X marks */}
+      <rect x="80" y="180" width="40" height="50" fill="#2d3748" stroke="#e53e3e" strokeWidth="2"/>
+      <line x1="80" y1="180" x2="120" y2="230" stroke="#e53e3e" strokeWidth="2"/>
+      <line x1="120" y1="180" x2="80" y2="230" stroke="#e53e3e" strokeWidth="2"/>
+      
+      <rect x="280" y="180" width="40" height="50" fill="#2d3748" stroke="#e53e3e" strokeWidth="2"/>
+      <line x1="280" y1="180" x2="320" y2="230" stroke="#e53e3e" strokeWidth="2"/>
+      <line x1="320" y1="180" x2="280" y2="230" stroke="#e53e3e" strokeWidth="2"/>
+      
+      {/* Safe room - highlighted */}
+      <rect x="150" y="200" width="100" height="80" fill="#065f46" stroke="#10b981" strokeWidth="3"/>
+      <text x="200" y="245" textAnchor="middle" fill="#10b981" fontSize="12" fontWeight="bold">SAFE ZONE</text>
+      
+      {/* Basement indicator */}
+      <rect x="50" y="280" width="300" height="40" fill="#1e3a5f" stroke="#3b82f6" strokeWidth="2"/>
+      <text x="200" y="305" textAnchor="middle" fill="#60a5fa" fontSize="11">BASEMENT = BEST PROTECTION</text>
+      
+      {/* Arrows showing interior */}
+      <path d="M200 150 L200 195" stroke="#10b981" strokeWidth="2" markerEnd="url(#arrowhead)"/>
+      
+      {/* Labels */}
+      <text x="100" y="170" fill="#ef4444" fontSize="10">AVOID</text>
+      <text x="300" y="170" fill="#ef4444" fontSize="10">AVOID</text>
+      
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#10b981"/>
+        </marker>
+      </defs>
+    </svg>
+    <p className="text-center text-sm text-gray-400 mt-2">Interior rooms and basements provide the best protection</p>
+  </div>
+)
+
+export const DecontaminationSteps = () => {
+  const [currentStep, setCurrentStep] = useState(0)
+  const steps = [
+    { title: "Remove Clothing", desc: "Removes ~90% of contamination", icon: "👔" },
+    { title: "Bag It", desc: "Seal in plastic, set aside", icon: "🛍️" },
+    { title: "Shower", desc: "Soap and water, head to toe", icon: "🚿" },
+    { title: "Shampoo Only", desc: "NO conditioner (binds particles)", icon: "🧴" },
+    { title: "Clean Clothes", desc: "Put on uncontaminated clothing", icon: "👕" }
+  ]
+  
+  return (
+    <div className="my-6 p-4 bg-gray-800/50 rounded-lg">
+      <div className="flex justify-between mb-4">
+        {steps.map((step, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrentStep(i)}
+            className={`w-12 h-12 rounded-full flex items-center justify-center text-xl transition-all ${
+              i === currentStep 
+                ? 'bg-blue-600 scale-110' 
+                : i < currentStep 
+                  ? 'bg-green-600' 
+                  : 'bg-gray-600'
+            }`}
+          >
+            {step.icon}
+          </button>
+        ))}
+      </div>
+      <div className="text-center p-4 bg-gray-900/50 rounded animate-fade-in">
+        <h4 className="text-xl font-bold text-blue-300">Step {currentStep + 1}: {steps[currentStep].title}</h4>
+        <p className="text-gray-300 mt-2">{steps[currentStep].desc}</p>
+      </div>
+      <div className="flex justify-between mt-4">
+        <button 
+          onClick={() => setCurrentStep(Math.max(0, currentStep - 1))}
+          className="px-4 py-2 bg-gray-600 rounded hover:bg-gray-500 disabled:opacity-50"
+          disabled={currentStep === 0}
+        >
+          Previous
+        </button>
+        <button 
+          onClick={() => setCurrentStep(Math.min(steps.length - 1, currentStep + 1))}
+          className="px-4 py-2 bg-blue-600 rounded hover:bg-blue-500 disabled:opacity-50"
+          disabled={currentStep === steps.length - 1}
+        >
+          Next
+        </button>
+      </div>
+    </div>
+  )
+}
+
+export const CountdownTimer = ({ hours = 24 }) => (
+  <div className="my-4 p-4 bg-amber-900/20 border border-amber-500 rounded-lg text-center">
+    <p className="text-amber-300 text-sm mb-2">Most dangerous fallout period</p>
+    <div className="text-4xl font-mono font-bold text-amber-400">
+      FIRST {hours} HOURS
+    </div>
+    <p className="text-amber-200/70 text-sm mt-2">
+      Radiation decreases by ~90% after this period
+    </p>
+  </div>
+)
+
+# Nuclear Fallout Protection
+
+<CriticalAlert>
+**YOU HAVE MINUTES TO ACT.** If you receive warning of a nuclear event, immediately execute these steps. Do not wait to gather belongings. Do not wait for others. Every second counts.
+</CriticalAlert>
+
+---
+
+## 🚨 IMMEDIATE ACTIONS (First 10 Minutes)
+
+<TimelineBadge time="0-10 min" label="Critical Window" />
+
+### 1. GET INSIDE IMMEDIATELY
+
+The single most important action. Any building is better than outside.
+
+<div className="grid md:grid-cols-2 gap-4 my-4">
+  <div className="p-4 bg-green-900/20 border border-green-500 rounded-lg">
+    <h4 className="text-green-400 font-bold flex items-center gap-2">
+      <Shield className="w-5 h-5" /> BEST SHELTER
+    </h4>
+    <ul className="mt-2 space-y-1 text-green-200">
+      <li>• Underground (basement, subway)</li>
+      <li>• Center of large concrete building</li>
+      <li>• Middle floors of high-rise</li>
+    </ul>
+  </div>
+  <div className="p-4 bg-red-900/20 border border-red-500 rounded-lg">
+    <h4 className="text-red-400 font-bold flex items-center gap-2">
+      <AlertTriangle className="w-5 h-5" /> AVOID
+    </h4>
+    <ul className="mt-2 space-y-1 text-red-200">
+      <li>• Near windows</li>
+      <li>• Exterior walls</li>
+      <li>• Top floors</li>
+      <li>• Vehicles (minimal protection)</li>
+    </ul>
+  </div>
+</div>
+
+<ShelterDiagram />
+
+### 2. SEAL THE SPACE
+
+<div className="flex flex-wrap gap-2 my-3">
+  <span className="px-3 py-1 bg-blue-600 rounded-full text-sm">Close all windows</span>
+  <span className="px-3 py-1 bg-blue-600 rounded-full text-sm">Close all doors</span>
+  <span className="px-3 py-1 bg-blue-600 rounded-full text-sm">Turn off HVAC</span>
+  <span className="px-3 py-1 bg-blue-600 rounded-full text-sm">Close fireplace damper</span>
+  <span className="px-3 py-1 bg-blue-600 rounded-full text-sm">Seal vents with tape/wet cloth</span>
+</div>
+
+### 3. IF YOU WERE OUTSIDE
+
+**Decontaminate immediately.** Do this BEFORE joining others inside.
+
+<DecontaminationSteps />
+
+---
+
+## ⏱️ THE CRITICAL FIRST 24 HOURS
+
+<CountdownTimer hours={24} />
+
+Fallout radiation intensity follows a predictable decay pattern:
+
+| Time After Event | Radiation Level |
+|-----------------|-----------------|
+| 1 hour | 100% (most dangerous) |
+| 7 hours | ~10% |
+| 24 hours | ~1% |
+| 2 weeks | ~0.1% |
+
+**The "7-10 Rule":** For every 7-fold increase in time, radiation decreases by 10x.
+
+---
+
+## 🏠 Shelter Protection Factors
+
+Different materials provide different levels of protection. The **Protection Factor (PF)** indicates how much radiation is reduced.
+
+<ProtectionMeter material="Open air" factor={1} />
+<ProtectionMeter material="Wood frame house" factor={2} />
+<ProtectionMeter material="Brick house" factor={10} />
+<ProtectionMeter material="Concrete building" factor={40} />
+<ProtectionMeter material="Basement (3ft earth)" factor={200} />
+<ProtectionMeter material="Underground shelter" factor={1000} />
+
+---
+
+## 💧 Water & Food Safety
+
+<div className="my-4 p-4 bg-blue-900/20 border border-blue-500 rounded-lg">
+  <h4 className="text-blue-400 font-bold flex items-center gap-2 mb-3">
+    <Droplets className="w-5 h-5" /> Water Guidelines
+  </h4>
+  <div className="space-y-2">
+    <div className="flex items-center gap-2">
+      <span className="text-green-400">✓</span>
+      <span>Sealed containers (bottles, cans) = SAFE</span>
+    </div>
+    <div className="flex items-center gap-2">
+      <span className="text-green-400">✓</span>
+      <span>Municipal water (pipes underground) = Usually SAFE</span>
+    </div>
+    <div className="flex items-center gap-2">
+      <span className="text-red-400">✗</span>
+      <span>Open containers = CONTAMINATED</span>
+    </div>
+    <div className="flex items-center gap-2">
+      <span className="text-red-400">✗</span>
+      <span>Well water = TEST FIRST</span>
+    </div>
+  </div>
+</div>
+
+### Food Safety
+
+| Food Type | Status |
+|-----------|--------|
+| Sealed cans/packages | ✅ Safe (wash exterior) |
+| Refrigerator food | ✅ Safe if sealed |
+| Food in closed cabinets | ⚠️ Wash containers |
+| Open food | ❌ Discard |
+| Fresh produce (outdoors) | ❌ Discard |
+
+---
+
+## 📻 Information Sources
+
+Monitor these for official guidance:
+
+1. **Emergency Alert System (EAS)** - TV/Radio
+2. **NOAA Weather Radio** - All hazards
+3. **Local emergency management**
+4. **FEMA** - Federal guidance
+
+<div className="my-4 p-4 bg-purple-900/20 border border-purple-500 rounded-lg">
+  <p className="text-purple-300">
+    <strong>Do NOT</strong> leave shelter to seek information. Use radio. 
+    Leaving shelter increases exposure.
+  </p>
+</div>
+
+---
+
+## 🚪 When to Leave Shelter
+
+<CriticalAlert>
+Do NOT leave until official all-clear OR at least 24 hours have passed and you must leave for critical supplies.
+</CriticalAlert>
+
+### If You Must Leave Early
+
+1. Minimize time outside (minutes, not hours)
+2. Cover all skin
+3. Wear mask/cover nose and mouth
+4. Do NOT touch anything unnecessarily
+5. Decontaminate immediately upon return
+6. Do not bring outside items inside
+
+---
+
+## 📋 Quick Action Checklist
+
+```
+□ GET INSIDE (any building, NOW)
+□ Go to interior room / basement
+□ CLOSE all windows and doors
+□ Turn OFF ventilation / HVAC
+□ SEAL gaps (tape, wet towels)
+□ DECONTAMINATE if exposed outside
+□ MONITOR radio for updates
+□ STAY INSIDE minimum 24 hours
+□ RATION supplies if needed
+```
+
+---
+
+## Additional Resources
+
+<div className="grid md:grid-cols-2 gap-4 my-4">
+  <a href="#radiation-safety" className="block p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+    <h4 className="font-bold text-blue-400">Understanding Radiation</h4>
+    <p className="text-sm text-gray-400">Time, distance, shielding principles</p>
+  </a>
+  <a href="#decontamination" className="block p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+    <h4 className="font-bold text-blue-400">Full Decontamination Guide</h4>
+    <p className="text-sm text-gray-400">Detailed step-by-step procedures</p>
+  </a>
+  <a href="#shelter-improvement" className="block p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+    <h4 className="font-bold text-blue-400">Improving Your Shelter</h4>
+    <p className="text-sm text-gray-400">How to increase protection factor</p>
+  </a>
+  <a href="#long-term" className="block p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+    <h4 className="font-bold text-blue-400">Long-Term Survival</h4>
+    <p className="text-sm text-gray-400">Beyond the first 24 hours</p>
+  </a>
+</div>
+
+---
+
+<div className="text-center text-gray-500 text-sm mt-8">
+  Last updated: January 2026 | License: CC-BY-SA 4.0
+  
+  **This is general preparedness information. Follow official guidance during any actual emergency.**
+</div>

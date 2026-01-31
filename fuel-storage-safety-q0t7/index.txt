@@ -1,0 +1,255 @@
+FUEL STORAGE SAFETY
+===================
+
+Storing fuel for emergencies requires understanding the risks.
+Improper storage can cause fires, explosions, and toxic exposure.
+
+FUEL TYPES AND USES
+-------------------
+
+GASOLINE:
+Uses: Vehicles, generators, some equipment
+Storage life: 3-6 months (up to 1 year with stabilizer)
+Containers: Approved gas cans only (red)
+
+DIESEL:
+Uses: Diesel vehicles, some generators
+Storage life: 6-12 months (longer with treatment)
+Containers: Approved diesel cans (yellow)
+
+PROPANE:
+Uses: Grills, heaters, some generators
+Storage life: Indefinite (check tank condition)
+Containers: Approved propane tanks only
+
+KEROSENE:
+Uses: Heaters, lamps
+Storage life: 2-5 years if stored properly
+Containers: Approved kerosene cans (blue)
+
+WHITE GAS/CAMP FUEL:
+Uses: Camp stoves, some lanterns
+Storage life: 5-7 years sealed
+Containers: Original container or approved
+
+WOOD:
+Uses: Fireplace, wood stove
+Storage life: Indefinite if kept dry
+Storage: Covered, off ground, away from house
+
+GENERAL STORAGE RULES
+---------------------
+
+FOR ALL LIQUID FUELS:
+
+1. CONTAINER REQUIREMENTS:
+   - Use only approved containers
+   - Containers must be in good condition
+   - Keep caps/lids tight
+   - Don't overfill (leave expansion space)
+   - Label clearly if not color-coded
+
+2. STORAGE LOCATION:
+   - Outdoors preferred
+   - If indoors: detached structure (shed, garage)
+   - Away from living spaces
+   - Away from any ignition sources
+   - Cool, well-ventilated area
+   - On stable, level surface
+   - Protected from sunlight
+
+3. QUANTITY LIMITS:
+   - Check local fire codes
+   - Typical home limit: 25 gallons gasoline
+   - Keep minimum practical amount
+   - More fuel = more risk
+
+4. SAFETY MEASURES:
+   - Fire extinguisher nearby
+   - No smoking near storage
+   - No open flames
+   - Ground containers when filling
+   - Clean up spills immediately
+
+GASOLINE STORAGE
+----------------
+
+RISKS:
+- Highly flammable
+- Vapors are explosive
+- Toxic if inhaled
+- Degrades over time
+
+PROPER STORAGE:
+- Use only approved red gas cans
+- Maximum 5 gallons per container typical
+- Store outdoors if possible
+- In detached garage/shed if needed
+- NEVER store in basement or living area
+- Keep away from water heaters, furnaces
+- Store below 80°F if possible
+
+EXTENDING SHELF LIFE:
+- Add fuel stabilizer (Sta-Bil, PRI-G)
+- Fill containers full (reduces moisture)
+- Rotate stock (use oldest first)
+- With stabilizer: up to 1-2 years
+- Without stabilizer: 3-6 months
+
+ROTATION SCHEDULE:
+- Use in vehicles every 3-6 months
+- Refill with fresh fuel
+- Treat with stabilizer upon storage
+
+PROPANE STORAGE
+---------------
+
+TANKS:
+- 20 lb (grill size): Most common
+- 100 lb tanks: Larger capacity
+- Fixed tanks: Requires professional install
+
+SAFETY:
+- Store upright only
+- Store outdoors
+- Keep valve closed when not in use
+- Protect from physical damage
+- Check for leaks with soapy water
+- Transport upright and secured
+- Never store in basement/enclosed space
+
+ADVANTAGES:
+- Indefinite shelf life
+- Clean burning
+- Safe when handled properly
+
+INSPECTION:
+- Check tank date (must be recertified after 12 years)
+- Check for rust, damage
+- Check valve condition
+- Smell for leaks (propane has added odorant)
+
+KEROSENE STORAGE
+----------------
+
+REQUIREMENTS:
+- Use only K-1 (clear) kerosene for heaters
+- Blue containers designated for kerosene
+- Store in cool, dark location
+- Ensure cap is tight
+
+SHELF LIFE:
+- Can last 2-5 years properly stored
+- Older kerosene may produce more soot
+- Don't use if water-contaminated
+
+SAFETY:
+- Keep away from heat sources
+- Ensure good ventilation
+- Never mix with other fuels
+
+WOOD STORAGE
+------------
+
+SEASONING:
+- Fresh-cut wood: Too wet to burn efficiently
+- Seasoning time: 6-12 months
+- Properly seasoned: 20% moisture or less
+
+STORAGE BEST PRACTICES:
+- Off the ground (pallets, rack)
+- Covered on top
+- Open sides for airflow
+- Away from house (pest/fire risk)
+- Split wood seasons faster
+
+QUANTITY:
+- 1 cord = 128 cubic feet (4x4x8 ft)
+- Usage varies widely by climate and use
+- 2-4 cords typical for heating season
+
+HANDLING FUEL SAFELY
+--------------------
+
+WHEN FILLING EQUIPMENT:
+
+1. Turn off equipment before fueling
+2. Let hot equipment cool
+3. Fuel outdoors when possible
+4. Ground container to prevent static
+5. Don't overfill
+6. Wipe up spills
+7. Move away before starting
+
+WHEN TRANSPORTING:
+
+1. Use approved containers
+2. Secure containers (won't tip)
+3. Ensure caps are tight
+4. Ventilate vehicle
+5. Don't transport in passenger area
+6. Don't leave in hot vehicle
+
+SPILL RESPONSE:
+1. Eliminate ignition sources
+2. Ventilate area
+3. Contain spill (absorbent material)
+4. Don't wash into drains
+5. Dispose properly
+6. Large spills: Call fire department
+
+FIRE SAFETY
+-----------
+
+FIRE EXTINGUISHER:
+- Have Class B extinguisher (flammable liquids)
+- Near but not in fuel storage area
+- Know how to use it
+- Check pressure regularly
+
+PREVENTION:
+- No smoking near fuels
+- No open flames
+- Ground containers
+- Eliminate static
+- Good ventilation
+
+IF FIRE OCCURS:
+- Small fire: Use appropriate extinguisher
+- Large fire: Evacuate, call 911
+- Don't fight large fuel fires
+- Propane tank in fire: Evacuate far distance
+
+FUEL STORAGE CHECKLIST
+----------------------
+
+[ ] Approved containers for each fuel type
+[ ] Outdoor or detached storage location
+[ ] Away from ignition sources
+[ ] Fire extinguisher nearby
+[ ] Labels on all containers
+[ ] Caps/valves tight
+[ ] Fuel stabilizer for gasoline
+[ ] Rotation schedule established
+[ ] Local fire code compliance
+[ ] Family knows safety rules
+
+LOCAL REGULATIONS
+-----------------
+
+Check local fire codes for:
+- Maximum quantities allowed
+- Required container types
+- Storage location requirements
+- Permit requirements
+- Inspection requirements
+
+Typical residential limits:
+- Gasoline: 25 gallons
+- Propane: Varies (often 2x 20lb tanks)
+- Kerosene: Often same as gasoline
+
+===================
+Last updated: January 2026
+License: CC-BY-SA 4.0
+===================

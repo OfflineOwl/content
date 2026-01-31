@@ -1,0 +1,205 @@
+FAMILY SIGNALING & CHECK-IN METHODS
+====================================
+
+When phones don't work, how do you let family know you're safe?
+This guide covers non-electronic communication methods.
+
+PRE-ESTABLISHED SIGNALS
+-----------------------
+
+VISUAL SIGNALS AT HOME:
+Agree on signals that family will recognize:
+
+Examples:
+- Colored item in window = we're home/safe
+- Specific item on porch = we've evacuated
+- Flag or marker at rally point = we've been here
+- Chalk mark on mailbox = check hidden message
+
+Create your own system:
+- Simple, easy to spot
+- Unique to your family
+- Placed in agreed locations
+- Changed periodically for security
+
+CHECK-IN SCHEDULE:
+If separated without communication:
+- Agree to check specific locations at specific times
+- Example: Check home every 6 hours
+- Check rally point at noon daily
+- Leave messages at agreed spot
+
+RALLY POINT SIGNALS:
+At your meeting points, establish:
+- Where to leave messages
+- How to indicate you've been there
+- Direction of travel if moved on
+- Time to wait before moving
+
+AUDIO SIGNALS
+-------------
+
+WHISTLE CODES:
+Universal: 3 short blasts = distress/help
+
+Family codes (examples):
+- 2 short = I'm here/acknowledgment
+- 3 short = need help/come to me
+- 1 long = all clear
+- Pattern (dot-dot-dash) = recognition
+
+OTHER AUDIO:
+- Car horn patterns
+- Air horn
+- Banging on metal
+- Voice calls (specific phrases)
+
+WRITTEN MESSAGES
+----------------
+
+MESSAGE SYSTEM:
+Establish where to leave notes:
+- Under specific rock/object at rally point
+- Inside mailbox
+- Taped inside shed door
+- In hidden family spot
+
+MESSAGE CONTENTS:
+Include:
+- Date and time
+- Who is writing
+- Current status
+- Where going next
+- When returning or next check
+- Code words if security needed
+
+PROTECT MESSAGES:
+- Waterproof container
+- Zip-lock bags
+- Hidden from casual observation
+- Changed locations if compromised
+
+VEHICLE SIGNALS
+---------------
+
+IF DRIVING BY HOME:
+Pre-arranged signals from car:
+- Horn pattern
+- Specific parking position
+- Item on dashboard
+
+IF LEAVING VEHICLE:
+- Note on dashboard with destination
+- Message in agreed hidden spot
+- Direction indicator
+
+OUT-OF-AREA CONTACT
+-------------------
+
+MOST IMPORTANT TOOL:
+Designate someone 100+ miles away who:
+- All family members can contact
+- Relays status between family
+- Knows your plan and rally points
+- Has your emergency information
+
+HOW IT WORKS:
+1. Each family member contacts OAC
+2. OAC records status and location
+3. OAC relays information to others
+4. Central hub for communication
+
+WHY OUT OF AREA:
+- Long distance often works when local doesn't
+- Different infrastructure may be intact
+- Not affected by same emergency
+- Can coordinate from safe location
+
+RADIO COMMUNICATION
+-------------------
+
+IF YOU HAVE RADIOS:
+- Agree on channel/frequency
+- Set check-in times
+- Keep transmissions brief
+- Use code words for locations
+
+FRS/GMRS RADIOS:
+- Decide on primary and backup channel
+- Privacy codes (don't provide security)
+- Check-in schedule
+- Call signs for each family member
+
+HAM RADIO:
+- Can relay messages long distances
+- Requires license
+- Can contact emergency networks
+- Family members don't need license to receive
+
+COMMUNITY SIGNALS
+-----------------
+
+NEIGHBORHOOD COMMUNICATION:
+Establish with trusted neighbors:
+- All-clear signals
+- Help needed signals
+- Check-on-me system
+- Mutual watch schedules
+
+VISUAL COMMUNITY SIGNALS:
+Examples used historically:
+- Ribbon on mailbox = need assistance
+- Flag in window = all okay
+- Specific pattern = specific message
+
+CREATING YOUR FAMILY SYSTEM
+---------------------------
+
+STEP 1: CHOOSE SIGNALS
+- Visual signals for home
+- Audio signals for close range
+- Message locations
+
+STEP 2: DOCUMENT
+- Write down all signals/codes
+- Give copy to each family member
+- Give copy to OAC
+
+STEP 3: PRACTICE
+- Do a communication drill
+- Identify problems
+- Refine system
+
+STEP 4: MAINTAIN
+- Update as needed
+- Practice periodically
+- Everyone must remember
+
+QUICK REFERENCE
+---------------
+
+WHISTLE SIGNALS:
+3 short = help/distress
+(Create your own family codes)
+
+VISUAL SIGNALS:
+_______________ in window = _______________
+_______________ on porch = _______________
+
+MESSAGE LOCATION:
+Primary: _______________
+Backup: _______________
+
+OUT-OF-AREA CONTACT:
+Name: _______________
+Phone: _______________
+Check-in times: _______________
+
+RADIO:
+Primary channel: _______________
+Backup channel: _______________
+
+====================================
+Last updated: January 2026
+License: CC-BY-SA 4.0
+====================================
