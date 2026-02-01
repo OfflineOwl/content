@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quarantine vs Isolation Explained</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-purple: #a855f7;
+      --accent-yellow: #eab308;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-purple); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    
+    .critical-info {
+      background: rgba(168, 85, 247, 0.15);
+      border: 2px solid var(--accent-purple);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+    }
+    
+    .critical-info h4 { color: var(--accent-purple); margin-top: 0; display: flex; align-items: center; gap: 0.5rem; }
+    
+    /* Decision Tool */
+    .decision-tool {
+      background: rgba(30, 30, 50, 0.5);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .decision-tool h4 { color: var(--accent-blue); margin-top: 0; }
+    
+    .question-box {
+      background: rgba(15, 15, 30, 0.5);
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    
+    .question-box p { font-size: 1.1rem; margin-bottom: 1rem; }
+    
+    .btn-group { display: flex; gap: 0.75rem; }
+    
+    .btn {
+      flex: 1;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .btn-yes { background: var(--accent-blue); color: white; }
+    .btn-yes:hover { background: #2563eb; }
+    .btn-no { background: #4b5563; color: white; }
+    .btn-no:hover { background: #6b7280; }
+    .btn-reset { background: #4b5563; color: white; padding: 0.5rem 1rem; margin-top: 1rem; }
+    .btn-reset:hover { background: #6b7280; }
+    
+    .progress-dots { display: flex; justify-content: center; gap: 0.5rem; margin-top: 1rem; }
+    .dot { width: 12px; height: 12px; border-radius: 50%; background: #4b5563; }
+    .dot.answered { background: var(--accent-blue); }
+    .dot.current { background: var(--accent-blue); animation: pulse 1.5s infinite; }
+    
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+    
+    .result-box {
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      margin: 1rem 0;
+    }
+    
+    .result-box.isolation { background: rgba(239, 68, 68, 0.2); border: 2px solid var(--accent-red); }
+    .result-box.isolation h5 { color: var(--accent-red); }
+    .result-box.quarantine { background: rgba(234, 179, 8, 0.2); border: 2px solid var(--accent-yellow); }
+    .result-box.quarantine h5 { color: var(--accent-yellow); }
+    .result-box.neither { background: rgba(34, 197, 94, 0.2); border: 2px solid var(--accent-green); }
+    .result-box.neither h5 { color: var(--accent-green); }
+    
+    .result-box h5 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    .result-icon { font-size: 3rem; margin-bottom: 0.5rem; }
+    
+    /* Comparison Table */
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .comparison-table th, .comparison-table td {
+      padding: 0.75rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    .comparison-table th:first-child, .comparison-table td:first-child { text-align: left; font-weight: bold; }
+    .comparison-table thead th { background: var(--bg-tertiary); }
+    .comparison-table .isolation-col { background: rgba(239, 68, 68, 0.1); }
+    .comparison-table .quarantine-col { background: rgba(234, 179, 8, 0.1); }
+    .comparison-table .header-isolation { color: var(--accent-red); }
+    .comparison-table .header-quarantine { color: var(--accent-yellow); }
+    
+    /* Duration Calculator */
+    .duration-calc {
+      background: rgba(30, 30, 50, 0.5);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .duration-calc h4 { color: var(--accent-amber); margin-top: 0; }
+    
+    .disease-btns { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
+    
+    .disease-btn {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 8px;
+      background: #4b5563;
+      color: white;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .disease-btn.active { background: var(--accent-amber); }
+    .disease-btn:hover { background: #6b7280; }
+    .disease-btn.active:hover { background: #d97706; }
+    
+    .duration-results {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    
+    .duration-card {
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+    
+    .duration-card.quarantine { background: rgba(234, 179, 8, 0.2); border: 1px solid var(--accent-yellow); }
+    .duration-card.quarantine .label { color: var(--accent-yellow); }
+    .duration-card.isolation { background: rgba(239, 68, 68, 0.2); border: 1px solid var(--accent-red); }
+    .duration-card.isolation .label { color: var(--accent-red); }
+    .duration-card.incubation { background: rgba(59, 130, 246, 0.2); border: 1px solid var(--accent-blue); }
+    .duration-card.incubation .label { color: var(--accent-blue); }
+    
+    .duration-card .label { font-size: 0.85rem; margin-bottom: 0.25rem; }
+    .duration-card .value { font-size: 1.5rem; font-weight: bold; }
+    
+    /* Supplies Checklist */
+    .supplies-checklist {
+      background: rgba(30, 30, 50, 0.5);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .supplies-checklist h4 { color: var(--accent-green); margin-top: 0; }
+    
+    .progress-bar {
+      height: 8px;
+      background: #4b5563;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+    
+    .progress-fill { height: 100%; background: var(--accent-green); transition: width 0.3s; }
+    
+    .category h5 { color: var(--text-secondary); margin: 1rem 0 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
+    
+    .items-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
+    
+    .supply-item {
+      padding: 0.5rem;
+      background: #4b5563;
+      border-radius: 6px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+    
+    .supply-item:hover { background: #6b7280; }
+    .supply-item.checked { background: rgba(34, 197, 94, 0.2); text-decoration: line-through; opacity: 0.75; }
+    
+    .checkbox {
+      width: 16px;
+      height: 16px;
+      border: 2px solid var(--border-color);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .supply-item.checked .checkbox { background: var(--accent-green); border-color: var(--accent-green); }
+    
+    /* Warning Box */
+    .warning-box {
+      background: rgba(239, 68, 68, 0.15);
+      border: 2px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+    }
+    
+    .warning-box h4 { color: var(--accent-red); margin-top: 0; }
+    .warning-list li { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; }
+    .warning-list { list-style: none; margin-left: 0; }
+    
+    .quick-ref {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    pre {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+      font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    
+    .mental-health-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .mental-health-card {
+      background: rgba(30, 30, 50, 0.5);
+      border-radius: 8px;
+      padding: 1rem;
+    }
+    
+    .mental-health-card h4 { margin-top: 0; }
+    .mental-health-card.challenges h4 { color: var(--accent-blue); }
+    .mental-health-card.coping h4 { color: var(--accent-green); }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    
+    @media (max-width: 600px) {
+      .duration-results { grid-template-columns: 1fr; }
+      .items-grid { grid-template-columns: 1fr; }
+      .mental-health-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Quarantine vs Isolation Explained</h1>
+
+<div class="critical-info">
+  <h4>🛡️ IMPORTANT DISTINCTION</h4>
+  <p><strong>These terms are often confused but serve different purposes.</strong> Understanding the difference helps you respond appropriately during disease outbreaks and protect your family.</p>
+</div>
+
+<hr>
+
+<h2>🤔 Which Do I Need?</h2>
+
+<p>Answer a few questions to find out:</p>
+
+<div class="decision-tool" id="decisionTool">
+  <h4>Do I Need Isolation or Quarantine?</h4>
+  <div id="questionContainer"></div>
+  <div class="progress-dots" id="progressDots"></div>
+  <div id="resultContainer"></div>
+</div>
+
+<hr>
+
+<h2>📊 Side-by-Side Comparison</h2>
+
+<table class="comparison-table">
+  <thead>
+    <tr>
+      <th></th>
+      <th class="isolation-col header-isolation">🛏️ ISOLATION</th>
+      <th class="quarantine-col header-quarantine">🏠 QUARANTINE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Who</td>
+      <td class="isolation-col">People who ARE sick</td>
+      <td class="quarantine-col">People who were EXPOSED</td>
+    </tr>
+    <tr>
+      <td>Confirmed Illness</td>
+      <td class="isolation-col">✅ Yes</td>
+      <td class="quarantine-col">❌ No</td>
+    </tr>
+    <tr>
+      <td>Can Spread Disease</td>
+      <td class="isolation-col">Yes (contagious)</td>
+      <td class="quarantine-col">Unknown (possible)</td>
+    </tr>
+    <tr>
+      <td>Duration</td>
+      <td class="isolation-col">Until recovered</td>
+      <td class="quarantine-col">Incubation period</td>
+    </tr>
+    <tr>
+      <td>Separation Level</td>
+      <td class="isolation-col">Dedicated room/bathroom</td>
+      <td class="quarantine-col">Distance from others</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>⏱️ Duration Reference</h2>
+
+<p>Different diseases have different quarantine and isolation periods:</p>
+
+<div class="duration-calc">
+  <h4>🕐 Duration Reference</h4>
+  <div class="disease-btns" id="diseaseButtons"></div>
+  <div class="duration-results" id="durationResults" style="display: none;"></div>
+  <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">Note: These are general guidelines. Always follow current official health guidance for your specific situation.</p>
+</div>
+
+<hr>
+
+<h2>🏠 Setting Up for Isolation</h2>
+
+<h3>The Sick Room</h3>
+
+<div style="background: rgba(239, 68, 68, 0.15); border: 1px solid var(--accent-red); border-radius: 8px; padding: 1rem; margin: 1rem 0;">
+  <h4 style="color: var(--accent-red); margin-top: 0;">Isolation Room Setup</h4>
+  <ul>
+    <li>Dedicated room with door that closes</li>
+    <li>Own bathroom if possible</li>
+    <li>Good ventilation (open window if safe)</li>
+    <li>All supplies within the room</li>
+    <li>Single designated caregiver</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>✅ Supplies Checklist</h2>
+
+<p>Make sure you have everything ready:</p>
+
+<div class="supplies-checklist">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+    <h4 style="margin: 0;">✅ Supplies Checklist</h4>
+    <span id="supplyCount" style="font-size: 0.9rem; color: var(--text-muted);">0/18 items ready</span>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" id="supplyProgress" style="width: 0%;"></div></div>
+  <div id="suppliesContainer"></div>
+</div>
+
+<hr>
+
+<h2>🧠 Mental Health During Isolation</h2>
+
+<p>Isolation and quarantine are emotionally challenging:</p>
+
+<div class="mental-health-grid">
+  <div class="mental-health-card challenges">
+    <h4>Common Challenges</h4>
+    <ul style="font-size: 0.9rem;">
+      <li>Loneliness and boredom</li>
+      <li>Anxiety about illness</li>
+      <li>Cabin fever</li>
+      <li>Disruption of routine</li>
+      <li>Financial stress</li>
+    </ul>
+  </div>
+  <div class="mental-health-card coping">
+    <h4>Coping Strategies</h4>
+    <ul style="font-size: 0.9rem;">
+      <li>Video calls with family/friends</li>
+      <li>Books, movies, games</li>
+      <li>Light exercise if able</li>
+      <li>Maintain daily routines</li>
+      <li>Limit news consumption</li>
+    </ul>
+  </div>
+</div>
+
+<hr>
+
+<h2>📋 Quick Reference</h2>
+
+<div class="quick-ref">
+<pre>ISOLATION = SICK
+├── Confirmed illness
+├── Stay separated until recovered  
+├── Caregiver uses PPE
+└── Dedicated room/bathroom
+
+QUARANTINE = EXPOSED  
+├── Was exposed, may not be sick yet
+├── Monitor for symptoms daily
+├── Stay home during incubation period
+└── May still develop illness
+
+BOTH REQUIRE:
+├── Staying home
+├── Separation from others
+├── Monitoring health
+└── Following official guidance</pre>
+</div>
+
+<hr>
+
+<h2>⚠️ When to Seek Medical Care</h2>
+
+<div class="warning-box">
+  <h4>⚠️ Emergency Warning Signs</h4>
+  <ul class="warning-list">
+    <li>❌ Difficulty breathing or shortness of breath</li>
+    <li>❌ Persistent pain or pressure in chest</li>
+    <li>❌ Confusion or inability to stay awake</li>
+    <li>❌ Pale, gray, or blue-colored skin/lips</li>
+    <li>❌ Severe or worsening symptoms</li>
+  </ul>
+  <p style="margin-top: 1rem;"><strong>Call emergency services or go to emergency room immediately</strong></p>
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+  <p><strong>Isolation protects others. Quarantine protects everyone.</strong></p>
+</div>
+
+<script>
+// Decision Tool
+const questions = [
+  { id: 'sick', question: 'Are you currently showing symptoms of illness?', yes: 'isolation', no: 'continue' },
+  { id: 'confirmed', question: 'Have you been diagnosed with a contagious disease?', yes: 'isolation', no: 'continue' },
+  { id: 'exposed', question: 'Have you been in close contact with someone who is sick?', yes: 'quarantine', no: 'continue' },
+  { id: 'travel', question: 'Have you traveled from an area with an active outbreak?', yes: 'quarantine', no: 'neither' },
+];
+
+let answers = {};
+
+function getResult() {
+  for (const q of questions) {
+    const answer = answers[q.id];
+    if (answer === 'yes' && (q.yes === 'isolation' || q.yes === 'quarantine')) {
+      return q.yes;
+    }
+  }
+  const allAnswered = questions.every(q => answers[q.id] !== undefined);
+  if (allAnswered) return 'neither';
+  return null;
+}
+
+function renderDecisionTool() {
+  const result = getResult();
+  const currentQuestion = questions.find(q => answers[q.id] === undefined && !result);
+  const questionContainer = document.getElementById('questionContainer');
+  const progressDots = document.getElementById('progressDots');
+  const resultContainer = document.getElementById('resultContainer');
+  
+  // Render progress dots
+  progressDots.innerHTML = questions.map((q, i) => {
+    let className = 'dot';
+    if (answers[q.id] !== undefined) className += ' answered';
+    else if (currentQuestion && q.id === currentQuestion.id) className += ' current';
+    return `<div class="${className}"></div>`;
+  }).join('');
+  
+  if (!result && currentQuestion) {
+    questionContainer.innerHTML = `
+      <div class="question-box">
+        <p>${currentQuestion.question}</p>
+        <div class="btn-group">
+          <button class="btn btn-yes" onclick="answerQuestion('${currentQuestion.id}', 'yes')">Yes</button>
+          <button class="btn btn-no" onclick="answerQuestion('${currentQuestion.id}', 'no')">No</button>
+        </div>
+      </div>
+    `;
+    resultContainer.innerHTML = '';
+  } else if (result) {
+    questionContainer.innerHTML = '';
+    let icon, title, message, className;
+    if (result === 'isolation') {
+      icon = '🛏️'; title = 'ISOLATION Recommended'; className = 'isolation';
+      message = 'You are sick or have been diagnosed. Separate yourself from others until you\'ve recovered.';
+    } else if (result === 'quarantine') {
+      icon = '🏠'; title = 'QUARANTINE Recommended'; className = 'quarantine';
+      message = 'You\'ve been exposed and may become sick. Stay home and monitor for symptoms.';
+    } else {
+      icon = '✅'; title = 'No Special Measures Needed'; className = 'neither';
+      message = 'Based on your answers, you don\'t currently need isolation or quarantine.';
+    }
+    resultContainer.innerHTML = `
+      <div class="result-box ${className}">
+        <div class="result-icon">${icon}</div>
+        <h5>${title}</h5>
+        <p>${message}</p>
+        <button class="btn btn-reset" onclick="resetQuiz()">Start Over</button>
+      </div>
+    `;
+  }
+}
+
+function answerQuestion(id, answer) {
+  answers[id] = answer;
+  renderDecisionTool();
+}
+
+function resetQuiz() {
+  answers = {};
+  renderDecisionTool();
+}
+
+// Duration Calculator
+const diseases = [
+  { id: 'covid', name: 'COVID-19', quarantine: '5 days', isolation: '5-10 days', incubation: '2-14 days' },
+  { id: 'flu', name: 'Influenza', quarantine: '7 days', isolation: '5-7 days', incubation: '1-4 days' },
+  { id: 'measles', name: 'Measles', quarantine: '21 days', isolation: '4 days after rash', incubation: '7-21 days' },
+  { id: 'chickenpox', name: 'Chickenpox', quarantine: '21 days', isolation: 'Until lesions crust', incubation: '10-21 days' },
+  { id: 'tuberculosis', name: 'Tuberculosis', quarantine: 'Varies', isolation: 'Until non-infectious', incubation: '2-12 weeks' },
+];
+
+let selectedDisease = null;
+
+function renderDurationCalc() {
+  const buttonsContainer = document.getElementById('diseaseButtons');
+  const resultsContainer = document.getElementById('durationResults');
+  
+  buttonsContainer.innerHTML = diseases.map(d => `
+    <button class="disease-btn ${selectedDisease === d.id ? 'active' : ''}" onclick="selectDisease('${d.id}')">${d.name}</button>
+  `).join('');
+  
+  if (selectedDisease) {
+    const disease = diseases.find(d => d.id === selectedDisease);
+    resultsContainer.style.display = 'grid';
+    resultsContainer.innerHTML = `
+      <div class="duration-card quarantine">
+        <div class="label">Quarantine Period</div>
+        <div class="value">${disease.quarantine}</div>
+      </div>
+      <div class="duration-card isolation">
+        <div class="label">Isolation Until</div>
+        <div class="value">${disease.isolation}</div>
+      </div>
+      <div class="duration-card incubation">
+        <div class="label">Incubation Period</div>
+        <div class="value">${disease.incubation}</div>
+      </div>
+    `;
+  } else {
+    resultsContainer.style.display = 'none';
+  }
+}
+
+function selectDisease(id) {
+  selectedDisease = selectedDisease === id ? null : id;
+  renderDurationCalc();
+}
+
+// Supplies Checklist
+const supplyCategories = [
+  {
+    name: 'Sick Room Essentials',
+    icon: '🛏️',
+    items: ['Thermometer', 'Fever/pain medication', 'Fluids (water, electrolytes)', 'Tissues', 'Waste basket with lid', 'Phone and charger', 'Disinfectant', 'Clean towels']
+  },
+  {
+    name: 'Caregiver PPE',
+    icon: '🛡️',
+    items: ['Masks (N95 preferred)', 'Gloves', 'Eye protection', 'Gown or cover clothing', 'Hand sanitizer']
+  },
+  {
+    name: 'Mental Health',
+    icon: '😊',
+    items: ['Books/magazines', 'Entertainment devices', 'Phone for video calls', 'Comfort items', 'Journal/notebook']
+  }
+];
+
+let checkedItems = {};
+
+function renderSupplies() {
+  const container = document.getElementById('suppliesContainer');
+  const totalItems = supplyCategories.reduce((acc, cat) => acc + cat.items.length, 0);
+  const checkedCount = Object.values(checkedItems).filter(v => v).length;
+  
+  document.getElementById('supplyCount').textContent = `${checkedCount}/${totalItems} items ready`;
+  document.getElementById('supplyProgress').style.width = `${(checkedCount / totalItems) * 100}%`;
+  
+  container.innerHTML = supplyCategories.map(cat => `
+    <div class="category">
+      <h5>${cat.icon} ${cat.name}</h5>
+      <div class="items-grid">
+        ${cat.items.map(item => `
+          <div class="supply-item ${checkedItems[item] ? 'checked' : ''}" onclick="toggleSupply('${item}')">
+            <div class="checkbox">${checkedItems[item] ? '✓' : ''}</div>
+            <span>${item}</span>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `).join('');
+}
+
+function toggleSupply(item) {
+  checkedItems[item] = !checkedItems[item];
+  renderSupplies();
+}
+
+// Initialize
+renderDecisionTool();
+renderDurationCalc();
+renderSupplies();
+</script>
+
+</body>
+</html>

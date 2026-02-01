@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic First Aid Without Power</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-purple: #a855f7;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-green); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.15), rgba(34, 197, 94, 0.05));
+      border-left: 4px solid var(--accent-green);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-green); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+    th { background: var(--bg-tertiary); font-weight: 600; color: var(--accent-blue); }
+    tr:last-child td { border-bottom: none; }
+    
+    .warning-box {
+      background: rgba(239, 68, 68, 0.1);
+      border: 2px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .info-box {
+      background: rgba(59, 130, 246, 0.1);
+      border: 2px solid var(--accent-blue);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .checklist { list-style: none; margin-left: 0; }
+    .checklist li { position: relative; padding-left: 2rem; margin-bottom: 0.5rem; }
+    .checklist li::before { content: "☐"; position: absolute; left: 0; color: var(--accent-blue); }
+    
+    strong { color: var(--accent-amber); }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    
+    .key-points {
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-amber);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .key-points h3 { color: var(--accent-amber); margin-top: 0; }
+  </style>
+</head>
+<body>
+
+<h1>Basic First Aid Without Power</h1>
+
+<blockquote>
+  <strong>Life-Saving Skills for Grid-Down Situations</strong> - When hospitals are overwhelmed and power is out, knowing basic first aid can mean the difference between life and death. This guide covers essential techniques that require no electricity.
+</blockquote>
+
+<h2>The First Aid Mindset</h2>
+
+<p>In an emergency without power:</p>
+<ul>
+  <li>You may be the only help available</li>
+  <li>Professional medical care may be delayed hours or days</li>
+  <li>Basic interventions save lives</li>
+  <li>Stay calm—panic helps no one</li>
+</ul>
+
+<p><strong>Remember:</strong> You don't need to be a doctor. You need to know enough to stabilize someone until help arrives—or keep them alive if it doesn't.</p>
+
+<hr>
+
+<h2>Scene Safety First</h2>
+
+<p>Before helping anyone:</p>
+<ol>
+  <li><strong>Stop and assess</strong> - Is the scene safe?</li>
+  <li><strong>Identify hazards</strong> - Downed power lines, fire, unstable structures, violence</li>
+  <li><strong>Protect yourself</strong> - Use gloves, don't become a victim</li>
+  <li><strong>Only then</strong> - Approach and help</li>
+</ol>
+
+<div class="info-box">
+  <strong>BSI (Body Substance Isolation):</strong>
+  <ul>
+    <li>Always assume blood/fluids are infectious</li>
+    <li>Wear gloves if available</li>
+    <li>Use barrier between you and patient's fluids</li>
+    <li>Wash hands thoroughly after</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Primary Assessment: The ABCs</h2>
+
+<p>Check in this order—each step is more important than the next:</p>
+
+<h3>A - Airway</h3>
+<p><strong>Is the airway open?</strong></p>
+<p>Check:</p>
+<ul>
+  <li>Is the person responsive?</li>
+  <li>Can they speak?</li>
+  <li>Are they choking?</li>
+</ul>
+
+<p>If unconscious:</p>
+<ul>
+  <li>Head-tilt, chin-lift to open airway</li>
+  <li>Look, listen, feel for breathing</li>
+  <li>Clear visible obstructions</li>
+</ul>
+
+<h3>B - Breathing</h3>
+<p><strong>Are they breathing normally?</strong></p>
+<p>Check:</p>
+<ul>
+  <li>Watch chest rise and fall</li>
+  <li>Listen for breath sounds</li>
+  <li>Feel for air on your cheek</li>
+</ul>
+
+<p>If not breathing:</p>
+<ul>
+  <li>Begin rescue breathing (see CPR guide)</li>
+  <li>Check for obstructions</li>
+</ul>
+
+<h3>C - Circulation</h3>
+<p><strong>Is blood circulating? Is there severe bleeding?</strong></p>
+<p>Check:</p>
+<ul>
+  <li>Feel for pulse (neck or wrist)</li>
+  <li>Check skin color and temperature</li>
+  <li>Look for severe bleeding</li>
+</ul>
+
+<p>If severe bleeding:</p>
+<ul>
+  <li>Control bleeding immediately (see Bleeding Control guide)</li>
+  <li>This takes priority over almost everything else</li>
+</ul>
+
+<hr>
+
+<h2>Common Emergency Situations</h2>
+
+<h3>Unconscious but Breathing</h3>
+
+<h4>Recovery Position:</h4>
+<ol>
+  <li>Kneel beside person</li>
+  <li>Place arm nearest you at right angle</li>
+  <li>Bring far arm across chest, hold hand against cheek</li>
+  <li>Pull far knee up, keeping foot flat</li>
+  <li>Roll toward you onto their side</li>
+  <li>Tilt head back to keep airway open</li>
+  <li>Monitor breathing continuously</li>
+</ol>
+
+<p><strong>Why:</strong></p>
+<ul>
+  <li>Prevents choking on vomit or fluids</li>
+  <li>Keeps airway open</li>
+  <li>Allows monitoring</li>
+</ul>
+
+<h3>Shock</h3>
+
+<h4>Recognition:</h4>
+<ul>
+  <li>Pale, cold, clammy skin</li>
+  <li>Rapid, weak pulse</li>
+  <li>Rapid, shallow breathing</li>
+  <li>Confusion or anxiety</li>
+  <li>Weakness or dizziness</li>
+</ul>
+
+<h4>Treatment:</h4>
+<ol>
+  <li>Lay person down</li>
+  <li>Elevate legs 8-12 inches (if no spinal injury suspected)</li>
+  <li>Keep warm with blankets</li>
+  <li>Do NOT give food or drink</li>
+  <li>Treat underlying cause if possible</li>
+  <li>Monitor and reassure</li>
+</ol>
+
+<h3>Choking (Conscious Adult)</h3>
+
+<h4>Heimlich Maneuver:</h4>
+<ol>
+  <li>Stand behind person</li>
+  <li>Make a fist with one hand</li>
+  <li>Place fist just above navel</li>
+  <li>Grasp fist with other hand</li>
+  <li>Give quick, upward thrusts</li>
+  <li>Repeat until object expelled or person loses consciousness</li>
+</ol>
+
+<p><strong>If they become unconscious:</strong></p>
+<ul>
+  <li>Lower to ground</li>
+  <li>Begin CPR (compressions may expel object)</li>
+  <li>Check mouth for visible object before breaths</li>
+</ul>
+
+<h3>Diabetic Emergency</h3>
+
+<p><strong>Low blood sugar (hypoglycemia):</strong></p>
+<ul>
+  <li>Symptoms: Confusion, shakiness, sweating, irritability</li>
+  <li>If conscious: Give sugar (juice, candy, glucose tablets)</li>
+  <li>If unconscious: Do NOT give anything by mouth, call for help</li>
+</ul>
+
+<p><strong>High blood sugar (hyperglycemia):</strong></p>
+<ul>
+  <li>Symptoms: Thirst, frequent urination, confusion, fruity breath</li>
+  <li>Requires professional medical attention</li>
+  <li>Keep hydrated with water if conscious</li>
+</ul>
+
+<h3>Seizure</h3>
+
+<h4>During seizure:</h4>
+<ol>
+  <li>Clear area of hazards</li>
+  <li>Protect head (place something soft underneath)</li>
+  <li>Do NOT restrain</li>
+  <li>Do NOT put anything in mouth</li>
+  <li>Time the seizure</li>
+</ol>
+
+<h4>After seizure:</h4>
+<ol>
+  <li>Place in recovery position</li>
+  <li>Stay with them as they recover</li>
+  <li>Be calm and reassuring</li>
+  <li>Note how long seizure lasted</li>
+</ol>
+
+<div class="warning-box">
+  <strong>Seek emergency help if:</strong>
+  <ul>
+    <li>Seizure lasts more than 5 minutes</li>
+    <li>Person doesn't regain consciousness</li>
+    <li>Another seizure follows quickly</li>
+    <li>Person is injured</li>
+    <li>First known seizure</li>
+    <li>Person is pregnant</li>
+  </ul>
+</div>
+
+<h3>Allergic Reaction / Anaphylaxis</h3>
+
+<p><strong>Mild reaction:</strong></p>
+<ul>
+  <li>Hives, itching, minor swelling</li>
+  <li>Give antihistamine (Benadryl) if available</li>
+  <li>Monitor for worsening</li>
+</ul>
+
+<p><strong>Severe reaction (anaphylaxis):</strong></p>
+<ul>
+  <li>Difficulty breathing</li>
+  <li>Swelling of throat/tongue</li>
+  <li>Rapid pulse</li>
+  <li>Dizziness</li>
+</ul>
+
+<h4>Treatment:</h4>
+<ol>
+  <li>Use epinephrine auto-injector (EpiPen) if available
+    <ul>
+      <li>Remove cap</li>
+      <li>Press firmly against outer thigh (through clothing okay)</li>
+      <li>Hold 10 seconds</li>
+    </ul>
+  </li>
+  <li>Call for emergency help</li>
+  <li>Have person lie down, elevate legs</li>
+  <li>Be prepared for second reaction</li>
+  <li>Give second EpiPen after 5-15 minutes if needed</li>
+</ol>
+
+<hr>
+
+<h2>Wound Care Without Modern Supplies</h2>
+
+<h3>Basic Wound Cleaning</h3>
+
+<h4>Supplies needed:</h4>
+<ul>
+  <li>Clean water (boiled and cooled if possible)</li>
+  <li>Clean cloth</li>
+  <li>Mild soap if available</li>
+</ul>
+
+<h4>Procedure:</h4>
+<ol>
+  <li>Wash your hands</li>
+  <li>Stop bleeding with direct pressure</li>
+  <li>Rinse wound with clean water</li>
+  <li>Remove visible debris gently</li>
+  <li>Wash around wound with soap</li>
+  <li>Do NOT put soap directly in wound</li>
+  <li>Pat dry with clean cloth</li>
+  <li>Apply bandage</li>
+</ol>
+
+<h3>Improvised Bandages</h3>
+
+<p><strong>If you don't have sterile gauze:</strong></p>
+<ul>
+  <li>Clean cotton t-shirt (boiled if possible)</li>
+  <li>Clean towels</li>
+  <li>Sanitary pads (excellent for wounds)</li>
+  <li>Coffee filters</li>
+  <li>Clean pillowcase</li>
+</ul>
+
+<p><strong>Securing bandages without tape:</strong></p>
+<ul>
+  <li>Strips of cloth tied</li>
+  <li>Belt or rope (for limbs)</li>
+  <li>Safety pins</li>
+  <li>Bandana tied around wound</li>
+</ul>
+
+<h3>Wound Infection Signs</h3>
+
+<p>Watch for (usually appear 2-3 days after injury):</p>
+<ul>
+  <li>Increasing pain</li>
+  <li>Redness spreading from wound</li>
+  <li>Swelling increasing</li>
+  <li>Warmth around wound</li>
+  <li>Pus or discharge</li>
+  <li>Red streaks extending from wound</li>
+  <li>Fever</li>
+</ul>
+
+<p><strong>If infection develops:</strong></p>
+<ul>
+  <li>Clean wound more frequently</li>
+  <li>Keep elevated if possible</li>
+  <li>Use any available antibiotics appropriately</li>
+  <li>Seek professional medical help when available</li>
+</ul>
+
+<hr>
+
+<h2>Pain Management Without Medication</h2>
+
+<h3>Non-Drug Pain Relief</h3>
+
+<p><strong>Cold therapy:</strong></p>
+<ul>
+  <li>Reduces swelling and numbs area</li>
+  <li>Use for first 48 hours after injury</li>
+  <li>20 minutes on, 20 minutes off</li>
+  <li>Wrap ice in cloth (don't apply directly)</li>
+</ul>
+
+<p><strong>Heat therapy:</strong></p>
+<ul>
+  <li>Relaxes muscles, increases blood flow</li>
+  <li>Use after 48 hours, or for muscle pain</li>
+  <li>Warm water bottle wrapped in cloth</li>
+  <li>Heated rice sock</li>
+</ul>
+
+<p><strong>Elevation:</strong></p>
+<ul>
+  <li>Raise injured area above heart</li>
+  <li>Reduces swelling and pain</li>
+  <li>Especially effective for limb injuries</li>
+</ul>
+
+<p><strong>Immobilization:</strong></p>
+<ul>
+  <li>Splinting prevents movement</li>
+  <li>Reduces pain from fractures/sprains</li>
+  <li>See Treating Burns, Cuts, and Fractures guide</li>
+</ul>
+
+<p><strong>Distraction:</strong></p>
+<ul>
+  <li>Talking, music, mental activities</li>
+  <li>Especially helpful for children</li>
+  <li>Reduces perception of pain</li>
+</ul>
+
+<hr>
+
+<h2>First Aid Kit Essentials</h2>
+
+<h3>Basic Kit</h3>
+
+<ul class="checklist">
+  <li>Nitrile gloves (multiple pairs)</li>
+  <li>Adhesive bandages (various sizes)</li>
+  <li>Sterile gauze pads (4x4)</li>
+  <li>Gauze rolls</li>
+  <li>Medical tape</li>
+  <li>Elastic bandage (ACE wrap)</li>
+  <li>Triangular bandage</li>
+  <li>Scissors</li>
+  <li>Tweezers</li>
+  <li>Antiseptic wipes</li>
+  <li>Antibiotic ointment</li>
+  <li>Pain relievers (acetaminophen, ibuprofen)</li>
+  <li>Antihistamine</li>
+  <li>Emergency blanket</li>
+  <li>CPR face shield</li>
+</ul>
+
+<h3>Advanced Additions</h3>
+
+<ul class="checklist">
+  <li>Tourniquet (CAT or SOFTT-W)</li>
+  <li>Hemostatic gauze (QuikClot, Celox)</li>
+  <li>Israeli bandage</li>
+  <li>SAM splint</li>
+  <li>Chest seals</li>
+  <li>Nasopharyngeal airway</li>
+  <li>Blood pressure cuff</li>
+  <li>Stethoscope</li>
+  <li>Suture kit (with training)</li>
+</ul>
+
+<hr>
+
+<h2>Documentation</h2>
+
+<p>Keep records during extended emergencies:</p>
+
+<h4>Track for each patient:</h4>
+<ul>
+  <li>Name and age</li>
+  <li>Time of injury/illness</li>
+  <li>What happened</li>
+  <li>Treatments given and times</li>
+  <li>Vital signs if possible</li>
+  <li>Response to treatment</li>
+  <li>Any allergies or medications</li>
+</ul>
+
+<h4>Why:</h4>
+<ul>
+  <li>Helps when professional help arrives</li>
+  <li>Tracks changes over time</li>
+  <li>Documents care provided</li>
+  <li>Aids in ongoing treatment decisions</li>
+</ul>
+
+<hr>
+
+<h2>When You Cannot Get Professional Help</h2>
+
+<p>If professional medical care is truly unavailable:</p>
+
+<h4>Prioritize:</h4>
+<ol>
+  <li>Life-threatening conditions first</li>
+  <li>Infections (can become life-threatening)</li>
+  <li>Pain management</li>
+  <li>Preventing complications</li>
+</ol>
+
+<h4>Accept limitations:</h4>
+<ul>
+  <li>You cannot treat everything</li>
+  <li>Some conditions require surgery/advanced care</li>
+  <li>Focus on what you CAN do</li>
+  <li>Comfort care matters</li>
+</ul>
+
+<h4>Seek help when possible:</h4>
+<ul>
+  <li>Medical professionals in community</li>
+  <li>Veterinarians (human physiology knowledge)</li>
+  <li>Pharmacists</li>
+  <li>Nurses, EMTs, medics</li>
+  <li>Telemedicine when communications restored</li>
+</ul>
+
+<hr>
+
+<div class="key-points">
+  <h3>Key Takeaways</h3>
+  <ol>
+    <li><strong>Scene safety first</strong> - Don't become another victim</li>
+    <li><strong>ABCs</strong> - Airway, Breathing, Circulation</li>
+    <li><strong>Stop severe bleeding</strong> - It kills quickly</li>
+    <li><strong>Keep wounds clean</strong> - Infection is a major threat</li>
+    <li><strong>Monitor and reassess</strong> - Conditions change</li>
+    <li><strong>Stay calm</strong> - Your composure helps the patient</li>
+    <li><strong>Know your limits</strong> - Seek help when available</li>
+  </ol>
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+  <p><strong>Disclaimer:</strong> This guide is for educational purposes. Proper medical training is always recommended. This information is not a substitute for professional medical care.</p>
+</div>
+
+</body>
+</html>

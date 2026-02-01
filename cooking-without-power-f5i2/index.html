@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cooking Without Power or Gas</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-orange: #f97316;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-yellow: #eab308;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-orange); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(249, 115, 22, 0.05));
+      border-left: 4px solid var(--accent-orange);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-orange); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+    th { background: var(--bg-tertiary); font-weight: 600; color: var(--accent-blue); }
+    tr:last-child td { border-bottom: none; }
+    
+    .warning-box {
+      background: rgba(239, 68, 68, 0.15);
+      border: 2px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+    }
+    
+    .warning-box h4 { color: var(--accent-red); margin-top: 0; }
+    
+    .info-box {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .info-box h4 { color: var(--accent-blue); margin-top: 0; }
+    
+    .recipe-box {
+      background: var(--bg-secondary);
+      border-left: 4px solid var(--accent-green);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .recipe-box h4 { color: var(--accent-green); margin-top: 0; }
+    
+    .checklist { list-style: none; margin-left: 0; }
+    .checklist li { position: relative; padding-left: 2rem; margin-bottom: 0.5rem; }
+    .checklist li::before { content: "☐"; position: absolute; left: 0; color: var(--accent-blue); }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Cooking Without Power or Gas</h1>
+
+<blockquote>
+  <strong>Hot Meals Matter</strong> - When the power goes out, you can still cook hot, nourishing meals. This guide covers safe methods for cooking when your normal appliances don't work.
+</blockquote>
+
+<h2>Why Hot Meals Are Important</h2>
+
+<p>During emergencies, hot food provides:</p>
+<ul>
+  <li>Better nutrition (some foods need cooking)</li>
+  <li>Improved morale</li>
+  <li>Warmth in cold weather</li>
+  <li>Safe food (kills bacteria)</li>
+  <li>Psychological comfort</li>
+</ul>
+
+<hr>
+
+<h2>Cooking Methods Overview</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Indoor Safe?</th>
+      <th>Fuel Needed</th>
+      <th>Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Camp stove</td><td>Ventilation needed</td><td>Propane/butane</td><td>General cooking</td></tr>
+    <tr><td>Grill (charcoal/gas)</td><td><strong>NO</strong></td><td>Charcoal/propane</td><td>Outdoor only</td></tr>
+    <tr><td>Fire pit</td><td><strong>NO</strong></td><td>Wood</td><td>Outdoor only</td></tr>
+    <tr><td>Solar oven</td><td>N/A</td><td>Sunlight</td><td>Daytime, clear weather</td></tr>
+    <tr><td>Chafing dish</td><td>Yes</td><td>Sterno cans</td><td>Warming, light cooking</td></tr>
+    <tr><td>Fondue pot</td><td>Yes</td><td>Sterno/alcohol</td><td>Small portions</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>Indoor-Safe Options</h2>
+
+<h3>Chafing Dish / Sterno</h3>
+
+<div class="info-box">
+  <h4>How it works:</h4>
+  <ul>
+    <li>Sterno cans (gel fuel) burn cleanly</li>
+    <li>Can be used indoors with ventilation</li>
+    <li>Good for warming and light cooking</li>
+  </ul>
+  
+  <h4>Best uses:</h4>
+  <ul>
+    <li>Heating canned foods</li>
+    <li>Warming water</li>
+    <li>Keeping food warm</li>
+    <li>Simple cooking (soup, beans)</li>
+  </ul>
+  
+  <h4>Limitations:</h4>
+  <ul>
+    <li>Low heat output</li>
+    <li>Not for heavy cooking</li>
+    <li>Fuel cans burn 2-6 hours each</li>
+  </ul>
+</div>
+
+<h3>Camp Stove (with caution)</h3>
+
+<p><strong>Can be used indoors IF:</strong></p>
+<ul>
+  <li>Adequate ventilation (windows open)</li>
+  <li>No propane leaks</li>
+  <li>Fire extinguisher nearby</li>
+  <li>Never leave unattended</li>
+  <li>CO detector active</li>
+</ul>
+
+<p><strong>Better:</strong></p>
+<ul>
+  <li>Use in garage with door open</li>
+  <li>Use on covered patio</li>
+  <li>Use near open window</li>
+</ul>
+
+<hr>
+
+<h2>Outdoor Cooking Methods</h2>
+
+<h3>Charcoal Grill</h3>
+
+<div class="info-box">
+  <h4>Setup:</h4>
+  <ul>
+    <li>Use chimney starter or lighter fluid</li>
+    <li>Let coals ash over (20-30 minutes)</li>
+    <li>Spread for even cooking</li>
+  </ul>
+  
+  <h4>Cooking tips:</h4>
+  <ul>
+    <li>Direct heat for fast cooking (burgers, chicken)</li>
+    <li>Indirect heat for slow cooking (roasts)</li>
+    <li>Use cast iron for versatility</li>
+    <li>Can boil water, make soup</li>
+  </ul>
+</div>
+
+<h3>Campfire / Fire Pit</h3>
+
+<div class="info-box">
+  <h4>Building a cooking fire:</h4>
+  <ol>
+    <li>Clear area of debris</li>
+    <li>Create fire ring with rocks</li>
+    <li>Build fire with tinder, kindling, fuel wood</li>
+    <li>Let burn down to coals for cooking</li>
+    <li>Cooking coals are gray/white</li>
+  </ol>
+  
+  <h4>Cooking methods:</h4>
+  <ul>
+    <li>Grill grate over coals</li>
+    <li>Cast iron on coals</li>
+    <li>Foil packet in coals</li>
+    <li>Stick cooking</li>
+    <li>Dutch oven in/beside fire</li>
+  </ul>
+</div>
+
+<h3>Rocket Stove</h3>
+
+<p><strong>DIY efficient wood stove:</strong></p>
+<ul>
+  <li>Uses small sticks and twigs</li>
+  <li>Very fuel efficient</li>
+  <li>Can make from cans or cinder blocks</li>
+  <li>Concentrated heat for cooking</li>
+  <li>Good for boiling water</li>
+</ul>
+
+<hr>
+
+<h2>Solar Cooking</h2>
+
+<h3>How It Works</h3>
+<p>Solar cookers concentrate sunlight to generate heat. No fuel needed—just sun.</p>
+
+<h3>Types</h3>
+
+<p><strong>Box cooker:</strong></p>
+<ul>
+  <li>Insulated box with glass top</li>
+  <li>Reflectors direct sunlight</li>
+  <li>250-350°F possible</li>
+  <li>Good for slow cooking</li>
+</ul>
+
+<p><strong>Parabolic cooker:</strong></p>
+<ul>
+  <li>Dish-shaped reflector</li>
+  <li>Focuses light on cooking pot</li>
+  <li>Higher temperatures</li>
+  <li>Faster cooking</li>
+</ul>
+
+<h3>Solar Cooking Tips</h3>
+<ul>
+  <li>Works best 10am-4pm</li>
+  <li>Requires clear or mostly clear sky</li>
+  <li>Use dark-colored pots</li>
+  <li>Allow extra cooking time</li>
+  <li>Reposition to follow sun</li>
+</ul>
+
+<h3>DIY Solar Oven</h3>
+
+<div class="info-box">
+  <h4>Simple box cooker:</h4>
+  <ol>
+    <li>Get two cardboard boxes (one smaller)</li>
+    <li>Place smaller inside larger</li>
+    <li>Fill gap with insulation (newspaper)</li>
+    <li>Line inside with aluminum foil</li>
+    <li>Paint bottom black</li>
+    <li>Cover top with glass or plastic</li>
+    <li>Add reflector flap</li>
+    <li>Place in direct sunlight</li>
+  </ol>
+</div>
+
+<hr>
+
+<h2>Fuel Management</h2>
+
+<h3>Fuel Storage</h3>
+
+<table>
+  <thead>
+    <tr><th>Fuel</th><th>Storage Life</th><th>Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Propane</td><td>Indefinite</td><td>Store outdoors</td></tr>
+    <tr><td>Butane</td><td>8+ years</td><td>Store cool</td></tr>
+    <tr><td>Charcoal</td><td>1-2 years</td><td>Keep dry</td></tr>
+    <tr><td>Sterno</td><td>10+ years</td><td>Check cans for damage</td></tr>
+    <tr><td>Wood</td><td>Indefinite</td><td>Keep dry, seasoned</td></tr>
+    <tr><td>White gas</td><td>5+ years</td><td>Seal tightly</td></tr>
+  </tbody>
+</table>
+
+<h3>Conserving Fuel</h3>
+<ul>
+  <li>Plan meals to minimize cooking</li>
+  <li>Cook multiple items at once</li>
+  <li>Use lids to retain heat</li>
+  <li>Cut food smaller (cooks faster)</li>
+  <li>Soak beans/grains (reduces cook time)</li>
+  <li>Use retained heat cooking</li>
+</ul>
+
+<h3>Retained Heat Cooking</h3>
+
+<div class="info-box">
+  <h4>How it works:</h4>
+  <ol>
+    <li>Bring food to boil</li>
+    <li>Cook for 1-2 minutes</li>
+    <li>Remove from heat</li>
+    <li>Place in insulated container</li>
+    <li>Food continues cooking from retained heat</li>
+  </ol>
+  
+  <h4>Works for:</h4>
+  <ul>
+    <li>Rice</li>
+    <li>Pasta</li>
+    <li>Beans (pre-soaked)</li>
+    <li>Soups and stews</li>
+    <li>Oatmeal</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Cooking Equipment</h2>
+
+<h3>Essential Items</h3>
+<ul class="checklist">
+  <li>Camp stove with fuel</li>
+  <li>Cast iron skillet</li>
+  <li>Pot with lid</li>
+  <li>Manual can opener</li>
+  <li>Long-handled utensils</li>
+  <li>Hot pads/gloves</li>
+  <li>Fire starter/matches</li>
+  <li>Aluminum foil</li>
+</ul>
+
+<h3>Nice to Have</h3>
+<ul class="checklist">
+  <li>Dutch oven</li>
+  <li>Grill grate</li>
+  <li>Coffee percolator</li>
+  <li>Pressure cooker (speeds cooking)</li>
+  <li>Solar oven</li>
+  <li>Cast iron griddle</li>
+</ul>
+
+<hr>
+
+<h2>Safety Essentials</h2>
+
+<div class="warning-box">
+  <h4>Carbon Monoxide Warning</h4>
+  <p><strong>NEVER use indoors:</strong></p>
+  <ul>
+    <li>Charcoal grills</li>
+    <li>Gas grills</li>
+    <li>Kerosene heaters (for cooking)</li>
+    <li>Generators</li>
+  </ul>
+  <p><strong>Carbon monoxide is:</strong></p>
+  <ul>
+    <li>Colorless and odorless</li>
+    <li>Deadly in enclosed spaces</li>
+    <li>Produced by burning fuels</li>
+  </ul>
+</div>
+
+<h3>Fire Safety</h3>
+<ul>
+  <li>Keep fire extinguisher nearby</li>
+  <li>Have water/sand available</li>
+  <li>Clear area of flammables</li>
+  <li>Never leave fires unattended</li>
+  <li>Ensure fires are fully extinguished</li>
+  <li>Watch for wind changes</li>
+</ul>
+
+<hr>
+
+<h2>Quick Recipes for Emergency Cooking</h2>
+
+<div class="recipe-box">
+  <h4>One-Pot Rice and Beans</h4>
+  <ol>
+    <li>Combine 1 cup rice, 2 cups water</li>
+    <li>Bring to boil, simmer 15 min</li>
+    <li>Add canned beans (drained)</li>
+    <li>Heat through, season to taste</li>
+  </ol>
+</div>
+
+<div class="recipe-box">
+  <h4>Foil Packet Meal</h4>
+  <ol>
+    <li>Place protein and vegetables on foil</li>
+    <li>Add seasoning and small amount of water</li>
+    <li>Seal tightly</li>
+    <li>Cook on coals 20-30 minutes</li>
+  </ol>
+</div>
+
+<div class="recipe-box">
+  <h4>Campfire Coffee</h4>
+  <ol>
+    <li>Boil water in pot</li>
+    <li>Remove from heat</li>
+    <li>Add ground coffee (2 tbsp per cup)</li>
+    <li>Steep 4 minutes</li>
+    <li>Let grounds settle, pour carefully</li>
+  </ol>
+</div>
+
+<div class="recipe-box">
+  <h4>Sterno-Warmed Soup</h4>
+  <ol>
+    <li>Open can of soup</li>
+    <li>Pour into pot over Sterno</li>
+    <li>Stir occasionally</li>
+    <li>Heat until warm (10-15 minutes)</li>
+  </ol>
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+</div>
+
+</body>
+</html>

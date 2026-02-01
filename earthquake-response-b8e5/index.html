@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Earthquake Response & Aftermath</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-purple: #a855f7;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-amber); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(245, 158, 11, 0.05));
+      border-left: 4px solid var(--accent-amber);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-amber); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    
+    .warning-box {
+      background: rgba(239, 68, 68, 0.1);
+      border: 2px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .info-box {
+      background: rgba(59, 130, 246, 0.1);
+      border: 2px solid var(--accent-blue);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .action-box {
+      background: rgba(34, 197, 94, 0.1);
+      border: 2px solid var(--accent-green);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+    
+    .action-box h3 { color: var(--accent-green); margin: 0 0 1rem 0; font-size: 1.5rem; }
+    
+    .checklist { list-style: none; margin-left: 0; }
+    .checklist li { position: relative; padding-left: 2rem; margin-bottom: 0.5rem; }
+    .checklist li::before { content: "☐"; position: absolute; left: 0; color: var(--accent-blue); }
+    
+    strong { color: var(--accent-amber); }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    
+    .quick-ref {
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-amber);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .quick-ref h3 { color: var(--accent-amber); margin-top: 0; }
+    
+    pre {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+      font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Earthquake Response & Aftermath</h1>
+
+<blockquote>
+  <strong>When the Ground Shakes</strong> - Earthquakes strike without warning. Knowing what to do during and after can save your life.
+</blockquote>
+
+<h2>During an Earthquake</h2>
+
+<h3>If Indoors</h3>
+
+<div class="action-box">
+  <h3>DROP, COVER, and HOLD ON</h3>
+  <ol style="text-align: left; display: inline-block;">
+    <li><strong>DROP</strong> - Get on hands and knees</li>
+    <li><strong>COVER</strong> - Get under sturdy table/desk, or against interior wall</li>
+    <li><strong>HOLD ON</strong> - Protect head and neck, hold on to shelter</li>
+  </ol>
+</div>
+
+<p><strong>Stay away from:</strong></p>
+<ul>
+  <li>Windows</li>
+  <li>Exterior walls</li>
+  <li>Heavy furniture that can fall</li>
+  <li>Hanging objects</li>
+</ul>
+
+<div class="warning-box">
+  <strong>Do NOT:</strong>
+  <ul>
+    <li>Run outside (falling debris)</li>
+    <li>Stand in doorways (myth - not safer)</li>
+    <li>Use elevators</li>
+  </ul>
+</div>
+
+<h3>If Outdoors</h3>
+<ul>
+  <li>Move away from buildings, power lines, trees</li>
+  <li>Drop and cover in open area</li>
+  <li>Stay away from overpasses and bridges</li>
+  <li>Stay there until shaking stops</li>
+</ul>
+
+<h3>If Driving</h3>
+<ul>
+  <li>Pull over safely away from overpasses/bridges</li>
+  <li>Stay in vehicle with seatbelt on</li>
+  <li>Vehicle provides protection from falling debris</li>
+  <li>When shaking stops, proceed carefully</li>
+</ul>
+
+<h3>If Near Coast</h3>
+<p>After shaking stops:</p>
+<ul>
+  <li>If strong shaking lasts 20+ seconds, move to high ground</li>
+  <li>Don't wait for official warning</li>
+  <li>Tsunami may follow earthquake</li>
+  <li>Go inland or uphill immediately</li>
+</ul>
+
+<hr>
+
+<h2>After the Earthquake</h2>
+
+<h3>Immediate Actions</h3>
+<ol>
+  <li><strong>Check yourself for injuries</strong></li>
+  <li><strong>Check others around you</strong></li>
+  <li><strong>Expect aftershocks</strong> (drop, cover, hold on again)</li>
+  <li><strong>Exit carefully</strong> if building is damaged</li>
+  <li><strong>Don't use elevators</strong></li>
+</ol>
+
+<h3>Safety Assessment</h3>
+
+<p><strong>Check for:</strong></p>
+<ul>
+  <li>Fire and fire hazards</li>
+  <li>Gas leaks (smell, hissing)</li>
+  <li>Water damage</li>
+  <li>Structural damage</li>
+  <li>Downed power lines</li>
+  <li>Chemical spills</li>
+</ul>
+
+<h3>If You Smell Gas</h3>
+<ol>
+  <li>Don't turn on/off any switches</li>
+  <li>Don't use flames or create sparks</li>
+  <li>Open windows if possible</li>
+  <li>Leave building immediately</li>
+  <li>Shut off gas at meter if you know how</li>
+  <li>Call gas company from outside</li>
+</ol>
+
+<h3>Structural Damage Signs</h3>
+
+<div class="warning-box">
+  <strong>Leave building if:</strong>
+  <ul>
+    <li>Large cracks in walls/ceiling</li>
+    <li>Shifted foundation</li>
+    <li>Partial collapse</li>
+    <li>Gas smell or broken pipes</li>
+    <li>Electrical problems</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Aftershocks</h2>
+
+<h3>What to Expect</h3>
+<ul>
+  <li>Can occur minutes to months after main quake</li>
+  <li>Often nearly as strong as main quake</li>
+  <li>Frequency decreases over time</li>
+  <li>Response: Same as main quake (drop, cover, hold)</li>
+</ul>
+
+<h3>Psychological Impact</h3>
+<ul>
+  <li>Heightened anxiety is normal</li>
+  <li>Startle response common</li>
+  <li>Sleep disruption expected</li>
+  <li>Children may need extra reassurance</li>
+</ul>
+
+<hr>
+
+<h2>Recovery Steps</h2>
+
+<h3>First Hours</h3>
+<ul class="checklist">
+  <li>Account for all family members</li>
+  <li>Check for injuries</li>
+  <li>Assess damage</li>
+  <li>Check utilities</li>
+  <li>Contact out-of-area contact</li>
+  <li>Document damage (photos)</li>
+</ul>
+
+<h3>First Days</h3>
+<ul class="checklist">
+  <li>Secure your home if safe to do so</li>
+  <li>Assess supplies</li>
+  <li>Connect with neighbors</li>
+  <li>Monitor emergency communications</li>
+  <li>File insurance claims</li>
+  <li>Be cautious entering damaged buildings</li>
+</ul>
+
+<h3>Water and Food Safety</h3>
+<ul>
+  <li>Use stored water until supply is verified safe</li>
+  <li>Don't use questionable tap water</li>
+  <li>Check food for contamination</li>
+  <li>Discard food from damaged containers</li>
+</ul>
+
+<hr>
+
+<h2>Earthquake Preparedness</h2>
+
+<h3>Home Safety</h3>
+<ul>
+  <li>Secure heavy furniture to walls</li>
+  <li>Secure water heater</li>
+  <li>Use latches on cabinets</li>
+  <li>Don't hang heavy items over beds</li>
+  <li>Know how to shut off gas, water, electricity</li>
+  <li>Store supplies (2+ weeks recommended in earthquake zones)</li>
+</ul>
+
+<h3>Go Bag Ready</h3>
+<p>Earthquakes can require immediate evacuation:</p>
+<ul>
+  <li>Go bag near exit</li>
+  <li>Sturdy shoes near bed</li>
+  <li>Flashlight near bed</li>
+</ul>
+
+<hr>
+
+<div class="quick-ref">
+  <h3>Quick Reference</h3>
+  <pre>DURING EARTHQUAKE:
+• Drop, Cover, Hold On
+• Stay away from windows
+• Don't run outside
+
+IF NEAR COAST:
+• 20+ seconds shaking = tsunami possible
+• Go to high ground immediately
+
+AFTER EARTHQUAKE:
+• Check for injuries
+• Check for gas leaks
+• Expect aftershocks
+• Don't use elevators
+• Document damage
+
+STRUCTURAL WARNING SIGNS:
+• Large cracks in walls
+• Shifted foundation
+• Gas smell
+• Partial collapse
+→ Leave building if present</pre>
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+</div>
+
+</body>
+</html>

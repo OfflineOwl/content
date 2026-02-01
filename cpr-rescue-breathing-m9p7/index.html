@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CPR & Rescue Breathing (No Equipment)</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-purple: #a855f7;
+      --border-color: #3f3f46;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+      border-bottom: 2px solid var(--accent-red);
+      padding-bottom: 0.5rem;
+    }
+    
+    h2 {
+      font-size: 1.75rem;
+      margin: 2.5rem 0 1rem;
+      color: var(--text-primary);
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    h3 {
+      font-size: 1.35rem;
+      margin: 1.5rem 0 0.75rem;
+      color: var(--accent-blue);
+    }
+    
+    h4 {
+      font-size: 1.1rem;
+      margin: 1rem 0 0.5rem;
+      color: var(--text-primary);
+    }
+    
+    p {
+      margin-bottom: 1rem;
+    }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(239, 68, 68, 0.05));
+      border-left: 4px solid var(--accent-red);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong {
+      color: var(--accent-red);
+    }
+    
+    ul, ol {
+      margin: 0.5rem 0 1rem 1.5rem;
+    }
+    
+    li {
+      margin-bottom: 0.4rem;
+    }
+    
+    hr {
+      border: none;
+      border-top: 1px solid var(--border-color);
+      margin: 2rem 0;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    th, td {
+      padding: 0.75rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    th {
+      background: var(--bg-tertiary);
+      font-weight: 600;
+      color: var(--accent-blue);
+    }
+    
+    tr:last-child td {
+      border-bottom: none;
+    }
+    
+    code {
+      font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+      background: var(--bg-tertiary);
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    
+    pre {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+    
+    pre code {
+      background: none;
+      padding: 0;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    
+    .warning-box {
+      background: rgba(239, 68, 68, 0.1);
+      border: 2px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .info-box {
+      background: rgba(59, 130, 246, 0.1);
+      border: 2px solid var(--accent-blue);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .success-box {
+      background: rgba(34, 197, 94, 0.1);
+      border: 2px solid var(--accent-green);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .checklist {
+      list-style: none;
+      margin-left: 0;
+    }
+    
+    .checklist li {
+      position: relative;
+      padding-left: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .checklist li::before {
+      content: "☐";
+      position: absolute;
+      left: 0;
+      color: var(--accent-blue);
+    }
+    
+    strong {
+      color: var(--accent-amber);
+    }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    
+    .quick-ref {
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-amber);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .quick-ref h3 {
+      color: var(--accent-amber);
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+<h1>CPR & Rescue Breathing (No Equipment)</h1>
+
+<blockquote>
+  <strong>The Most Important Skill</strong> - When someone's heart stops, brain damage begins within 4-6 minutes. CPR keeps blood flowing until the heart can restart. You can do this with nothing but your hands.
+</blockquote>
+
+<h2>When CPR is Needed</h2>
+
+<p>Start CPR when someone:</p>
+<ul>
+  <li>Is unresponsive (doesn't respond to voice or touch)</li>
+  <li>Is not breathing (or only gasping)</li>
+  <li>Has no pulse (for trained rescuers)</li>
+</ul>
+
+<p><strong>When in doubt, start CPR.</strong> It won't harm someone who doesn't need it, but delay can kill someone who does.</p>
+
+<hr>
+
+<h2>Adult CPR (Age 12+)</h2>
+
+<h3>The Sequence</h3>
+<p><strong>C-A-B: Compressions, Airway, Breathing</strong></p>
+
+<h3>Step 1: Scene Safety & Response Check</h3>
+<ol>
+  <li>Make sure the scene is safe</li>
+  <li>Tap shoulders and shout "Are you okay?"</li>
+  <li>If no response, call for help or send someone to call</li>
+  <li>Check for breathing (look, listen, feel for 10 seconds)</li>
+</ol>
+
+<h3>Step 2: Position the Patient</h3>
+<ol>
+  <li>Place patient on their back on a firm, flat surface</li>
+  <li>Kneel beside them at chest level</li>
+  <li>Remove or open clothing to access chest</li>
+</ol>
+
+<h3>Step 3: Chest Compressions</h3>
+
+<h4>Hand Position:</h4>
+<ol>
+  <li>Place heel of one hand on center of chest (lower half of breastbone)</li>
+  <li>Place heel of other hand on top</li>
+  <li>Interlock fingers, keep them off the chest</li>
+  <li>Position shoulders directly over hands</li>
+  <li>Arms straight, elbows locked</li>
+</ol>
+
+<h4>Compression Technique:</h4>
+<ul>
+  <li>Push hard and fast</li>
+  <li>Depth: At least 2 inches (5 cm), no more than 2.4 inches</li>
+  <li>Rate: 100-120 compressions per minute</li>
+  <li>Allow full chest recoil between compressions</li>
+  <li>Minimize interruptions</li>
+</ul>
+
+<p><strong>Rhythm help:</strong> Push to the beat of "Stayin' Alive" by the Bee Gees (100-120 BPM)</p>
+
+<h3>Step 4: Open the Airway</h3>
+
+<h4>Head-Tilt, Chin-Lift:</h4>
+<ol>
+  <li>Place one hand on forehead</li>
+  <li>Place two fingers under chin bone (not soft tissue)</li>
+  <li>Tilt head back, lift chin up</li>
+  <li>This opens the airway</li>
+</ol>
+
+<div class="info-box">
+  <strong>If spinal injury suspected:</strong>
+  <ul>
+    <li>Use jaw thrust instead</li>
+    <li>Minimal neck movement</li>
+  </ul>
+</div>
+
+<h3>Step 5: Rescue Breaths</h3>
+
+<h4>Technique:</h4>
+<ol>
+  <li>Maintain head-tilt, chin-lift</li>
+  <li>Pinch nose closed</li>
+  <li>Create seal over mouth</li>
+  <li>Give breath for 1 second</li>
+  <li>Watch for chest rise</li>
+  <li>Allow air to exit</li>
+  <li>Give second breath</li>
+</ol>
+
+<h4>If chest doesn't rise:</h4>
+<ul>
+  <li>Reposition head (more tilt)</li>
+  <li>Check for obstruction</li>
+  <li>Try again</li>
+  <li>Don't delay compressions</li>
+</ul>
+
+<h3>Step 6: Continue CPR Cycle</h3>
+
+<p><strong>Ratio:</strong> 30 compressions : 2 breaths</p>
+
+<ol>
+  <li>Give 30 compressions (about 18 seconds)</li>
+  <li>Give 2 rescue breaths (about 4 seconds)</li>
+  <li>Immediately resume compressions</li>
+  <li>Continue until:
+    <ul>
+      <li>Patient shows signs of life</li>
+      <li>AED arrives and is ready</li>
+      <li>Professional help takes over</li>
+      <li>You are physically unable to continue</li>
+      <li>Scene becomes unsafe</li>
+    </ul>
+  </li>
+</ol>
+
+<hr>
+
+<h2>Hands-Only CPR</h2>
+
+<p><strong>When to use:</strong> If you're untrained, unwilling, or unable to give rescue breaths.</p>
+
+<h4>Procedure:</h4>
+<ol>
+  <li>Call for help</li>
+  <li>Push hard and fast in center of chest</li>
+  <li>Continue without stopping until help arrives</li>
+</ol>
+
+<h4>Why it works:</h4>
+<ul>
+  <li>Compressions alone maintain some oxygen circulation</li>
+  <li>Blood still has oxygen immediately after arrest</li>
+  <li>Any CPR is better than no CPR</li>
+</ul>
+
+<hr>
+
+<h2>Child CPR (Ages 1-12)</h2>
+
+<h3>Differences from Adult CPR</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Factor</th>
+      <th>Adult</th>
+      <th>Child</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Compression depth</td>
+      <td>2+ inches</td>
+      <td>2 inches (1/3 chest depth)</td>
+    </tr>
+    <tr>
+      <td>Hand position</td>
+      <td>Two hands</td>
+      <td>One or two hands</td>
+    </tr>
+    <tr>
+      <td>Compression rate</td>
+      <td>100-120/min</td>
+      <td>100-120/min</td>
+    </tr>
+    <tr>
+      <td>Ratio (one rescuer)</td>
+      <td>30:2</td>
+      <td>30:2</td>
+    </tr>
+    <tr>
+      <td>Ratio (two rescuers)</td>
+      <td>30:2</td>
+      <td>15:2</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Child CPR Sequence</h3>
+<ol>
+  <li><strong>Check responsiveness</strong> - Tap and shout</li>
+  <li><strong>Call for help</strong> - If alone, do 2 minutes of CPR first, then call</li>
+  <li><strong>Open airway</strong> - Head-tilt, chin-lift (less extension than adult)</li>
+  <li><strong>Check breathing</strong> - 10 seconds</li>
+  <li><strong>Compressions</strong> - Center of chest, one or two hands</li>
+  <li><strong>Rescue breaths</strong> - Gentle breaths, just enough to see chest rise</li>
+  <li><strong>Continue</strong> - 30:2 ratio</li>
+</ol>
+
+<hr>
+
+<h2>Infant CPR (Under Age 1)</h2>
+
+<h3>Key Differences</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Factor</th>
+      <th>Infant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Check responsiveness</td>
+      <td>Flick foot</td>
+    </tr>
+    <tr>
+      <td>Compression location</td>
+      <td>Just below nipple line</td>
+    </tr>
+    <tr>
+      <td>Compression method</td>
+      <td>Two fingers or two thumbs</td>
+    </tr>
+    <tr>
+      <td>Compression depth</td>
+      <td>1.5 inches (1/3 chest depth)</td>
+    </tr>
+    <tr>
+      <td>Breath size</td>
+      <td>Small puffs (cheeks, not lungs)</td>
+    </tr>
+    <tr>
+      <td>Ratio</td>
+      <td>30:2 (one rescuer), 15:2 (two rescuers)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Infant CPR Sequence</h3>
+<ol>
+  <li><strong>Check responsiveness</strong> - Flick bottom of foot, call name</li>
+  <li><strong>Position</strong> - On firm surface, head neutral (not tilted back)</li>
+  <li><strong>Check breathing</strong> - Look, listen, feel for 10 seconds</li>
+  <li><strong>Call for help</strong> - If alone, 2 minutes CPR first</li>
+</ol>
+
+<h3>Infant Compressions</h3>
+
+<h4>Two-finger technique (one rescuer):</h4>
+<ol>
+  <li>Place two fingers on breastbone, just below nipple line</li>
+  <li>Push down about 1.5 inches</li>
+  <li>Allow full recoil</li>
+  <li>Rate: 100-120/min</li>
+</ol>
+
+<h4>Two-thumb technique (two rescuers):</h4>
+<ol>
+  <li>Encircle chest with hands</li>
+  <li>Place thumbs side-by-side on lower breastbone</li>
+  <li>Squeeze chest with thumbs</li>
+  <li>More effective than two-finger</li>
+</ol>
+
+<h3>Infant Rescue Breaths</h3>
+<ol>
+  <li>Keep head in neutral position (slight tilt only)</li>
+  <li>Cover both mouth AND nose with your mouth</li>
+  <li>Give gentle puff (from cheeks, not deep breath)</li>
+  <li>Watch for chest rise</li>
+  <li>If no rise, reposition and try again</li>
+</ol>
+
+<hr>
+
+<h2>Choking & CPR</h2>
+
+<h3>If Patient Becomes Unresponsive During Choking</h3>
+<ol>
+  <li>Lower patient to ground</li>
+  <li>Begin CPR (compressions first)</li>
+  <li>Before giving breaths, look in mouth for visible object</li>
+  <li>Remove object only if clearly visible</li>
+  <li>Attempt breath</li>
+  <li>Continue CPR</li>
+</ol>
+
+<h3>Infant Choking Becoming Unresponsive</h3>
+<ol>
+  <li>Support head, place face-down on forearm</li>
+  <li>Give 5 back blows between shoulder blades</li>
+  <li>Turn over, support head</li>
+  <li>Give 5 chest thrusts (same location as CPR)</li>
+  <li>Check mouth for visible object</li>
+  <li>If becomes unresponsive, begin CPR</li>
+</ol>
+
+<hr>
+
+<h2>Special Situations</h2>
+
+<h3>Drowning</h3>
+<ol>
+  <li>Remove from water (ensure your safety)</li>
+  <li>Begin CPR immediately</li>
+  <li>Prioritize rescue breaths (oxygen deprivation is primary issue)</li>
+  <li>Consider: 5 initial breaths, then standard CPR</li>
+  <li>Expect vomiting—turn to side, clear mouth, continue</li>
+</ol>
+
+<h3>Hypothermia</h3>
+<ol>
+  <li>Handle gently (heart is irritable)</li>
+  <li>CPR is still appropriate</li>
+  <li>Check pulse longer (up to 60 seconds)</li>
+  <li>Continue CPR until rewarming possible</li>
+  <li>"Not dead until warm and dead"</li>
+</ol>
+
+<h3>Pregnancy</h3>
+<ol>
+  <li>Position with slight left tilt (wedge under right hip)</li>
+  <li>Standard CPR technique</li>
+  <li>Hand position may be slightly higher on chest</li>
+  <li>Don't delay—two lives at stake</li>
+</ol>
+
+<h3>Trauma</h3>
+<ol>
+  <li>If spinal injury suspected, use jaw thrust for airway</li>
+  <li>Control severe bleeding (may be cause of arrest)</li>
+  <li>CPR with minimal movement if possible</li>
+  <li>Survival rates lower but still attempt</li>
+</ol>
+
+<hr>
+
+<h2>Rescuer Care</h2>
+
+<h3>Switching Rescuers</h3>
+<ul>
+  <li>CPR is exhausting</li>
+  <li>Quality decreases after 2 minutes</li>
+  <li>Switch every 2 minutes if possible</li>
+  <li>Switch during pulse/rhythm checks</li>
+  <li>Minimize pause during switch (&lt;10 seconds)</li>
+</ul>
+
+<h3>Protecting Yourself</h3>
+
+<h4>Rescue breathing barriers:</h4>
+<ul>
+  <li>Face shield</li>
+  <li>Pocket mask</li>
+  <li>Even plastic wrap with hole</li>
+  <li>Reduces disease transmission risk</li>
+</ul>
+
+<h4>If no barrier:</h4>
+<ul>
+  <li>Hands-only CPR is acceptable</li>
+  <li>Risk of disease transmission is low</li>
+  <li>Your safety matters too</li>
+</ul>
+
+<hr>
+
+<h2>When to Stop CPR</h2>
+
+<p>Stop CPR when:</p>
+<ul>
+  <li>Patient shows signs of life (breathing, movement)</li>
+  <li>AED advises to stop</li>
+  <li>Professional help takes over</li>
+  <li>You are physically unable to continue</li>
+  <li>Scene becomes unsafe</li>
+  <li>Medical professional pronounces death</li>
+</ul>
+
+<div class="warning-box">
+  <strong>Do NOT stop because:</strong>
+  <ul>
+    <li>You're tired (find someone to switch)</li>
+    <li>It's been a long time (continue until help arrives)</li>
+    <li>You think it's hopeless (let professionals decide)</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>CPR Quality Checklist</h2>
+
+<p>For effective CPR, ensure:</p>
+
+<ul class="checklist">
+  <li>Patient on firm, flat surface</li>
+  <li>Correct hand position</li>
+  <li>Compression depth adequate (2+ inches adult)</li>
+  <li>Compression rate correct (100-120/min)</li>
+  <li>Full chest recoil</li>
+  <li>Minimal interruptions</li>
+  <li>Visible chest rise with breaths</li>
+  <li>Switching rescuers every 2 minutes</li>
+</ul>
+
+<hr>
+
+<h2>Training Recommendation</h2>
+
+<p>This guide is not a substitute for hands-on training.</p>
+
+<h4>Take a course:</h4>
+<ul>
+  <li>American Heart Association</li>
+  <li>American Red Cross</li>
+  <li>Community CPR classes</li>
+  <li>Employer-offered training</li>
+</ul>
+
+<h4>Practice regularly:</h4>
+<ul>
+  <li>Skills decay without practice</li>
+  <li>Refresh annually at minimum</li>
+  <li>Practice on mannequins</li>
+  <li>Take refresher courses</li>
+</ul>
+
+<hr>
+
+<div class="quick-ref">
+  <h3>Quick Reference</h3>
+  <pre><code>ADULT CPR
+
+1. CHECK - Responsive? Breathing?
+2. CALL - Call for help
+3. COMPRESS - 30 compressions
+   - Center of chest
+   - 2+ inches deep
+   - 100-120 per minute
+4. BREATHE - 2 rescue breaths
+   - Head-tilt, chin-lift
+   - Pinch nose, seal mouth
+   - 1 second each
+5. REPEAT - Continue 30:2
+
+HANDS-ONLY: Just compressions, no breaths
+
+CHILD: Same as adult, 2" deep, one or two hands
+INFANT: Two fingers, 1.5" deep, cover mouth+nose</code></pre>
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+  <p><strong>Disclaimer:</strong> This guide is for educational purposes. Hands-on CPR training is essential. This information is not a substitute for professional medical training or care.</p>
+</div>
+
+</body>
+</html>

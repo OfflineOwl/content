@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Re-Establishing Normalcy for Kids</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-pink: #ec4899;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-pink); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(236, 72, 153, 0.15), rgba(236, 72, 153, 0.05));
+      border-left: 4px solid var(--accent-pink);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-pink); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    
+    .age-section {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .age-section h4 { color: var(--accent-pink); margin-top: 0; }
+    
+    .do-dont {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .do { background: rgba(34, 197, 94, 0.1); border-left: 4px solid var(--accent-green); border-radius: 0 8px 8px 0; padding: 1rem; }
+    .do h4 { color: var(--accent-green); margin-top: 0; }
+    .dont { background: rgba(239, 68, 68, 0.1); border-left: 4px solid var(--accent-red); border-radius: 0 8px 8px 0; padding: 1rem; }
+    .dont h4 { color: var(--accent-red); margin-top: 0; }
+    
+    .warning-box {
+      background: rgba(239, 68, 68, 0.15);
+      border: 2px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+    }
+    
+    .warning-box h4 { color: var(--accent-red); margin-top: 0; }
+    
+    .info-box {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .info-box h4 { color: var(--accent-blue); margin-top: 0; }
+    
+    .quick-ref {
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-pink);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .quick-ref h3 { color: var(--accent-pink); margin-top: 0; }
+    
+    pre {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+      font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    
+    @media (max-width: 600px) {
+      .do-dont { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Re-Establishing Normalcy for Kids</h1>
+
+<blockquote>
+  <strong>Children Need Stability</strong> - After a crisis, children may struggle to return to normal. This guide helps parents support their children's recovery.
+</blockquote>
+
+<h2>Understanding Children's Responses</h2>
+
+<h3>Common Reactions by Age</h3>
+
+<div class="age-section">
+  <h4>Toddlers (1-3 years)</h4>
+  <ul>
+    <li>Clinginess</li>
+    <li>Regression (thumb-sucking, bedwetting)</li>
+    <li>Sleep disturbances</li>
+    <li>Irritability</li>
+    <li>Separation anxiety</li>
+  </ul>
+</div>
+
+<div class="age-section">
+  <h4>Preschool (3-6 years)</h4>
+  <ul>
+    <li>Fear of dark, monsters, being alone</li>
+    <li>Regression in toilet training</li>
+    <li>Repetitive play about the event</li>
+    <li>Changes in appetite</li>
+    <li>Withdrawal or hyperactivity</li>
+  </ul>
+</div>
+
+<div class="age-section">
+  <h4>School-age (6-12 years)</h4>
+  <ul>
+    <li>Worry about safety</li>
+    <li>Physical complaints (headaches, stomach aches)</li>
+    <li>Difficulty concentrating</li>
+    <li>Sleep problems</li>
+    <li>Behavior changes at school</li>
+    <li>Guilt or responsibility feelings</li>
+  </ul>
+</div>
+
+<div class="age-section">
+  <h4>Teenagers (13-18 years)</h4>
+  <ul>
+    <li>Withdrawal from family</li>
+    <li>Risk-taking behavior</li>
+    <li>Changes in peer relationships</li>
+    <li>Anger, irritability</li>
+    <li>Physical complaints</li>
+    <li>Academic problems</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Restoring Routine</h2>
+
+<h3>Why Routine Matters</h3>
+<ul>
+  <li>Provides predictability</li>
+  <li>Gives sense of control</li>
+  <li>Reduces anxiety</li>
+  <li>Signals safety</li>
+  <li>Promotes healing</li>
+</ul>
+
+<h3>Key Routines to Restore</h3>
+
+<div class="info-box">
+  <h4>Daily routines:</h4>
+  <ul>
+    <li>Regular wake/sleep times</li>
+    <li>Meal times</li>
+    <li>Play time</li>
+    <li>Family time</li>
+    <li>Bedtime rituals</li>
+  </ul>
+  
+  <h4>Weekly routines:</h4>
+  <ul>
+    <li>School attendance</li>
+    <li>Activities</li>
+    <li>Religious practices</li>
+    <li>Family traditions</li>
+  </ul>
+</div>
+
+<h3>Adaptations May Be Needed</h3>
+<ul>
+  <li>Temporary relaxation of rules</li>
+  <li>Extra comfort at bedtime</li>
+  <li>Modified expectations</li>
+  <li>Patience with regression</li>
+  <li>Gradual return to normal</li>
+</ul>
+
+<hr>
+
+<h2>Communication Strategies</h2>
+
+<h3>Talking to Children</h3>
+
+<div class="do-dont">
+  <div class="do">
+    <h4>Do</h4>
+    <ul>
+      <li>Use simple, honest language</li>
+      <li>Answer questions truthfully</li>
+      <li>Validate their feelings</li>
+      <li>Reassure safety</li>
+      <li>Listen more than talk</li>
+      <li>Let them lead conversations</li>
+    </ul>
+  </div>
+  <div class="dont">
+    <h4>Don't</h4>
+    <ul>
+      <li>Make promises you can't keep</li>
+      <li>Dismiss their fears</li>
+      <li>Provide too many details</li>
+      <li>Lie about the situation</li>
+      <li>Prevent questions</li>
+    </ul>
+  </div>
+</div>
+
+<h3>Age-Appropriate Conversations</h3>
+
+<div class="info-box">
+  <h4>Young children:</h4>
+  <ul>
+    <li>Simple explanations</li>
+    <li>Focus on safety</li>
+    <li>Repetition is okay</li>
+    <li>Use drawings/play</li>
+  </ul>
+  
+  <h4>School-age:</h4>
+  <ul>
+    <li>More detailed explanations</li>
+    <li>Answer questions honestly</li>
+    <li>Address specific fears</li>
+    <li>Involve in planning</li>
+  </ul>
+  
+  <h4>Teenagers:</h4>
+  <ul>
+    <li>Honest, direct conversation</li>
+    <li>Acknowledge their perspective</li>
+    <li>Include in decisions</li>
+    <li>Respect their coping style</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Comfort Strategies</h2>
+
+<h3>Physical Comfort</h3>
+<ul>
+  <li>Extra hugs and physical closeness</li>
+  <li>Comfort items (blankets, stuffed animals)</li>
+  <li>Creating cozy spaces</li>
+  <li>Physical activity</li>
+  <li>Relaxation techniques</li>
+</ul>
+
+<h3>Emotional Comfort</h3>
+<ul>
+  <li>Validation of feelings</li>
+  <li>Active listening</li>
+  <li>Patience with regression</li>
+  <li>Reassurance of love</li>
+  <li>Quality time together</li>
+</ul>
+
+<h3>Creating Safety</h3>
+<ul>
+  <li>Consistent presence</li>
+  <li>Clear expectations</li>
+  <li>Follow-through on promises</li>
+  <li>Explaining safety measures</li>
+  <li>Involving in preparation</li>
+</ul>
+
+<hr>
+
+<h2>When to Seek Help</h2>
+
+<div class="warning-box">
+  <h4>Warning Signs</h4>
+  <ul>
+    <li>Symptoms lasting more than a month</li>
+    <li>Severe regression</li>
+    <li>Withdrawal from friends/family</li>
+    <li>Talk of self-harm</li>
+    <li>Dramatic behavior changes</li>
+    <li>Unable to function at school</li>
+    <li>Substance use (teens)</li>
+  </ul>
+</div>
+
+<h3>Resources</h3>
+<ul>
+  <li>School counselors</li>
+  <li>Pediatrician</li>
+  <li>Child therapist</li>
+  <li>Family counseling</li>
+  <li>Support groups</li>
+</ul>
+
+<hr>
+
+<h2>Activities That Help</h2>
+
+<h3>Processing Activities</h3>
+<ul>
+  <li>Drawing pictures about feelings</li>
+  <li>Playing out scenarios</li>
+  <li>Writing in journal</li>
+  <li>Creating photo albums</li>
+  <li>Making thank-you cards</li>
+</ul>
+
+<h3>Normalizing Activities</h3>
+<ul>
+  <li>Playing favorite games</li>
+  <li>Watching familiar movies</li>
+  <li>Reading favorite books</li>
+  <li>Spending time with friends</li>
+  <li>Resuming hobbies</li>
+</ul>
+
+<h3>Empowering Activities</h3>
+<ul>
+  <li>Helping with cleanup</li>
+  <li>Donating to relief</li>
+  <li>Writing thank-you notes</li>
+  <li>Teaching younger siblings</li>
+  <li>Planning for future</li>
+</ul>
+
+<hr>
+
+<div class="quick-ref">
+  <h3>Quick Reference</h3>
+<pre>RESTORE ROUTINE
+- Regular schedules
+- Familiar activities
+- Predictable environment
+
+COMMUNICATE
+- Honest, age-appropriate
+- Validate feelings
+- Answer questions
+- Reassure safety
+
+COMFORT
+- Extra physical affection
+- Patience with regression
+- Quality time together
+- Comfort items okay
+
+SEEK HELP IF:
+- Symptoms lasting > 1 month
+- Severe changes in behavior
+- Talk of self-harm
+- Unable to function</pre>
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health First Aid in Crisis</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-purple: #a855f7;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-purple); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(168, 85, 247, 0.05));
+      border-left: 4px solid var(--accent-purple);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-purple); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    
+    .highlight-box {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .warning-box {
+      background: rgba(239, 68, 68, 0.1);
+      border: 2px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .info-box {
+      background: rgba(59, 130, 246, 0.1);
+      border: 2px solid var(--accent-blue);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .success-box {
+      background: rgba(34, 197, 94, 0.1);
+      border: 2px solid var(--accent-green);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .crisis-resources {
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-purple);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .crisis-resources h4 { color: var(--accent-purple); margin-top: 0; }
+    .crisis-resources .resource { margin: 0.75rem 0; }
+    .crisis-resources .number { font-family: monospace; font-size: 1.1rem; color: var(--accent-amber); }
+    
+    .pfa-box {
+      background: var(--bg-secondary);
+      border-left: 4px solid var(--accent-green);
+      padding: 1rem;
+      margin: 0.75rem 0;
+    }
+    
+    .pfa-box h4 { color: var(--accent-green); margin-top: 0; }
+    
+    .key-takeaways {
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-amber);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .key-takeaways h3 { color: var(--accent-amber); margin-top: 0; }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Mental Health First Aid in Crisis</h1>
+
+<blockquote>
+  <strong>The Invisible Wounds</strong> - Disasters and emergencies don't just injure bodies—they affect minds. Understanding how to support mental health during crisis is as important as physical first aid.
+</blockquote>
+
+<h2>Normal Reactions to Abnormal Situations</h2>
+
+<p>It's important to understand: <strong>Strong emotional reactions to crisis are normal, not weakness.</strong></p>
+
+<h3>Common Stress Reactions</h3>
+
+<div class="grid-2">
+  <div class="highlight-box">
+    <h4>Physical:</h4>
+    <ul>
+      <li>Fatigue</li>
+      <li>Sleep problems</li>
+      <li>Changes in appetite</li>
+      <li>Headaches</li>
+      <li>Stomach problems</li>
+      <li>Racing heart</li>
+      <li>Muscle tension</li>
+    </ul>
+  </div>
+  <div class="highlight-box">
+    <h4>Emotional:</h4>
+    <ul>
+      <li>Fear and anxiety</li>
+      <li>Grief and sadness</li>
+      <li>Anger and irritability</li>
+      <li>Guilt</li>
+      <li>Numbness</li>
+      <li>Mood swings</li>
+    </ul>
+  </div>
+  <div class="highlight-box">
+    <h4>Cognitive:</h4>
+    <ul>
+      <li>Difficulty concentrating</li>
+      <li>Memory problems</li>
+      <li>Confusion</li>
+      <li>Recurring thoughts of event</li>
+      <li>Difficulty making decisions</li>
+    </ul>
+  </div>
+  <div class="highlight-box">
+    <h4>Behavioral:</h4>
+    <ul>
+      <li>Social withdrawal</li>
+      <li>Changes in routine</li>
+      <li>Increased use of substances</li>
+      <li>Hypervigilance</li>
+      <li>Avoiding reminders</li>
+    </ul>
+  </div>
+</div>
+
+<p><strong>These reactions are typically temporary and diminish over time with support.</strong></p>
+
+<hr>
+
+<h2>Psychological First Aid (PFA)</h2>
+
+<h3>The Five Core Actions</h3>
+
+<div class="pfa-box">
+  <h4>1. Safety</h4>
+  <ul>
+    <li>Ensure physical safety</li>
+    <li>Create sense of security</li>
+    <li>Remove from ongoing danger</li>
+    <li>Meet basic needs (food, water, shelter)</li>
+  </ul>
+</div>
+
+<div class="pfa-box">
+  <h4>2. Calm</h4>
+  <ul>
+    <li>Stay calm yourself</li>
+    <li>Speak quietly and calmly</li>
+    <li>Provide accurate information</li>
+    <li>Reduce stimulation if helpful</li>
+    <li>Help with grounding techniques</li>
+  </ul>
+</div>
+
+<div class="pfa-box">
+  <h4>3. Self-efficacy</h4>
+  <ul>
+    <li>Help people help themselves</li>
+    <li>Involve them in their own care</li>
+    <li>Give simple, achievable tasks</li>
+    <li>Respect their capabilities</li>
+    <li>Support their decisions</li>
+  </ul>
+</div>
+
+<div class="pfa-box">
+  <h4>4. Connection</h4>
+  <ul>
+    <li>Connect with family/friends</li>
+    <li>Help access support systems</li>
+    <li>Facilitate group support</li>
+    <li>Share information about resources</li>
+  </ul>
+</div>
+
+<div class="pfa-box">
+  <h4>5. Hope</h4>
+  <ul>
+    <li>Remind them that reactions are normal</li>
+    <li>Point out their strengths</li>
+    <li>Help them identify coping strategies</li>
+    <li>Focus on what they can control</li>
+    <li>Acknowledge their resilience</li>
+  </ul>
+</div>
+
+<h3>What to Say</h3>
+
+<div class="grid-2">
+  <div class="success-box">
+    <h4>Helpful phrases:</h4>
+    <ul>
+      <li>"You're safe now."</li>
+      <li>"I'm here with you."</li>
+      <li>"This is a normal reaction to what you've been through."</li>
+      <li>"You don't have to talk about it if you don't want to."</li>
+      <li>"What do you need right now?"</li>
+      <li>"Is there someone I can help you contact?"</li>
+      <li>"You're doing the best you can."</li>
+      <li>"It's okay to feel this way."</li>
+    </ul>
+  </div>
+  <div class="warning-box">
+    <h4>Avoid saying:</h4>
+    <ul>
+      <li>"I know how you feel."</li>
+      <li>"You should be grateful you survived."</li>
+      <li>"It could have been worse."</li>
+      <li>"You need to stay strong."</li>
+      <li>"Just get over it."</li>
+      <li>"Everything happens for a reason."</li>
+      <li>"At least..."</li>
+    </ul>
+  </div>
+</div>
+
+<hr>
+
+<h2>Grounding Techniques</h2>
+
+<p>When someone is overwhelmed, panicking, or dissociating:</p>
+
+<h3>5-4-3-2-1 Technique</h3>
+
+<p>Guide them through:</p>
+<ul>
+  <li><strong>5</strong> things you can SEE</li>
+  <li><strong>4</strong> things you can TOUCH</li>
+  <li><strong>3</strong> things you can HEAR</li>
+  <li><strong>2</strong> things you can SMELL</li>
+  <li><strong>1</strong> thing you can TASTE</li>
+</ul>
+
+<h3>Deep Breathing</h3>
+
+<div class="grid-2">
+  <div class="info-box">
+    <h4>Box breathing:</h4>
+    <ol>
+      <li>Breathe in for 4 counts</li>
+      <li>Hold for 4 counts</li>
+      <li>Breathe out for 4 counts</li>
+      <li>Hold for 4 counts</li>
+      <li>Repeat</li>
+    </ol>
+  </div>
+  <div class="info-box">
+    <h4>Belly breathing:</h4>
+    <ol>
+      <li>Place hand on belly</li>
+      <li>Breathe in slowly through nose</li>
+      <li>Feel belly expand</li>
+      <li>Exhale slowly through mouth</li>
+      <li>Feel belly fall</li>
+      <li>Repeat 5-10 times</li>
+    </ol>
+  </div>
+</div>
+
+<h3>Physical Grounding</h3>
+<ul>
+  <li>Feel feet firmly on ground</li>
+  <li>Press palms together</li>
+  <li>Hold something cold or warm</li>
+  <li>Squeeze a stress ball</li>
+  <li>Splash cold water on face</li>
+  <li>Take a short walk</li>
+</ul>
+
+<hr>
+
+<h2>Supporting Children</h2>
+
+<h3>Age-Specific Reactions</h3>
+
+<div class="highlight-box">
+  <h4>Preschool (under 6):</h4>
+  <ul>
+    <li>Regression (thumb sucking, bedwetting)</li>
+    <li>Clinginess</li>
+    <li>Fear of dark/being alone</li>
+    <li>Changes in eating/sleeping</li>
+    <li>Repetitive play about event</li>
+  </ul>
+</div>
+
+<div class="highlight-box">
+  <h4>School-age (6-12):</h4>
+  <ul>
+    <li>Worry about safety of family</li>
+    <li>Guilt or responsibility</li>
+    <li>Physical complaints</li>
+    <li>Difficulty concentrating</li>
+    <li>Behavior changes</li>
+    <li>Loss of interest in activities</li>
+  </ul>
+</div>
+
+<div class="highlight-box">
+  <h4>Teens (13-18):</h4>
+  <ul>
+    <li>Risk-taking behavior</li>
+    <li>Withdrawal from family</li>
+    <li>Physical complaints</li>
+    <li>Sleep/appetite changes</li>
+    <li>Substance use</li>
+    <li>Anger/irritability</li>
+    <li>Academic problems</li>
+  </ul>
+</div>
+
+<h3>Supporting Children</h3>
+
+<div class="success-box">
+  <h4>Do:</h4>
+  <ul>
+    <li>Maintain routines as much as possible</li>
+    <li>Provide physical comfort</li>
+    <li>Validate their feelings</li>
+    <li>Give honest, age-appropriate information</li>
+    <li>Let them express feelings through play/art</li>
+    <li>Limit media exposure</li>
+    <li>Reassure safety</li>
+    <li>Be available and patient</li>
+    <li>Model healthy coping</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Recognizing Crisis States</h2>
+
+<h3>Panic Attack</h3>
+
+<h4>Signs:</h4>
+<ul>
+  <li>Racing heart</li>
+  <li>Difficulty breathing</li>
+  <li>Chest tightness</li>
+  <li>Sweating</li>
+  <li>Trembling</li>
+  <li>Feeling of doom</li>
+  <li>Fear of dying</li>
+</ul>
+
+<h4>Response:</h4>
+<ol>
+  <li>Stay calm and present</li>
+  <li>Speak in slow, calm voice</li>
+  <li>Guide through breathing</li>
+  <li>Remind them it will pass</li>
+  <li>Don't minimize their experience</li>
+  <li>Stay until it passes</li>
+</ol>
+
+<h4>What to say:</h4>
+<ul>
+  <li>"This is a panic attack. It's scary but it will pass."</li>
+  <li>"You're safe. I'm here with you."</li>
+  <li>"Try to breathe with me—in... out..."</li>
+</ul>
+
+<h3>Acute Stress/Shock</h3>
+
+<h4>Signs:</h4>
+<ul>
+  <li>Dazed appearance</li>
+  <li>Disorientation</li>
+  <li>Not responding appropriately</li>
+  <li>Repetitive behaviors</li>
+  <li>Extreme agitation or complete stillness</li>
+</ul>
+
+<h4>Response:</h4>
+<ol>
+  <li>Ensure safety</li>
+  <li>Speak calmly and simply</li>
+  <li>Orient to present (name, location, time)</li>
+  <li>Meet basic needs</li>
+  <li>Stay with them</li>
+  <li>Don't force them to talk about event</li>
+</ol>
+
+<hr>
+
+<h2>Suicide Risk Assessment</h2>
+
+<h3>Warning Signs</h3>
+
+<div class="warning-box">
+  <h4>Direct signs:</h4>
+  <ul>
+    <li>Talking about wanting to die</li>
+    <li>Looking for ways to kill oneself</li>
+    <li>Talking about feeling hopeless</li>
+    <li>Talking about being a burden</li>
+  </ul>
+</div>
+
+<h4>Behavioral signs:</h4>
+<ul>
+  <li>Giving away possessions</li>
+  <li>Saying goodbye</li>
+  <li>Withdrawing from people</li>
+  <li>Increased substance use</li>
+  <li>Reckless behavior</li>
+  <li>Sudden calmness after depression</li>
+</ul>
+
+<h3>How to Ask</h3>
+
+<p>It's okay—and important—to ask directly.</p>
+
+<p><strong>Questions:</strong></p>
+<ul>
+  <li>"Are you thinking about hurting yourself?"</li>
+  <li>"Are you thinking about suicide?"</li>
+  <li>"Do you have a plan?"</li>
+</ul>
+
+<div class="info-box">
+  <p><strong>Asking about suicide does NOT increase risk.</strong></p>
+</div>
+
+<h3>If Someone is Suicidal</h3>
+
+<ol>
+  <li><strong>Don't leave them alone</strong></li>
+  <li><strong>Remove access to means</strong> (weapons, medications, etc.)</li>
+  <li><strong>Listen without judgment</strong></li>
+  <li><strong>Don't promise secrecy</strong></li>
+  <li><strong>Get help:</strong>
+    <ul>
+      <li>988 Suicide & Crisis Lifeline (call or text)</li>
+      <li>Crisis Text Line: Text HOME to 741741</li>
+      <li>Emergency services if immediate danger</li>
+    </ul>
+  </li>
+</ol>
+
+<hr>
+
+<h2>Self-Care for Helpers</h2>
+
+<p><strong>You cannot pour from an empty cup.</strong></p>
+
+<h3>Signs of Caregiver Burnout</h3>
+<ul>
+  <li>Exhaustion</li>
+  <li>Feeling numb or detached</li>
+  <li>Irritability</li>
+  <li>Sleep problems</li>
+  <li>Difficulty caring about others</li>
+  <li>Physical symptoms</li>
+  <li>Guilt about taking breaks</li>
+</ul>
+
+<h3>Preventing Burnout</h3>
+
+<div class="grid-2">
+  <div class="highlight-box">
+    <h4>During crisis:</h4>
+    <ul>
+      <li>Take breaks when possible</li>
+      <li>Share the load with others</li>
+      <li>Accept your limitations</li>
+      <li>Eat and hydrate</li>
+      <li>Sleep when you can</li>
+      <li>Talk to someone about your experiences</li>
+    </ul>
+  </div>
+  <div class="highlight-box">
+    <h4>After crisis:</h4>
+    <ul>
+      <li>Debrief with others</li>
+      <li>Allow yourself to process</li>
+      <li>Reduce other stressors</li>
+      <li>Return to normal activities gradually</li>
+      <li>Seek support if needed</li>
+    </ul>
+  </div>
+</div>
+
+<hr>
+
+<h2>Crisis Resources</h2>
+
+<div class="crisis-resources">
+  <h4>Keep these numbers accessible:</h4>
+  <div class="resource">
+    <strong>988 Suicide & Crisis Lifeline:</strong> <span class="number">Call or text 988</span>
+  </div>
+  <div class="resource">
+    <strong>Crisis Text Line:</strong> <span class="number">Text HOME to 741741</span>
+  </div>
+  <div class="resource">
+    <strong>Disaster Distress Helpline:</strong> <span class="number">1-800-985-5990</span>
+  </div>
+  <div class="resource">
+    <strong>Veterans Crisis Line:</strong> <span class="number">1-800-273-8255, Press 1</span>
+  </div>
+  <div class="resource">
+    <strong>SAMHSA National Helpline:</strong> <span class="number">1-800-662-4357</span>
+  </div>
+</div>
+
+<hr>
+
+<div class="key-takeaways">
+  <h3>Key Takeaways</h3>
+  <ol>
+    <li><strong>Strong reactions are normal</strong> responses to abnormal situations</li>
+    <li><strong>Presence matters</strong> - Being there is powerful</li>
+    <li><strong>Listen without judgment</strong> - Don't try to fix everything</li>
+    <li><strong>Meet basic needs</strong> - Safety, food, water, rest</li>
+    <li><strong>Connect people</strong> with support systems</li>
+    <li><strong>Take care of yourself</strong> - You can't help others if depleted</li>
+    <li><strong>Know when to get help</strong> - Some situations need professionals</li>
+    <li><strong>Hope is essential</strong> - People are resilient</li>
+  </ol>
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+  <p><strong>Disclaimer:</strong> This guide provides basic mental health support information. It is not a substitute for professional mental health care. If you or someone else is in immediate danger, contact emergency services.</p>
+</div>
+
+</body>
+</html>

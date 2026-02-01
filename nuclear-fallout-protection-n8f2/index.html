@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuclear Fallout Protection</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-purple: #a855f7;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-red); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+    th { background: var(--bg-tertiary); font-weight: 600; color: var(--accent-blue); }
+    tr:last-child td { border-bottom: none; }
+    
+    /* Critical Alert */
+    .critical-alert {
+      background: rgba(239, 68, 68, 0.2);
+      border: 2px solid var(--accent-red);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      animation: pulse-border 2s infinite;
+    }
+    
+    @keyframes pulse-border {
+      0%, 100% { border-color: var(--accent-red); }
+      50% { border-color: #fca5a5; }
+    }
+    
+    .critical-alert-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--accent-red);
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    /* Timeline Badge */
+    .timeline-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(245, 158, 11, 0.2);
+      border: 1px solid var(--accent-amber);
+      border-radius: 999px;
+      padding: 0.25rem 0.75rem;
+      color: var(--accent-amber);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    
+    .timeline-badge .time {
+      font-family: monospace;
+      font-weight: bold;
+    }
+    
+    /* Grid layouts */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .box-green {
+      background: rgba(34, 197, 94, 0.1);
+      border: 1px solid var(--accent-green);
+      border-radius: 8px;
+      padding: 1rem;
+    }
+    
+    .box-green h4 { color: var(--accent-green); margin-top: 0; }
+    .box-green ul { color: rgba(34, 197, 94, 0.9); }
+    
+    .box-red {
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1rem;
+    }
+    
+    .box-red h4 { color: var(--accent-red); margin-top: 0; }
+    .box-red ul { color: rgba(239, 68, 68, 0.9); }
+    
+    /* Shelter Diagram */
+    .shelter-diagram {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+    
+    .shelter-diagram svg { max-width: 400px; width: 100%; margin: 0 auto; }
+    .shelter-diagram p { color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem; }
+    
+    /* Decontamination Steps */
+    .decon-steps {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .decon-buttons {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .decon-btn {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      border: none;
+      font-size: 1.25rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      background: var(--bg-tertiary);
+    }
+    
+    .decon-btn.active { background: var(--accent-blue); transform: scale(1.1); }
+    .decon-btn.complete { background: var(--accent-green); }
+    
+    .decon-content {
+      text-align: center;
+      padding: 1rem;
+      background: var(--bg-primary);
+      border-radius: 8px;
+      min-height: 100px;
+    }
+    
+    .decon-content h4 { color: var(--accent-blue); font-size: 1.25rem; margin-bottom: 0.5rem; }
+    
+    .decon-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+    }
+    
+    .decon-nav button {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    
+    .decon-nav .prev { background: var(--bg-tertiary); color: var(--text-primary); }
+    .decon-nav .prev:hover { background: #3f3f46; }
+    .decon-nav .next { background: var(--accent-blue); color: white; }
+    .decon-nav .next:hover { background: #2563eb; }
+    .decon-nav button:disabled { opacity: 0.5; cursor: not-allowed; }
+    
+    /* Countdown Timer */
+    .countdown {
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid var(--accent-amber);
+      border-radius: 8px;
+      padding: 1.5rem;
+      text-align: center;
+      margin: 1.5rem 0;
+    }
+    
+    .countdown .label { color: var(--accent-amber); font-size: 0.9rem; margin-bottom: 0.5rem; }
+    .countdown .time { font-size: 2.5rem; font-family: monospace; font-weight: bold; color: var(--accent-amber); }
+    .countdown .note { color: rgba(245, 158, 11, 0.7); font-size: 0.9rem; margin-top: 0.5rem; }
+    
+    /* Protection Meters */
+    .protection-meter {
+      margin: 0.75rem 0;
+    }
+    
+    .protection-meter .header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      margin-bottom: 0.25rem;
+    }
+    
+    .protection-meter .header .factor {
+      font-family: monospace;
+    }
+    
+    .protection-meter .bar {
+      height: 12px;
+      background: var(--bg-tertiary);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    
+    .protection-meter .fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent-green), #34d399);
+      border-radius: 999px;
+      transition: width 1s;
+    }
+    
+    /* Water Guidelines */
+    .water-guidelines {
+      background: rgba(59, 130, 246, 0.1);
+      border: 1px solid var(--accent-blue);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .water-guidelines h4 {
+      color: var(--accent-blue);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .guideline-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin: 0.5rem 0;
+    }
+    
+    .guideline-item .safe { color: var(--accent-green); }
+    .guideline-item .unsafe { color: var(--accent-red); }
+    
+    /* Pill badges */
+    .pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
+    
+    .pill {
+      background: var(--accent-blue);
+      color: white;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+    }
+    
+    /* Quick checklist */
+    .quick-checklist {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .quick-checklist pre {
+      background: none;
+      padding: 0;
+      margin: 0;
+      font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: var(--text-primary);
+    }
+    
+    /* Info box */
+    .info-box {
+      background: rgba(147, 51, 234, 0.1);
+      border: 1px solid var(--accent-purple);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .info-box p { color: rgba(168, 85, 247, 0.9); margin: 0; }
+    
+    /* Footer */
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    
+    /* Links */
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .resource-link {
+      display: block;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    
+    .resource-link:hover { background: var(--bg-tertiary); }
+    .resource-link h4 { color: var(--accent-blue); margin: 0 0 0.25rem 0; font-size: 1rem; }
+    .resource-link p { color: var(--text-muted); font-size: 0.85rem; margin: 0; }
+  </style>
+</head>
+<body>
+
+<h1>Nuclear Fallout Protection</h1>
+
+<div class="critical-alert">
+  <div class="critical-alert-header">
+    <span>⚠️</span>
+    <span>CRITICAL - DO THIS FIRST</span>
+  </div>
+  <p><strong>YOU HAVE MINUTES TO ACT.</strong> If you receive warning of a nuclear event, immediately execute these steps. Do not wait to gather belongings. Do not wait for others. Every second counts.</p>
+</div>
+
+<hr>
+
+<h2>🚨 IMMEDIATE ACTIONS (First 10 Minutes)</h2>
+
+<div class="timeline-badge">
+  <span>🕐</span>
+  <span class="time">0-10 min</span>
+  <span>|</span>
+  <span>Critical Window</span>
+</div>
+
+<h3>1. GET INSIDE IMMEDIATELY</h3>
+
+<p>The single most important action. Any building is better than outside.</p>
+
+<div class="grid-2">
+  <div class="box-green">
+    <h4>🛡️ BEST SHELTER</h4>
+    <ul>
+      <li>Underground (basement, subway)</li>
+      <li>Center of large concrete building</li>
+      <li>Middle floors of high-rise</li>
+    </ul>
+  </div>
+  <div class="box-red">
+    <h4>⚠️ AVOID</h4>
+    <ul>
+      <li>Near windows</li>
+      <li>Exterior walls</li>
+      <li>Top floors</li>
+      <li>Vehicles (minimal protection)</li>
+    </ul>
+  </div>
+</div>
+
+<div class="shelter-diagram">
+  <svg viewBox="0 0 400 320">
+    <!-- House outline -->
+    <path d="M50 150 L200 50 L350 150 L350 280 L50 280 Z" fill="#1a1a2e" stroke="#4a5568" stroke-width="2"/>
+    
+    <!-- Roof -->
+    <path d="M50 150 L200 50 L350 150" fill="none" stroke="#718096" stroke-width="3"/>
+    
+    <!-- Windows - X marks -->
+    <rect x="80" y="180" width="40" height="50" fill="#2d3748" stroke="#e53e3e" stroke-width="2"/>
+    <line x1="80" y1="180" x2="120" y2="230" stroke="#e53e3e" stroke-width="2"/>
+    <line x1="120" y1="180" x2="80" y2="230" stroke="#e53e3e" stroke-width="2"/>
+    
+    <rect x="280" y="180" width="40" height="50" fill="#2d3748" stroke="#e53e3e" stroke-width="2"/>
+    <line x1="280" y1="180" x2="320" y2="230" stroke="#e53e3e" stroke-width="2"/>
+    <line x1="320" y1="180" x2="280" y2="230" stroke="#e53e3e" stroke-width="2"/>
+    
+    <!-- Safe room - highlighted -->
+    <rect x="150" y="200" width="100" height="80" fill="#065f46" stroke="#10b981" stroke-width="3"/>
+    <text x="200" y="245" text-anchor="middle" fill="#10b981" font-size="12" font-weight="bold">SAFE ZONE</text>
+    
+    <!-- Basement indicator -->
+    <rect x="50" y="280" width="300" height="40" fill="#1e3a5f" stroke="#3b82f6" stroke-width="2"/>
+    <text x="200" y="305" text-anchor="middle" fill="#60a5fa" font-size="11">BASEMENT = BEST PROTECTION</text>
+    
+    <!-- Labels -->
+    <text x="100" y="170" fill="#ef4444" font-size="10">AVOID</text>
+    <text x="300" y="170" fill="#ef4444" font-size="10">AVOID</text>
+  </svg>
+  <p>Interior rooms and basements provide the best protection</p>
+</div>
+
+<h3>2. SEAL THE SPACE</h3>
+
+<div class="pills">
+  <span class="pill">Close all windows</span>
+  <span class="pill">Close all doors</span>
+  <span class="pill">Turn off HVAC</span>
+  <span class="pill">Close fireplace damper</span>
+  <span class="pill">Seal vents with tape/wet cloth</span>
+</div>
+
+<h3>3. IF YOU WERE OUTSIDE</h3>
+
+<p><strong>Decontaminate immediately.</strong> Do this BEFORE joining others inside.</p>
+
+<div class="decon-steps">
+  <div class="decon-buttons" id="deconButtons">
+    <button class="decon-btn active" data-step="0">👔</button>
+    <button class="decon-btn" data-step="1">🛍️</button>
+    <button class="decon-btn" data-step="2">🚿</button>
+    <button class="decon-btn" data-step="3">🧴</button>
+    <button class="decon-btn" data-step="4">👕</button>
+  </div>
+  <div class="decon-content" id="deconContent">
+    <h4>Step 1: Remove Clothing</h4>
+    <p>Removes ~90% of contamination</p>
+  </div>
+  <div class="decon-nav">
+    <button class="prev" id="deconPrev" disabled>Previous</button>
+    <button class="next" id="deconNext">Next</button>
+  </div>
+</div>
+
+<hr>
+
+<h2>⏱️ THE CRITICAL FIRST 24 HOURS</h2>
+
+<div class="countdown">
+  <div class="label">Most dangerous fallout period</div>
+  <div class="time">FIRST 24 HOURS</div>
+  <div class="note">Radiation decreases by ~90% after this period</div>
+</div>
+
+<p>Fallout radiation intensity follows a predictable decay pattern:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Time After Event</th>
+      <th>Radiation Level</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1 hour</td>
+      <td>100% (most dangerous)</td>
+    </tr>
+    <tr>
+      <td>7 hours</td>
+      <td>~10%</td>
+    </tr>
+    <tr>
+      <td>24 hours</td>
+      <td>~1%</td>
+    </tr>
+    <tr>
+      <td>2 weeks</td>
+      <td>~0.1%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>The "7-10 Rule":</strong> For every 7-fold increase in time, radiation decreases by 10x.</p>
+
+<hr>
+
+<h2>🏠 Shelter Protection Factors</h2>
+
+<p>Different materials provide different levels of protection. The <strong>Protection Factor (PF)</strong> indicates how much radiation is reduced.</p>
+
+<div class="protection-meter">
+  <div class="header">
+    <span>Open air</span>
+    <span class="factor">1x protection</span>
+  </div>
+  <div class="bar"><div class="fill" style="width: 0.1%"></div></div>
+</div>
+
+<div class="protection-meter">
+  <div class="header">
+    <span>Wood frame house</span>
+    <span class="factor">2x protection</span>
+  </div>
+  <div class="bar"><div class="fill" style="width: 0.2%"></div></div>
+</div>
+
+<div class="protection-meter">
+  <div class="header">
+    <span>Brick house</span>
+    <span class="factor">10x protection</span>
+  </div>
+  <div class="bar"><div class="fill" style="width: 1%"></div></div>
+</div>
+
+<div class="protection-meter">
+  <div class="header">
+    <span>Concrete building</span>
+    <span class="factor">40x protection</span>
+  </div>
+  <div class="bar"><div class="fill" style="width: 4%"></div></div>
+</div>
+
+<div class="protection-meter">
+  <div class="header">
+    <span>Basement (3ft earth)</span>
+    <span class="factor">200x protection</span>
+  </div>
+  <div class="bar"><div class="fill" style="width: 20%"></div></div>
+</div>
+
+<div class="protection-meter">
+  <div class="header">
+    <span>Underground shelter</span>
+    <span class="factor">1000x protection</span>
+  </div>
+  <div class="bar"><div class="fill" style="width: 100%"></div></div>
+</div>
+
+<hr>
+
+<h2>💧 Water & Food Safety</h2>
+
+<div class="water-guidelines">
+  <h4>💧 Water Guidelines</h4>
+  <div class="guideline-item">
+    <span class="safe">✓</span>
+    <span>Sealed containers (bottles, cans) = SAFE</span>
+  </div>
+  <div class="guideline-item">
+    <span class="safe">✓</span>
+    <span>Municipal water (pipes underground) = Usually SAFE</span>
+  </div>
+  <div class="guideline-item">
+    <span class="unsafe">✗</span>
+    <span>Open containers = CONTAMINATED</span>
+  </div>
+  <div class="guideline-item">
+    <span class="unsafe">✗</span>
+    <span>Well water = TEST FIRST</span>
+  </div>
+</div>
+
+<h3>Food Safety</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Food Type</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sealed cans/packages</td>
+      <td>✅ Safe (wash exterior)</td>
+    </tr>
+    <tr>
+      <td>Refrigerator food</td>
+      <td>✅ Safe if sealed</td>
+    </tr>
+    <tr>
+      <td>Food in closed cabinets</td>
+      <td>⚠️ Wash containers</td>
+    </tr>
+    <tr>
+      <td>Open food</td>
+      <td>❌ Discard</td>
+    </tr>
+    <tr>
+      <td>Fresh produce (outdoors)</td>
+      <td>❌ Discard</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>📻 Information Sources</h2>
+
+<p>Monitor these for official guidance:</p>
+
+<ol>
+  <li><strong>Emergency Alert System (EAS)</strong> - TV/Radio</li>
+  <li><strong>NOAA Weather Radio</strong> - All hazards</li>
+  <li><strong>Local emergency management</strong></li>
+  <li><strong>FEMA</strong> - Federal guidance</li>
+</ol>
+
+<div class="info-box">
+  <p><strong>Do NOT</strong> leave shelter to seek information. Use radio. Leaving shelter increases exposure.</p>
+</div>
+
+<hr>
+
+<h2>🚪 When to Leave Shelter</h2>
+
+<div class="critical-alert">
+  <div class="critical-alert-header">
+    <span>⚠️</span>
+    <span>CRITICAL</span>
+  </div>
+  <p>Do NOT leave until official all-clear OR at least 24 hours have passed and you must leave for critical supplies.</p>
+</div>
+
+<h3>If You Must Leave Early</h3>
+
+<ol>
+  <li>Minimize time outside (minutes, not hours)</li>
+  <li>Cover all skin</li>
+  <li>Wear mask/cover nose and mouth</li>
+  <li>Do NOT touch anything unnecessarily</li>
+  <li>Decontaminate immediately upon return</li>
+  <li>Do not bring outside items inside</li>
+</ol>
+
+<hr>
+
+<h2>📋 Quick Action Checklist</h2>
+
+<div class="quick-checklist">
+<pre>□ GET INSIDE (any building, NOW)
+□ Go to interior room / basement
+□ CLOSE all windows and doors
+□ Turn OFF ventilation / HVAC
+□ SEAL gaps (tape, wet towels)
+□ DECONTAMINATE if exposed outside
+□ MONITOR radio for updates
+□ STAY INSIDE minimum 24 hours
+□ RATION supplies if needed</pre>
+</div>
+
+<hr>
+
+<h2>Additional Resources</h2>
+
+<div class="resource-grid">
+  <a href="#radiation-safety" class="resource-link">
+    <h4>Understanding Radiation</h4>
+    <p>Time, distance, shielding principles</p>
+  </a>
+  <a href="#decontamination" class="resource-link">
+    <h4>Full Decontamination Guide</h4>
+    <p>Detailed step-by-step procedures</p>
+  </a>
+  <a href="#shelter-improvement" class="resource-link">
+    <h4>Improving Your Shelter</h4>
+    <p>How to increase protection factor</p>
+  </a>
+  <a href="#long-term" class="resource-link">
+    <h4>Long-Term Survival</h4>
+    <p>Beyond the first 24 hours</p>
+  </a>
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026 | License: CC-BY-SA 4.0</p>
+  <p><strong>This is general preparedness information. Follow official guidance during any actual emergency.</strong></p>
+</div>
+
+<script>
+// Decontamination Steps Interactive
+const deconSteps = [
+  { title: "Remove Clothing", desc: "Removes ~90% of contamination", icon: "👔" },
+  { title: "Bag It", desc: "Seal in plastic, set aside", icon: "🛍️" },
+  { title: "Shower", desc: "Soap and water, head to toe", icon: "🚿" },
+  { title: "Shampoo Only", desc: "NO conditioner (binds particles)", icon: "🧴" },
+  { title: "Clean Clothes", desc: "Put on uncontaminated clothing", icon: "👕" }
+];
+
+let currentStep = 0;
+const buttons = document.querySelectorAll('.decon-btn');
+const content = document.getElementById('deconContent');
+const prevBtn = document.getElementById('deconPrev');
+const nextBtn = document.getElementById('deconNext');
+
+function updateDeconStep() {
+  buttons.forEach((btn, i) => {
+    btn.classList.remove('active', 'complete');
+    if (i < currentStep) btn.classList.add('complete');
+    if (i === currentStep) btn.classList.add('active');
+  });
+  
+  content.innerHTML = `
+    <h4>Step ${currentStep + 1}: ${deconSteps[currentStep].title}</h4>
+    <p>${deconSteps[currentStep].desc}</p>
+  `;
+  
+  prevBtn.disabled = currentStep === 0;
+  nextBtn.disabled = currentStep === deconSteps.length - 1;
+}
+
+buttons.forEach((btn, i) => {
+  btn.addEventListener('click', () => {
+    currentStep = i;
+    updateDeconStep();
+  });
+});
+
+prevBtn.addEventListener('click', () => {
+  if (currentStep > 0) {
+    currentStep--;
+    updateDeconStep();
+  }
+});
+
+nextBtn.addEventListener('click', () => {
+  if (currentStep < deconSteps.length - 1) {
+    currentStep++;
+    updateDeconStep();
+  }
+});
+</script>
+
+</body>
+</html>

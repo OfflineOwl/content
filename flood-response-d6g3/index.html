@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flood Response & Water Safety</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-cyan: #06b6d4;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-cyan); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(6, 182, 212, 0.05));
+      border-left: 4px solid var(--accent-cyan);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-cyan); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+    th { background: var(--bg-tertiary); font-weight: 600; color: var(--accent-blue); }
+    tr:last-child td { border-bottom: none; }
+    
+    .warning-box {
+      background: rgba(239, 68, 68, 0.1);
+      border: 2px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .critical-box {
+      background: rgba(239, 68, 68, 0.2);
+      border: 3px solid var(--accent-red);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+    
+    .critical-box h3 {
+      color: var(--accent-red);
+      font-size: 1.75rem;
+      margin: 0 0 1rem 0;
+    }
+    
+    .depth-chart {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .depth-item {
+      display: flex;
+      align-items: center;
+      padding: 0.75rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    .depth-item:last-child { border-bottom: none; }
+    
+    .depth-value {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--accent-cyan);
+      min-width: 100px;
+    }
+    
+    strong { color: var(--accent-amber); }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    
+    .quick-ref {
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-cyan);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .quick-ref h3 { color: var(--accent-cyan); margin-top: 0; }
+    
+    pre {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+      font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Flood Response & Water Safety</h1>
+
+<blockquote>
+  <strong>Underestimated Killer</strong> - Floods cause more deaths than any other natural disaster. Most flood deaths occur when people attempt to walk or drive through flood water.
+</blockquote>
+
+<h2>Flood Types</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Warning Time</th>
+      <th>Characteristics</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Flash flood</td>
+      <td>Minutes to hours</td>
+      <td>Rapid onset, very dangerous</td>
+    </tr>
+    <tr>
+      <td>River flood</td>
+      <td>Hours to days</td>
+      <td>Rising water, prolonged</td>
+    </tr>
+    <tr>
+      <td>Coastal flood</td>
+      <td>Hours (storm surge)</td>
+      <td>Wind-driven, saltwater</td>
+    </tr>
+    <tr>
+      <td>Urban flood</td>
+      <td>Hours</td>
+      <td>Poor drainage, fast</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Before Flooding</h2>
+
+<h3>Know Your Risk</h3>
+<ul>
+  <li>Are you in a flood zone?</li>
+  <li>What's your elevation?</li>
+  <li>Does your area flood historically?</li>
+  <li>Where will water come from?</li>
+</ul>
+
+<h3>Preparation</h3>
+<ul>
+  <li>Have evacuation route planned</li>
+  <li>Know how to shut off utilities</li>
+  <li>Move valuables to higher floors</li>
+  <li>Have sandbags or flood barriers ready</li>
+  <li>Keep emergency supplies upstairs</li>
+</ul>
+
+<h2>During Flood Warning</h2>
+
+<h3>Immediate Actions</h3>
+<ol>
+  <li>Monitor emergency broadcasts</li>
+  <li>Prepare to evacuate</li>
+  <li>Move important items up</li>
+  <li>Charge devices</li>
+  <li>Fill bathtub with clean water</li>
+  <li>Don't wait until last minute to leave</li>
+</ol>
+
+<h2>During Flooding</h2>
+
+<div class="critical-box">
+  <h3>Turn Around, Don't Drown</h3>
+  <div class="depth-chart">
+    <div class="depth-item">
+      <span class="depth-value">6 inches</span>
+      <span>Can knock you down</span>
+    </div>
+    <div class="depth-item">
+      <span class="depth-value">12 inches</span>
+      <span>Can carry away a vehicle</span>
+    </div>
+    <div class="depth-item">
+      <span class="depth-value">2 feet</span>
+      <span>Can float most vehicles</span>
+    </div>
+  </div>
+</div>
+
+<h3>If Ordered to Evacuate</h3>
+<ul>
+  <li>Leave immediately</li>
+  <li>Follow designated routes</li>
+  <li>Don't drive through flooded roads</li>
+  <li>Don't walk through flowing water</li>
+</ul>
+
+<h3>If Trapped by Rising Water</h3>
+
+<h4>In Building:</h4>
+<ul>
+  <li>Go to highest floor</li>
+  <li>Don't go into attic (may trap you)</li>
+  <li>Go to roof if necessary</li>
+  <li>Signal for help</li>
+  <li>Call 911 with location</li>
+</ul>
+
+<h4>In Vehicle:</h4>
+<ul>
+  <li>If water is rising, get out</li>
+  <li>Move to higher ground</li>
+  <li>Abandon vehicle if necessary</li>
+  <li>Don't try to drive through flood</li>
+</ul>
+
+<h3>Driving Through Water</h3>
+
+<div class="warning-box">
+  <strong>DON'T.</strong>
+  <p style="margin-top: 0.5rem;">If you must:</p>
+  <ul>
+    <li>Turn around if depth is unknown</li>
+    <li>6 inches = loss of control</li>
+    <li>12 inches = vehicle floats</li>
+    <li>Roadbed may be washed out</li>
+    <li>Power lines may be down</li>
+  </ul>
+</div>
+
+<h2>After Flooding</h2>
+
+<h3>Safety Hazards</h3>
+<ul>
+  <li>Contaminated water everywhere</li>
+  <li>Electrical hazards</li>
+  <li>Structural damage</li>
+  <li>Gas leaks</li>
+  <li>Debris and sharp objects</li>
+  <li>Displaced animals (snakes, etc.)</li>
+</ul>
+
+<h3>Returning Home</h3>
+
+<p><strong>Only when cleared by authorities:</strong></p>
+<ul>
+  <li>Wear protective gear</li>
+  <li>Don't touch electrical equipment if wet</li>
+  <li>Document damage before cleanup</li>
+  <li>Check for structural damage</li>
+  <li>Beware of gas leaks</li>
+</ul>
+
+<h3>Water Safety</h3>
+<ul>
+  <li>Assume all flood water is contaminated</li>
+  <li>Don't drink tap water until cleared</li>
+  <li>Don't use well water until tested</li>
+  <li>Boil water if unsure</li>
+  <li>Discard food touched by flood water</li>
+</ul>
+
+<h3>Cleanup Safety</h3>
+<ul>
+  <li>Wear boots, gloves, mask</li>
+  <li>Open windows for ventilation</li>
+  <li>Discard items that can't be cleaned</li>
+  <li>Clean and disinfect everything</li>
+  <li>Watch for mold (starts within 24-48 hours)</li>
+</ul>
+
+<hr>
+
+<div class="quick-ref">
+  <h3>Quick Reference</h3>
+  <pre>TURN AROUND, DON'T DROWN
+
+6 inches = can knock you down
+12 inches = can move a car
+2 feet = most vehicles float
+
+DURING FLOOD:
+- Get to high ground
+- Don't walk/drive through water
+- Call 911 if trapped
+
+AFTER FLOOD:
+- Assume all flood water contaminated
+- Don't enter until safe
+- Watch for electrical hazards
+- Document damage
+- Clean/dry within 24-48 hours (mold)</pre>
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foraging Basics</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-green); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.15), rgba(34, 197, 94, 0.05));
+      border-left: 4px solid var(--accent-green);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-green); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+    th { background: var(--bg-tertiary); font-weight: 600; color: var(--accent-blue); }
+    tr:last-child td { border-bottom: none; }
+    
+    .warning-box {
+      background: rgba(239, 68, 68, 0.15);
+      border: 2px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+    }
+    
+    .warning-box h4 { color: var(--accent-red); margin-top: 0; }
+    
+    .info-box {
+      background: rgba(59, 130, 246, 0.1);
+      border: 2px solid var(--accent-blue);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .region-section {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .region-section h4 { color: var(--accent-green); margin-top: 0; }
+    
+    .safe-box {
+      background: rgba(34, 197, 94, 0.1);
+      border: 2px solid var(--accent-green);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Foraging Basics (High-Level, Regionalized)</h1>
+
+<blockquote>
+  <strong>Caution Required</strong> - Foraging can supplement your food supply, but misidentification can be fatal. This guide provides an overview—always verify with multiple expert sources before eating wild foods.
+</blockquote>
+
+<h2>Critical Safety Rules</h2>
+
+<h3>The Universal Foraging Rules</h3>
+
+<ol>
+  <li><strong>NEVER eat anything you cannot positively identify</strong></li>
+  <li><strong>NEVER rely on a single identification characteristic</strong></li>
+  <li><strong>NEVER assume similar-looking plants are safe</strong></li>
+  <li><strong>NEVER eat anything based solely on animal consumption</strong></li>
+  <li><strong>ALWAYS start with tiny amounts of new foods</strong></li>
+  <li><strong>ALWAYS have a reliable field guide (or several)</strong></li>
+</ol>
+
+<h3>Dangerous Lookalikes Exist</h3>
+
+<p>Many edible plants have poisonous lookalikes:</p>
+<ul>
+  <li>Wild carrot vs. Poison hemlock</li>
+  <li>Elderberry vs. Water hemlock</li>
+  <li>Morel mushrooms vs. False morels</li>
+  <li>Wild onion vs. Death camas</li>
+</ul>
+
+<div class="warning-box">
+  <h4>One mistake can be fatal.</h4>
+</div>
+
+<hr>
+
+<h2>Identification Principles</h2>
+
+<h3>Positive ID Requirements</h3>
+
+<p>Before eating any wild plant, verify:</p>
+<ul>
+  <li>Overall shape and size</li>
+  <li>Leaf shape, arrangement, and texture</li>
+  <li>Stem characteristics</li>
+  <li>Flower/fruit characteristics</li>
+  <li>Smell (some plants have distinct odors)</li>
+  <li>Habitat and season</li>
+  <li>Multiple expert sources agree</li>
+</ul>
+
+<h3>Learning to Forage Safely</h3>
+
+<ol>
+  <li><strong>Start with a class</strong> from a local expert</li>
+  <li><strong>Focus on a few plants</strong> initially</li>
+  <li><strong>Use multiple field guides</strong></li>
+  <li><strong>Learn dangerous plants</strong> in your area first</li>
+  <li><strong>Practice identification</strong> before emergencies</li>
+  <li><strong>Join foraging groups</strong> for mentorship</li>
+</ol>
+
+<hr>
+
+<h2>Categories of Wild Edibles</h2>
+
+<h3>Greens and Vegetables</h3>
+
+<p><strong>Widely distributed, often easier to identify:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Plant</th>
+      <th>Description</th>
+      <th>Season</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dandelion</td>
+      <td>Yellow flower, toothed leaves</td>
+      <td>Year-round</td>
+      <td>Leaves, roots, flowers edible</td>
+    </tr>
+    <tr>
+      <td>Clover</td>
+      <td>Three-leaf clusters, round flowers</td>
+      <td>Spring-Fall</td>
+      <td>Flowers and leaves edible</td>
+    </tr>
+    <tr>
+      <td>Plantain</td>
+      <td>Broad leaves, parallel veins</td>
+      <td>Spring-Fall</td>
+      <td>Common lawn "weed"</td>
+    </tr>
+    <tr>
+      <td>Lamb's quarters</td>
+      <td>Diamond leaves, dusty appearance</td>
+      <td>Summer</td>
+      <td>Nutritious, like spinach</td>
+    </tr>
+    <tr>
+      <td>Wood sorrel</td>
+      <td>Heart-shaped leaves in threes</td>
+      <td>Spring-Fall</td>
+      <td>Lemony taste (small amounts)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Fruits and Berries</h3>
+
+<p><strong>High-value foraging with caution:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Berry</th>
+      <th>Color</th>
+      <th>Caution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Blackberry</td>
+      <td>Black when ripe</td>
+      <td>Safe, widely known</td>
+    </tr>
+    <tr>
+      <td>Raspberry</td>
+      <td>Red when ripe</td>
+      <td>Safe, widely known</td>
+    </tr>
+    <tr>
+      <td>Blueberry</td>
+      <td>Blue with bloom</td>
+      <td>Learn to distinguish from lookalikes</td>
+    </tr>
+    <tr>
+      <td>Elderberry</td>
+      <td>Dark purple/black</td>
+      <td>MUST be cooked, toxic raw</td>
+    </tr>
+    <tr>
+      <td>Wild strawberry</td>
+      <td>Small, red</td>
+      <td>Safe, distinctive</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="warning-box">
+  <h4>Dangerous berries to AVOID:</h4>
+  <ul>
+    <li>Pokeweed berries (dark purple)</li>
+    <li>Holly berries (red)</li>
+    <li>Nightshade (various)</li>
+    <li>Yew berries</li>
+    <li>Bittersweet</li>
+  </ul>
+</div>
+
+<h3>Nuts</h3>
+
+<p><strong>High calorie, worth learning:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nut</th>
+      <th>Identification</th>
+      <th>Processing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Acorns</td>
+      <td>Oak trees, cup shape</td>
+      <td>Requires leaching (tannins)</td>
+    </tr>
+    <tr>
+      <td>Walnuts</td>
+      <td>Large compound leaves</td>
+      <td>Shell carefully</td>
+    </tr>
+    <tr>
+      <td>Hickory</td>
+      <td>Shaggy bark, compound leaves</td>
+      <td>Sweet, edible raw</td>
+    </tr>
+    <tr>
+      <td>Hazelnuts</td>
+      <td>Shrub, fringed husk</td>
+      <td>Edible raw</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Roots and Tubers</h3>
+
+<div class="warning-box">
+  <h4>Higher risk category:</h4>
+  <ul>
+    <li>Many poisonous roots exist</li>
+    <li>Require more knowledge</li>
+    <li>Some need processing</li>
+    <li>Not recommended for beginners</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Regional Considerations</h2>
+
+<div class="region-section">
+  <h4>Northeast US</h4>
+  <p><strong>Common edibles:</strong> Dandelion, Garlic mustard (invasive), Ramps (spring), Blackberries, Chanterelles, Acorns</p>
+  <p><strong>Dangerous plants:</strong> Poison hemlock, Water hemlock, Destroying angel mushroom, Pokeweed</p>
+</div>
+
+<div class="region-section">
+  <h4>Southeast US</h4>
+  <p><strong>Common edibles:</strong> Pawpaw fruit, Persimmons, Muscadine grapes, Pecans, Sassafras, Cattails</p>
+  <p><strong>Dangerous plants:</strong> Water hemlock, Angel's trumpet, Rosary pea, Carolina jessamine</p>
+</div>
+
+<div class="region-section">
+  <h4>Midwest US</h4>
+  <p><strong>Common edibles:</strong> Mulberries, Lamb's quarters, Morel mushrooms (spring), Black walnuts, Wild asparagus</p>
+  <p><strong>Dangerous plants:</strong> Poison hemlock, False morel, Water hemlock</p>
+</div>
+
+<div class="region-section">
+  <h4>Southwest US</h4>
+  <p><strong>Common edibles:</strong> Prickly pear cactus, Mesquite pods, Pinyon pine nuts, Yucca, Wild onions</p>
+  <p><strong>Dangerous plants:</strong> Death camas, Datura (jimsonweed), Oleander</p>
+</div>
+
+<div class="region-section">
+  <h4>Pacific Northwest</h4>
+  <p><strong>Common edibles:</strong> Salmonberries, Huckleberries, Fiddlehead ferns, Chanterelles, Stinging nettle (cooked)</p>
+  <p><strong>Dangerous plants:</strong> Death camas, Poison hemlock, Destroying angel mushroom, Water hemlock</p>
+</div>
+
+<div class="region-section">
+  <h4>Mountain West</h4>
+  <p><strong>Common edibles:</strong> Chokecherries (with processing), Pine nuts, Wild strawberries, Serviceberries, Miner's lettuce</p>
+  <p><strong>Dangerous plants:</strong> Death camas, Water hemlock, Monkshood</p>
+</div>
+
+<hr>
+
+<h2>Mushroom Foraging Warning</h2>
+
+<h3>Extreme Caution Required</h3>
+
+<p>Mushroom misidentification kills people every year.</p>
+
+<div class="warning-box">
+  <h4>Never eat a mushroom unless:</h4>
+  <ul>
+    <li>You have received hands-on training</li>
+    <li>You can positively identify it</li>
+    <li>You've made a spore print</li>
+    <li>Multiple experts have confirmed</li>
+  </ul>
+</div>
+
+<p><strong>Deadly mushrooms include:</strong></p>
+<ul>
+  <li>Death cap (Amanita phalloides)</li>
+  <li>Destroying angel (Amanita species)</li>
+  <li>False morel</li>
+  <li>Various others</li>
+</ul>
+
+<p><strong>Symptoms of poisoning may be delayed 6-24 hours</strong>, at which point liver damage may be irreversible.</p>
+
+<hr>
+
+<h2>Getting Started Safely</h2>
+
+<h3>Beginner Steps</h3>
+
+<ol>
+  <li><strong>Buy regional field guides</strong> (multiple)</li>
+  <li><strong>Take a local foraging class</strong></li>
+  <li><strong>Learn 5-10 common plants</strong> thoroughly</li>
+  <li><strong>Learn dangerous plants</strong> in your area</li>
+  <li><strong>Practice identification</strong> on walks</li>
+  <li><strong>Start with obvious plants</strong> (dandelion, blackberry)</li>
+  <li><strong>Build knowledge slowly</strong></li>
+</ol>
+
+<hr>
+
+<h2>Quick Reference - Very Safe Beginner Plants</h2>
+
+<div class="safe-box">
+<p>These are generally safe and easy to identify, but always verify locally:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Plant</th>
+      <th>Key Features</th>
+      <th>Use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dandelion</td>
+      <td>Distinctive flower, toothed leaves</td>
+      <td>Salad, tea</td>
+    </tr>
+    <tr>
+      <td>Clover</td>
+      <td>Three leaflets, round flower</td>
+      <td>Tea, salad</td>
+    </tr>
+    <tr>
+      <td>Blackberry</td>
+      <td>Thorny canes, compound leaves</td>
+      <td>Fruit</td>
+    </tr>
+    <tr>
+      <td>Wild strawberry</td>
+      <td>Small plant, white flower, red fruit</td>
+      <td>Fruit</td>
+    </tr>
+    <tr>
+      <td>Plantain</td>
+      <td>Oval leaves, parallel veins, lawn weed</td>
+      <td>Salad, poultice</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Even these require positive identification before consumption.</strong></p>
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+  <p><strong>CRITICAL DISCLAIMER:</strong> Foraging can be dangerous. Misidentification can cause serious illness or death. This guide is for general education only. Always consult expert sources, take classes, and verify all identifications before consuming any wild food.</p>
+</div>
+
+</body>
+</html>

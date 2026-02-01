@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finding Safe Water Sources</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-cyan: #06b6d4;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-cyan); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(6, 182, 212, 0.05));
+      border-left: 4px solid var(--accent-cyan);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-cyan); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+    th { background: var(--bg-tertiary); font-weight: 600; color: var(--accent-blue); }
+    tr:last-child td { border-bottom: none; }
+    
+    .tier-box {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .tier-box.tier1 { border-left: 4px solid var(--accent-green); }
+    .tier-box.tier1 h4 { color: var(--accent-green); margin-top: 0; }
+    .tier-box.tier2 { border-left: 4px solid var(--accent-amber); }
+    .tier-box.tier2 h4 { color: var(--accent-amber); margin-top: 0; }
+    .tier-box.tier3 { border-left: 4px solid var(--accent-red); }
+    .tier-box.tier3 h4 { color: var(--accent-red); margin-top: 0; }
+    
+    .warning-box {
+      background: rgba(239, 68, 68, 0.15);
+      border: 2px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+    }
+    
+    .warning-box h4 { color: var(--accent-red); margin-top: 0; }
+    
+    .info-box {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .info-box h4 { color: var(--accent-blue); margin-top: 0; }
+    
+    .highlight-box {
+      background: rgba(34, 197, 94, 0.1);
+      border: 1px solid var(--accent-green);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Finding Safe Water Sources</h1>
+
+<blockquote>
+  <strong>Water is Life</strong> - You can survive weeks without food, but only about 3 days without water. Knowing how to find water sources is a critical survival skill.
+</blockquote>
+
+<h2>Daily Water Needs</h2>
+
+<table>
+  <thead>
+    <tr><th>Situation</th><th>Minimum Daily Need</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Sedentary, cool weather</td><td>2 liters (0.5 gal)</td></tr>
+    <tr><td>Normal activity</td><td>3 liters (0.8 gal)</td></tr>
+    <tr><td>Strenuous activity</td><td>4+ liters (1+ gal)</td></tr>
+    <tr><td>Hot weather</td><td>4-6+ liters</td></tr>
+    <tr><td>Children</td><td>1-2 liters</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Plan for 1 gallon per person per day for drinking and basic hygiene.</strong></p>
+
+<hr>
+
+<h2>Water Source Priority</h2>
+
+<p>Not all water sources are equal. Prioritize in this order:</p>
+
+<div class="tier-box tier1">
+  <h4>Tier 1: Best Sources</h4>
+  
+  <p><strong>Rainwater (freshly collected)</strong></p>
+  <ul>
+    <li>Generally cleanest natural source</li>
+    <li>Low contamination risk</li>
+    <li>Still recommend filtering/treating</li>
+    <li>Collection method matters</li>
+  </ul>
+  
+  <p><strong>Springs (flowing from ground)</strong></p>
+  <ul>
+    <li>Natural filtration through rock/soil</li>
+    <li>Look for clear, cold water</li>
+    <li>Test flow consistency</li>
+    <li>Still treat before drinking</li>
+  </ul>
+  
+  <p><strong>Deep wells (with proper construction)</strong></p>
+  <ul>
+    <li>Protected from surface contamination</li>
+    <li>Consistent quality</li>
+    <li>Requires pump/rope access</li>
+    <li>Test periodically if possible</li>
+  </ul>
+</div>
+
+<div class="tier-box tier2">
+  <h4>Tier 2: Good Sources (with treatment)</h4>
+  
+  <p><strong>Fast-flowing streams and rivers</strong></p>
+  <ul>
+    <li>Moving water = less stagnation</li>
+    <li>Clearer water better</li>
+    <li>Collect upstream from camps/towns</li>
+    <li>Always treat</li>
+  </ul>
+  
+  <p><strong>Large lakes</strong></p>
+  <ul>
+    <li>Large volume dilutes contaminants</li>
+    <li>Collect away from shores</li>
+    <li>Avoid areas near pollution sources</li>
+    <li>Always treat</li>
+  </ul>
+</div>
+
+<div class="tier-box tier3">
+  <h4>Tier 3: Emergency Sources (require thorough treatment)</h4>
+  
+  <p><strong>Small ponds</strong></p>
+  <ul>
+    <li>More concentrated contamination</li>
+    <li>Higher biological load</li>
+    <li>Pre-filter and treat thoroughly</li>
+    <li>Last resort</li>
+  </ul>
+  
+  <p><strong>Slow-moving water</strong></p>
+  <ul>
+    <li>Higher contamination risk</li>
+    <li>More treatment needed</li>
+    <li>Better than nothing</li>
+  </ul>
+  
+  <p><strong>Snow and ice</strong></p>
+  <ul>
+    <li>Must be melted (uses energy)</li>
+    <li>Can contain pollutants</li>
+    <li>Avoid colored snow</li>
+    <li>Treat after melting</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Finding Water in Different Environments</h2>
+
+<h3>Urban Environment</h3>
+
+<div class="info-box">
+  <h4>Home sources:</h4>
+  <ul>
+    <li>Water heater tank (30-80 gallons)</li>
+    <li>Toilet tanks (NOT bowls)</li>
+    <li>Pipe drainage</li>
+    <li>Ice cubes</li>
+    <li>Canned goods liquid</li>
+    <li>Water bed (NOT for drinking—treat external use only)</li>
+  </ul>
+  
+  <h4>Community sources:</h4>
+  <ul>
+    <li>Fire hydrants (with proper tools/permission)</li>
+    <li>Swimming pools (for hygiene, heavy treatment for drinking)</li>
+    <li>Fountains</li>
+    <li>Building storage tanks</li>
+    <li>Rain collection from roofs</li>
+  </ul>
+</div>
+
+<div class="warning-box">
+  <h4>Avoid:</h4>
+  <ul>
+    <li>Toilet bowls</li>
+    <li>Radiator fluid</li>
+    <li>Water near industrial areas</li>
+    <li>Standing water in buildings</li>
+  </ul>
+</div>
+
+<h3>Suburban/Rural Environment</h3>
+
+<p><strong>Natural sources:</strong></p>
+<ul>
+  <li>Streams and rivers</li>
+  <li>Ponds and lakes</li>
+  <li>Springs</li>
+  <li>Wells</li>
+  <li>Rainwater</li>
+</ul>
+
+<p><strong>Property sources:</strong></p>
+<ul>
+  <li>Wells (hand pump if power out)</li>
+  <li>Cisterns</li>
+  <li>Rain barrels</li>
+  <li>Livestock troughs (with treatment)</li>
+  <li>Swimming pools</li>
+</ul>
+
+<h3>Wilderness Environment</h3>
+
+<p><strong>Finding water signs:</strong></p>
+<ul>
+  <li>Vegetation (green plants need water)</li>
+  <li>Animal tracks (often lead to water)</li>
+  <li>Insects (especially bees)</li>
+  <li>Birds (especially in morning/evening)</li>
+  <li>Low ground (water flows down)</li>
+  <li>Rock crevices and caves</li>
+</ul>
+
+<p><strong>Terrain indicators:</strong></p>
+<ul>
+  <li>Valley bottoms</li>
+  <li>Base of cliffs</li>
+  <li>Shady areas</li>
+  <li>Dry stream beds (dig in bends)</li>
+</ul>
+
+<hr>
+
+<h2>Water Collection Methods</h2>
+
+<h3>Rainwater Collection</h3>
+
+<div class="info-box">
+  <h4>Simple method:</h4>
+  <ol>
+    <li>Clean collection surface (tarp, clean roof)</li>
+    <li>Funnel into clean container</li>
+    <li>Let first few minutes wash off debris</li>
+    <li>Store in covered containers</li>
+  </ol>
+  
+  <h4>Improvised collectors:</h4>
+  <ul>
+    <li>Tarps funneled to container</li>
+    <li>Large leaves channeled together</li>
+    <li>Plastic sheet suspended with weight in center</li>
+    <li>Any clean, sloped surface</li>
+  </ul>
+</div>
+
+<h3>Ground Water</h3>
+
+<div class="info-box">
+  <h4>Where to dig:</h4>
+  <ul>
+    <li>Outside bends of dry streams</li>
+    <li>Base of hills or cliffs</li>
+    <li>Green vegetation in dry areas</li>
+    <li>Lowest points in area</li>
+  </ul>
+  
+  <h4>How to dig:</h4>
+  <ol>
+    <li>Dig 1-3 feet initially</li>
+    <li>Wait for water to seep in</li>
+    <li>Let sediment settle</li>
+    <li>Skim water from top</li>
+    <li>Always treat before drinking</li>
+  </ol>
+</div>
+
+<h3>Solar Still</h3>
+
+<div class="info-box">
+  <h4>Ground still:</h4>
+  <ol>
+    <li>Dig hole 2-3 feet wide, 2 feet deep</li>
+    <li>Place container in center</li>
+    <li>Add green vegetation around container</li>
+    <li>Cover with clear plastic</li>
+    <li>Seal edges with soil</li>
+    <li>Place small rock in center (over container)</li>
+    <li>Water condenses and drips into container</li>
+    <li>Yields 1-3 cups per day</li>
+  </ol>
+</div>
+
+<hr>
+
+<h2>Assessing Water Quality</h2>
+
+<h3>Visual Assessment</h3>
+
+<table>
+  <thead>
+    <tr><th>Observation</th><th>Indicates</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Clear water</td><td>Fewer particles (still may have pathogens)</td></tr>
+    <tr><td>Cloudy water</td><td>Sediment, possibly contamination</td></tr>
+    <tr><td>Surface film</td><td>Possible chemical contamination</td></tr>
+    <tr><td>Foam</td><td>Possible pollution</td></tr>
+    <tr><td>Green color</td><td>Algae growth</td></tr>
+    <tr><td>Strong color</td><td>Possible chemical contamination</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Clear water is NOT necessarily safe—pathogens are invisible.</strong></p>
+
+<h3>Environmental Clues</h3>
+
+<p><strong>Better signs:</strong></p>
+<ul>
+  <li>Flowing water</li>
+  <li>Animals drinking from source</li>
+  <li>Plants growing healthy nearby</li>
+  <li>Distance from human activity</li>
+  <li>Natural filtration (through rock/sand)</li>
+</ul>
+
+<p><strong>Warning signs:</strong></p>
+<ul>
+  <li>Dead animals near water</li>
+  <li>No vegetation around water</li>
+  <li>Near industrial or agricultural areas</li>
+  <li>Strange odors</li>
+  <li>Unusual colors</li>
+  <li>Downstream from population centers</li>
+</ul>
+
+<hr>
+
+<h2>Water to Avoid</h2>
+
+<div class="warning-box">
+  <h4>Never Drink</h4>
+  <ul>
+    <li><strong>Saltwater</strong> (makes dehydration worse)</li>
+    <li><strong>Urine</strong> (waste products harm kidneys)</li>
+    <li><strong>Alcohol</strong> (causes dehydration)</li>
+    <li><strong>Blood</strong> (pathogen risk, not proper hydration)</li>
+    <li><strong>Water with strong chemical smell</strong></li>
+  </ul>
+</div>
+
+<h3>High Risk (avoid if possible)</h3>
+<ul>
+  <li>Stagnant water with no flow</li>
+  <li>Water downstream of obvious pollution</li>
+  <li>Flood water</li>
+  <li>Water in industrial areas</li>
+  <li>Agricultural runoff areas</li>
+  <li>Water with visible contamination</li>
+</ul>
+
+<hr>
+
+<h2>Emergency Water Sources at Home</h2>
+
+<h3>Water Heater</h3>
+
+<p>Your water heater holds 30-80 gallons.</p>
+
+<div class="info-box">
+  <h4>To access:</h4>
+  <ol>
+    <li>Turn off power to heater</li>
+    <li>Turn off water supply to heater</li>
+    <li>Turn on a hot water faucet somewhere (breaks vacuum)</li>
+    <li>Connect hose to drain valve at bottom</li>
+    <li>Open drain valve</li>
+    <li>Collect water in clean containers</li>
+  </ol>
+  <p><strong>Note:</strong> May have sediment—let settle or filter.</p>
+</div>
+
+<h3>Toilet Tanks</h3>
+
+<p><strong>Tank only, NOT bowl:</strong></p>
+<ul>
+  <li>Holds 1-2 gallons</li>
+  <li>Water is clean (unless treated with tablets/cleaners)</li>
+  <li>Check for cleaning chemicals before using</li>
+  <li>Treat before drinking if chemicals used</li>
+</ul>
+
+<hr>
+
+<div class="highlight-box">
+  <h3>Key Takeaways</h3>
+  <ol>
+    <li><strong>Know your sources</strong> before emergency</li>
+    <li><strong>Prioritize</strong> cleaner sources when possible</li>
+    <li><strong>Always treat</strong> water from natural sources</li>
+    <li><strong>Multiple options</strong> = better resilience</li>
+    <li><strong>Store water</strong> so you don't have to find it immediately</li>
+    <li><strong>Assess carefully</strong> before collecting</li>
+  </ol>
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+</div>
+
+</body>
+</html>

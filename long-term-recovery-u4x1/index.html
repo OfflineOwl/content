@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Long-Term Recovery Planning</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-teal: #14b8a6;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-teal); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(20, 184, 166, 0.15), rgba(20, 184, 166, 0.05));
+      border-left: 4px solid var(--accent-teal);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-teal); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+    th { background: var(--bg-tertiary); font-weight: 600; color: var(--accent-blue); }
+    tr:last-child td { border-bottom: none; }
+    
+    .phase-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .phase-box {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+    }
+    
+    .phase-box h4 { color: var(--accent-teal); margin-top: 0; }
+    
+    .do-dont {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .do { background: rgba(34, 197, 94, 0.1); border-left: 4px solid var(--accent-green); border-radius: 0 8px 8px 0; padding: 1rem; }
+    .do h4 { color: var(--accent-green); margin-top: 0; }
+    .dont { background: rgba(239, 68, 68, 0.1); border-left: 4px solid var(--accent-red); border-radius: 0 8px 8px 0; padding: 1rem; }
+    .dont h4 { color: var(--accent-red); margin-top: 0; }
+    
+    .info-box {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .info-box h4 { color: var(--accent-blue); margin-top: 0; }
+    
+    .checklist { list-style: none; margin-left: 0; }
+    .checklist li { position: relative; padding-left: 2rem; margin-bottom: 0.5rem; }
+    .checklist li::before { content: "☐"; position: absolute; left: 0; color: var(--accent-blue); }
+    
+    .checklist-section {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .checklist-section h4 { color: var(--accent-teal); margin-top: 0; }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    
+    @media (max-width: 600px) {
+      .phase-grid, .do-dont { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Long-Term Recovery Planning</h1>
+
+<blockquote>
+  <strong>Beyond the Emergency</strong> - When the immediate crisis passes, recovery begins. This can take months or years. Planning for long-term recovery helps you rebuild stronger.
+</blockquote>
+
+<h2>Recovery Phases</h2>
+
+<div class="phase-grid">
+  <div class="phase-box">
+    <h4>Phase 1: Immediate (Days)</h4>
+    <ul>
+      <li>Safety assessment</li>
+      <li>Emergency shelter if needed</li>
+      <li>Family accounted for</li>
+      <li>Immediate needs met</li>
+      <li>Document damage</li>
+    </ul>
+  </div>
+  <div class="phase-box">
+    <h4>Phase 2: Short-term (Weeks)</h4>
+    <ul>
+      <li>Temporary housing arranged</li>
+      <li>Insurance claims started</li>
+      <li>Emergency assistance applied for</li>
+      <li>Basic utilities restored</li>
+      <li>Begin cleanup</li>
+    </ul>
+  </div>
+  <div class="phase-box">
+    <h4>Phase 3: Intermediate (Months)</h4>
+    <ul>
+      <li>Permanent housing plan</li>
+      <li>Major repairs underway</li>
+      <li>Financial recovery planning</li>
+      <li>Return to routines</li>
+      <li>Community rebuilding</li>
+    </ul>
+  </div>
+  <div class="phase-box">
+    <h4>Phase 4: Long-term (Years)</h4>
+    <ul>
+      <li>Full rebuilding complete</li>
+      <li>Financial stability restored</li>
+      <li>Emotional healing</li>
+      <li>Improved preparedness</li>
+      <li>New normal established</li>
+    </ul>
+  </div>
+</div>
+
+<hr>
+
+<h2>Financial Recovery</h2>
+
+<h3>Immediate Steps</h3>
+<ol>
+  <li>Document all losses (photos, lists)</li>
+  <li>Contact insurance companies</li>
+  <li>Apply for FEMA assistance (if declared disaster)</li>
+  <li>Contact mortgage/rent holders</li>
+  <li>Protect undamaged assets</li>
+</ol>
+
+<h3>Insurance Claims</h3>
+
+<div class="do-dont">
+  <div class="do">
+    <h4>Do</h4>
+    <ul>
+      <li>File claims immediately</li>
+      <li>Document everything</li>
+      <li>Keep all receipts</li>
+      <li>Take photos before repairs</li>
+      <li>Get multiple repair estimates</li>
+      <li>Follow up in writing</li>
+    </ul>
+  </div>
+  <div class="dont">
+    <h4>Don't</h4>
+    <ul>
+      <li>Throw away damaged items until documented</li>
+      <li>Make permanent repairs before adjuster visit</li>
+      <li>Accept first settlement without review</li>
+    </ul>
+  </div>
+</div>
+
+<h3>Financial Assistance Sources</h3>
+
+<table>
+  <thead>
+    <tr><th>Source</th><th>Type</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>FEMA</td><td>Disaster assistance grants</td></tr>
+    <tr><td>SBA</td><td>Low-interest disaster loans</td></tr>
+    <tr><td>Insurance</td><td>Policy coverage</td></tr>
+    <tr><td>Charities</td><td>Grants, assistance</td></tr>
+    <tr><td>Community</td><td>Local relief funds</td></tr>
+    <tr><td>State programs</td><td>Varies by state</td></tr>
+  </tbody>
+</table>
+
+<h3>Protecting Finances</h3>
+<ul>
+  <li>Contact creditors about hardship programs</li>
+  <li>Delay non-essential payments if needed</li>
+  <li>Avoid scams (disaster scams common)</li>
+  <li>Keep records of all expenses</li>
+  <li>Consider tax implications</li>
+</ul>
+
+<hr>
+
+<h2>Housing Recovery</h2>
+
+<h3>Temporary Housing</h3>
+
+<div class="info-box">
+  <h4>Options:</h4>
+  <ul>
+    <li>Stay with family/friends</li>
+    <li>FEMA temporary housing</li>
+    <li>Rental assistance programs</li>
+    <li>Hotels (may be covered)</li>
+    <li>Transitional shelters</li>
+  </ul>
+</div>
+
+<h3>Returning Home</h3>
+
+<p><strong>Only return when:</strong></p>
+<ul>
+  <li>Officially cleared safe</li>
+  <li>Utilities restored safely</li>
+  <li>Structural integrity confirmed</li>
+  <li>Hazards removed</li>
+</ul>
+
+<h3>Rebuilding Decisions</h3>
+
+<p><strong>Consider:</strong></p>
+<ul>
+  <li>Repair vs. rebuild</li>
+  <li>Building back stronger</li>
+  <li>Changing locations</li>
+  <li>Updated building codes</li>
+  <li>Mitigation improvements</li>
+</ul>
+
+<hr>
+
+<h2>Emotional Recovery</h2>
+
+<h3>Normal Reactions</h3>
+
+<p>It's normal to experience:</p>
+<ul>
+  <li>Grief and loss</li>
+  <li>Anger and frustration</li>
+  <li>Anxiety about future</li>
+  <li>Sleep difficulties</li>
+  <li>Difficulty concentrating</li>
+  <li>Relationship strain</li>
+</ul>
+
+<h3>Healing Takes Time</h3>
+<ul>
+  <li>Recovery is not linear</li>
+  <li>Allow yourself to grieve</li>
+  <li>Anniversaries may be difficult</li>
+  <li>Seek support when needed</li>
+  <li>Professional help is okay</li>
+</ul>
+
+<h3>Getting Help</h3>
+
+<div class="info-box">
+  <h4>Resources:</h4>
+  <ul>
+    <li>SAMHSA Disaster Distress Helpline: <strong>1-800-985-5990</strong></li>
+    <li>Local mental health services</li>
+    <li>Faith-based counseling</li>
+    <li>Support groups</li>
+    <li>Employee assistance programs</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Building Back Better</h2>
+
+<h3>Improved Preparedness</h3>
+
+<p>After recovery, strengthen:</p>
+<ul>
+  <li>Emergency supplies</li>
+  <li>Insurance coverage</li>
+  <li>Home resilience</li>
+  <li>Family plans</li>
+  <li>Financial reserves</li>
+</ul>
+
+<h3>Mitigation</h3>
+
+<p>Consider upgrades:</p>
+<ul>
+  <li>Impact-resistant windows</li>
+  <li>Stronger roofing</li>
+  <li>Foundation improvements</li>
+  <li>Flood mitigation</li>
+  <li>Fire-resistant materials</li>
+  <li>Emergency power</li>
+</ul>
+
+<hr>
+
+<h2>Recovery Checklist</h2>
+
+<div class="checklist-section">
+  <h4>Week 1</h4>
+  <ul class="checklist">
+    <li>Safety confirmed</li>
+    <li>Family accounted for</li>
+    <li>Insurance notified</li>
+    <li>Damage documented</li>
+    <li>Emergency assistance applied</li>
+    <li>Temporary housing if needed</li>
+  </ul>
+</div>
+
+<div class="checklist-section">
+  <h4>Month 1</h4>
+  <ul class="checklist">
+    <li>Claims in progress</li>
+    <li>Cleanup underway</li>
+    <li>Temporary repairs complete</li>
+    <li>Financial assistance received</li>
+    <li>Routines re-established</li>
+  </ul>
+</div>
+
+<div class="checklist-section">
+  <h4>Month 6</h4>
+  <ul class="checklist">
+    <li>Major repairs complete or underway</li>
+    <li>Financial plan in place</li>
+    <li>Children back in school</li>
+    <li>Work situation stable</li>
+    <li>Mental health addressed</li>
+  </ul>
+</div>
+
+<div class="checklist-section">
+  <h4>Year 1</h4>
+  <ul class="checklist">
+    <li>Rebuilding complete</li>
+    <li>Financial recovery on track</li>
+    <li>Emotional healing progressing</li>
+    <li>Preparedness improved</li>
+    <li>New normal established</li>
+  </ul>
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+</div>
+
+</body>
+</html>

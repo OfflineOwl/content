@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Security During Civil Unrest</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-red); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(239, 68, 68, 0.05));
+      border-left: 4px solid var(--accent-red);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-red); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+    th { background: var(--bg-tertiary); font-weight: 600; color: var(--accent-blue); }
+    tr:last-child td { border-bottom: none; }
+    
+    .checklist { list-style: none; margin-left: 0; }
+    .checklist li { position: relative; padding-left: 2rem; margin-bottom: 0.5rem; }
+    .checklist li::before { content: "☐"; position: absolute; left: 0; color: var(--accent-blue); }
+    
+    .info-box {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .warning-box {
+      background: rgba(239, 68, 68, 0.1);
+      border: 2px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .warning-box h4 { color: var(--accent-red); margin-top: 0; }
+    
+    .decision-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .stay-box {
+      background: rgba(34, 197, 94, 0.1);
+      border: 1px solid var(--accent-green);
+      border-radius: 8px;
+      padding: 1rem;
+    }
+    
+    .stay-box h4 { color: var(--accent-green); margin-top: 0; }
+    
+    .leave-box {
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1rem;
+    }
+    
+    .leave-box h4 { color: var(--accent-red); margin-top: 0; }
+    
+    .principles-box {
+      background: var(--bg-secondary);
+      border-left: 4px solid var(--accent-amber);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .principles-box h4 { color: var(--accent-amber); margin-top: 0; }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Home Security During Civil Unrest</h1>
+
+<blockquote>
+  <strong>Your Home is Your Sanctuary</strong> - During civil unrest or breakdown of order, protecting your home and family becomes paramount. This guide covers practical, non-violent approaches to home security.
+</blockquote>
+
+<h2>Understanding the Threat</h2>
+
+<h3>Levels of Unrest</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Level</th>
+      <th>Characteristics</th>
+      <th>Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Peaceful protests</td>
+      <td>Localized, organized</td>
+      <td>Awareness</td>
+    </tr>
+    <tr>
+      <td>Civil disturbance</td>
+      <td>Property damage, looting</td>
+      <td>Enhanced security</td>
+    </tr>
+    <tr>
+      <td>Widespread unrest</td>
+      <td>Violence, fire, no police response</td>
+      <td>Full security measures</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Risk Assessment</h3>
+
+<div class="decision-grid">
+  <div class="warning-box">
+    <h4>Higher risk:</h4>
+    <ul>
+      <li>Near commercial areas</li>
+      <li>On main roads/routes</li>
+      <li>Ground floor access</li>
+      <li>Weak entry points</li>
+      <li>Isolated location</li>
+    </ul>
+  </div>
+  <div class="stay-box">
+    <h4>Lower risk:</h4>
+    <ul>
+      <li>Residential neighborhood</li>
+      <li>Limited access</li>
+      <li>Strong community</li>
+      <li>Reinforced entry points</li>
+    </ul>
+  </div>
+</div>
+
+<hr>
+
+<h2>Immediate Security Measures</h2>
+
+<h3>Entry Point Hardening</h3>
+
+<div class="info-box">
+  <h4>Doors:</h4>
+  <ul>
+    <li>Reinforce strike plates (3" screws into studs)</li>
+    <li>Add door security bar</li>
+    <li>Consider reinforcing hinges</li>
+    <li>Lock all entry points</li>
+    <li>Don't open for strangers</li>
+  </ul>
+</div>
+
+<div class="info-box">
+  <h4>Windows:</h4>
+  <ul>
+    <li>Lock all windows</li>
+    <li>Consider window security film</li>
+    <li>Plywood available for boarding (pre-cut)</li>
+    <li>Close blinds/curtains (visibility denial)</li>
+  </ul>
+</div>
+
+<h3>Visibility Denial</h3>
+<ul>
+  <li>Close curtains and blinds</li>
+  <li>Minimize visible light at night</li>
+  <li>Don't advertise resources</li>
+  <li>Keep valuable items out of sight</li>
+  <li>Make home look "not worth the trouble"</li>
+</ul>
+
+<hr>
+
+<h2>Deterrence Layers</h2>
+
+<h3>Visual Deterrents</h3>
+<ul>
+  <li>Motion-activated lights</li>
+  <li>Security cameras (visible)</li>
+  <li>Security system signs</li>
+  <li>Dog (or "Beware of Dog" sign)</li>
+  <li>Well-maintained appearance</li>
+  <li>No hiding spots near entry points</li>
+</ul>
+
+<h3>Sound Deterrents</h3>
+<ul>
+  <li>Dogs barking</li>
+  <li>Alarm systems</li>
+  <li>Motion-activated alarms</li>
+</ul>
+
+<h3>Barriers</h3>
+<ul>
+  <li>Fences with locked gates</li>
+  <li>Thorny bushes under windows</li>
+  <li>Gravel paths (noise when walked on)</li>
+  <li>Vehicles blocking driveways</li>
+</ul>
+
+<hr>
+
+<h2>Situational Awareness</h2>
+
+<h3>Monitor Developments</h3>
+<ul>
+  <li>Local news</li>
+  <li>Emergency radio</li>
+  <li>Social media (with skepticism)</li>
+  <li>Police scanner (if legal)</li>
+  <li>Community contacts</li>
+</ul>
+
+<h3>Know When to Worry</h3>
+<ul>
+  <li>Unrest moving toward your area</li>
+  <li>Police withdrawing from area</li>
+  <li>Sounds of breaking glass, fire</li>
+  <li>Large groups gathering nearby</li>
+  <li>No emergency response to calls</li>
+</ul>
+
+<hr>
+
+<h2>If Unrest Approaches</h2>
+
+<h3>Stay or Go Decision</h3>
+
+<div class="decision-grid">
+  <div class="stay-box">
+    <h4>Stay if:</h4>
+    <ul>
+      <li>Home is defensible</li>
+      <li>You have supplies</li>
+      <li>No immediate threat</li>
+      <li>Evacuation routes blocked</li>
+    </ul>
+  </div>
+  <div class="leave-box">
+    <h4>Leave if:</h4>
+    <ul>
+      <li>Direct threat to home</li>
+      <li>Fire approaching</li>
+      <li>Overwhelming numbers</li>
+      <li>Safe evacuation possible</li>
+    </ul>
+  </div>
+</div>
+
+<h3>If Staying</h3>
+<ol>
+  <li>Gather family in interior room</li>
+  <li>All entry points secured</li>
+  <li>Communication devices ready</li>
+  <li>Emergency supplies accessible</li>
+  <li>Escape route identified</li>
+  <li>Stay away from windows</li>
+  <li>Lights minimal</li>
+</ol>
+
+<hr>
+
+<h2>Communication Strategy</h2>
+
+<h3>With Family</h3>
+<ul>
+  <li>Designated safe room</li>
+  <li>Rally points if separated</li>
+  <li>Code words for emergencies</li>
+  <li>Roles assigned</li>
+</ul>
+
+<h3>With Neighbors</h3>
+<ul>
+  <li>Mutual aid agreements</li>
+  <li>Signal systems</li>
+  <li>Shared watch schedule</li>
+  <li>Communication methods</li>
+</ul>
+
+<h3>With Authorities</h3>
+<ul>
+  <li>Know emergency numbers</li>
+  <li>Document incidents</li>
+  <li>Keep phone charged</li>
+  <li>Don't rely on 911 response during widespread unrest</li>
+</ul>
+
+<hr>
+
+<h2>Rules of Engagement</h2>
+
+<h3>Legal Considerations</h3>
+<ul>
+  <li>Self-defense laws vary by location</li>
+  <li>Know your local laws</li>
+  <li>Proportional response</li>
+  <li>Duty to retreat (some jurisdictions)</li>
+  <li>Castle doctrine (some jurisdictions)</li>
+</ul>
+
+<div class="principles-box">
+  <h4>Principles</h4>
+  <ol>
+    <li>Avoid confrontation when possible</li>
+    <li>De-escalate if confronted</li>
+    <li>Property is not worth your life</li>
+    <li>Defend life as last resort</li>
+    <li>Document everything possible</li>
+  </ol>
+</div>
+
+<hr>
+
+<h2>Security Checklist</h2>
+
+<h3>Immediate Actions</h3>
+<ul class="checklist">
+  <li>Lock all doors and windows</li>
+  <li>Close blinds/curtains</li>
+  <li>Turn off unnecessary lights</li>
+  <li>Gather family together</li>
+  <li>Phone charged and ready</li>
+  <li>Emergency supplies accessible</li>
+  <li>Fire extinguisher ready</li>
+  <li>Monitor news/radio</li>
+</ul>
+
+<h3>Ongoing Security</h3>
+<ul class="checklist">
+  <li>Entry points reinforced</li>
+  <li>Security plan discussed</li>
+  <li>Rally points established</li>
+  <li>Neighbors coordinated</li>
+  <li>Documentation ready</li>
+</ul>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+</div>
+
+</body>
+</html>

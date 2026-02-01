@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evacuation Routes & Rally Points</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-orange: #f97316;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-orange); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(249, 115, 22, 0.05));
+      border-left: 4px solid var(--accent-orange);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-orange); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+    th { background: var(--bg-tertiary); font-weight: 600; color: var(--accent-blue); }
+    tr:last-child td { border-bottom: none; }
+    
+    .rally-point {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .rally-point.point-a { border-left: 4px solid var(--accent-green); }
+    .rally-point.point-a h4 { color: var(--accent-green); margin-top: 0; }
+    .rally-point.point-b { border-left: 4px solid var(--accent-amber); }
+    .rally-point.point-b h4 { color: var(--accent-amber); margin-top: 0; }
+    .rally-point.point-c { border-left: 4px solid var(--accent-orange); }
+    .rally-point.point-c h4 { color: var(--accent-orange); margin-top: 0; }
+    
+    .warning-box {
+      background: rgba(239, 68, 68, 0.15);
+      border: 2px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+    }
+    
+    .warning-box h4 { color: var(--accent-red); margin-top: 0; }
+    
+    .info-box {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .info-box h4 { color: var(--accent-blue); margin-top: 0; }
+    
+    .quick-ref {
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-orange);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .quick-ref h3 { color: var(--accent-orange); margin-top: 0; }
+    
+    pre {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+      font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    
+    .checklist { list-style: none; margin-left: 0; }
+    .checklist li { position: relative; padding-left: 2rem; margin-bottom: 0.5rem; }
+    .checklist li::before { content: "☐"; position: absolute; left: 0; color: var(--accent-blue); }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Evacuation Routes & Rally Points</h1>
+
+<blockquote>
+  <strong>Pre-Planning Saves Lives</strong> - When disaster strikes, you won't have time to figure out where to go. This guide helps you establish evacuation routes and rally points before you need them.
+</blockquote>
+
+<h2>Why Plan Evacuation Routes?</h2>
+
+<p>During an emergency:</p>
+<ul>
+  <li>Main roads become gridlocked</li>
+  <li>GPS may not work</li>
+  <li>Cell service may be down</li>
+  <li>Signs may be damaged or missing</li>
+  <li>Panic impairs navigation ability</li>
+</ul>
+
+<p><strong>A pre-planned route that you've actually driven gives you a critical advantage.</strong></p>
+
+<hr>
+
+<h2>Step 1: Identify Your Rally Points</h2>
+
+<p>You need three levels of rally points:</p>
+
+<div class="rally-point point-a">
+  <h4>Rally Point A: Near Home (Walking Distance)</h4>
+  
+  <p><strong>Purpose:</strong> Immediate evacuation from your home<br>
+  <strong>When to use:</strong> House fire, gas leak, domestic emergency</p>
+  
+  <p><strong>Criteria:</strong></p>
+  <ul>
+    <li>Within 5-minute walk</li>
+    <li>Easily identifiable location</li>
+    <li>Safe from your home's immediate threats</li>
+    <li>Known to all family members</li>
+  </ul>
+  
+  <p><strong>Good examples:</strong></p>
+  <ul>
+    <li>Neighbor's driveway (with their permission)</li>
+    <li>Street corner with distinctive feature</li>
+    <li>Community mailbox area</li>
+    <li>Church or school parking lot</li>
+  </ul>
+</div>
+
+<div class="rally-point point-b">
+  <h4>Rally Point B: Neighborhood (Short Drive)</h4>
+  
+  <p><strong>Purpose:</strong> Evacuation from immediate neighborhood<br>
+  <strong>When to use:</strong> Neighborhood-wide emergency, localized flooding, civil unrest</p>
+  
+  <p><strong>Criteria:</strong></p>
+  <ul>
+    <li>1-5 miles from home</li>
+    <li>Multiple routes to reach it</li>
+    <li>Has basic facilities (shelter possible)</li>
+    <li>Outside likely affected area</li>
+  </ul>
+  
+  <p><strong>Good examples:</strong></p>
+  <ul>
+    <li>Library or community center</li>
+    <li>Shopping center parking lot</li>
+    <li>Friend's house in adjacent neighborhood</li>
+    <li>Fire station (not during their emergency)</li>
+  </ul>
+</div>
+
+<div class="rally-point point-c">
+  <h4>Rally Point C: Out of Area (Regional)</h4>
+  
+  <p><strong>Purpose:</strong> Full evacuation from region<br>
+  <strong>When to use:</strong> Major disaster, mandatory evacuation, regional threat</p>
+  
+  <p><strong>Criteria:</strong></p>
+  <ul>
+    <li>50+ miles from home (different direction than likely threats)</li>
+    <li>Confirmed with contact person</li>
+    <li>Multiple route options</li>
+    <li>Sustainable for several days</li>
+  </ul>
+  
+  <p><strong>Good examples:</strong></p>
+  <ul>
+    <li>Family member's home in another city</li>
+    <li>Pre-arranged hotel/motel</li>
+    <li>Campground (with supplies)</li>
+    <li>Community evacuation shelter</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Step 2: Map Your Routes</h2>
+
+<h3>Primary Route</h3>
+<p>Your fastest route under normal conditions. This is your default.</p>
+
+<h3>Alternate Route 1</h3>
+<p>Different direction, avoids major highways. Use when primary is blocked.</p>
+
+<h3>Alternate Route 2</h3>
+<p>Back roads option. Slower but avoids population centers.</p>
+
+<h3>Route Documentation</h3>
+
+<table>
+  <thead>
+    <tr><th>Information</th><th>Route 1</th><th>Route 2</th><th>Route 3</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Total distance</td><td></td><td></td><td></td></tr>
+    <tr><td>Normal drive time</td><td></td><td></td><td></td></tr>
+    <tr><td>Key landmarks</td><td></td><td></td><td></td></tr>
+    <tr><td>Gas stations</td><td></td><td></td><td></td></tr>
+    <tr><td>Potential bottlenecks</td><td></td><td></td><td></td></tr>
+    <tr><td>Bridge crossings</td><td></td><td></td><td></td></tr>
+    <tr><td>Alternate turns if blocked</td><td></td><td></td><td></td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>Step 3: Route Planning Considerations</h2>
+
+<div class="warning-box">
+  <h4>Avoid These During Evacuation</h4>
+  <ul>
+    <li><strong>Bridges:</strong> May be damaged, closed, or gridlocked</li>
+    <li><strong>Tunnels:</strong> Can become death traps in some emergencies</li>
+    <li><strong>Low-lying areas:</strong> Flooding risk</li>
+    <li><strong>Near industrial facilities:</strong> Secondary hazards</li>
+    <li><strong>Major highways:</strong> Maximum traffic</li>
+    <li><strong>Downtown areas:</strong> Congestion and crowds</li>
+    <li><strong>Single-access roads:</strong> No alternatives if blocked</li>
+  </ul>
+</div>
+
+<div class="info-box">
+  <h4>Prefer These</h4>
+  <ul>
+    <li><strong>Multiple lane roads:</strong> More capacity</li>
+    <li><strong>Routes with elevation:</strong> Above flood levels</li>
+    <li><strong>Roads with alternatives:</strong> Can turn off if needed</li>
+    <li><strong>Routes away from coast:</strong> (if coastal threat)</li>
+    <li><strong>Routes with services:</strong> Gas, food, water available</li>
+    <li><strong>Less populated routes:</strong> Less competition</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Step 4: Create Route Maps</h2>
+
+<h3>Paper Maps Are Essential</h3>
+
+<p>Digital navigation fails when:</p>
+<ul>
+  <li>Cell towers are down</li>
+  <li>GPS satellites are unavailable</li>
+  <li>Phones run out of battery</li>
+  <li>Internet is disrupted</li>
+</ul>
+
+<p><strong>Every family member should have:</strong></p>
+<ol>
+  <li>Paper map of local area</li>
+  <li>Routes marked with highlighter</li>
+  <li>Rally points marked</li>
+  <li>Key landmarks noted</li>
+  <li>Alternative turns marked</li>
+</ol>
+
+<h3>Map Marking System</h3>
+<ul>
+  <li><strong>Green highlighter:</strong> Primary route</li>
+  <li><strong>Yellow highlighter:</strong> Alternate route 1</li>
+  <li><strong>Orange highlighter:</strong> Alternate route 2</li>
+  <li><strong>Red circle:</strong> Rally points</li>
+  <li><strong>Blue star:</strong> Gas stations</li>
+  <li><strong>Black X:</strong> Known problem areas</li>
+</ul>
+
+<hr>
+
+<h2>Step 5: Practice Your Routes</h2>
+
+<h3>Drive Each Route</h3>
+
+<p>Before you need it:</p>
+<ol>
+  <li>Drive each route during normal conditions</li>
+  <li>Note actual drive time</li>
+  <li>Identify landmarks for navigation</li>
+  <li>Find alternates for potential blocks</li>
+  <li>Locate gas, food, and rest stops</li>
+</ol>
+
+<h3>Practice Variations</h3>
+<ul>
+  <li>Drive at different times of day</li>
+  <li>Try during bad weather (safely)</li>
+  <li>Note how long to reach each point</li>
+  <li>Identify areas that might flood/block</li>
+</ul>
+
+<h3>Family Practice</h3>
+<ul>
+  <li>Make sure all drivers know all routes</li>
+  <li>Quiz family on rally point locations</li>
+  <li>Practice meeting at Rally Point A</li>
+  <li>Verify everyone can read the maps</li>
+</ul>
+
+<hr>
+
+<h2>Step 6: Communication Protocol</h2>
+
+<h3>Before Separating</h3>
+<ul>
+  <li>Confirm which rally point to use</li>
+  <li>Set check-in times</li>
+  <li>Confirm route each person will take</li>
+  <li>Share final destination</li>
+</ul>
+
+<h3>During Evacuation</h3>
+
+<table>
+  <thead>
+    <tr><th>If...</th><th>Then...</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Route is blocked</td><td>Take predetermined alternate</td></tr>
+    <tr><td>Separated from family</td><td>Go to agreed rally point</td></tr>
+    <tr><td>Cannot reach rally point</td><td>Contact out-of-area contact</td></tr>
+    <tr><td>Plans must change</td><td>Leave message at rally point</td></tr>
+  </tbody>
+</table>
+
+<h3>Rally Point Procedures</h3>
+
+<p>When arriving at a rally point:</p>
+<ol>
+  <li><strong>Wait at designated spot</strong> (be specific—"the flagpole," not "the park")</li>
+  <li><strong>Wait predetermined time</strong> (30 minutes minimum recommended)</li>
+  <li><strong>Leave a note if leaving</strong> (hidden but findable by family)</li>
+  <li><strong>Move to next rally point</strong> if no contact</li>
+  <li><strong>Contact OAC</strong> with your status and location</li>
+</ol>
+
+<hr>
+
+<div class="quick-ref">
+  <h3>Quick Reference Card</h3>
+  <p>Print and carry in wallet:</p>
+<pre>RALLY POINTS
+
+A (Near Home): ________________________
+   Cross street: ______________________
+   
+B (Neighborhood): _____________________
+   Address: ___________________________
+   
+C (Out of Area): ______________________
+   Contact: ___________________________
+   Phone: _____________________________
+
+ROUTES TO C:
+Primary: _____________________________
+Alternate 1: _________________________
+Alternate 2: _________________________
+
+Wait time at each point: 30 minutes
+Out-of-area contact: _________________
+Family password: _____________________</pre>
+</div>
+
+<hr>
+
+<h2>Evacuation Timing</h2>
+
+<h3>When to Leave Early</h3>
+
+<table>
+  <thead>
+    <tr><th>Warning Level</th><th>Action</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Watch issued</td><td>Review plans, prepare to leave</td></tr>
+    <tr><td>Warning issued</td><td>Final preparations, consider leaving</td></tr>
+    <tr><td>Voluntary evacuation</td><td>Leave if conditions allow</td></tr>
+    <tr><td>Mandatory evacuation</td><td>Leave immediately</td></tr>
+  </tbody>
+</table>
+
+<h3>Go Early Advantages</h3>
+<ul>
+  <li>Less traffic</li>
+  <li>Better route options</li>
+  <li>Gas stations still have fuel</li>
+  <li>Hotels still have rooms</li>
+  <li>Less stress, better decisions</li>
+</ul>
+
+<div class="warning-box">
+  <h4>Signs You've Waited Too Long</h4>
+  <ul>
+    <li>Gridlock traffic on main routes</li>
+    <li>Gas stations closed or empty</li>
+    <li>Hotels fully booked</li>
+    <li>Emergency services overwhelmed</li>
+    <li>Weather/conditions deteriorating</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Special Situations</h2>
+
+<h3>Evacuation with Pets</h3>
+<ul>
+  <li>Have carriers ready</li>
+  <li>Know pet-friendly hotels on route</li>
+  <li>Bring vaccination records</li>
+  <li>Consider boarding facilities en route</li>
+  <li>Never leave pets behind</li>
+</ul>
+
+<h3>Evacuation with Special Needs</h3>
+<ul>
+  <li>Allow extra time</li>
+  <li>Ensure medical equipment is portable</li>
+  <li>Have backup power for devices</li>
+  <li>Know accessible routes and facilities</li>
+  <li>Register with local emergency services</li>
+</ul>
+
+<hr>
+
+<h2>Annual Review Checklist</h2>
+
+<ul class="checklist">
+  <li>All rally points still valid/accessible</li>
+  <li>Contact information current</li>
+  <li>Routes still clear (no new construction)</li>
+  <li>Maps updated and in go-bags</li>
+  <li>All family members know locations</li>
+  <li>Practice drive completed</li>
+  <li>Emergency contacts confirmed</li>
+  <li>Fuel containers filled</li>
+  <li>Vehicle maintained and ready</li>
+</ul>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+</div>
+
+</body>
+</html>

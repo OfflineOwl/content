@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radio Use for Emergency Updates</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-purple: #a855f7;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-purple); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(168, 85, 247, 0.05));
+      border-left: 4px solid var(--accent-purple);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-purple); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+    th { background: var(--bg-tertiary); font-weight: 600; color: var(--accent-blue); }
+    tr:last-child td { border-bottom: none; }
+    
+    .radio-type {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .radio-type h4 { color: var(--accent-purple); margin-top: 0; }
+    .best-for { color: var(--accent-green); font-style: italic; }
+    
+    .checklist { list-style: none; margin-left: 0; }
+    .checklist li { position: relative; padding-left: 2rem; margin-bottom: 0.5rem; }
+    .checklist li::before { content: "☐"; position: absolute; left: 0; color: var(--accent-blue); }
+    
+    .quick-ref {
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-purple);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .quick-ref h3 { color: var(--accent-purple); margin-top: 0; }
+    
+    pre {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+      font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Radio Use for Emergency Updates</h1>
+
+<blockquote>
+  <strong>Your Lifeline to Information</strong> - When power is out and internet is down, radio remains the most reliable source of emergency information. Knowing how to use it effectively can save your life.
+</blockquote>
+
+<h2>Why Radio Matters</h2>
+
+<h3>Advantages</h3>
+<ul>
+  <li>Works without internet</li>
+  <li>Works without cell service</li>
+  <li>Battery/hand-crank powered options</li>
+  <li>Wide coverage area</li>
+  <li>Official emergency broadcasts</li>
+  <li>Real-time information</li>
+</ul>
+
+<h3>When Radio is Essential</h3>
+<ul>
+  <li>Power outages</li>
+  <li>Natural disasters</li>
+  <li>Civil emergencies</li>
+  <li>Evacuation orders</li>
+  <li>All-hazard emergencies</li>
+</ul>
+
+<hr>
+
+<h2>Types of Emergency Radio</h2>
+
+<div class="radio-type">
+  <h4>NOAA Weather Radio</h4>
+  <p><strong>Dedicated weather/emergency broadcasts:</strong></p>
+  <ul>
+    <li>National Weather Service operated</li>
+    <li>24/7 broadcasts</li>
+    <li>Automatic alerts for your county</li>
+    <li>Seven frequencies (162.400-162.550 MHz)</li>
+  </ul>
+  <p class="best-for">Best for: Weather alerts, official emergency information</p>
+</div>
+
+<div class="radio-type">
+  <h4>AM/FM Radio</h4>
+  <p><strong>Commercial broadcast stations:</strong></p>
+  <ul>
+    <li>Wide availability</li>
+    <li>Local news and updates</li>
+    <li>May have emergency broadcasting agreements</li>
+    <li>AM carries farther at night</li>
+  </ul>
+  <p class="best-for">Best for: Local news, community information</p>
+</div>
+
+<div class="radio-type">
+  <h4>Shortwave Radio</h4>
+  <p><strong>International broadcasts:</strong></p>
+  <ul>
+    <li>Long-range reception</li>
+    <li>Multiple countries/perspectives</li>
+    <li>Requires larger antenna</li>
+    <li>More complex operation</li>
+  </ul>
+  <p class="best-for">Best for: Large-scale events, international news</p>
+</div>
+
+<div class="radio-type">
+  <h4>Scanner/Public Safety Radio</h4>
+  <p><strong>Police, fire, EMS communications:</strong></p>
+  <ul>
+    <li>Real-time emergency response</li>
+    <li>Local activity awareness</li>
+    <li>May require programming</li>
+    <li>Legal to listen (in most areas)</li>
+  </ul>
+  <p class="best-for">Best for: Situational awareness</p>
+</div>
+
+<hr>
+
+<h2>Choosing an Emergency Radio</h2>
+
+<h3>Essential Features</h3>
+<ul class="checklist">
+  <li>NOAA Weather Band</li>
+  <li>AM/FM</li>
+  <li>Battery powered</li>
+  <li>Hand-crank option</li>
+  <li>SAME alerts (county-specific)</li>
+  <li>Flashlight</li>
+  <li>USB charging port</li>
+</ul>
+
+<h3>Recommended Models</h3>
+<ul>
+  <li><strong>Budget:</strong> RunningSnail emergency radio</li>
+  <li><strong>Mid-range:</strong> Eton FRX series</li>
+  <li><strong>Premium:</strong> Kaito Voyager series</li>
+</ul>
+
+<hr>
+
+<h2>Operating Your Radio</h2>
+
+<h3>Finding Emergency Stations</h3>
+
+<p><strong>NOAA Weather Radio:</strong></p>
+<ol>
+  <li>Turn to WX band</li>
+  <li>Find clearest frequency for your area</li>
+  <li>Program SAME code for your county</li>
+</ol>
+
+<p><strong>AM/FM Emergency:</strong></p>
+<ul>
+  <li>Local news stations often have emergency agreements</li>
+  <li>Note emergency frequencies in advance</li>
+  <li>Try AM at night (better range)</li>
+</ul>
+
+<h3>SAME (Specific Area Message Encoding)</h3>
+<ul>
+  <li>Six-digit code for your county</li>
+  <li>Programs radio to alert only for your area</li>
+  <li>Find your code at weather.gov</li>
+  <li>Program multiple counties if near borders</li>
+</ul>
+
+<h3>Battery Conservation</h3>
+<ul>
+  <li>Turn off when not actively listening</li>
+  <li>Use scheduled check-in times</li>
+  <li>Lower volume saves power</li>
+  <li>Hand-crank to extend battery</li>
+  <li>Have spare batteries</li>
+</ul>
+
+<hr>
+
+<h2>Understanding Emergency Alerts</h2>
+
+<h3>Alert Types</h3>
+
+<table>
+  <thead>
+    <tr><th>Alert</th><th>Meaning</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Watch</strong></td><td>Conditions favorable, prepare</td></tr>
+    <tr><td><strong>Warning</strong></td><td>Event occurring or imminent, take action</td></tr>
+    <tr><td><strong>Emergency</strong></td><td>Immediate threat to life</td></tr>
+    <tr><td><strong>Advisory</strong></td><td>Significant inconvenience</td></tr>
+  </tbody>
+</table>
+
+<h3>Alert Tones</h3>
+<ul>
+  <li><strong>Attention tone:</strong> Steady 8-second tone before alerts</li>
+  <li><strong>EAS tones:</strong> Three-tone attention signal</li>
+  <li>Learn to recognize these sounds</li>
+</ul>
+
+<h3>Alert Sources</h3>
+<ul>
+  <li>National Weather Service</li>
+  <li>Emergency Management</li>
+  <li>FEMA</li>
+  <li>Local authorities</li>
+  <li>Amber Alert system</li>
+</ul>
+
+<hr>
+
+<h2>Radio Check-In Schedule</h2>
+
+<p>During emergencies, establish listening schedule:</p>
+
+<p><strong>Suggested schedule:</strong></p>
+<ul>
+  <li>Top of each hour for 10 minutes</li>
+  <li>Full hour at 6am, 12pm, 6pm</li>
+  <li>Immediately after any alert tone</li>
+  <li>Before making major decisions</li>
+</ul>
+
+<hr>
+
+<h2>Two-Way Radio Communication</h2>
+
+<h3>FRS/GMRS Radios</h3>
+
+<p><strong>Family Radio Service:</strong></p>
+<ul>
+  <li>No license required</li>
+  <li>1-2 mile range typical</li>
+  <li>22 channels available</li>
+</ul>
+
+<p><strong>General Mobile Radio Service:</strong></p>
+<ul>
+  <li>License required ($35, no test)</li>
+  <li>Greater range (5-25 miles)</li>
+  <li>More power allowed</li>
+</ul>
+
+<h3>Using Two-Way Radios</h3>
+<ul>
+  <li>Establish primary/backup channels</li>
+  <li>Set check-in times</li>
+  <li>Keep transmissions brief</li>
+  <li>Use standard phrases</li>
+  <li>Monitor before transmitting</li>
+</ul>
+
+<hr>
+
+<div class="quick-ref">
+  <h3>Quick Reference</h3>
+<pre>NOAA WEATHER RADIO FREQUENCIES
+
+162.400 MHz
+162.425 MHz
+162.450 MHz
+162.475 MHz
+162.500 MHz
+162.525 MHz
+162.550 MHz
+
+ALERT MEANINGS:
+Watch = Conditions possible
+Warning = Take action now
+Emergency = Immediate threat
+
+DAILY CHECK-IN:
+- Top of each hour (10 min)
+- After any alert tone
+- Before major decisions
+
+BATTERY TIPS:
+- Listen on schedule, not constantly
+- Hand-crank to extend battery
+- Have spare batteries</pre>
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+</div>
+
+</body>
+</html>

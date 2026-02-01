@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extreme Heat Survival</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-orange: #f97316;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-orange); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(249, 115, 22, 0.05));
+      border-left: 4px solid var(--accent-orange);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-orange); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+    th { background: var(--bg-tertiary); font-weight: 600; color: var(--accent-blue); }
+    tr:last-child td { border-bottom: none; }
+    
+    .warning-box {
+      background: rgba(239, 68, 68, 0.15);
+      border: 2px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+    }
+    
+    .warning-box h4 { color: var(--accent-red); margin-top: 0; }
+    
+    .illness-stages {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    
+    .stage {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+    }
+    
+    .stage.early { border-left: 4px solid var(--accent-amber); }
+    .stage.early h4 { color: var(--accent-amber); }
+    .stage.serious { border-left: 4px solid var(--accent-orange); }
+    .stage.serious h4 { color: var(--accent-orange); }
+    .stage.emergency { border-left: 4px solid var(--accent-red); }
+    .stage.emergency h4 { color: var(--accent-red); }
+    
+    .quick-ref {
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-orange);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .quick-ref h3 { color: var(--accent-orange); margin-top: 0; }
+    
+    pre {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+      font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Extreme Heat Survival</h1>
+
+<blockquote>
+  <strong>Heat Kills Silently</strong> - Extreme heat causes more deaths than any other weather event. Understanding heat illness and how to stay cool without AC can save lives.
+</blockquote>
+
+<h2>Understanding Heat Danger</h2>
+
+<h3>Heat Index</h3>
+
+<p>Combines temperature and humidity to show how hot it feels.</p>
+
+<table>
+  <thead>
+    <tr><th>Heat Index</th><th>Risk Level</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>80-90°F</td><td>Caution</td></tr>
+    <tr><td>91-103°F</td><td>Extreme Caution</td></tr>
+    <tr><td>103-124°F</td><td>Danger</td></tr>
+    <tr><td>125°F+</td><td>Extreme Danger</td></tr>
+  </tbody>
+</table>
+
+<h3>Who's at Risk</h3>
+<ul>
+  <li>Elderly (65+)</li>
+  <li>Infants and young children</li>
+  <li>People with chronic conditions</li>
+  <li>Those without AC</li>
+  <li>Outdoor workers</li>
+  <li>Athletes</li>
+</ul>
+
+<h2>Heat Illness Progression</h2>
+
+<div class="illness-stages">
+  <div class="stage early">
+    <h4>Heat Cramps</h4>
+    <p><em>Early warning</em></p>
+    <ul>
+      <li>Muscle cramps</li>
+      <li>Heavy sweating</li>
+    </ul>
+  </div>
+  
+  <div class="stage serious">
+    <h4>Heat Exhaustion</h4>
+    <p><em>Serious</em></p>
+    <ul>
+      <li>Heavy sweating</li>
+      <li>Cold, pale, clammy skin</li>
+      <li>Weak pulse</li>
+      <li>Nausea, vomiting</li>
+      <li>Weakness, fatigue</li>
+    </ul>
+  </div>
+  
+  <div class="stage emergency">
+    <h4>Heat Stroke</h4>
+    <p><em>EMERGENCY</em></p>
+    <ul>
+      <li>High body temp (103°F+)</li>
+      <li>Hot, red, dry skin</li>
+      <li>Rapid pulse</li>
+      <li>Confusion</li>
+      <li>Loss of consciousness</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Staying Cool Without AC</h2>
+
+<h3>Body Cooling</h3>
+<ul>
+  <li>Wet cloths on pulse points (wrists, neck, ankles)</li>
+  <li>Cold water on skin</li>
+  <li>Misting with spray bottle</li>
+  <li>Cool (not cold) shower</li>
+  <li>Wet hair and let evaporate</li>
+</ul>
+
+<h3>Environment</h3>
+<ul>
+  <li>Close blinds/curtains</li>
+  <li>Use fans</li>
+  <li>Open windows at night</li>
+  <li>Stay on lowest floor</li>
+  <li>Create cross-ventilation</li>
+  <li>Block direct sunlight</li>
+</ul>
+
+<h3>Hydration</h3>
+<ul>
+  <li>Drink before you're thirsty</li>
+  <li>Water is best</li>
+  <li>Avoid alcohol and caffeine</li>
+  <li>Include electrolytes if sweating heavily</li>
+  <li>Monitor urine color (pale = hydrated)</li>
+</ul>
+
+<h3>Activity</h3>
+<ul>
+  <li>Stay indoors during hottest hours (10am-4pm)</li>
+  <li>Minimize physical activity</li>
+  <li>Rest frequently</li>
+  <li>Do necessary tasks early morning</li>
+</ul>
+
+<h3>Clothing</h3>
+<ul>
+  <li>Light-colored, loose-fitting</li>
+  <li>Natural fibers (cotton, linen)</li>
+  <li>Minimal coverage when indoors</li>
+  <li>Hat and sunglasses outdoors</li>
+</ul>
+
+<h2>Emergency Response</h2>
+
+<h3>Heat Exhaustion Treatment</h3>
+<ol>
+  <li>Move to cool area</li>
+  <li>Lie down, elevate legs</li>
+  <li>Remove excess clothing</li>
+  <li>Apply cool, wet cloths</li>
+  <li>Sip water slowly</li>
+  <li>Seek medical care if worsening</li>
+</ol>
+
+<div class="warning-box">
+  <h4>Heat Stroke Treatment (EMERGENCY)</h4>
+  <ol>
+    <li>Call 911</li>
+    <li>Move to cool area</li>
+    <li>Cool body rapidly</li>
+    <li>Cold water immersion if possible</li>
+    <li>Ice packs to armpits, neck, groin</li>
+    <li>Do NOT give fluids if unconscious</li>
+  </ol>
+</div>
+
+<hr>
+
+<div class="quick-ref">
+  <h3>Quick Reference</h3>
+<pre>HEAT ILLNESS SIGNS
+
+Heat Exhaustion:
+- Heavy sweating
+- Cold, clammy skin
+- Weakness, nausea
+
+Heat Stroke (EMERGENCY):
+- High temp (103°F+)
+- Hot, red skin
+- Confusion
+
+COOL DOWN:
+- Wet cloths on pulse points
+- Stay hydrated
+- Stay indoors
+- Use fans
+- Avoid activity 10am-4pm
+
+HEAT STROKE = CALL 911
+Cool body immediately</pre>
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+</div>
+
+</body>
+</html>

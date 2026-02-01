@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hand-Powered & Solar Devices</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-yellow: #eab308;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-yellow); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(234, 179, 8, 0.05));
+      border-left: 4px solid var(--accent-yellow);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-yellow); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+    th { background: var(--bg-tertiary); font-weight: 600; color: var(--accent-blue); }
+    tr:last-child td { border-bottom: none; }
+    
+    .info-box {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .info-box h4 { color: var(--accent-blue); margin-top: 0; }
+    
+    .solar-box {
+      background: rgba(234, 179, 8, 0.1);
+      border-left: 4px solid var(--accent-yellow);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .solar-box h4 { color: var(--accent-yellow); margin-top: 0; }
+    
+    .priority-list {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .priority-list h4 { margin-top: 0; }
+    .priority-list.high h4 { color: var(--accent-red); }
+    .priority-list.medium h4 { color: var(--accent-amber); }
+    .priority-list.low h4 { color: var(--accent-green); }
+    
+    .checklist { list-style: none; margin-left: 0; }
+    .checklist li { position: relative; padding-left: 2rem; margin-bottom: 0.5rem; }
+    .checklist li::before { content: "☐"; position: absolute; left: 0; color: var(--accent-blue); }
+    
+    .quick-ref {
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-yellow);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .quick-ref h3 { color: var(--accent-yellow); margin-top: 0; }
+    
+    pre {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+      font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Hand-Powered & Solar Devices</h1>
+
+<blockquote>
+  <strong>Energy Independence</strong> - When batteries run out and the grid is down, devices that generate their own power become invaluable. This guide covers hand-crank and solar-powered equipment for emergencies.
+</blockquote>
+
+<h2>Why Alternative Power Matters</h2>
+<ul>
+  <li>Batteries eventually run out</li>
+  <li>Grid power may be down for weeks</li>
+  <li>Solar and hand-power are renewable</li>
+  <li>Critical devices need continuous power</li>
+  <li>Reduces dependency on fuel</li>
+</ul>
+
+<hr>
+
+<h2>Hand-Crank Devices</h2>
+
+<h3>How They Work</h3>
+<p>Turning a crank generates electricity through a small dynamo, stored in an internal battery.</p>
+
+<h3>Common Hand-Crank Devices</h3>
+
+<table>
+  <thead>
+    <tr><th>Device</th><th>Crank Time</th><th>Runtime</th><th>Priority</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Emergency radio</td><td>1 min</td><td>15-30 min</td><td>Essential</td></tr>
+    <tr><td>Flashlight</td><td>1 min</td><td>10-30 min</td><td>Essential</td></tr>
+    <tr><td>Phone charger</td><td>Varies</td><td>Minimal</td><td>Useful</td></tr>
+    <tr><td>Lantern</td><td>1-2 min</td><td>10-20 min</td><td>Useful</td></tr>
+  </tbody>
+</table>
+
+<h3>Best Hand-Crank Purchases</h3>
+
+<div class="info-box">
+  <h4>Emergency radio/flashlight combo:</h4>
+  <ul>
+    <li>NOAA weather bands</li>
+    <li>AM/FM radio</li>
+    <li>Flashlight</li>
+    <li>USB charging port</li>
+    <li>Internal rechargeable battery</li>
+  </ul>
+  
+  <h4>Recommended brands:</h4>
+  <ul>
+    <li>Eton</li>
+    <li>Kaito</li>
+    <li>RunningSnail</li>
+    <li>Midland</li>
+  </ul>
+</div>
+
+<h3>Hand-Crank Limitations</h3>
+<ul>
+  <li>Physical effort required</li>
+  <li>Limited power output</li>
+  <li>Internal batteries degrade over time</li>
+  <li>May not fully charge devices</li>
+  <li>Best as backup to solar</li>
+</ul>
+
+<hr>
+
+<h2>Solar-Powered Devices</h2>
+
+<h3>Understanding Solar Panels</h3>
+
+<div class="solar-box">
+  <h4>Panel types:</h4>
+  <ul>
+    <li>Monocrystalline (most efficient)</li>
+    <li>Polycrystalline (less efficient, cheaper)</li>
+    <li>Thin-film (flexible, least efficient)</li>
+  </ul>
+  
+  <h4>Key specifications:</h4>
+  <ul>
+    <li>Wattage (W) - power output</li>
+    <li>Voltage (V) - typically 5V USB or 12V</li>
+    <li>Efficiency (%) - how much sunlight converted</li>
+  </ul>
+</div>
+
+<h3>Portable Solar Panels</h3>
+
+<table>
+  <thead>
+    <tr><th>Size</th><th>Power</th><th>Best For</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>5-10W</td><td>Low</td><td>Phone only</td></tr>
+    <tr><td>15-25W</td><td>Medium</td><td>Phone + small devices</td></tr>
+    <tr><td>50-100W</td><td>High</td><td>Multiple devices, batteries</td></tr>
+    <tr><td>100W+</td><td>Very high</td><td>Power stations, 12V systems</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>Solar Charging Setup</h2>
+
+<h3>Basic Phone Charging Setup</h3>
+
+<div class="info-box">
+  <h4>Components:</h4>
+  <ol>
+    <li>Solar panel (15-25W recommended)</li>
+    <li>USB output</li>
+    <li>Battery pack (optional but recommended)</li>
+  </ol>
+  
+  <h4>Why use battery pack:</h4>
+  <ul>
+    <li>Stores power for cloudy periods</li>
+    <li>More efficient than direct charging</li>
+    <li>Protects devices from voltage fluctuations</li>
+    <li>Charge panel → battery → device</li>
+  </ul>
+</div>
+
+<h3>Optimizing Solar Charging</h3>
+
+<div class="solar-box">
+  <h4>Placement:</h4>
+  <ul>
+    <li>Direct sunlight (no partial shade)</li>
+    <li>Perpendicular to sun (adjust throughout day)</li>
+    <li>Clean panel surface</li>
+    <li>Avoid hot surfaces (reduces efficiency)</li>
+  </ul>
+  
+  <h4>Best charging times:</h4>
+  <ul>
+    <li>Peak sun: 10am - 2pm</li>
+    <li>Best efficiency: 11am - 1pm</li>
+    <li>Adjust for your latitude and season</li>
+  </ul>
+  
+  <h4>Weather effects:</h4>
+  <ul>
+    <li>Full sun: 100% output</li>
+    <li>Light clouds: 50-70% output</li>
+    <li>Heavy clouds: 10-25% output</li>
+    <li>Rain: Minimal output</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Recommended Equipment</h2>
+
+<h3>Essential Solar/Crank Kit</h3>
+<ul class="checklist">
+  <li>Hand-crank emergency radio with USB output</li>
+  <li>20W+ folding solar panel</li>
+  <li>10,000+ mAh power bank</li>
+  <li>Solar-powered lantern</li>
+  <li>USB charging cables</li>
+</ul>
+
+<h3>Enhanced Kit</h3>
+<ul class="checklist">
+  <li>50-100W solar panel</li>
+  <li>Larger power station (500Wh+)</li>
+  <li>12V charging capability</li>
+  <li>Multiple power banks</li>
+  <li>Solar battery charger (AA/AAA)</li>
+</ul>
+
+<hr>
+
+<h2>Charging Priorities</h2>
+
+<p>When power is limited:</p>
+
+<div class="priority-list high">
+  <h4>High Priority</h4>
+  <ol>
+    <li>Medical devices</li>
+    <li>Communication (phone for emergencies)</li>
+    <li>Flashlight/headlamp</li>
+    <li>Emergency radio</li>
+  </ol>
+</div>
+
+<div class="priority-list medium">
+  <h4>Medium Priority</h4>
+  <ol start="5">
+    <li>Power bank (for later use)</li>
+    <li>Rechargeable batteries</li>
+    <li>Tablets (if used for information)</li>
+  </ol>
+</div>
+
+<div class="priority-list low">
+  <h4>Lower Priority</h4>
+  <ol start="8">
+    <li>Entertainment devices</li>
+    <li>Non-essential electronics</li>
+  </ol>
+</div>
+
+<hr>
+
+<h2>Maintenance</h2>
+
+<h3>Solar Panel Care</h3>
+<ul>
+  <li>Keep clean (wipe with soft cloth)</li>
+  <li>Store properly when not in use</li>
+  <li>Check cables and connectors</li>
+  <li>Test periodically</li>
+  <li>Avoid physical damage</li>
+</ul>
+
+<h3>Hand-Crank Device Care</h3>
+<ul>
+  <li>Exercise periodically (prevents stiffness)</li>
+  <li>Don't over-crank</li>
+  <li>Keep clean and dry</li>
+  <li>Replace internal battery when degraded</li>
+  <li>Store with some charge</li>
+</ul>
+
+<h3>Power Bank Care</h3>
+<ul>
+  <li>Keep charged (not fully empty)</li>
+  <li>Avoid extreme temperatures</li>
+  <li>Store at 40-60% for long-term</li>
+  <li>Replace every 2-3 years</li>
+</ul>
+
+<hr>
+
+<h2>Limitations to Understand</h2>
+
+<h3>Solar Realities</h3>
+<ul>
+  <li>Weather dependent</li>
+  <li>Limited winter output (shorter days, lower angle)</li>
+  <li>Need clear access to sun</li>
+  <li>Takes time to charge</li>
+  <li>Not instant power</li>
+</ul>
+
+<h3>Hand-Crank Realities</h3>
+<ul>
+  <li>Labor intensive</li>
+  <li>Limited power output</li>
+  <li>Best for small devices</li>
+  <li>Fatigue factor</li>
+  <li>Backup, not primary</li>
+</ul>
+
+<hr>
+
+<div class="quick-ref">
+  <h3>Quick Reference</h3>
+<pre>SOLAR CHARGING TIPS
+
+Best conditions:
+- Direct sunlight
+- 10am - 2pm
+- Panel perpendicular to sun
+- Clean panel surface
+
+Charging priority:
+1. Medical devices
+2. Phone (emergency use)
+3. Flashlight
+4. Radio
+
+HAND-CRANK GUIDE
+
+Typical ratio:
+1 minute cranking = 10-30 minutes use
+
+Best for:
+- Radio
+- Flashlight
+- Emergency phone power
+
+Not practical for:
+- Full phone charging
+- Tablets
+- Laptops</pre>
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+</div>
+
+</body>
+</html>

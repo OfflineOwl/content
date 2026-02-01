@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cooling Strategies in Extreme Heat</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-orange: #f97316;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-orange); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(249, 115, 22, 0.05));
+      border-left: 4px solid var(--accent-orange);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-orange); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+    th { background: var(--bg-tertiary); font-weight: 600; color: var(--accent-blue); }
+    tr:last-child td { border-bottom: none; }
+    
+    .warning-box {
+      background: rgba(239, 68, 68, 0.15);
+      border: 2px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+    }
+    
+    .warning-box h4 { color: var(--accent-red); margin-top: 0; }
+    
+    .info-box {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .info-box h4 { color: var(--accent-blue); margin-top: 0; }
+    
+    .checklist { list-style: none; margin-left: 0; }
+    .checklist li { position: relative; padding-left: 2rem; margin-bottom: 0.5rem; }
+    .checklist li::before { content: "☐"; position: absolute; left: 0; color: var(--accent-blue); }
+    
+    .quick-ref {
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-orange);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .quick-ref h3 { color: var(--accent-orange); margin-top: 0; }
+    
+    pre {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+      font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Cooling Strategies in Extreme Heat</h1>
+
+<blockquote>
+  <strong>Heat Kills More Than Cold</strong> - Extreme heat causes more deaths than any other weather event. When air conditioning isn't available, knowing how to stay cool can save lives.
+</blockquote>
+
+<h2>Understanding Heat Risk</h2>
+
+<h3>Heat-Related Illness Progression</h3>
+
+<table>
+  <thead>
+    <tr><th>Condition</th><th>Signs</th><th>Severity</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Heat cramps</strong></td><td>Muscle cramps, sweating</td><td>Mild</td></tr>
+    <tr><td><strong>Heat exhaustion</strong></td><td>Heavy sweating, weakness, nausea</td><td>Moderate</td></tr>
+    <tr><td><strong>Heat stroke</strong></td><td>High temp, confusion, no sweating</td><td><strong>Emergency</strong></td></tr>
+  </tbody>
+</table>
+
+<h3>Who's Most at Risk?</h3>
+<ul>
+  <li>Elderly (over 65)</li>
+  <li>Infants and young children</li>
+  <li>Those with chronic illness</li>
+  <li>People on certain medications</li>
+  <li>Those without access to cooling</li>
+  <li>Outdoor workers</li>
+  <li>Athletes</li>
+</ul>
+
+<hr>
+
+<h2>Passive Cooling Strategies</h2>
+
+<h3>Block the Heat</h3>
+
+<div class="info-box">
+  <h4>Windows:</h4>
+  <ul>
+    <li>Close curtains/blinds on sun-facing windows</li>
+    <li>Use reflective window coverings</li>
+    <li>Hang white or reflective material</li>
+    <li>Close windows when outside temp exceeds inside temp</li>
+    <li>Open windows at night when it cools</li>
+  </ul>
+</div>
+
+<h3>Ventilation</h3>
+
+<p><strong>Cross-ventilation:</strong></p>
+<ul>
+  <li>Open windows on opposite sides</li>
+  <li>Creates airflow through space</li>
+  <li>Best when outside is cooler than inside</li>
+  <li>Most effective morning and evening</li>
+</ul>
+
+<h3>Reduce Internal Heat</h3>
+<ul>
+  <li>Don't cook (or cook outside)</li>
+  <li>Turn off unnecessary electronics</li>
+  <li>Use no lights if possible (LEDs produce less heat)</li>
+  <li>Don't use oven or stove</li>
+</ul>
+
+<hr>
+
+<h2>Active Cooling Without AC</h2>
+
+<h3>Evaporative Cooling</h3>
+
+<div class="info-box">
+  <h4>Wet cloth method:</h4>
+  <ol>
+    <li>Wet cloth with cool water</li>
+    <li>Place on pulse points:
+      <ul>
+        <li>Neck</li>
+        <li>Wrists</li>
+        <li>Temples</li>
+        <li>Ankles</li>
+      </ul>
+    </li>
+    <li>Replace when it warms</li>
+  </ol>
+  
+  <h4>DIY evaporative cooler:</h4>
+  <ol>
+    <li>Hang wet sheet in doorway or window</li>
+    <li>Air passing through cools as water evaporates</li>
+    <li>Works best in low humidity</li>
+  </ol>
+</div>
+
+<h3>Cold Water Immersion</h3>
+
+<p><strong>Most effective cooling method:</strong></p>
+<ul>
+  <li>Cool (not cold) bath or shower</li>
+  <li>Wading in pool or stream</li>
+  <li>Wet clothing</li>
+  <li>Cool foot bath</li>
+</ul>
+
+<hr>
+
+<h2>Body Cooling Strategies</h2>
+
+<h3>Hydration</h3>
+<ul>
+  <li>Drink before you're thirsty</li>
+  <li>Water is best</li>
+  <li>Avoid alcohol and caffeine</li>
+  <li>Include electrolytes if sweating heavily</li>
+  <li>Watch urine color (pale = hydrated)</li>
+</ul>
+
+<h3>Clothing</h3>
+
+<p><strong>Wear:</strong></p>
+<ul>
+  <li>Light-colored, loose-fitting clothing</li>
+  <li>Natural fibers (cotton, linen)</li>
+  <li>Wet bandana around neck</li>
+  <li>Wide-brimmed hat outdoors</li>
+</ul>
+
+<p><strong>Avoid:</strong></p>
+<ul>
+  <li>Dark colors (absorb heat)</li>
+  <li>Tight clothing</li>
+  <li>Synthetic materials</li>
+</ul>
+
+<h3>Activity</h3>
+<ul>
+  <li>Minimize physical exertion</li>
+  <li>Rest during hottest hours (10am-4pm)</li>
+  <li>Do necessary tasks early morning or evening</li>
+  <li>Take frequent breaks</li>
+</ul>
+
+<hr>
+
+<h2>Heat Emergency Response</h2>
+
+<h3>Heat Exhaustion</h3>
+
+<div class="info-box">
+  <h4>Signs:</h4>
+  <ul>
+    <li>Heavy sweating</li>
+    <li>Cold, pale, clammy skin</li>
+    <li>Fast, weak pulse</li>
+    <li>Nausea or vomiting</li>
+    <li>Muscle cramps</li>
+    <li>Tiredness, weakness</li>
+  </ul>
+  
+  <h4>Treatment:</h4>
+  <ol>
+    <li>Move to cool place</li>
+    <li>Lie down, elevate legs</li>
+    <li>Apply cool, wet cloths</li>
+    <li>Sip water</li>
+    <li>Seek help if worsening</li>
+  </ol>
+</div>
+
+<div class="warning-box">
+  <h4>Heat Stroke (EMERGENCY)</h4>
+  
+  <p><strong>Signs:</strong></p>
+  <ul>
+    <li>High body temperature (103°F+)</li>
+    <li>Hot, red, dry or damp skin</li>
+    <li>Fast, strong pulse</li>
+    <li>Confusion</li>
+    <li>Possible unconsciousness</li>
+  </ul>
+  
+  <p><strong>Treatment:</strong></p>
+  <ol>
+    <li>Call for emergency help</li>
+    <li>Move to cool place</li>
+    <li>Cool body rapidly</li>
+    <li>Use cold water immersion if possible</li>
+    <li>Do NOT give fluids if unconscious</li>
+  </ol>
+</div>
+
+<hr>
+
+<h2>Cooling Equipment Checklist</h2>
+
+<h3>Essential</h3>
+<ul class="checklist">
+  <li>Battery-powered fans (multiple)</li>
+  <li>Spray bottles</li>
+  <li>Wet cloth/bandanas</li>
+  <li>Electrolyte packets</li>
+  <li>Thermometer</li>
+  <li>Extra batteries</li>
+</ul>
+
+<h3>Enhanced</h3>
+<ul class="checklist">
+  <li>Cooling towels</li>
+  <li>Portable misting fan</li>
+  <li>Kiddie pool</li>
+  <li>Reflective window covers</li>
+  <li>Solar-powered fan</li>
+  <li>Cooling vest</li>
+</ul>
+
+<hr>
+
+<div class="quick-ref">
+  <h3>Quick Reference</h3>
+<pre>HEAT SAFETY PRIORITIES
+
+1. HYDRATE
+   - Drink before thirsty
+   - Water + electrolytes
+
+2. COOL THE BODY
+   - Wet cloths on pulse points
+   - Cool water on skin
+   - Fans
+
+3. REDUCE HEAT EXPOSURE
+   - Stay in shade
+   - Cover windows
+   - Minimize activity
+
+4. WATCH FOR HEAT ILLNESS
+   - Heavy sweating → Heat exhaustion
+   - No sweating + confusion → Heat stroke (EMERGENCY)
+
+HEAT STROKE = EMERGENCY
+- Cool body immediately
+- Seek emergency help</pre>
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+</div>
+
+</body>
+</html>

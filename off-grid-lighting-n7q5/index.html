@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Off-Grid Lighting Options</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-yellow: #eab308;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-yellow); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(234, 179, 8, 0.05));
+      border-left: 4px solid var(--accent-yellow);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-yellow); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+    th { background: var(--bg-tertiary); font-weight: 600; color: var(--accent-blue); }
+    tr:last-child td { border-bottom: none; }
+    
+    .checklist { list-style: none; margin-left: 0; }
+    .checklist li { position: relative; padding-left: 2rem; margin-bottom: 0.5rem; }
+    .checklist li::before { content: "☐"; position: absolute; left: 0; color: var(--accent-blue); }
+    
+    .info-box {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .warning-box {
+      background: rgba(239, 68, 68, 0.1);
+      border: 2px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .warning-box h4 { color: var(--accent-red); margin-top: 0; }
+    
+    .pros-cons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .pros { color: var(--accent-green); }
+    .cons { color: var(--accent-red); }
+    
+    .quick-ref {
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-yellow);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .quick-ref h3 { color: var(--accent-yellow); margin-top: 0; }
+    
+    pre {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+      font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Off-Grid Lighting Options</h1>
+
+<blockquote>
+  <strong>Light Drives Away Fear</strong> - When the power goes out, darkness becomes an immediate concern. Having reliable light sources improves safety, morale, and functionality.
+</blockquote>
+
+<h2>Lighting Priorities</h2>
+
+<ol>
+  <li><strong>Safety lighting</strong> - Prevent injuries, navigate safely</li>
+  <li><strong>Task lighting</strong> - Reading, cooking, first aid</li>
+  <li><strong>Area lighting</strong> - General illumination</li>
+  <li><strong>Signaling</strong> - Emergency communication</li>
+</ol>
+
+<hr>
+
+<h2>Battery-Powered Options</h2>
+
+<h3>Flashlights</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Pros</th>
+      <th>Cons</th>
+      <th>Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LED handheld</td>
+      <td>Efficient, durable, bright</td>
+      <td>Directional only</td>
+      <td>General use, every person</td>
+    </tr>
+    <tr>
+      <td>Headlamp</td>
+      <td>Hands-free</td>
+      <td>Limited area</td>
+      <td>Tasks requiring both hands</td>
+    </tr>
+    <tr>
+      <td>Lantern-style</td>
+      <td>360° light</td>
+      <td>Bulkier</td>
+      <td>Area lighting</td>
+    </tr>
+    <tr>
+      <td>Tactical</td>
+      <td>Very bright, rugged</td>
+      <td>Battery drain, expensive</td>
+      <td>High-output needs</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Recommended:</strong> At least one flashlight AND one headlamp per person.</p>
+
+<h3>Lanterns</h3>
+
+<div class="info-box">
+  <h4>Battery lanterns:</h4>
+  <ul>
+    <li>LED camping lanterns</li>
+    <li>360° illumination</li>
+    <li>Can last 100+ hours on low setting</li>
+    <li>Some have USB charging ports</li>
+  </ul>
+  
+  <h4>Features to look for:</h4>
+  <ul>
+    <li>Multiple brightness settings</li>
+    <li>Long battery life</li>
+    <li>Water resistance</li>
+    <li>Hanging hook</li>
+    <li>USB charging output</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Rechargeable Options</h2>
+
+<h3>Solar-Powered Lights</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Charge Time</th>
+      <th>Runtime</th>
+      <th>Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Garden solar lights</td>
+      <td>All day sun</td>
+      <td>8-12 hours</td>
+      <td>Pathway marking</td>
+    </tr>
+    <tr>
+      <td>Solar lanterns</td>
+      <td>6-8 hours</td>
+      <td>6-12 hours</td>
+      <td>Area lighting</td>
+    </tr>
+    <tr>
+      <td>Solar flashlights</td>
+      <td>6-8 hours</td>
+      <td>2-4 hours</td>
+      <td>Backup</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="pros-cons">
+  <div><span class="pros"><strong>Pros:</strong></span> Free energy, indefinitely renewable</div>
+  <div><span class="cons"><strong>Cons:</strong></span> Weather dependent, slower charging</div>
+</div>
+
+<h3>Hand-Crank Lights</h3>
+
+<ul>
+  <li>No batteries or sun needed</li>
+  <li>1 minute cranking = 10-30 minutes light</li>
+  <li>Good backup option</li>
+  <li>Often include radio, USB charging</li>
+</ul>
+
+<h3>Rechargeable Batteries</h3>
+
+<div class="info-box">
+  <h4>Eneloop/NiMH rechargeable batteries:</h4>
+  <ul>
+    <li>Can recharge with solar panel</li>
+    <li>Last hundreds of cycles</li>
+    <li>Standard AA/AAA sizes</li>
+    <li>Good charge retention</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Fuel-Based Options</h2>
+
+<h3>Candles</h3>
+
+<div class="pros-cons">
+  <div>
+    <h4 class="pros">Pros:</h4>
+    <ul>
+      <li>Inexpensive, widely available</li>
+      <li>Long-lasting</li>
+      <li>Provides some warmth</li>
+      <li>Psychological comfort</li>
+    </ul>
+  </div>
+  <div>
+    <h4 class="cons">Cons:</h4>
+    <ul>
+      <li>Fire hazard</li>
+      <li>Limited brightness</li>
+      <li>Soot production</li>
+      <li>Not windproof</li>
+    </ul>
+  </div>
+</div>
+
+<div class="warning-box">
+  <h4>Safe candle use:</h4>
+  <ul>
+    <li>Stable, heat-resistant holder</li>
+    <li>Never leave unattended</li>
+    <li>Keep away from flammables</li>
+    <li>Keep away from children/pets</li>
+    <li>Don't move while lit</li>
+  </ul>
+</div>
+
+<h4>Emergency candles:</h4>
+<ul>
+  <li>100-hour emergency candles</li>
+  <li>Beeswax (cleaner burning)</li>
+  <li>Tea lights (many, varied use)</li>
+</ul>
+
+<h3>Oil Lamps</h3>
+
+<div class="info-box">
+  <h4>Kerosene/lamp oil:</h4>
+  <ul>
+    <li>Brighter than candles</li>
+    <li>Adjustable flame</li>
+    <li>Economical fuel use</li>
+    <li>Traditional, reliable</li>
+  </ul>
+  
+  <h4>Safety:</h4>
+  <ul>
+    <li>Use only approved fuels</li>
+    <li>Adequate ventilation</li>
+    <li>Stable placement</li>
+    <li>Keep fuel stored safely</li>
+  </ul>
+</div>
+
+<h3>Propane/Butane Lanterns</h3>
+
+<div class="pros-cons">
+  <div>
+    <h4>Pros:</h4>
+    <ul>
+      <li>Very bright</li>
+      <li>Adjustable output</li>
+      <li>Common fuel</li>
+    </ul>
+  </div>
+  <div>
+    <h4>Cons:</h4>
+    <ul>
+      <li>CO risk (ventilation required)</li>
+      <li>Fire hazard</li>
+      <li>Fuel storage needed</li>
+      <li>Not truly indoor-safe</li>
+    </ul>
+  </div>
+</div>
+
+<hr>
+
+<h2>Chemical Light Sources</h2>
+
+<h3>Glow Sticks/Cyalume</h3>
+
+<div class="pros-cons">
+  <div>
+    <h4>Pros:</h4>
+    <ul>
+      <li>No heat, no fire risk</li>
+      <li>Waterproof</li>
+      <li>Instant activation</li>
+      <li>Safe around children</li>
+    </ul>
+  </div>
+  <div>
+    <h4>Cons:</h4>
+    <ul>
+      <li>Single use</li>
+      <li>Limited brightness</li>
+      <li>4-24 hour duration</li>
+      <li>Can't turn off</li>
+    </ul>
+  </div>
+</div>
+
+<h4>Best uses:</h4>
+<ul>
+  <li>Marking paths/rooms</li>
+  <li>Keeping track of children</li>
+  <li>Night safety</li>
+  <li>Signaling</li>
+</ul>
+
+<hr>
+
+<h2>Improvised Lighting</h2>
+
+<h3>Improvised Candles</h3>
+
+<div class="info-box">
+  <h4>Crisco/shortening candle:</h4>
+  <ol>
+    <li>Fill jar with shortening</li>
+    <li>Insert string or cotton wick</li>
+    <li>Light wick</li>
+    <li>Burns for many hours</li>
+  </ol>
+  
+  <h4>Butter lamp:</h4>
+  <ol>
+    <li>Butter in small container</li>
+    <li>Cotton or string wick</li>
+    <li>Less bright, shorter duration</li>
+  </ol>
+</div>
+
+<h3>Improvised Oil Lamp</h3>
+<ol>
+  <li>Any oil (vegetable, olive)</li>
+  <li>Small container</li>
+  <li>Cotton wick or shoelace</li>
+  <li>Float wick or suspend</li>
+</ol>
+
+<hr>
+
+<h2>Strategic Lighting Placement</h2>
+
+<h3>Key Areas to Light</h3>
+<ul>
+  <li><strong>Entry/exit points</strong> - Safety navigation</li>
+  <li><strong>Stairs</strong> - Prevent falls</li>
+  <li><strong>Kitchen</strong> - Food preparation</li>
+  <li><strong>Bathroom</strong> - Sanitation</li>
+  <li><strong>Central gathering area</strong> - Family hub</li>
+</ul>
+
+<h3>Light Conservation</h3>
+<ul>
+  <li>Use lowest effective brightness</li>
+  <li>Group activities in one lit area</li>
+  <li>Use task lighting (headlamps) vs. area lighting</li>
+  <li>Natural light during day</li>
+  <li>Reflective surfaces increase effectiveness</li>
+</ul>
+
+<hr>
+
+<h2>Battery Management</h2>
+
+<h3>Have Multiple Types</h3>
+<p>Standardize on common sizes:</p>
+<ul>
+  <li>AA (most common)</li>
+  <li>AAA (many devices)</li>
+  <li>D cells (lanterns)</li>
+  <li>18650 (rechargeable, many modern lights)</li>
+</ul>
+
+<h3>Storage</h3>
+<ul>
+  <li>Cool, dry location</li>
+  <li>Original packaging</li>
+  <li>Rotate stock</li>
+  <li>Check expiration dates</li>
+  <li>Remove from devices for long storage</li>
+</ul>
+
+<h3>Battery Life Estimates</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Device</th>
+      <th>AA Batteries</th>
+      <th>Expected Runtime</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>LED flashlight</td><td>2</td><td>20-100 hours</td></tr>
+    <tr><td>LED headlamp</td><td>3</td><td>30-100 hours</td></tr>
+    <tr><td>LED lantern</td><td>4-8</td><td>50-200 hours</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>Lighting Kit Checklist</h2>
+
+<h3>Essential</h3>
+<ul class="checklist">
+  <li>LED flashlight (per person)</li>
+  <li>LED headlamp (per person)</li>
+  <li>LED lantern (1-2 per household)</li>
+  <li>Extra batteries (100+)</li>
+  <li>Candles (24+ hours worth)</li>
+  <li>Matches/lighters (multiple)</li>
+</ul>
+
+<h3>Enhanced</h3>
+<ul class="checklist">
+  <li>Solar-charged lantern</li>
+  <li>Hand-crank flashlight</li>
+  <li>Oil lamp with fuel</li>
+  <li>Rechargeable batteries + charger</li>
+  <li>Solar panel for charging</li>
+  <li>Glow sticks (for kids/marking)</li>
+</ul>
+
+<hr>
+
+<div class="quick-ref">
+  <h3>Quick Reference</h3>
+<pre>LIGHTING PRIORITIES
+
+1. Every person: Flashlight + headlamp
+2. Every room: Candles or glow sticks
+3. Main area: Lantern
+4. Backup: Hand-crank, solar
+
+BATTERY RULE:
+Have 10x more batteries than you think you need
+
+CANDLE SAFETY:
+- Stable holder
+- Never unattended
+- Away from flammables
+- Away from kids/pets</pre>
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+</div>
+
+</body>
+</html>

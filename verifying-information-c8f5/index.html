@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verifying Information During Emergencies</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-indigo: #6366f1;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-indigo); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(99, 102, 241, 0.05));
+      border-left: 4px solid var(--accent-indigo);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-indigo); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+    th { background: var(--bg-tertiary); font-weight: 600; color: var(--accent-blue); }
+    tr:last-child td { border-bottom: none; }
+    
+    .trust-hierarchy {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .trust-hierarchy.high { border-left: 4px solid var(--accent-green); }
+    .trust-hierarchy.high h4 { color: var(--accent-green); margin-top: 0; }
+    .trust-hierarchy.low { border-left: 4px solid var(--accent-red); }
+    .trust-hierarchy.low h4 { color: var(--accent-red); margin-top: 0; }
+    
+    .warning-box {
+      background: rgba(239, 68, 68, 0.15);
+      border: 2px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+    }
+    
+    .warning-box h4 { color: var(--accent-red); margin-top: 0; }
+    
+    .checklist { list-style: none; margin-left: 0; }
+    .checklist li { position: relative; padding-left: 2rem; margin-bottom: 0.5rem; }
+    .checklist li::before { content: "☐"; position: absolute; left: 0; color: var(--accent-blue); }
+    
+    .do-dont {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .dont { background: rgba(239, 68, 68, 0.1); border-left: 4px solid var(--accent-red); border-radius: 0 8px 8px 0; padding: 1rem; }
+    .dont h4 { color: var(--accent-red); margin-top: 0; }
+    .do { background: rgba(34, 197, 94, 0.1); border-left: 4px solid var(--accent-green); border-radius: 0 8px 8px 0; padding: 1rem; }
+    .do h4 { color: var(--accent-green); margin-top: 0; }
+    
+    .quick-ref {
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-indigo);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .quick-ref h3 { color: var(--accent-indigo); margin-top: 0; }
+    
+    pre {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+      font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    
+    @media (max-width: 600px) {
+      .do-dont { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Verifying Information During Emergencies</h1>
+
+<blockquote>
+  <strong>Truth in Crisis</strong> - During emergencies, misinformation spreads rapidly. Knowing how to verify information before acting can prevent panic and bad decisions.
+</blockquote>
+
+<h2>Why Verification Matters</h2>
+
+<h3>During Emergencies</h3>
+<ul>
+  <li>Rumors spread faster than facts</li>
+  <li>Wrong information causes panic</li>
+  <li>Bad data leads to bad decisions</li>
+  <li>Lives depend on accuracy</li>
+  <li>Resources wasted on false threats</li>
+</ul>
+
+<h3>Common Misinformation</h3>
+<ul>
+  <li>Exaggerated damage reports</li>
+  <li>False evacuation orders</li>
+  <li>Inaccurate weather predictions</li>
+  <li>Made-up safety advice</li>
+  <li>Manipulated images/videos</li>
+</ul>
+
+<hr>
+
+<h2>Trusted Sources Hierarchy</h2>
+
+<div class="trust-hierarchy high">
+  <h4>Most Reliable</h4>
+  
+  <p><strong>1. Official government sources</strong></p>
+  <ul>
+    <li>FEMA</li>
+    <li>National Weather Service</li>
+    <li>CDC</li>
+    <li>State/local emergency management</li>
+  </ul>
+  
+  <p><strong>2. Emergency services</strong></p>
+  <ul>
+    <li>Local police/fire</li>
+    <li>Emergency management office</li>
+    <li>911 dispatchers</li>
+  </ul>
+  
+  <p><strong>3. Established news organizations</strong></p>
+  <ul>
+    <li>Local TV/radio stations</li>
+    <li>Wire services (AP, Reuters)</li>
+    <li>Major newspapers</li>
+  </ul>
+</div>
+
+<div class="trust-hierarchy low">
+  <h4>Less Reliable</h4>
+  <ul>
+    <li>Social media posts</li>
+    <li>Forwarded messages</li>
+    <li>Unknown websites</li>
+    <li>"Friend of a friend" information</li>
+    <li>Unverified videos</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Verification Techniques</h2>
+
+<h3>Check the Source</h3>
+
+<table>
+  <thead>
+    <tr><th>Question</th><th>Action</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Who is sharing this?</td><td>Check their credibility</td></tr>
+    <tr><td>What's their source?</td><td>Trace back to origin</td></tr>
+    <tr><td>When was it created?</td><td>Check date/time</td></tr>
+    <tr><td>Why might they share this?</td><td>Consider motives</td></tr>
+  </tbody>
+</table>
+
+<h3>Cross-Reference</h3>
+<ul>
+  <li>Check multiple independent sources</li>
+  <li>Official sources should confirm</li>
+  <li>If only one source, be skeptical</li>
+  <li>Breaking news takes time to verify</li>
+</ul>
+
+<h3>Image/Video Verification</h3>
+<ul>
+  <li>Reverse image search</li>
+  <li>Check metadata if possible</li>
+  <li>Look for context clues</li>
+  <li>Old images often recycled</li>
+  <li>AI-generated content increasing</li>
+</ul>
+
+<hr>
+
+<h2>Red Flags</h2>
+
+<div class="warning-box">
+  <h4>Suspicious Information</h4>
+  <ul>
+    <li>Only one source</li>
+    <li>Emotional language</li>
+    <li>"Share this before deleted"</li>
+    <li>Anonymous sources</li>
+    <li>Too convenient/dramatic</li>
+    <li>Conflicts with official reports</li>
+  </ul>
+  
+  <h4>Social Media Warning Signs</h4>
+  <ul>
+    <li>New accounts posting</li>
+    <li>Bot-like behavior</li>
+    <li>Unverified accounts</li>
+    <li>Copy-paste text</li>
+    <li>Appeal to panic</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Verification Checklist</h2>
+
+<h3>Before Acting on Information</h3>
+
+<ul class="checklist">
+  <li>Identified original source</li>
+  <li>Source is credible</li>
+  <li>Information is recent</li>
+  <li>Cross-referenced with other sources</li>
+  <li>Official sources confirm</li>
+  <li>Details are specific, not vague</li>
+  <li>No obvious red flags</li>
+</ul>
+
+<hr>
+
+<h2>What to Do With Unverified Info</h2>
+
+<div class="do-dont">
+  <div class="dont">
+    <h4>Don't</h4>
+    <ul>
+      <li>Share immediately</li>
+      <li>Panic</li>
+      <li>Take major action</li>
+      <li>Assume it's true</li>
+    </ul>
+  </div>
+  <div class="do">
+    <h4>Do</h4>
+    <ul>
+      <li>Wait for verification</li>
+      <li>Check official sources</li>
+      <li>Ask questions</li>
+      <li>Report obvious misinformation</li>
+    </ul>
+  </div>
+</div>
+
+<hr>
+
+<h2>Reliable Information Sources</h2>
+
+<h3>Set Up Before Emergency</h3>
+<ul>
+  <li>Local emergency management social media</li>
+  <li>Local news alerts</li>
+  <li>NOAA Weather Radio</li>
+  <li>Wireless Emergency Alerts</li>
+  <li>Community notification systems</li>
+</ul>
+
+<hr>
+
+<div class="quick-ref">
+  <h3>Quick Reference</h3>
+<pre>VERIFY BEFORE ACTING
+
+CHECK:
+- Who is the source?
+- Is it recent?
+- Can you confirm elsewhere?
+- What do officials say?
+
+RED FLAGS:
+- "Share before deleted"
+- Anonymous sources
+- Single source only
+- Emotional language
+- Conflicts with officials
+
+TRUST HIERARCHY:
+1. Official emergency management
+2. Emergency services
+3. Established news media
+4. Everything else - verify first</pre>
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+</div>
+
+</body>
+</html>

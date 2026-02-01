@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Food Storage Basics</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-purple: #a855f7;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-green); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.15), rgba(34, 197, 94, 0.05));
+      border-left: 4px solid var(--accent-green);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-green); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+    th { background: var(--bg-tertiary); font-weight: 600; color: var(--accent-blue); }
+    tr:last-child td { border-bottom: none; }
+    
+    .warning-box {
+      background: rgba(239, 68, 68, 0.1);
+      border: 2px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .info-box {
+      background: rgba(59, 130, 246, 0.1);
+      border: 2px solid var(--accent-blue);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .checklist { list-style: none; margin-left: 0; }
+    .checklist li { position: relative; padding-left: 2rem; margin-bottom: 0.5rem; }
+    .checklist li::before { content: "☐"; position: absolute; left: 0; color: var(--accent-blue); }
+    
+    strong { color: var(--accent-amber); }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    
+    .category-box {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .category-header {
+      color: var(--accent-amber);
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    
+    .mistakes-list li {
+      color: var(--accent-red);
+    }
+    
+    .cold-rule {
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(59, 130, 246, 0.05));
+      border: 2px solid var(--accent-blue);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .cold-rule h4 {
+      color: var(--accent-blue);
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Emergency Food Storage Basics</h1>
+
+<blockquote>
+  <strong>Food Security Starts at Home</strong> - A well-planned food storage system provides peace of mind and sustenance during any emergency. This guide covers the fundamentals of building and maintaining your food supply.
+</blockquote>
+
+<h2>How Much to Store?</h2>
+
+<h3>Minimum Recommendations</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Duration</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>3 days</strong></td>
+      <td>FEMA minimum, short-term emergencies</td>
+    </tr>
+    <tr>
+      <td><strong>2 weeks</strong></td>
+      <td>Better preparedness for most situations</td>
+    </tr>
+    <tr>
+      <td><strong>1 month</strong></td>
+      <td>Recommended for serious preparedness</td>
+    </tr>
+    <tr>
+      <td><strong>3+ months</strong></td>
+      <td>Extended crisis capability</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Calculating Your Needs</h3>
+
+<p><strong>Per person per day:</strong></p>
+<ul>
+  <li>Calories: 1,500-2,000 (survival), 2,000-2,500 (active)</li>
+  <li>Consider special needs (children, medical conditions)</li>
+  <li>Don't forget pets</li>
+</ul>
+
+<div class="info-box">
+  <strong>Example: Family of 4, 2-week supply</strong><br>
+  2,000 cal/person × 4 people × 14 days = 112,000 calories needed
+</div>
+
+<hr>
+
+<h2>Food Categories for Storage</h2>
+
+<h3>Long-Term Storage (1-30 years)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Food</th>
+      <th>Shelf Life</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>White rice</td>
+      <td>20-30 years</td>
+      <td>Must be stored properly</td>
+    </tr>
+    <tr>
+      <td>Dried beans</td>
+      <td>20-30 years</td>
+      <td>Store with oxygen absorbers</td>
+    </tr>
+    <tr>
+      <td>Wheat berries</td>
+      <td>30+ years</td>
+      <td>Requires grinder</td>
+    </tr>
+    <tr>
+      <td>Rolled oats</td>
+      <td>20-30 years</td>
+      <td>Sealed, cool storage</td>
+    </tr>
+    <tr>
+      <td>Honey</td>
+      <td>Indefinite</td>
+      <td>Never spoils</td>
+    </tr>
+    <tr>
+      <td>Salt</td>
+      <td>Indefinite</td>
+      <td>Store dry</td>
+    </tr>
+    <tr>
+      <td>Sugar</td>
+      <td>Indefinite</td>
+      <td>Keep moisture-free</td>
+    </tr>
+    <tr>
+      <td>Dried pasta</td>
+      <td>20-30 years</td>
+      <td>Sealed containers</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Medium-Term Storage (1-5 years)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Food</th>
+      <th>Shelf Life</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Canned goods</td>
+      <td>2-5 years</td>
+      <td>Rotate regularly</td>
+    </tr>
+    <tr>
+      <td>Peanut butter</td>
+      <td>2-5 years</td>
+      <td>Unopened</td>
+    </tr>
+    <tr>
+      <td>Freeze-dried foods</td>
+      <td>25-30 years</td>
+      <td>Expensive but lightweight</td>
+    </tr>
+    <tr>
+      <td>Powdered milk</td>
+      <td>2-5 years</td>
+      <td>Sealed container</td>
+    </tr>
+    <tr>
+      <td>Cooking oils</td>
+      <td>1-2 years</td>
+      <td>Cool, dark storage</td>
+    </tr>
+    <tr>
+      <td>Spices</td>
+      <td>2-4 years</td>
+      <td>Sealed containers</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Short-Term Rotation (6 months-1 year)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Food</th>
+      <th>Shelf Life</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Crackers</td>
+      <td>6-12 months</td>
+      <td>Watch for staleness</td>
+    </tr>
+    <tr>
+      <td>Cereal</td>
+      <td>6-12 months</td>
+      <td>Sealed after opening</td>
+    </tr>
+    <tr>
+      <td>Granola bars</td>
+      <td>6-12 months</td>
+      <td>Check dates</td>
+    </tr>
+    <tr>
+      <td>Trail mix</td>
+      <td>6-12 months</td>
+      <td>Contains oils that can spoil</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>The Balanced Pantry</h2>
+
+<h3>Categories to Include</h3>
+
+<div class="category-box">
+  <div class="category-header">Grains (40% of storage)</div>
+  <ul>
+    <li>Rice (white stores longest)</li>
+    <li>Pasta</li>
+    <li>Oats</li>
+    <li>Flour</li>
+    <li>Cornmeal</li>
+  </ul>
+</div>
+
+<div class="category-box">
+  <div class="category-header">Proteins (20% of storage)</div>
+  <ul>
+    <li>Canned meats (tuna, chicken, spam)</li>
+    <li>Dried beans and lentils</li>
+    <li>Peanut butter</li>
+    <li>Canned beans</li>
+    <li>Protein powder</li>
+  </ul>
+</div>
+
+<div class="category-box">
+  <div class="category-header">Fruits & Vegetables (20% of storage)</div>
+  <ul>
+    <li>Canned vegetables</li>
+    <li>Canned fruits</li>
+    <li>Dried fruits</li>
+    <li>Freeze-dried options</li>
+  </ul>
+</div>
+
+<div class="category-box">
+  <div class="category-header">Dairy & Fats (10% of storage)</div>
+  <ul>
+    <li>Powdered milk</li>
+    <li>Shelf-stable milk</li>
+    <li>Cooking oils</li>
+    <li>Shortening</li>
+    <li>Canned butter</li>
+  </ul>
+</div>
+
+<div class="category-box">
+  <div class="category-header">Comfort & Variety (10% of storage)</div>
+  <ul>
+    <li>Coffee/tea</li>
+    <li>Hot cocoa</li>
+    <li>Candy</li>
+    <li>Comfort foods</li>
+    <li>Spices and seasonings</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Storage Methods</h2>
+
+<h3>Food-Grade Containers</h3>
+
+<p><strong>Acceptable:</strong></p>
+<ul>
+  <li>HDPE #2 plastic buckets</li>
+  <li>Mylar bags</li>
+  <li>Glass jars (for smaller quantities)</li>
+  <li>#10 cans (commercial)</li>
+  <li>PETE bottles (repurposed 2-liter)</li>
+</ul>
+
+<p><strong>Not acceptable:</strong></p>
+<ul>
+  <li>Non-food-grade plastic</li>
+  <li>Containers that held chemicals</li>
+  <li>Garbage bags</li>
+  <li>Metal cans with rust</li>
+</ul>
+
+<h3>Oxygen Absorbers</h3>
+
+<p><strong>Purpose:</strong> Remove oxygen to prevent spoilage</p>
+
+<p><strong>Use with:</strong></p>
+<ul>
+  <li>Dried grains</li>
+  <li>Beans</li>
+  <li>Pasta</li>
+  <li>Dehydrated foods</li>
+</ul>
+
+<p><strong>Don't use with:</strong></p>
+<ul>
+  <li>Sugar (hardens)</li>
+  <li>Salt (unnecessary)</li>
+  <li>Foods with moisture</li>
+</ul>
+
+<h3>Mylar Bags</h3>
+
+<p><strong>Benefits:</strong></p>
+<ul>
+  <li>Block light</li>
+  <li>Moisture barrier</li>
+  <li>Oxygen barrier</li>
+  <li>Pest resistant</li>
+</ul>
+
+<p><strong>Use for:</strong></p>
+<ul>
+  <li>Long-term dry food storage</li>
+  <li>Inside buckets or containers</li>
+  <li>With oxygen absorbers</li>
+</ul>
+
+<hr>
+
+<h2>Storage Conditions</h2>
+
+<div class="cold-rule">
+  <h4>The COLD Rule</h4>
+  <ul>
+    <li><strong>C</strong>ool: 50-70°F ideal (each 10°F reduces shelf life by half)</li>
+    <li><strong>O</strong>ut of light: Dark prevents degradation</li>
+    <li><strong>L</strong>ow humidity: Below 15% ideal</li>
+    <li><strong>D</strong>ry: No moisture intrusion</li>
+  </ul>
+</div>
+
+<h3>Where to Store</h3>
+
+<p><strong>Good locations:</strong></p>
+<ul>
+  <li>Basement (if dry)</li>
+  <li>Interior closets</li>
+  <li>Under beds</li>
+  <li>Climate-controlled areas</li>
+</ul>
+
+<p><strong>Avoid:</strong></p>
+<ul>
+  <li>Garages (temperature extremes)</li>
+  <li>Attics (heat)</li>
+  <li>Near chemicals</li>
+  <li>Direct sunlight</li>
+  <li>Areas with pest problems</li>
+</ul>
+
+<hr>
+
+<h2>Rotation System</h2>
+
+<h3>FIFO: First In, First Out</h3>
+<ol>
+  <li>Date all items when purchased</li>
+  <li>Place new items in back</li>
+  <li>Use oldest items first</li>
+  <li>Check dates regularly</li>
+  <li>Replace items before expiration</li>
+</ol>
+
+<h3>Making Rotation Easy</h3>
+<ul>
+  <li>Store in visible locations</li>
+  <li>Use what you store regularly</li>
+  <li>Cook with storage foods monthly</li>
+  <li>Keep inventory list</li>
+  <li>Set calendar reminders</li>
+</ul>
+
+<h3>Rotation Schedule</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Food Type</th>
+      <th>Check Frequency</th>
+      <th>Replace</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Canned goods</td>
+      <td>Every 6 months</td>
+      <td>Yearly</td>
+    </tr>
+    <tr>
+      <td>Crackers/snacks</td>
+      <td>Monthly</td>
+      <td>6 months</td>
+    </tr>
+    <tr>
+      <td>Cooking oils</td>
+      <td>Every 3 months</td>
+      <td>Yearly</td>
+    </tr>
+    <tr>
+      <td>Long-term storage</td>
+      <td>Yearly</td>
+      <td>As needed</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>Sample Emergency Pantry</h2>
+
+<h3>One Week Per Person</h3>
+
+<p><strong>Grains:</strong></p>
+<ul>
+  <li>5 lbs rice</li>
+  <li>3 lbs pasta</li>
+  <li>2 lbs oatmeal</li>
+</ul>
+
+<p><strong>Proteins:</strong></p>
+<ul>
+  <li>6 cans tuna/chicken</li>
+  <li>2 cans beans</li>
+  <li>2 jars peanut butter</li>
+  <li>1 lb dried beans</li>
+</ul>
+
+<p><strong>Fruits/Vegetables:</strong></p>
+<ul>
+  <li>7 cans vegetables</li>
+  <li>4 cans fruit</li>
+  <li>Dried fruit assortment</li>
+</ul>
+
+<p><strong>Other:</strong></p>
+<ul>
+  <li>Cooking oil</li>
+  <li>Salt, sugar</li>
+  <li>Powdered milk</li>
+  <li>Coffee/tea</li>
+  <li>Honey</li>
+  <li>Multivitamin</li>
+</ul>
+
+<p><strong>Water:</strong> 7 gallons</p>
+
+<hr>
+
+<h2>Special Considerations</h2>
+
+<h3>Dietary Restrictions</h3>
+<ul>
+  <li>Store foods your family actually eats</li>
+  <li>Consider allergies</li>
+  <li>Plan for special diets (diabetic, gluten-free)</li>
+  <li>Include comfort foods</li>
+</ul>
+
+<h3>Infants and Children</h3>
+<ul>
+  <li>Formula (ready-to-feed preferred)</li>
+  <li>Baby food</li>
+  <li>Familiar comfort foods</li>
+  <li>Extra snacks</li>
+</ul>
+
+<h3>Pets</h3>
+<ul>
+  <li>Dry food (stores well)</li>
+  <li>Canned food</li>
+  <li>Store separately from human food</li>
+  <li>Same rotation principles</li>
+</ul>
+
+<hr>
+
+<h2>Budget Building</h2>
+
+<h3>Start Small</h3>
+<ul>
+  <li><strong>Week 1:</strong> Extra canned goods ($10-15)</li>
+  <li><strong>Week 2:</strong> Rice and beans ($10-15)</li>
+  <li><strong>Week 3:</strong> Peanut butter and pasta ($10-15)</li>
+  <li><strong>Week 4:</strong> Water containers ($20)</li>
+</ul>
+
+<h3>Build Over Time</h3>
+<ul>
+  <li>Add to regular grocery shopping</li>
+  <li>Buy on sale</li>
+  <li>Focus on shelf-stable basics</li>
+  <li>Quality over quantity</li>
+</ul>
+
+<h3>Cost-Effective Options</h3>
+<ul>
+  <li>Store brands work fine</li>
+  <li>Buy bulk staples</li>
+  <li>Watch for sales on canned goods</li>
+  <li>Grow and preserve your own</li>
+</ul>
+
+<hr>
+
+<h2>Common Mistakes to Avoid</h2>
+
+<ul class="mistakes-list">
+  <li>❌ Storing foods you don't eat</li>
+  <li>❌ Not rotating stock</li>
+  <li>❌ Poor storage conditions</li>
+  <li>❌ All-or-nothing approach</li>
+  <li>❌ Forgetting water</li>
+  <li>❌ No variety (appetite fatigue)</li>
+  <li>❌ Ignoring special dietary needs</li>
+  <li>❌ Storing in garage/attic extremes</li>
+</ul>
+
+<hr>
+
+<h2>Quick Start Checklist</h2>
+
+<ul class="checklist">
+  <li>Calculate calorie needs</li>
+  <li>Inventory current food</li>
+  <li>Identify storage location</li>
+  <li>Purchase storage containers</li>
+  <li>Start with 3-day supply</li>
+  <li>Build to 2-week supply</li>
+  <li>Establish rotation system</li>
+  <li>Include comfort foods</li>
+  <li>Don't forget water</li>
+  <li>Plan for cooking needs</li>
+</ul>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+</div>
+
+</body>
+</html>

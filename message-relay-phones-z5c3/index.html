@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message Relay When Phones Are Down</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-purple: #a855f7;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-purple); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(168, 85, 247, 0.05));
+      border-left: 4px solid var(--accent-purple);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-purple); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    
+    .info-box {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .info-box h4 { color: var(--accent-blue); margin-top: 0; }
+    
+    .oac-box {
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-green);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1.5rem 0;
+    }
+    
+    .oac-box h4 { color: var(--accent-green); margin-top: 0; }
+    
+    .example-box {
+      background: var(--bg-tertiary);
+      border-left: 4px solid var(--accent-purple);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem;
+      margin: 1rem 0;
+      font-family: monospace;
+      font-size: 0.95rem;
+    }
+    
+    .quick-ref {
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-purple);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .quick-ref h3 { color: var(--accent-purple); margin-top: 0; }
+    
+    pre {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+      font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Message Relay When Phones Are Down</h1>
+
+<blockquote>
+  <strong>Getting the Word Out</strong> - When normal phone service fails, alternative methods can get critical messages through to family and emergency services.
+</blockquote>
+
+<h2>Understanding Phone Failures</h2>
+
+<h3>What Can Fail</h3>
+<ul>
+  <li>Cell towers damaged</li>
+  <li>Networks congested</li>
+  <li>Power out to towers</li>
+  <li>Internet backbone down</li>
+  <li>Local switching stations</li>
+</ul>
+
+<h3>What Might Still Work</h3>
+<ul>
+  <li>Text often works when calls don't</li>
+  <li>WiFi calling (if internet works)</li>
+  <li>Landlines (sometimes)</li>
+  <li>Satellite phones</li>
+  <li>Ham radio</li>
+</ul>
+
+<hr>
+
+<h2>Text vs. Call</h2>
+
+<h3>Why Texts Work Better</h3>
+<ul>
+  <li>Less bandwidth required</li>
+  <li>Queues and retries automatically</li>
+  <li>Goes through gaps in service</li>
+  <li>Doesn't require constant connection</li>
+</ul>
+
+<h3>Best Practices</h3>
+<ul>
+  <li>Try text before calling</li>
+  <li>Keep messages short</li>
+  <li>Include essential info only</li>
+  <li>Don't send repeatedly (clogs system)</li>
+</ul>
+
+<hr>
+
+<h2>Out-of-Area Contact System</h2>
+
+<div class="oac-box">
+  <h4>How It Works</h4>
+  <ol>
+    <li>Designate someone 100+ miles away</li>
+    <li>Everyone contacts that person</li>
+    <li>They relay status between family members</li>
+    <li>Works when local networks are down</li>
+  </ol>
+  
+  <h4>Why It Works</h4>
+  <ul>
+    <li>Long distance often works when local doesn't</li>
+    <li>Different infrastructure</li>
+    <li>Not affected by same emergency</li>
+    <li>Central coordination point</li>
+  </ul>
+</div>
+
+<h3>Setting Up OAC</h3>
+
+<p>Choose someone who:</p>
+<ul>
+  <li>Lives far away</li>
+  <li>Is reliable</li>
+  <li>Understands the system</li>
+  <li>Has your emergency info</li>
+  <li>Will be available</li>
+</ul>
+
+<hr>
+
+<h2>Alternative Message Methods</h2>
+
+<h3>Internet-Based</h3>
+
+<p>When internet works but phones don't:</p>
+<ul>
+  <li>Email</li>
+  <li>Social media messages</li>
+  <li>Messaging apps (WhatsApp, Signal)</li>
+  <li>WiFi calling features</li>
+</ul>
+
+<h3>Radio-Based</h3>
+<ul>
+  <li>Ham radio (requires license)</li>
+  <li>GMRS/FRS radios (short range)</li>
+  <li>CB radio (limited)</li>
+  <li>Emergency radio services</li>
+</ul>
+
+<h3>Physical Methods</h3>
+<ul>
+  <li>Leave written notes</li>
+  <li>Message boards at meeting points</li>
+  <li>Runners between locations</li>
+  <li>Visual signals</li>
+</ul>
+
+<hr>
+
+<h2>Emergency Message Services</h2>
+
+<div class="info-box">
+  <h4>Red Cross Safe and Well</h4>
+  <ul>
+    <li>Register your status online or by phone</li>
+    <li>Family can search for you</li>
+    <li>redcross.org/safeandwell</li>
+  </ul>
+</div>
+
+<div class="info-box">
+  <h4>FEMA Apps</h4>
+  <ul>
+    <li>Report your status</li>
+    <li>Find family</li>
+    <li>Disaster information</li>
+  </ul>
+</div>
+
+<div class="info-box">
+  <h4>Social Media</h4>
+  <ul>
+    <li>Safety check features (Facebook)</li>
+    <li>Public posts (if appropriate)</li>
+    <li>Last resort (privacy concerns)</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Message Relay Protocol</h2>
+
+<h3>What to Include</h3>
+
+<p>Essential information:</p>
+<ul>
+  <li>Who you are</li>
+  <li>Your location (general)</li>
+  <li>Your status</li>
+  <li>Who you're with</li>
+  <li>What you need</li>
+  <li>Where you're going</li>
+</ul>
+
+<h3>Example Message</h3>
+
+<div class="example-box">
+"John Smith family, all 4 safe. At home, no power. Staying put. Will check in daily. Need nothing now. Contact Mom."
+</div>
+
+<p><strong>Keep It Brief</strong> - Every word counts when systems are strained.</p>
+
+<hr>
+
+<div class="quick-ref">
+  <h3>Quick Reference</h3>
+<pre>COMMUNICATION PRIORITY
+
+1. Text (works best)
+2. Out-of-area contact
+3. Internet messaging
+4. Social media
+5. Physical message
+
+OUT-OF-AREA CONTACT:
+- Someone 100+ miles away
+- Central message hub
+- Everyone contacts them
+- They relay information
+
+MESSAGE CONTENT:
+- Who you are
+- Where you are
+- Your status
+- Who's with you
+- What you need
+- Where you're going</pre>
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+</div>
+
+</body>
+</html>

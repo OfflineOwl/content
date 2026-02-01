@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preserving Food Without Electricity</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-lime: #84cc16;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-lime); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(132, 204, 22, 0.15), rgba(132, 204, 22, 0.05));
+      border-left: 4px solid var(--accent-lime);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-lime); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+    th { background: var(--bg-tertiary); font-weight: 600; color: var(--accent-blue); }
+    tr:last-child td { border-bottom: none; }
+    
+    .warning-box {
+      background: rgba(239, 68, 68, 0.15);
+      border: 2px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+    }
+    
+    .warning-box h4 { color: var(--accent-red); margin-top: 0; }
+    
+    .info-box {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .info-box h4 { color: var(--accent-blue); margin-top: 0; }
+    
+    .method-box {
+      background: var(--bg-secondary);
+      border-left: 4px solid var(--accent-lime);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .method-box h4 { color: var(--accent-lime); margin-top: 0; }
+    
+    .disclaimer {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 2rem 0;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Preserving Food Without Electricity</h1>
+
+<blockquote>
+  <strong>Ancient Methods, Modern Value</strong> - Humans preserved food for thousands of years before refrigeration. These methods can extend food availability during extended emergencies.
+</blockquote>
+
+<h2>Why Preservation Matters</h2>
+
+<p>When power is out long-term:</p>
+<ul>
+  <li>Refrigerated food spoils</li>
+  <li>Fresh food is unavailable</li>
+  <li>Preserved food provides nutrition</li>
+  <li>Extends limited supplies</li>
+  <li>Creates variety in diet</li>
+</ul>
+
+<hr>
+
+<h2>Preservation Methods Overview</h2>
+
+<table>
+  <thead>
+    <tr><th>Method</th><th>Best For</th><th>Difficulty</th><th>Equipment Needed</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Drying</td><td>Fruits, meats, herbs</td><td>Easy</td><td>Racks, airflow</td></tr>
+    <tr><td>Smoking</td><td>Meats, fish</td><td>Medium</td><td>Smokehouse/setup</td></tr>
+    <tr><td>Salt curing</td><td>Meats, fish</td><td>Easy</td><td>Salt</td></tr>
+    <tr><td>Pickling</td><td>Vegetables</td><td>Easy</td><td>Vinegar, jars</td></tr>
+    <tr><td>Fermenting</td><td>Vegetables</td><td>Medium</td><td>Salt, containers</td></tr>
+    <tr><td>Root cellaring</td><td>Root vegetables</td><td>Easy</td><td>Cool storage</td></tr>
+    <tr><td>Canning</td><td>Most foods</td><td>Medium-Hard</td><td>Canning equipment, heat</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>Drying/Dehydrating</h2>
+
+<h3>How It Works</h3>
+<p>Removing moisture prevents bacterial growth. Dried foods can last months to years.</p>
+
+<div class="method-box">
+  <h4>Sun Drying Method</h4>
+  <p><strong>Requirements:</strong></p>
+  <ul>
+    <li>Hot, dry weather (85°F+)</li>
+    <li>Low humidity</li>
+    <li>Good airflow</li>
+    <li>Protection from insects/debris</li>
+  </ul>
+  
+  <p><strong>Method:</strong></p>
+  <ol>
+    <li>Slice food thin (1/4 inch)</li>
+    <li>Place on drying racks</li>
+    <li>Cover with cheesecloth (keeps insects off)</li>
+    <li>Bring indoors at night (prevents moisture)</li>
+    <li>Dry until leathery (fruits) or brittle (vegetables)</li>
+    <li>Test: No moisture when squeezed or broken</li>
+  </ol>
+  
+  <p><strong>Time:</strong> 2-4 days depending on conditions</p>
+</div>
+
+<h3>What to Dry</h3>
+<ul>
+  <li><strong>Fruits:</strong> Apples, berries, grapes, bananas, peaches</li>
+  <li><strong>Vegetables:</strong> Tomatoes, peppers, onions, beans, corn</li>
+  <li><strong>Herbs:</strong> Any culinary herb</li>
+  <li><strong>Meat:</strong> Lean cuts only (see jerky below)</li>
+</ul>
+
+<h3>Making Jerky</h3>
+<ol>
+  <li>Use lean meat only (fat goes rancid)</li>
+  <li>Slice thin, against the grain</li>
+  <li>Remove all visible fat</li>
+  <li>Season with salt (essential for preservation)</li>
+  <li>Dry until bendable but not breaking</li>
+  <li>Should crack but not snap</li>
+</ol>
+
+<hr>
+
+<h2>Salt Curing</h2>
+
+<h3>How It Works</h3>
+<p>Salt draws out moisture and creates an environment hostile to bacteria.</p>
+
+<div class="method-box">
+  <h4>Dry Curing Method</h4>
+  <ol>
+    <li><strong>Prepare meat</strong> - Trim excess fat</li>
+    <li><strong>Apply cure</strong> - Coat thoroughly with salt mixture</li>
+    <li><strong>Pack</strong> - Layer in container with salt</li>
+    <li><strong>Wait</strong> - 2-3 days per pound at cool temps</li>
+    <li><strong>Rinse</strong> - Remove excess salt</li>
+    <li><strong>Dry</strong> - Air dry or smoke</li>
+  </ol>
+</div>
+
+<h3>Basic Cure Mix</h3>
+<ul>
+  <li>1 lb salt</li>
+  <li>1/2 cup sugar</li>
+  <li>Optional: spices, curing salt (pink salt #1)</li>
+</ul>
+
+<hr>
+
+<h2>Pickling</h2>
+
+<h3>How It Works</h3>
+<p>Acid environment (vinegar) prevents bacterial growth.</p>
+
+<div class="method-box">
+  <h4>Basic Quick Pickle</h4>
+  <p><strong>Ingredients:</strong></p>
+  <ul>
+    <li>2 cups vinegar (5% acidity)</li>
+    <li>2 cups water</li>
+    <li>2 tbsp salt</li>
+    <li>Optional: sugar, spices</li>
+  </ul>
+  
+  <p><strong>Method:</strong></p>
+  <ol>
+    <li>Heat brine to dissolve salt</li>
+    <li>Pack vegetables in clean jars</li>
+    <li>Pour hot brine over vegetables</li>
+    <li>Cool and store</li>
+  </ol>
+</div>
+
+<h3>Best Vegetables for Pickling</h3>
+<ul>
+  <li>Cucumbers</li>
+  <li>Onions</li>
+  <li>Peppers</li>
+  <li>Green beans</li>
+  <li>Carrots</li>
+  <li>Cabbage (sauerkraut)</li>
+</ul>
+
+<hr>
+
+<h2>Fermentation</h2>
+
+<h3>How It Works</h3>
+<p>Beneficial bacteria convert sugars to acid, preserving the food and adding nutrition.</p>
+
+<div class="method-box">
+  <h4>Basic Sauerkraut</h4>
+  <p><strong>Ingredients:</strong></p>
+  <ul>
+    <li>Cabbage</li>
+    <li>Salt (2% of cabbage weight)</li>
+  </ul>
+  
+  <p><strong>Method:</strong></p>
+  <ol>
+    <li>Shred cabbage finely</li>
+    <li>Mix with salt in bowl</li>
+    <li>Pound or squeeze until liquid releases</li>
+    <li>Pack into jar, pressing down</li>
+    <li>Liquid should cover cabbage</li>
+    <li>Weight to keep submerged</li>
+    <li>Cover loosely (needs to vent)</li>
+    <li>Ferment 3-4 weeks at room temperature</li>
+  </ol>
+</div>
+
+<hr>
+
+<h2>Root Cellaring</h2>
+
+<h3>How It Works</h3>
+<p>Cool, humid, dark conditions slow spoilage of root vegetables.</p>
+
+<h3>Ideal Conditions</h3>
+<ul>
+  <li>Temperature: 32-40°F</li>
+  <li>Humidity: 85-95%</li>
+  <li>Dark</li>
+  <li>Good ventilation</li>
+</ul>
+
+<h3>Storage Life</h3>
+
+<table>
+  <thead>
+    <tr><th>Vegetable</th><th>Conditions</th><th>Duration</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Potatoes</td><td>Cool, dark, humid</td><td>4-6 months</td></tr>
+    <tr><td>Carrots</td><td>Cold, very humid</td><td>4-6 months</td></tr>
+    <tr><td>Beets</td><td>Cold, humid</td><td>3-5 months</td></tr>
+    <tr><td>Turnips</td><td>Cold, humid</td><td>4-5 months</td></tr>
+    <tr><td>Cabbage</td><td>Cold, humid</td><td>3-4 months</td></tr>
+    <tr><td>Onions</td><td>Cool, dry</td><td>6-8 months</td></tr>
+    <tr><td>Winter squash</td><td>Cool, dry</td><td>3-6 months</td></tr>
+    <tr><td>Apples</td><td>Cold, humid</td><td>2-6 months</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<div class="warning-box">
+  <h4>Food Safety Warning</h4>
+  
+  <p><strong>Critical Points:</strong></p>
+  <ul>
+    <li>Follow established methods exactly</li>
+    <li>Don't improvise with low-acid foods</li>
+    <li>When in doubt, throw it out</li>
+    <li>Botulism has no smell or taste</li>
+    <li>Some preservation requires specific conditions</li>
+  </ul>
+  
+  <p><strong>Signs of Spoilage:</strong></p>
+  <ul>
+    <li>Off smells</li>
+    <li>Mold (except as designed)</li>
+    <li>Slimy texture</li>
+    <li>Unusual colors</li>
+    <li>Bulging containers (canned goods)</li>
+    <li>Bubbling (when not fermenting)</li>
+  </ul>
+</div>
+
+<div class="disclaimer">
+  <strong>Disclaimer:</strong> Food preservation requires following proper procedures. Improper preservation can cause serious illness or death. This guide provides an overview—seek detailed guidance for specific methods.
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+</div>
+
+</body>
+</html>

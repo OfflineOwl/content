@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recognizing CBR Warning Signs</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-orange: #f97316;
+      --accent-yellow: #eab308;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-orange); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(249, 115, 22, 0.05));
+      border-left: 4px solid var(--accent-orange);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-orange); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+    th { background: var(--bg-tertiary); font-weight: 600; color: var(--accent-blue); }
+    tr:last-child td { border-bottom: none; }
+    
+    .threat-section {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .threat-section.chemical { border-left: 4px solid var(--accent-amber); }
+    .threat-section.chemical h3 { color: var(--accent-amber); margin-top: 0; }
+    .threat-section.biological { border-left: 4px solid var(--accent-green); }
+    .threat-section.biological h3 { color: var(--accent-green); margin-top: 0; }
+    .threat-section.radiological { border-left: 4px solid var(--accent-blue); }
+    .threat-section.radiological h3 { color: var(--accent-blue); margin-top: 0; }
+    
+    .warning-box {
+      background: rgba(239, 68, 68, 0.15);
+      border: 2px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+    }
+    
+    .warning-box h4 { color: var(--accent-red); margin-top: 0; }
+    
+    .response-box {
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-green);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+    }
+    
+    .response-box h4 { color: var(--accent-green); margin-top: 0; }
+    
+    .quick-ref {
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-orange);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .quick-ref h3 { color: var(--accent-orange); margin-top: 0; }
+    
+    pre {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+      font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    
+    .disclaimer {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 2rem 0;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Recognizing CBR Warning Signs</h1>
+
+<blockquote>
+  <strong>Chemical, Biological, Radiological Threats</strong> - While rare, CBR events require immediate recognition and response. Knowing the warning signs can save your life.
+</blockquote>
+
+<div class="threat-section chemical">
+  <h3>Chemical Agent Warning Signs</h3>
+  
+  <h4>How to Recognize</h4>
+  
+  <p><strong>Environmental signs:</strong></p>
+  <ul>
+    <li>Unusual dead/dying animals</li>
+    <li>Lack of insect life</li>
+    <li>Unexplained odors</li>
+    <li>Unusual liquid droplets</li>
+    <li>Low-lying clouds or fog unrelated to weather</li>
+    <li>Suspicious spraying</li>
+  </ul>
+  
+  <p><strong>Physical symptoms in people:</strong></p>
+  <ul>
+    <li>Difficulty breathing</li>
+    <li>Eye irritation/tearing</li>
+    <li>Skin irritation/blistering</li>
+    <li>Nausea/vomiting</li>
+    <li>Convulsions</li>
+    <li>Multiple people affected simultaneously</li>
+  </ul>
+  
+  <h4>Types of Chemical Agents</h4>
+  
+  <table>
+    <thead>
+      <tr><th>Type</th><th>Effects</th><th>Examples</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Nerve agents</td><td>Muscle twitching, difficulty breathing, seizures</td><td>Sarin, VX</td></tr>
+      <tr><td>Blister agents</td><td>Skin blisters, eye damage, respiratory damage</td><td>Mustard gas</td></tr>
+      <tr><td>Blood agents</td><td>Rapid breathing, convulsions</td><td>Hydrogen cyanide</td></tr>
+      <tr><td>Choking agents</td><td>Coughing, choking, chest tightness</td><td>Chlorine, phosgene</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="threat-section biological">
+  <h3>Biological Agent Warning Signs</h3>
+  
+  <h4>How to Recognize</h4>
+  
+  <p><strong>Indicators:</strong></p>
+  <ul>
+    <li>Unusual illness patterns (many sick at once)</li>
+    <li>Unusual disease for region/season</li>
+    <li>Sick people with similar symptoms</li>
+    <li>Dead animals (same species)</li>
+    <li>Unusual spraying/dispersal devices</li>
+    <li>Anonymous threats</li>
+  </ul>
+  
+  <p><strong>Note:</strong> Biological agents often have delayed effects (days to weeks).</p>
+  
+  <h4>Disease Indicators</h4>
+  
+  <p>Seek medical attention and report if:</p>
+  <ul>
+    <li>Sudden severe flu-like illness in healthy people</li>
+    <li>Unusual rashes or skin lesions</li>
+    <li>Pneumonia symptoms in many people</li>
+    <li>Multiple deaths from respiratory illness</li>
+  </ul>
+</div>
+
+<div class="threat-section radiological">
+  <h3>Radiological Warning Signs</h3>
+  
+  <h4>How to Recognize</h4>
+  
+  <p><strong>You cannot see, smell, or taste radiation.</strong></p>
+  
+  <p><strong>Indicators:</strong></p>
+  <ul>
+    <li>Explosion with unusual debris</li>
+    <li>Official alerts/warnings</li>
+    <li>Unusual presence of radioactive materials</li>
+    <li>Geiger counter readings (if available)</li>
+    <li>Reports of nuclear incident</li>
+  </ul>
+  
+  <p><strong>Radiation sickness symptoms (delayed):</strong></p>
+  <ul>
+    <li>Nausea and vomiting</li>
+    <li>Diarrhea</li>
+    <li>Skin burns (delayed)</li>
+    <li>Weakness</li>
+    <li>Hair loss</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Official Warning Systems</h2>
+
+<h3>Alert Types</h3>
+<ul>
+  <li><strong>Emergency Alert System (EAS):</strong> Radio, TV interruption</li>
+  <li><strong>Wireless Emergency Alerts (WEA):</strong> Cell phone alerts</li>
+  <li><strong>Outdoor warning sirens:</strong> Community notification</li>
+  <li><strong>NOAA Weather Radio:</strong> All-hazards alerts</li>
+</ul>
+
+<h3>Siren Meanings</h3>
+<p>Varies by location - know your local system:</p>
+<ul>
+  <li>Usually a steady tone = take shelter</li>
+  <li>Listen to radio for details</li>
+  <li>Don't assume you know what it means</li>
+</ul>
+
+<hr>
+
+<h2>Immediate Response</h2>
+
+<div class="response-box">
+  <h4>If You Suspect CBR Event</h4>
+  <ol>
+    <li><strong>Get away from the area</strong></li>
+    <li><strong>Move upwind, uphill, upstream</strong></li>
+    <li><strong>Get indoors if possible</strong></li>
+    <li><strong>Remove contaminated clothing</strong></li>
+    <li><strong>Protect breathing (mask, wet cloth)</strong></li>
+    <li><strong>Call 911</strong></li>
+    <li><strong>Monitor official sources</strong></li>
+  </ol>
+</div>
+
+<h3>If Outdoors</h3>
+<ul>
+  <li>Cover mouth and nose</li>
+  <li>Move away quickly</li>
+  <li>Don't touch anything suspicious</li>
+  <li>Get indoors</li>
+  <li>Remove and bag outer clothing</li>
+  <li>Shower if possible</li>
+</ul>
+
+<h3>If Indoors</h3>
+<ul>
+  <li>Stay inside</li>
+  <li>Close windows and doors</li>
+  <li>Turn off HVAC</li>
+  <li>Seal gaps</li>
+  <li>Move to interior room</li>
+  <li>Monitor emergency broadcasts</li>
+</ul>
+
+<hr>
+
+<div class="quick-ref">
+  <h3>Quick Reference</h3>
+<pre>WARNING SIGNS
+
+CHEMICAL:
+- Strange smells
+- Dead animals
+- Multiple sick people
+- Eye/skin irritation
+
+BIOLOGICAL:
+- Many people sick at once
+- Unusual illness pattern
+- Similar symptoms across victims
+
+RADIOLOGICAL:
+- Official alerts only indicator
+- Cannot sense radiation
+- Explosion with debris
+
+RESPONSE:
+1. Get away from source
+2. Move upwind/uphill
+3. Get inside
+4. Remove outer clothing
+5. Seal building
+6. Monitor official sources</pre>
+</div>
+
+<div class="disclaimer">
+  <strong>Disclaimer:</strong> This is general awareness information. Follow official guidance from authorities during any actual CBR event.
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+</div>
+
+</body>
+</html>

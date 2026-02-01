@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Defensive Driving</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-slate: #64748b;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-slate); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(100, 116, 139, 0.15), rgba(100, 116, 139, 0.05));
+      border-left: 4px solid var(--accent-slate);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-slate); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    
+    .core-concepts {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .concept {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+    }
+    
+    .concept h4 { color: var(--accent-blue); margin: 0 0 0.5rem 0; }
+    
+    .critical-warning {
+      background: rgba(239, 68, 68, 0.2);
+      border: 2px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+    
+    .critical-warning h4 { color: var(--accent-red); margin-top: 0; font-size: 1.25rem; }
+    
+    .depth-chart {
+      display: flex;
+      justify-content: space-around;
+      margin: 1rem 0;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    
+    .depth-item {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      text-align: center;
+    }
+    
+    .depth-item .amount { color: var(--accent-red); font-weight: bold; }
+    
+    .info-box {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .info-box h4 { color: var(--accent-blue); margin-top: 0; }
+    
+    .checklist { list-style: none; margin-left: 0; }
+    .checklist li { position: relative; padding-left: 2rem; margin-bottom: 0.5rem; }
+    .checklist li::before { content: "☐"; position: absolute; left: 0; color: var(--accent-blue); }
+    
+    .quick-ref {
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-slate);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .quick-ref h3 { color: var(--accent-slate); margin-top: 0; }
+    
+    pre {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+      font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    
+    @media (max-width: 600px) {
+      .core-concepts { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Emergency Defensive Driving</h1>
+
+<blockquote>
+  <strong>Drive to Survive</strong> - Emergency situations require different driving skills. Defensive driving techniques can help you navigate dangerous conditions safely.
+</blockquote>
+
+<h2>Emergency Driving Principles</h2>
+
+<h3>Core Concepts</h3>
+
+<div class="core-concepts">
+  <div class="concept">
+    <h4>1. Awareness</h4>
+    <p>Know what's happening around you</p>
+  </div>
+  <div class="concept">
+    <h4>2. Space</h4>
+    <p>Maintain distance from hazards</p>
+  </div>
+  <div class="concept">
+    <h4>3. Escape Routes</h4>
+    <p>Always have an out</p>
+  </div>
+  <div class="concept">
+    <h4>4. Control</h4>
+    <p>Smooth inputs, no panic</p>
+  </div>
+</div>
+
+<hr>
+
+<h2>Evacuation Driving</h2>
+
+<h3>Before Departure</h3>
+<ul>
+  <li>Full tank of fuel</li>
+  <li>Vehicle inspected</li>
+  <li>Route planned (plus alternates)</li>
+  <li>Supplies loaded</li>
+  <li>Communication plan set</li>
+</ul>
+
+<h3>During Evacuation</h3>
+
+<div class="info-box">
+  <h4>Hazard awareness:</h4>
+  <ul>
+    <li>Other panicked drivers</li>
+    <li>Emergency vehicles</li>
+    <li>Road debris</li>
+    <li>Damaged infrastructure</li>
+    <li>Flooded roads</li>
+  </ul>
+</div>
+
+<h3>Traffic Management</h3>
+<ul>
+  <li>Leave early (before crowds)</li>
+  <li>Use alternate routes</li>
+  <li>Be patient (panic causes accidents)</li>
+  <li>Don't block intersections</li>
+  <li>Let emergency vehicles pass</li>
+</ul>
+
+<hr>
+
+<h2>Driving Through Danger Zones</h2>
+
+<h3>Civil Unrest Areas</h3>
+<ul>
+  <li>Keep windows up, doors locked</li>
+  <li>Don't stop if avoidable</li>
+  <li>Stay on main roads</li>
+  <li>Maintain awareness</li>
+  <li>Don't engage with crowds</li>
+  <li>Have alternate route ready</li>
+</ul>
+
+<h3>Suspicious Situations</h3>
+
+<div class="info-box">
+  <h4>If approached:</h4>
+  <ul>
+    <li>Keep moving if safe</li>
+    <li>Don't roll down windows</li>
+    <li>Drive to police station if followed</li>
+    <li>Call 911 if threatened</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Hazardous Conditions</h2>
+
+<h3>Flooded Roads</h3>
+
+<div class="critical-warning">
+  <h4>TURN AROUND, DON'T DROWN</h4>
+  <div class="depth-chart">
+    <div class="depth-item"><span class="amount">6 inches</span><br>can sweep you off your feet</div>
+    <div class="depth-item"><span class="amount">12 inches</span><br>can float a car</div>
+    <div class="depth-item"><span class="amount">2 feet</span><br>will carry away most vehicles</div>
+  </div>
+  <p><strong>Don't attempt to cross</strong></p>
+</div>
+
+<h3>Debris on Roads</h3>
+<ul>
+  <li>Slow down well in advance</li>
+  <li>Identify clear path</li>
+  <li>Watch for hidden hazards</li>
+  <li>Be prepared to stop</li>
+</ul>
+
+<h3>Damaged Roads</h3>
+<ul>
+  <li>Bridge damage may not be visible</li>
+  <li>Sinkholes can appear</li>
+  <li>Road surface may be compromised</li>
+  <li>When in doubt, don't proceed</li>
+</ul>
+
+<hr>
+
+<h2>Vehicle as Shelter</h2>
+
+<h3>When to Stay in Vehicle</h3>
+<ul>
+  <li>Extreme weather (not tornado)</li>
+  <li>Stuck in safe location</li>
+  <li>Waiting for help</li>
+  <li>No better shelter available</li>
+</ul>
+
+<h3>When to Leave Vehicle</h3>
+<ul>
+  <li>Fire hazard</li>
+  <li>Flood water rising</li>
+  <li>Vehicle becoming unstable</li>
+  <li>Better shelter available</li>
+</ul>
+
+<hr>
+
+<h2>Emergency Maneuvers</h2>
+
+<h3>Threshold Braking (No ABS)</h3>
+<ul>
+  <li>Apply firm, steady pressure</li>
+  <li>Just before lockup</li>
+  <li>If wheels lock, release slightly</li>
+  <li>Reapply</li>
+</ul>
+
+<h3>ABS Braking</h3>
+<ul>
+  <li>Firm, continuous pressure</li>
+  <li>Don't pump</li>
+  <li>Steer while braking</li>
+  <li>Pulsing is normal</li>
+</ul>
+
+<h3>Evasive Steering</h3>
+<ul>
+  <li>Look where you want to go</li>
+  <li>Smooth, rapid steering input</li>
+  <li>Don't overcorrect</li>
+  <li>Hands at 9 and 3</li>
+</ul>
+
+<hr>
+
+<h2>Vehicle Emergency Kit</h2>
+
+<h3>In Car at All Times</h3>
+<ul class="checklist">
+  <li>Jumper cables</li>
+  <li>Flashlight</li>
+  <li>First aid kit</li>
+  <li>Water</li>
+  <li>Blanket</li>
+  <li>Phone charger</li>
+  <li>Basic tools</li>
+  <li>Reflective triangles</li>
+</ul>
+
+<h3>For Emergency Situations</h3>
+<ul class="checklist">
+  <li>Extra fuel container</li>
+  <li>Tow strap</li>
+  <li>Fire extinguisher</li>
+  <li>Maps (paper)</li>
+</ul>
+
+<hr>
+
+<div class="quick-ref">
+  <h3>Quick Reference</h3>
+<pre>EVACUATION DRIVING
+
+BEFORE:
+- Full tank
+- Route planned
+- Supplies loaded
+
+DURING:
+- Leave early
+- Stay alert
+- Use alternates
+- Stay calm
+
+FLOODED ROADS:
+TURN AROUND, DON'T DROWN
+6" = knockdown
+12" = float car
+2' = carry away
+
+EVASIVE ACTION:
+- Look where you want to go
+- Smooth inputs
+- Don't overcorrect
+- ABS = firm steady pressure</pre>
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+</div>
+
+</body>
+</html>

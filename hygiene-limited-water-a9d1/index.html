@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hygiene With Limited Water</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-cyan: #06b6d4;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-cyan); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(6, 182, 212, 0.05));
+      border-left: 4px solid var(--accent-cyan);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-cyan); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    
+    .priority-section {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .priority-section.top { border-left: 4px solid var(--accent-red); }
+    .priority-section.top h4 { color: var(--accent-red); }
+    .priority-section.high { border-left: 4px solid var(--accent-amber); }
+    .priority-section.high h4 { color: var(--accent-amber); }
+    .priority-section.moderate { border-left: 4px solid var(--accent-blue); }
+    .priority-section.moderate h4 { color: var(--accent-blue); }
+    
+    .technique-box {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .technique-box h4 { color: var(--accent-green); margin-top: 0; }
+    
+    .routine-section {
+      background: var(--bg-secondary);
+      border-left: 4px solid var(--accent-cyan);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .routine-section h4 { color: var(--accent-cyan); margin-top: 0; }
+    
+    .checklist { list-style: none; margin-left: 0; }
+    .checklist li { position: relative; padding-left: 2rem; margin-bottom: 0.5rem; }
+    .checklist li::before { content: "☐"; position: absolute; left: 0; color: var(--accent-blue); }
+    
+    .highlight-box {
+      background: rgba(34, 197, 94, 0.1);
+      border: 1px solid var(--accent-green);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Hygiene With Limited Water</h1>
+
+<blockquote>
+  <strong>Stay Clean, Stay Healthy</strong> - When water is scarce, hygiene becomes challenging but remains critical. Poor hygiene can lead to illness that makes your situation far worse.
+</blockquote>
+
+<h2>Why Hygiene Still Matters</h2>
+
+<p>Even when rationing water:</p>
+<ul>
+  <li>Infections can be life-threatening without medical care</li>
+  <li>Skin problems become harder to treat</li>
+  <li>Illness increases water needs</li>
+  <li>Morale affects survival</li>
+  <li>Disease spreads easily in emergencies</li>
+</ul>
+
+<p><strong>Prevention is always easier than treatment.</strong></p>
+
+<hr>
+
+<h2>Priority Hygiene Areas</h2>
+
+<div class="priority-section top">
+  <h4>Top Priority: Hands</h4>
+  <p><strong>Hands are the primary vector for disease transmission.</strong></p>
+  
+  <p>Wash or sanitize hands:</p>
+  <ul>
+    <li>Before eating or food preparation</li>
+    <li>After using the toilet</li>
+    <li>After handling waste</li>
+    <li>After contact with sick person</li>
+    <li>Before treating wounds</li>
+    <li>After blowing nose/coughing</li>
+  </ul>
+  
+  <h4>Low-water handwashing:</h4>
+  <ol>
+    <li>Wet hands (minimal water - spray bottle works)</li>
+    <li>Apply soap</li>
+    <li>Scrub thoroughly (20 seconds)</li>
+    <li>Rinse with minimal water</li>
+    <li>Air dry or use clean cloth</li>
+  </ol>
+  
+  <h4>No-water alternative:</h4>
+  <ul>
+    <li>Hand sanitizer (60%+ alcohol)</li>
+    <li>Use enough to wet all surfaces</li>
+    <li>Rub until completely dry</li>
+  </ul>
+</div>
+
+<div class="priority-section high">
+  <h4>High Priority: Face</h4>
+  <ul>
+    <li>Wipe face with damp cloth daily</li>
+    <li>Clean around eyes and mouth</li>
+    <li>Prevents skin irritation</li>
+    <li>Maintains morale</li>
+  </ul>
+</div>
+
+<div class="priority-section high">
+  <h4>High Priority: Groin and Armpits</h4>
+  <ul>
+    <li>Warm, moist areas breed bacteria</li>
+    <li>Daily wipe with damp cloth minimum</li>
+    <li>Apply corn starch or baby powder to stay dry</li>
+    <li>Change underwear frequently (or go without)</li>
+  </ul>
+</div>
+
+<div class="priority-section moderate">
+  <h4>Moderate Priority: Feet</h4>
+  <ul>
+    <li>Keep dry to prevent fungal infections</li>
+    <li>Change socks daily if possible</li>
+    <li>Allow feet to air out</li>
+    <li>Treat any cracks or blisters</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Sponge Bath Technique</h2>
+
+<div class="technique-box">
+  <h4>Water-Efficient Full Body Clean</h4>
+  
+  <p><strong>Materials:</strong></p>
+  <ul>
+    <li>1-2 cups of water (can be heated)</li>
+    <li>Small basin or bowl</li>
+    <li>Washcloth</li>
+    <li>Soap</li>
+    <li>Clean dry towel</li>
+  </ul>
+  
+  <p><strong>Procedure:</strong></p>
+  <ol>
+    <li>Wet washcloth (wring out excess)</li>
+    <li>Add small amount of soap</li>
+    <li>Wash in this order:
+      <ul>
+        <li>Face</li>
+        <li>Neck and ears</li>
+        <li>Arms and hands</li>
+        <li>Chest and back</li>
+        <li>Groin area (fresh cloth section)</li>
+        <li>Legs and feet</li>
+      </ul>
+    </li>
+    <li>Rinse cloth, wipe off soap residue</li>
+    <li>Dry thoroughly</li>
+  </ol>
+  
+  <p><strong>Water used:</strong> Less than 1/4 gallon total</p>
+</div>
+
+<div class="technique-box">
+  <h4>No-Water Body Cleaning</h4>
+  
+  <p><strong>Using wipes:</strong></p>
+  <ul>
+    <li>Baby wipes work well</li>
+    <li>Adult bathing wipes (larger)</li>
+    <li>Follow same order as sponge bath</li>
+    <li>Use multiple wipes for full cleaning</li>
+    <li>Discard properly</li>
+  </ul>
+  
+  <p><strong>Dry brushing:</strong></p>
+  <ul>
+    <li>Use dry cloth or soft brush</li>
+    <li>Removes dead skin and some dirt</li>
+    <li>Stimulates circulation</li>
+    <li>Not a replacement for washing</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Hair Care</h2>
+
+<h3>Water-Efficient Hair Washing</h3>
+
+<p><strong>Option 1: Minimal water rinse</strong></p>
+<ol>
+  <li>Wet hair with spray bottle</li>
+  <li>Apply small amount of shampoo</li>
+  <li>Massage thoroughly</li>
+  <li>Rinse with minimal water (cup pour method)</li>
+  <li>May need 2-3 cup rinses</li>
+</ol>
+
+<p><strong>Option 2: No-rinse shampoo</strong></p>
+<ul>
+  <li>Commercial no-rinse shampoo</li>
+  <li>Apply, massage, towel dry</li>
+  <li>No water needed</li>
+</ul>
+
+<p><strong>Option 3: Dry shampoo</strong></p>
+<ul>
+  <li>Commercial dry shampoo</li>
+  <li>Or baking soda / corn starch</li>
+  <li>Apply to roots, massage, brush out</li>
+  <li>Absorbs oil, refreshes hair</li>
+</ul>
+
+<h3>When to Prioritize Hair Washing</h3>
+<ul>
+  <li>When oily enough to affect morale</li>
+  <li>If developing scalp problems</li>
+  <li>Every 5-7 days in rationing situation</li>
+  <li>Less frequently is acceptable</li>
+</ul>
+
+<hr>
+
+<h2>Dental Care</h2>
+
+<div class="technique-box">
+  <h4>Minimal Water Dental Hygiene</h4>
+  
+  <p><strong>Dry brushing:</strong></p>
+  <ul>
+    <li>Use toothbrush without water</li>
+    <li>Still removes plaque effectively</li>
+    <li>Spit out residue</li>
+    <li>Optional tiny amount of water to rinse</li>
+  </ul>
+  
+  <p><strong>With minimal water:</strong></p>
+  <ol>
+    <li>Wet brush (dip in water)</li>
+    <li>Apply toothpaste</li>
+    <li>Brush thoroughly</li>
+    <li>Spit</li>
+    <li>Small swish of water</li>
+    <li>Spit (or swallow small amount of water)</li>
+  </ol>
+  
+  <p><strong>Water used:</strong> 1-2 tablespoons</p>
+</div>
+
+<h3>Without Toothbrush</h3>
+<ul>
+  <li>Finger brushing with paste or baking soda</li>
+  <li>Chewing fibrous vegetables</li>
+  <li>Chewing gum (stimulates saliva)</li>
+  <li>Cloth wrapped around finger</li>
+</ul>
+
+<h3>Mouth Health Importance</h3>
+<ul>
+  <li>Dental infections can become serious</li>
+  <li>Mouth bacteria can enter bloodstream</li>
+  <li>Tooth pain is debilitating</li>
+  <li>Prevention is critical without dentist access</li>
+</ul>
+
+<hr>
+
+<h2>Feminine Hygiene</h2>
+
+<h3>During Water Shortage</h3>
+
+<p><strong>Options:</strong></p>
+<ul>
+  <li>Menstrual cups (reusable, water-efficient)</li>
+  <li>Disposable pads (no water needed)</li>
+  <li>Period underwear (if can wash occasionally)</li>
+  <li>Reusable pads (require washing)</li>
+</ul>
+
+<p><strong>Menstrual cup care:</strong></p>
+<ul>
+  <li>Rinse with minimal water</li>
+  <li>Boil periodically if water available</li>
+  <li>Can use wipes between uses if water scarce</li>
+</ul>
+
+<p><strong>External cleaning:</strong></p>
+<ul>
+  <li>Wipes for external cleaning</li>
+  <li>Change products regularly</li>
+  <li>Watch for signs of infection</li>
+</ul>
+
+<hr>
+
+<h2>Wound and Skin Care</h2>
+
+<h3>With Limited Water</h3>
+
+<p><strong>Clean wounds with:</strong></p>
+<ul>
+  <li>Saline solution (1/2 tsp salt per cup water) if sterile water available</li>
+  <li>Cleanest water you have</li>
+  <li>Last resort: alcohol wipes (can damage tissue)</li>
+</ul>
+
+<p><strong>Keep wounds:</strong></p>
+<ul>
+  <li>Clean and covered</li>
+  <li>Changed daily</li>
+  <li>Dry but not dried out</li>
+  <li>Monitored for infection</li>
+</ul>
+
+<h3>Preventing Skin Problems</h3>
+
+<p><strong>Common issues in water shortage:</strong></p>
+<ul>
+  <li>Skin irritation from sweat/dirt</li>
+  <li>Rashes from friction</li>
+  <li>Cracking from dryness</li>
+  <li>Infections in cuts/scrapes</li>
+</ul>
+
+<p><strong>Prevention:</strong></p>
+<ul>
+  <li>Wipe high-friction areas daily</li>
+  <li>Use powder to stay dry</li>
+  <li>Moisturize cracking areas (lotion, petroleum jelly)</li>
+  <li>Treat small cuts before they become infected</li>
+</ul>
+
+<hr>
+
+<h2>Laundry Options</h2>
+
+<h3>When Water is Scarce</h3>
+
+<p><strong>Priority laundry:</strong></p>
+<ul>
+  <li>Underwear (turn inside out, extends use)</li>
+  <li>Socks (rotate, air out between uses)</li>
+  <li>Items touching skin</li>
+</ul>
+
+<p><strong>Extending clothing wear:</strong></p>
+<ul>
+  <li>Air out between uses</li>
+  <li>Spot clean stains only</li>
+  <li>Wear layers (keep base layer cleaner)</li>
+  <li>Rotate items</li>
+</ul>
+
+<p><strong>No-Water Freshening:</strong></p>
+<ul>
+  <li>Hang in sun (UV kills some bacteria)</li>
+  <li>Hang in fresh air</li>
+  <li>Spray with vodka/alcohol (kills odor bacteria)</li>
+  <li>Baking soda shake and brush off</li>
+</ul>
+
+<hr>
+
+<h2>Hygiene Kit for Water Emergencies</h2>
+
+<h3>Essential Items</h3>
+<ul class="checklist">
+  <li>Hand sanitizer (multiple bottles)</li>
+  <li>Baby wipes (large quantity)</li>
+  <li>Adult bathing wipes</li>
+  <li>Dry shampoo</li>
+  <li>Toothbrush and toothpaste</li>
+  <li>Soap (bar lasts longer)</li>
+  <li>Washcloth</li>
+  <li>Small towel</li>
+  <li>Toilet paper</li>
+  <li>Feminine products</li>
+  <li>Diaper rash cream (prevents chafing)</li>
+  <li>Corn starch or body powder</li>
+  <li>Lip balm</li>
+  <li>Sunscreen</li>
+  <li>Lotion</li>
+</ul>
+
+<h3>Nice to Have</h3>
+<ul class="checklist">
+  <li>No-rinse body wash</li>
+  <li>No-rinse shampoo</li>
+  <li>Bidet bottle</li>
+  <li>Deodorant</li>
+  <li>Dental floss</li>
+  <li>Nail clippers</li>
+  <li>Razor (if desired)</li>
+</ul>
+
+<hr>
+
+<h2>Daily Routine (Limited Water)</h2>
+
+<div class="routine-section">
+  <h4>Morning</h4>
+  <ol>
+    <li>Hand sanitizer</li>
+    <li>Face wipe with damp cloth</li>
+    <li>Dry brush teeth</li>
+    <li>Apply deodorant</li>
+    <li>Dress in cleanest available clothes</li>
+  </ol>
+</div>
+
+<div class="routine-section">
+  <h4>Throughout Day</h4>
+  <ol>
+    <li>Hand sanitizer before eating</li>
+    <li>Hand sanitizer after bathroom</li>
+    <li>Wipe face as needed</li>
+  </ol>
+</div>
+
+<div class="routine-section">
+  <h4>Evening</h4>
+  <ol>
+    <li>Sponge bath of critical areas</li>
+    <li>Change to sleeping clothes</li>
+    <li>Brush teeth with minimal water</li>
+    <li>Clean any wounds</li>
+  </ol>
+</div>
+
+<div class="routine-section">
+  <h4>Weekly</h4>
+  <ol>
+    <li>More thorough sponge bath</li>
+    <li>Hair washing (dry shampoo or minimal water)</li>
+    <li>Nail trimming</li>
+    <li>Laundry if water permits</li>
+  </ol>
+</div>
+
+<hr>
+
+<div class="highlight-box">
+  <h3>Hygiene and Morale</h3>
+  <p>Don't underestimate the psychological impact:</p>
+  <ul>
+    <li>Feeling clean improves mental state</li>
+    <li>Personal care maintains dignity</li>
+    <li>Routines provide normalcy</li>
+    <li>Caring for yourself models behavior for others</li>
+  </ul>
+  <p><strong>Even in extreme rationing, some hygiene helps survival by maintaining morale and preventing illness.</strong></p>
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+</div>
+
+</body>
+</html>

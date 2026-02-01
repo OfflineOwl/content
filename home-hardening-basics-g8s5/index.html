@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Hardening Basics</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-slate: #64748b;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-slate); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(100, 116, 139, 0.15), rgba(100, 116, 139, 0.05));
+      border-left: 4px solid var(--accent-slate);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-slate); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+      font-size: 0.95rem;
+    }
+    
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+    th { background: var(--bg-tertiary); font-weight: 600; color: var(--accent-blue); }
+    tr:last-child td { border-bottom: none; }
+    
+    .info-box {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .info-box h4 { color: var(--accent-blue); margin-top: 0; }
+    
+    .warning-box {
+      background: rgba(239, 68, 68, 0.15);
+      border: 2px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+    }
+    
+    .warning-box h4 { color: var(--accent-red); margin-top: 0; }
+    
+    .checklist-section {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .checklist-section h4 { color: var(--accent-slate); margin-top: 0; }
+    
+    .checklist { list-style: none; margin-left: 0; }
+    .checklist li { position: relative; padding-left: 2rem; margin-bottom: 0.5rem; }
+    .checklist li::before { content: "☐"; position: absolute; left: 0; color: var(--accent-blue); }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Home Hardening Basics</h1>
+
+<blockquote>
+  <strong>Your First Line of Defense</strong> - Before you can shelter in place effectively, your home needs to be able to withstand threats. This guide covers practical ways to make your home more resilient.
+</blockquote>
+
+<h2>What is Home Hardening?</h2>
+
+<p>Home hardening means improving your home's ability to:</p>
+<ul>
+  <li>Withstand natural disasters</li>
+  <li>Resist forced entry</li>
+  <li>Maintain habitability during emergencies</li>
+  <li>Protect against environmental hazards</li>
+</ul>
+
+<p>This isn't about building a bunker—it's about practical improvements that make a real difference.</p>
+
+<hr>
+
+<h2>Structural Improvements</h2>
+
+<h3>Entry Point Security</h3>
+
+<p><strong>Doors</strong></p>
+
+<table>
+  <thead>
+    <tr><th>Improvement</th><th>Cost</th><th>Impact</th><th>DIY?</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Solid core doors</td><td>$$</td><td>High</td><td>No</td></tr>
+    <tr><td>Reinforced strike plates</td><td>$</td><td>High</td><td>Yes</td></tr>
+    <tr><td>Door frame reinforcement</td><td>$$</td><td>High</td><td>Maybe</td></tr>
+    <tr><td>3" screws in hinges</td><td>$</td><td>Medium</td><td>Yes</td></tr>
+    <tr><td>Deadbolt (Grade 1)</td><td>$</td><td>High</td><td>Yes</td></tr>
+    <tr><td>Door bar/security bar</td><td>$</td><td>Medium</td><td>Yes</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Windows</strong></p>
+
+<table>
+  <thead>
+    <tr><th>Improvement</th><th>Cost</th><th>Impact</th><th>DIY?</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Window locks</td><td>$</td><td>Medium</td><td>Yes</td></tr>
+    <tr><td>Security film</td><td>$$</td><td>Medium</td><td>Yes</td></tr>
+    <tr><td>Window bars (interior)</td><td>$$</td><td>High</td><td>Maybe</td></tr>
+    <tr><td>Plywood pre-cut for storms</td><td>$</td><td>High</td><td>Yes</td></tr>
+    <tr><td>Impact-resistant glass</td><td>$$$</td><td>High</td><td>No</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>Utility Knowledge & Safety</h2>
+
+<h3>Know Your Shutoffs</h3>
+
+<p>Every adult in the household should know:</p>
+
+<div class="info-box">
+  <h4>Gas Shutoff</h4>
+  <ul>
+    <li>Location: Usually near gas meter</li>
+    <li>Tool needed: Adjustable wrench or gas shutoff tool</li>
+    <li>When to shut off: Smell gas, earthquake damage, evacuation</li>
+    <li><strong>Important:</strong> Don't turn back on yourself—call utility company</li>
+  </ul>
+</div>
+
+<div class="info-box">
+  <h4>Water Shutoff</h4>
+  <ul>
+    <li>Main shutoff location (usually near street)</li>
+    <li>Interior shutoffs (under sinks, behind toilets)</li>
+    <li>Water heater shutoff</li>
+    <li>When to shut off: Pipe damage, contamination warning, freezing risk</li>
+  </ul>
+</div>
+
+<div class="info-box">
+  <h4>Electrical Main</h4>
+  <ul>
+    <li>Breaker box location</li>
+    <li>Main breaker location</li>
+    <li>How to kill all power</li>
+    <li>When to shut off: Flooding, fire, electrical damage</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Weather-Specific Hardening</h2>
+
+<h3>Wildfire</h3>
+
+<p><strong>Defensible Space Zones:</strong></p>
+
+<table>
+  <thead>
+    <tr><th>Zone</th><th>Distance</th><th>Action</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Zone 0</td><td>0-5 ft</td><td>No combustibles, hardscape only</td></tr>
+    <tr><td>Zone 1</td><td>5-30 ft</td><td>Fire-resistant plants, no ladder fuels</td></tr>
+    <tr><td>Zone 2</td><td>30-100 ft</td><td>Reduced vegetation, spaced trees</td></tr>
+  </tbody>
+</table>
+
+<h3>Earthquake</h3>
+
+<p><strong>Secure Items That Can Fall:</strong></p>
+<ul>
+  <li>Water heater (strapped to wall)</li>
+  <li>Bookcases (anchored)</li>
+  <li>Heavy mirrors/pictures (secured)</li>
+  <li>TVs (strapped or wall-mounted)</li>
+  <li>Heavy furniture (anchored)</li>
+</ul>
+
+<hr>
+
+<h2>Safe Room Basics</h2>
+
+<p>A safe room isn't just for tornadoes—it's useful for:</p>
+<ul>
+  <li>Severe weather</li>
+  <li>Home invasion</li>
+  <li>Shelter-in-place orders</li>
+  <li>Medical emergencies (centralized supplies)</li>
+</ul>
+
+<h3>Location Options</h3>
+
+<p><strong>Best:</strong></p>
+<ul>
+  <li>Basement interior room</li>
+  <li>First floor interior closet</li>
+  <li>Bathroom (plumbing = stronger walls)</li>
+</ul>
+
+<p><strong>Avoid:</strong></p>
+<ul>
+  <li>Rooms with large windows</li>
+  <li>Exterior walls</li>
+  <li>Upper floors (for weather)</li>
+  <li>Garage</li>
+</ul>
+
+<h3>Safe Room Supplies</h3>
+
+<p>Keep in or near safe room:</p>
+<ul>
+  <li>Water (1 gallon per person)</li>
+  <li>First aid kit</li>
+  <li>Flashlight and batteries</li>
+  <li>Emergency radio</li>
+  <li>Phone charger</li>
+  <li>Whistle</li>
+  <li>Basic tools</li>
+  <li>Important documents</li>
+  <li>Medications</li>
+  <li>Blankets</li>
+  <li>Snacks</li>
+</ul>
+
+<hr>
+
+<h2>Low-Cost Quick Wins</h2>
+
+<p>These improvements cost little but help significantly:</p>
+
+<ul class="checklist">
+  <li>Install 3" screws in door hinges ($5)</li>
+  <li>Upgrade strike plates ($10-20)</li>
+  <li>Add door security bar ($20-40)</li>
+  <li>Install window locks ($5-10 each)</li>
+  <li>Add motion-sensor lights ($20-40 each)</li>
+  <li>Strap water heater ($20-30)</li>
+  <li>Secure bookshelves with brackets ($10-20)</li>
+  <li>Label all utility shutoffs ($0)</li>
+  <li>Test smoke/CO detectors ($0)</li>
+  <li>Pre-cut plywood for windows ($50-100)</li>
+  <li>Clear vegetation from house perimeter ($0)</li>
+  <li>Create home inventory ($0)</li>
+</ul>
+
+<hr>
+
+<h2>Home Hardening Checklist</h2>
+
+<div class="checklist-section">
+  <h4>Security</h4>
+  <ul class="checklist">
+    <li>Solid doors on exterior entries</li>
+    <li>Reinforced strike plates</li>
+    <li>Deadbolts on all exterior doors</li>
+    <li>Window locks functional</li>
+    <li>Motion-sensor lighting</li>
+    <li>Exterior visibility (no hiding spots)</li>
+  </ul>
+</div>
+
+<div class="checklist-section">
+  <h4>Weather</h4>
+  <ul class="checklist">
+    <li>Roof in good condition</li>
+    <li>Trees trimmed away from house</li>
+    <li>Gutters clear</li>
+    <li>Storm preparation supplies ready</li>
+    <li>Safe room identified and stocked</li>
+  </ul>
+</div>
+
+<div class="checklist-section">
+  <h4>Utilities</h4>
+  <ul class="checklist">
+    <li>All shutoffs labeled</li>
+    <li>All adults know shutoff procedures</li>
+    <li>Shutoff tools accessible</li>
+    <li>Backup power option available</li>
+    <li>Flashlights in multiple rooms</li>
+  </ul>
+</div>
+
+<div class="checklist-section">
+  <h4>Fire Safety</h4>
+  <ul class="checklist">
+    <li>Smoke detectors on every level</li>
+    <li>CO detectors near bedrooms</li>
+    <li>Fire extinguisher accessible</li>
+    <li>Escape routes planned</li>
+    <li>Flammables properly stored</li>
+  </ul>
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Emergency Action Plan</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-blue); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(59, 130, 246, 0.05));
+      border-left: 4px solid var(--accent-blue);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-blue); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+    th { background: var(--bg-tertiary); font-weight: 600; color: var(--accent-blue); }
+    tr:last-child td { border-bottom: none; }
+    
+    pre {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+      font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    
+    .checklist { list-style: none; margin-left: 0; }
+    .checklist li { position: relative; padding-left: 2rem; margin-bottom: 0.5rem; }
+    .checklist li::before { content: "☐"; position: absolute; left: 0; color: var(--accent-blue); }
+    
+    .meeting-points {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .meeting-point {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      border-left: 4px solid var(--accent-green);
+    }
+    
+    .meeting-point h4 { color: var(--accent-green); margin-top: 0; }
+    
+    .scenario-box {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .scenario-box h4 { color: var(--accent-amber); margin-top: 0; }
+    
+    .template-box {
+      background: var(--bg-secondary);
+      border: 2px dashed var(--border-color);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .quick-card {
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-blue);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .quick-card h3 { color: var(--accent-blue); margin-top: 0; }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Family Emergency Action Plan (All Hazards)</h1>
+
+<blockquote>
+  <strong>Foundation Document</strong> - Your family emergency plan is the single most important preparedness document you'll create. This guide walks you through building a comprehensive plan that works for any emergency.
+</blockquote>
+
+<h2>Why You Need a Written Plan</h2>
+
+<p>During emergencies, stress impairs decision-making. A written plan:</p>
+<ul>
+  <li>Eliminates guesswork when seconds count</li>
+  <li>Ensures all family members know their roles</li>
+  <li>Provides clarity when communication is limited</li>
+  <li>Reduces panic through predetermined actions</li>
+</ul>
+
+<hr>
+
+<h2>Step 1: Identify Your Risks</h2>
+
+<p>Before planning responses, understand what you're preparing for.</p>
+
+<h3>Common Emergency Categories</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Examples</th>
+      <th>Likelihood</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Weather</strong></td><td>Hurricanes, tornadoes, floods, ice storms</td><td>Varies by region</td></tr>
+    <tr><td><strong>Geological</strong></td><td>Earthquakes, landslides, volcanic activity</td><td>Varies by region</td></tr>
+    <tr><td><strong>Infrastructure</strong></td><td>Power outages, water contamination, gas leaks</td><td>Universal</td></tr>
+    <tr><td><strong>Civil</strong></td><td>Civil unrest, terrorism, active threats</td><td>Varies</td></tr>
+    <tr><td><strong>Health</strong></td><td>Pandemics, chemical spills, radiation</td><td>Varies</td></tr>
+    <tr><td><strong>Personal</strong></td><td>House fire, home invasion, medical emergency</td><td>Universal</td></tr>
+  </tbody>
+</table>
+
+<h3>Assess Your Specific Risks</h3>
+<ol>
+  <li><strong>Research local history</strong> - What disasters have occurred in your area?</li>
+  <li><strong>Check FEMA maps</strong> - Are you in a flood zone, earthquake zone, etc.?</li>
+  <li><strong>Consider proximity</strong> - Near industrial facilities? Major highways? Fault lines?</li>
+  <li><strong>Evaluate infrastructure</strong> - How reliable are local utilities?</li>
+</ol>
+
+<hr>
+
+<h2>Step 2: Establish Communication Protocols</h2>
+
+<h3>Primary Contact System</h3>
+
+<p>Designate an <strong>out-of-area contact</strong> (OAC) - someone 100+ miles away who can relay messages.</p>
+
+<pre>Family Communication Chain:
+1. Try to reach family directly (call, text)
+2. If unsuccessful, contact OAC
+3. Leave status update with OAC
+4. Check in with OAC at predetermined times</pre>
+
+<h3>Contact Information Card</h3>
+
+<table>
+  <thead>
+    <tr><th>Information</th><th>Details</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Out-of-Area Contact</td><td>Name, phone, address</td></tr>
+    <tr><td>Local Emergency Contact</td><td>Name, phone</td></tr>
+    <tr><td>Meeting Point A</td><td>Primary location + address</td></tr>
+    <tr><td>Meeting Point B</td><td>Secondary location + address</td></tr>
+    <tr><td>Family Password</td><td>Verification code</td></tr>
+  </tbody>
+</table>
+
+<h3>Communication Methods Priority</h3>
+<ol>
+  <li><strong>Text messages</strong> - Often work when calls don't</li>
+  <li><strong>Phone calls</strong> - Direct communication</li>
+  <li><strong>Social media check-in</strong> - Facebook Safety Check, etc.</li>
+  <li><strong>Ham radio</strong> - If licensed and equipped</li>
+  <li><strong>Physical meeting point</strong> - Last resort</li>
+</ol>
+
+<hr>
+
+<h2>Step 3: Define Meeting Points</h2>
+
+<div class="meeting-points">
+  <div class="meeting-point">
+    <h4>Meeting Point A: Near Home</h4>
+    <ul>
+      <li>Walking distance from home</li>
+      <li>Easily identifiable (park, school, church)</li>
+      <li>Known to all family members</li>
+      <li>Use for: House fires, gas leaks, immediate evacuations</li>
+    </ul>
+  </div>
+  <div class="meeting-point">
+    <h4>Meeting Point B: Outside Neighborhood</h4>
+    <ul>
+      <li>1-5 miles from home</li>
+      <li>Accessible by multiple routes</li>
+      <li>Has basic facilities (shelter, water)</li>
+      <li>Use for: Neighborhood-wide evacuations</li>
+    </ul>
+  </div>
+  <div class="meeting-point">
+    <h4>Meeting Point C: Out of Area</h4>
+    <ul>
+      <li>50+ miles away</li>
+      <li>Friend/family home or predetermined location</li>
+      <li>Use for: Regional disasters requiring evacuation</li>
+    </ul>
+  </div>
+</div>
+
+<hr>
+
+<h2>Step 4: Assign Family Roles</h2>
+
+<h3>Sample Role Assignments</h3>
+
+<table>
+  <thead>
+    <tr><th>Role</th><th>Responsibilities</th><th>Primary</th><th>Backup</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Communications Lead</strong></td><td>Contact OAC, coordinate family location</td><td>Adult 1</td><td>Adult 2</td></tr>
+    <tr><td><strong>Supply Manager</strong></td><td>Grab go-bags, emergency supplies</td><td>Adult 2</td><td>Teen</td></tr>
+    <tr><td><strong>Child Coordinator</strong></td><td>Account for and manage children</td><td>Adult 1</td><td>Adult 2</td></tr>
+    <tr><td><strong>Pet Manager</strong></td><td>Secure pets, pet supplies</td><td>Teen</td><td>Adult 2</td></tr>
+    <tr><td><strong>Utilities</strong></td><td>Shut off gas, water, electricity</td><td>Adult 1</td><td>Adult 2</td></tr>
+    <tr><td><strong>Documentation</strong></td><td>Grab important documents kit</td><td>Adult 2</td><td>Teen</td></tr>
+  </tbody>
+</table>
+
+<h3>Children's Roles (Age Appropriate)</h3>
+<ul>
+  <li><strong>Ages 3-5:</strong> Stay with designated adult, know full name and address</li>
+  <li><strong>Ages 6-10:</strong> Know emergency contacts, can grab personal go-bag</li>
+  <li><strong>Ages 11+:</strong> Can assist younger siblings, help with specific tasks</li>
+</ul>
+
+<hr>
+
+<h2>Step 5: Create Scenario Plans</h2>
+
+<div class="scenario-box">
+  <h4>🔥 Scenario: Fire</h4>
+<pre>IMMEDIATE ACTIONS:
+1. Alert family - yell "FIRE" loudly
+2. Everyone exits using nearest safe route
+3. Meet at Meeting Point A
+4. Call 911 from safe location
+5. Do NOT re-enter for any reason
+
+IMPORTANT:
+- Feel doors before opening
+- Stay low if smoke present
+- Use window exits if doors blocked</pre>
+</div>
+
+<div class="scenario-box">
+  <h4>🏠 Scenario: Shelter-in-Place</h4>
+<pre>IMMEDIATE ACTIONS:
+1. Get all family members indoors
+2. Lock all doors and windows
+3. If chemical threat: seal room, turn off HVAC
+4. Monitor emergency radio
+5. Do NOT leave until all-clear given</pre>
+</div>
+
+<div class="scenario-box">
+  <h4>🚗 Scenario: Evacuation Order</h4>
+<pre>IMMEDIATE ACTIONS:
+1. Grab go-bags (assigned family member)
+2. Grab documents kit (assigned family member)
+3. Secure pets (assigned family member)
+4. Shut off utilities if time permits
+5. Follow predetermined evacuation route
+6. Contact OAC with status and destination
+7. Meet at appropriate meeting point</pre>
+</div>
+
+<div class="scenario-box">
+  <h4>👥 Scenario: Family Separated</h4>
+<pre>IF SEPARATED:
+1. Go to nearest safe location
+2. Contact OAC with your location and status
+3. Check in with OAC every 2 hours
+4. Proceed to Meeting Point B if local
+5. Proceed to Meeting Point C if evacuation needed
+6. Do NOT search for family members in dangerous areas</pre>
+</div>
+
+<hr>
+
+<h2>Step 6: Document Everything</h2>
+
+<h3>Emergency Plan Binder Contents</h3>
+<ol>
+  <li><strong>Contact list</strong> (laminated)</li>
+  <li><strong>Meeting point addresses</strong> with maps</li>
+  <li><strong>Evacuation routes</strong> (multiple options)</li>
+  <li><strong>Utility shutoff instructions</strong> with diagrams</li>
+  <li><strong>Medical information</strong> for each family member</li>
+  <li><strong>Insurance documents</strong> (copies)</li>
+  <li><strong>Pet information</strong> (vet contacts, medications)</li>
+  <li><strong>Scenario action plans</strong></li>
+</ol>
+
+<h3>Digital Backup</h3>
+<ul>
+  <li>Store encrypted copies in cloud storage</li>
+  <li>Email copies to OAC</li>
+  <li>Save to USB drive in go-bag</li>
+  <li>Take photos of critical documents</li>
+</ul>
+
+<hr>
+
+<h2>Step 7: Practice Your Plan</h2>
+
+<h3>Drill Schedule</h3>
+
+<table>
+  <thead>
+    <tr><th>Drill Type</th><th>Frequency</th><th>Duration</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Family meeting/review</td><td>Monthly</td><td>15 minutes</td></tr>
+    <tr><td>Fire evacuation</td><td>Every 6 months</td><td>5 minutes</td></tr>
+    <tr><td>Communication test</td><td>Every 3 months</td><td>10 minutes</td></tr>
+    <tr><td>Full go-bag drill</td><td>Annually</td><td>30 minutes</td></tr>
+    <tr><td>Meeting point visit</td><td>Annually</td><td>Varies</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<div class="quick-card">
+  <h3>Quick Reference Card</h3>
+  <p>Print this for each family member's wallet:</p>
+<pre>EMERGENCY QUICK CARD
+
+Out-of-Area Contact: ________________
+Phone: ________________
+
+Meeting Point A: ________________
+Meeting Point B: ________________
+
+Family Password: ________________
+
+If separated: Call OAC, check in every 2 hrs
+If no contact possible: Go to Meeting Point B
+
+ICE (In Case of Emergency) Contact: ________________</pre>
+</div>
+
+<hr>
+
+<h2>Next Steps</h2>
+
+<ul class="checklist">
+  <li>Complete risk assessment for your area</li>
+  <li>Identify and contact Out-of-Area Contact</li>
+  <li>Choose meeting points (visit each one)</li>
+  <li>Assign family roles</li>
+  <li>Create emergency contact cards</li>
+  <li>Write scenario plans</li>
+  <li>Schedule first family drill</li>
+  <li>Review and update quarterly</li>
+</ul>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+</div>
+
+</body>
+</html>

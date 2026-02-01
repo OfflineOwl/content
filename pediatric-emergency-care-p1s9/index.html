@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pediatric Emergency Care</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-pink: #ec4899;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-pink); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(236, 72, 153, 0.15), rgba(236, 72, 153, 0.05));
+      border-left: 4px solid var(--accent-pink);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-pink); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    em { color: var(--text-secondary); }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+      font-size: 0.95rem;
+    }
+    
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+    th { background: var(--bg-tertiary); font-weight: 600; color: var(--accent-blue); }
+    tr:last-child td { border-bottom: none; }
+    
+    .warning-box {
+      background: rgba(239, 68, 68, 0.15);
+      border: 2px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+    }
+    
+    .warning-box h4 { color: var(--accent-red); margin-top: 0; }
+    
+    .info-box {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .info-box h4 { color: var(--accent-blue); margin-top: 0; }
+    
+    .assessment-box {
+      background: var(--bg-secondary);
+      border-left: 4px solid var(--accent-pink);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .assessment-box h4 { color: var(--accent-pink); margin-top: 0; }
+    
+    .dehydration-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .dehydration-level {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+    }
+    
+    .dehydration-level.mild { border-top: 3px solid var(--accent-amber); }
+    .dehydration-level.mild h4 { color: var(--accent-amber); }
+    .dehydration-level.moderate { border-top: 3px solid #f97316; }
+    .dehydration-level.moderate h4 { color: #f97316; }
+    .dehydration-level.severe { border-top: 3px solid var(--accent-red); }
+    .dehydration-level.severe h4 { color: var(--accent-red); }
+    
+    .checklist { list-style: none; margin-left: 0; }
+    .checklist li { position: relative; padding-left: 2rem; margin-bottom: 0.5rem; }
+    .checklist li::before { content: "☐"; position: absolute; left: 0; color: var(--accent-blue); }
+    
+    .disclaimer {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 2rem 0;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    
+    @media (max-width: 768px) {
+      .dehydration-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Pediatric Emergency Care</h1>
+
+<blockquote>
+  <strong>Children Are Not Small Adults</strong> - Children have unique physiological needs and respond differently to illness and injury. This guide covers essential pediatric emergency care for when professional help is unavailable.
+</blockquote>
+
+<h2>Key Differences in Children</h2>
+
+<h3>Why Children Are Different</h3>
+
+<table>
+  <thead>
+    <tr><th>Factor</th><th>Children</th><th>Adults</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Airway</td><td>Smaller, more easily blocked</td><td>Larger, more stable</td></tr>
+    <tr><td>Breathing</td><td>Higher rate normal</td><td>Lower rate</td></tr>
+    <tr><td>Heart rate</td><td>Higher normal rate</td><td>Lower rate</td></tr>
+    <tr><td>Body surface area</td><td>Larger relative to weight</td><td>Smaller relative to weight</td></tr>
+    <tr><td>Dehydration</td><td>Happens faster</td><td>More reserve</td></tr>
+    <tr><td>Heat loss</td><td>Faster</td><td>Slower</td></tr>
+    <tr><td>Communication</td><td>Limited</td><td>Can describe symptoms</td></tr>
+  </tbody>
+</table>
+
+<h3>Normal Vital Signs by Age</h3>
+
+<table>
+  <thead>
+    <tr><th>Age</th><th>Heart Rate</th><th>Respiratory Rate</th><th>Blood Pressure</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Infant (0-1)</td><td>100-160</td><td>30-60</td><td>70-90 / 50-65</td></tr>
+    <tr><td>Toddler (1-3)</td><td>90-150</td><td>24-40</td><td>80-100 / 55-70</td></tr>
+    <tr><td>Preschool (3-6)</td><td>80-140</td><td>22-34</td><td>85-110 / 55-75</td></tr>
+    <tr><td>School (6-12)</td><td>70-120</td><td>18-30</td><td>95-115 / 60-80</td></tr>
+    <tr><td>Adolescent (12+)</td><td>60-100</td><td>12-20</td><td>100-130 / 65-85</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>Assessment of a Sick or Injured Child</h2>
+
+<div class="assessment-box">
+  <h4>Pediatric Assessment Triangle (PAT)</h4>
+  <p>Observe from a distance before touching:</p>
+  
+  <p><strong>1. Appearance</strong></p>
+  <ul>
+    <li>Alert, interacting? Or listless, unresponsive?</li>
+    <li>Recognizing parents?</li>
+    <li>Crying normally or weak/abnormal cry?</li>
+    <li>Moving normally?</li>
+  </ul>
+  
+  <p><strong>2. Work of Breathing</strong></p>
+  <ul>
+    <li>Breathing fast or slow?</li>
+    <li>Using extra muscles (ribs showing, belly moving)?</li>
+    <li>Making unusual sounds (grunting, wheezing)?</li>
+    <li>Nose flaring?</li>
+  </ul>
+  
+  <p><strong>3. Circulation</strong></p>
+  <ul>
+    <li>Skin color (pink, pale, blue, mottled)?</li>
+    <li>Capillary refill (press finger, color return < 2 seconds?)</li>
+  </ul>
+  
+  <p><strong>If any component looks bad → child is seriously ill</strong></p>
+</div>
+
+<h3>Approaching an Ill Child</h3>
+<ul>
+  <li>Get down to their level</li>
+  <li>Speak calmly and quietly</li>
+  <li>Let them stay with parent/caregiver</li>
+  <li>Examine least threatening areas first</li>
+  <li>Explain what you're doing</li>
+  <li>Allow them to hold comfort items</li>
+</ul>
+
+<hr>
+
+<h2>Fever in Children</h2>
+
+<h3>When Fever is Concerning</h3>
+
+<table>
+  <thead>
+    <tr><th>Age</th><th>Temperature</th><th>Action</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Under 3 months</td><td>100.4°F (38°C)</td><td>Seek medical care</td></tr>
+    <tr><td>3-6 months</td><td>102°F (38.9°C)+</td><td>Seek medical care</td></tr>
+    <tr><td>6+ months</td><td>104°F (40°C)+</td><td>Seek medical care</td></tr>
+    <tr><td>Any age</td><td>Fever + lethargy, rash, stiff neck</td><td>Emergency</td></tr>
+  </tbody>
+</table>
+
+<h3>Managing Fever</h3>
+
+<div class="info-box">
+  <h4>Treatment:</h4>
+  <ul>
+    <li>Acetaminophen (Tylenol) - follow dosing chart</li>
+    <li>Ibuprofen (Motrin) - 6 months and older</li>
+    <li>Light clothing</li>
+    <li>Fluids, fluids, fluids</li>
+    <li>Lukewarm bath (not cold)</li>
+  </ul>
+</div>
+
+<div class="warning-box">
+  <h4>Do NOT:</h4>
+  <ul>
+    <li>Give aspirin to children (Reye's syndrome risk)</li>
+    <li>Bundle up fevering child</li>
+    <li>Use cold water or alcohol baths</li>
+    <li>Alternate medications without medical guidance</li>
+  </ul>
+</div>
+
+<h3>Dosing Guidance (Acetaminophen)</h3>
+
+<table>
+  <thead>
+    <tr><th>Weight</th><th>Age</th><th>Dose</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>6-11 lbs</td><td>0-3 mo</td><td>40 mg</td></tr>
+    <tr><td>12-17 lbs</td><td>4-11 mo</td><td>80 mg</td></tr>
+    <tr><td>18-23 lbs</td><td>12-23 mo</td><td>120 mg</td></tr>
+    <tr><td>24-35 lbs</td><td>2-3 yr</td><td>160 mg</td></tr>
+    <tr><td>36-47 lbs</td><td>4-5 yr</td><td>240 mg</td></tr>
+    <tr><td>48-59 lbs</td><td>6-8 yr</td><td>320 mg</td></tr>
+    <tr><td>60-71 lbs</td><td>9-10 yr</td><td>400 mg</td></tr>
+    <tr><td>72-95 lbs</td><td>11 yr</td><td>480 mg</td></tr>
+  </tbody>
+</table>
+
+<p><em>Every 4-6 hours, max 5 doses in 24 hours</em></p>
+
+<hr>
+
+<h2>Dehydration</h2>
+
+<h3>Signs of Dehydration in Children</h3>
+
+<div class="dehydration-grid">
+  <div class="dehydration-level mild">
+    <h4>Mild</h4>
+    <ul>
+      <li>Slightly dry mouth</li>
+      <li>Slightly decreased urine</li>
+      <li>Normal activity</li>
+      <li>Normal eyes</li>
+      <li>Normal skin</li>
+      <li>Tears present</li>
+    </ul>
+  </div>
+  <div class="dehydration-level moderate">
+    <h4>Moderate</h4>
+    <ul>
+      <li>Very dry mouth</li>
+      <li>Significantly decreased urine</li>
+      <li>Irritable or tired</li>
+      <li>Slightly sunken eyes</li>
+      <li>Skin slow to return when pinched</li>
+      <li>Few or no tears</li>
+    </ul>
+  </div>
+  <div class="dehydration-level severe">
+    <h4>Severe</h4>
+    <ul>
+      <li>Extremely dry mouth</li>
+      <li>No urine 6-8 hours</li>
+      <li>Lethargic, difficult to wake</li>
+      <li>Very sunken eyes</li>
+      <li>Skin stays tented</li>
+      <li>No tears</li>
+    </ul>
+  </div>
+</div>
+
+<h3>Treating Dehydration</h3>
+
+<div class="info-box">
+  <h4>Oral Rehydration</h4>
+  <p><strong>Best options:</strong></p>
+  <ul>
+    <li>Pedialyte or similar oral rehydration solution</li>
+    <li>Homemade solution: 1 liter water + 6 tsp sugar + 1/2 tsp salt</li>
+    <li>Diluted juice (half water, half juice)</li>
+    <li>Broth</li>
+  </ul>
+  
+  <p><strong>Rehydration schedule:</strong></p>
+  <ul>
+    <li>Small, frequent sips (1-2 tbsp every 5 minutes)</li>
+    <li>Don't give large amounts at once (causes vomiting)</li>
+    <li>Gradually increase as tolerated</li>
+    <li>Popsicles work well for toddlers</li>
+  </ul>
+</div>
+
+<p><strong>Seek medical care if:</strong></p>
+<ul>
+  <li>Cannot keep any fluids down</li>
+  <li>Signs of moderate-severe dehydration</li>
+  <li>Bloody diarrhea</li>
+  <li>High fever with dehydration</li>
+  <li>Decreasing responsiveness</li>
+</ul>
+
+<hr>
+
+<h2>Respiratory Emergencies</h2>
+
+<h3>Choking (Infant Under 1 Year)</h3>
+
+<div class="info-box">
+  <h4>Conscious infant:</h4>
+  <ol>
+    <li>Hold infant face down on forearm, head lower than body</li>
+    <li>Support head and jaw with hand</li>
+    <li>Give 5 back blows between shoulder blades</li>
+    <li>Turn infant face up, support head</li>
+    <li>Give 5 chest thrusts (two fingers on breastbone)</li>
+    <li>Repeat until object expelled or infant loses consciousness</li>
+  </ol>
+  
+  <h4>Unconscious infant:</h4>
+  <ol>
+    <li>Place on firm surface</li>
+    <li>Open mouth, look for visible object (remove only if clearly visible)</li>
+    <li>Begin infant CPR</li>
+    <li>Check mouth before each breath</li>
+  </ol>
+</div>
+
+<h3>Choking (Child 1+ Years)</h3>
+
+<div class="info-box">
+  <h4>Conscious child:</h4>
+  <ul>
+    <li>Stand or kneel behind child</li>
+    <li>Wrap arms around waist</li>
+    <li>Make fist, place above navel</li>
+    <li>Grasp with other hand</li>
+    <li>Quick upward thrusts</li>
+    <li>Repeat until object expelled</li>
+  </ul>
+  
+  <h4>Unconscious child:</h4>
+  <ul>
+    <li>Begin CPR</li>
+    <li>Check mouth for object before breaths</li>
+  </ul>
+</div>
+
+<h3>Croup</h3>
+
+<p><strong>Symptoms:</strong></p>
+<ul>
+  <li>Barking cough (like a seal)</li>
+  <li>Hoarse voice</li>
+  <li>Stridor (high-pitched breathing sound)</li>
+  <li>Usually worse at night</li>
+  <li>Often follows cold symptoms</li>
+</ul>
+
+<p><strong>Home treatment:</strong></p>
+<ol>
+  <li>Stay calm (anxiety worsens symptoms)</li>
+  <li>Cool mist humidifier</li>
+  <li>Steam from hot shower</li>
+  <li>Cool night air (bundle up and go outside)</li>
+  <li>Fluids</li>
+  <li>Keep head elevated</li>
+</ol>
+
+<div class="warning-box">
+  <h4>Seek emergency care if:</h4>
+  <ul>
+    <li>Blue lips or fingernails</li>
+    <li>Severe difficulty breathing</li>
+    <li>Drooling or can't swallow</li>
+    <li>Very high fever</li>
+    <li>Child unresponsive</li>
+    <li>Stridor at rest that doesn't improve</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Pediatric CPR</h2>
+
+<h3>Infant CPR (Under 1 Year)</h3>
+
+<div class="info-box">
+  <h4>Compressions:</h4>
+  <ul>
+    <li>Two fingers on breastbone, just below nipple line</li>
+    <li>Or two thumbs (two-rescuer technique)</li>
+    <li>Depth: 1.5 inches (1/3 chest depth)</li>
+    <li>Rate: 100-120 per minute</li>
+  </ul>
+  
+  <h4>Breaths:</h4>
+  <ul>
+    <li>Cover mouth AND nose</li>
+    <li>Small puffs (cheek breath, not lung breath)</li>
+    <li>Just enough to see chest rise</li>
+  </ul>
+  
+  <p><strong>Ratio:</strong> 30:2 (one rescuer) or 15:2 (two rescuers)</p>
+</div>
+
+<h3>Child CPR (1-12 Years)</h3>
+
+<div class="info-box">
+  <h4>Compressions:</h4>
+  <ul>
+    <li>One or two hands on lower half of breastbone</li>
+    <li>Depth: 2 inches (1/3 chest depth)</li>
+    <li>Rate: 100-120 per minute</li>
+  </ul>
+  
+  <h4>Breaths:</h4>
+  <ul>
+    <li>Pinch nose, seal mouth</li>
+    <li>Give over 1 second</li>
+    <li>Watch for chest rise</li>
+  </ul>
+  
+  <p><strong>Ratio:</strong> 30:2 (one rescuer) or 15:2 (two rescuers)</p>
+</div>
+
+<hr>
+
+<h2>Common Pediatric Injuries</h2>
+
+<h3>Head Injuries</h3>
+
+<div class="warning-box">
+  <h4>When to worry:</h4>
+  <ul>
+    <li>Loss of consciousness (any duration)</li>
+    <li>Vomiting more than twice</li>
+    <li>Increasingly confused</li>
+    <li>Severe headache</li>
+    <li>Clear fluid from nose/ears</li>
+    <li>Seizure</li>
+    <li>Unequal pupils</li>
+    <li>Increasing sleepiness</li>
+    <li>Weakness on one side</li>
+  </ul>
+</div>
+
+<p><strong>After minor head bump:</strong></p>
+<ul>
+  <li>Ice pack for swelling (15 minutes)</li>
+  <li>Monitor closely for 24 hours</li>
+  <li>Wake every 2-3 hours at night to check alertness</li>
+  <li>No sports or rough play for 24-48 hours</li>
+</ul>
+
+<h3>Poisoning</h3>
+
+<div class="info-box">
+  <h4>If you suspect poisoning:</h4>
+  <ol>
+    <li>Remove child from source</li>
+    <li>Call Poison Control: <strong>1-800-222-1222</strong></li>
+    <li>Have container/label ready for information</li>
+    <li>Do NOT induce vomiting unless told to</li>
+    <li>Do NOT give milk or water unless instructed</li>
+  </ol>
+  
+  <h4>Information needed:</h4>
+  <ul>
+    <li>Child's age and weight</li>
+    <li>What was ingested</li>
+    <li>How much (estimate)</li>
+    <li>When it happened</li>
+    <li>Current symptoms</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>When to Seek Emergency Care</h2>
+
+<div class="warning-box">
+  <h4>Always seek emergency care for:</h4>
+  <ul>
+    <li>Difficulty breathing</li>
+    <li>Blue lips or fingernails</li>
+    <li>Unresponsive or hard to wake</li>
+    <li>Seizure (first time, or lasting >5 minutes)</li>
+    <li>Severe allergic reaction</li>
+    <li>Severe dehydration</li>
+    <li>Fever in infant under 3 months</li>
+    <li>Signs of meningitis (fever, stiff neck, sensitivity to light)</li>
+    <li>Significant head injury</li>
+    <li>Severe bleeding</li>
+    <li>Suspected fracture</li>
+    <li>Ingestion of poison or unknown substance</li>
+    <li>Burn on face, hands, feet, genitals, or large area</li>
+  </ul>
+  
+  <p><strong>Trust your instincts:</strong> If something seems seriously wrong, seek help. Parents often know when their child is sicker than usual.</p>
+</div>
+
+<hr>
+
+<h2>Pediatric First Aid Kit Additions</h2>
+
+<p>Add these to your standard first aid kit:</p>
+
+<ul class="checklist">
+  <li>Infant/child dosing guide for medications</li>
+  <li>Calibrated syringe for medication dosing</li>
+  <li>Children's acetaminophen</li>
+  <li>Children's ibuprofen</li>
+  <li>Oral rehydration solution (Pedialyte packets)</li>
+  <li>Thermometer (reliable)</li>
+  <li>Bulb syringe (for nasal congestion)</li>
+  <li>Child-sized CPR mask</li>
+  <li>Ice packs (kid-friendly designs)</li>
+  <li>Comfort items</li>
+  <li>Poison Control number: 1-800-222-1222</li>
+</ul>
+
+<div class="disclaimer">
+  <strong>Disclaimer:</strong> This guide is for educational purposes. Seek professional medical care when available. This information is not a substitute for pediatric medical training.
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+</div>
+
+</body>
+</html>

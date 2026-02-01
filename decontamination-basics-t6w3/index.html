@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decontamination Basics</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-yellow: #eab308;
+      --accent-purple: #a855f7;
+      --accent-cyan: #06b6d4;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-red); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    
+    .critical-alert {
+      background: rgba(239, 68, 68, 0.2);
+      border: 2px solid var(--accent-red);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .critical-alert-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--accent-red);
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    /* Contamination Type Selector */
+    .contam-selector {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .contam-buttons {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    
+    .contam-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem;
+      background: var(--bg-tertiary);
+      border: 2px solid transparent;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+      color: var(--text-primary);
+    }
+    
+    .contam-btn:hover { background: #3f3f46; }
+    .contam-btn.active.chemical { background: #a16207; border-color: var(--accent-yellow); }
+    .contam-btn.active.biological { background: #166534; border-color: var(--accent-green); }
+    .contam-btn.active.radiological { background: #7e22ce; border-color: var(--accent-purple); }
+    .contam-btn .icon { font-size: 2rem; }
+    .contam-btn .label { font-weight: 600; }
+    
+    .contam-result {
+      display: none;
+      margin-top: 1rem;
+    }
+    
+    .contam-result.show { display: block; }
+    
+    .contam-steps {
+      background: var(--bg-primary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .contam-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin: 0.75rem 0;
+    }
+    
+    .contam-step-num {
+      width: 1.5rem;
+      height: 1.5rem;
+      background: var(--accent-blue);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+    
+    /* Decon Step Tracker */
+    .decon-tracker {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .decon-tracker h4 {
+      color: var(--accent-green);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+    
+    .progress-bar {
+      height: 12px;
+      background: var(--bg-tertiary);
+      border-radius: 999px;
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+    }
+    
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent-green), #34d399);
+      border-radius: 999px;
+      transition: width 0.5s;
+    }
+    
+    .decon-step-card {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 0.75rem 0;
+      transition: all 0.3s;
+    }
+    
+    .decon-step-card.complete {
+      background: rgba(34, 197, 94, 0.1);
+      border-color: var(--accent-green);
+    }
+    
+    .decon-step-card.active {
+      background: rgba(59, 130, 246, 0.1);
+      border-color: var(--accent-blue);
+    }
+    
+    .step-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .step-check {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s;
+      background: var(--bg-tertiary);
+      border: none;
+      color: var(--text-primary);
+      font-size: 1.25rem;
+    }
+    
+    .step-check.complete { background: var(--accent-green); }
+    .step-check.active { background: var(--accent-blue); animation: pulse 2s infinite; }
+    
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    
+    .step-info h5 { font-size: 1rem; margin-bottom: 0.25rem; }
+    .step-info .desc { color: var(--text-muted); font-size: 0.9rem; }
+    .step-result { color: var(--accent-green); font-size: 0.85rem; margin-top: 0.5rem; display: none; }
+    .decon-step-card.complete .step-result { display: block; }
+    
+    /* Eye Flush Timer */
+    .eye-timer {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+    
+    .eye-timer h4 {
+      color: var(--accent-cyan);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .timer-display {
+      font-size: 4rem;
+      font-family: monospace;
+      font-weight: bold;
+      color: var(--accent-cyan);
+      margin: 1rem 0;
+    }
+    
+    .timer-display.complete { color: var(--accent-green); }
+    
+    .timer-progress {
+      height: 16px;
+      background: var(--bg-tertiary);
+      border-radius: 999px;
+      margin: 1rem 0;
+      overflow: hidden;
+    }
+    
+    .timer-progress-fill {
+      height: 100%;
+      background: var(--accent-cyan);
+      border-radius: 999px;
+      transition: width 1s linear;
+    }
+    
+    .timer-progress-fill.complete { background: var(--accent-green); }
+    
+    .timer-buttons {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      margin: 1rem 0;
+    }
+    
+    .timer-btn {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background 0.2s;
+    }
+    
+    .timer-btn.start { background: var(--accent-cyan); color: white; }
+    .timer-btn.start:hover { background: #0891b2; }
+    .timer-btn.pause { background: var(--accent-amber); color: white; }
+    .timer-btn.reset { background: var(--bg-tertiary); color: var(--text-primary); }
+    .timer-btn.reset:hover { background: #3f3f46; }
+    
+    .timer-instructions {
+      text-align: left;
+      margin-top: 1rem;
+      padding: 1rem;
+      background: var(--bg-primary);
+      border-radius: 8px;
+    }
+    
+    .timer-instructions ul { margin: 0.5rem 0 0 1.5rem; }
+    
+    /* Do's and Don'ts */
+    .dos-donts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    
+    .do-box {
+      background: rgba(34, 197, 94, 0.1);
+      border: 1px solid var(--accent-green);
+      border-radius: 8px;
+      padding: 1rem;
+    }
+    
+    .do-box h4 { color: var(--accent-green); margin-top: 0; }
+    
+    .dont-box {
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1rem;
+    }
+    
+    .dont-box h4 { color: var(--accent-red); margin-top: 0; }
+    
+    .list-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin: 0.5rem 0;
+    }
+    
+    .list-item .icon { flex-shrink: 0; }
+    .list-item.do .icon { color: var(--accent-green); }
+    .list-item.dont .icon { color: var(--accent-red); }
+    
+    /* Quick Ref */
+    .quick-ref {
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-amber);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .quick-ref h3 { color: var(--accent-amber); margin-top: 0; }
+    
+    pre {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+      font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    
+    @media (max-width: 600px) {
+      .contam-buttons { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Decontamination Basics</h1>
+
+<div class="critical-alert">
+  <div class="critical-alert-header">
+    <span>⚠️</span>
+    <span>CRITICAL SAFETY</span>
+  </div>
+  <p><strong>If you've been exposed to hazardous materials, proper decontamination reduces harm and prevents spreading contamination to others.</strong> Act quickly but carefully.</p>
+</div>
+
+<hr>
+
+<h2>🎯 Identify Your Contamination Type</h2>
+
+<p>Different contamination types require different approaches:</p>
+
+<div class="contam-selector">
+  <div class="contam-buttons" id="contamButtons">
+    <button class="contam-btn" data-type="chemical">
+      <span class="icon">🧪</span>
+      <span class="label">Chemical</span>
+    </button>
+    <button class="contam-btn" data-type="biological">
+      <span class="icon">☣️</span>
+      <span class="label">Biological</span>
+    </button>
+    <button class="contam-btn" data-type="radiological">
+      <span class="icon">☢️</span>
+      <span class="label">Radiological</span>
+    </button>
+  </div>
+  
+  <div class="contam-result" id="chemicalResult">
+    <p style="color: var(--text-muted);">Industrial spills, household chemicals, unknown substances</p>
+    <div class="contam-steps">
+      <h5 style="margin-bottom: 0.75rem;">Steps for Chemical Decon:</h5>
+      <div class="contam-step"><span class="contam-step-num">1</span><span>Remove ALL contaminated clothing immediately</span></div>
+      <div class="contam-step"><span class="contam-step-num">2</span><span>Rinse with large amounts of water (15+ minutes)</span></div>
+      <div class="contam-step"><span class="contam-step-num">3</span><span>Wash with soap and water thoroughly</span></div>
+      <div class="contam-step"><span class="contam-step-num">4</span><span>Flush eyes if affected (15-20 minutes)</span></div>
+      <div class="contam-step"><span class="contam-step-num">5</span><span>Seek medical attention immediately</span></div>
+    </div>
+    <div style="padding: 0.75rem; background: rgba(234, 179, 8, 0.15); border: 1px solid var(--accent-yellow); border-radius: 6px; margin-top: 1rem;">
+      <strong>⚠️ Warning:</strong> Do NOT use hot water - it can increase absorption through skin
+    </div>
+  </div>
+  
+  <div class="contam-result" id="biologicalResult">
+    <p style="color: var(--text-muted);">Infectious disease, bodily fluids, biological agents</p>
+    <div class="contam-steps">
+      <h5 style="margin-bottom: 0.75rem;">Steps for Biological Decon:</h5>
+      <div class="contam-step"><span class="contam-step-num">1</span><span>Remove contaminated clothing carefully</span></div>
+      <div class="contam-step"><span class="contam-step-num">2</span><span>Shower with soap and warm water</span></div>
+      <div class="contam-step"><span class="contam-step-num">3</span><span>Wash hands for at least 20 seconds</span></div>
+      <div class="contam-step"><span class="contam-step-num">4</span><span>Clean under fingernails</span></div>
+      <div class="contam-step"><span class="contam-step-num">5</span><span>Monitor for symptoms over coming days</span></div>
+    </div>
+    <div style="padding: 0.75rem; background: rgba(34, 197, 94, 0.15); border: 1px solid var(--accent-green); border-radius: 6px; margin-top: 1rem;">
+      <strong>⚠️ Warning:</strong> Avoid touching face during decontamination
+    </div>
+  </div>
+  
+  <div class="contam-result" id="radiologicalResult">
+    <p style="color: var(--text-muted);">Nuclear fallout, radiation exposure, dirty bomb</p>
+    <div class="contam-steps">
+      <h5 style="margin-bottom: 0.75rem;">Steps for Radiological Decon:</h5>
+      <div class="contam-step"><span class="contam-step-num">1</span><span>Remove outer clothing (removes ~90% contamination)</span></div>
+      <div class="contam-step"><span class="contam-step-num">2</span><span>Bag clothing and set aside</span></div>
+      <div class="contam-step"><span class="contam-step-num">3</span><span>Shower with shampoo ONLY (no conditioner)</span></div>
+      <div class="contam-step"><span class="contam-step-num">4</span><span>Blow nose, wipe ears, clean eyelids gently</span></div>
+      <div class="contam-step"><span class="contam-step-num">5</span><span>Put on clean, uncontaminated clothes</span></div>
+    </div>
+    <div style="padding: 0.75rem; background: rgba(147, 51, 234, 0.15); border: 1px solid var(--accent-purple); border-radius: 6px; margin-top: 1rem;">
+      <strong>⚠️ Warning:</strong> NEVER use conditioner - it binds radioactive particles to hair
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<h2>✅ Interactive Decon Checklist</h2>
+
+<p>Track your progress through each step. Click steps to mark complete:</p>
+
+<div class="decon-tracker">
+  <h4>
+    <span>Decontamination Progress</span>
+    <span id="progressCount">0/5 complete</span>
+  </h4>
+  <div class="progress-bar">
+    <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+  </div>
+  
+  <div class="decon-step-card" data-step="1">
+    <div class="step-header">
+      <button class="step-check" onclick="toggleStep(1)">👔</button>
+      <div class="step-info">
+        <h5>Remove Clothing</h5>
+        <div class="desc">Remove outer clothing first, cut off if needed</div>
+        <div class="step-result">✓ Removes ~90% of contamination</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="decon-step-card" data-step="2">
+    <div class="step-header">
+      <button class="step-check" onclick="toggleStep(2)">🛍️</button>
+      <div class="step-info">
+        <h5>Bag & Seal</h5>
+        <div class="desc">Place contaminated items in plastic bag, seal tightly</div>
+        <div class="step-result">✓ Prevents further spread</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="decon-step-card" data-step="3">
+    <div class="step-header">
+      <button class="step-check" onclick="toggleStep(3)">🚿</button>
+      <div class="step-info">
+        <h5>Rinse Body</h5>
+        <div class="desc">Rinse with lukewarm water, head to toe</div>
+        <div class="step-result">✓ Removes loose particles</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="decon-step-card" data-step="4">
+    <div class="step-header">
+      <button class="step-check" onclick="toggleStep(4)">🧴</button>
+      <div class="step-info">
+        <h5>Wash with Soap</h5>
+        <div class="desc">Wash entire body with soap, focus on hair and nails</div>
+        <div class="step-result">✓ Deep cleaning</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="decon-step-card" data-step="5">
+    <div class="step-header">
+      <button class="step-check" onclick="toggleStep(5)">👕</button>
+      <div class="step-info">
+        <h5>Dry & Dress</h5>
+        <div class="desc">Dry with clean towel, put on clean clothes</div>
+        <div class="step-result">✓ Decontamination complete</div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="completionMessage" style="display: none; margin-top: 1rem; padding: 1rem; background: rgba(34, 197, 94, 0.15); border: 1px solid var(--accent-green); border-radius: 8px; text-align: center;">
+    <span style="font-size: 2rem;">✅</span>
+    <p style="color: var(--accent-green); font-weight: bold; margin: 0.5rem 0;">Decontamination Complete!</p>
+    <p style="color: var(--text-muted); margin: 0;">Continue monitoring for symptoms as advised</p>
+  </div>
+</div>
+
+<hr>
+
+<h2>👁️ Eye Contamination</h2>
+
+<p>If eyes are affected, flush for a <strong>minimum of 15 minutes</strong>:</p>
+
+<div class="eye-timer">
+  <h4>👁️ Eye Flush Timer (15 min minimum)</h4>
+  
+  <div class="timer-display" id="timerDisplay">0:00</div>
+  
+  <div class="timer-progress">
+    <div class="timer-progress-fill" id="timerProgress" style="width: 0%"></div>
+  </div>
+  
+  <p id="timerStatus" style="color: var(--text-muted);">15:00 remaining (minimum)</p>
+  
+  <div class="timer-buttons">
+    <button class="timer-btn start" id="timerStartBtn" onclick="toggleTimer()">Start Timer</button>
+    <button class="timer-btn reset" onclick="resetTimer()">Reset</button>
+  </div>
+  
+  <div class="timer-instructions">
+    <p><strong>Instructions:</strong></p>
+    <ul>
+      <li>Flush from inner corner to outer corner</li>
+      <li>Use clean, cool water</li>
+      <li>Hold eyelids open during flushing</li>
+      <li>Do NOT rub eyes</li>
+      <li>Seek medical care after flushing</li>
+    </ul>
+  </div>
+</div>
+
+<hr>
+
+<h2>✓ Do's and Don'ts</h2>
+
+<div class="dos-donts">
+  <div class="do-box">
+    <h4>✅ DO</h4>
+    <div class="list-item do"><span class="icon">✓</span><span>Use lukewarm water</span></div>
+    <div class="list-item do"><span class="icon">✓</span><span>Work from head to toe</span></div>
+    <div class="list-item do"><span class="icon">✓</span><span>Clean under fingernails</span></div>
+    <div class="list-item do"><span class="icon">✓</span><span>Bag contaminated items</span></div>
+    <div class="list-item do"><span class="icon">✓</span><span>Wear PPE when helping others</span></div>
+  </div>
+  
+  <div class="dont-box">
+    <h4>❌ DON'T</h4>
+    <div class="list-item dont"><span class="icon">✗</span><span>Use HOT water (opens pores)</span></div>
+    <div class="list-item dont"><span class="icon">✗</span><span>Scrub vigorously (damages skin)</span></div>
+    <div class="list-item dont"><span class="icon">✗</span><span>Use conditioner (binds particles)</span></div>
+    <div class="list-item dont"><span class="icon">✗</span><span>Contaminate clean areas</span></div>
+    <div class="list-item dont"><span class="icon">✗</span><span>Eat/drink until fully clean</span></div>
+  </div>
+</div>
+
+<hr>
+
+<h2>📋 Quick Reference</h2>
+
+<div class="quick-ref">
+<pre>DECONTAMINATION STEPS
+
+1. REMOVE clothing → Removes ~90% of contamination
+2. RINSE with water → Head to toe, not hot
+3. WASH with soap → Hair with shampoo, no conditioner
+4. DRY and dress → Clean clothes only
+
+EYES: Flush 15-20 minutes, inner to outer corner
+WOUNDS: Cover before washing, avoid contaminating</pre>
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026 | License: CC-BY-SA 4.0</p>
+  <p><strong>When in doubt, decontaminate. It's always better to be safe.</strong></p>
+</div>
+
+<script>
+// Contamination Type Selector
+const contamButtons = document.querySelectorAll('.contam-btn');
+const contamResults = document.querySelectorAll('.contam-result');
+
+contamButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const type = btn.dataset.type;
+    
+    // Update buttons
+    contamButtons.forEach(b => {
+      b.classList.remove('active', 'chemical', 'biological', 'radiological');
+    });
+    btn.classList.add('active', type);
+    
+    // Show result
+    contamResults.forEach(r => r.classList.remove('show'));
+    document.getElementById(type + 'Result').classList.add('show');
+  });
+});
+
+// Decon Step Tracker
+let completedSteps = [];
+
+function toggleStep(stepNum) {
+  const card = document.querySelector(`[data-step="${stepNum}"]`);
+  const check = card.querySelector('.step-check');
+  
+  if (completedSteps.includes(stepNum)) {
+    // Remove from completed
+    completedSteps = completedSteps.filter(s => s !== stepNum);
+    card.classList.remove('complete');
+    check.classList.remove('complete');
+  } else {
+    // Add to completed
+    completedSteps.push(stepNum);
+    card.classList.add('complete');
+    check.classList.add('complete');
+  }
+  
+  updateProgress();
+}
+
+function updateProgress() {
+  const total = 5;
+  const completed = completedSteps.length;
+  const percent = (completed / total) * 100;
+  
+  document.getElementById('progressFill').style.width = percent + '%';
+  document.getElementById('progressCount').textContent = `${completed}/${total} complete`;
+  
+  // Show completion message
+  if (completed === total) {
+    document.getElementById('completionMessage').style.display = 'block';
+  } else {
+    document.getElementById('completionMessage').style.display = 'none';
+  }
+}
+
+// Eye Flush Timer
+let timerInterval = null;
+let elapsedSeconds = 0;
+const targetSeconds = 900; // 15 minutes
+
+function toggleTimer() {
+  const btn = document.getElementById('timerStartBtn');
+  
+  if (timerInterval) {
+    // Pause
+    clearInterval(timerInterval);
+    timerInterval = null;
+    btn.textContent = 'Resume';
+    btn.classList.remove('pause');
+    btn.classList.add('start');
+  } else {
+    // Start
+    timerInterval = setInterval(() => {
+      elapsedSeconds++;
+      updateTimerDisplay();
+    }, 1000);
+    btn.textContent = 'Pause';
+    btn.classList.remove('start');
+    btn.classList.add('pause');
+  }
+}
+
+function resetTimer() {
+  if (timerInterval) {
+    clearInterval(timerInterval);
+    timerInterval = null;
+  }
+  elapsedSeconds = 0;
+  updateTimerDisplay();
+  
+  const btn = document.getElementById('timerStartBtn');
+  btn.textContent = 'Start Timer';
+  btn.classList.remove('pause');
+  btn.classList.add('start');
+}
+
+function updateTimerDisplay() {
+  const mins = Math.floor(elapsedSeconds / 60);
+  const secs = elapsedSeconds % 60;
+  const display = `${mins}:${secs.toString().padStart(2, '0')}`;
+  
+  const timerEl = document.getElementById('timerDisplay');
+  const progressEl = document.getElementById('timerProgress');
+  const statusEl = document.getElementById('timerStatus');
+  
+  timerEl.textContent = display;
+  
+  const percent = Math.min((elapsedSeconds / targetSeconds) * 100, 100);
+  progressEl.style.width = percent + '%';
+  
+  if (elapsedSeconds >= targetSeconds) {
+    timerEl.classList.add('complete');
+    progressEl.classList.add('complete');
+    statusEl.textContent = '✓ Minimum flush time reached';
+    statusEl.style.color = 'var(--accent-green)';
+  } else {
+    timerEl.classList.remove('complete');
+    progressEl.classList.remove('complete');
+    const remaining = targetSeconds - elapsedSeconds;
+    const remMins = Math.floor(remaining / 60);
+    const remSecs = remaining % 60;
+    statusEl.textContent = `${remMins}:${remSecs.toString().padStart(2, '0')} remaining (minimum)`;
+    statusEl.style.color = 'var(--text-muted)';
+  }
+}
+</script>
+
+</body>
+</html>

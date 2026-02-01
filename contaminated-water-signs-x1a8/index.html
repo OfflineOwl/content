@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signs of Contaminated Water</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --accent-cyan: #06b6d4;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-cyan); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(6, 182, 212, 0.05));
+      border-left: 4px solid var(--accent-cyan);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-cyan); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    strong { color: var(--accent-amber); }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+    th { background: var(--bg-tertiary); font-weight: 600; color: var(--accent-blue); }
+    tr:last-child td { border-bottom: none; }
+    
+    .warning-box {
+      background: rgba(239, 68, 68, 0.15);
+      border: 2px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+    }
+    
+    .warning-box h4 { color: var(--accent-red); margin-top: 0; }
+    
+    .caution-box {
+      background: rgba(245, 158, 11, 0.15);
+      border: 2px solid var(--accent-amber);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+    }
+    
+    .caution-box h4 { color: var(--accent-amber); margin-top: 0; }
+    
+    .safe-box {
+      background: rgba(34, 197, 94, 0.15);
+      border: 2px solid var(--accent-green);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .safe-box h4 { color: var(--accent-green); margin-top: 0; }
+    
+    .info-box {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .info-box h4 { color: var(--accent-blue); margin-top: 0; }
+    
+    .checklist { list-style: none; margin-left: 0; }
+    .checklist li { position: relative; padding-left: 2rem; margin-bottom: 0.5rem; }
+    .checklist li::before { content: "☐"; position: absolute; left: 0; color: var(--accent-blue); }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Signs of Contaminated Water</h1>
+
+<blockquote>
+  <strong>Know What to Look For</strong> - Contaminated water can cause serious illness or death. While some contaminants are invisible, many warning signs can help you avoid dangerous water sources.
+</blockquote>
+
+<h2>Understanding Contamination Types</h2>
+
+<h3>Biological Contamination</h3>
+
+<table>
+  <thead>
+    <tr><th>Organism</th><th>Source</th><th>Diseases</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Bacteria</strong></td><td>Fecal matter, sewage</td><td>E. coli, Cholera, Typhoid</td></tr>
+    <tr><td><strong>Viruses</strong></td><td>Fecal matter, sewage</td><td>Hepatitis A, Norovirus</td></tr>
+    <tr><td><strong>Protozoa</strong></td><td>Animal/human waste</td><td>Giardia, Cryptosporidium</td></tr>
+    <tr><td><strong>Parasites</strong></td><td>Contaminated sources</td><td>Various worm infections</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Biological contamination is usually invisible.</strong></p>
+
+<h3>Chemical Contamination</h3>
+
+<table>
+  <thead>
+    <tr><th>Source</th><th>Chemicals</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Industrial</td><td>Heavy metals, solvents</td></tr>
+    <tr><td>Agricultural</td><td>Pesticides, fertilizers, nitrates</td></tr>
+    <tr><td>Natural</td><td>Arsenic, fluoride, radon</td></tr>
+    <tr><td>Infrastructure</td><td>Lead, copper from pipes</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>Visual Warning Signs</h2>
+
+<h3>Water Appearance</h3>
+
+<table>
+  <thead>
+    <tr><th>Observation</th><th>Possible Cause</th><th>Concern Level</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Cloudy/turbid</strong></td><td>Sediment, bacteria</td><td>Medium-High</td></tr>
+    <tr><td><strong>Green tint</strong></td><td>Algae growth</td><td>Medium</td></tr>
+    <tr><td><strong>Brown/rust color</strong></td><td>Iron, sediment</td><td>Low-Medium</td></tr>
+    <tr><td><strong>Yellow tint</strong></td><td>Tannins, chromium</td><td>Low-Medium</td></tr>
+    <tr><td><strong>Blue-green tint</strong></td><td>Copper</td><td>Medium</td></tr>
+    <tr><td><strong>Oily film</strong></td><td>Petroleum products</td><td>High</td></tr>
+    <tr><td><strong>Foam/suds</strong></td><td>Detergents, organic matter</td><td>Medium-High</td></tr>
+    <tr><td><strong>Floating particles</strong></td><td>Various debris</td><td>Medium</td></tr>
+  </tbody>
+</table>
+
+<h3>Surrounding Area</h3>
+
+<div class="warning-box">
+  <h4>Red flags:</h4>
+  <ul>
+    <li>Dead vegetation at water's edge</li>
+    <li>Dead animals near water</li>
+    <li>Absence of wildlife</li>
+    <li>Discolored soil</li>
+    <li>Nearby pipes or drainage</li>
+    <li>Industrial facilities upstream</li>
+    <li>Agricultural runoff visible</li>
+  </ul>
+</div>
+
+<hr>
+
+<h2>Smell Warning Signs</h2>
+
+<h3>Dangerous Odors</h3>
+
+<table>
+  <thead>
+    <tr><th>Smell</th><th>Possible Cause</th><th>Action</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Chlorine (strong)</strong></td><td>Over-chlorination</td><td>Aerate or use other source</td></tr>
+    <tr><td><strong>Rotten eggs</strong></td><td>Hydrogen sulfide, bacteria</td><td>Do not drink, treat heavily</td></tr>
+    <tr><td><strong>Sewage</strong></td><td>Fecal contamination</td><td>Do not drink</td></tr>
+    <tr><td><strong>Fishy/musty</strong></td><td>Algae, organic decay</td><td>Heavy treatment needed</td></tr>
+    <tr><td><strong>Chemical/gasoline</strong></td><td>Industrial/petroleum</td><td>Do not drink</td></tr>
+    <tr><td><strong>Metallic</strong></td><td>Heavy metals</td><td>Do not drink</td></tr>
+    <tr><td><strong>Sweet</strong></td><td>Antifreeze or chemicals</td><td>Do not drink</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Important:</strong> Absence of smell does NOT guarantee safety. Many dangerous contaminants are odorless.</p>
+
+<hr>
+
+<h2>After Disasters</h2>
+
+<div class="warning-box">
+  <h4>Flood Contamination</h4>
+  <p><strong>All flood water should be assumed contaminated with:</strong></p>
+  <ul>
+    <li>Sewage</li>
+    <li>Agricultural chemicals</li>
+    <li>Industrial waste</li>
+    <li>Debris</li>
+    <li>Fuel</li>
+    <li>Deceased animals</li>
+  </ul>
+  <p><strong>Never drink flood water.</strong> Even after flooding, water sources may be contaminated for extended periods.</p>
+</div>
+
+<hr>
+
+<h2>Quick Assessment Checklist</h2>
+
+<p>Before using a water source, check:</p>
+
+<ul class="checklist">
+  <li><strong>Location</strong> - Away from contamination sources?</li>
+  <li><strong>Appearance</strong> - Clear? No unusual color?</li>
+  <li><strong>Surface</strong> - No oil, foam, or debris?</li>
+  <li><strong>Smell</strong> - No unusual odor?</li>
+  <li><strong>Surroundings</strong> - Healthy vegetation? Wildlife present?</li>
+  <li><strong>Upstream</strong> - No obvious pollution sources?</li>
+  <li><strong>Flow</strong> - Moving water (better) or stagnant?</li>
+  <li><strong>Recent events</strong> - Flooding, disasters, contamination notices?</li>
+</ul>
+
+<p><strong>When in doubt:</strong></p>
+<ul>
+  <li>Treat thoroughly</li>
+  <li>Or find alternative source</li>
+</ul>
+
+<hr>
+
+<h2>Warning Signs Summary</h2>
+
+<div class="warning-box">
+  <h4>Do Not Use Water If:</h4>
+  <ul>
+    <li>Strong chemical odor</li>
+    <li>Sewage smell</li>
+    <li>Oil/gasoline sheen</li>
+    <li>Bright colors (especially blue-green algae)</li>
+    <li>Dead animals nearby</li>
+    <li>Near known contamination</li>
+    <li>Obviously polluted</li>
+    <li>During boil water advisory (without boiling)</li>
+  </ul>
+</div>
+
+<div class="caution-box">
+  <h4>Treat Thoroughly Before Use If:</h4>
+  <ul>
+    <li>From unknown source</li>
+    <li>Cloudy or turbid</li>
+    <li>Stagnant or slow-moving</li>
+    <li>Near agricultural areas</li>
+    <li>Downstream from population</li>
+    <li>Mild unusual smell</li>
+    <li>After any disaster</li>
+  </ul>
+</div>
+
+<div class="safe-box">
+  <h4>Generally Safe (with standard treatment):</h4>
+  <ul>
+    <li>Clear, flowing streams (upstream from people)</li>
+    <li>Springs</li>
+    <li>Rainwater (freshly collected)</li>
+    <li>Deep wells (properly constructed)</li>
+    <li>Municipal water (normally)</li>
+  </ul>
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+</div>
+
+</body>
+</html>

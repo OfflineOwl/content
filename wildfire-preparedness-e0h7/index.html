@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wildfire Preparedness</title>
+  <style>
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-secondary: #1a1a2e;
+      --bg-tertiary: #252540;
+      --text-primary: #e4e4e7;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --accent-red: #ef4444;
+      --accent-orange: #f97316;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --accent-amber: #f59e0b;
+      --border-color: #3f3f46;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--accent-orange); padding-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; margin: 2.5rem 0 1rem; padding-bottom: 0.25rem; border-bottom: 1px solid var(--border-color); }
+    h3 { font-size: 1.35rem; margin: 1.5rem 0 0.75rem; color: var(--accent-blue); }
+    h4 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    
+    blockquote {
+      background: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(249, 115, 22, 0.05));
+      border-left: 4px solid var(--accent-orange);
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    blockquote strong { color: var(--accent-orange); }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+    th { background: var(--bg-tertiary); font-weight: 600; color: var(--accent-blue); }
+    tr:last-child td { border-bottom: none; }
+    
+    .warning-box {
+      background: rgba(239, 68, 68, 0.1);
+      border: 2px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+    .zone-section {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-left: 4px solid var(--accent-orange);
+    }
+    
+    .zone-header {
+      color: var(--accent-orange);
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .ready-set-go {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    
+    .rsg-item {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+    }
+    
+    .rsg-item h4 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .rsg-ready h4 { color: var(--accent-green); }
+    .rsg-set h4 { color: var(--accent-amber); }
+    .rsg-go h4 { color: var(--accent-red); }
+    
+    strong { color: var(--accent-amber); }
+    
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    
+    .quick-ref {
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-orange);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .quick-ref h3 { color: var(--accent-orange); margin-top: 0; }
+    
+    pre {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+      font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    
+    @media (max-width: 600px) {
+      .ready-set-go {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Wildfire Preparedness</h1>
+
+<blockquote>
+  <strong>When Fire Threatens</strong> - Wildfires can move faster than you can run. Preparation and early evacuation save lives.
+</blockquote>
+
+<h2>Understanding Wildfire Threat</h2>
+
+<h3>How Fires Spread</h3>
+<ul>
+  <li><strong>Direct flame contact</strong> - Fire reaches structure</li>
+  <li><strong>Radiant heat</strong> - Intense heat ignites materials</li>
+  <li><strong>Embers</strong> - Flying embers land on combustibles</li>
+</ul>
+
+<p><strong>Ember attack is the most common cause of home ignition during wildfires.</strong></p>
+
+<h3>Risk Factors</h3>
+<p>Higher risk if:</p>
+<ul>
+  <li>Near wildland areas</li>
+  <li>Dense vegetation near home</li>
+  <li>Dry climate/drought conditions</li>
+  <li>Limited evacuation routes</li>
+  <li>Wooden construction</li>
+</ul>
+
+<h2>Defensible Space</h2>
+
+<div class="zone-section">
+  <div class="zone-header">Zone 0: 0-5 feet from home</div>
+  <p><strong>Hardscape zone:</strong></p>
+  <ul>
+    <li>No combustibles</li>
+    <li>No mulch</li>
+    <li>No plants except well-watered lawn</li>
+    <li>Clean gutters</li>
+    <li>No stored combustibles</li>
+  </ul>
+</div>
+
+<div class="zone-section">
+  <div class="zone-header">Zone 1: 5-30 feet from home</div>
+  <p><strong>Lean, clean, green zone:</strong></p>
+  <ul>
+    <li>Minimal vegetation</li>
+    <li>No ladder fuels</li>
+    <li>Trees spaced 10+ feet apart</li>
+    <li>Trim branches 6+ feet from ground</li>
+    <li>Remove dead vegetation</li>
+  </ul>
+</div>
+
+<div class="zone-section">
+  <div class="zone-header">Zone 2: 30-100 feet</div>
+  <p><strong>Reduced fuel zone:</strong></p>
+  <ul>
+    <li>Reduced vegetation density</li>
+    <li>Space trees appropriately</li>
+    <li>Remove dead material</li>
+    <li>Create fuel breaks</li>
+  </ul>
+</div>
+
+<h2>Home Hardening</h2>
+
+<h3>Priority Upgrades</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Area</th>
+      <th>Improvement</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Roof</td>
+      <td>Class A fire-rated materials</td>
+    </tr>
+    <tr>
+      <td>Vents</td>
+      <td>1/8" or smaller mesh (ember-resistant)</td>
+    </tr>
+    <tr>
+      <td>Windows</td>
+      <td>Double-pane, tempered glass</td>
+    </tr>
+    <tr>
+      <td>Decking</td>
+      <td>Non-combustible or ignition-resistant</td>
+    </tr>
+    <tr>
+      <td>Fencing</td>
+      <td>Non-combustible near house</td>
+    </tr>
+    <tr>
+      <td>Eaves</td>
+      <td>Enclosed or fire-resistant</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>When Fire Threatens</h2>
+
+<h3>Warning Levels</h3>
+<ul>
+  <li><strong>Fire Weather Watch</strong> - Conditions favorable for fire</li>
+  <li><strong>Red Flag Warning</strong> - Extreme fire conditions expected</li>
+  <li><strong>Evacuation Warning</strong> - Be ready to leave</li>
+  <li><strong>Evacuation Order</strong> - Leave NOW</li>
+</ul>
+
+<h3>Evacuation Preparation</h3>
+
+<p><strong>Go-bag ready with:</strong></p>
+<ul>
+  <li>Important documents</li>
+  <li>Medications</li>
+  <li>Phone chargers</li>
+  <li>Clothing</li>
+  <li>Water</li>
+  <li>Pet supplies</li>
+  <li>N95 masks</li>
+</ul>
+
+<h3>Ready-Set-Go</h3>
+
+<div class="ready-set-go">
+  <div class="rsg-item rsg-ready">
+    <h4>READY</h4>
+    <p>Prepare home and family</p>
+  </div>
+  <div class="rsg-item rsg-set">
+    <h4>SET</h4>
+    <p>Be alert, ready to leave</p>
+  </div>
+  <div class="rsg-item rsg-go">
+    <h4>GO</h4>
+    <p>Evacuate immediately</p>
+  </div>
+</div>
+
+<h3>If Ordered to Evacuate</h3>
+<ol>
+  <li>Leave immediately</li>
+  <li>Follow designated routes</li>
+  <li>Don't block roadways</li>
+  <li>Check in with out-of-area contact</li>
+  <li>Don't return until cleared</li>
+</ol>
+
+<h2>If Trapped by Fire</h2>
+
+<div class="warning-box">
+  <strong>This is last resort - always evacuate early.</strong>
+</div>
+
+<p>If trapped at home:</p>
+<ol>
+  <li>Call 911 with location</li>
+  <li>Stay inside</li>
+  <li>Close all windows and doors</li>
+  <li>Close interior doors</li>
+  <li>Move away from exterior walls/windows</li>
+  <li>Get in room with fewest windows</li>
+  <li>Stay low if smoke enters</li>
+  <li>Fill sinks/tubs with water</li>
+</ol>
+
+<h2>Air Quality During Wildfires</h2>
+
+<h3>Smoke Protection</h3>
+<ul>
+  <li>Stay indoors</li>
+  <li>Keep windows/doors closed</li>
+  <li>Run AC on recirculate</li>
+  <li>Use HEPA air purifiers</li>
+  <li>Wear N95 mask outdoors</li>
+  <li>Avoid physical exertion</li>
+</ul>
+
+<h3>Health Effects</h3>
+<ul>
+  <li>Irritated eyes/throat</li>
+  <li>Coughing</li>
+  <li>Difficulty breathing</li>
+  <li>Headaches</li>
+  <li>May worsen existing conditions</li>
+</ul>
+
+<hr>
+
+<div class="quick-ref">
+  <h3>Quick Reference</h3>
+  <pre>EVACUATION LEVELS
+
+Warning: Get ready to leave
+Order: Leave immediately
+
+DEFENSIBLE SPACE:
+Zone 0 (0-5 ft): No combustibles
+Zone 1 (5-30 ft): Minimal vegetation
+Zone 2 (30-100 ft): Reduced fuel
+
+IF TRAPPED:
+- Call 911
+- Stay inside
+- Close all openings
+- Move away from exterior walls
+- Stay low if smoke
+
+AIR QUALITY:
+- Stay indoors
+- HEPA filters
+- N95 masks outdoors
+- Avoid exertion</pre>
+</div>
+
+<div class="footer">
+  <p>Last updated: January 2026</p>
+  <p>License: CC-BY-SA 4.0</p>
+</div>
+
+</body>
+</html>
