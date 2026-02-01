@@ -1,72 +1,74 @@
 <svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1a2e"/>
-      <stop offset="100%" style="stop-color:#16213e"/>
+      <stop offset="0%" style="stop-color:#1a1a2e" />
+      <stop offset="100%" style="stop-color:#16213e" />
     </linearGradient>
     <linearGradient id="safeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#065f46"/>
-      <stop offset="100%" style="stop-color:#047857"/>
+      <stop offset="0%" style="stop-color:#065f46" />
+      <stop offset="100%" style="stop-color:#047857" />
     </linearGradient>
     <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#10b981"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#10b981" />
     </marker>
     <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feGaussianBlur stdDeviation="2" result="coloredBlur" />
       <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="coloredBlur" />
+        <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
   </defs>
-  
+
   <!-- Background -->
-  <rect width="400" height="320" fill="url(#skyGrad)"/>
-  
+  <rect width="400" height="320" fill="url(#skyGrad)" />
+
   <!-- Fallout particles (animated in CSS) -->
   <g class="fallout-particles" opacity="0.3">
-    <circle cx="50" cy="30" r="2" fill="#fbbf24"/>
-    <circle cx="120" cy="45" r="1.5" fill="#fbbf24"/>
-    <circle cx="200" cy="25" r="2" fill="#fbbf24"/>
-    <circle cx="280" cy="40" r="1.5" fill="#fbbf24"/>
-    <circle cx="350" cy="35" r="2" fill="#fbbf24"/>
+    <circle cx="50" cy="30" r="2" fill="#fbbf24" />
+    <circle cx="120" cy="45" r="1.5" fill="#fbbf24" />
+    <circle cx="200" cy="25" r="2" fill="#fbbf24" />
+    <circle cx="280" cy="40" r="1.5" fill="#fbbf24" />
+    <circle cx="350" cy="35" r="2" fill="#fbbf24" />
   </g>
-  
+
   <!-- House outline -->
-  <path d="M50 150 L200 50 L350 150 L350 280 L50 280 Z" fill="#1e293b" stroke="#475569" stroke-width="2"/>
-  
+  <path d="M50 150 L200 50 L350 150 L350 280 L50 280 Z" fill="#1e293b" stroke="#475569" stroke-width="2" />
+
   <!-- Roof -->
-  <path d="M40 155 L200 45 L360 155" fill="none" stroke="#64748b" stroke-width="4" stroke-linecap="round"/>
-  
+  <path d="M40 155 L200 45 L360 155" fill="none" stroke="#64748b" stroke-width="4" stroke-linecap="round" />
+
   <!-- Danger zones - Windows with X marks -->
   <g class="danger-zone">
-    <rect x="75" y="175" width="45" height="55" fill="#1e1e2e" stroke="#ef4444" stroke-width="2"/>
-    <line x1="75" y1="175" x2="120" y2="230" stroke="#ef4444" stroke-width="2"/>
-    <line x1="120" y1="175" x2="75" y2="230" stroke="#ef4444" stroke-width="2"/>
+    <rect x="75" y="175" width="45" height="55" fill="#1e1e2e" stroke="#ef4444" stroke-width="2" />
+    <line x1="75" y1="175" x2="120" y2="230" stroke="#ef4444" stroke-width="2" />
+    <line x1="120" y1="175" x2="75" y2="230" stroke="#ef4444" stroke-width="2" />
     <text x="97" y="165" text-anchor="middle" fill="#ef4444" font-size="10" font-weight="bold">AVOID</text>
   </g>
-  
+
   <g class="danger-zone">
-    <rect x="280" y="175" width="45" height="55" fill="#1e1e2e" stroke="#ef4444" stroke-width="2"/>
-    <line x1="280" y1="175" x2="325" y2="230" stroke="#ef4444" stroke-width="2"/>
-    <line x1="325" y1="175" x2="280" y2="230" stroke="#ef4444" stroke-width="2"/>
+    <rect x="280" y="175" width="45" height="55" fill="#1e1e2e" stroke="#ef4444" stroke-width="2" />
+    <line x1="280" y1="175" x2="325" y2="230" stroke="#ef4444" stroke-width="2" />
+    <line x1="325" y1="175" x2="280" y2="230" stroke="#ef4444" stroke-width="2" />
     <text x="302" y="165" text-anchor="middle" fill="#ef4444" font-size="10" font-weight="bold">AVOID</text>
   </g>
-  
+
   <!-- Safe room - center of house -->
-  <rect x="145" y="190" width="110" height="90" fill="url(#safeGrad)" stroke="#10b981" stroke-width="3" filter="url(#glow)"/>
+  <rect x="145" y="190" width="110" height="90" fill="url(#safeGrad)" stroke="#10b981" stroke-width="3"
+    filter="url(#glow)" />
   <text x="200" y="225" text-anchor="middle" fill="#10b981" font-size="11" font-weight="bold">INTERIOR</text>
   <text x="200" y="240" text-anchor="middle" fill="#10b981" font-size="11" font-weight="bold">ROOM</text>
   <text x="200" y="265" text-anchor="middle" fill="#a7f3d0" font-size="9"> SAFE ZONE</text>
-  
+
   <!-- Arrow pointing to safe zone -->
-  <path d="M200 140 L200 185" stroke="#10b981" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <path d="M200 140 L200 185" stroke="#10b981" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)" />
   <text x="200" y="130" text-anchor="middle" fill="#10b981" font-size="10">GO HERE</text>
-  
+
   <!-- Basement - best protection -->
-  <rect x="50" y="280" width="300" height="35" fill="#1e3a5f" stroke="#3b82f6" stroke-width="2"/>
-  <text x="200" y="302" text-anchor="middle" fill="#60a5fa" font-size="12" font-weight="bold">BASEMENT = BEST PROTECTION</text>
-  
+  <rect x="50" y="280" width="300" height="35" fill="#1e3a5f" stroke="#3b82f6" stroke-width="2" />
+  <text x="200" y="302" text-anchor="middle" fill="#60a5fa" font-size="12" font-weight="bold">BASEMENT = BEST
+    PROTECTION</text>
+
   <!-- Protection factor labels -->
   <g transform="translate(360, 100)">
     <text x="0" y="0" fill="#94a3b8" font-size="9" font-weight="bold">PROTECTION</text>
@@ -76,13 +78,13 @@
     <text x="0" y="54" fill="#10b981" font-size="8">Interior: 40x</text>
     <text x="0" y="66" fill="#3b82f6" font-size="8">Basement: 200x</text>
   </g>
-  
+
   <!-- Legend -->
   <g transform="translate(10, 10)">
-    <rect x="0" y="0" width="100" height="50" fill="#0f172a" stroke="#334155" rx="5"/>
-    <rect x="10" y="10" width="12" height="12" fill="#065f46" stroke="#10b981"/>
+    <rect x="0" y="0" width="100" height="50" fill="#0f172a" stroke="#334155" rx="5" />
+    <rect x="10" y="10" width="12" height="12" fill="#065f46" stroke="#10b981" />
     <text x="28" y="20" fill="#10b981" font-size="9">Safe Zone</text>
-    <rect x="10" y="28" width="12" height="12" fill="#1e1e2e" stroke="#ef4444"/>
+    <rect x="10" y="28" width="12" height="12" fill="#1e1e2e" stroke="#ef4444" />
     <text x="28" y="38" fill="#ef4444" font-size="9">Danger Zone</text>
   </g>
 </svg>
