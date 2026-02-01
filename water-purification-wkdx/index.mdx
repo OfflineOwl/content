@@ -1,0 +1,488 @@
+{/* Water Purification - Advanced Interactive Guide */}
+
+import { useState } from 'react'
+import { Droplets, Flame, FlaskConical, Sun, Filter, ThermometerSun, Mountain, AlertTriangle, CheckCircle, Clock, Beaker } from 'lucide-react'
+
+export const CriticalInfo = ({ children }) => (
+  <div className="bg-blue-900/20 border-2 border-blue-500 rounded-lg p-4 my-4">
+    <div className="flex items-center gap-2 text-blue-400 font-bold mb-2">
+      <Droplets className="w-6 h-6" />
+      <span className="text-lg">CRITICAL - WATER IS LIFE</span>
+    </div>
+    <div className="text-blue-100">{children}</div>
+  </div>
+)
+
+export const MethodSelector = () => {
+  const [situation, setSituation] = useState(null)
+  
+  const situations = [
+    { id: 'fire', label: 'I have fire/fuel available', icon: '🔥', method: 'boiling', color: 'orange' },
+    { id: 'hiking', label: 'Backpacking/hiking', icon: '🎒', method: 'filter', color: 'green' },
+    { id: 'emergency', label: 'Emergency kit prep', icon: '🆘', method: 'chemical', color: 'red' },
+    { id: 'longterm', label: 'Long-term survival', icon: '🏕️', method: 'sodis', color: 'yellow' },
+    { id: 'saltwater', label: 'Only saltwater available', icon: '🌊', method: 'distillation', color: 'cyan' },
+  ]
+  
+  const recommendations = {
+    boiling: { name: 'Boiling', desc: 'Most reliable - kills 99.9% of pathogens', icon: <Flame className="w-8 h-8" /> },
+    filter: { name: 'Filtration + Chemical Backup', desc: 'Portable and effective for most situations', icon: <Filter className="w-8 h-8" /> },
+    chemical: { name: 'Chemical Tablets', desc: 'Lightweight, long shelf life, easy to store', icon: <FlaskConical className="w-8 h-8" /> },
+    sodis: { name: 'Solar (SODIS) + DIY Filter', desc: 'Free, requires only sunlight and bottles', icon: <Sun className="w-8 h-8" /> },
+    distillation: { name: 'Distillation', desc: 'Only method that removes salt', icon: <Beaker className="w-8 h-8" /> },
+  }
+  
+  return (
+    <div className="my-6 p-4 bg-gray-800/50 rounded-lg">
+      <h4 className="text-lg font-bold text-blue-300 mb-4">What's your situation?</h4>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-4">
+        {situations.map(s => (
+          <button
+            key={s.id}
+            onClick={() => setSituation(s.method)}
+            className={`p-3 rounded-lg text-left transition-all flex items-center gap-3 ${
+              situation === s.method 
+                ? 'bg-blue-600 ring-2 ring-blue-400' 
+                : 'bg-gray-700 hover:bg-gray-600'
+            }`}
+          >
+            <span className="text-2xl">{s.icon}</span>
+            <span>{s.label}</span>
+          </button>
+        ))}
+      </div>
+      
+      {situation && (
+        <div className="mt-4 p-4 bg-green-900/30 border border-green-500 rounded-lg animate-fade-in">
+          <div className="flex items-center gap-3 text-green-400">
+            {recommendations[situation].icon}
+            <div>
+              <p className="font-bold text-xl">{recommendations[situation].name}</p>
+              <p className="text-green-200">{recommendations[situation].desc}</p>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
+
+export const AltitudeCalculator = () => {
+  const [altitude, setAltitude] = useState(0)
+  
+  const getBoilTime = (alt) => {
+    if (alt < 6500) return 1
+    return 3
+  }
+  
+  const getBoilTemp = (alt) => {
+    // Approximate: loses about 1°F per 500 feet
+    const tempDrop = Math.floor(alt / 500)
+    return Math.max(185, 212 - tempDrop)
+  }
+  
+  const altitudes = [
+    { value: 0, label: 'Sea Level' },
+    { value: 5000, label: '5,000 ft' },
+    { value: 6500, label: '6,500 ft' },
+    { value: 10000, label: '10,000 ft' },
+    { value: 15000, label: '15,000 ft' },
+  ]
+  
+  return (
+    <div className="my-6 p-4 bg-gray-800/50 rounded-lg">
+      <div className="flex items-center gap-2 text-amber-400 font-bold mb-4">
+        <Mountain className="w-6 h-6" />
+        <h4 className="text-lg">Altitude Boiling Calculator</h4>
+      </div>
+      
+      <div className="flex flex-wrap gap-2 mb-4">
+        {altitudes.map(a => (
+          <button
+            key={a.value}
+            onClick={() => setAltitude(a.value)}
+            className={`px-4 py-2 rounded-lg transition-all ${
+              altitude === a.value 
+                ? 'bg-amber-600 text-white' 
+                : 'bg-gray-700 hover:bg-gray-600'
+            }`}
+          >
+            {a.label}
+          </button>
+        ))}
+      </div>
+      
+      <div className="grid md:grid-cols-3 gap-4">
+        <div className="p-4 bg-gray-900/50 rounded-lg text-center">
+          <p className="text-gray-400 text-sm">Boiling Point</p>
+          <p className="text-3xl font-mono font-bold text-amber-400">{getBoilTemp(altitude)}°F</p>
+          <p className="text-gray-500 text-sm">{Math.round((getBoilTemp(altitude) - 32) * 5/9)}°C</p>
+        </div>
+        <div className="p-4 bg-gray-900/50 rounded-lg text-center">
+          <p className="text-gray-400 text-sm">Required Boil Time</p>
+          <p className="text-3xl font-mono font-bold text-orange-400">{getBoilTime(altitude)} min</p>
+          <p className="text-gray-500 text-sm">rolling boil</p>
+        </div>
+        <div className="p-4 bg-gray-900/50 rounded-lg text-center">
+          <p className="text-gray-400 text-sm">Altitude</p>
+          <p className="text-3xl font-mono font-bold text-blue-400">{altitude.toLocaleString()}</p>
+          <p className="text-gray-500 text-sm">feet</p>
+        </div>
+      </div>
+      
+      {altitude >= 6500 && (
+        <div className="mt-4 p-3 bg-amber-900/30 border border-amber-500 rounded-lg text-amber-200 text-sm">
+          <AlertTriangle className="w-4 h-4 inline mr-2" />
+          At high altitude, water boils at a lower temperature. Boil for 3 minutes to ensure safety.
+        </div>
+      )}
+    </div>
+  )
+}
+
+export const MethodSteps = ({ method }) => {
+  const [currentStep, setCurrentStep] = useState(0)
+  
+  const methods = {
+    boiling: {
+      title: 'Boiling Method',
+      icon: <Flame className="w-6 h-6" />,
+      steps: [
+        { title: 'Collect Water', desc: 'Gather water in a heat-safe container (metal pot, can)' },
+        { title: 'Pre-filter', desc: 'If cloudy, strain through cloth, coffee filter, or t-shirt' },
+        { title: 'Heat to Rolling Boil', desc: 'Large bubbles should break the surface continuously' },
+        { title: 'Maintain Boil', desc: '1 minute at sea level, 3 minutes above 6,500 ft' },
+        { title: 'Cool & Store', desc: 'Let cool in covered container before drinking' },
+      ]
+    },
+    chemical: {
+      title: 'Chemical Treatment',
+      icon: <FlaskConical className="w-6 h-6" />,
+      steps: [
+        { title: 'Pre-filter Water', desc: 'Remove visible particles for better effectiveness' },
+        { title: 'Add Chemical', desc: '8 drops bleach per gallon (clear) or 16 drops (cloudy)' },
+        { title: 'Mix Thoroughly', desc: 'Stir or shake to distribute evenly' },
+        { title: 'Wait 30 Minutes', desc: 'Minimum contact time for disinfection' },
+        { title: 'Check Smell', desc: 'Should have slight chlorine odor - if not, repeat' },
+      ]
+    },
+    sodis: {
+      title: 'Solar Disinfection (SODIS)',
+      icon: <Sun className="w-6 h-6" />,
+      steps: [
+        { title: 'Get Clear Bottles', desc: 'Use 1-2 liter clear PET plastic bottles (soda bottles)' },
+        { title: 'Pre-filter Water', desc: 'Must be able to read newspaper through the bottle' },
+        { title: 'Fill & Shake', desc: 'Leave 1 inch of air, shake vigorously to oxygenate' },
+        { title: 'Place in Sunlight', desc: 'Lay flat on dark surface or corrugated metal' },
+        { title: 'Wait 6-48 Hours', desc: '6 hours full sun, 2 days if cloudy' },
+      ]
+    }
+  }
+  
+  const current = methods[method] || methods.boiling
+  
+  return (
+    <div className="my-6 p-4 bg-gray-800/50 rounded-lg">
+      <div className="flex items-center gap-2 text-green-400 font-bold mb-4">
+        {current.icon}
+        <h4 className="text-lg">{current.title}</h4>
+      </div>
+      
+      <div className="flex justify-between mb-4 gap-1">
+        {current.steps.map((step, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrentStep(i)}
+            className={`flex-1 h-2 rounded-full transition-all ${
+              i === currentStep 
+                ? 'bg-green-500' 
+                : i < currentStep 
+                  ? 'bg-green-700' 
+                  : 'bg-gray-600'
+            }`}
+          />
+        ))}
+      </div>
+      
+      <div className="p-4 bg-gray-900/50 rounded-lg min-h-[120px]">
+        <div className="flex items-center gap-2 mb-2">
+          <span className="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center font-bold">
+            {currentStep + 1}
+          </span>
+          <h5 className="text-xl font-bold text-green-300">{current.steps[currentStep].title}</h5>
+        </div>
+        <p className="text-gray-300 ml-10">{current.steps[currentStep].desc}</p>
+      </div>
+      
+      <div className="flex justify-between mt-4">
+        <button 
+          onClick={() => setCurrentStep(Math.max(0, currentStep - 1))}
+          className="px-4 py-2 bg-gray-600 rounded hover:bg-gray-500 disabled:opacity-50"
+          disabled={currentStep === 0}
+        >
+          Previous
+        </button>
+        <span className="text-gray-400 self-center">
+          Step {currentStep + 1} of {current.steps.length}
+        </span>
+        <button 
+          onClick={() => setCurrentStep(Math.min(current.steps.length - 1, currentStep + 1))}
+          className="px-4 py-2 bg-green-600 rounded hover:bg-green-500 disabled:opacity-50"
+          disabled={currentStep === current.steps.length - 1}
+        >
+          Next
+        </button>
+      </div>
+    </div>
+  )
+}
+
+export const EffectivenessChart = () => {
+  const methods = [
+    { name: 'Boiling', bacteria: 100, viruses: 100, protozoa: 100, chemicals: 0, color: 'orange' },
+    { name: 'Chlorine', bacteria: 99, viruses: 99, protozoa: 50, chemicals: 0, color: 'green' },
+    { name: 'UV Light', bacteria: 100, viruses: 100, protozoa: 100, chemicals: 0, color: 'purple' },
+    { name: 'Filtration', bacteria: 99, viruses: 60, protozoa: 99, chemicals: 30, color: 'blue' },
+    { name: 'Distillation', bacteria: 100, viruses: 100, protozoa: 100, chemicals: 100, color: 'cyan' },
+  ]
+  
+  return (
+    <div className="my-6 overflow-x-auto">
+      <table className="w-full text-sm">
+        <thead>
+          <tr className="border-b border-gray-700">
+            <th className="text-left p-2">Method</th>
+            <th className="p-2">Bacteria</th>
+            <th className="p-2">Viruses</th>
+            <th className="p-2">Protozoa</th>
+            <th className="p-2">Chemicals</th>
+          </tr>
+        </thead>
+        <tbody>
+          {methods.map(m => (
+            <tr key={m.name} className="border-b border-gray-800">
+              <td className="p-2 font-medium">{m.name}</td>
+              {['bacteria', 'viruses', 'protozoa', 'chemicals'].map(type => (
+                <td key={type} className="p-2 text-center">
+                  {m[type] >= 99 ? (
+                    <span className="text-green-400">✅ {m[type]}%</span>
+                  ) : m[type] >= 50 ? (
+                    <span className="text-yellow-400">⚠️ {m[type]}%</span>
+                  ) : (
+                    <span className="text-red-400">❌ {m[type]}%</span>
+                  )}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  )
+}
+
+export const FilterDiagram = () => (
+  <div className="my-6 p-4 bg-gray-800/50 rounded-lg">
+    <h4 className="text-lg font-bold text-blue-300 mb-4 flex items-center gap-2">
+      <Filter className="w-5 h-5" />
+      DIY Sand/Charcoal Filter
+    </h4>
+    <div className="flex flex-col md:flex-row gap-4 items-center">
+      <div className="w-48 mx-auto">
+        <svg viewBox="0 0 200 320" className="w-full">
+          {/* Bottle outline */}
+          <path d="M60 20 L60 10 L140 10 L140 20 L150 40 L150 300 L50 300 L50 40 Z" 
+                fill="#1a1a2e" stroke="#4a5568" strokeWidth="2"/>
+          
+          {/* Layers */}
+          <rect x="50" y="40" width="100" height="30" fill="#d4a574" stroke="#a67c52" strokeWidth="1"/>
+          <text x="100" y="58" textAnchor="middle" fill="#fff" fontSize="10">CLOTH</text>
+          
+          <rect x="50" y="70" width="100" height="50" fill="#f4d03f" stroke="#d4ac0d" strokeWidth="1"/>
+          <text x="100" y="98" textAnchor="middle" fill="#333" fontSize="10">SAND</text>
+          
+          <rect x="50" y="120" width="100" height="50" fill="#2c3e50" stroke="#1a252f" strokeWidth="1"/>
+          <text x="100" y="148" textAnchor="middle" fill="#fff" fontSize="10">CHARCOAL</text>
+          
+          <rect x="50" y="170" width="100" height="40" fill="#7f8c8d" stroke="#5d6d7e" strokeWidth="1"/>
+          <text x="100" y="193" textAnchor="middle" fill="#fff" fontSize="10">GRAVEL</text>
+          
+          <rect x="50" y="210" width="100" height="50" fill="#5d6d7e" stroke="#4a5568" strokeWidth="1"/>
+          <text x="100" y="238" textAnchor="middle" fill="#fff" fontSize="10">ROCKS</text>
+          
+          {/* Output */}
+          <path d="M95 300 L95 310 L105 310 L105 300" fill="#1a1a2e" stroke="#4a5568" strokeWidth="2"/>
+          <path d="M100 310 L100 320" stroke="#3b82f6" strokeWidth="3"/>
+          
+          {/* Water drops */}
+          <circle cx="100" cy="5" r="4" fill="#3b82f6"/>
+          <text x="100" y="3" textAnchor="middle" fill="#fff" fontSize="8">💧</text>
+        </svg>
+      </div>
+      <div className="flex-1 space-y-2">
+        <div className="flex items-center gap-2 p-2 bg-amber-900/30 rounded">
+          <div className="w-4 h-4 rounded bg-amber-600"></div>
+          <span className="text-sm"><strong>Cloth:</strong> Keeps sand in place</span>
+        </div>
+        <div className="flex items-center gap-2 p-2 bg-yellow-900/30 rounded">
+          <div className="w-4 h-4 rounded bg-yellow-500"></div>
+          <span className="text-sm"><strong>Sand:</strong> Fine filtration (2-3 inches)</span>
+        </div>
+        <div className="flex items-center gap-2 p-2 bg-gray-700 rounded">
+          <div className="w-4 h-4 rounded bg-gray-800"></div>
+          <span className="text-sm"><strong>Charcoal:</strong> Absorbs chemicals (2-3 inches)</span>
+        </div>
+        <div className="flex items-center gap-2 p-2 bg-slate-700 rounded">
+          <div className="w-4 h-4 rounded bg-slate-500"></div>
+          <span className="text-sm"><strong>Gravel:</strong> Keeps charcoal in (1-2 inches)</span>
+        </div>
+        <div className="flex items-center gap-2 p-2 bg-slate-800 rounded">
+          <div className="w-4 h-4 rounded bg-slate-600"></div>
+          <span className="text-sm"><strong>Rocks:</strong> Drainage layer (2-3 inches)</span>
+        </div>
+        <div className="mt-4 p-3 bg-red-900/30 border border-red-500 rounded text-red-200 text-sm">
+          <AlertTriangle className="w-4 h-4 inline mr-2" />
+          <strong>Warning:</strong> DIY filters remove particles but NOT all pathogens. Always disinfect after filtering!
+        </div>
+      </div>
+    </div>
+  </div>
+)
+
+# Complete Water Purification Guide
+
+<CriticalInfo>
+**Clean water is essential for survival.** Without it, you can survive only 3 days. This guide covers every method to make water safe to drink.
+</CriticalInfo>
+
+---
+
+## 🎯 Find Your Best Method
+
+Not sure which purification method to use? Select your situation:
+
+<MethodSelector />
+
+---
+
+## 📊 Method Effectiveness Comparison
+
+<EffectivenessChart />
+
+---
+
+## 🔥 Method 1: Boiling
+
+**The gold standard** - Most reliable method available to most people.
+
+<AltitudeCalculator />
+
+### Step-by-Step Guide
+
+<MethodSteps method="boiling" />
+
+### Pros & Cons
+
+<div className="grid md:grid-cols-2 gap-4 my-4">
+  <div className="p-4 bg-green-900/20 border border-green-500 rounded-lg">
+    <h4 className="text-green-400 font-bold flex items-center gap-2">
+      <CheckCircle className="w-5 h-5" /> Advantages
+    </h4>
+    <ul className="mt-2 space-y-1 text-green-200">
+      <li>• Kills ALL pathogens (99.9%)</li>
+      <li>• No special equipment needed</li>
+      <li>• Works on any water source</li>
+    </ul>
+  </div>
+  <div className="p-4 bg-red-900/20 border border-red-500 rounded-lg">
+    <h4 className="text-red-400 font-bold flex items-center gap-2">
+      <AlertTriangle className="w-5 h-5" /> Limitations
+    </h4>
+    <ul className="mt-2 space-y-1 text-red-200">
+      <li>• Requires fuel/heat source</li>
+      <li>• Time and energy intensive</li>
+      <li>• Doesn't remove chemicals</li>
+    </ul>
+  </div>
+</div>
+
+---
+
+## 💧 Method 2: Chemical Treatment
+
+Lightweight, portable, and effective for emergencies.
+
+<MethodSteps method="chemical" />
+
+### Dosage Chart
+
+| Water Clarity | Household Bleach per Gallon |
+|--------------|---------------------------|
+| Clear water | 8 drops (1/8 tsp) |
+| Cloudy water | 16 drops (1/4 tsp) |
+
+<div className="my-4 p-4 bg-amber-900/20 border border-amber-500 rounded-lg">
+  <h4 className="text-amber-400 font-bold">⚠️ Iodine Warning</h4>
+  <p className="text-amber-200 mt-2">
+    Iodine is NOT suitable for pregnant women, those with thyroid conditions, or long-term use.
+  </p>
+</div>
+
+---
+
+## ☀️ Method 3: Solar Disinfection (SODIS)
+
+**Free method** using the sun's UV rays - perfect for long-term survival.
+
+<MethodSteps method="sodis" />
+
+### Exposure Times
+
+| Weather | Required Time |
+|---------|--------------|
+| Full sun | 6 hours |
+| 50% cloudy | 6 hours |
+| Mostly cloudy | 2 days |
+| Continuous rain | ❌ Use other method |
+
+---
+
+## 🧪 Method 4: DIY Filtration
+
+Build your own filter from natural materials:
+
+<FilterDiagram />
+
+**Remember:** Filtration removes particles but most DIY filters do NOT remove all pathogens. Always disinfect after filtering!
+
+---
+
+## 📋 Quick Decision Guide
+
+| Situation | Best Method |
+|-----------|-------------|
+| Have fire/fuel | Boiling |
+| Backpacking | Filter + chemical backup |
+| Emergency kit | Chemical tablets |
+| Long-term survival | SODIS + DIY filter |
+| Saltwater | Distillation only |
+| Chemical spill | Distillation only |
+
+---
+
+## 🔄 Combining Methods (Maximum Safety)
+
+For questionable water sources, combine methods:
+
+1. **Pre-filter** (cloth, coffee filter)
+2. **Filter** (commercial or DIY)
+3. **Disinfect** (boil, chemical, or UV)
+4. **Store safely** (covered, clean container)
+
+---
+
+<div className="text-center text-gray-500 text-sm mt-8">
+  Last updated: January 2026 | License: CC-BY-SA 4.0
+  
+  **Safe water saves lives. When in doubt, use multiple methods.**
+</div>
