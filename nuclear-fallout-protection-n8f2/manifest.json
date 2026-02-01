@@ -17,6 +17,13 @@
       "features": ["offline", "printable", "universal"],
       "requirements": [],
       "priority": 3
+    },
+    "pdf": {
+      "file": "print-version.pdf",
+      "description": "Professionally designed print version with diagrams and quick reference cards",
+      "features": ["printable", "designed", "offline"],
+      "requirements": [],
+      "priority": 2
     }
   },
   "assets": {

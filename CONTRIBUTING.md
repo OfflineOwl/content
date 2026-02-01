@@ -51,6 +51,65 @@ Use format: `{slug}-{id}`
 | Document | `manual.pdf` |
 | Data | `data.json`, `reference.csv` |
 
+## Multiple Formats & Print PDFs
+
+Content can be provided in multiple formats. Add a `manifest.json` to your folder:
+
+```json
+{
+  "id": "a7x9",
+  "title": "My Guide",
+  "description": "Guide description...",
+  "version": "1.0.0",
+  "formats": {
+    "mdx": {
+      "file": "index.mdx",
+      "description": "Interactive version with components",
+      "features": ["interactive", "animated"],
+      "priority": 1
+    },
+    "md": {
+      "file": "index.md",
+      "description": "Standard markdown version",
+      "features": ["offline"],
+      "priority": 2
+    },
+    "pdf": {
+      "file": "print-version.pdf",
+      "description": "Designed PDF for printing",
+      "features": ["printable", "designed"],
+      "priority": 2
+    },
+    "txt": {
+      "file": "index.txt",
+      "description": "Plain text for any device",
+      "features": ["universal", "offline"],
+      "priority": 3
+    }
+  },
+  "assets": {
+    "images": [
+      { "file": "diagram.svg", "alt": "Diagram description" }
+    ]
+  }
+}
+```
+
+### Print-Ready PDFs
+
+If you have a professionally designed PDF version:
+
+1. Add the PDF file to your content folder (e.g., `print-version.pdf`)
+2. Add a `pdf` entry to `manifest.json` formats
+3. The PDF will appear as a "Print PDF" button on all platforms
+
+**PDF Best Practices:**
+- Include page numbers
+- Use clear headings for scanning
+- Include quick-reference cards or checklists
+- Optimize file size (aim for < 5MB)
+- Ensure text is searchable (not just images)
+
 ## Optional Metadata
 
 Add `meta.json` to your folder for extra config:
