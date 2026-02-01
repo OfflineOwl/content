@@ -1,15 +1,15 @@
-# Contributing to OfflineOwl Content
+# Contributing to OfflineOwl Resources
 
-Thank you for contributing original content to OfflineOwl!
+Thank you for contributing original resources to OfflineOwl!
 
 ## Two Repositories
 
 | Repository | Purpose |
 |------------|---------|
-| **This repo** (`content`) | Actual content files |
+| **This repo** (`resource`) | Actual resource files |
 | [offlineowl/registry](https://github.com/offlineowl/registry) | JSON metadata index |
 
-**When adding content, submit PRs to both repos.**
+**When adding resources, submit PRs to both repos.**
 
 ---
 
@@ -18,7 +18,7 @@ Thank you for contributing original content to OfflineOwl!
 Every piece of content is a folder at the root:
 
 ```
-content/
+resource/
 ├── water-purification-wkdx/
 │   ├── index.mdx
 │   └── assets/
@@ -29,7 +29,7 @@ content/
     └── video.mp4
 ```
 
-**Flat structure** - No nested categories. One folder per content item.
+**Flat structure** - No nested categories. One folder per resource item.
 
 ## Folder Naming
 
@@ -99,7 +99,7 @@ Content can be provided in multiple formats. Add a `manifest.json` to your folde
 
 If you have a professionally designed PDF version:
 
-1. Add the PDF file to your content folder (e.g., `print-version.pdf`)
+1. Add the PDF file to your resource folder (e.g., `print-version.pdf`)
 2. Add a `pdf` entry to `manifest.json` formats
 3. The PDF will appear as a "Print PDF" button on all platforms
 
@@ -146,7 +146,7 @@ my-guide-a7x9/
     └── diagram.png
 ```
 
-**For interactive content:**
+**For interactive resources:**
 ```
 my-quiz-k2m3/
 ├── index.html

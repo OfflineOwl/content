@@ -1,14 +1,14 @@
-# OfflineOwl Content
+# OfflineOwl Resources
 
-First-party content for [OfflineOwl](https://offlineowl.app) - your offline survival and preparedness companion.
+First-party resources for [OfflineOwl](https://offlineowl.app) - your offline survival and preparedness companion.
 
 This repository contains original guides, interactive tools, games, and media created by the OfflineOwl team and contributors.
 
 ## Structure
 
 ```
-content/
-├── water-purification-wkdx/   # One folder per content item
+resource/
+├── water-purification-wkdx/   # One folder per resource item
 │   ├── index.mdx              # Main content file
 │   ├── meta.json              # Optional metadata
 │   └── assets/                # Images, etc.
@@ -24,7 +24,7 @@ content/
 └── README.md
 ```
 
-**Flat structure** - Every content item is a folder at root level. No nested categories.
+**Flat structure** - Every resource item is a folder at root level. No nested categories.
 
 ## Folder Naming
 
