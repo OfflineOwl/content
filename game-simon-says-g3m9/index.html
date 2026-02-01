@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Signal Sequence - Emergency Pattern Training</title>
+    <style>
+        :root {
+            --bg-primary: #1a1a2e;
+            --bg-secondary: #16213e;
+            --accent: #e94560;
+            --text-primary: #ffffff;
+            --text-secondary: #a0aec0;
+            
+            --color-red: #e94560;
+            --color-red-light: #ff6b8a;
+            --color-blue: #3b82f6;
+            --color-blue-light: #60a5fa;
+            --color-green: #10b981;
+            --color-green-light: #34d399;
+            --color-yellow: #f59e0b;
+            --color-yellow-light: #fbbf24;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            padding: 0.5rem 0;
+        }
+
+        h1 {
+            font-size: 1.25rem;
+            margin-bottom: 0.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .subtitle {
+            color: #a0aec0;
+            font-size: 0.8rem;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            padding: 0.75rem;
+            background: #16213e;
+            border-radius: 12px;
+            margin: 0.5rem 0;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #e94560;
+        }
+
+        .stat-label {
+            font-size: 0.65rem;
+            color: #a0aec0;
+            text-transform: uppercase;
+        }
+
+        .game-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.5rem 0;
+        }
+
+        .status-message {
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            min-height: 1.5rem;
+            color: #a0aec0;
+        }
+
+        .status-message.active {
+            color: #f59e0b;
+        }
+
+        .status-message.your-turn {
+            color: #10b981;
+        }
+
+        .status-message.error {
+            color: #e94560;
+        }
+
+        .simon-board {
+            display: grid;
+            grid-template-columns: 120px 120px;
+            grid-template-rows: 120px 120px;
+            gap: 8px;
+            padding: 16px;
+            background: #16213e;
+            border-radius: 50%;
+        }
+
+        .simon-btn {
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.1s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .simon-btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: white;
+            opacity: 0;
+            transition: opacity 0.1s;
+            border-radius: inherit;
+        }
+
+        .simon-btn:disabled {
+            cursor: not-allowed;
+        }
+
+        .simon-btn.lit::after {
+            opacity: 0.5;
+        }
+
+        .btn-red {
+            background: #e94560;
+            border-top-left-radius: 100%;
+        }
+
+        .btn-blue {
+            background: #3b82f6;
+            border-top-right-radius: 100%;
+        }
+
+        .btn-green {
+            background: #10b981;
+            border-bottom-left-radius: 100%;
+        }
+
+        .btn-yellow {
+            background: #f59e0b;
+            border-bottom-right-radius: 100%;
+        }
+
+        .btn-red.lit { background: #ff6b8a; }
+        .btn-blue.lit { background: #60a5fa; }
+        .btn-green.lit { background: #34d399; }
+        .btn-yellow.lit { background: #fbbf24; }
+
+        .simon-btn:active:not(:disabled) {
+            transform: scale(0.95);
+        }
+
+        .controls {
+            display: flex;
+            gap: 1rem;
+            padding: 0.5rem;
+            justify-content: center;
+        }
+
+        .btn {
+            background: #e94560;
+            color: white;
+            border: none;
+            padding: 0.6rem 1.5rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .btn:active {
+            transform: scale(0.95);
+            background: #d63d56;
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .mode-selector {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+        }
+
+        .mode-btn {
+            padding: 0.4rem 0.75rem;
+            background: #16213e;
+            border: 2px solid transparent;
+            color: #ffffff;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.75rem;
+        }
+
+        .mode-btn.active {
+            border-color: #e94560;
+            background: rgba(233, 69, 96, 0.2);
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(26, 26, 46, 0.98);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            z-index: 9999;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .overlay.hidden {
+            display: none;
+        }
+
+        .overlay-content {
+            background: #16213e;
+            padding: 1.5rem;
+            border-radius: 16px;
+            border: 2px solid #e94560;
+            max-width: 300px;
+            width: 90%;
+        }
+
+        .overlay-icon {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .overlay-title {
+            font-size: 1.5rem;
+            color: #e94560;
+            margin-bottom: 0.75rem;
+        }
+
+        .overlay-text {
+            color: #a0aec0;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .high-score {
+            color: #fbbf24;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+
+        .overlay-btn {
+            background: #e94560;
+            color: #ffffff;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .overlay-btn:active {
+            transform: scale(0.95);
+            background: #d63d56;
+        }
+
+        footer {
+            text-align: center;
+            padding: 0.5rem;
+            color: #a0aec0;
+            font-size: 0.6rem;
+        }
+
+        /* Signal icons inside buttons */
+        .signal-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📡 Signal Sequence</h1>
+            <p class="subtitle">Emergency Pattern Memory Training</p>
+        </header>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value" id="round">0</div>
+                <div class="stat-label">Round</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="score">0</div>
+                <div class="stat-label">Score</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="highScore">0</div>
+                <div class="stat-label">Best</div>
+            </div>
+        </div>
+
+        <div class="mode-selector">
+            <button class="mode-btn active" data-speed="slow">Slow</button>
+            <button class="mode-btn" data-speed="normal">Normal</button>
+            <button class="mode-btn" data-speed="fast">Fast</button>
+        </div>
+
+        <div class="game-area">
+            <div class="status-message" id="statusMessage">Press Start to Begin</div>
+
+            <div class="simon-board">
+                <button class="simon-btn btn-red" data-color="red" disabled>
+                    <span class="signal-icon">🔴</span>
+                </button>
+                <button class="simon-btn btn-blue" data-color="blue" disabled>
+                    <span class="signal-icon">🔵</span>
+                </button>
+                <button class="simon-btn btn-green" data-color="green" disabled>
+                    <span class="signal-icon">🟢</span>
+                </button>
+                <button class="simon-btn btn-yellow" data-color="yellow" disabled>
+                    <span class="signal-icon">🟡</span>
+                </button>
+            </div>
+
+            <div class="controls">
+                <button class="btn" id="startBtn" onclick="startGame()">Start Game</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay hidden" id="gameOverOverlay">
+        <div class="overlay-content">
+            <div class="overlay-icon">💥</div>
+            <h2 class="overlay-title">Sequence Lost!</h2>
+            <p class="overlay-text" id="gameOverText">You remembered 0 signals</p>
+            <p class="high-score" id="highScoreText"></p>
+            <button class="overlay-btn" onclick="startGame(); closeOverlay();">Try Again</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Signal Sequence - Pattern Memory Game | OfflineOwl</p>
+    </footer>
+
+    <script>
+        // Audio context for sound effects
+        let audioCtx = null;
+
+        function getAudioContext() {
+            if (!audioCtx) {
+                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            }
+            return audioCtx;
+        }
+
+        function playTone(frequency, duration = 0.2) {
+            try {
+                const ctx = getAudioContext();
+                const oscillator = ctx.createOscillator();
+                const gainNode = ctx.createGain();
+                
+                oscillator.connect(gainNode);
+                gainNode.connect(ctx.destination);
+                
+                oscillator.frequency.value = frequency;
+                oscillator.type = 'sine';
+                
+                gainNode.gain.setValueAtTime(0.3, ctx.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + duration);
+                
+                oscillator.start(ctx.currentTime);
+                oscillator.stop(ctx.currentTime + duration);
+            } catch (e) {
+                // Audio not supported
+            }
+        }
+
+        const colorFrequencies = {
+            red: 329.63,    // E4
+            blue: 261.63,   // C4
+            green: 392.00,  // G4
+            yellow: 440.00  // A4
+        };
+
+        const speeds = {
+            slow: { lightDuration: 600, pauseDuration: 300 },
+            normal: { lightDuration: 400, pauseDuration: 200 },
+            fast: { lightDuration: 250, pauseDuration: 125 }
+        };
+
+        let sequence = [];
+        let playerIndex = 0;
+        let round = 0;
+        let score = 0;
+        let highScore = parseInt(localStorage.getItem('simon-high-score') || '0');
+        let isPlaying = false;
+        let isPlayerTurn = false;
+        let currentSpeed = 'normal';
+
+        const buttons = document.querySelectorAll('.simon-btn');
+        const statusMessage = document.getElementById('statusMessage');
+        const startBtn = document.getElementById('startBtn');
+
+        document.getElementById('highScore').textContent = highScore;
+
+        // Speed selector
+        document.querySelectorAll('.mode-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentSpeed = btn.dataset.speed;
+            });
+        });
+
+        // Button click handlers
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (!isPlayerTurn) return;
+                const color = btn.dataset.color;
+                handlePlayerInput(color);
+            });
+
+            // Touch events for mobile
+            btn.addEventListener('touchstart', (e) => {
+                e.preventDefault();
+                if (!isPlayerTurn) return;
+                lightButton(btn.dataset.color, 150);
+            }, { passive: false });
+        });
+
+        function lightButton(color, duration = speeds[currentSpeed].lightDuration) {
+            const btn = document.querySelector(`[data-color="${color}"]`);
+            btn.classList.add('lit');
+            playTone(colorFrequencies[color], duration / 1000);
+            
+            setTimeout(() => {
+                btn.classList.remove('lit');
+            }, duration);
+        }
+
+        function setButtonsEnabled(enabled) {
+            buttons.forEach(btn => {
+                btn.disabled = !enabled;
+            });
+        }
+
+        async function playSequence() {
+            isPlayerTurn = false;
+            setButtonsEnabled(false);
+            statusMessage.textContent = 'Watch the pattern...';
+            statusMessage.className = 'status-message active';
+
+            const { lightDuration, pauseDuration } = speeds[currentSpeed];
+
+            await sleep(500);
+
+            for (let i = 0; i < sequence.length; i++) {
+                lightButton(sequence[i], lightDuration);
+                await sleep(lightDuration + pauseDuration);
+            }
+
+            await sleep(300);
+            
+            isPlayerTurn = true;
+            setButtonsEnabled(true);
+            playerIndex = 0;
+            statusMessage.textContent = 'Your turn! Repeat the pattern';
+            statusMessage.className = 'status-message your-turn';
+        }
+
+        function handlePlayerInput(color) {
+            lightButton(color, 150);
+
+            if (color === sequence[playerIndex]) {
+                playerIndex++;
+                
+                if (playerIndex === sequence.length) {
+                    // Round complete!
+                    score += round * 10;
+                    document.getElementById('score').textContent = score;
+                    
+                    isPlayerTurn = false;
+                    setButtonsEnabled(false);
+                    statusMessage.textContent = 'Correct! Next round...';
+                    statusMessage.className = 'status-message';
+                    
+                    setTimeout(nextRound, 1000);
+                }
+            } else {
+                // Wrong!
+                gameOver();
+            }
+        }
+
+        function addToSequence() {
+            const colors = ['red', 'blue', 'green', 'yellow'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            sequence.push(randomColor);
+        }
+
+        function nextRound() {
+            round++;
+            document.getElementById('round').textContent = round;
+            
+            addToSequence();
+            playSequence();
+        }
+
+        function startGame() {
+            sequence = [];
+            round = 0;
+            score = 0;
+            playerIndex = 0;
+            isPlaying = true;
+
+            document.getElementById('round').textContent = '0';
+            document.getElementById('score').textContent = '0';
+            startBtn.textContent = 'Restart';
+            
+            closeOverlay();
+            nextRound();
+        }
+
+        function gameOver() {
+            isPlaying = false;
+            isPlayerTurn = false;
+            setButtonsEnabled(false);
+            
+            // Play error sound
+            playTone(150, 0.5);
+            
+            statusMessage.textContent = 'Wrong pattern!';
+            statusMessage.className = 'status-message error';
+
+            // Flash all buttons red
+            buttons.forEach(btn => btn.classList.add('lit'));
+            setTimeout(() => {
+                buttons.forEach(btn => btn.classList.remove('lit'));
+            }, 500);
+
+            // Update high score
+            let newRecord = false;
+            if (score > highScore) {
+                highScore = score;
+                localStorage.setItem('simon-high-score', highScore);
+                document.getElementById('highScore').textContent = highScore;
+                newRecord = true;
+            }
+
+            // Show game over screen
+            setTimeout(() => {
+                document.getElementById('gameOverText').textContent = 
+                    `You remembered ${round} signals and scored ${score} points!`;
+                document.getElementById('highScoreText').textContent = 
+                    newRecord ? '🏆 New High Score!' : `Best: ${highScore} points`;
+                document.getElementById('gameOverOverlay').classList.remove('hidden');
+            }, 600);
+
+            startBtn.textContent = 'Start Game';
+        }
+
+        function closeOverlay() {
+            document.getElementById('gameOverOverlay').classList.add('hidden');
+        }
+
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        // Keyboard support
+        document.addEventListener('keydown', (e) => {
+            if (!isPlayerTurn) return;
+            
+            const keyMap = {
+                'q': 'red',
+                'w': 'blue',
+                'a': 'green',
+                's': 'yellow',
+                '1': 'red',
+                '2': 'blue',
+                '3': 'green',
+                '4': 'yellow'
+            };
+            
+            if (keyMap[e.key.toLowerCase()]) {
+                handlePlayerInput(keyMap[e.key.toLowerCase()]);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Hangman - Survival Words</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+        }
+        h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+        .subtitle { color: #a0aec0; font-size: 0.8rem; margin-bottom: 1rem; }
+        .game-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        .hangman {
+            width: 150px;
+            height: 150px;
+            background: #16213e;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+        .word {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .letter-box {
+            width: 35px;
+            height: 45px;
+            background: #16213e;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-bottom: 3px solid #e94560;
+        }
+        .letter-box.revealed { color: #4ade80; border-bottom-color: #4ade80; }
+        .hint {
+            color: #a0aec0;
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 0.5rem 1rem;
+            background: #16213e;
+            border-radius: 6px;
+        }
+        .keyboard {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            justify-content: center;
+            max-width: 320px;
+        }
+        .key {
+            width: 32px;
+            height: 40px;
+            background: #16213e;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .key:active { background: #e94560; }
+        .key.correct { background: #4ade80; color: #1a1a2e; }
+        .key.wrong { background: #e94560; opacity: 0.5; }
+        .key:disabled { opacity: 0.3; cursor: not-allowed; }
+        .stats {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .stat { text-align: center; }
+        .stat-value { font-size: 1.25rem; font-weight: bold; color: #e94560; }
+        .stat-label { font-size: 0.65rem; color: #a0aec0; }
+        .btn {
+            background: #e94560;
+            color: white;
+            border: none;
+            padding: 0.6rem 1.5rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 0.5rem;
+        }
+        .btn:active { transform: scale(0.95); }
+        .message {
+            font-size: 1.25rem;
+            font-weight: bold;
+            min-height: 2rem;
+        }
+        .message.win { color: #4ade80; }
+        .message.lose { color: #e94560; }
+    </style>
+</head>
+<body>
+    <h1>🎯 Hangman</h1>
+    <p class="subtitle">Survival vocabulary challenge</p>
+    
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-value" id="wins">0</div>
+            <div class="stat-label">Wins</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="streak">0</div>
+            <div class="stat-label">Streak</div>
+        </div>
+    </div>
+    
+    <div class="game-area">
+        <div class="hangman" id="hangman">😀</div>
+        <div class="message" id="message"></div>
+        <div class="word" id="word"></div>
+        <div class="hint" id="hint"></div>
+        <div class="keyboard" id="keyboard"></div>
+        <button class="btn" id="newGameBtn" onclick="newGame()">New Word</button>
+    </div>
+
+    <script>
+        const words = [
+            { word: 'WATER', hint: 'Essential for survival' },
+            { word: 'SHELTER', hint: 'Protection from elements' },
+            { word: 'FIRE', hint: 'Provides warmth and light' },
+            { word: 'COMPASS', hint: 'Navigation tool' },
+            { word: 'RADIO', hint: 'Emergency communication' },
+            { word: 'BANDAGE', hint: 'First aid supply' },
+            { word: 'FLASHLIGHT', hint: 'Portable light source' },
+            { word: 'BLANKET', hint: 'Keeps you warm' },
+            { word: 'KNIFE', hint: 'Multi-purpose tool' },
+            { word: 'ROPE', hint: 'Useful for climbing' },
+            { word: 'WHISTLE', hint: 'Signal for help' },
+            { word: 'MATCHES', hint: 'Start a fire' },
+            { word: 'CANTEEN', hint: 'Holds water' },
+            { word: 'TENT', hint: 'Portable shelter' },
+            { word: 'MAP', hint: 'Shows your location' },
+            { word: 'BATTERY', hint: 'Power source' },
+            { word: 'MEDICINE', hint: 'Treats illness' },
+            { word: 'FILTER', hint: 'Purifies water' },
+            { word: 'SIGNAL', hint: 'Call for rescue' },
+            { word: 'RATIONS', hint: 'Emergency food' }
+        ];
+        
+        const faces = ['😀', '😟', '😰', '😨', '😱', '💀'];
+        
+        let currentWord = '';
+        let guessedLetters = [];
+        let wrongGuesses = 0;
+        let gameActive = false;
+        let wins = 0;
+        let streak = 0;
+        
+        function createKeyboard() {
+            const keyboard = document.getElementById('keyboard');
+            keyboard.innerHTML = '';
+            'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').forEach(letter => {
+                const key = document.createElement('button');
+                key.className = 'key';
+                key.textContent = letter;
+                key.onclick = () => guess(letter);
+                keyboard.appendChild(key);
+            });
+        }
+        
+        function newGame() {
+            const wordObj = words[Math.floor(Math.random() * words.length)];
+            currentWord = wordObj.word;
+            guessedLetters = [];
+            wrongGuesses = 0;
+            gameActive = true;
+            
+            document.getElementById('hint').textContent = `Hint: ${wordObj.hint}`;
+            document.getElementById('message').textContent = '';
+            document.getElementById('message').className = 'message';
+            document.getElementById('hangman').textContent = faces[0];
+            
+            createKeyboard();
+            renderWord();
+        }
+        
+        function renderWord() {
+            const wordEl = document.getElementById('word');
+            wordEl.innerHTML = '';
+            currentWord.split('').forEach(letter => {
+                const box = document.createElement('div');
+                box.className = 'letter-box' + (guessedLetters.includes(letter) ? ' revealed' : '');
+                box.textContent = guessedLetters.includes(letter) ? letter : '';
+                wordEl.appendChild(box);
+            });
+        }
+        
+        function guess(letter) {
+            if (!gameActive || guessedLetters.includes(letter)) return;
+            
+            guessedLetters.push(letter);
+            const key = [...document.querySelectorAll('.key')].find(k => k.textContent === letter);
+            
+            if (currentWord.includes(letter)) {
+                key.classList.add('correct');
+                renderWord();
+                
+                if (currentWord.split('').every(l => guessedLetters.includes(l))) {
+                    gameActive = false;
+                    wins++;
+                    streak++;
+                    document.getElementById('wins').textContent = wins;
+                    document.getElementById('streak').textContent = streak;
+                    document.getElementById('message').textContent = '🎉 You Win!';
+                    document.getElementById('message').className = 'message win';
+                    document.getElementById('hangman').textContent = '🥳';
+                }
+            } else {
+                key.classList.add('wrong');
+                wrongGuesses++;
+                document.getElementById('hangman').textContent = faces[Math.min(wrongGuesses, 5)];
+                
+                if (wrongGuesses >= 5) {
+                    gameActive = false;
+                    streak = 0;
+                    document.getElementById('streak').textContent = streak;
+                    document.getElementById('message').textContent = `The word was: ${currentWord}`;
+                    document.getElementById('message').className = 'message lose';
+                    
+                    // Reveal the word
+                    guessedLetters = currentWord.split('');
+                    renderWord();
+                }
+            }
+            
+            key.disabled = true;
+        }
+        
+        document.addEventListener('keydown', e => {
+            const letter = e.key.toUpperCase();
+            if (/^[A-Z]$/.test(letter)) {
+                guess(letter);
+            }
+        });
+        
+        newGame();
+    </script>
+</body>
+</html>

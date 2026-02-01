@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Number Guess</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+        }
+        h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+        .subtitle { color: #a0aec0; font-size: 0.85rem; margin-bottom: 1rem; }
+        .stats {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+        .stat {
+            background: #16213e;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .stat-value { font-size: 1.5rem; font-weight: bold; color: #e94560; }
+        .stat-label { font-size: 0.7rem; color: #a0aec0; }
+        .game-area {
+            background: #16213e;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            max-width: 320px;
+            width: 100%;
+        }
+        .hint {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            min-height: 2rem;
+        }
+        .hint.higher { color: #e94560; }
+        .hint.lower { color: #3b82f6; }
+        .hint.correct { color: #4ade80; }
+        .input-area {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        input[type="number"] {
+            flex: 1;
+            padding: 0.75rem;
+            font-size: 1.25rem;
+            background: #0f3460;
+            border: 2px solid #2d3748;
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+        }
+        input:focus { outline: none; border-color: #e94560; }
+        .btn {
+            background: #e94560;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .btn:active { transform: scale(0.95); }
+        .btn:disabled { opacity: 0.5; }
+        .guesses {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        .guess {
+            padding: 0.4rem 0.75rem;
+            background: #0f3460;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .guess.higher { border: 2px solid #e94560; }
+        .guess.lower { border: 2px solid #3b82f6; }
+        .range {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            background: #0f3460;
+            border-radius: 6px;
+            font-size: 0.85rem;
+        }
+        .difficulty {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .diff-btn {
+            padding: 0.4rem 0.75rem;
+            background: #16213e;
+            border: 2px solid transparent;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+        .diff-btn.active { border-color: #e94560; }
+    </style>
+</head>
+<body>
+    <h1>🔢 Number Guess</h1>
+    <p class="subtitle">Can you find the secret number?</p>
+    
+    <div class="difficulty">
+        <button class="diff-btn active" data-max="50">1-50</button>
+        <button class="diff-btn" data-max="100">1-100</button>
+        <button class="diff-btn" data-max="500">1-500</button>
+    </div>
+    
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-value" id="attempts">0</div>
+            <div class="stat-label">Attempts</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="best">-</div>
+            <div class="stat-label">Best</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="wins">0</div>
+            <div class="stat-label">Wins</div>
+        </div>
+    </div>
+    
+    <div class="game-area">
+        <div class="range" id="range">Range: 1 - 50</div>
+        <div class="hint" id="hint">Make your first guess!</div>
+        
+        <div class="input-area">
+            <input type="number" id="guessInput" min="1" max="50" placeholder="?">
+            <button class="btn" id="guessBtn" onclick="makeGuess()">Guess</button>
+        </div>
+        
+        <button class="btn" style="background: #16213e; border: 2px solid #2d3748;" onclick="newGame()">New Game</button>
+        
+        <div class="guesses" id="guesses"></div>
+    </div>
+
+    <script>
+        let secretNumber = 0;
+        let attempts = 0;
+        let maxNumber = 50;
+        let gameActive = true;
+        let wins = 0;
+        let best = {};
+        
+        function newGame() {
+            secretNumber = Math.floor(Math.random() * maxNumber) + 1;
+            attempts = 0;
+            gameActive = true;
+            
+            document.getElementById('attempts').textContent = '0';
+            document.getElementById('hint').textContent = 'Make your first guess!';
+            document.getElementById('hint').className = 'hint';
+            document.getElementById('guesses').innerHTML = '';
+            document.getElementById('guessInput').value = '';
+            document.getElementById('guessInput').max = maxNumber;
+            document.getElementById('guessInput').disabled = false;
+            document.getElementById('guessBtn').disabled = false;
+            document.getElementById('range').textContent = `Range: 1 - ${maxNumber}`;
+            
+            const bestKey = `best-${maxNumber}`;
+            document.getElementById('best').textContent = best[bestKey] || '-';
+        }
+        
+        function makeGuess() {
+            if (!gameActive) return;
+            
+            const input = document.getElementById('guessInput');
+            const guess = parseInt(input.value);
+            
+            if (isNaN(guess) || guess < 1 || guess > maxNumber) {
+                document.getElementById('hint').textContent = `Enter a number between 1 and ${maxNumber}!`;
+                return;
+            }
+            
+            attempts++;
+            document.getElementById('attempts').textContent = attempts;
+            
+            const guessEl = document.createElement('span');
+            guessEl.className = 'guess';
+            guessEl.textContent = guess;
+            
+            if (guess === secretNumber) {
+                document.getElementById('hint').textContent = `🎉 Correct! It was ${secretNumber}!`;
+                document.getElementById('hint').className = 'hint correct';
+                guessEl.className = 'guess';
+                guessEl.style.background = '#4ade80';
+                guessEl.style.color = '#1a1a2e';
+                
+                gameActive = false;
+                wins++;
+                document.getElementById('wins').textContent = wins;
+                
+                const bestKey = `best-${maxNumber}`;
+                if (!best[bestKey] || attempts < best[bestKey]) {
+                    best[bestKey] = attempts;
+                    document.getElementById('best').textContent = attempts;
+                }
+                
+                document.getElementById('guessInput').disabled = true;
+                document.getElementById('guessBtn').disabled = true;
+            } else if (guess < secretNumber) {
+                document.getElementById('hint').textContent = `📈 Higher! Try a bigger number.`;
+                document.getElementById('hint').className = 'hint higher';
+                guessEl.classList.add('higher');
+            } else {
+                document.getElementById('hint').textContent = `📉 Lower! Try a smaller number.`;
+                document.getElementById('hint').className = 'hint lower';
+                guessEl.classList.add('lower');
+            }
+            
+            document.getElementById('guesses').appendChild(guessEl);
+            input.value = '';
+            input.focus();
+        }
+        
+        document.getElementById('guessInput').addEventListener('keypress', e => {
+            if (e.key === 'Enter') makeGuess();
+        });
+        
+        document.querySelectorAll('.diff-btn').forEach(btn => {
+            btn.onclick = () => {
+                document.querySelectorAll('.diff-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                maxNumber = parseInt(btn.dataset.max);
+                newGame();
+            };
+        });
+        
+        newGame();
+    </script>
+</body>
+</html>

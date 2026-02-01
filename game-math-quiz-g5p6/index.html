@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Math Quiz</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+        }
+        h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+        .stats {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .stat {
+            background: #16213e;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            text-align: center;
+            min-width: 70px;
+        }
+        .stat-value { font-size: 1.25rem; font-weight: bold; color: #e94560; }
+        .stat-label { font-size: 0.65rem; color: #a0aec0; }
+        .difficulty {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .diff-btn {
+            padding: 0.4rem 0.75rem;
+            background: #16213e;
+            border: 2px solid transparent;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+        .diff-btn.active { border-color: #e94560; }
+        .game-area {
+            background: #16213e;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            max-width: 350px;
+            width: 100%;
+        }
+        .problem {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #fbbf24;
+        }
+        .timer-bar {
+            width: 100%;
+            height: 8px;
+            background: #0f3460;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+        .timer-fill {
+            height: 100%;
+            background: #4ade80;
+            transition: width 0.1s linear;
+        }
+        .choices {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+        }
+        .choice-btn {
+            padding: 1rem;
+            background: #0f3460;
+            border: 2px solid #2d3748;
+            border-radius: 8px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+        }
+        .choice-btn:active { background: #e94560; }
+        .choice-btn.correct { background: #4ade80; border-color: #4ade80; }
+        .choice-btn.wrong { background: #e94560; border-color: #e94560; }
+        .message {
+            font-size: 1.25rem;
+            font-weight: bold;
+            min-height: 2rem;
+            margin-top: 1rem;
+        }
+        .btn {
+            background: #e94560;
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+        .operators {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+        .op-btn {
+            width: 40px;
+            height: 40px;
+            background: #16213e;
+            border: 2px solid transparent;
+            border-radius: 6px;
+            color: white;
+            font-size: 1.25rem;
+            cursor: pointer;
+        }
+        .op-btn.active { border-color: #4ade80; background: rgba(74, 222, 128, 0.2); }
+    </style>
+</head>
+<body>
+    <h1>🧮 Math Quiz</h1>
+    
+    <div class="difficulty">
+        <button class="diff-btn active" data-max="10">Easy</button>
+        <button class="diff-btn" data-max="50">Medium</button>
+        <button class="diff-btn" data-max="100">Hard</button>
+    </div>
+    
+    <div class="operators">
+        <button class="op-btn active" data-op="+">+</button>
+        <button class="op-btn active" data-op="-">−</button>
+        <button class="op-btn" data-op="×">×</button>
+        <button class="op-btn" data-op="÷">÷</button>
+    </div>
+    
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-value" id="score">0</div>
+            <div class="stat-label">Score</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="streak">0</div>
+            <div class="stat-label">Streak</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="time">60</div>
+            <div class="stat-label">Time</div>
+        </div>
+    </div>
+    
+    <div class="game-area">
+        <div class="problem" id="problem">? + ? = ?</div>
+        <div class="timer-bar"><div class="timer-fill" id="timerFill"></div></div>
+        <div class="choices" id="choices"></div>
+        <div class="message" id="message"></div>
+    </div>
+    
+    <button class="btn" onclick="startGame()">Start Game</button>
+
+    <script>
+        let maxNum = 10;
+        let operators = ['+', '-'];
+        let score = 0;
+        let streak = 0;
+        let timeLeft = 60;
+        let questionTime = 100;
+        let correctAnswer = 0;
+        let gameActive = false;
+        let gameTimer = null;
+        let questionTimer = null;
+        
+        function generateProblem() {
+            const op = operators[Math.floor(Math.random() * operators.length)];
+            let a, b, answer;
+            
+            switch(op) {
+                case '+':
+                    a = Math.floor(Math.random() * maxNum) + 1;
+                    b = Math.floor(Math.random() * maxNum) + 1;
+                    answer = a + b;
+                    break;
+                case '-':
+                    a = Math.floor(Math.random() * maxNum) + 1;
+                    b = Math.floor(Math.random() * a) + 1;
+                    answer = a - b;
+                    break;
+                case '×':
+                    a = Math.floor(Math.random() * Math.min(maxNum, 12)) + 1;
+                    b = Math.floor(Math.random() * Math.min(maxNum, 12)) + 1;
+                    answer = a * b;
+                    break;
+                case '÷':
+                    b = Math.floor(Math.random() * Math.min(maxNum, 12)) + 1;
+                    answer = Math.floor(Math.random() * Math.min(maxNum, 12)) + 1;
+                    a = b * answer;
+                    break;
+            }
+            
+            correctAnswer = answer;
+            document.getElementById('problem').textContent = `${a} ${op} ${b} = ?`;
+            
+            // Generate choices
+            const choices = [answer];
+            while (choices.length < 4) {
+                const wrong = answer + Math.floor(Math.random() * 11) - 5;
+                if (wrong !== answer && wrong >= 0 && !choices.includes(wrong)) {
+                    choices.push(wrong);
+                }
+            }
+            choices.sort(() => Math.random() - 0.5);
+            
+            const choicesEl = document.getElementById('choices');
+            choicesEl.innerHTML = '';
+            choices.forEach(c => {
+                const btn = document.createElement('button');
+                btn.className = 'choice-btn';
+                btn.textContent = c;
+                btn.onclick = () => checkAnswer(c, btn);
+                choicesEl.appendChild(btn);
+            });
+            
+            questionTime = 100;
+        }
+        
+        function checkAnswer(answer, btn) {
+            if (!gameActive) return;
+            
+            document.querySelectorAll('.choice-btn').forEach(b => b.disabled = true);
+            
+            if (answer === correctAnswer) {
+                btn.classList.add('correct');
+                score += Math.ceil(questionTime / 10);
+                streak++;
+                document.getElementById('score').textContent = score;
+                document.getElementById('streak').textContent = streak;
+                document.getElementById('message').textContent = '✓ Correct!';
+                document.getElementById('message').style.color = '#4ade80';
+            } else {
+                btn.classList.add('wrong');
+                document.querySelectorAll('.choice-btn').forEach(b => {
+                    if (parseInt(b.textContent) === correctAnswer) b.classList.add('correct');
+                });
+                streak = 0;
+                document.getElementById('streak').textContent = '0';
+                document.getElementById('message').textContent = `✗ Answer: ${correctAnswer}`;
+                document.getElementById('message').style.color = '#e94560';
+            }
+            
+            setTimeout(() => {
+                document.getElementById('message').textContent = '';
+                generateProblem();
+            }, 800);
+        }
+        
+        function startGame() {
+            score = 0;
+            streak = 0;
+            timeLeft = 60;
+            gameActive = true;
+            
+            document.getElementById('score').textContent = '0';
+            document.getElementById('streak').textContent = '0';
+            document.getElementById('time').textContent = '60';
+            document.getElementById('message').textContent = '';
+            
+            generateProblem();
+            
+            if (gameTimer) clearInterval(gameTimer);
+            if (questionTimer) clearInterval(questionTimer);
+            
+            gameTimer = setInterval(() => {
+                timeLeft--;
+                document.getElementById('time').textContent = timeLeft;
+                if (timeLeft <= 0) endGame();
+            }, 1000);
+            
+            questionTimer = setInterval(() => {
+                questionTime -= 2;
+                document.getElementById('timerFill').style.width = questionTime + '%';
+                if (questionTime <= 0) {
+                    document.getElementById('message').textContent = '⏱ Too slow!';
+                    document.getElementById('message').style.color = '#e94560';
+                    streak = 0;
+                    document.getElementById('streak').textContent = '0';
+                    setTimeout(generateProblem, 500);
+                }
+            }, 50);
+        }
+        
+        function endGame() {
+            gameActive = false;
+            clearInterval(gameTimer);
+            clearInterval(questionTimer);
+            document.getElementById('message').textContent = `Game Over! Score: ${score}`;
+            document.getElementById('message').style.color = '#fbbf24';
+        }
+        
+        document.querySelectorAll('.diff-btn').forEach(btn => {
+            btn.onclick = () => {
+                document.querySelectorAll('.diff-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                maxNum = parseInt(btn.dataset.max);
+            };
+        });
+        
+        document.querySelectorAll('.op-btn').forEach(btn => {
+            btn.onclick = () => {
+                btn.classList.toggle('active');
+                operators = [...document.querySelectorAll('.op-btn.active')].map(b => b.dataset.op);
+                if (operators.length === 0) {
+                    btn.classList.add('active');
+                    operators = [btn.dataset.op];
+                }
+            };
+        });
+    </script>
+</body>
+</html>

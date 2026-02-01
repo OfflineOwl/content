@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Word Scramble</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+        }
+        h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+        .subtitle { color: #a0aec0; font-size: 0.85rem; margin-bottom: 1rem; }
+        .stats {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .stat {
+            background: #16213e;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .stat-value { font-size: 1.5rem; font-weight: bold; color: #e94560; }
+        .stat-label { font-size: 0.7rem; color: #a0aec0; }
+        .game-area {
+            background: #16213e;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            max-width: 350px;
+            width: 100%;
+        }
+        .hint {
+            color: #a0aec0;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            background: #0f3460;
+            border-radius: 6px;
+        }
+        .scrambled {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+        .letter-tile {
+            width: 45px;
+            height: 50px;
+            background: #e94560;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+        .letter-tile:active { transform: scale(0.9); }
+        .letter-tile.used { opacity: 0.3; cursor: default; }
+        .answer {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+            min-height: 55px;
+        }
+        .answer-slot {
+            width: 45px;
+            height: 50px;
+            background: #0f3460;
+            border: 2px dashed #4a5568;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .answer-slot.filled {
+            background: #4ade80;
+            border: none;
+            color: #1a1a2e;
+            cursor: pointer;
+        }
+        .controls {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+        .btn {
+            background: #e94560;
+            color: white;
+            border: none;
+            padding: 0.6rem 1rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .btn:active { transform: scale(0.95); }
+        .btn-secondary { background: #16213e; border: 2px solid #2d3748; }
+        .message {
+            font-size: 1.25rem;
+            font-weight: bold;
+            min-height: 2rem;
+            margin-top: 1rem;
+        }
+        .message.correct { color: #4ade80; }
+        .message.wrong { color: #e94560; }
+        .timer-bar {
+            width: 100%;
+            height: 6px;
+            background: #0f3460;
+            border-radius: 3px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+        .timer-fill {
+            height: 100%;
+            background: #4ade80;
+            transition: width 0.1s linear;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔤 Word Scramble</h1>
+    <p class="subtitle">Unscramble the survival words!</p>
+    
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-value" id="score">0</div>
+            <div class="stat-label">Score</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="streak">0</div>
+            <div class="stat-label">Streak</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="solved">0</div>
+            <div class="stat-label">Solved</div>
+        </div>
+    </div>
+    
+    <div class="game-area">
+        <div class="hint" id="hint">Hint will appear here</div>
+        <div class="timer-bar"><div class="timer-fill" id="timerFill"></div></div>
+        <div class="scrambled" id="scrambled"></div>
+        <div class="answer" id="answer"></div>
+        <div class="controls">
+            <button class="btn btn-secondary" onclick="clearAnswer()">Clear</button>
+            <button class="btn" onclick="checkAnswer()">Submit</button>
+            <button class="btn btn-secondary" onclick="skipWord()">Skip</button>
+        </div>
+        <div class="message" id="message"></div>
+    </div>
+
+    <script>
+        const words = [
+            { word: 'WATER', hint: 'Essential liquid for survival' },
+            { word: 'SHELTER', hint: 'Protection from elements' },
+            { word: 'FIRE', hint: 'Source of warmth and light' },
+            { word: 'COMPASS', hint: 'Navigation tool' },
+            { word: 'RADIO', hint: 'Emergency communication device' },
+            { word: 'BANDAGE', hint: 'First aid supply for wounds' },
+            { word: 'FLASHLIGHT', hint: 'Portable light source' },
+            { word: 'BLANKET', hint: 'Keeps you warm at night' },
+            { word: 'KNIFE', hint: 'Multi-purpose cutting tool' },
+            { word: 'ROPE', hint: 'Useful for climbing and tying' },
+            { word: 'WHISTLE', hint: 'Signal device for help' },
+            { word: 'MATCHES', hint: 'Fire starting tools' },
+            { word: 'TENT', hint: 'Portable shelter' },
+            { word: 'MAP', hint: 'Shows terrain and routes' },
+            { word: 'BATTERY', hint: 'Portable power source' },
+            { word: 'MEDICINE', hint: 'Treats illness and pain' },
+            { word: 'FILTER', hint: 'Purifies drinking water' },
+            { word: 'SIGNAL', hint: 'Way to call for rescue' },
+            { word: 'RATIONS', hint: 'Emergency food supplies' },
+            { word: 'TARP', hint: 'Waterproof cover' }
+        ];
+        
+        let currentWord = '';
+        let scrambled = [];
+        let answer = [];
+        let score = 0;
+        let streak = 0;
+        let solved = 0;
+        let timeLeft = 100;
+        let timerInterval = null;
+        
+        function shuffleArray(arr) {
+            const newArr = [...arr];
+            for (let i = newArr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
+            }
+            return newArr;
+        }
+        
+        function newWord() {
+            const wordObj = words[Math.floor(Math.random() * words.length)];
+            currentWord = wordObj.word;
+            scrambled = shuffleArray(currentWord.split(''));
+            
+            // Make sure it's actually scrambled
+            while (scrambled.join('') === currentWord && currentWord.length > 2) {
+                scrambled = shuffleArray(currentWord.split(''));
+            }
+            
+            answer = [];
+            timeLeft = 100;
+            
+            document.getElementById('hint').textContent = `Hint: ${wordObj.hint}`;
+            document.getElementById('message').textContent = '';
+            
+            renderScrambled();
+            renderAnswer();
+            
+            if (timerInterval) clearInterval(timerInterval);
+            timerInterval = setInterval(updateTimer, 100);
+        }
+        
+        function renderScrambled() {
+            const el = document.getElementById('scrambled');
+            el.innerHTML = '';
+            scrambled.forEach((letter, i) => {
+                const tile = document.createElement('button');
+                tile.className = 'letter-tile' + (answer.includes(i) ? ' used' : '');
+                tile.textContent = letter;
+                tile.onclick = () => selectLetter(i);
+                el.appendChild(tile);
+            });
+        }
+        
+        function renderAnswer() {
+            const el = document.getElementById('answer');
+            el.innerHTML = '';
+            for (let i = 0; i < currentWord.length; i++) {
+                const slot = document.createElement('div');
+                slot.className = 'answer-slot' + (answer[i] !== undefined ? ' filled' : '');
+                slot.textContent = answer[i] !== undefined ? scrambled[answer[i]] : '';
+                slot.onclick = () => removeLetter(i);
+                el.appendChild(slot);
+            }
+        }
+        
+        function selectLetter(index) {
+            if (answer.includes(index)) return;
+            if (answer.length >= currentWord.length) return;
+            
+            answer.push(index);
+            renderScrambled();
+            renderAnswer();
+        }
+        
+        function removeLetter(answerIndex) {
+            if (answer[answerIndex] === undefined) return;
+            answer.splice(answerIndex, 1);
+            renderScrambled();
+            renderAnswer();
+        }
+        
+        function clearAnswer() {
+            answer = [];
+            renderScrambled();
+            renderAnswer();
+        }
+        
+        function checkAnswer() {
+            const guess = answer.map(i => scrambled[i]).join('');
+            const msgEl = document.getElementById('message');
+            
+            if (guess === currentWord) {
+                msgEl.textContent = '✓ Correct!';
+                msgEl.className = 'message correct';
+                score += Math.ceil(timeLeft);
+                streak++;
+                solved++;
+                document.getElementById('score').textContent = score;
+                document.getElementById('streak').textContent = streak;
+                document.getElementById('solved').textContent = solved;
+                setTimeout(newWord, 1000);
+            } else if (answer.length === currentWord.length) {
+                msgEl.textContent = '✗ Try again!';
+                msgEl.className = 'message wrong';
+                streak = 0;
+                document.getElementById('streak').textContent = '0';
+            }
+        }
+        
+        function skipWord() {
+            document.getElementById('message').textContent = `The word was: ${currentWord}`;
+            document.getElementById('message').className = 'message wrong';
+            streak = 0;
+            document.getElementById('streak').textContent = '0';
+            setTimeout(newWord, 1500);
+        }
+        
+        function updateTimer() {
+            timeLeft -= 1;
+            document.getElementById('timerFill').style.width = timeLeft + '%';
+            
+            if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                document.getElementById('message').textContent = `Time's up! The word was: ${currentWord}`;
+                document.getElementById('message').className = 'message wrong';
+                streak = 0;
+                document.getElementById('streak').textContent = '0';
+                setTimeout(newWord, 2000);
+            }
+        }
+        
+        newWord();
+    </script>
+</body>
+</html>

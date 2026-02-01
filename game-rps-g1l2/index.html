@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Rock Paper Scissors</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+        }
+        h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+        .score-board {
+            display: flex;
+            gap: 2rem;
+            margin: 1rem 0;
+            padding: 1rem 2rem;
+            background: #16213e;
+            border-radius: 12px;
+        }
+        .score { text-align: center; }
+        .score-value { font-size: 2rem; font-weight: bold; }
+        .score-label { font-size: 0.75rem; color: #a0aec0; }
+        .player-score .score-value { color: #4ade80; }
+        .cpu-score .score-value { color: #e94560; }
+        .tie-score .score-value { color: #fbbf24; }
+        .arena {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            margin: 1rem 0;
+        }
+        .fighter {
+            text-align: center;
+        }
+        .fighter-label {
+            font-size: 0.85rem;
+            color: #a0aec0;
+            margin-bottom: 0.5rem;
+        }
+        .fighter-choice {
+            width: 100px;
+            height: 100px;
+            background: #16213e;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5rem;
+        }
+        .fighter-choice.win { box-shadow: 0 0 20px #4ade80; }
+        .fighter-choice.lose { box-shadow: 0 0 20px #e94560; }
+        .vs {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fbbf24;
+        }
+        .result {
+            font-size: 1.5rem;
+            font-weight: bold;
+            min-height: 2rem;
+            margin: 1rem 0;
+        }
+        .result.win { color: #4ade80; }
+        .result.lose { color: #e94560; }
+        .result.tie { color: #fbbf24; }
+        .choices {
+            display: flex;
+            gap: 1rem;
+        }
+        .choice-btn {
+            width: 90px;
+            height: 90px;
+            background: #16213e;
+            border: 3px solid #2d3748;
+            border-radius: 50%;
+            font-size: 2.5rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .choice-btn:hover { border-color: #e94560; transform: scale(1.1); }
+        .choice-btn:active { transform: scale(0.95); }
+        .choice-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+        .streak {
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: #16213e;
+            border-radius: 6px;
+            font-size: 0.85rem;
+        }
+        .streak-value { color: #fbbf24; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>✊ Rock Paper Scissors ✋</h1>
+    
+    <div class="score-board">
+        <div class="score player-score">
+            <div class="score-value" id="playerScore">0</div>
+            <div class="score-label">You</div>
+        </div>
+        <div class="score tie-score">
+            <div class="score-value" id="tieScore">0</div>
+            <div class="score-label">Ties</div>
+        </div>
+        <div class="score cpu-score">
+            <div class="score-value" id="cpuScore">0</div>
+            <div class="score-label">CPU</div>
+        </div>
+    </div>
+    
+    <div class="arena">
+        <div class="fighter">
+            <div class="fighter-label">You</div>
+            <div class="fighter-choice" id="playerChoice">❓</div>
+        </div>
+        <div class="vs">VS</div>
+        <div class="fighter">
+            <div class="fighter-label">CPU</div>
+            <div class="fighter-choice" id="cpuChoice">❓</div>
+        </div>
+    </div>
+    
+    <div class="result" id="result">Choose your weapon!</div>
+    
+    <div class="choices">
+        <button class="choice-btn" onclick="play('rock')">✊</button>
+        <button class="choice-btn" onclick="play('paper')">✋</button>
+        <button class="choice-btn" onclick="play('scissors')">✌️</button>
+    </div>
+    
+    <div class="streak">
+        Win Streak: <span class="streak-value" id="streak">0</span>
+    </div>
+
+    <script>
+        const choices = {
+            rock: '✊',
+            paper: '✋',
+            scissors: '✌️'
+        };
+        
+        const outcomes = {
+            rock: { rock: 'tie', paper: 'lose', scissors: 'win' },
+            paper: { rock: 'win', paper: 'tie', scissors: 'lose' },
+            scissors: { rock: 'lose', paper: 'win', scissors: 'tie' }
+        };
+        
+        let playerScore = 0, cpuScore = 0, tieScore = 0, streak = 0;
+        let isPlaying = false;
+        
+        function play(playerChoice) {
+            if (isPlaying) return;
+            isPlaying = true;
+            
+            const buttons = document.querySelectorAll('.choice-btn');
+            buttons.forEach(btn => btn.disabled = true);
+            
+            // Animate CPU choice
+            const cpuChoiceEl = document.getElementById('cpuChoice');
+            const playerChoiceEl = document.getElementById('playerChoice');
+            const resultEl = document.getElementById('result');
+            
+            playerChoiceEl.className = 'fighter-choice';
+            cpuChoiceEl.className = 'fighter-choice';
+            playerChoiceEl.textContent = choices[playerChoice];
+            
+            let animCount = 0;
+            const choiceKeys = Object.keys(choices);
+            const animInterval = setInterval(() => {
+                cpuChoiceEl.textContent = choices[choiceKeys[animCount % 3]];
+                animCount++;
+            }, 100);
+            
+            setTimeout(() => {
+                clearInterval(animInterval);
+                
+                const cpuChoice = choiceKeys[Math.floor(Math.random() * 3)];
+                cpuChoiceEl.textContent = choices[cpuChoice];
+                
+                const outcome = outcomes[playerChoice][cpuChoice];
+                
+                if (outcome === 'win') {
+                    playerScore++;
+                    streak++;
+                    resultEl.textContent = 'You Win! 🎉';
+                    resultEl.className = 'result win';
+                    playerChoiceEl.classList.add('win');
+                    cpuChoiceEl.classList.add('lose');
+                } else if (outcome === 'lose') {
+                    cpuScore++;
+                    streak = 0;
+                    resultEl.textContent = 'You Lose! 😢';
+                    resultEl.className = 'result lose';
+                    playerChoiceEl.classList.add('lose');
+                    cpuChoiceEl.classList.add('win');
+                } else {
+                    tieScore++;
+                    resultEl.textContent = "It's a Tie! 🤝";
+                    resultEl.className = 'result tie';
+                }
+                
+                document.getElementById('playerScore').textContent = playerScore;
+                document.getElementById('cpuScore').textContent = cpuScore;
+                document.getElementById('tieScore').textContent = tieScore;
+                document.getElementById('streak').textContent = streak;
+                
+                buttons.forEach(btn => btn.disabled = false);
+                isPlaying = false;
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

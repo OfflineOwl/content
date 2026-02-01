@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Typing Speed Test</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+        }
+        h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+        .stats {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .stat {
+            background: #16213e;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            text-align: center;
+            min-width: 80px;
+        }
+        .stat-value { font-size: 1.5rem; font-weight: bold; color: #e94560; }
+        .stat-label { font-size: 0.65rem; color: #a0aec0; }
+        .text-display {
+            background: #16213e;
+            padding: 1.5rem;
+            border-radius: 12px;
+            max-width: 500px;
+            width: 100%;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .char { color: #4a5568; }
+        .char.correct { color: #4ade80; }
+        .char.incorrect { color: #e94560; background: rgba(233, 69, 96, 0.2); }
+        .char.current { background: rgba(251, 191, 36, 0.3); border-bottom: 2px solid #fbbf24; }
+        .input-area {
+            max-width: 500px;
+            width: 100%;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.1rem;
+            background: #0f3460;
+            border: 2px solid #2d3748;
+            border-radius: 8px;
+            color: white;
+        }
+        input:focus { outline: none; border-color: #e94560; }
+        input:disabled { opacity: 0.5; }
+        .btn {
+            background: #e94560;
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+        .timer {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #fbbf24;
+            margin: 0.5rem 0;
+        }
+        .result {
+            background: #16213e;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            display: none;
+        }
+        .result.show { display: block; }
+        .result h2 { color: #4ade80; margin-bottom: 1rem; }
+        .result-stat { margin: 0.5rem 0; }
+        .result-stat span { color: #fbbf24; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>⌨️ Typing Speed Test</h1>
+    
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-value" id="wpm">0</div>
+            <div class="stat-label">WPM</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="accuracy">100%</div>
+            <div class="stat-label">Accuracy</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="best">0</div>
+            <div class="stat-label">Best WPM</div>
+        </div>
+    </div>
+    
+    <div class="timer" id="timer">60</div>
+    
+    <div class="text-display" id="textDisplay"></div>
+    
+    <div class="input-area">
+        <input type="text" id="inputField" placeholder="Start typing to begin..." autocomplete="off" autocapitalize="off">
+    </div>
+    
+    <button class="btn" onclick="startTest()">New Test</button>
+    
+    <div class="result" id="result">
+        <h2>Test Complete!</h2>
+        <div class="result-stat">Speed: <span id="finalWpm">0</span> WPM</div>
+        <div class="result-stat">Accuracy: <span id="finalAccuracy">0</span>%</div>
+        <div class="result-stat">Characters: <span id="finalChars">0</span></div>
+        <div class="result-stat" id="newRecord" style="color: #fbbf24; display: none;">🏆 New Personal Best!</div>
+    </div>
+
+    <script>
+        const texts = [
+            "Emergency preparedness is essential for survival. Keep a kit ready with water food and first aid supplies. Know your evacuation routes and have a plan for your family.",
+            "When disaster strikes remain calm and assess the situation. Check for injuries and provide first aid if needed. Listen to emergency broadcasts for official information.",
+            "Water is the most critical resource in any emergency. Store at least one gallon per person per day. Learn multiple methods to purify water in case supplies run out.",
+            "Fire can provide warmth light and a way to cook food. Learn multiple fire starting techniques. Always practice fire safety and never leave flames unattended.",
+            "Communication is vital during emergencies. Have a battery powered radio and know local emergency frequencies. Establish a meeting point for your family if separated.",
+            "First aid knowledge can save lives. Learn how to treat cuts burns and fractures. Keep a well stocked first aid kit and know how to use everything in it.",
+            "Shelter protects you from the elements. Know how to build emergency shelters from natural materials. Your home is usually the safest place unless ordered to evacuate."
+        ];
+        
+        let currentText = '';
+        let charIndex = 0;
+        let errors = 0;
+        let totalChars = 0;
+        let timeLeft = 60;
+        let timer = null;
+        let testStarted = false;
+        let best = parseInt(localStorage.getItem('typing-best') || '0');
+        
+        document.getElementById('best').textContent = best;
+        
+        function startTest() {
+            currentText = texts[Math.floor(Math.random() * texts.length)];
+            charIndex = 0;
+            errors = 0;
+            totalChars = 0;
+            timeLeft = 60;
+            testStarted = false;
+            
+            document.getElementById('timer').textContent = '60';
+            document.getElementById('wpm').textContent = '0';
+            document.getElementById('accuracy').textContent = '100%';
+            document.getElementById('result').classList.remove('show');
+            
+            renderText();
+            
+            const input = document.getElementById('inputField');
+            input.value = '';
+            input.disabled = false;
+            input.focus();
+            
+            if (timer) clearInterval(timer);
+        }
+        
+        function renderText() {
+            const display = document.getElementById('textDisplay');
+            display.innerHTML = currentText.split('').map((char, i) => {
+                let className = 'char';
+                if (i < charIndex) {
+                    className += totalChars > 0 && i < totalChars ? ' correct' : '';
+                }
+                if (i === charIndex) className += ' current';
+                return `<span class="${className}">${char}</span>`;
+            }).join('');
+        }
+        
+        document.getElementById('inputField').addEventListener('input', function(e) {
+            if (!testStarted) {
+                testStarted = true;
+                timer = setInterval(updateTimer, 1000);
+            }
+            
+            const inputValue = e.target.value;
+            const inputChar = inputValue[inputValue.length - 1];
+            
+            if (inputChar === currentText[charIndex]) {
+                charIndex++;
+                totalChars++;
+            } else if (inputValue.length > 0) {
+                errors++;
+                totalChars++;
+            }
+            
+            updateStats();
+            renderText();
+            
+            // Clear input to handle next character
+            e.target.value = '';
+            
+            if (charIndex >= currentText.length) {
+                // Text complete, load more
+                currentText = texts[Math.floor(Math.random() * texts.length)];
+                charIndex = 0;
+                renderText();
+            }
+        });
+        
+        function updateTimer() {
+            timeLeft--;
+            document.getElementById('timer').textContent = timeLeft;
+            
+            if (timeLeft <= 0) {
+                endTest();
+            }
+        }
+        
+        function updateStats() {
+            const minutes = (60 - timeLeft) / 60 || 1/60;
+            const wpm = Math.round((totalChars / 5) / minutes);
+            const accuracy = totalChars > 0 ? Math.round(((totalChars - errors) / totalChars) * 100) : 100;
+            
+            document.getElementById('wpm').textContent = wpm;
+            document.getElementById('accuracy').textContent = accuracy + '%';
+        }
+        
+        function endTest() {
+            clearInterval(timer);
+            document.getElementById('inputField').disabled = true;
+            
+            const wpm = parseInt(document.getElementById('wpm').textContent);
+            const accuracy = Math.round(((totalChars - errors) / totalChars) * 100);
+            
+            document.getElementById('finalWpm').textContent = wpm;
+            document.getElementById('finalAccuracy').textContent = accuracy;
+            document.getElementById('finalChars').textContent = totalChars;
+            
+            if (wpm > best) {
+                best = wpm;
+                localStorage.setItem('typing-best', best);
+                document.getElementById('best').textContent = best;
+                document.getElementById('newRecord').style.display = 'block';
+            } else {
+                document.getElementById('newRecord').style.display = 'none';
+            }
+            
+            document.getElementById('result').classList.add('show');
+        }
+        
+        startTest();
+    </script>
+</body>
+</html>

@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Breakout</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5rem;
+            touch-action: none;
+            overflow: hidden;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.25rem;
+        }
+        h1 { 
+            font-size: 1.25rem; 
+            text-shadow: 0 0 10px #e94560;
+        }
+        .settings-btn {
+            background: transparent;
+            border: 2px solid #3b82f6;
+            color: #3b82f6;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .settings-btn:active { background: #3b82f6; color: #fff; }
+        .stats {
+            display: flex;
+            gap: 1.25rem;
+            margin: 0.5rem 0;
+        }
+        .stat { text-align: center; }
+        .stat-value { 
+            font-size: 1.1rem; 
+            font-weight: bold; 
+            color: #e94560;
+            text-shadow: 0 0 8px rgba(233, 69, 96, 0.5);
+        }
+        .stat-label { font-size: 0.6rem; color: #a0aec0; text-transform: uppercase; }
+        .game-area {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(233, 69, 96, 0.3), inset 0 0 60px rgba(0,0,0,0.5);
+        }
+        #gameCanvas {
+            display: block;
+            background: linear-gradient(180deg, #0a1628 0%, #0f3460 100%);
+        }
+        .controls {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 0.5rem;
+            align-items: center;
+        }
+        .ctrl-btn {
+            width: 70px;
+            height: 45px;
+            background: linear-gradient(145deg, #1e2d4a, #16213e);
+            border: 2px solid #2a3f5f;
+            border-radius: 8px;
+            color: white;
+            font-size: 1.25rem;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: all 0.1s;
+        }
+        .ctrl-btn:active { 
+            background: linear-gradient(145deg, #e94560, #c73e54);
+            border-color: #e94560;
+            transform: scale(0.95);
+        }
+        .pause-btn {
+            width: 50px;
+            background: linear-gradient(145deg, #3b82f6, #2563eb);
+            border-color: #60a5fa;
+        }
+        .pause-btn.paused {
+            background: linear-gradient(145deg, #4ade80, #22c55e);
+            border-color: #86efac;
+        }
+        .btn {
+            background: linear-gradient(145deg, #e94560, #c73e54);
+            color: white;
+            border: none;
+            padding: 0.6rem 1.5rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 0.5rem;
+            box-shadow: 0 4px 15px rgba(233, 69, 96, 0.4);
+            transition: transform 0.1s;
+        }
+        .btn:active { transform: scale(0.95); }
+        .btn-secondary {
+            background: linear-gradient(145deg, #3b82f6, #2563eb);
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(10, 22, 40, 0.95);
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            backdrop-filter: blur(5px);
+        }
+        .overlay.show { display: flex; }
+        .overlay-content {
+            background: linear-gradient(145deg, #1e2d4a, #16213e);
+            padding: 1.5rem;
+            border-radius: 16px;
+            text-align: center;
+            border: 2px solid #e94560;
+            box-shadow: 0 0 40px rgba(233, 69, 96, 0.4);
+            max-width: 300px;
+            width: 90%;
+        }
+        .overlay-content.settings-panel {
+            border-color: #3b82f6;
+            box-shadow: 0 0 40px rgba(59, 130, 246, 0.4);
+        }
+        .overlay-title { 
+            font-size: 1.5rem; 
+            margin-bottom: 0.75rem;
+            text-shadow: 0 0 15px currentColor;
+        }
+        .win { color: #4ade80; }
+        .lose { color: #e94560; }
+        .paused-title { color: #3b82f6; }
+        .settings-title { color: #3b82f6; }
+        .final-stats { margin: 1rem 0; color: #a0aec0; }
+        .final-stats span { color: #ffffff; font-weight: bold; }
+        
+        /* Settings styles */
+        .setting-group {
+            margin: 1rem 0;
+            text-align: left;
+        }
+        .setting-label {
+            font-size: 0.75rem;
+            color: #a0aec0;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .setting-options {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .setting-option {
+            flex: 1;
+            padding: 0.5rem 0.25rem;
+            background: #16213e;
+            border: 2px solid #2a3f5f;
+            border-radius: 6px;
+            color: #a0aec0;
+            font-size: 0.7rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .setting-option:hover {
+            border-color: #3b82f6;
+            color: #fff;
+        }
+        .setting-option.active {
+            background: #3b82f6;
+            border-color: #60a5fa;
+            color: #fff;
+        }
+        .settings-buttons {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1.25rem;
+        }
+        .settings-buttons .btn {
+            flex: 1;
+            margin: 0;
+            padding: 0.5rem;
+            font-size: 0.8rem;
+        }
+        
+        .powerup-indicator {
+            position: absolute;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 10;
+        }
+        .powerup-badge {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.65rem;
+            font-weight: bold;
+            animation: pulse 1s infinite;
+            transition: all 0.2s;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        @keyframes warning-flash {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(0.95); }
+        }
+        .powerup-badge.expiring {
+            animation: warning-flash 0.4s infinite;
+            box-shadow: 0 0 10px currentColor;
+        }
+        .pw-expand { background: #4ade80; color: #000; }
+        .pw-multi { background: #f59e0b; color: #000; }
+        .pw-slow { background: #3b82f6; color: #fff; }
+        .pw-laser { background: #e94560; color: #fff; }
+        .pw-life { background: #ec4899; color: #fff; }
+        
+        /* Touch area for mobile dragging */
+        .touch-area {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 120px;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🧱 Breakout</h1>
+        <button class="settings-btn" onclick="openSettings()">⚙</button>
+    </div>
+    
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-value" id="score">0</div>
+            <div class="stat-label">Score</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="lives">❤️❤️❤️</div>
+            <div class="stat-label">Lives</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="level">1</div>
+            <div class="stat-label">Level</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="highScore">0</div>
+            <div class="stat-label">Best</div>
+        </div>
+    </div>
+    
+    <div class="game-area">
+        <canvas id="gameCanvas" width="320" height="420"></canvas>
+        <div class="powerup-indicator" id="powerupIndicator"></div>
+        <div class="touch-area" id="touchArea"></div>
+    </div>
+    
+    <div class="controls">
+        <button class="ctrl-btn" id="leftBtn">◄</button>
+        <button class="ctrl-btn pause-btn" id="pauseBtn">⏸</button>
+        <button class="ctrl-btn" id="rightBtn">►</button>
+    </div>
+    
+    <button class="btn" id="startBtn" onclick="startGame()">Start Game</button>
+    
+    <!-- Settings Overlay -->
+    <div class="overlay" id="settingsOverlay">
+        <div class="overlay-content settings-panel">
+            <div class="overlay-title settings-title">⚙ Settings</div>
+            
+            <div class="setting-group">
+                <span class="setting-label">Ball Speed</span>
+                <div class="setting-options">
+                    <button class="setting-option" data-setting="speed" data-value="slow">Slow</button>
+                    <button class="setting-option active" data-setting="speed" data-value="normal">Normal</button>
+                    <button class="setting-option" data-setting="speed" data-value="fast">Fast</button>
+                </div>
+            </div>
+            
+            <div class="setting-group">
+                <span class="setting-label">Paddle Size</span>
+                <div class="setting-options">
+                    <button class="setting-option" data-setting="paddle" data-value="small">Small</button>
+                    <button class="setting-option active" data-setting="paddle" data-value="normal">Normal</button>
+                    <button class="setting-option" data-setting="paddle" data-value="large">Large</button>
+                </div>
+            </div>
+            
+            <div class="setting-group">
+                <span class="setting-label">Starting Lives</span>
+                <div class="setting-options">
+                    <button class="setting-option" data-setting="lives" data-value="3">3</button>
+                    <button class="setting-option active" data-setting="lives" data-value="5">5</button>
+                    <button class="setting-option" data-setting="lives" data-value="7">7</button>
+                </div>
+            </div>
+            
+            <div class="setting-group">
+                <span class="setting-label">Power-ups</span>
+                <div class="setting-options">
+                    <button class="setting-option" data-setting="powerups" data-value="off">Off</button>
+                    <button class="setting-option" data-setting="powerups" data-value="rare">Rare</button>
+                    <button class="setting-option active" data-setting="powerups" data-value="normal">Normal</button>
+                </div>
+            </div>
+            
+            <div class="settings-buttons">
+                <button class="btn btn-secondary" onclick="resetSettings()">Reset</button>
+                <button class="btn" onclick="closeSettings()">Done</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <div class="overlay-title" id="overlayTitle">Game Over</div>
+            <div class="final-stats">
+                <p>Score: <span id="finalScore">0</span></p>
+                <p>Level: <span id="finalLevel">1</span></p>
+            </div>
+            <div id="overlayButtons">
+                <button class="btn" onclick="startGame(); closeOverlay();">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Game constants
+        const PADDLE_HEIGHT = 14;
+        const BALL_RADIUS = 7;
+        const BRICK_ROWS = 6;
+        const BRICK_COLS = 8;
+        const BRICK_WIDTH = 35;
+        const BRICK_HEIGHT = 16;
+        const BRICK_PADDING = 4;
+        const BRICK_OFFSET_TOP = 45;
+        const BRICK_OFFSET_LEFT = 8;
+        
+        // Settings (saved to localStorage)
+        let settings = {
+            speed: 'normal',    // slow, normal, fast
+            paddle: 'normal',   // small, normal, large
+            lives: '5',         // 3, 5, 7
+            powerups: 'normal'  // off, rare, normal
+        };
+        
+        // Speed multipliers
+        const SPEED_VALUES = { slow: 0.6, normal: 1.0, fast: 1.4 };
+        // Paddle sizes
+        const PADDLE_SIZES = { small: 55, normal: 75, large: 100 };
+        // Starting lives
+        const LIVES_VALUES = { '3': 3, '5': 5, '7': 7 };
+        // Powerup spawn rates
+        const POWERUP_RATES = { off: 0, rare: 0.08, normal: 0.18 };
+        
+        // Load saved settings
+        function loadSettings() {
+            const saved = localStorage.getItem('breakout-settings');
+            if (saved) {
+                try {
+                    settings = { ...settings, ...JSON.parse(saved) };
+                } catch (e) {}
+            }
+            updateSettingsUI();
+        }
+        
+        function saveSettings() {
+            localStorage.setItem('breakout-settings', JSON.stringify(settings));
+        }
+        
+        function updateSettingsUI() {
+            document.querySelectorAll('.setting-option').forEach(btn => {
+                const setting = btn.dataset.setting;
+                const value = btn.dataset.value;
+                btn.classList.toggle('active', settings[setting] === value);
+            });
+        }
+        
+        function openSettings() {
+            if (gameRunning && !gamePaused) togglePause();
+            document.getElementById('settingsOverlay').classList.add('show');
+        }
+        
+        function closeSettings() {
+            document.getElementById('settingsOverlay').classList.remove('show');
+            saveSettings();
+        }
+        
+        function resetSettings() {
+            settings = { speed: 'normal', paddle: 'normal', lives: '5', powerups: 'normal' };
+            updateSettingsUI();
+            saveSettings();
+        }
+        
+        // Setting option click handlers
+        document.querySelectorAll('.setting-option').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const setting = btn.dataset.setting;
+                const value = btn.dataset.value;
+                settings[setting] = value;
+                updateSettingsUI();
+            });
+        });
+        
+        // Game state
+        let paddleX, paddleWidth, paddleWidthBase;
+        let balls = []; // Support multiple balls
+        let bricks = [];
+        let powerups = [];
+        let particles = [];
+        let score = 0, lives = 3, level = 1, startingLives = 5;
+        let gameRunning = false, gamePaused = false;
+        let animationId = null;
+        let highScore = parseInt(localStorage.getItem('breakout-high') || '0');
+        let baseSpeed = 2.5; // Base ball speed (slower starting point)
+        
+        // Active powerup effects
+        let activePowerups = {
+            expand: 0,   // Timer for expanded paddle
+            slow: 0,     // Timer for slow motion
+            laser: 0     // Timer for laser mode
+        };
+        
+        // Brick colors with gradients
+        const brickColors = [
+            { main: '#e94560', light: '#ff6b8a', dark: '#c73e54' },
+            { main: '#f59e0b', light: '#fbbf24', dark: '#d97706' },
+            { main: '#4ade80', light: '#86efac', dark: '#22c55e' },
+            { main: '#3b82f6', light: '#60a5fa', dark: '#2563eb' },
+            { main: '#a855f7', light: '#c084fc', dark: '#9333ea' },
+            { main: '#ec4899', light: '#f472b6', dark: '#db2777' }
+        ];
+        
+        // Powerup types
+        const POWERUP_TYPES = [
+            { type: 'expand', symbol: '⬌', color: '#4ade80', name: 'Wide Paddle' },
+            { type: 'multi', symbol: '✦', color: '#f59e0b', name: 'Multi-Ball' },
+            { type: 'slow', symbol: '⏱', color: '#3b82f6', name: 'Slow Motion' },
+            { type: 'laser', symbol: '⚡', color: '#e94560', name: 'Power Shot' },
+            { type: 'life', symbol: '❤️', color: '#ec4899', name: 'Extra Life' }
+        ];
+        
+        function createBall(x, y, dx, dy) {
+            return { x, y, dx, dy, trail: [] };
+        }
+        
+        function initBricks() {
+            bricks = [];
+            const powerupRate = POWERUP_RATES[settings.powerups];
+            for (let r = 0; r < BRICK_ROWS; r++) {
+                bricks[r] = [];
+                for (let c = 0; c < BRICK_COLS; c++) {
+                    // Some bricks have more health at higher levels
+                    const health = (level > 2 && r < 2 && Math.random() < 0.3) ? 2 : 1;
+                    // Chance for powerup brick based on settings
+                    const hasPowerup = Math.random() < powerupRate;
+                    bricks[r][c] = { 
+                        x: 0, 
+                        y: 0, 
+                        status: health, 
+                        maxHealth: health,
+                        hasPowerup
+                    };
+                }
+            }
+        }
+        
+        function resetBall() {
+            paddleX = (canvas.width - paddleWidth) / 2;
+            // Much slower base speed, affected by settings
+            const speedMultiplier = SPEED_VALUES[settings.speed];
+            const speed = (baseSpeed + level * 0.2) * speedMultiplier;
+            balls = [createBall(
+                canvas.width / 2,
+                canvas.height - 60,
+                (Math.random() > 0.5 ? 1 : -1) * speed * 0.6,
+                -speed
+            )];
+        }
+        
+        function createParticles(x, y, color, count = 8) {
+            for (let i = 0; i < count; i++) {
+                particles.push({
+                    x, y,
+                    dx: (Math.random() - 0.5) * 6,
+                    dy: (Math.random() - 0.5) * 6,
+                    life: 30,
+                    color,
+                    size: Math.random() * 3 + 2
+                });
+            }
+        }
+        
+        function spawnPowerup(x, y) {
+            const type = POWERUP_TYPES[Math.floor(Math.random() * POWERUP_TYPES.length)];
+            powerups.push({
+                x, y,
+                dy: 2,
+                type: type.type,
+                symbol: type.symbol,
+                color: type.color
+            });
+        }
+        
+        function applyPowerup(type) {
+            switch (type) {
+                case 'expand':
+                    paddleWidth = paddleWidthBase * 1.5;
+                    activePowerups.expand = 600; // ~10 seconds
+                    break;
+                case 'multi':
+                    // Split each ball into 3
+                    const newBalls = [];
+                    balls.forEach(ball => {
+                        newBalls.push(ball);
+                        newBalls.push(createBall(ball.x, ball.y, ball.dx + 1.5, ball.dy));
+                        newBalls.push(createBall(ball.x, ball.y, ball.dx - 1.5, ball.dy));
+                    });
+                    balls = newBalls.slice(0, 5); // Max 5 balls
+                    break;
+                case 'slow':
+                    activePowerups.slow = 480; // ~8 seconds
+                    balls.forEach(b => {
+                        b.dx *= 0.6;
+                        b.dy *= 0.6;
+                    });
+                    break;
+                case 'laser':
+                    activePowerups.laser = 300; // ~5 seconds
+                    break;
+                case 'life':
+                    if (lives < 9) {
+                        lives++;
+                        updateLivesDisplay();
+                    }
+                    break;
+            }
+            updatePowerupIndicator();
+        }
+        
+        function updatePowerupIndicator() {
+            const container = document.getElementById('powerupIndicator');
+            let html = '';
+            
+            if (activePowerups.expand > 0) {
+                const secs = Math.ceil(activePowerups.expand / 60);
+                const expiring = activePowerups.expand < 180;
+                const className = expiring ? 'powerup-badge pw-expand expiring' : 'powerup-badge pw-expand';
+                html += `<span class="${className}">WIDE ${secs}s</span>`;
+            }
+            if (activePowerups.slow > 0) {
+                const secs = Math.ceil(activePowerups.slow / 60);
+                const expiring = activePowerups.slow < 180;
+                const className = expiring ? 'powerup-badge pw-slow expiring' : 'powerup-badge pw-slow';
+                html += `<span class="${className}">SLOW ${secs}s</span>`;
+            }
+            if (activePowerups.laser > 0) {
+                const secs = Math.ceil(activePowerups.laser / 60);
+                const expiring = activePowerups.laser < 180;
+                const className = expiring ? 'powerup-badge pw-laser expiring' : 'powerup-badge pw-laser';
+                html += `<span class="${className}">POWER ${secs}s</span>`;
+            }
+            if (balls.length > 1) {
+                html += `<span class="powerup-badge pw-multi">x${balls.length}</span>`;
+            }
+            
+            container.innerHTML = html;
+        }
+        
+        function updateLivesDisplay() {
+            document.getElementById('lives').textContent = '❤️'.repeat(lives);
+        }
+        
+        function drawBricks() {
+            for (let r = 0; r < BRICK_ROWS; r++) {
+                for (let c = 0; c < BRICK_COLS; c++) {
+                    const brick = bricks[r][c];
+                    if (brick.status > 0) {
+                        const brickX = c * (BRICK_WIDTH + BRICK_PADDING) + BRICK_OFFSET_LEFT;
+                        const brickY = r * (BRICK_HEIGHT + BRICK_PADDING) + BRICK_OFFSET_TOP;
+                        brick.x = brickX;
+                        brick.y = brickY;
+                        
+                        const colorSet = brickColors[r % brickColors.length];
+                        
+                        // Draw brick shadow
+                        ctx.fillStyle = 'rgba(0,0,0,0.3)';
+                        ctx.fillRect(brickX + 2, brickY + 2, BRICK_WIDTH, BRICK_HEIGHT);
+                        
+                        // Draw brick with gradient
+                        const gradient = ctx.createLinearGradient(brickX, brickY, brickX, brickY + BRICK_HEIGHT);
+                        gradient.addColorStop(0, colorSet.light);
+                        gradient.addColorStop(0.5, colorSet.main);
+                        gradient.addColorStop(1, colorSet.dark);
+                        ctx.fillStyle = gradient;
+                        ctx.beginPath();
+                        ctx.roundRect(brickX, brickY, BRICK_WIDTH, BRICK_HEIGHT, 3);
+                        ctx.fill();
+                        
+                        // Highlight
+                        ctx.fillStyle = 'rgba(255,255,255,0.2)';
+                        ctx.fillRect(brickX + 2, brickY + 2, BRICK_WIDTH - 4, 4);
+                        
+                        // If damaged (health = 1 but was 2), show crack
+                        if (brick.maxHealth > 1 && brick.status === 1) {
+                            ctx.strokeStyle = 'rgba(0,0,0,0.5)';
+                            ctx.lineWidth = 2;
+                            ctx.beginPath();
+                            ctx.moveTo(brickX + BRICK_WIDTH * 0.3, brickY);
+                            ctx.lineTo(brickX + BRICK_WIDTH * 0.5, brickY + BRICK_HEIGHT * 0.6);
+                            ctx.lineTo(brickX + BRICK_WIDTH * 0.7, brickY + BRICK_HEIGHT);
+                            ctx.stroke();
+                        }
+                        
+                        // Powerup indicator
+                        if (brick.hasPowerup) {
+                            ctx.fillStyle = 'rgba(255,255,255,0.8)';
+                            ctx.font = '10px sans-serif';
+                            ctx.textAlign = 'center';
+                            ctx.fillText('★', brickX + BRICK_WIDTH / 2, brickY + BRICK_HEIGHT / 2 + 3);
+                        }
+                    }
+                }
+            }
+        }
+        
+        // Smooth paddle width transition
+        let displayPaddleWidth = 75;
+        let targetPaddleWidth = 75;
+        
+        function drawPaddle() {
+            // Smooth width transition
+            targetPaddleWidth = paddleWidth;
+            if (displayPaddleWidth !== targetPaddleWidth) {
+                const diff = targetPaddleWidth - displayPaddleWidth;
+                displayPaddleWidth += diff * 0.15; // Smooth easing
+                if (Math.abs(diff) < 1) displayPaddleWidth = targetPaddleWidth;
+            }
+            
+            const drawWidth = displayPaddleWidth;
+            const x = paddleX + (paddleWidth - drawWidth) / 2; // Center the visual paddle
+            const y = canvas.height - 25;
+            
+            // Check if expand powerup is expiring soon (last 3 seconds = 180 frames)
+            const expandExpiring = activePowerups.expand > 0 && activePowerups.expand < 180;
+            const expandWarning = activePowerups.expand > 0 && activePowerups.expand < 90; // Last 1.5 sec flash faster
+            
+            // Paddle shadow
+            ctx.fillStyle = 'rgba(0,0,0,0.3)';
+            ctx.fillRect(x + 3, y + 3, drawWidth, PADDLE_HEIGHT);
+            
+            // Determine paddle color
+            let colorLight, colorMain, colorDark, glowColor;
+            
+            if (activePowerups.laser > 0) {
+                colorLight = '#ff6b8a';
+                colorMain = '#e94560';
+                colorDark = '#c73e54';
+                glowColor = '#e94560';
+            } else if (expandExpiring) {
+                // Flashing warning - alternate between normal and warning colors
+                const flash = expandWarning 
+                    ? Math.floor(Date.now() / 100) % 2 // Fast flash
+                    : Math.floor(Date.now() / 250) % 2; // Slow flash
+                if (flash) {
+                    colorLight = '#fbbf24';
+                    colorMain = '#f59e0b';
+                    colorDark = '#d97706';
+                    glowColor = '#f59e0b';
+                } else {
+                    colorLight = '#86efac';
+                    colorMain = '#4ade80';
+                    colorDark = '#22c55e';
+                    glowColor = '#4ade80';
+                }
+            } else {
+                colorLight = '#86efac';
+                colorMain = '#4ade80';
+                colorDark = '#22c55e';
+                glowColor = '#4ade80';
+            }
+            
+            // Paddle gradient
+            const gradient = ctx.createLinearGradient(x, y, x, y + PADDLE_HEIGHT);
+            gradient.addColorStop(0, colorLight);
+            gradient.addColorStop(0.5, colorMain);
+            gradient.addColorStop(1, colorDark);
+            ctx.fillStyle = gradient;
+            ctx.beginPath();
+            ctx.roundRect(x, y, drawWidth, PADDLE_HEIGHT, 6);
+            ctx.fill();
+            
+            // Paddle highlight
+            ctx.fillStyle = 'rgba(255,255,255,0.3)';
+            ctx.fillRect(x + 4, y + 2, drawWidth - 8, 4);
+            
+            // Paddle glow (stronger when warning)
+            ctx.shadowColor = glowColor;
+            ctx.shadowBlur = expandExpiring ? 25 : 15;
+            ctx.beginPath();
+            ctx.roundRect(x, y, drawWidth, PADDLE_HEIGHT, 6);
+            ctx.fill();
+            ctx.shadowBlur = 0;
+            
+            // Draw shrinking indicator arrows when expand is expiring
+            if (expandExpiring) {
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+                ctx.font = 'bold 10px sans-serif';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                // Arrows pointing inward
+                ctx.fillText('▶', x + 8, y + PADDLE_HEIGHT / 2);
+                ctx.fillText('◀', x + drawWidth - 8, y + PADDLE_HEIGHT / 2);
+            }
+        }
+        
+        function drawBall(ball) {
+            // Draw trail
+            ball.trail.forEach((pos, i) => {
+                const alpha = (i / ball.trail.length) * 0.4;
+                ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
+                ctx.beginPath();
+                ctx.arc(pos.x, pos.y, BALL_RADIUS * (i / ball.trail.length), 0, Math.PI * 2);
+                ctx.fill();
+            });
+            
+            // Ball glow
+            ctx.shadowColor = '#ffffff';
+            ctx.shadowBlur = 15;
+            
+            // Ball gradient
+            const gradient = ctx.createRadialGradient(
+                ball.x - 2, ball.y - 2, 0,
+                ball.x, ball.y, BALL_RADIUS
+            );
+            gradient.addColorStop(0, '#ffffff');
+            gradient.addColorStop(1, '#a0aec0');
+            
+            ctx.fillStyle = gradient;
+            ctx.beginPath();
+            ctx.arc(ball.x, ball.y, BALL_RADIUS, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.shadowBlur = 0;
+        }
+        
+        function drawPowerups() {
+            powerups.forEach(p => {
+                // Glow
+                ctx.shadowColor = p.color;
+                ctx.shadowBlur = 10;
+                
+                // Background
+                ctx.fillStyle = p.color;
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, 12, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Symbol
+                ctx.shadowBlur = 0;
+                ctx.fillStyle = '#000';
+                ctx.font = 'bold 12px sans-serif';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText(p.symbol, p.x, p.y);
+            });
+        }
+        
+        function drawParticles() {
+            particles.forEach(p => {
+                ctx.globalAlpha = p.life / 30;
+                ctx.fillStyle = p.color;
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                ctx.fill();
+            });
+            ctx.globalAlpha = 1;
+        }
+        
+        // Improved collision detection with proper AABB + circle collision
+        function ballRectCollision(ball, rx, ry, rw, rh) {
+            // Find closest point on rectangle to circle center
+            const closestX = Math.max(rx, Math.min(ball.x, rx + rw));
+            const closestY = Math.max(ry, Math.min(ball.y, ry + rh));
+            
+            // Calculate distance from circle center to closest point
+            const distX = ball.x - closestX;
+            const distY = ball.y - closestY;
+            const distance = Math.sqrt(distX * distX + distY * distY);
+            
+            if (distance < BALL_RADIUS) {
+                return { hit: true, closestX, closestY, distX, distY, distance };
+            }
+            return { hit: false };
+        }
+        
+        function collisionDetection() {
+            const bricksToRemove = [];
+            
+            balls.forEach(ball => {
+                for (let r = 0; r < BRICK_ROWS; r++) {
+                    for (let c = 0; c < BRICK_COLS; c++) {
+                        const brick = bricks[r][c];
+                        if (brick.status > 0) {
+                            const collision = ballRectCollision(ball, brick.x, brick.y, BRICK_WIDTH, BRICK_HEIGHT);
+                            
+                            if (collision.hit) {
+                                // Determine which side was hit
+                                const fromLeft = ball.x < brick.x;
+                                const fromRight = ball.x > brick.x + BRICK_WIDTH;
+                                const fromTop = ball.y < brick.y;
+                                const fromBottom = ball.y > brick.y + BRICK_HEIGHT;
+                                
+                                // Reflect ball based on collision side
+                                if ((fromLeft || fromRight) && Math.abs(collision.distX) > Math.abs(collision.distY)) {
+                                    ball.dx = -ball.dx;
+                                    // Push ball out of brick
+                                    ball.x += collision.distX > 0 ? BALL_RADIUS - collision.distance : -(BALL_RADIUS - collision.distance);
+                                } else {
+                                    ball.dy = -ball.dy;
+                                    ball.y += collision.distY > 0 ? BALL_RADIUS - collision.distance : -(BALL_RADIUS - collision.distance);
+                                }
+                                
+                                // Damage brick
+                                brick.status--;
+                                
+                                if (brick.status === 0) {
+                                    // Brick destroyed
+                                    score += 10 * level;
+                                    createParticles(
+                                        brick.x + BRICK_WIDTH / 2, 
+                                        brick.y + BRICK_HEIGHT / 2, 
+                                        brickColors[r % brickColors.length].main,
+                                        12
+                                    );
+                                    
+                                    // Spawn powerup
+                                    if (brick.hasPowerup) {
+                                        spawnPowerup(brick.x + BRICK_WIDTH / 2, brick.y + BRICK_HEIGHT / 2);
+                                    }
+                                } else {
+                                    // Brick damaged
+                                    score += 5 * level;
+                                    createParticles(
+                                        brick.x + BRICK_WIDTH / 2, 
+                                        brick.y + BRICK_HEIGHT / 2, 
+                                        '#ffffff',
+                                        4
+                                    );
+                                }
+                                
+                                document.getElementById('score').textContent = score;
+                                
+                                // Only one collision per ball per frame
+                                break;
+                            }
+                        }
+                    }
+                }
+            });
+            
+            // Check level complete
+            if (bricks.every(row => row.every(brick => brick.status === 0))) {
+                level++;
+                document.getElementById('level').textContent = level;
+                initBricks();
+                resetBall();
+                // Clear powerups on level up
+                powerups = [];
+            }
+        }
+        
+        function updatePowerups() {
+            // Update falling powerups
+            powerups = powerups.filter(p => {
+                p.y += p.dy;
+                
+                // Check paddle collision
+                if (p.y + 12 > canvas.height - 25 && p.y - 12 < canvas.height - 25 + PADDLE_HEIGHT) {
+                    if (p.x > paddleX && p.x < paddleX + paddleWidth) {
+                        applyPowerup(p.type);
+                        createParticles(p.x, p.y, p.color, 10);
+                        return false;
+                    }
+                }
+                
+                return p.y < canvas.height + 20;
+            });
+            
+            // Update powerup timers
+            let needsIndicatorUpdate = false;
+            
+            if (activePowerups.expand > 0) {
+                const prevSec = Math.ceil(activePowerups.expand / 60);
+                activePowerups.expand--;
+                const newSec = Math.ceil(activePowerups.expand / 60);
+                if (prevSec !== newSec) needsIndicatorUpdate = true;
+                
+                if (activePowerups.expand === 0) {
+                    paddleWidth = paddleWidthBase;
+                    needsIndicatorUpdate = true;
+                }
+            }
+            if (activePowerups.slow > 0) {
+                const prevSec = Math.ceil(activePowerups.slow / 60);
+                activePowerups.slow--;
+                const newSec = Math.ceil(activePowerups.slow / 60);
+                if (prevSec !== newSec) needsIndicatorUpdate = true;
+                
+                if (activePowerups.slow === 0) {
+                    // Speed balls back up based on settings
+                    const speedMultiplier = SPEED_VALUES[settings.speed];
+                    const targetSpeed = (baseSpeed + level * 0.2) * speedMultiplier;
+                    balls.forEach(b => {
+                        const speed = Math.sqrt(b.dx * b.dx + b.dy * b.dy);
+                        if (speed > 0) {
+                            const factor = targetSpeed / speed;
+                            b.dx *= factor;
+                            b.dy *= factor;
+                        }
+                    });
+                    needsIndicatorUpdate = true;
+                }
+            }
+            if (activePowerups.laser > 0) {
+                const prevSec = Math.ceil(activePowerups.laser / 60);
+                activePowerups.laser--;
+                const newSec = Math.ceil(activePowerups.laser / 60);
+                if (prevSec !== newSec) needsIndicatorUpdate = true;
+                
+                if (activePowerups.laser === 0) {
+                    needsIndicatorUpdate = true;
+                }
+            }
+            
+            if (needsIndicatorUpdate) {
+                updatePowerupIndicator();
+            }
+        }
+        
+        function updateParticles() {
+            particles = particles.filter(p => {
+                p.x += p.dx;
+                p.y += p.dy;
+                p.dy += 0.15; // Gravity
+                p.life--;
+                return p.life > 0;
+            });
+        }
+        
+        function draw() {
+            // Clear with gradient background
+            const bgGradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+            bgGradient.addColorStop(0, '#0a1628');
+            bgGradient.addColorStop(1, '#0f3460');
+            ctx.fillStyle = bgGradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Draw stars in background
+            ctx.fillStyle = 'rgba(255,255,255,0.3)';
+            for (let i = 0; i < 30; i++) {
+                const x = (i * 37 + score) % canvas.width;
+                const y = (i * 23) % (canvas.height - 150);
+                ctx.fillRect(x, y, 1, 1);
+            }
+            
+            drawBricks();
+            drawPowerups();
+            drawParticles();
+            drawPaddle();
+            balls.forEach(ball => drawBall(ball));
+            
+            if (!gamePaused) {
+                collisionDetection();
+                updatePowerups();
+                updateParticles();
+                
+                // Update balls
+                const ballsToRemove = [];
+                
+                balls.forEach((ball, index) => {
+                    // Update trail
+                    ball.trail.push({ x: ball.x, y: ball.y });
+                    if (ball.trail.length > 8) ball.trail.shift();
+                    
+                    // Wall collision
+                    if (ball.x + ball.dx > canvas.width - BALL_RADIUS || ball.x + ball.dx < BALL_RADIUS) {
+                        ball.dx = -ball.dx;
+                    }
+                    if (ball.y + ball.dy < BALL_RADIUS) {
+                        ball.dy = -ball.dy;
+                    }
+                    
+                    // Paddle collision with improved detection
+                    const paddleTop = canvas.height - 25;
+                    const paddleCollision = ballRectCollision(ball, paddleX, paddleTop, paddleWidth, PADDLE_HEIGHT);
+                    
+                    if (paddleCollision.hit && ball.dy > 0) {
+                        // Calculate hit position for angle variation
+                        const hitPos = (ball.x - paddleX) / paddleWidth;
+                        const angle = (hitPos - 0.5) * Math.PI * 0.7; // -63 to +63 degrees
+                        const speed = Math.sqrt(ball.dx * ball.dx + ball.dy * ball.dy);
+                        
+                        ball.dx = Math.sin(angle) * speed;
+                        ball.dy = -Math.abs(Math.cos(angle) * speed);
+                        ball.y = paddleTop - BALL_RADIUS; // Push ball above paddle
+                        
+                        // Laser powerup effect
+                        if (activePowerups.laser > 0) {
+                            ball.dy *= 1.3;
+                            createParticles(ball.x, ball.y, '#e94560', 5);
+                        }
+                    }
+                    
+                    // Ball lost
+                    if (ball.y > canvas.height + BALL_RADIUS) {
+                        ballsToRemove.push(index);
+                    }
+                    
+                    ball.x += ball.dx;
+                    ball.y += ball.dy;
+                });
+                
+                // Remove lost balls
+                ballsToRemove.reverse().forEach(i => balls.splice(i, 1));
+                
+                // If all balls lost
+                if (balls.length === 0) {
+                    lives--;
+                    updateLivesDisplay();
+                    updatePowerupIndicator();
+                    
+                    if (lives === 0) {
+                        gameOver();
+                        return;
+                    }
+                    resetBall();
+                }
+            }
+            
+            if (gameRunning) {
+                animationId = requestAnimationFrame(draw);
+            }
+        }
+        
+        function startGame() {
+            if (animationId) cancelAnimationFrame(animationId);
+            
+            // Apply settings
+            startingLives = LIVES_VALUES[settings.lives];
+            paddleWidthBase = PADDLE_SIZES[settings.paddle];
+            paddleWidth = paddleWidthBase;
+            displayPaddleWidth = paddleWidthBase; // Reset visual width
+            
+            score = 0;
+            lives = startingLives;
+            level = 1;
+            gameRunning = true;
+            gamePaused = false;
+            powerups = [];
+            particles = [];
+            activePowerups = { expand: 0, slow: 0, laser: 0 };
+            
+            document.getElementById('score').textContent = '0';
+            updateLivesDisplay();
+            document.getElementById('level').textContent = '1';
+            document.getElementById('highScore').textContent = highScore;
+            document.getElementById('startBtn').textContent = 'Restart';
+            document.getElementById('pauseBtn').textContent = '⏸';
+            document.getElementById('pauseBtn').classList.remove('paused');
+            updatePowerupIndicator();
+            
+            // Close any open overlays
+            closeOverlay();
+            document.getElementById('settingsOverlay').classList.remove('show');
+            
+            initBricks();
+            resetBall();
+            draw();
+        }
+        
+        function togglePause() {
+            if (!gameRunning) return;
+            
+            gamePaused = !gamePaused;
+            const btn = document.getElementById('pauseBtn');
+            
+            if (gamePaused) {
+                btn.textContent = '▶';
+                btn.classList.add('paused');
+                // Show pause overlay with Resume button
+                document.getElementById('overlayTitle').textContent = '⏸ Paused';
+                document.getElementById('overlayTitle').className = 'overlay-title paused-title';
+                document.getElementById('finalScore').textContent = score;
+                document.getElementById('finalLevel').textContent = level;
+                document.getElementById('overlayButtons').innerHTML = `
+                    <button class="btn btn-secondary" onclick="resumeGame()" style="margin-bottom: 0.5rem; width: 100%;">Resume</button>
+                    <button class="btn" onclick="startGame(); closeOverlay();" style="width: 100%;">Restart</button>
+                `;
+                document.getElementById('overlay').classList.add('show');
+            } else {
+                btn.textContent = '⏸';
+                btn.classList.remove('paused');
+                closeOverlay();
+            }
+        }
+        
+        function resumeGame() {
+            if (gamePaused) {
+                togglePause();
+            }
+        }
+        
+        function gameOver() {
+            gameRunning = false;
+            
+            if (score > highScore) {
+                highScore = score;
+                localStorage.setItem('breakout-high', highScore);
+                document.getElementById('highScore').textContent = highScore;
+            }
+            
+            document.getElementById('overlayTitle').textContent = '💥 Game Over';
+            document.getElementById('overlayTitle').className = 'overlay-title lose';
+            document.getElementById('finalScore').textContent = score;
+            document.getElementById('finalLevel').textContent = level;
+            document.getElementById('overlayButtons').innerHTML = `
+                <button class="btn" onclick="startGame(); closeOverlay();" style="width: 100%;">Play Again</button>
+            `;
+            document.getElementById('overlay').classList.add('show');
+        }
+        
+        function closeOverlay() {
+            document.getElementById('overlay').classList.remove('show');
+        }
+        
+        // Controls
+        let leftPressed = false, rightPressed = false;
+        const paddleSpeed = 10;
+        
+        document.addEventListener('keydown', e => {
+            if (e.key === 'ArrowLeft') leftPressed = true;
+            if (e.key === 'ArrowRight') rightPressed = true;
+            if (e.key === ' ' || e.key === 'Escape' || e.key === 'p') {
+                e.preventDefault();
+                togglePause();
+            }
+        });
+        
+        document.addEventListener('keyup', e => {
+            if (e.key === 'ArrowLeft') leftPressed = false;
+            if (e.key === 'ArrowRight') rightPressed = false;
+        });
+        
+        // Touch controls
+        document.getElementById('leftBtn').addEventListener('touchstart', e => { e.preventDefault(); leftPressed = true; });
+        document.getElementById('leftBtn').addEventListener('touchend', () => leftPressed = false);
+        document.getElementById('leftBtn').addEventListener('mousedown', () => leftPressed = true);
+        document.getElementById('leftBtn').addEventListener('mouseup', () => leftPressed = false);
+        document.getElementById('leftBtn').addEventListener('mouseleave', () => leftPressed = false);
+        
+        document.getElementById('rightBtn').addEventListener('touchstart', e => { e.preventDefault(); rightPressed = true; });
+        document.getElementById('rightBtn').addEventListener('touchend', () => rightPressed = false);
+        document.getElementById('rightBtn').addEventListener('mousedown', () => rightPressed = true);
+        document.getElementById('rightBtn').addEventListener('mouseup', () => rightPressed = false);
+        document.getElementById('rightBtn').addEventListener('mouseleave', () => rightPressed = false);
+        
+        document.getElementById('pauseBtn').addEventListener('click', togglePause);
+        document.getElementById('pauseBtn').addEventListener('touchstart', e => { e.preventDefault(); togglePause(); });
+        
+        // Paddle movement loop
+        setInterval(() => {
+            if (gameRunning && !gamePaused) {
+                if (leftPressed && paddleX > 0) paddleX -= paddleSpeed;
+                if (rightPressed && paddleX < canvas.width - paddleWidth) paddleX += paddleSpeed;
+            }
+        }, 16);
+        
+        // Touch controls for canvas and touch area
+        let isDragging = false;
+        
+        function handleTouchStart(e) {
+            if (gamePaused) return;
+            isDragging = true;
+            handleTouchMove(e);
+        }
+        
+        function handleTouchMove(e) {
+            if (gamePaused || !isDragging) return;
+            e.preventDefault();
+            const rect = canvas.getBoundingClientRect();
+            const touch = e.touches[0];
+            const relativeX = touch.clientX - rect.left;
+            paddleX = relativeX - paddleWidth / 2;
+            paddleX = Math.max(0, Math.min(canvas.width - paddleWidth, paddleX));
+        }
+        
+        function handleTouchEnd() {
+            isDragging = false;
+        }
+        
+        // Add touch listeners to canvas
+        canvas.addEventListener('touchstart', handleTouchStart, { passive: false });
+        canvas.addEventListener('touchmove', handleTouchMove, { passive: false });
+        canvas.addEventListener('touchend', handleTouchEnd);
+        canvas.addEventListener('touchcancel', handleTouchEnd);
+        
+        // Add touch listeners to touch area (larger hit target)
+        const touchArea = document.getElementById('touchArea');
+        touchArea.addEventListener('touchstart', handleTouchStart, { passive: false });
+        touchArea.addEventListener('touchmove', handleTouchMove, { passive: false });
+        touchArea.addEventListener('touchend', handleTouchEnd);
+        touchArea.addEventListener('touchcancel', handleTouchEnd);
+        
+        // Also support touch drag anywhere on the body for better mobile experience
+        document.body.addEventListener('touchmove', e => {
+            if (!isDragging || gamePaused) return;
+            const rect = canvas.getBoundingClientRect();
+            const touch = e.touches[0];
+            // Only handle if touch started in game area
+            if (touch.clientY > rect.top && touch.clientY < rect.bottom + 120) {
+                e.preventDefault();
+                const relativeX = touch.clientX - rect.left;
+                paddleX = relativeX - paddleWidth / 2;
+                paddleX = Math.max(0, Math.min(canvas.width - paddleWidth, paddleX));
+            }
+        }, { passive: false });
+        
+        // Mouse drag on canvas
+        canvas.addEventListener('mousemove', e => {
+            if (!gameRunning || gamePaused) return;
+            const rect = canvas.getBoundingClientRect();
+            paddleX = e.clientX - rect.left - paddleWidth / 2;
+            paddleX = Math.max(0, Math.min(canvas.width - paddleWidth, paddleX));
+        });
+        
+        // Initialize
+        loadSettings();
+        document.getElementById('highScore').textContent = highScore;
+        
+        // Set initial values from settings
+        startingLives = LIVES_VALUES[settings.lives];
+        paddleWidthBase = PADDLE_SIZES[settings.paddle];
+        paddleWidth = paddleWidthBase;
+        displayPaddleWidth = paddleWidthBase;
+        targetPaddleWidth = paddleWidthBase;
+        lives = startingLives;
+        
+        initBricks();
+        resetBall();
+        updateLivesDisplay();
+        
+        // Draw initial state
+        gameRunning = true;
+        gamePaused = true;
+        draw();
+        gameRunning = false;
+        gamePaused = false;
+    </script>
+</body>
+</html>

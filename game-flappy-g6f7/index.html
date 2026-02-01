@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Flappy Owl</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem;
+        }
+        h1 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+        .stats {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .stat { text-align: center; }
+        .stat-value { font-size: 1.5rem; font-weight: bold; color: #fbbf24; }
+        .stat-label { font-size: 0.65rem; color: #a0aec0; }
+        #gameCanvas {
+            background: linear-gradient(#87ceeb, #98d8e8);
+            border-radius: 8px;
+            display: block;
+            cursor: pointer;
+        }
+        .instructions {
+            color: #a0aec0;
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(26, 26, 46, 0.95);
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+        }
+        .overlay.show { display: flex; }
+        .overlay-content {
+            background: #16213e;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid #fbbf24;
+        }
+        .overlay-title { font-size: 1.5rem; color: #fbbf24; margin-bottom: 0.5rem; }
+        .btn {
+            background: #e94560;
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+        .btn:active { transform: scale(0.95); }
+    </style>
+</head>
+<body>
+    <h1>🦉 Flappy Owl</h1>
+    
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-value" id="score">0</div>
+            <div class="stat-label">Score</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="best">0</div>
+            <div class="stat-label">Best</div>
+        </div>
+    </div>
+    
+    <canvas id="gameCanvas" width="320" height="480"></canvas>
+    
+    <p class="instructions">Tap or press Space to fly</p>
+    
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <div class="overlay-title" id="overlayTitle">Game Over</div>
+            <p>Score: <span id="finalScore">0</span></p>
+            <p id="highScoreMsg" style="color: #fbbf24; margin-top: 0.5rem;"></p>
+            <button class="btn" onclick="startGame()">Play Again</button>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        const GRAVITY = 0.4;
+        const FLAP = -7;
+        const PIPE_WIDTH = 50;
+        const PIPE_GAP = 140;
+        const PIPE_SPEED = 2.5;
+        
+        let owl = { x: 80, y: 200, velocity: 0, size: 30 };
+        let pipes = [];
+        let score = 0;
+        let best = parseInt(localStorage.getItem('flappy-best') || '0');
+        let gameRunning = false;
+        let gameStarted = false;
+        let animationId = null;
+        
+        document.getElementById('best').textContent = best;
+        
+        function resetGame() {
+            owl = { x: 80, y: 200, velocity: 0, size: 30 };
+            pipes = [];
+            score = 0;
+            gameStarted = false;
+            document.getElementById('score').textContent = '0';
+            addPipe();
+        }
+        
+        function addPipe() {
+            const minHeight = 60;
+            const maxHeight = canvas.height - PIPE_GAP - minHeight - 60;
+            const height = Math.random() * maxHeight + minHeight;
+            pipes.push({
+                x: canvas.width,
+                topHeight: height,
+                passed: false
+            });
+        }
+        
+        function flap() {
+            if (!gameRunning) {
+                startGame();
+                return;
+            }
+            gameStarted = true;
+            owl.velocity = FLAP;
+        }
+        
+        function draw() {
+            // Sky
+            const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+            gradient.addColorStop(0, '#87ceeb');
+            gradient.addColorStop(1, '#e0f7fa');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Ground
+            ctx.fillStyle = '#8bc34a';
+            ctx.fillRect(0, canvas.height - 40, canvas.width, 40);
+            ctx.fillStyle = '#689f38';
+            ctx.fillRect(0, canvas.height - 40, canvas.width, 5);
+            
+            // Pipes
+            pipes.forEach(pipe => {
+                // Top pipe
+                ctx.fillStyle = '#4ade80';
+                ctx.fillRect(pipe.x, 0, PIPE_WIDTH, pipe.topHeight);
+                ctx.fillStyle = '#22c55e';
+                ctx.fillRect(pipe.x - 3, pipe.topHeight - 20, PIPE_WIDTH + 6, 20);
+                
+                // Bottom pipe
+                const bottomY = pipe.topHeight + PIPE_GAP;
+                ctx.fillStyle = '#4ade80';
+                ctx.fillRect(pipe.x, bottomY, PIPE_WIDTH, canvas.height - bottomY - 40);
+                ctx.fillStyle = '#22c55e';
+                ctx.fillRect(pipe.x - 3, bottomY, PIPE_WIDTH + 6, 20);
+            });
+            
+            // Owl
+            ctx.font = `${owl.size}px Arial`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            
+            ctx.save();
+            ctx.translate(owl.x, owl.y);
+            ctx.rotate(Math.min(owl.velocity * 0.05, 0.5));
+            ctx.fillText('🦉', 0, 0);
+            ctx.restore();
+            
+            // Score on screen
+            ctx.fillStyle = '#ffffff';
+            ctx.font = 'bold 24px Arial';
+            ctx.strokeStyle = '#000000';
+            ctx.lineWidth = 3;
+            ctx.strokeText(score, canvas.width / 2, 50);
+            ctx.fillText(score, canvas.width / 2, 50);
+        }
+        
+        function update() {
+            if (!gameStarted) {
+                owl.y = 200 + Math.sin(Date.now() / 200) * 10;
+                draw();
+                if (gameRunning) animationId = requestAnimationFrame(update);
+                return;
+            }
+            
+            owl.velocity += GRAVITY;
+            owl.y += owl.velocity;
+            
+            // Move pipes
+            pipes.forEach(pipe => {
+                pipe.x -= PIPE_SPEED;
+                
+                // Score
+                if (!pipe.passed && pipe.x + PIPE_WIDTH < owl.x) {
+                    pipe.passed = true;
+                    score++;
+                    document.getElementById('score').textContent = score;
+                }
+            });
+            
+            // Remove off-screen pipes and add new ones
+            if (pipes.length > 0 && pipes[0].x < -PIPE_WIDTH) {
+                pipes.shift();
+            }
+            if (pipes.length === 0 || pipes[pipes.length - 1].x < canvas.width - 200) {
+                addPipe();
+            }
+            
+            // Collision detection
+            const owlBox = {
+                left: owl.x - 12,
+                right: owl.x + 12,
+                top: owl.y - 12,
+                bottom: owl.y + 12
+            };
+            
+            // Ground/ceiling
+            if (owl.y > canvas.height - 52 || owl.y < 12) {
+                gameOver();
+                return;
+            }
+            
+            // Pipes
+            for (const pipe of pipes) {
+                if (owlBox.right > pipe.x && owlBox.left < pipe.x + PIPE_WIDTH) {
+                    if (owlBox.top < pipe.topHeight || owlBox.bottom > pipe.topHeight + PIPE_GAP) {
+                        gameOver();
+                        return;
+                    }
+                }
+            }
+            
+            draw();
+            if (gameRunning) animationId = requestAnimationFrame(update);
+        }
+        
+        function startGame() {
+            document.getElementById('overlay').classList.remove('show');
+            resetGame();
+            gameRunning = true;
+            update();
+        }
+        
+        function gameOver() {
+            gameRunning = false;
+            
+            if (score > best) {
+                best = score;
+                localStorage.setItem('flappy-best', best);
+                document.getElementById('best').textContent = best;
+                document.getElementById('highScoreMsg').textContent = '🏆 New High Score!';
+            } else {
+                document.getElementById('highScoreMsg').textContent = '';
+            }
+            
+            document.getElementById('finalScore').textContent = score;
+            document.getElementById('overlay').classList.add('show');
+        }
+        
+        canvas.addEventListener('click', flap);
+        canvas.addEventListener('touchstart', e => { e.preventDefault(); flap(); }, { passive: false });
+        document.addEventListener('keydown', e => {
+            if (e.code === 'Space') { e.preventDefault(); flap(); }
+        });
+        
+        resetGame();
+        draw();
+    </script>
+</body>
+</html>

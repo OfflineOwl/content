@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Whack-a-Mole</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+        }
+        h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+        .stats {
+            display: flex;
+            gap: 2rem;
+            margin: 1rem 0;
+            padding: 0.75rem 1.5rem;
+            background: #16213e;
+            border-radius: 8px;
+        }
+        .stat { text-align: center; }
+        .stat-value { font-size: 1.5rem; font-weight: bold; color: #e94560; }
+        .stat-label { font-size: 0.7rem; color: #a0aec0; }
+        .board {
+            display: grid;
+            grid-template-columns: repeat(3, 80px);
+            grid-template-rows: repeat(3, 80px);
+            gap: 10px;
+            padding: 15px;
+            background: #16213e;
+            border-radius: 12px;
+        }
+        .hole {
+            width: 80px;
+            height: 80px;
+            background: #3d2914;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            border: 4px solid #2a1d0d;
+            transition: transform 0.1s;
+            user-select: none;
+        }
+        .hole:active { transform: scale(0.9); }
+        .hole.mole { background: #5d4020; }
+        .hole.hit { background: #4ade80; }
+        .hole.miss { background: #e94560; }
+        .btn {
+            background: #e94560;
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+        .btn:active { transform: scale(0.95); }
+        .btn:disabled { opacity: 0.5; }
+        .difficulty {
+            display: flex;
+            gap: 0.5rem;
+            margin: 0.5rem 0;
+        }
+        .diff-btn {
+            padding: 0.4rem 0.75rem;
+            background: #16213e;
+            border: 2px solid transparent;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+        .diff-btn.active { border-color: #e94560; }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(26, 26, 46, 0.95);
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+        }
+        .overlay.show { display: flex; }
+        .overlay-content {
+            background: #16213e;
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+            border: 2px solid #e94560;
+        }
+        .overlay-title { font-size: 1.5rem; color: #4ade80; margin-bottom: 1rem; }
+        .overlay-score { font-size: 2rem; font-weight: bold; color: #e94560; }
+    </style>
+</head>
+<body>
+    <h1>🔨 Whack-a-Mole</h1>
+    
+    <div class="difficulty">
+        <button class="diff-btn active" data-speed="1000">Easy</button>
+        <button class="diff-btn" data-speed="700">Medium</button>
+        <button class="diff-btn" data-speed="450">Hard</button>
+    </div>
+    
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-value" id="score">0</div>
+            <div class="stat-label">Score</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="time">30</div>
+            <div class="stat-label">Time</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="best">0</div>
+            <div class="stat-label">Best</div>
+        </div>
+    </div>
+    
+    <div class="board" id="board"></div>
+    
+    <button class="btn" id="startBtn" onclick="startGame()">Start Game</button>
+    
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <div class="overlay-title">Time's Up!</div>
+            <p>Your Score:</p>
+            <div class="overlay-score" id="finalScore">0</div>
+            <p id="highScoreMsg" style="color: #fbbf24; margin: 0.5rem 0;"></p>
+            <button class="btn" onclick="closeOverlay()">Play Again</button>
+        </div>
+    </div>
+
+    <script>
+        let score = 0;
+        let timeLeft = 30;
+        let gameActive = false;
+        let moleTimeout = null;
+        let gameInterval = null;
+        let currentMole = -1;
+        let speed = 1000;
+        let best = parseInt(localStorage.getItem('whack-best') || '0');
+        
+        document.getElementById('best').textContent = best;
+        
+        function createBoard() {
+            const board = document.getElementById('board');
+            board.innerHTML = '';
+            for (let i = 0; i < 9; i++) {
+                const hole = document.createElement('div');
+                hole.className = 'hole';
+                hole.dataset.index = i;
+                hole.onclick = () => whack(i);
+                board.appendChild(hole);
+            }
+        }
+        
+        function showMole() {
+            if (!gameActive) return;
+            
+            // Hide current mole
+            if (currentMole >= 0) {
+                const prev = document.querySelector(`[data-index="${currentMole}"]`);
+                prev.classList.remove('mole');
+                prev.textContent = '';
+            }
+            
+            // Show new mole
+            currentMole = Math.floor(Math.random() * 9);
+            const hole = document.querySelector(`[data-index="${currentMole}"]`);
+            hole.classList.add('mole');
+            hole.textContent = '🐹';
+            
+            moleTimeout = setTimeout(showMole, speed);
+        }
+        
+        function whack(index) {
+            if (!gameActive) return;
+            
+            const hole = document.querySelector(`[data-index="${index}"]`);
+            
+            if (index === currentMole) {
+                score++;
+                document.getElementById('score').textContent = score;
+                hole.classList.remove('mole');
+                hole.classList.add('hit');
+                hole.textContent = '💥';
+                currentMole = -1;
+                
+                setTimeout(() => {
+                    hole.classList.remove('hit');
+                    hole.textContent = '';
+                }, 200);
+            } else {
+                hole.classList.add('miss');
+                setTimeout(() => hole.classList.remove('miss'), 200);
+            }
+        }
+        
+        function startGame() {
+            score = 0;
+            timeLeft = 30;
+            gameActive = true;
+            currentMole = -1;
+            
+            document.getElementById('score').textContent = '0';
+            document.getElementById('time').textContent = '30';
+            document.getElementById('startBtn').disabled = true;
+            
+            createBoard();
+            showMole();
+            
+            gameInterval = setInterval(() => {
+                timeLeft--;
+                document.getElementById('time').textContent = timeLeft;
+                
+                if (timeLeft <= 0) {
+                    endGame();
+                }
+            }, 1000);
+        }
+        
+        function endGame() {
+            gameActive = false;
+            clearTimeout(moleTimeout);
+            clearInterval(gameInterval);
+            
+            document.getElementById('startBtn').disabled = false;
+            document.getElementById('finalScore').textContent = score;
+            
+            if (score > best) {
+                best = score;
+                localStorage.setItem('whack-best', best);
+                document.getElementById('best').textContent = best;
+                document.getElementById('highScoreMsg').textContent = '🏆 New High Score!';
+            } else {
+                document.getElementById('highScoreMsg').textContent = '';
+            }
+            
+            document.getElementById('overlay').classList.add('show');
+        }
+        
+        function closeOverlay() {
+            document.getElementById('overlay').classList.remove('show');
+            startGame();
+        }
+        
+        document.querySelectorAll('.diff-btn').forEach(btn => {
+            btn.onclick = () => {
+                document.querySelectorAll('.diff-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                speed = parseInt(btn.dataset.speed);
+            };
+        });
+        
+        createBoard();
+    </script>
+</body>
+</html>

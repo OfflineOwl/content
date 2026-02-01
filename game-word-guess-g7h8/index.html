@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Word Guess</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+        }
+        h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+        .subtitle { color: #a0aec0; font-size: 0.8rem; margin-bottom: 1rem; }
+        .stats {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .stat {
+            background: #16213e;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .stat-value { font-size: 1.25rem; font-weight: bold; color: #4ade80; }
+        .stat-label { font-size: 0.65rem; color: #a0aec0; }
+        .board {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin-bottom: 1rem;
+        }
+        .row {
+            display: flex;
+            gap: 6px;
+        }
+        .cell {
+            width: 52px;
+            height: 52px;
+            background: #16213e;
+            border: 2px solid #2d3748;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .cell.correct { background: #4ade80; border-color: #4ade80; color: #1a1a2e; }
+        .cell.present { background: #fbbf24; border-color: #fbbf24; color: #1a1a2e; }
+        .cell.absent { background: #4a5568; border-color: #4a5568; }
+        .cell.active { border-color: #e94560; }
+        .keyboard {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            align-items: center;
+        }
+        .key-row {
+            display: flex;
+            gap: 4px;
+        }
+        .key {
+            min-width: 28px;
+            height: 42px;
+            padding: 0 6px;
+            background: #16213e;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 0.85rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .key.wide { min-width: 50px; font-size: 0.7rem; }
+        .key:active { background: #e94560; }
+        .key.correct { background: #4ade80; color: #1a1a2e; }
+        .key.present { background: #fbbf24; color: #1a1a2e; }
+        .key.absent { background: #2d3748; }
+        .message {
+            font-size: 1rem;
+            font-weight: bold;
+            min-height: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .message.win { color: #4ade80; }
+        .message.lose { color: #e94560; }
+        .btn {
+            background: #e94560;
+            color: white;
+            border: none;
+            padding: 0.6rem 1.5rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>📝 Word Guess</h1>
+    <p class="subtitle">Guess the 5-letter survival word</p>
+    
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-value" id="played">0</div>
+            <div class="stat-label">Played</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="winRate">0%</div>
+            <div class="stat-label">Win Rate</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="streak">0</div>
+            <div class="stat-label">Streak</div>
+        </div>
+    </div>
+    
+    <div class="message" id="message"></div>
+    <div class="board" id="board"></div>
+    <div class="keyboard" id="keyboard"></div>
+    <button class="btn" id="newBtn" onclick="newGame()" style="display:none;">New Game</button>
+
+    <script>
+        const words = [
+            'WATER', 'RADIO', 'LIGHT', 'STORM', 'FLOOD', 'QUAKE', 'ALERT',
+            'CACHE', 'EVADE', 'COVER', 'SCOUT', 'GUARD', 'ROUTE', 'STOCK',
+            'PURGE', 'TREAT', 'WOUND', 'BURNS', 'SPLINT', 'TORCH', 'FLARE',
+            'MATCH', 'STOVE', 'TENTS', 'CAMPS', 'KNIFE', 'ROPES', 'CLIMB'
+        ];
+        
+        let targetWord = '';
+        let currentRow = 0;
+        let currentCol = 0;
+        let guesses = [];
+        let gameActive = false;
+        let stats = JSON.parse(localStorage.getItem('wordguess-stats') || '{"played":0,"won":0,"streak":0}');
+        
+        updateStats();
+        
+        function createBoard() {
+            const board = document.getElementById('board');
+            board.innerHTML = '';
+            for (let r = 0; r < 6; r++) {
+                const row = document.createElement('div');
+                row.className = 'row';
+                for (let c = 0; c < 5; c++) {
+                    const cell = document.createElement('div');
+                    cell.className = 'cell';
+                    cell.id = `cell-${r}-${c}`;
+                    row.appendChild(cell);
+                }
+                board.appendChild(row);
+            }
+        }
+        
+        function createKeyboard() {
+            const keyboard = document.getElementById('keyboard');
+            keyboard.innerHTML = '';
+            const rows = ['QWERTYUIOP', 'ASDFGHJKL', 'ZXCVBNM'];
+            
+            rows.forEach((row, i) => {
+                const keyRow = document.createElement('div');
+                keyRow.className = 'key-row';
+                
+                if (i === 2) {
+                    const enter = document.createElement('button');
+                    enter.className = 'key wide';
+                    enter.textContent = 'ENTER';
+                    enter.onclick = submitGuess;
+                    keyRow.appendChild(enter);
+                }
+                
+                row.split('').forEach(letter => {
+                    const key = document.createElement('button');
+                    key.className = 'key';
+                    key.id = `key-${letter}`;
+                    key.textContent = letter;
+                    key.onclick = () => addLetter(letter);
+                    keyRow.appendChild(key);
+                });
+                
+                if (i === 2) {
+                    const del = document.createElement('button');
+                    del.className = 'key wide';
+                    del.textContent = '⌫';
+                    del.onclick = deleteLetter;
+                    keyRow.appendChild(del);
+                }
+                
+                keyboard.appendChild(keyRow);
+            });
+        }
+        
+        function newGame() {
+            targetWord = words[Math.floor(Math.random() * words.length)];
+            currentRow = 0;
+            currentCol = 0;
+            guesses = [];
+            gameActive = true;
+            
+            document.getElementById('message').textContent = '';
+            document.getElementById('message').className = 'message';
+            document.getElementById('newBtn').style.display = 'none';
+            
+            createBoard();
+            createKeyboard();
+            updateActiveCell();
+        }
+        
+        function updateActiveCell() {
+            document.querySelectorAll('.cell').forEach(c => c.classList.remove('active'));
+            if (currentCol < 5) {
+                document.getElementById(`cell-${currentRow}-${currentCol}`)?.classList.add('active');
+            }
+        }
+        
+        function addLetter(letter) {
+            if (!gameActive || currentCol >= 5) return;
+            document.getElementById(`cell-${currentRow}-${currentCol}`).textContent = letter;
+            currentCol++;
+            updateActiveCell();
+        }
+        
+        function deleteLetter() {
+            if (!gameActive || currentCol <= 0) return;
+            currentCol--;
+            document.getElementById(`cell-${currentRow}-${currentCol}`).textContent = '';
+            updateActiveCell();
+        }
+        
+        function submitGuess() {
+            if (!gameActive || currentCol < 5) return;
+            
+            let guess = '';
+            for (let c = 0; c < 5; c++) {
+                guess += document.getElementById(`cell-${currentRow}-${c}`).textContent;
+            }
+            
+            guesses.push(guess);
+            
+            // Check letters
+            const targetLetters = targetWord.split('');
+            const guessLetters = guess.split('');
+            const result = Array(5).fill('absent');
+            
+            // First pass: correct positions
+            guessLetters.forEach((letter, i) => {
+                if (letter === targetLetters[i]) {
+                    result[i] = 'correct';
+                    targetLetters[i] = null;
+                }
+            });
+            
+            // Second pass: wrong positions
+            guessLetters.forEach((letter, i) => {
+                if (result[i] === 'absent') {
+                    const idx = targetLetters.indexOf(letter);
+                    if (idx !== -1) {
+                        result[i] = 'present';
+                        targetLetters[idx] = null;
+                    }
+                }
+            });
+            
+            // Update cells
+            for (let c = 0; c < 5; c++) {
+                const cell = document.getElementById(`cell-${currentRow}-${c}`);
+                cell.classList.add(result[c]);
+                
+                // Update keyboard
+                const key = document.getElementById(`key-${guessLetters[c]}`);
+                if (result[c] === 'correct') {
+                    key.className = 'key correct';
+                } else if (result[c] === 'present' && !key.classList.contains('correct')) {
+                    key.className = 'key present';
+                } else if (!key.classList.contains('correct') && !key.classList.contains('present')) {
+                    key.classList.add('absent');
+                }
+            }
+            
+            // Check win/lose
+            if (guess === targetWord) {
+                gameActive = false;
+                stats.played++;
+                stats.won++;
+                stats.streak++;
+                saveStats();
+                document.getElementById('message').textContent = '🎉 Excellent!';
+                document.getElementById('message').className = 'message win';
+                document.getElementById('newBtn').style.display = 'block';
+            } else if (currentRow >= 5) {
+                gameActive = false;
+                stats.played++;
+                stats.streak = 0;
+                saveStats();
+                document.getElementById('message').textContent = `The word was: ${targetWord}`;
+                document.getElementById('message').className = 'message lose';
+                document.getElementById('newBtn').style.display = 'block';
+            } else {
+                currentRow++;
+                currentCol = 0;
+                updateActiveCell();
+            }
+        }
+        
+        function saveStats() {
+            localStorage.setItem('wordguess-stats', JSON.stringify(stats));
+            updateStats();
+        }
+        
+        function updateStats() {
+            document.getElementById('played').textContent = stats.played;
+            document.getElementById('winRate').textContent = stats.played ? Math.round(stats.won / stats.played * 100) + '%' : '0%';
+            document.getElementById('streak').textContent = stats.streak;
+        }
+        
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Enter') submitGuess();
+            else if (e.key === 'Backspace') deleteLetter();
+            else if (/^[a-zA-Z]$/.test(e.key)) addLetter(e.key.toUpperCase());
+        });
+        
+        newGame();
+    </script>
+</body>
+</html>

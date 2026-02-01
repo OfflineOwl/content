@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Gem Crush</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5rem;
+            touch-action: none;
+            overflow: hidden;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.25rem;
+        }
+        h1 { 
+            font-size: 1.2rem; 
+            text-shadow: 0 0 10px #a855f7;
+        }
+        .stats {
+            display: flex;
+            gap: 1.25rem;
+            margin: 0.5rem 0;
+        }
+        .stat { text-align: center; }
+        .stat-value { 
+            font-size: 1.1rem; 
+            font-weight: bold; 
+            color: #a855f7;
+            text-shadow: 0 0 8px rgba(168, 85, 247, 0.5);
+        }
+        .stat-label { font-size: 0.6rem; color: #a0aec0; text-transform: uppercase; }
+        .game-area {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(168, 85, 247, 0.3);
+            background: linear-gradient(145deg, #1e2d4a, #16213e);
+            padding: 8px;
+        }
+        #gameCanvas {
+            display: block;
+            background: linear-gradient(180deg, #0a1628 0%, #0f3460 100%);
+            border-radius: 8px;
+        }
+        .btn {
+            background: linear-gradient(145deg, #a855f7, #9333ea);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.25rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 0.5rem;
+            box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+        }
+        .btn:active { transform: scale(0.95); }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(10, 22, 40, 0.95);
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            backdrop-filter: blur(5px);
+        }
+        .overlay.show { display: flex; }
+        .overlay-content {
+            background: linear-gradient(145deg, #1e2d4a, #16213e);
+            padding: 1.5rem;
+            border-radius: 16px;
+            text-align: center;
+            border: 2px solid #a855f7;
+            box-shadow: 0 0 40px rgba(168, 85, 247, 0.4);
+            max-width: 300px;
+            width: 90%;
+        }
+        .overlay-title { 
+            font-size: 1.5rem; 
+            margin-bottom: 0.75rem;
+            text-shadow: 0 0 15px currentColor;
+        }
+        .win { color: #4ade80; }
+        .lose { color: #e94560; }
+        .final-stats { margin: 1rem 0; color: #a0aec0; }
+        .final-stats span { color: #ffffff; font-weight: bold; }
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #16213e;
+            border-radius: 4px;
+            margin: 0.5rem 0;
+            overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #a855f7, #ec4899);
+            border-radius: 4px;
+            transition: width 0.3s;
+        }
+        .level-info {
+            font-size: 0.7rem;
+            color: #a0aec0;
+            margin-bottom: 0.25rem;
+        }
+        .combo-display {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fbbf24;
+            text-shadow: 0 0 20px #f59e0b;
+            opacity: 0;
+            transition: all 0.3s;
+            pointer-events: none;
+            z-index: 10;
+        }
+        .combo-display.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>💎 Gem Crush</h1>
+    </div>
+    
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-value" id="score">0</div>
+            <div class="stat-label">Score</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="level">1</div>
+            <div class="stat-label">Level</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="moves">30</div>
+            <div class="stat-label">Moves</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="highScore">0</div>
+            <div class="stat-label">Best</div>
+        </div>
+    </div>
+    
+    <div class="level-info">Score <span id="targetScore">1000</span> to advance</div>
+    <div class="progress-bar">
+        <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+    </div>
+    
+    <div class="game-area">
+        <canvas id="gameCanvas" width="320" height="320"></canvas>
+        <div class="combo-display" id="comboDisplay"></div>
+    </div>
+    
+    <button class="btn" id="startBtn" onclick="startGame()">Start Game</button>
+    
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <div class="overlay-title" id="overlayTitle">Level Complete!</div>
+            <div class="final-stats">
+                <p>Score: <span id="finalScore">0</span></p>
+                <p>Level: <span id="finalLevel">1</span></p>
+            </div>
+            <div id="overlayButtons">
+                <button class="btn" onclick="nextLevel();">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Game constants
+        const GRID_SIZE = 8;
+        const GEM_SIZE = 40;
+        const GEM_PADDING = 0;
+        
+        // Gem types with colors
+        const GEM_TYPES = [
+            { color: '#e94560', glow: '#ff6b8a', symbol: '◆' },  // Red
+            { color: '#4ade80', glow: '#86efac', symbol: '◆' },  // Green
+            { color: '#3b82f6', glow: '#60a5fa', symbol: '◆' },  // Blue
+            { color: '#f59e0b', glow: '#fbbf24', symbol: '◆' },  // Yellow
+            { color: '#a855f7', glow: '#c084fc', symbol: '◆' },  // Purple
+            { color: '#ec4899', glow: '#f472b6', symbol: '◆' },  // Pink
+            { color: '#06b6d4', glow: '#22d3ee', symbol: '◆' }   // Cyan
+        ];
+        
+        // Game state
+        let grid = [];
+        let score = 0;
+        let level = 1;
+        let moves = 30;
+        let targetScore = 1000;
+        let selected = null;
+        let animating = false;
+        let particles = [];
+        let highScore = parseInt(localStorage.getItem('gems-high') || '0');
+        let gameRunning = false;
+        let comboCount = 0;
+        
+        function createGrid() {
+            grid = [];
+            for (let row = 0; row < GRID_SIZE; row++) {
+                grid[row] = [];
+                for (let col = 0; col < GRID_SIZE; col++) {
+                    grid[row][col] = createGem(row, col);
+                }
+            }
+            
+            // Remove initial matches
+            while (findMatches().length > 0) {
+                for (let row = 0; row < GRID_SIZE; row++) {
+                    for (let col = 0; col < GRID_SIZE; col++) {
+                        grid[row][col] = createGem(row, col);
+                    }
+                }
+            }
+        }
+        
+        function createGem(row, col) {
+            return {
+                type: Math.floor(Math.random() * GEM_TYPES.length),
+                row,
+                col,
+                x: col * GEM_SIZE,
+                y: row * GEM_SIZE,
+                targetX: col * GEM_SIZE,
+                targetY: row * GEM_SIZE,
+                scale: 1,
+                alpha: 1,
+                special: null // Can be 'bomb', 'lightning', 'star'
+            };
+        }
+        
+        function getGemAt(row, col) {
+            if (row < 0 || row >= GRID_SIZE || col < 0 || col >= GRID_SIZE) return null;
+            return grid[row][col];
+        }
+        
+        function swapGems(gem1, gem2) {
+            // Swap in grid
+            grid[gem1.row][gem1.col] = gem2;
+            grid[gem2.row][gem2.col] = gem1;
+            
+            // Swap positions
+            const tempRow = gem1.row;
+            const tempCol = gem1.col;
+            gem1.row = gem2.row;
+            gem1.col = gem2.col;
+            gem2.row = tempRow;
+            gem2.col = tempCol;
+            
+            // Set animation targets
+            gem1.targetX = gem1.col * GEM_SIZE;
+            gem1.targetY = gem1.row * GEM_SIZE;
+            gem2.targetX = gem2.col * GEM_SIZE;
+            gem2.targetY = gem2.row * GEM_SIZE;
+        }
+        
+        function findMatches() {
+            const matches = [];
+            
+            // Horizontal matches
+            for (let row = 0; row < GRID_SIZE; row++) {
+                for (let col = 0; col < GRID_SIZE - 2; col++) {
+                    const gem = grid[row][col];
+                    if (!gem) continue;
+                    
+                    let matchLength = 1;
+                    while (col + matchLength < GRID_SIZE && 
+                           grid[row][col + matchLength] && 
+                           grid[row][col + matchLength].type === gem.type) {
+                        matchLength++;
+                    }
+                    
+                    if (matchLength >= 3) {
+                        const match = [];
+                        for (let i = 0; i < matchLength; i++) {
+                            match.push({ row, col: col + i });
+                        }
+                        matches.push(match);
+                        col += matchLength - 1;
+                    }
+                }
+            }
+            
+            // Vertical matches
+            for (let col = 0; col < GRID_SIZE; col++) {
+                for (let row = 0; row < GRID_SIZE - 2; row++) {
+                    const gem = grid[row][col];
+                    if (!gem) continue;
+                    
+                    let matchLength = 1;
+                    while (row + matchLength < GRID_SIZE && 
+                           grid[row + matchLength][col] && 
+                           grid[row + matchLength][col].type === gem.type) {
+                        matchLength++;
+                    }
+                    
+                    if (matchLength >= 3) {
+                        const match = [];
+                        for (let i = 0; i < matchLength; i++) {
+                            match.push({ row: row + i, col });
+                        }
+                        matches.push(match);
+                        row += matchLength - 1;
+                    }
+                }
+            }
+            
+            return matches;
+        }
+        
+        function removeMatches(matches) {
+            const removed = new Set();
+            let points = 0;
+            
+            matches.forEach(match => {
+                match.forEach(pos => {
+                    const key = `${pos.row},${pos.col}`;
+                    if (!removed.has(key)) {
+                        removed.add(key);
+                        const gem = grid[pos.row][pos.col];
+                        if (gem) {
+                            // Create particles
+                            createParticles(
+                                gem.x + GEM_SIZE / 2,
+                                gem.y + GEM_SIZE / 2,
+                                GEM_TYPES[gem.type].color,
+                                8
+                            );
+                            points += 50;
+                        }
+                        grid[pos.row][pos.col] = null;
+                    }
+                });
+                
+                // Bonus for longer matches
+                if (match.length === 4) points += 100;
+                if (match.length >= 5) points += 250;
+            });
+            
+            return points;
+        }
+        
+        function dropGems() {
+            let dropped = false;
+            
+            for (let col = 0; col < GRID_SIZE; col++) {
+                let emptyRow = GRID_SIZE - 1;
+                
+                // Move existing gems down
+                for (let row = GRID_SIZE - 1; row >= 0; row--) {
+                    if (grid[row][col]) {
+                        if (row !== emptyRow) {
+                            grid[emptyRow][col] = grid[row][col];
+                            grid[row][col] = null;
+                            grid[emptyRow][col].row = emptyRow;
+                            grid[emptyRow][col].targetY = emptyRow * GEM_SIZE;
+                            dropped = true;
+                        }
+                        emptyRow--;
+                    }
+                }
+                
+                // Fill empty spaces with new gems
+                for (let row = emptyRow; row >= 0; row--) {
+                    const gem = createGem(row, col);
+                    gem.y = -GEM_SIZE * (emptyRow - row + 1);
+                    gem.targetY = row * GEM_SIZE;
+                    grid[row][col] = gem;
+                    dropped = true;
+                }
+            }
+            
+            return dropped;
+        }
+        
+        function createParticles(x, y, color, count = 8) {
+            for (let i = 0; i < count; i++) {
+                particles.push({
+                    x, y,
+                    vx: (Math.random() - 0.5) * 8,
+                    vy: (Math.random() - 0.5) * 8,
+                    life: 30,
+                    color,
+                    size: Math.random() * 4 + 2
+                });
+            }
+        }
+        
+        function showCombo(count) {
+            const display = document.getElementById('comboDisplay');
+            if (count >= 2) {
+                display.textContent = `${count}x Combo!`;
+                display.classList.add('show');
+                setTimeout(() => display.classList.remove('show'), 500);
+            }
+        }
+        
+        async function processMatches() {
+            animating = true;
+            comboCount = 0;
+            
+            let matches = findMatches();
+            
+            while (matches.length > 0) {
+                comboCount++;
+                if (comboCount > 1) showCombo(comboCount);
+                
+                const points = removeMatches(matches);
+                score += points * comboCount;
+                document.getElementById('score').textContent = score;
+                updateProgress();
+                
+                await sleep(150);
+                
+                dropGems();
+                await animateGems();
+                
+                matches = findMatches();
+            }
+            
+            animating = false;
+            
+            // Check win/lose
+            if (score >= targetScore) {
+                levelComplete();
+            } else if (moves <= 0) {
+                gameOver();
+            }
+        }
+        
+        function animateGems() {
+            return new Promise(resolve => {
+                const animate = () => {
+                    let moving = false;
+                    
+                    for (let row = 0; row < GRID_SIZE; row++) {
+                        for (let col = 0; col < GRID_SIZE; col++) {
+                            const gem = grid[row][col];
+                            if (!gem) continue;
+                            
+                            const dx = gem.targetX - gem.x;
+                            const dy = gem.targetY - gem.y;
+                            
+                            if (Math.abs(dx) > 0.5 || Math.abs(dy) > 0.5) {
+                                gem.x += dx * 0.2;
+                                gem.y += dy * 0.2;
+                                moving = true;
+                            } else {
+                                gem.x = gem.targetX;
+                                gem.y = gem.targetY;
+                            }
+                        }
+                    }
+                    
+                    draw();
+                    
+                    if (moving) {
+                        requestAnimationFrame(animate);
+                    } else {
+                        resolve();
+                    }
+                };
+                animate();
+            });
+        }
+        
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        
+        function draw() {
+            // Clear
+            ctx.fillStyle = '#0a1628';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Draw grid background
+            for (let row = 0; row < GRID_SIZE; row++) {
+                for (let col = 0; col < GRID_SIZE; col++) {
+                    ctx.fillStyle = (row + col) % 2 === 0 ? '#0f2847' : '#0d1f3c';
+                    ctx.fillRect(col * GEM_SIZE, row * GEM_SIZE, GEM_SIZE, GEM_SIZE);
+                }
+            }
+            
+            // Draw gems
+            for (let row = 0; row < GRID_SIZE; row++) {
+                for (let col = 0; col < GRID_SIZE; col++) {
+                    const gem = grid[row][col];
+                    if (!gem) continue;
+                    
+                    const gemData = GEM_TYPES[gem.type];
+                    const centerX = gem.x + GEM_SIZE / 2;
+                    const centerY = gem.y + GEM_SIZE / 2;
+                    const size = (GEM_SIZE - 8) / 2 * gem.scale;
+                    
+                    // Selected highlight
+                    if (selected && selected.row === row && selected.col === col) {
+                        ctx.strokeStyle = '#ffffff';
+                        ctx.lineWidth = 3;
+                        ctx.strokeRect(gem.x + 2, gem.y + 2, GEM_SIZE - 4, GEM_SIZE - 4);
+                    }
+                    
+                    // Gem glow
+                    ctx.shadowColor = gemData.glow;
+                    ctx.shadowBlur = 10;
+                    
+                    // Gem gradient
+                    const gradient = ctx.createRadialGradient(
+                        centerX - 4, centerY - 4, 0,
+                        centerX, centerY, size
+                    );
+                    gradient.addColorStop(0, gemData.glow);
+                    gradient.addColorStop(0.7, gemData.color);
+                    gradient.addColorStop(1, shadeColor(gemData.color, -30));
+                    
+                    ctx.globalAlpha = gem.alpha;
+                    ctx.fillStyle = gradient;
+                    
+                    // Draw diamond shape
+                    ctx.beginPath();
+                    ctx.moveTo(centerX, centerY - size);
+                    ctx.lineTo(centerX + size, centerY);
+                    ctx.lineTo(centerX, centerY + size);
+                    ctx.lineTo(centerX - size, centerY);
+                    ctx.closePath();
+                    ctx.fill();
+                    
+                    // Highlight
+                    ctx.fillStyle = 'rgba(255,255,255,0.3)';
+                    ctx.beginPath();
+                    ctx.moveTo(centerX, centerY - size + 4);
+                    ctx.lineTo(centerX + size - 6, centerY);
+                    ctx.lineTo(centerX, centerY - 2);
+                    ctx.lineTo(centerX - size + 6, centerY);
+                    ctx.closePath();
+                    ctx.fill();
+                    
+                    ctx.globalAlpha = 1;
+                    ctx.shadowBlur = 0;
+                }
+            }
+            
+            // Draw particles
+            particles.forEach(p => {
+                ctx.globalAlpha = p.life / 30;
+                ctx.fillStyle = p.color;
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                ctx.fill();
+            });
+            ctx.globalAlpha = 1;
+            
+            // Update particles
+            particles = particles.filter(p => {
+                p.x += p.vx;
+                p.y += p.vy;
+                p.vy += 0.2;
+                p.life--;
+                return p.life > 0;
+            });
+        }
+        
+        function shadeColor(color, percent) {
+            const num = parseInt(color.replace('#', ''), 16);
+            const amt = Math.round(2.55 * percent);
+            const R = Math.max(0, Math.min(255, (num >> 16) + amt));
+            const G = Math.max(0, Math.min(255, (num >> 8 & 0x00FF) + amt));
+            const B = Math.max(0, Math.min(255, (num & 0x0000FF) + amt));
+            return `#${(0x1000000 + R * 0x10000 + G * 0x100 + B).toString(16).slice(1)}`;
+        }
+        
+        function updateProgress() {
+            const progress = Math.min(100, (score / targetScore) * 100);
+            document.getElementById('progressFill').style.width = progress + '%';
+        }
+        
+        function handleClick(row, col) {
+            if (animating || !gameRunning) return;
+            
+            const gem = getGemAt(row, col);
+            if (!gem) return;
+            
+            if (!selected) {
+                selected = { row, col };
+                draw();
+                return;
+            }
+            
+            // Check if adjacent
+            const dr = Math.abs(row - selected.row);
+            const dc = Math.abs(col - selected.col);
+            
+            if ((dr === 1 && dc === 0) || (dr === 0 && dc === 1)) {
+                // Adjacent - try swap
+                const gem1 = grid[selected.row][selected.col];
+                const gem2 = grid[row][col];
+                
+                swapGems(gem1, gem2);
+                selected = null;
+                
+                animateGems().then(() => {
+                    const matches = findMatches();
+                    
+                    if (matches.length > 0) {
+                        moves--;
+                        document.getElementById('moves').textContent = moves;
+                        processMatches();
+                    } else {
+                        // Invalid move - swap back
+                        swapGems(gem1, gem2);
+                        animateGems();
+                    }
+                });
+            } else {
+                // Not adjacent - select new gem
+                selected = { row, col };
+                draw();
+            }
+        }
+        
+        function startGame() {
+            score = 0;
+            level = 1;
+            moves = 30;
+            targetScore = 1000;
+            selected = null;
+            animating = false;
+            particles = [];
+            gameRunning = true;
+            
+            createGrid();
+            
+            document.getElementById('score').textContent = '0';
+            document.getElementById('level').textContent = '1';
+            document.getElementById('moves').textContent = '30';
+            document.getElementById('targetScore').textContent = targetScore;
+            document.getElementById('highScore').textContent = highScore;
+            document.getElementById('startBtn').textContent = 'Restart';
+            updateProgress();
+            
+            closeOverlay();
+            draw();
+        }
+        
+        function nextLevel() {
+            level++;
+            moves = 30 + level * 2;
+            targetScore = 1000 * level + (level - 1) * 500;
+            selected = null;
+            animating = false;
+            particles = [];
+            
+            createGrid();
+            
+            document.getElementById('level').textContent = level;
+            document.getElementById('moves').textContent = moves;
+            document.getElementById('targetScore').textContent = targetScore;
+            updateProgress();
+            
+            closeOverlay();
+            draw();
+        }
+        
+        function levelComplete() {
+            gameRunning = false;
+            
+            if (score > highScore) {
+                highScore = score;
+                localStorage.setItem('gems-high', highScore);
+                document.getElementById('highScore').textContent = highScore;
+            }
+            
+            document.getElementById('overlayTitle').textContent = '⭐ Level Complete!';
+            document.getElementById('overlayTitle').className = 'overlay-title win';
+            document.getElementById('finalScore').textContent = score;
+            document.getElementById('finalLevel').textContent = level;
+            document.getElementById('overlayButtons').innerHTML = `
+                <button class="btn" onclick="nextLevel();">Next Level</button>
+            `;
+            document.getElementById('overlay').classList.add('show');
+        }
+        
+        function gameOver() {
+            gameRunning = false;
+            
+            if (score > highScore) {
+                highScore = score;
+                localStorage.setItem('gems-high', highScore);
+                document.getElementById('highScore').textContent = highScore;
+            }
+            
+            document.getElementById('overlayTitle').textContent = '💥 Out of Moves!';
+            document.getElementById('overlayTitle').className = 'overlay-title lose';
+            document.getElementById('finalScore').textContent = score;
+            document.getElementById('finalLevel').textContent = level;
+            document.getElementById('overlayButtons').innerHTML = `
+                <button class="btn" onclick="startGame(); closeOverlay();">Play Again</button>
+            `;
+            document.getElementById('overlay').classList.add('show');
+        }
+        
+        function closeOverlay() {
+            document.getElementById('overlay').classList.remove('show');
+        }
+        
+        // Input handling
+        canvas.addEventListener('click', e => {
+            const rect = canvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const col = Math.floor(x / GEM_SIZE);
+            const row = Math.floor(y / GEM_SIZE);
+            handleClick(row, col);
+        });
+        
+        let touchStart = null;
+        
+        canvas.addEventListener('touchstart', e => {
+            e.preventDefault();
+            const rect = canvas.getBoundingClientRect();
+            const touch = e.touches[0];
+            touchStart = {
+                x: touch.clientX - rect.left,
+                y: touch.clientY - rect.top,
+                col: Math.floor((touch.clientX - rect.left) / GEM_SIZE),
+                row: Math.floor((touch.clientY - rect.top) / GEM_SIZE)
+            };
+        }, { passive: false });
+        
+        canvas.addEventListener('touchend', e => {
+            e.preventDefault();
+            if (!touchStart) return;
+            
+            const rect = canvas.getBoundingClientRect();
+            const touch = e.changedTouches[0];
+            const endX = touch.clientX - rect.left;
+            const endY = touch.clientY - rect.top;
+            
+            const dx = endX - touchStart.x;
+            const dy = endY - touchStart.y;
+            
+            // Check for swipe
+            if (Math.abs(dx) > 20 || Math.abs(dy) > 20) {
+                let targetRow = touchStart.row;
+                let targetCol = touchStart.col;
+                
+                if (Math.abs(dx) > Math.abs(dy)) {
+                    targetCol += dx > 0 ? 1 : -1;
+                } else {
+                    targetRow += dy > 0 ? 1 : -1;
+                }
+                
+                // Select start gem and click target
+                selected = { row: touchStart.row, col: touchStart.col };
+                handleClick(targetRow, targetCol);
+            } else {
+                // Tap
+                handleClick(touchStart.row, touchStart.col);
+            }
+            
+            touchStart = null;
+        }, { passive: false });
+        
+        // Initialize
+        document.getElementById('highScore').textContent = highScore;
+        createGrid();
+        draw();
+    </script>
+</body>
+</html>

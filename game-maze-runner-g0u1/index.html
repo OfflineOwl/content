@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Maze Runner</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5rem;
+        }
+        h1 { font-size: 1.25rem; margin-bottom: 0.25rem; }
+        .stats {
+            display: flex;
+            gap: 1rem;
+            margin: 0.5rem 0;
+        }
+        .stat {
+            background: #16213e;
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .stat-value { font-size: 1.25rem; font-weight: bold; color: #e94560; }
+        .stat-label { font-size: 0.6rem; color: #a0aec0; }
+        .difficulty {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .diff-btn {
+            padding: 0.3rem 0.6rem;
+            background: #16213e;
+            border: 2px solid transparent;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.75rem;
+        }
+        .diff-btn.active { border-color: #e94560; }
+        #mazeCanvas {
+            background: #0f3460;
+            border-radius: 4px;
+        }
+        .controls {
+            display: grid;
+            grid-template-columns: repeat(3, 50px);
+            gap: 4px;
+            margin-top: 0.5rem;
+        }
+        .ctrl-btn {
+            width: 50px;
+            height: 45px;
+            background: #16213e;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-size: 1.25rem;
+            cursor: pointer;
+        }
+        .ctrl-btn:active { background: #e94560; }
+        .ctrl-up { grid-column: 2; }
+        .ctrl-left { grid-column: 1; grid-row: 2; }
+        .ctrl-down { grid-column: 2; grid-row: 2; }
+        .ctrl-right { grid-column: 3; grid-row: 2; }
+        .btn {
+            background: #e94560;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 0.5rem;
+        }
+        .message {
+            font-size: 1rem;
+            font-weight: bold;
+            min-height: 1.5rem;
+            margin: 0.25rem 0;
+            color: #4ade80;
+        }
+    </style>
+</head>
+<body>
+    <h1>🏃 Maze Runner</h1>
+    
+    <div class="difficulty">
+        <button class="diff-btn active" data-size="11">Easy</button>
+        <button class="diff-btn" data-size="15">Medium</button>
+        <button class="diff-btn" data-size="21">Hard</button>
+    </div>
+    
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-value" id="moves">0</div>
+            <div class="stat-label">Moves</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="time">0:00</div>
+            <div class="stat-label">Time</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="best">-</div>
+            <div class="stat-label">Best</div>
+        </div>
+    </div>
+    
+    <div class="message" id="message"></div>
+    
+    <canvas id="mazeCanvas"></canvas>
+    
+    <div class="controls">
+        <button class="ctrl-btn ctrl-up" onclick="move(0,-1)">▲</button>
+        <button class="ctrl-btn ctrl-left" onclick="move(-1,0)">◄</button>
+        <button class="ctrl-btn ctrl-down" onclick="move(0,1)">▼</button>
+        <button class="ctrl-btn ctrl-right" onclick="move(1,0)">►</button>
+    </div>
+    
+    <button class="btn" onclick="newMaze()">New Maze</button>
+
+    <script>
+        const canvas = document.getElementById('mazeCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        let mazeSize = 11;
+        let cellSize = 20;
+        let maze = [];
+        let playerX = 1, playerY = 1;
+        let endX, endY;
+        let moves = 0;
+        let seconds = 0;
+        let timerInterval = null;
+        let gameActive = false;
+        let best = {};
+        
+        function generateMaze() {
+            // Initialize maze with walls
+            maze = Array(mazeSize).fill(null).map(() => Array(mazeSize).fill(1));
+            
+            // Recursive backtracking
+            function carve(x, y) {
+                maze[y][x] = 0;
+                
+                const directions = [[0,-2], [0,2], [-2,0], [2,0]].sort(() => Math.random() - 0.5);
+                
+                for (const [dx, dy] of directions) {
+                    const nx = x + dx, ny = y + dy;
+                    if (nx > 0 && nx < mazeSize - 1 && ny > 0 && ny < mazeSize - 1 && maze[ny][nx] === 1) {
+                        maze[y + dy/2][x + dx/2] = 0;
+                        carve(nx, ny);
+                    }
+                }
+            }
+            
+            carve(1, 1);
+            
+            // Set start and end
+            playerX = 1;
+            playerY = 1;
+            endX = mazeSize - 2;
+            endY = mazeSize - 2;
+            maze[endY][endX] = 0;
+        }
+        
+        function draw() {
+            canvas.width = mazeSize * cellSize;
+            canvas.height = mazeSize * cellSize;
+            
+            // Draw maze
+            for (let y = 0; y < mazeSize; y++) {
+                for (let x = 0; x < mazeSize; x++) {
+                    if (maze[y][x] === 1) {
+                        ctx.fillStyle = '#16213e';
+                    } else {
+                        ctx.fillStyle = '#0f3460';
+                    }
+                    ctx.fillRect(x * cellSize, y * cellSize, cellSize, cellSize);
+                }
+            }
+            
+            // Draw end point
+            ctx.fillStyle = '#4ade80';
+            ctx.beginPath();
+            ctx.arc(endX * cellSize + cellSize/2, endY * cellSize + cellSize/2, cellSize/3, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.fillStyle = '#ffffff';
+            ctx.font = `${cellSize * 0.5}px Arial`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('🏁', endX * cellSize + cellSize/2, endY * cellSize + cellSize/2);
+            
+            // Draw player
+            ctx.fillStyle = '#e94560';
+            ctx.beginPath();
+            ctx.arc(playerX * cellSize + cellSize/2, playerY * cellSize + cellSize/2, cellSize/3, 0, Math.PI * 2);
+            ctx.fill();
+        }
+        
+        function move(dx, dy) {
+            if (!gameActive) return;
+            
+            const newX = playerX + dx;
+            const newY = playerY + dy;
+            
+            if (newX >= 0 && newX < mazeSize && newY >= 0 && newY < mazeSize && maze[newY][newX] === 0) {
+                playerX = newX;
+                playerY = newY;
+                moves++;
+                document.getElementById('moves').textContent = moves;
+                draw();
+                
+                if (playerX === endX && playerY === endY) {
+                    win();
+                }
+            }
+        }
+        
+        function win() {
+            gameActive = false;
+            clearInterval(timerInterval);
+            document.getElementById('message').textContent = '🎉 You escaped!';
+            
+            const key = `maze-${mazeSize}`;
+            if (!best[key] || moves < best[key]) {
+                best[key] = moves;
+                document.getElementById('best').textContent = moves;
+            }
+        }
+        
+        function newMaze() {
+            clearInterval(timerInterval);
+            moves = 0;
+            seconds = 0;
+            gameActive = true;
+            
+            document.getElementById('moves').textContent = '0';
+            document.getElementById('time').textContent = '0:00';
+            document.getElementById('message').textContent = '';
+            
+            const key = `maze-${mazeSize}`;
+            document.getElementById('best').textContent = best[key] || '-';
+            
+            generateMaze();
+            draw();
+            
+            timerInterval = setInterval(() => {
+                seconds++;
+                const m = Math.floor(seconds / 60);
+                const s = seconds % 60;
+                document.getElementById('time').textContent = `${m}:${s.toString().padStart(2, '0')}`;
+            }, 1000);
+        }
+        
+        document.addEventListener('keydown', e => {
+            if (e.key === 'ArrowUp' || e.key === 'w') move(0, -1);
+            else if (e.key === 'ArrowDown' || e.key === 's') move(0, 1);
+            else if (e.key === 'ArrowLeft' || e.key === 'a') move(-1, 0);
+            else if (e.key === 'ArrowRight' || e.key === 'd') move(1, 0);
+        });
+        
+        // Touch swipe
+        let touchStart = { x: 0, y: 0 };
+        canvas.addEventListener('touchstart', e => {
+            touchStart = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+        }, { passive: true });
+        canvas.addEventListener('touchend', e => {
+            const dx = e.changedTouches[0].clientX - touchStart.x;
+            const dy = e.changedTouches[0].clientY - touchStart.y;
+            if (Math.abs(dx) > 20 || Math.abs(dy) > 20) {
+                if (Math.abs(dx) > Math.abs(dy)) {
+                    move(dx > 0 ? 1 : -1, 0);
+                } else {
+                    move(0, dy > 0 ? 1 : -1);
+                }
+            }
+        }, { passive: true });
+        
+        document.querySelectorAll('.diff-btn').forEach(btn => {
+            btn.onclick = () => {
+                document.querySelectorAll('.diff-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                mazeSize = parseInt(btn.dataset.size);
+                newMaze();
+            };
+        });
+        
+        newMaze();
+    </script>
+</body>
+</html>

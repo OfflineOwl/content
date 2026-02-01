@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Peg Popper</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5rem;
+            touch-action: none;
+            overflow: hidden;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.25rem;
+        }
+        h1 { 
+            font-size: 1.2rem; 
+            text-shadow: 0 0 10px #f59e0b;
+        }
+        .stats {
+            display: flex;
+            gap: 1rem;
+            margin: 0.4rem 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .stat { text-align: center; }
+        .stat-value { 
+            font-size: 1rem; 
+            font-weight: bold; 
+            color: #f59e0b;
+            text-shadow: 0 0 8px rgba(245, 158, 11, 0.5);
+        }
+        .stat-label { font-size: 0.55rem; color: #a0aec0; text-transform: uppercase; }
+        .game-area {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(245, 158, 11, 0.3);
+        }
+        #gameCanvas {
+            display: block;
+            background: linear-gradient(180deg, #0a1628 0%, #1a1a3e 100%);
+        }
+        .btn {
+            background: linear-gradient(145deg, #f59e0b, #d97706);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.25rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 0.5rem;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+        }
+        .btn:active { transform: scale(0.95); }
+        .btn-secondary {
+            background: linear-gradient(145deg, #3b82f6, #2563eb);
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(10, 22, 40, 0.95);
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            backdrop-filter: blur(5px);
+        }
+        .overlay.show { display: flex; }
+        .overlay-content {
+            background: linear-gradient(145deg, #1e2d4a, #16213e);
+            padding: 1.5rem;
+            border-radius: 16px;
+            text-align: center;
+            border: 2px solid #f59e0b;
+            box-shadow: 0 0 40px rgba(245, 158, 11, 0.4);
+            max-width: 300px;
+            width: 90%;
+        }
+        .overlay-title { 
+            font-size: 1.5rem; 
+            margin-bottom: 0.75rem;
+            text-shadow: 0 0 15px currentColor;
+        }
+        .win { color: #4ade80; }
+        .lose { color: #e94560; }
+        .info { color: #3b82f6; }
+        .final-stats { margin: 1rem 0; color: #a0aec0; }
+        .final-stats span { color: #ffffff; font-weight: bold; }
+        .aim-indicator {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.7rem;
+            color: #a0aec0;
+            background: rgba(0,0,0,0.5);
+            padding: 4px 10px;
+            border-radius: 10px;
+        }
+        .legend {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 0.4rem;
+            font-size: 0.6rem;
+            color: #a0aec0;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .legend-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        .legend-orange { background: #f59e0b; }
+        .legend-blue { background: #3b82f6; }
+        .legend-green { background: #4ade80; }
+        .legend-purple { background: #a855f7; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎯 Peg Popper</h1>
+    </div>
+    
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-value" id="score">0</div>
+            <div class="stat-label">Score</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="balls">10</div>
+            <div class="stat-label">Balls</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="orangeLeft">25</div>
+            <div class="stat-label">Orange</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="highScore">0</div>
+            <div class="stat-label">Best</div>
+        </div>
+    </div>
+    
+    <div class="game-area">
+        <canvas id="gameCanvas" width="320" height="450"></canvas>
+        <div class="aim-indicator" id="aimIndicator">Tap & drag to aim</div>
+    </div>
+    
+    <div class="legend">
+        <div class="legend-item"><div class="legend-dot legend-orange"></div> Target</div>
+        <div class="legend-item"><div class="legend-dot legend-blue"></div> Normal</div>
+        <div class="legend-item"><div class="legend-dot legend-green"></div> +Ball</div>
+        <div class="legend-item"><div class="legend-dot legend-purple"></div> 2x Score</div>
+    </div>
+    
+    <button class="btn" id="startBtn" onclick="startGame()">Start Game</button>
+    
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <div class="overlay-title" id="overlayTitle">Level Complete!</div>
+            <div class="final-stats">
+                <p>Score: <span id="finalScore">0</span></p>
+                <p>Orange Cleared: <span id="orangeCleared">0</span></p>
+            </div>
+            <div id="overlayButtons">
+                <button class="btn" onclick="startGame(); closeOverlay();">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Game constants
+        const GRAVITY = 0.15;
+        const BOUNCE = 0.7;
+        const BALL_RADIUS = 8;
+        const PEG_RADIUS = 8;
+        const BUCKET_WIDTH = 60;
+        const BUCKET_SPEED = 1.5;
+        
+        // Game state
+        let pegs = [];
+        let ball = null;
+        let score = 0;
+        let ballsLeft = 10;
+        let orangeLeft = 0;
+        let totalOrange = 0;
+        let gameRunning = false;
+        let aiming = true;
+        let aimAngle = Math.PI / 2;
+        let bucket = { x: canvas.width / 2, dir: 1 };
+        let hitPegs = [];
+        let scoreMultiplier = 1;
+        let particles = [];
+        let highScore = parseInt(localStorage.getItem('pegdrop-high') || '0');
+        let animationId = null;
+        
+        // Peg types
+        const PEG_TYPES = {
+            BLUE: { color: '#3b82f6', glow: '#60a5fa', points: 10 },
+            ORANGE: { color: '#f59e0b', glow: '#fbbf24', points: 100 },
+            GREEN: { color: '#4ade80', glow: '#86efac', points: 50, special: 'freeBall' },
+            PURPLE: { color: '#a855f7', glow: '#c084fc', points: 500, special: 'multiplier' }
+        };
+        
+        function createLevel() {
+            pegs = [];
+            const rows = 8;
+            const cols = 10;
+            const startY = 80;
+            const spacing = 32;
+            
+            for (let row = 0; row < rows; row++) {
+                const offset = (row % 2) * (spacing / 2);
+                const colsInRow = row % 2 === 0 ? cols : cols - 1;
+                
+                for (let col = 0; col < colsInRow; col++) {
+                    const x = 20 + offset + col * spacing;
+                    const y = startY + row * 40;
+                    
+                    // Add some randomness
+                    if (Math.random() < 0.15) continue;
+                    
+                    // Determine peg type
+                    let type = 'BLUE';
+                    const rand = Math.random();
+                    if (rand < 0.25) type = 'ORANGE';
+                    else if (rand < 0.28) type = 'GREEN';
+                    else if (rand < 0.31) type = 'PURPLE';
+                    
+                    pegs.push({
+                        x: x + (Math.random() - 0.5) * 8,
+                        y: y + (Math.random() - 0.5) * 8,
+                        type,
+                        hit: false,
+                        scale: 1,
+                        glow: 0
+                    });
+                }
+            }
+            
+            // Count orange pegs
+            orangeLeft = pegs.filter(p => p.type === 'ORANGE').length;
+            totalOrange = orangeLeft;
+        }
+        
+        function shootBall() {
+            if (!aiming || ballsLeft <= 0) return;
+            
+            aiming = false;
+            const speed = 10;
+            ball = {
+                x: canvas.width / 2,
+                y: 25,
+                vx: Math.cos(aimAngle) * speed,
+                vy: Math.sin(aimAngle) * speed,
+                trail: []
+            };
+            hitPegs = [];
+            scoreMultiplier = 1;
+            document.getElementById('aimIndicator').style.display = 'none';
+        }
+        
+        function createParticles(x, y, color, count = 8) {
+            for (let i = 0; i < count; i++) {
+                particles.push({
+                    x, y,
+                    vx: (Math.random() - 0.5) * 6,
+                    vy: (Math.random() - 0.5) * 6,
+                    life: 40,
+                    color,
+                    size: Math.random() * 4 + 2
+                });
+            }
+        }
+        
+        function updateBall() {
+            if (!ball) return;
+            
+            // Trail
+            ball.trail.push({ x: ball.x, y: ball.y });
+            if (ball.trail.length > 15) ball.trail.shift();
+            
+            // Physics
+            ball.vy += GRAVITY;
+            ball.x += ball.vx;
+            ball.y += ball.vy;
+            
+            // Wall collision
+            if (ball.x < BALL_RADIUS) {
+                ball.x = BALL_RADIUS;
+                ball.vx = -ball.vx * BOUNCE;
+            }
+            if (ball.x > canvas.width - BALL_RADIUS) {
+                ball.x = canvas.width - BALL_RADIUS;
+                ball.vx = -ball.vx * BOUNCE;
+            }
+            if (ball.y < BALL_RADIUS) {
+                ball.y = BALL_RADIUS;
+                ball.vy = -ball.vy * BOUNCE;
+            }
+            
+            // Peg collision
+            pegs.forEach(peg => {
+                if (peg.hit) return;
+                
+                const dx = ball.x - peg.x;
+                const dy = ball.y - peg.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                
+                if (dist < BALL_RADIUS + PEG_RADIUS) {
+                    // Hit peg
+                    peg.hit = true;
+                    peg.glow = 1;
+                    hitPegs.push(peg);
+                    
+                    // Reflect ball
+                    const nx = dx / dist;
+                    const ny = dy / dist;
+                    const dot = ball.vx * nx + ball.vy * ny;
+                    ball.vx = (ball.vx - 2 * dot * nx) * BOUNCE;
+                    ball.vy = (ball.vy - 2 * dot * ny) * BOUNCE;
+                    
+                    // Move ball out of peg
+                    ball.x = peg.x + nx * (BALL_RADIUS + PEG_RADIUS + 1);
+                    ball.y = peg.y + ny * (BALL_RADIUS + PEG_RADIUS + 1);
+                    
+                    // Apply powerup
+                    const pegData = PEG_TYPES[peg.type];
+                    if (pegData.special === 'multiplier') {
+                        scoreMultiplier = 2;
+                    }
+                    
+                    createParticles(peg.x, peg.y, pegData.color, 10);
+                }
+            });
+            
+            // Bucket collision (free ball)
+            if (ball.y > canvas.height - 30 && ball.y < canvas.height - 10) {
+                if (ball.x > bucket.x - BUCKET_WIDTH/2 && ball.x < bucket.x + BUCKET_WIDTH/2) {
+                    ballsLeft++;
+                    document.getElementById('balls').textContent = ballsLeft;
+                    createParticles(ball.x, ball.y, '#4ade80', 15);
+                    endShot();
+                    return;
+                }
+            }
+            
+            // Ball lost
+            if (ball.y > canvas.height + 20) {
+                endShot();
+            }
+        }
+        
+        function endShot() {
+            // Calculate score
+            let shotScore = 0;
+            hitPegs.forEach(peg => {
+                shotScore += PEG_TYPES[peg.type].points;
+                
+                // Check for free ball
+                if (PEG_TYPES[peg.type].special === 'freeBall') {
+                    ballsLeft++;
+                    document.getElementById('balls').textContent = ballsLeft;
+                }
+            });
+            
+            // Combo bonus
+            if (hitPegs.length >= 10) shotScore *= 2;
+            else if (hitPegs.length >= 5) shotScore *= 1.5;
+            
+            // Apply multiplier
+            shotScore *= scoreMultiplier;
+            score += Math.floor(shotScore);
+            document.getElementById('score').textContent = score;
+            
+            // Remove hit pegs
+            pegs = pegs.filter(p => !p.hit);
+            
+            // Update orange count
+            orangeLeft = pegs.filter(p => p.type === 'ORANGE').length;
+            document.getElementById('orangeLeft').textContent = orangeLeft;
+            
+            // Check win/lose
+            if (orangeLeft === 0) {
+                gameWin();
+                return;
+            }
+            
+            ballsLeft--;
+            document.getElementById('balls').textContent = ballsLeft;
+            
+            if (ballsLeft <= 0) {
+                gameOver();
+                return;
+            }
+            
+            // Ready for next shot
+            ball = null;
+            aiming = true;
+            document.getElementById('aimIndicator').style.display = 'block';
+        }
+        
+        function updateBucket() {
+            bucket.x += bucket.dir * BUCKET_SPEED;
+            if (bucket.x > canvas.width - BUCKET_WIDTH/2) {
+                bucket.x = canvas.width - BUCKET_WIDTH/2;
+                bucket.dir = -1;
+            }
+            if (bucket.x < BUCKET_WIDTH/2) {
+                bucket.x = BUCKET_WIDTH/2;
+                bucket.dir = 1;
+            }
+        }
+        
+        function updateParticles() {
+            particles = particles.filter(p => {
+                p.x += p.vx;
+                p.y += p.vy;
+                p.vy += 0.1;
+                p.life--;
+                return p.life > 0;
+            });
+        }
+        
+        function draw() {
+            // Clear
+            ctx.fillStyle = '#0a1628';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Draw launcher
+            ctx.fillStyle = '#4ade80';
+            ctx.beginPath();
+            ctx.arc(canvas.width / 2, 15, 15, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Draw aim line
+            if (aiming && ballsLeft > 0) {
+                ctx.strokeStyle = 'rgba(255, 255, 255, 0.5)';
+                ctx.lineWidth = 2;
+                ctx.setLineDash([5, 5]);
+                ctx.beginPath();
+                ctx.moveTo(canvas.width / 2, 25);
+                ctx.lineTo(
+                    canvas.width / 2 + Math.cos(aimAngle) * 80,
+                    25 + Math.sin(aimAngle) * 80
+                );
+                ctx.stroke();
+                ctx.setLineDash([]);
+            }
+            
+            // Draw pegs
+            pegs.forEach(peg => {
+                const pegData = PEG_TYPES[peg.type];
+                
+                // Glow effect
+                if (peg.glow > 0) {
+                    ctx.shadowColor = pegData.glow;
+                    ctx.shadowBlur = 20 * peg.glow;
+                    peg.glow -= 0.02;
+                }
+                
+                // Peg gradient
+                const gradient = ctx.createRadialGradient(
+                    peg.x - 2, peg.y - 2, 0,
+                    peg.x, peg.y, PEG_RADIUS
+                );
+                gradient.addColorStop(0, pegData.glow);
+                gradient.addColorStop(1, pegData.color);
+                
+                ctx.fillStyle = gradient;
+                ctx.beginPath();
+                ctx.arc(peg.x, peg.y, PEG_RADIUS * peg.scale, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.shadowBlur = 0;
+            });
+            
+            // Draw ball
+            if (ball) {
+                // Trail
+                ball.trail.forEach((pos, i) => {
+                    const alpha = i / ball.trail.length * 0.5;
+                    ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
+                    ctx.beginPath();
+                    ctx.arc(pos.x, pos.y, BALL_RADIUS * (i / ball.trail.length), 0, Math.PI * 2);
+                    ctx.fill();
+                });
+                
+                // Ball
+                ctx.shadowColor = '#ffffff';
+                ctx.shadowBlur = 15;
+                const ballGradient = ctx.createRadialGradient(
+                    ball.x - 2, ball.y - 2, 0,
+                    ball.x, ball.y, BALL_RADIUS
+                );
+                ballGradient.addColorStop(0, '#ffffff');
+                ballGradient.addColorStop(1, '#c0c0c0');
+                ctx.fillStyle = ballGradient;
+                ctx.beginPath();
+                ctx.arc(ball.x, ball.y, BALL_RADIUS, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.shadowBlur = 0;
+            }
+            
+            // Draw particles
+            particles.forEach(p => {
+                ctx.globalAlpha = p.life / 40;
+                ctx.fillStyle = p.color;
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                ctx.fill();
+            });
+            ctx.globalAlpha = 1;
+            
+            // Draw bucket
+            ctx.fillStyle = '#4ade80';
+            ctx.beginPath();
+            ctx.roundRect(
+                bucket.x - BUCKET_WIDTH/2, 
+                canvas.height - 25, 
+                BUCKET_WIDTH, 
+                20, 
+                5
+            );
+            ctx.fill();
+            ctx.fillStyle = 'rgba(255,255,255,0.3)';
+            ctx.fillRect(bucket.x - BUCKET_WIDTH/2 + 5, canvas.height - 23, BUCKET_WIDTH - 10, 5);
+            
+            // Free ball text
+            ctx.fillStyle = '#ffffff';
+            ctx.font = 'bold 9px sans-serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('FREE BALL', bucket.x, canvas.height - 12);
+        }
+        
+        function gameLoop() {
+            if (!gameRunning) return;
+            
+            updateBall();
+            updateBucket();
+            updateParticles();
+            draw();
+            
+            animationId = requestAnimationFrame(gameLoop);
+        }
+        
+        function startGame() {
+            if (animationId) cancelAnimationFrame(animationId);
+            
+            score = 0;
+            ballsLeft = 10;
+            aiming = true;
+            ball = null;
+            particles = [];
+            scoreMultiplier = 1;
+            
+            createLevel();
+            
+            document.getElementById('score').textContent = '0';
+            document.getElementById('balls').textContent = '10';
+            document.getElementById('orangeLeft').textContent = orangeLeft;
+            document.getElementById('highScore').textContent = highScore;
+            document.getElementById('aimIndicator').style.display = 'block';
+            document.getElementById('startBtn').textContent = 'Restart';
+            
+            gameRunning = true;
+            gameLoop();
+        }
+        
+        function gameWin() {
+            gameRunning = false;
+            
+            // Bonus for remaining balls
+            const bonus = ballsLeft * 10000;
+            score += bonus;
+            
+            if (score > highScore) {
+                highScore = score;
+                localStorage.setItem('pegdrop-high', highScore);
+                document.getElementById('highScore').textContent = highScore;
+            }
+            
+            document.getElementById('overlayTitle').textContent = '🎉 You Win!';
+            document.getElementById('overlayTitle').className = 'overlay-title win';
+            document.getElementById('finalScore').textContent = score + (bonus > 0 ? ` (+${bonus} bonus)` : '');
+            document.getElementById('orangeCleared').textContent = totalOrange;
+            document.getElementById('overlay').classList.add('show');
+        }
+        
+        function gameOver() {
+            gameRunning = false;
+            
+            if (score > highScore) {
+                highScore = score;
+                localStorage.setItem('pegdrop-high', highScore);
+                document.getElementById('highScore').textContent = highScore;
+            }
+            
+            document.getElementById('overlayTitle').textContent = '💥 Game Over';
+            document.getElementById('overlayTitle').className = 'overlay-title lose';
+            document.getElementById('finalScore').textContent = score;
+            document.getElementById('orangeCleared').textContent = totalOrange - orangeLeft;
+            document.getElementById('overlay').classList.add('show');
+        }
+        
+        function closeOverlay() {
+            document.getElementById('overlay').classList.remove('show');
+        }
+        
+        // Aim controls
+        function updateAim(clientX) {
+            const rect = canvas.getBoundingClientRect();
+            const x = clientX - rect.left;
+            const dx = x - canvas.width / 2;
+            const dy = 80; // Fixed aim length
+            aimAngle = Math.atan2(Math.abs(dy), dx);
+            // Clamp angle
+            aimAngle = Math.max(0.2, Math.min(Math.PI - 0.2, aimAngle));
+        }
+        
+        canvas.addEventListener('mousemove', e => {
+            if (aiming) updateAim(e.clientX);
+        });
+        
+        canvas.addEventListener('click', e => {
+            if (aiming) {
+                updateAim(e.clientX);
+                shootBall();
+            }
+        });
+        
+        canvas.addEventListener('touchstart', e => {
+            e.preventDefault();
+            if (aiming) updateAim(e.touches[0].clientX);
+        }, { passive: false });
+        
+        canvas.addEventListener('touchmove', e => {
+            e.preventDefault();
+            if (aiming) updateAim(e.touches[0].clientX);
+        }, { passive: false });
+        
+        canvas.addEventListener('touchend', e => {
+            e.preventDefault();
+            if (aiming) shootBall();
+        }, { passive: false });
+        
+        // Initialize
+        document.getElementById('highScore').textContent = highScore;
+        createLevel();
+        document.getElementById('orangeLeft').textContent = orangeLeft;
+        
+        // Draw initial state
+        gameRunning = true;
+        draw();
+        gameRunning = false;
+    </script>
+</body>
+</html>

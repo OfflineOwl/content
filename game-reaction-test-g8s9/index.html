@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Reaction Test</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+        }
+        h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+        .subtitle { color: #a0aec0; font-size: 0.85rem; margin-bottom: 1rem; }
+        .stats {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .stat {
+            background: #16213e;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .stat-value { font-size: 1.5rem; font-weight: bold; color: #e94560; }
+        .stat-label { font-size: 0.7rem; color: #a0aec0; }
+        .game-box {
+            width: 300px;
+            height: 300px;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background 0.2s;
+            user-select: none;
+        }
+        .game-box.waiting {
+            background: #e94560;
+        }
+        .game-box.ready {
+            background: #4ade80;
+        }
+        .game-box.result {
+            background: #16213e;
+        }
+        .game-box.early {
+            background: #f59e0b;
+        }
+        .box-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        .box-text {
+            font-size: 1.25rem;
+            font-weight: bold;
+            text-align: center;
+            padding: 0 1rem;
+        }
+        .box-time {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+        .box-unit {
+            font-size: 1rem;
+            color: #a0aec0;
+        }
+        .history {
+            margin-top: 1rem;
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 300px;
+        }
+        .history-item {
+            padding: 0.3rem 0.6rem;
+            background: #16213e;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+        .history-item.fast { color: #4ade80; }
+        .history-item.medium { color: #fbbf24; }
+        .history-item.slow { color: #e94560; }
+        .rating {
+            font-size: 1rem;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>⚡ Reaction Test</h1>
+    <p class="subtitle">Test your reflexes!</p>
+    
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-value" id="average">---</div>
+            <div class="stat-label">Average</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="best">---</div>
+            <div class="stat-label">Best</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="tries">0</div>
+            <div class="stat-label">Tries</div>
+        </div>
+    </div>
+    
+    <div class="game-box waiting" id="gameBox" onclick="handleClick()">
+        <div class="box-icon" id="boxIcon">🎯</div>
+        <div class="box-text" id="boxText">Click to start</div>
+    </div>
+    
+    <div class="rating" id="rating"></div>
+    
+    <div class="history" id="history"></div>
+
+    <script>
+        let state = 'idle'; // idle, waiting, ready, result, early
+        let startTime = 0;
+        let timeout = null;
+        let results = [];
+        let bestTime = parseInt(localStorage.getItem('reaction-best') || '9999');
+        
+        if (bestTime < 9999) {
+            document.getElementById('best').textContent = bestTime + 'ms';
+        }
+        
+        function handleClick() {
+            const box = document.getElementById('gameBox');
+            const icon = document.getElementById('boxIcon');
+            const text = document.getElementById('boxText');
+            
+            switch(state) {
+                case 'idle':
+                case 'result':
+                case 'early':
+                    // Start waiting
+                    state = 'waiting';
+                    box.className = 'game-box waiting';
+                    icon.textContent = '⏳';
+                    text.innerHTML = 'Wait for green...';
+                    document.getElementById('rating').textContent = '';
+                    
+                    const delay = Math.random() * 4000 + 1000; // 1-5 seconds
+                    timeout = setTimeout(() => {
+                        state = 'ready';
+                        startTime = Date.now();
+                        box.className = 'game-box ready';
+                        icon.textContent = '🟢';
+                        text.innerHTML = 'CLICK NOW!';
+                    }, delay);
+                    break;
+                    
+                case 'waiting':
+                    // Clicked too early
+                    clearTimeout(timeout);
+                    state = 'early';
+                    box.className = 'game-box early';
+                    icon.textContent = '❌';
+                    text.innerHTML = 'Too early!<br>Click to try again';
+                    break;
+                    
+                case 'ready':
+                    // Record time
+                    const reactionTime = Date.now() - startTime;
+                    state = 'result';
+                    results.push(reactionTime);
+                    
+                    box.className = 'game-box result';
+                    icon.textContent = '⚡';
+                    text.innerHTML = `<div class="box-time">${reactionTime}</div><div class="box-unit">milliseconds</div>Click to try again`;
+                    
+                    updateStats(reactionTime);
+                    break;
+            }
+        }
+        
+        function updateStats(time) {
+            // Update tries
+            document.getElementById('tries').textContent = results.length;
+            
+            // Update average
+            const avg = Math.round(results.reduce((a, b) => a + b, 0) / results.length);
+            document.getElementById('average').textContent = avg + 'ms';
+            
+            // Update best
+            if (time < bestTime) {
+                bestTime = time;
+                localStorage.setItem('reaction-best', bestTime);
+            }
+            document.getElementById('best').textContent = bestTime + 'ms';
+            
+            // Rating
+            let rating = '';
+            if (time < 200) rating = '🏆 Incredible!';
+            else if (time < 250) rating = '🌟 Excellent!';
+            else if (time < 300) rating = '👍 Good!';
+            else if (time < 400) rating = '😊 Average';
+            else rating = '🐢 Keep practicing!';
+            document.getElementById('rating').textContent = rating;
+            
+            // History
+            const historyEl = document.getElementById('history');
+            const item = document.createElement('span');
+            item.className = 'history-item';
+            if (time < 250) item.classList.add('fast');
+            else if (time < 350) item.classList.add('medium');
+            else item.classList.add('slow');
+            item.textContent = time + 'ms';
+            historyEl.appendChild(item);
+            
+            // Keep only last 10
+            while (historyEl.children.length > 10) {
+                historyEl.removeChild(historyEl.firstChild);
+            }
+        }
+        
+        // Prevent accidental double-clicks
+        document.getElementById('gameBox').addEventListener('mousedown', e => e.preventDefault());
+    </script>
+</body>
+</html>

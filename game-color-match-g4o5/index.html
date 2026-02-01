@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Color Match</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+        }
+        h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+        .subtitle { color: #a0aec0; font-size: 0.8rem; margin-bottom: 1rem; }
+        .stats {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .stat {
+            background: #16213e;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .stat-value { font-size: 1.5rem; font-weight: bold; color: #e94560; }
+        .stat-label { font-size: 0.65rem; color: #a0aec0; }
+        .game-area {
+            background: #16213e;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .color-word {
+            font-size: 3rem;
+            font-weight: bold;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            min-width: 200px;
+        }
+        .question {
+            font-size: 1rem;
+            color: #a0aec0;
+            margin-bottom: 1rem;
+        }
+        .choices {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .choice-btn {
+            width: 100px;
+            height: 60px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            color: white;
+            transition: transform 0.1s;
+        }
+        .choice-btn:active { transform: scale(0.95); }
+        .choice-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        .timer-bar {
+            width: 100%;
+            height: 8px;
+            background: #0f3460;
+            border-radius: 4px;
+            margin: 1rem 0;
+            overflow: hidden;
+        }
+        .timer-fill {
+            height: 100%;
+            background: #4ade80;
+            transition: width 0.1s linear;
+        }
+        .timer-fill.warning { background: #fbbf24; }
+        .timer-fill.danger { background: #e94560; }
+        .message {
+            font-size: 1.25rem;
+            font-weight: bold;
+            min-height: 2rem;
+            margin-top: 1rem;
+        }
+        .message.correct { color: #4ade80; }
+        .message.wrong { color: #e94560; }
+        .btn {
+            background: #e94560;
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+        .mode-toggle {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .mode-btn {
+            padding: 0.4rem 0.75rem;
+            background: #16213e;
+            border: 2px solid transparent;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+        .mode-btn.active { border-color: #e94560; }
+    </style>
+</head>
+<body>
+    <h1>🎨 Color Match</h1>
+    <p class="subtitle">Does the word match its color?</p>
+    
+    <div class="mode-toggle">
+        <button class="mode-btn active" data-mode="match">Match Mode</button>
+        <button class="mode-btn" data-mode="word">Word Mode</button>
+        <button class="mode-btn" data-mode="color">Color Mode</button>
+    </div>
+    
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-value" id="score">0</div>
+            <div class="stat-label">Score</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="streak">0</div>
+            <div class="stat-label">Streak</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="best">0</div>
+            <div class="stat-label">Best</div>
+        </div>
+    </div>
+    
+    <div class="game-area">
+        <div class="question" id="question">Does the word match its color?</div>
+        <div class="color-word" id="colorWord">RED</div>
+        <div class="timer-bar"><div class="timer-fill" id="timerFill"></div></div>
+        <div class="choices" id="choices"></div>
+        <div class="message" id="message"></div>
+    </div>
+    
+    <button class="btn" onclick="startGame()">Start Game</button>
+
+    <script>
+        const colors = [
+            { name: 'RED', hex: '#e94560' },
+            { name: 'BLUE', hex: '#3b82f6' },
+            { name: 'GREEN', hex: '#4ade80' },
+            { name: 'YELLOW', hex: '#fbbf24' },
+            { name: 'PURPLE', hex: '#a855f7' },
+            { name: 'ORANGE', hex: '#f97316' }
+        ];
+        
+        let score = 0;
+        let streak = 0;
+        let best = parseInt(localStorage.getItem('color-best') || '0');
+        let gameActive = false;
+        let timeLeft = 100;
+        let timerInterval = null;
+        let currentWord = null;
+        let currentColor = null;
+        let mode = 'match';
+        
+        document.getElementById('best').textContent = best;
+        
+        function startGame() {
+            score = 0;
+            streak = 0;
+            timeLeft = 100;
+            gameActive = true;
+            
+            document.getElementById('score').textContent = '0';
+            document.getElementById('streak').textContent = '0';
+            document.getElementById('message').textContent = '';
+            
+            updateQuestion();
+            nextRound();
+            
+            if (timerInterval) clearInterval(timerInterval);
+            timerInterval = setInterval(updateTimer, 50);
+        }
+        
+        function updateQuestion() {
+            const questions = {
+                match: 'Does the word match its color?',
+                word: 'What does the word say?',
+                color: 'What color is the text?'
+            };
+            document.getElementById('question').textContent = questions[mode];
+        }
+        
+        function nextRound() {
+            const wordIndex = Math.floor(Math.random() * colors.length);
+            const colorIndex = Math.floor(Math.random() * colors.length);
+            
+            currentWord = colors[wordIndex];
+            currentColor = colors[colorIndex];
+            
+            const wordEl = document.getElementById('colorWord');
+            wordEl.textContent = currentWord.name;
+            wordEl.style.color = currentColor.hex;
+            
+            renderChoices();
+            timeLeft = 100;
+        }
+        
+        function renderChoices() {
+            const choicesEl = document.getElementById('choices');
+            choicesEl.innerHTML = '';
+            
+            if (mode === 'match') {
+                ['YES', 'NO'].forEach(answer => {
+                    const btn = document.createElement('button');
+                    btn.className = 'choice-btn';
+                    btn.style.background = answer === 'YES' ? '#4ade80' : '#e94560';
+                    btn.textContent = answer;
+                    btn.onclick = () => checkAnswer(answer);
+                    choicesEl.appendChild(btn);
+                });
+            } else {
+                // Shuffle and pick 4 colors
+                const shuffled = [...colors].sort(() => Math.random() - 0.5).slice(0, 4);
+                const correct = mode === 'word' ? currentWord : currentColor;
+                if (!shuffled.find(c => c.name === correct.name)) {
+                    shuffled[0] = correct;
+                    shuffled.sort(() => Math.random() - 0.5);
+                }
+                
+                shuffled.forEach(color => {
+                    const btn = document.createElement('button');
+                    btn.className = 'choice-btn';
+                    btn.style.background = color.hex;
+                    btn.textContent = color.name;
+                    btn.onclick = () => checkAnswer(color.name);
+                    choicesEl.appendChild(btn);
+                });
+            }
+        }
+        
+        function checkAnswer(answer) {
+            if (!gameActive) return;
+            
+            let correct = false;
+            
+            if (mode === 'match') {
+                const isMatch = currentWord.name === currentColor.name;
+                correct = (answer === 'YES') === isMatch;
+            } else if (mode === 'word') {
+                correct = answer === currentWord.name;
+            } else {
+                correct = answer === currentColor.name;
+            }
+            
+            const msgEl = document.getElementById('message');
+            
+            if (correct) {
+                score += Math.ceil(timeLeft / 10);
+                streak++;
+                document.getElementById('score').textContent = score;
+                document.getElementById('streak').textContent = streak;
+                msgEl.textContent = '✓ Correct!';
+                msgEl.className = 'message correct';
+                nextRound();
+            } else {
+                msgEl.textContent = '✗ Wrong!';
+                msgEl.className = 'message wrong';
+                endGame();
+            }
+        }
+        
+        function updateTimer() {
+            if (!gameActive) return;
+            
+            timeLeft -= 2;
+            const fill = document.getElementById('timerFill');
+            fill.style.width = timeLeft + '%';
+            
+            if (timeLeft > 50) fill.className = 'timer-fill';
+            else if (timeLeft > 25) fill.className = 'timer-fill warning';
+            else fill.className = 'timer-fill danger';
+            
+            if (timeLeft <= 0) {
+                document.getElementById('message').textContent = '⏱ Time\'s up!';
+                document.getElementById('message').className = 'message wrong';
+                endGame();
+            }
+        }
+        
+        function endGame() {
+            gameActive = false;
+            clearInterval(timerInterval);
+            
+            if (score > best) {
+                best = score;
+                localStorage.setItem('color-best', best);
+                document.getElementById('best').textContent = best;
+            }
+        }
+        
+        document.querySelectorAll('.mode-btn').forEach(btn => {
+            btn.onclick = () => {
+                document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                mode = btn.dataset.mode;
+                updateQuestion();
+                if (gameActive) {
+                    renderChoices();
+                }
+            };
+        });
+        
+        // Initial display
+        document.getElementById('colorWord').style.color = colors[0].hex;
+    </script>
+</body>
+</html>
