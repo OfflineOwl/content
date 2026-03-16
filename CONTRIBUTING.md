@@ -23,7 +23,7 @@ Here's the fastest path to contributing a resource:
 
 ```bash
 # 1. Generate a unique 4-character ID
-#    Go to https://offlineowl.app/tools/id-generator
+#    Go to https://offlineowl.com/tools/id-generator
 #    Example: a7x9
 
 # 2. Create your resource folder
@@ -41,7 +41,7 @@ echo "# How to Build a DIY Water Filter" > water-filter-diy-a7x9/index.md
 
 ### Step 1: Generate a Resource ID
 
-Every resource needs a unique 4-character alphanumeric ID. Use the [ID Generator](https://offlineowl.app/tools/id-generator) to create one.
+Every resource needs a unique 4-character alphanumeric ID. Use the [ID Generator](https://offlineowl.com/tools/id-generator) to create one.
 
 Example IDs: `k2m8`, `a7x9`, `n8f2`
 
@@ -402,4 +402,4 @@ If you want to include a professionally designed print version:
 ## Questions?
 
 - Open an [issue](https://github.com/offlineowl/content/issues) if you need help
-- Check the [docs](https://offlineowl.app/docs/contributing) for the latest version of this guide
+- Check the [docs](https://offlineowl.com/docs/contributing) for the latest version of this guide

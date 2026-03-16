@@ -1,6 +1,6 @@
 # OfflineOwl Resources
 
-First-party resources for [OfflineOwl](https://offlineowl.app) — your offline survival and preparedness companion.
+First-party resources for [OfflineOwl](https://offlineowl.com) — your offline survival and preparedness companion.
 
 This repository contains original guides, interactive tools, games, and media created by the OfflineOwl team and contributors.
 
@@ -34,7 +34,7 @@ Folders use the format `{slug}-{id}`:
 - `water-purification-wkdx/`
 - `survival-quiz-a7x9/`
 
-The ID is a unique 4-character alphanumeric string generated via the [ID Generator](https://offlineowl.app/tools/id-generator).
+The ID is a unique 4-character alphanumeric string generated via the [ID Generator](https://offlineowl.com/tools/id-generator).
 
 ## Supported Formats
 
@@ -58,7 +58,7 @@ Each resource has a corresponding JSON file in the [registry](https://github.com
 Want to create and share your own resource? See the full guide:
 
 - **[CONTRIBUTING.md](CONTRIBUTING.md)** — step-by-step instructions for creating and submitting resources
-- **[Web Docs](https://offlineowl.app/docs/contributing)** — the same guide on the OfflineOwl website
+- **[Web Docs](https://offlineowl.com/docs/contributing)** — the same guide on the OfflineOwl website
 
 ## Content Guidelines
 
