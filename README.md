@@ -1,6 +1,6 @@
 # OfflineOwl Resources
 
-First-party resources for [OfflineOwl](https://offlineowl.app) - your offline survival and preparedness companion.
+First-party resources for [OfflineOwl](https://offlineowl.app) — your offline survival and preparedness companion.
 
 This repository contains original guides, interactive tools, games, and media created by the OfflineOwl team and contributors.
 
@@ -8,84 +8,65 @@ This repository contains original guides, interactive tools, games, and media cr
 
 ```
 resource/
-├── water-purification-wkdx/   # One folder per resource item
-│   ├── index.mdx              # Main content file
-│   ├── meta.json              # Optional metadata
-│   └── assets/                # Images, etc.
+├── basic-first-aid-k2m8/        # One folder per resource
+│   ├── index.md                  # Markdown version
+│   ├── index.mdx                 # Interactive MDX version
+│   └── index.html                # HTML version
 │
-├── fire-starting-zugk/
-│   └── index.mdx
+├── nuclear-fallout-protection-n8f2/
+│   ├── index.mdx
+│   ├── index.txt
+│   ├── manifest.json             # Multi-format manifest
+│   ├── shelter-diagram.svg
+│   └── print-version.pdf
 │
-├── survival-quiz-a7x9/
-│   ├── index.html
-│   ├── game.js
-│   └── styles.css
-│
+├── CONTRIBUTING.md               # How to contribute
 └── README.md
 ```
 
-**Flat structure** - Every resource item is a folder at root level. No nested categories.
+**Flat structure** — every resource is a folder at root level. No nested categories.
 
 ## Folder Naming
 
-Folders use the same naming as registry files: `{slug}-{id}`
+Folders use the format `{slug}-{id}`:
 
+- `basic-first-aid-k2m8/`
 - `water-purification-wkdx/`
-- `first-aid-basics-nc4i/`
-- `radio-guide-je8k/`
+- `survival-quiz-a7x9/`
+
+The ID is a unique 4-character alphanumeric string generated via the [ID Generator](https://offlineowl.app/tools/id-generator).
 
 ## Supported Formats
 
-Content can be any format:
-- **Text**: `.txt`, `.md`, `.mdx`
-- **Documents**: `.pdf`
-- **Audio**: `.mp3`, `.ogg`
-- **Video**: `.mp4`, `.webm`
-- **Interactive**: `.html`, `.js`, `.ts`
-- **Data**: `.json`, `.csv`
+| Type | Formats |
+|------|---------|
+| Text | `.md`, `.mdx`, `.txt` |
+| Documents | `.pdf` |
+| Audio | `.mp3`, `.ogg` |
+| Video | `.mp4`, `.webm` |
+| Interactive | `.html`, `.js`, `.ts` |
+| Data | `.json`, `.csv` |
 
-## Optional Metadata
+Resources can include multiple formats (e.g., MDX for interactive + PDF for printing). See [CONTRIBUTING.md](CONTRIBUTING.md) for details on multi-format resources.
 
-Each folder can include a `meta.json` for additional info:
+## How Content Is Indexed
 
-```json
-{
-  "entryPoint": "index.mdx",
-  "assets": ["diagram.png", "video.mp4"],
-  "buildCommand": "npm run build"
-}
-```
-
-## How Content is Referenced
-
-Content is indexed in the [OfflineOwl Registry](https://github.com/offlineowl/registry):
-
-```json
-{
-  "id": "wkdx",
-  "title": "Water Purification Guide",
-  "localContent": {
-    "repo": "https://github.com/offlineowl/content",
-    "path": "water-purification-wkdx"
-  }
-}
-```
+Each resource has a corresponding JSON file in the [registry](https://github.com/offlineowl/registry) repo that defines its metadata — title, description, category, tags, license, etc. The registry is what the OfflineOwl app reads to display and search resources.
 
 ## Contributing
 
-1. Generate an ID using the [ID Generator](https://offlineowl.app/tools/id-generator)
-2. Create folder: `{slug}-{id}/`
-3. Add your content files
-4. Submit PR to this repo
-5. Submit PR to registry repo with metadata JSON
+Want to create and share your own resource? See the full guide:
+
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** — step-by-step instructions for creating and submitting resources
+- **[Web Docs](https://offlineowl.app/docs/contributing)** — the same guide on the OfflineOwl website
 
 ## Content Guidelines
 
-- **Accuracy** - Information must be factually correct
-- **Clarity** - Write for beginners, explain technical terms
-- **Offline-first** - No external dependencies
-- **Self-contained** - All assets in the folder
+- **Accuracy** — information must be factually correct, especially survival/medical content
+- **Clarity** — write for beginners, explain technical terms
+- **Offline-first** — no external dependencies or links
+- **Self-contained** — all assets must be in the resource folder
 
 ## License
 
-Content is licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) unless otherwise specified.
+Content is licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) unless otherwise specified in individual resource metadata.
