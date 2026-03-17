@@ -1,191 +1,354 @@
 # Basic First Aid Without Power
 
-> **Life-Saving Skills for Grid-Down Situations** - When hospitals are overwhelmed and power is out, knowing basic first aid can mean the difference between life and death. This guide covers essential techniques that require no electricity.
+> **Life-Saving Skills for Grid-Down Situations** — When hospitals are overwhelmed and power is out, knowing basic first aid can mean the difference between life and death. This guide covers essential techniques that require no electricity.
+
+<QuickTriage
+  questions={[
+    {
+      id: "responsive",
+      text: "Is the person responsive?",
+      options: [
+        { label: "Yes, they're conscious", next: "problem" },
+        { label: "No, they're unconscious", next: "breathing" }
+      ]
+    },
+    {
+      id: "breathing",
+      text: "Are they breathing?",
+      options: [
+        { label: "Yes, breathing normally", result: "recovery" },
+        { label: "No, or gasping", result: "cpr" }
+      ]
+    },
+    {
+      id: "problem",
+      text: "What's the main concern?",
+      options: [
+        { label: "Severe bleeding", result: "bleeding" },
+        { label: "Choking", result: "choking" },
+        { label: "Allergic reaction", result: "allergy" },
+        { label: "Seizure", result: "seizure" },
+        { label: "Shock symptoms", result: "shock" },
+        { label: "Wound or injury", result: "wound" },
+        { label: "Diabetic emergency", result: "diabetic" }
+      ]
+    }
+  ]}
+  results={[
+    {
+      id: "cpr",
+      title: "Begin CPR Immediately",
+      steps: [
+        "Open airway — head-tilt, chin-lift",
+        "Give 30 chest compressions (hard and fast, center of chest)",
+        "Give 2 rescue breaths",
+        "Repeat 30:2 until breathing resumes or help arrives"
+      ],
+      section: "A — Airway",
+      priority: "critical"
+    },
+    {
+      id: "recovery",
+      title: "Place in Recovery Position",
+      steps: [
+        "Roll them onto their side",
+        "Tilt head back to keep airway open",
+        "Monitor breathing every 2 minutes",
+        "Do NOT leave them alone"
+      ],
+      section: "Unconscious but Breathing",
+      priority: "urgent"
+    },
+    {
+      id: "bleeding",
+      title: "Control the Bleeding Now",
+      steps: [
+        "Apply firm, direct pressure with cloth or hands",
+        "Do NOT remove the cloth — add more layers on top",
+        "If limb, elevate above the heart",
+        "Apply tourniquet above wound if bleeding won't stop"
+      ],
+      section: "C — Circulation",
+      priority: "critical"
+    },
+    {
+      id: "choking",
+      title: "Heimlich Maneuver (Abdominal Thrusts)",
+      steps: [
+        "Stand behind them, wrap arms around waist",
+        "Fist above navel, grasp with other hand",
+        "Give quick, firm, upward thrusts",
+        "Repeat until object clears or they go unconscious"
+      ],
+      section: "Choking",
+      priority: "critical"
+    },
+    {
+      id: "allergy",
+      title: "Treat Allergic Reaction",
+      steps: [
+        "Use EpiPen immediately if available — outer thigh, hold 10 sec",
+        "Have them sit up if breathing is hard",
+        "Give antihistamine if conscious",
+        "Watch for second reaction — can occur hours later"
+      ],
+      section: "Allergic Reaction",
+      priority: "critical"
+    },
+    {
+      id: "seizure",
+      title: "Protect and Wait",
+      steps: [
+        "Clear area of anything they could hit",
+        "Put something soft under their head",
+        "Do NOT restrain or put anything in their mouth",
+        "Time the seizure — seek help if over 5 minutes"
+      ],
+      section: "Seizure",
+      priority: "urgent"
+    },
+    {
+      id: "shock",
+      title: "Treat for Shock",
+      steps: [
+        "Lay the person flat on their back",
+        "Elevate legs 8–12 inches",
+        "Keep warm with blankets",
+        "Do NOT give food or drink"
+      ],
+      section: "Shock",
+      priority: "urgent"
+    },
+    {
+      id: "wound",
+      title: "Clean and Bandage the Wound",
+      steps: [
+        "Stop bleeding with direct pressure",
+        "Flush with clean water",
+        "Remove visible debris gently",
+        "Cover with cleanest available bandage"
+      ],
+      section: "Wound Care Without Modern Supplies",
+      priority: "important"
+    },
+    {
+      id: "diabetic",
+      title: "Diabetic Emergency Response",
+      steps: [
+        "If conscious and confused — give sugar (juice, candy, honey)",
+        "If unconscious — do NOT give anything by mouth",
+        "Place unconscious person in recovery position",
+        "When in doubt, give sugar — low blood sugar is more immediately dangerous"
+      ],
+      section: "Diabetic Emergency",
+      priority: "urgent"
+    }
+  ]}
+/>
 
 ## The First Aid Mindset
 
 In an emergency without power:
-- You may be the only help available
+- **You may be the only help available**
 - Professional medical care may be delayed hours or days
 - Basic interventions save lives
-- Stay calm—panic helps no one
+- Stay calm — panic helps no one
 
-**Remember:** You don't need to be a doctor. You need to know enough to stabilize someone until help arrives—or keep them alive if it doesn't.
+> **You don't need to be a doctor.** You need to know enough to stabilize someone until help arrives — or keep them alive if it doesn't.
 
 ---
 
 ## Scene Safety First
 
-Before helping anyone:
+**Before touching anyone, protect yourself.** If you become a casualty, you can't help anyone.
 
-1. **Stop and assess** - Is the scene safe?
-2. **Identify hazards** - Downed power lines, fire, unstable structures, violence
-3. **Protect yourself** - Use gloves, don't become a victim
-4. **Only then** - Approach and help
+| Step | Action | Why |
+|------|--------|-----|
+| 1 | **Stop and assess** | Is the scene safe for *you*? |
+| 2 | **Identify hazards** | Downed power lines, fire, unstable structures, violence |
+| 3 | **Protect yourself** | Gloves on, barriers up — don't become victim #2 |
+| 4 | **Then approach** | Only when you're sure it's safe |
 
-**BSI (Body Substance Isolation):**
-- Always assume blood/fluids are infectious
-- Wear gloves if available
-- Use barrier between you and patient's fluids
-- Wash hands thoroughly after
+### BSI — Body Substance Isolation
+
+> Always assume blood and body fluids are infectious. This isn't paranoia — it's standard practice for every first responder.
+
+- Wear **nitrile gloves** if available (keep multiple pairs stashed)
+- Use a **barrier** (plastic bag, clothing) between you and fluids
+- **Wash hands** thoroughly after — soap and water for 20+ seconds
+- If no gloves: use plastic bags, extra clothing layers, or anything waterproof
 
 ---
 
 ## Primary Assessment: The ABCs
 
-Check in this order—each step is more important than the next:
+Check in this exact order. Each letter is more critical than the next — don't skip ahead.
 
-### A - Airway
+### A — Airway
 
-**Is the airway open?**
+**Is the airway open and clear?**
 
-Check:
-- Is the person responsive?
-- Can they speak?
-- Are they choking?
+| Check | What to look for |
+|-------|-----------------|
+| Responsive? | Tap shoulders, ask "Are you okay?" loudly |
+| Can they speak? | Speech means airway is open |
+| Choking? | Universal sign: hands clutching throat |
 
-If unconscious:
-- Head-tilt, chin-lift to open airway
-- Look, listen, feel for breathing
-- Clear visible obstructions
+**If unconscious:**
+1. **Head-tilt, chin-lift** — Place one hand on forehead, two fingers under chin, tilt head back gently
+2. **Look, listen, feel** — Watch chest for rise/fall, listen at mouth, feel for breath on your cheek
+3. **Clear obstructions** — Only remove what you can *see* — never blindly sweep the mouth
 
-### B - Breathing
+> **Suspected spinal injury?** Use the **jaw-thrust maneuver** instead: kneel above the head, place fingers behind the jaw angles, and push the jaw forward without tilting the neck.
+
+### B — Breathing
 
 **Are they breathing normally?**
 
-Check:
-- Watch chest rise and fall
-- Listen for breath sounds
-- Feel for air on your cheek
+| Normal | Abnormal |
+|--------|----------|
+| Chest rises and falls rhythmically | Gasping, gurgling, or wheezing |
+| 12–20 breaths per minute in adults | Fewer than 8 or more than 30 |
+| Quiet, effortless | Labored, using neck/shoulder muscles |
 
-If not breathing:
-- Begin rescue breathing (see CPR guide)
-- Check for obstructions
+**If not breathing:**
+- Begin **rescue breathing** — 1 breath every 5–6 seconds
+- If no pulse either, begin **CPR** (30 compressions : 2 breaths)
+- Recheck for obstructions if air isn't going in
 
-### C - Circulation
+### C — Circulation
 
-**Is blood circulating? Is there severe bleeding?**
+**Is blood moving? Is there severe bleeding?**
 
-Check:
-- Feel for pulse (neck or wrist)
-- Check skin color and temperature
-- Look for severe bleeding
+| Check | How |
+|-------|-----|
+| Pulse | Feel the **carotid** (neck) for 10 seconds — use two fingers, not your thumb |
+| Skin | Pale, blue, or gray = poor circulation |
+| Temperature | Cool and clammy = possible shock |
+| Bleeding | Scan the entire body — blood pools underneath |
 
-If severe bleeding:
-- Control bleeding immediately (see Bleeding Control guide)
-- This takes priority over almost everything else
+> **Severe bleeding kills in minutes.** If you see it, control it *immediately* — before everything else except airway. Apply direct pressure with whatever you have.
 
 ---
 
 ## Common Emergency Situations
 
-### Unconscious but Breathing
+### Unconscious but Breathing — Recovery Position
 
-**Recovery Position:**
+If someone is unconscious but breathing normally, the **recovery position** prevents them from choking on vomit or fluids.
 
-1. Kneel beside person
-2. Place arm nearest you at right angle
-3. Bring far arm across chest, hold hand against cheek
-4. Pull far knee up, keeping foot flat
-5. Roll toward you onto their side
-6. Tilt head back to keep airway open
-7. Monitor breathing continuously
+**Steps:**
+1. Kneel beside the person
+2. Place the arm nearest you at a **right angle** to their body, elbow bent
+3. Bring the **far arm** across the chest — hold their hand against their near cheek
+4. With your other hand, pull the **far knee** up, keeping foot flat on the ground
+5. **Roll them toward you** by pulling the bent knee — they should roll smoothly onto their side
+6. **Tilt head back** slightly to keep the airway open
+7. **Monitor breathing continuously** — reassess every 2 minutes
 
-**Why:**
-- Prevents choking on vomit or fluids
-- Keeps airway open
-- Allows monitoring
+> **Do not use the recovery position if you suspect spinal injury.** Keep them still and support the head in a neutral position.
 
 ### Shock
 
-**Recognition:**
-- Pale, cold, clammy skin
-- Rapid, weak pulse
-- Rapid, shallow breathing
-- Confusion or anxiety
-- Weakness or dizziness
+Shock is a life-threatening condition where the body isn't getting enough blood flow. It can follow any major injury, blood loss, severe infection, or allergic reaction.
+
+**Recognition — look for the combination:**
+
+| Sign | Detail |
+|------|--------|
+| Skin | Pale, cold, clammy, possibly bluish |
+| Pulse | Rapid and weak (thready) |
+| Breathing | Rapid and shallow |
+| Mental state | Confused, anxious, or unresponsive |
+| Other | Weakness, dizziness, nausea, thirst |
 
 **Treatment:**
-1. Lay person down
-2. Elevate legs 8-12 inches (if no spinal injury suspected)
-3. Keep warm with blankets
-4. Do NOT give food or drink
-5. Treat underlying cause if possible
-6. Monitor and reassure
+1. **Lay the person down** — flat on their back
+2. **Elevate legs** 8–12 inches (if no spinal/leg injury suspected)
+3. **Keep warm** — blankets above and below, protect from wind
+4. **Do NOT give food or drink** — they may need surgery; vomiting risk is high
+5. **Treat the underlying cause** — stop bleeding, splint fractures, etc.
+6. **Monitor and reassure** — calm, confident tone helps
 
-### Choking (Conscious Adult)
+> **Shock can develop slowly.** After any significant injury, monitor for these signs even if the person initially seems fine. Reassess every 5 minutes.
 
-**Heimlich Maneuver:**
+### Choking — Conscious Adult
 
-1. Stand behind person
-2. Make a fist with one hand
-3. Place fist just above navel
-4. Grasp fist with other hand
-5. Give quick, upward thrusts
-6. Repeat until object expelled or person loses consciousness
+**Heimlich Maneuver (Abdominal Thrusts):**
+
+1. Stand behind the person, wrap your arms around their waist
+2. Make a **fist** with one hand
+3. Place fist **just above the navel**, well below the breastbone
+4. Grasp your fist with the other hand
+5. Give **quick, firm, upward thrusts** — inward and up
+6. Repeat until the object is expelled or they lose consciousness
 
 **If they become unconscious:**
-- Lower to ground
-- Begin CPR (compressions may expel object)
-- Check mouth for visible object before breaths
+1. **Lower carefully to the ground**
+2. Begin **CPR** — chest compressions may expel the object
+3. **Check the mouth** before each set of breaths — remove any visible object
+4. Continue until object clears or help arrives
+
+> **For pregnant or obese individuals:** Use **chest thrusts** instead — same technique but with your fist against the center of the breastbone.
 
 ### Diabetic Emergency
 
-**Low blood sugar (hypoglycemia):**
-- Symptoms: Confusion, shakiness, sweating, irritability
-- If conscious: Give sugar (juice, candy, glucose tablets)
-- If unconscious: Do NOT give anything by mouth, call for help
+If you know or suspect someone is diabetic and they're acting confused or unwell:
 
-**High blood sugar (hyperglycemia):**
-- Symptoms: Thirst, frequent urination, confusion, fruity breath
-- Requires professional medical attention
-- Keep hydrated with water if conscious
+| Condition | Signs | Action |
+|-----------|-------|--------|
+| **Low blood sugar** (hypoglycemia) | Confusion, shakiness, sweating, irritability, pale skin, rapid onset | If conscious: give sugar — juice, candy, glucose tablets, honey. If unconscious: **do NOT give anything by mouth**, place in recovery position |
+| **High blood sugar** (hyperglycemia) | Extreme thirst, frequent urination, confusion, fruity-smelling breath, gradual onset | Needs professional medical attention. Keep hydrated with water if conscious |
+
+> **When in doubt, give sugar.** If blood sugar is low, sugar will help immediately. If it's high, a small amount of sugar won't make things significantly worse — but withholding sugar from someone who needs it can be fatal.
 
 ### Seizure
 
-**During seizure:**
-1. Clear area of hazards
-2. Protect head (place something soft underneath)
-3. Do NOT restrain
-4. Do NOT put anything in mouth
-5. Time the seizure
+**During the seizure:**
+1. **Clear the area** of anything they could hit — furniture, sharp objects
+2. **Protect the head** — place something soft underneath (jacket, towel)
+3. **Do NOT restrain** — you can't stop a seizure, and you may cause injury
+4. **Do NOT put anything in their mouth** — they will not swallow their tongue
+5. **Time the seizure** — this information is critical for medical providers
 
-**After seizure:**
-1. Place in recovery position
-2. Stay with them as they recover
-3. Be calm and reassuring
-4. Note how long seizure lasted
+**After the seizure:**
+1. Place in **recovery position**
+2. **Stay with them** — they'll be confused and exhausted (postictal state)
+3. Speak calmly and reassuringly — "You had a seizure, you're safe"
+4. Note the duration and what happened
 
 **Seek emergency help if:**
-- Seizure lasts more than 5 minutes
+- Seizure lasts **more than 5 minutes**
 - Person doesn't regain consciousness
 - Another seizure follows quickly
-- Person is injured
-- First known seizure
-- Person is pregnant
+- Person is injured, pregnant, or diabetic
+- This is their first known seizure
+- Seizure occurred in water
 
 ### Allergic Reaction / Anaphylaxis
 
-**Mild reaction:**
-- Hives, itching, minor swelling
-- Give antihistamine (Benadryl) if available
-- Monitor for worsening
+**Mild reaction** — Hives, itching, localized swelling:
+- Give **antihistamine** (diphenhydramine/Benadryl) if available
+- Monitor closely for 1+ hours — reactions can escalate
 
-**Severe reaction (anaphylaxis):**
-- Difficulty breathing
-- Swelling of throat/tongue
-- Rapid pulse
-- Dizziness
+**Severe reaction (anaphylaxis)** — This is life-threatening:
+- Difficulty breathing, wheezing
+- Swelling of throat, tongue, or lips
+- Rapid, weak pulse
+- Dizziness, fainting
+- Full-body hives or flushing
 
 **Treatment:**
-1. Use epinephrine auto-injector (EpiPen) if available
-   - Remove cap
-   - Press firmly against outer thigh (through clothing okay)
-   - Hold 10 seconds
-2. Call for emergency help
-3. Have person lie down, elevate legs
-4. Be prepared for second reaction
-5. Give second EpiPen after 5-15 minutes if needed
+1. **Use an epinephrine auto-injector** (EpiPen) immediately if available
+   - Remove the safety cap
+   - Press firmly against the **outer mid-thigh** (through clothing is fine)
+   - Hold for **10 seconds**
+2. Have the person **sit up** if breathing is difficult, **lie down** with legs elevated if dizzy
+3. Call for emergency help
+4. Be prepared for a **second reaction** (biphasic response) — can occur 4–12 hours later
+5. Give a **second EpiPen** after 5–15 minutes if symptoms return or don't improve
+
+> **An EpiPen buys time — it is not a cure.** The person still needs emergency medical care. The effects wear off in 15–20 minutes.
 
 ---
 
@@ -193,85 +356,87 @@ If severe bleeding:
 
 ### Basic Wound Cleaning
 
-**Supplies needed:**
-- Clean water (boiled and cooled if possible)
-- Clean cloth
+**What you need:**
+- Clean water (boiled and cooled is ideal, but any clean water works)
+- Clean cloth or gauze
 - Mild soap if available
 
 **Procedure:**
-1. Wash your hands
-2. Stop bleeding with direct pressure
-3. Rinse wound with clean water
-4. Remove visible debris gently
-5. Wash around wound with soap
-6. Do NOT put soap directly in wound
-7. Pat dry with clean cloth
-8. Apply bandage
+1. **Wash your hands** first — you are the biggest infection risk
+2. **Control bleeding** with firm, direct pressure (5–10 minutes without peeking)
+3. **Irrigate the wound** — flush with clean water using gentle pressure
+4. **Remove visible debris** gently with clean tweezers if needed
+5. **Wash around the wound** with soap — not *in* the wound
+6. **Pat dry** with a clean cloth
+7. **Apply bandage** — keep clean and dry, change daily
 
 ### Improvised Bandages
 
-**If you don't have sterile gauze:**
-- Clean cotton t-shirt (boiled if possible)
-- Clean towels
-- Sanitary pads (excellent for wounds)
-- Coffee filters
-- Clean pillowcase
+When you don't have sterile supplies, improvise:
+
+| Material | Best used for | Notes |
+|----------|---------------|-------|
+| Clean cotton t-shirt | General wound dressing | Boil first if possible |
+| Sanitary pads/tampons | Wound packing, pressure | Excellent absorbency, often individually wrapped |
+| Coffee filters | Small wound dressing | Clean and lint-free |
+| Duct tape + cloth | Securing bandages | Don't apply tape directly to wound |
+| Honey (raw) | Wound covering | Genuine antimicrobial properties — used in medicine |
+| Super glue | Small, clean cuts | Pinch edges together, apply thin line on top |
 
 **Securing bandages without tape:**
-- Strips of cloth tied
-- Belt or rope (for limbs)
+- Strips of cloth tied firmly (not tight enough to restrict circulation)
+- Belt or rope for limbs — check for pulse beyond the bandage
 - Safety pins
-- Bandana tied around wound
+- Bandana tied around the wound
 
-### Wound Infection Signs
+### Watch for Infection
 
-Watch for (usually appear 2-3 days after injury):
-- Increasing pain
-- Redness spreading from wound
-- Swelling increasing
-- Warmth around wound
-- Pus or discharge
-- Red streaks extending from wound
-- Fever
+Signs usually appear **2–3 days** after injury:
+
+| Warning sign | What it means |
+|-------------|---------------|
+| Increasing pain | Infection is building |
+| Spreading redness | Cellulitis — bacteria spreading in skin |
+| Increased swelling and warmth | Inflammatory response |
+| Pus or cloudy discharge | Active infection |
+| **Red streaks extending from wound** | **Lymphangitis — seek help urgently** |
+| Fever | Systemic infection — the body is fighting hard |
 
 **If infection develops:**
-- Clean wound more frequently
+- Clean the wound more frequently (2–3 times daily)
 - Keep elevated if possible
-- Use any available antibiotics appropriately
-- Seek professional medical help when available
+- Use any available antibiotics appropriately (full course)
+- **Red streaks or high fever = urgent** — seek professional help by any means
 
 ---
 
 ## Pain Management Without Medication
 
-### Non-Drug Pain Relief
+When painkillers aren't available, these techniques genuinely help:
 
-**Cold therapy:**
-- Reduces swelling and numbs area
-- Use for first 48 hours after injury
-- 20 minutes on, 20 minutes off
-- Wrap ice in cloth (don't apply directly)
+### Cold Therapy (first 48 hours)
+- Reduces swelling and numbs the area
+- **20 minutes on, 20 minutes off** — never longer
+- Wrap ice/cold pack in cloth — never apply directly to skin
+- Improvise: frozen food, cold water in a sealed bag, snow in cloth
 
-**Heat therapy:**
-- Relaxes muscles, increases blood flow
-- Use after 48 hours, or for muscle pain
+### Heat Therapy (after 48 hours)
+- Relaxes muscles, increases blood flow, reduces stiffness
+- Use for muscle pain, cramps, and chronic pain
 - Warm water bottle wrapped in cloth
-- Heated rice sock
+- Heated rice or bean sock (microwave or warm near fire)
+- Warm, wet cloth
 
-**Elevation:**
-- Raise injured area above heart
-- Reduces swelling and pain
-- Especially effective for limb injuries
+### Other Techniques
 
-**Immobilization:**
-- Splinting prevents movement
-- Reduces pain from fractures/sprains
-- See Treating Burns, Cuts, and Fractures guide
-
-**Distraction:**
-- Talking, music, mental activities
-- Especially helpful for children
-- Reduces perception of pain
+| Method | How | Best for |
+|--------|-----|----------|
+| **Elevation** | Raise injured area above heart level | Swelling, limb injuries |
+| **Immobilization** | Splint the area to prevent movement | Fractures, sprains, joint injuries |
+| **Distraction** | Talking, counting, singing, puzzles | All pain, especially in children |
+| **Breathing** | Slow, deep breaths — in for 4, hold for 4, out for 4 | Acute pain, anxiety |
+| **Compression** | Snug (not tight) elastic wrap | Sprains, swelling |
+| **Massage** | Gentle pressure around (not on) the injury | Muscle pain, tension |
 
 ---
 
@@ -280,94 +445,100 @@ Watch for (usually appear 2-3 days after injury):
 ### Basic Kit
 
 - [ ] Nitrile gloves (multiple pairs)
-- [ ] Adhesive bandages (various sizes)
-- [ ] Sterile gauze pads (4x4)
+- [ ] Adhesive bandages (assorted sizes)
+- [ ] Sterile gauze pads (4×4 inch)
 - [ ] Gauze rolls
-- [ ] Medical tape
+- [ ] Medical tape (cloth and waterproof)
 - [ ] Elastic bandage (ACE wrap)
-- [ ] Triangular bandage
-- [ ] Scissors
+- [ ] Triangular bandage / sling
+- [ ] Scissors (trauma shears preferred)
 - [ ] Tweezers
-- [ ] Antiseptic wipes
+- [ ] Antiseptic wipes / povidone-iodine
 - [ ] Antibiotic ointment
-- [ ] Pain relievers (acetaminophen, ibuprofen)
-- [ ] Antihistamine
-- [ ] Emergency blanket
+- [ ] Pain relievers (acetaminophen + ibuprofen)
+- [ ] Antihistamine (diphenhydramine)
+- [ ] Emergency blanket (mylar)
 - [ ] CPR face shield
 
 ### Advanced Additions
 
-- [ ] Tourniquet (CAT or SOFTT-W)
-- [ ] Hemostatic gauze (QuikClot, Celox)
-- [ ] Israeli bandage
-- [ ] SAM splint
-- [ ] Chest seals
-- [ ] Nasopharyngeal airway
-- [ ] Blood pressure cuff
-- [ ] Stethoscope
-- [ ] Suture kit (with training)
+- [ ] Tourniquet (CAT or SOFTT-W — **get training first**)
+- [ ] Hemostatic gauze (QuikClot or Celox)
+- [ ] Israeli bandage (emergency pressure dressing)
+- [ ] SAM splint (moldable aluminum splint)
+- [ ] Chest seals (vented, pair)
+- [ ] Nasopharyngeal airway (NPA)
+- [ ] Blood pressure cuff + stethoscope
+- [ ] Suture kit (**requires training**)
+- [ ] Oral rehydration salts
+- [ ] Irrigation syringe
+
+> **Buy quality, train with it, and check expiration dates every 6 months.** A kit you don't know how to use is just a bag of supplies.
 
 ---
 
 ## Documentation
 
-Keep records during extended emergencies:
+In an extended emergency, written records can save lives — especially when patients are handed off between caregivers.
 
 **Track for each patient:**
-- Name and age
-- Time of injury/illness
-- What happened
-- Treatments given and times
-- Vital signs if possible
-- Response to treatment
-- Any allergies or medications
 
-**Why:**
-- Helps when professional help arrives
-- Tracks changes over time
-- Documents care provided
-- Aids in ongoing treatment decisions
+| Field | Example |
+|-------|---------|
+| Name and age | Jane Doe, 34 |
+| Time of injury/illness | March 15, 2:30 PM |
+| What happened | Fall from ladder, ~8 feet |
+| Injuries found | Possible left wrist fracture, 3cm laceration on forehead |
+| Treatments given + times | Splinted wrist 2:45 PM, cleaned/bandaged laceration 2:50 PM |
+| Vital signs | Pulse 88, breathing 16, alert and oriented |
+| Allergies / medications | Penicillin allergy, takes lisinopril |
+| Response to treatment | Pain reduced after splinting, bleeding controlled |
+
+> **Use any paper available.** Write on the patient's arm with a marker if you must. When professional help finally arrives, this record could change the course of treatment.
 
 ---
 
 ## When You Cannot Get Professional Help
 
-If professional medical care is truly unavailable:
+If professional medical care is truly unavailable for an extended period:
 
-**Prioritize:**
-1. Life-threatening conditions first
-2. Infections (can become life-threatening)
-3. Pain management
-4. Preventing complications
+**Prioritize by threat to life:**
+1. **Life-threatening conditions** — airway, breathing, bleeding, shock
+2. **Infections** — can become life-threatening within days
+3. **Pain management** — suffering impairs recovery and judgment
+4. **Preventing complications** — keep wounds clean, monitor for changes
 
-**Accept limitations:**
-- You cannot treat everything
-- Some conditions require surgery/advanced care
-- Focus on what you CAN do
-- Comfort care matters
+**Accept your limitations:**
+- You cannot treat everything — and that's okay
+- Some conditions require surgery or advanced care that you simply can't provide
+- Focus on what you *can* do well
+- **Comfort care always matters** — even when you can't fix the problem
 
-**Seek help when possible:**
-- Medical professionals in community
-- Veterinarians (human physiology knowledge)
-- Pharmacists
-- Nurses, EMTs, medics
-- Telemedicine when communications restored
+**Seek help wherever it exists:**
+- Medical professionals in the community (retired counts)
+- Veterinarians (extensive medical training)
+- Pharmacists (medication expertise)
+- Nurses, EMTs, paramedics, combat medics
+- Telemedicine when communications are restored
+- Medical reference books (keep physical copies)
 
 ---
 
 ## Key Takeaways
 
-1. **Scene safety first** - Don't become another victim
-2. **ABCs** - Airway, Breathing, Circulation
-3. **Stop severe bleeding** - It kills quickly
-4. **Keep wounds clean** - Infection is a major threat
-5. **Monitor and reassess** - Conditions change
-6. **Stay calm** - Your composure helps the patient
-7. **Know your limits** - Seek help when available
+| Priority | Principle |
+|----------|-----------|
+| 1 | **Scene safety first** — don't become another victim |
+| 2 | **ABCs** — Airway, Breathing, Circulation, every time |
+| 3 | **Stop severe bleeding** — it kills in minutes |
+| 4 | **Keep wounds clean** — infection is the long-term killer |
+| 5 | **Monitor and reassess** — conditions change, catch it early |
+| 6 | **Stay calm** — your composure directly helps the patient |
+| 7 | **Know your limits** — seek help when it becomes available |
 
 ---
 
 *Last updated: January 2026*
 *License: CC-BY-SA 4.0*
 
-**Disclaimer:** This guide is for educational purposes. Proper medical training is always recommended. This information is not a substitute for professional medical care.
+**Disclaimer:** This guide is for educational purposes. Proper hands-on medical training is always recommended. This information is not a substitute for professional medical care. Take a first aid and CPR course before you need these skills.

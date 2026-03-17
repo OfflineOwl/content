@@ -104,6 +104,46 @@
     }
     
     .key-points h3 { color: var(--accent-amber); margin-top: 0; }
+
+    /* Quick Triage Widget */
+    .triage { border: 1px solid var(--border-color); border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0; background: var(--bg-secondary); }
+    .triage-label { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; }
+    .triage-label button { background: none; border: none; color: var(--text-muted); cursor: pointer; font-size: 0.7rem; }
+    .triage-label button:hover { color: var(--text-primary); }
+    .triage-question { font-size: 1rem; font-weight: 600; margin-bottom: 1rem; color: var(--text-primary); }
+    .triage-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
+    .triage-options.two-col { grid-template-columns: repeat(2, 1fr); }
+    .triage-opt { background: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 8px; padding: 0.75rem 1rem; cursor: pointer; font-size: 0.85rem; font-weight: 500; color: var(--text-primary); text-align: left; transition: border-color 0.2s, background 0.2s; }
+    .triage-opt:hover { border-color: var(--accent-blue); background: rgba(59, 130, 246, 0.1); }
+    .triage-result { border: 2px solid var(--accent-red); border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0; }
+    .triage-result.critical { border-color: var(--accent-red); background: rgba(239, 68, 68, 0.08); }
+    .triage-result.urgent { border-color: var(--accent-amber); background: rgba(245, 158, 11, 0.08); }
+    .triage-result.important { border-color: var(--accent-blue); background: rgba(59, 130, 246, 0.08); }
+    .triage-result-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
+    .triage-badge { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; display: flex; align-items: center; gap: 0.4rem; }
+    .triage-badge .dot { width: 8px; height: 8px; border-radius: 50%; animation: pulse-dot 2s infinite; }
+    .triage-result.critical .triage-badge { color: var(--accent-red); }
+    .triage-result.critical .dot { background: var(--accent-red); }
+    .triage-result.urgent .triage-badge { color: var(--accent-amber); }
+    .triage-result.urgent .dot { background: var(--accent-amber); }
+    .triage-result.important .triage-badge { color: var(--accent-blue); }
+    .triage-result.important .dot { background: var(--accent-blue); }
+    .triage-result h4 { margin: 0.25rem 0 0.75rem; }
+    .triage-result.critical h4 { color: var(--accent-red); }
+    .triage-result.urgent h4 { color: var(--accent-amber); }
+    .triage-result.important h4 { color: var(--accent-blue); }
+    .triage-steps { list-style: none; margin: 0; padding: 0; }
+    .triage-steps li { display: flex; gap: 0.75rem; margin-bottom: 0.5rem; font-size: 0.9rem; align-items: flex-start; }
+    .triage-steps .num { flex-shrink: 0; width: 20px; height: 20px; border-radius: 50%; color: #fff; font-size: 0.7rem; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+    .triage-result.critical .num { background: var(--accent-red); }
+    .triage-result.urgent .num { background: var(--accent-amber); }
+    .triage-result.important .num { background: var(--accent-blue); }
+    .triage-link { font-size: 0.75rem; margin-top: 0.75rem; cursor: pointer; border: none; background: none; padding: 0; font-weight: 500; }
+    .triage-result.critical .triage-link { color: var(--accent-red); }
+    .triage-result.urgent .triage-link { color: var(--accent-amber); }
+    .triage-result.important .triage-link { color: var(--accent-blue); }
+    .triage-link:hover { text-decoration: underline; }
+    @keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
   </style>
 </head>
 <body>
@@ -113,6 +153,118 @@
 <blockquote>
   <strong>Life-Saving Skills for Grid-Down Situations</strong> - When hospitals are overwhelmed and power is out, knowing basic first aid can mean the difference between life and death. This guide covers essential techniques that require no electricity.
 </blockquote>
+
+<div id="quick-triage"></div>
+<script>
+(function() {
+  var questions = [
+    { id: "responsive", text: "Is the person responsive?", options: [
+      { label: "Yes, they're conscious", next: "problem" },
+      { label: "No, they're unconscious", next: "breathing" }
+    ]},
+    { id: "breathing", text: "Are they breathing?", options: [
+      { label: "Yes, breathing normally", result: "recovery" },
+      { label: "No, or gasping", result: "cpr" }
+    ]},
+    { id: "problem", text: "What's the main concern?", options: [
+      { label: "Severe bleeding", result: "bleeding" },
+      { label: "Choking", result: "choking" },
+      { label: "Allergic reaction", result: "allergy" },
+      { label: "Seizure", result: "seizure" },
+      { label: "Shock symptoms", result: "shock" },
+      { label: "Wound or injury", result: "wound" },
+      { label: "Diabetic emergency", result: "diabetic" }
+    ]}
+  ];
+  var results = {
+    cpr: { title: "Begin CPR Immediately", priority: "critical", section: "Primary Assessment: The ABCs",
+      steps: ["Open airway \u2014 head-tilt, chin-lift", "Give 30 chest compressions (hard and fast, center of chest)", "Give 2 rescue breaths", "Repeat 30:2 until breathing resumes or help arrives"] },
+    recovery: { title: "Place in Recovery Position", priority: "urgent", section: "Unconscious but Breathing",
+      steps: ["Roll them onto their side", "Tilt head back to keep airway open", "Monitor breathing every 2 minutes", "Do NOT leave them alone"] },
+    bleeding: { title: "Control the Bleeding Now", priority: "critical", section: "Circulation",
+      steps: ["Apply firm, direct pressure with cloth or hands", "Do NOT remove the cloth \u2014 add more layers on top", "If limb, elevate above the heart", "Apply tourniquet above wound if bleeding won\u2019t stop"] },
+    choking: { title: "Heimlich Maneuver", priority: "critical", section: "Choking",
+      steps: ["Stand behind them, wrap arms around waist", "Fist above navel, grasp with other hand", "Give quick, firm, upward thrusts", "Repeat until object clears or they go unconscious"] },
+    allergy: { title: "Treat Allergic Reaction", priority: "critical", section: "Allergic Reaction",
+      steps: ["Use EpiPen immediately if available \u2014 outer thigh, hold 10 sec", "Have them sit up if breathing is hard", "Give antihistamine if conscious", "Watch for second reaction \u2014 can occur hours later"] },
+    seizure: { title: "Protect and Wait", priority: "urgent", section: "Seizure",
+      steps: ["Clear area of anything they could hit", "Put something soft under their head", "Do NOT restrain or put anything in their mouth", "Time the seizure \u2014 seek help if over 5 minutes"] },
+    shock: { title: "Treat for Shock", priority: "urgent", section: "Shock",
+      steps: ["Lay the person flat on their back", "Elevate legs 8\u201312 inches", "Keep warm with blankets", "Do NOT give food or drink"] },
+    wound: { title: "Clean and Bandage the Wound", priority: "important", section: "Wound Care",
+      steps: ["Stop bleeding with direct pressure", "Flush with clean water", "Remove visible debris gently", "Cover with cleanest available bandage"] },
+    diabetic: { title: "Diabetic Emergency Response", priority: "urgent", section: "Diabetic Emergency",
+      steps: ["If conscious and confused \u2014 give sugar (juice, candy, honey)", "If unconscious \u2014 do NOT give anything by mouth", "Place unconscious person in recovery position", "When in doubt, give sugar \u2014 low blood sugar is more immediately dangerous"] }
+  };
+
+  var el = document.getElementById('quick-triage');
+  var currentQ = 'responsive';
+  var history = [];
+
+  function findQuestion(id) {
+    for (var i = 0; i < questions.length; i++) { if (questions[i].id === id) return questions[i]; }
+    return null;
+  }
+
+  function scrollToSection(text) {
+    var headings = document.querySelectorAll('h2, h3, h4');
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].textContent.toLowerCase().indexOf(text.toLowerCase()) !== -1) {
+        headings[i].scrollIntoView({ behavior: 'smooth', block: 'start' });
+        headings[i].style.transition = 'background-color 0.3s';
+        headings[i].style.backgroundColor = 'rgba(245, 158, 11, 0.2)';
+        headings[i].style.borderRadius = '4px';
+        setTimeout(function(h) { h.style.backgroundColor = ''; }.bind(null, headings[i]), 3000);
+        break;
+      }
+    }
+  }
+
+  function renderQuestion() {
+    var q = findQuestion(currentQ);
+    if (!q) return;
+    var isMulti = q.options.length > 3;
+    var html = '<div class="triage"><div class="triage-label"><span>Quick triage</span>';
+    if (history.length > 0) html += '<button onclick="window._triageBack()">Back</button>';
+    html += '</div><div class="triage-question">' + q.text + '</div>';
+    html += '<div class="triage-options' + (isMulti ? '' : ' two-col') + '">';
+    for (var i = 0; i < q.options.length; i++) {
+      var o = q.options[i];
+      html += '<button class="triage-opt" onclick="window._triageSelect(\'' + (o.next || '') + '\',\'' + (o.result || '') + '\')">' + o.label + '</button>';
+    }
+    html += '</div></div>';
+    el.innerHTML = html;
+  }
+
+  function renderResult(r) {
+    var badges = { critical: 'Do this now', urgent: 'Act quickly', important: 'Next steps' };
+    var html = '<div class="triage-result ' + r.priority + '">';
+    html += '<div class="triage-result-header"><div class="triage-badge"><span class="dot"></span>' + badges[r.priority] + '</div>';
+    html += '<button class="triage-label" style="margin:0" onclick="window._triageReset()">Start over</button></div>';
+    html += '<h4>' + r.title + '</h4><ol class="triage-steps">';
+    for (var i = 0; i < r.steps.length; i++) {
+      html += '<li><span class="num">' + (i + 1) + '</span><span>' + r.steps[i] + '</span></li>';
+    }
+    html += '</ol><button class="triage-link" onclick="window._triageScroll(\'' + r.section.replace(/'/g, "\\'") + '\')">Read full section below</button></div>';
+    el.innerHTML = html;
+  }
+
+  window._triageSelect = function(next, result) {
+    history.push(currentQ);
+    if (result && results[result]) { renderResult(results[result]); }
+    else if (next) { currentQ = next; renderQuestion(); }
+  };
+  window._triageBack = function() {
+    if (history.length > 0) { currentQ = history.pop(); renderQuestion(); }
+  };
+  window._triageReset = function() {
+    currentQ = 'responsive'; history = []; renderQuestion();
+  };
+  window._triageScroll = function(section) { scrollToSection(section); };
+
+  renderQuestion();
+})();
+</script>
 
 <h2>The First Aid Mindset</h2>
 

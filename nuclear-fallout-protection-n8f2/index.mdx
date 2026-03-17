@@ -150,6 +150,85 @@ export const CountdownTimer = ({ hours = 24 }) => (
 
 # Nuclear Fallout Protection
 
+<QuickTriage
+  questions={[
+    {
+      id: "occurred",
+      text: "Has a detonation already occurred?",
+      options: [
+        { label: "Yes, or imminent", next: "indoors" },
+        { label: "No, preparing in advance", result: "prepare" }
+      ]
+    },
+    {
+      id: "indoors",
+      text: "Are you indoors right now?",
+      options: [
+        { label: "Yes, I'm inside", next: "exposed" },
+        { label: "No, I'm outside", result: "get-inside" }
+      ]
+    },
+    {
+      id: "exposed",
+      text: "Were you exposed outdoors before getting inside?",
+      options: [
+        { label: "Yes, I was outside", result: "decontaminate" },
+        { label: "No, I was already inside", result: "stay-sheltered" }
+      ]
+    }
+  ]}
+  results={[
+    {
+      id: "get-inside",
+      title: "Get Inside Immediately",
+      steps: [
+        "Enter the nearest building NOW — any structure is better than outside",
+        "Go to the center of the building or basement",
+        "Close all doors and windows behind you",
+        "Remove and bag outer clothing before joining others"
+      ],
+      section: "GET INSIDE IMMEDIATELY",
+      priority: "critical"
+    },
+    {
+      id: "decontaminate",
+      title: "Decontaminate Now",
+      steps: [
+        "Remove ALL outer clothing — this removes ~90% of contamination",
+        "Seal clothing in a plastic bag, set it aside",
+        "Shower with soap and water, head to toe",
+        "Use shampoo only — NO conditioner (it binds radioactive particles)"
+      ],
+      section: "IF YOU WERE OUTSIDE",
+      priority: "critical"
+    },
+    {
+      id: "stay-sheltered",
+      title: "Stay Sheltered and Seal the Space",
+      steps: [
+        "Move to the most interior room or basement",
+        "Close all windows, doors, and fireplace dampers",
+        "Turn off HVAC / ventilation systems",
+        "Seal vents and gaps with tape or wet towels"
+      ],
+      section: "SEAL THE SPACE",
+      priority: "urgent"
+    },
+    {
+      id: "prepare",
+      title: "Prepare Your Shelter Now",
+      steps: [
+        "Identify the best shelter location (basement or interior room)",
+        "Stock water, sealed food, radio, batteries, first aid kit",
+        "Learn the 7-10 rule: every 7x time increase = 10x radiation decrease",
+        "Read through this full guide while you have time"
+      ],
+      section: "Shelter Protection Factors",
+      priority: "important"
+    }
+  ]}
+/>
+
 <CriticalAlert>
 **YOU HAVE MINUTES TO ACT.** If you receive warning of a nuclear event, immediately execute these steps. Do not wait to gather belongings. Do not wait for others. Every second counts.
 </CriticalAlert>

@@ -345,11 +345,146 @@
     .resource-link:hover { background: var(--bg-tertiary); }
     .resource-link h4 { color: var(--accent-blue); margin: 0 0 0.25rem 0; font-size: 1rem; }
     .resource-link p { color: var(--text-muted); font-size: 0.85rem; margin: 0; }
+
+    /* Quick Triage Widget */
+    .triage { border: 1px solid var(--border-color); border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0; background: var(--bg-secondary); }
+    .triage-label { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; }
+    .triage-label button { background: none; border: none; color: var(--text-muted); cursor: pointer; font-size: 0.7rem; }
+    .triage-label button:hover { color: var(--text-primary); }
+    .triage-question { font-size: 1rem; font-weight: 600; margin-bottom: 1rem; color: var(--text-primary); }
+    .triage-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
+    .triage-opt { background: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 8px; padding: 0.75rem 1rem; cursor: pointer; font-size: 0.85rem; font-weight: 500; color: var(--text-primary); text-align: left; transition: border-color 0.2s, background 0.2s; }
+    .triage-opt:hover { border-color: var(--accent-blue); background: rgba(59, 130, 246, 0.1); }
+    .triage-result { border: 2px solid var(--accent-red); border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0; }
+    .triage-result.critical { border-color: var(--accent-red); background: rgba(239, 68, 68, 0.08); }
+    .triage-result.urgent { border-color: var(--accent-amber); background: rgba(245, 158, 11, 0.08); }
+    .triage-result.important { border-color: var(--accent-blue); background: rgba(59, 130, 246, 0.08); }
+    .triage-result-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
+    .triage-badge { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; display: flex; align-items: center; gap: 0.4rem; }
+    .triage-badge .dot { width: 8px; height: 8px; border-radius: 50%; animation: pulse-dot 2s infinite; }
+    .triage-result.critical .triage-badge { color: var(--accent-red); }
+    .triage-result.critical .dot { background: var(--accent-red); }
+    .triage-result.urgent .triage-badge { color: var(--accent-amber); }
+    .triage-result.urgent .dot { background: var(--accent-amber); }
+    .triage-result.important .triage-badge { color: var(--accent-blue); }
+    .triage-result.important .dot { background: var(--accent-blue); }
+    .triage-result h4 { margin: 0.25rem 0 0.75rem; }
+    .triage-result.critical h4 { color: var(--accent-red); }
+    .triage-result.urgent h4 { color: var(--accent-amber); }
+    .triage-result.important h4 { color: var(--accent-blue); }
+    .triage-steps { list-style: none; margin: 0; padding: 0; }
+    .triage-steps li { display: flex; gap: 0.75rem; margin-bottom: 0.5rem; font-size: 0.9rem; align-items: flex-start; }
+    .triage-steps .num { flex-shrink: 0; width: 20px; height: 20px; border-radius: 50%; color: #fff; font-size: 0.7rem; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+    .triage-result.critical .num { background: var(--accent-red); }
+    .triage-result.urgent .num { background: var(--accent-amber); }
+    .triage-result.important .num { background: var(--accent-blue); }
+    .triage-link { font-size: 0.75rem; margin-top: 0.75rem; cursor: pointer; border: none; background: none; padding: 0; font-weight: 500; }
+    .triage-result.critical .triage-link { color: var(--accent-red); }
+    .triage-result.urgent .triage-link { color: var(--accent-amber); }
+    .triage-result.important .triage-link { color: var(--accent-blue); }
+    .triage-link:hover { text-decoration: underline; }
+    @keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
   </style>
 </head>
 <body>
 
 <h1>Nuclear Fallout Protection</h1>
+
+<div id="quick-triage"></div>
+<script>
+(function() {
+  var questions = [
+    { id: "occurred", text: "Has a detonation already occurred?", options: [
+      { label: "Yes, or imminent", next: "indoors" },
+      { label: "No, preparing in advance", result: "prepare" }
+    ]},
+    { id: "indoors", text: "Are you indoors right now?", options: [
+      { label: "Yes, I'm inside", next: "exposed" },
+      { label: "No, I'm outside", result: "get-inside" }
+    ]},
+    { id: "exposed", text: "Were you exposed outdoors before getting inside?", options: [
+      { label: "Yes, I was outside", result: "decontaminate" },
+      { label: "No, I was already inside", result: "stay-sheltered" }
+    ]}
+  ];
+  var results = {
+    "get-inside": { title: "Get Inside Immediately", priority: "critical", section: "GET INSIDE IMMEDIATELY",
+      steps: ["Enter the nearest building NOW \u2014 any structure is better than outside", "Go to the center of the building or basement", "Close all doors and windows behind you", "Remove and bag outer clothing before joining others"] },
+    "decontaminate": { title: "Decontaminate Now", priority: "critical", section: "IF YOU WERE OUTSIDE",
+      steps: ["Remove ALL outer clothing \u2014 this removes ~90% of contamination", "Seal clothing in a plastic bag, set it aside", "Shower with soap and water, head to toe", "Use shampoo only \u2014 NO conditioner (it binds radioactive particles)"] },
+    "stay-sheltered": { title: "Stay Sheltered and Seal the Space", priority: "urgent", section: "SEAL THE SPACE",
+      steps: ["Move to the most interior room or basement", "Close all windows, doors, and fireplace dampers", "Turn off HVAC / ventilation systems", "Seal vents and gaps with tape or wet towels"] },
+    "prepare": { title: "Prepare Your Shelter Now", priority: "important", section: "Shelter Protection Factors",
+      steps: ["Identify the best shelter location (basement or interior room)", "Stock water, sealed food, radio, batteries, first aid kit", "Learn the 7-10 rule: every 7x time increase = 10x radiation decrease", "Read through this full guide while you have time"] }
+  };
+
+  var el = document.getElementById('quick-triage');
+  var currentQ = 'occurred';
+  var history = [];
+
+  function findQuestion(id) {
+    for (var i = 0; i < questions.length; i++) { if (questions[i].id === id) return questions[i]; }
+    return null;
+  }
+
+  function scrollToSection(text) {
+    var headings = document.querySelectorAll('h2, h3, h4');
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].textContent.toLowerCase().indexOf(text.toLowerCase()) !== -1) {
+        headings[i].scrollIntoView({ behavior: 'smooth', block: 'start' });
+        headings[i].style.transition = 'background-color 0.3s';
+        headings[i].style.backgroundColor = 'rgba(245, 158, 11, 0.2)';
+        headings[i].style.borderRadius = '4px';
+        setTimeout(function(h) { h.style.backgroundColor = ''; }.bind(null, headings[i]), 3000);
+        break;
+      }
+    }
+  }
+
+  function renderQuestion() {
+    var q = findQuestion(currentQ);
+    if (!q) return;
+    var html = '<div class="triage"><div class="triage-label"><span>Quick triage</span>';
+    if (history.length > 0) html += '<button onclick="window._nTriageBack()">Back</button>';
+    html += '</div><div class="triage-question">' + q.text + '</div>';
+    html += '<div class="triage-options">';
+    for (var i = 0; i < q.options.length; i++) {
+      var o = q.options[i];
+      html += '<button class="triage-opt" onclick="window._nTriageSelect(\'' + (o.next || '') + '\',\'' + (o.result || '') + '\')">' + o.label + '</button>';
+    }
+    html += '</div></div>';
+    el.innerHTML = html;
+  }
+
+  function renderResult(r) {
+    var badges = { critical: 'Do this now', urgent: 'Act quickly', important: 'Next steps' };
+    var html = '<div class="triage-result ' + r.priority + '">';
+    html += '<div class="triage-result-header"><div class="triage-badge"><span class="dot"></span>' + badges[r.priority] + '</div>';
+    html += '<button class="triage-label" style="margin:0" onclick="window._nTriageReset()">Start over</button></div>';
+    html += '<h4>' + r.title + '</h4><ol class="triage-steps">';
+    for (var i = 0; i < r.steps.length; i++) {
+      html += '<li><span class="num">' + (i + 1) + '</span><span>' + r.steps[i] + '</span></li>';
+    }
+    html += '</ol><button class="triage-link" onclick="window._nTriageScroll(\'' + r.section.replace(/'/g, "\\'") + '\')">Read full section below</button></div>';
+    el.innerHTML = html;
+  }
+
+  window._nTriageSelect = function(next, result) {
+    history.push(currentQ);
+    if (result && results[result]) { renderResult(results[result]); }
+    else if (next) { currentQ = next; renderQuestion(); }
+  };
+  window._nTriageBack = function() {
+    if (history.length > 0) { currentQ = history.pop(); renderQuestion(); }
+  };
+  window._nTriageReset = function() {
+    currentQ = 'occurred'; history = []; renderQuestion();
+  };
+  window._nTriageScroll = function(section) { scrollToSection(section); };
+
+  renderQuestion();
+})();
+</script>
 
 <div class="critical-alert">
   <div class="critical-alert-header">
