@@ -4,12 +4,12 @@ import { useState, useEffect } from 'react'
 import { AlertTriangle, Shield, Home, User, Users, Thermometer, Clock, CheckCircle, XCircle, Heart, Activity, BedDouble, Pill, Phone, BookOpen, Smile, AlertCircle } from 'lucide-react'
 
 export const CriticalInfo = ({ children }) => (
-  <div className="bg-purple-900/20 border-2 border-purple-500 rounded-lg p-4 my-4">
+  <div className="bg-purple-900/20 border-2 border-purple-500 rounded-lg p-4 my-4 text-purple-100">
     <div className="flex items-center gap-2 text-purple-400 font-bold mb-2">
       <Shield className="w-6 h-6" />
       <span className="text-lg">IMPORTANT DISTINCTION</span>
     </div>
-    <div className="text-purple-100">{children}</div>
+    {children}
   </div>
 )
 
@@ -577,7 +577,7 @@ BOTH REQUIRE:
       Severe or worsening symptoms
     </li>
   </ul>
-  <p className="mt-3 text-red-300 font-bold">Call emergency services or go to emergency room immediately</p>
+  <span className="block mt-3 text-red-300 font-bold">Call emergency services or go to emergency room immediately</span>
 </div>
 
 ---

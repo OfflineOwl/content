@@ -4,12 +4,12 @@ import { useState, useEffect } from 'react'
 import { AlertTriangle, Shield, Shirt, Droplets, Sparkles, Clock, CheckCircle, XCircle, Eye, Hand, User, Biohazard, Radiation, FlaskConical } from 'lucide-react'
 
 export const CriticalAlert = ({ children }) => (
-  <div className="bg-red-900/20 border-2 border-red-500 rounded-lg p-4 my-4">
+  <div className="bg-red-900/20 border-2 border-red-500 rounded-lg p-4 my-4 text-red-100">
     <div className="flex items-center gap-2 text-red-400 font-bold mb-2">
       <AlertTriangle className="w-6 h-6" />
       <span className="text-lg">CRITICAL SAFETY</span>
     </div>
-    <div className="text-red-100">{children}</div>
+    {children}
   </div>
 )
 

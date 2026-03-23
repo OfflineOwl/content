@@ -4,12 +4,12 @@ import { useState } from 'react'
 import { AlertTriangle, Shield, Clock, Home, Droplets, Wind } from 'lucide-react'
 
 export const CriticalAlert = ({ children }) => (
-  <div className="bg-red-900/20 border-2 border-red-500 rounded-lg p-4 my-4 animate-pulse-slow">
+  <div className="bg-red-900/20 border-2 border-red-500 rounded-lg p-4 my-4 animate-pulse-slow text-red-100">
     <div className="flex items-center gap-2 text-red-400 font-bold mb-2">
       <AlertTriangle className="w-6 h-6" />
       <span className="text-lg">CRITICAL - DO THIS FIRST</span>
     </div>
-    <div className="text-red-100">{children}</div>
+    {children}
   </div>
 )
 
@@ -365,10 +365,10 @@ Monitor these for official guidance:
 4. **FEMA** - Federal guidance
 
 <div className="my-4 p-4 bg-purple-900/20 border border-purple-500 rounded-lg">
-  <p className="text-purple-300">
-    <strong>Do NOT</strong> leave shelter to seek information. Use radio. 
+  <span className="block text-purple-300">
+    <strong>Do NOT</strong> leave shelter to seek information. Use radio.
     Leaving shelter increases exposure.
-  </p>
+  </span>
 </div>
 
 ---
@@ -411,19 +411,19 @@ Do NOT leave until official all-clear OR at least 24 hours have passed and you m
 <div className="grid md:grid-cols-2 gap-4 my-4">
   <a href="#radiation-safety" className="block p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
     <h4 className="font-bold text-blue-400">Understanding Radiation</h4>
-    <p className="text-sm text-gray-400">Time, distance, shielding principles</p>
+    <span className="block text-sm text-gray-400">Time, distance, shielding principles</span>
   </a>
   <a href="#decontamination" className="block p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
     <h4 className="font-bold text-blue-400">Full Decontamination Guide</h4>
-    <p className="text-sm text-gray-400">Detailed step-by-step procedures</p>
+    <span className="block text-sm text-gray-400">Detailed step-by-step procedures</span>
   </a>
   <a href="#shelter-improvement" className="block p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
     <h4 className="font-bold text-blue-400">Improving Your Shelter</h4>
-    <p className="text-sm text-gray-400">How to increase protection factor</p>
+    <span className="block text-sm text-gray-400">How to increase protection factor</span>
   </a>
   <a href="#long-term" className="block p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
     <h4 className="font-bold text-blue-400">Long-Term Survival</h4>
-    <p className="text-sm text-gray-400">Beyond the first 24 hours</p>
+    <span className="block text-sm text-gray-400">Beyond the first 24 hours</span>
   </a>
 </div>
 

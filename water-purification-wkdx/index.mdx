@@ -4,12 +4,12 @@ import { useState } from 'react'
 import { Droplets, Flame, FlaskConical, Sun, Filter, ThermometerSun, Mountain, AlertTriangle, CheckCircle, Clock, Beaker } from 'lucide-react'
 
 export const CriticalInfo = ({ children }) => (
-  <div className="bg-blue-900/20 border-2 border-blue-500 rounded-lg p-4 my-4">
+  <div className="bg-blue-900/20 border-2 border-blue-500 rounded-lg p-4 my-4 text-blue-100">
     <div className="flex items-center gap-2 text-blue-400 font-bold mb-2">
       <Droplets className="w-6 h-6" />
       <span className="text-lg">CRITICAL - WATER IS LIFE</span>
     </div>
-    <div className="text-blue-100">{children}</div>
+    {children}
   </div>
 )
 
@@ -423,9 +423,9 @@ Lightweight, portable, and effective for emergencies.
 
 <div className="my-4 p-4 bg-amber-900/20 border border-amber-500 rounded-lg">
   <h4 className="text-amber-400 font-bold">⚠️ Iodine Warning</h4>
-  <p className="text-amber-200 mt-2">
+  <span className="block text-amber-200 mt-2">
     Iodine is NOT suitable for pregnant women, those with thyroid conditions, or long-term use.
-  </p>
+  </span>
 </div>
 
 ---
