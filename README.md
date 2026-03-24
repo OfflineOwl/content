@@ -1,13 +1,13 @@
-# OfflineOwl Resources
+# OfflineOwl Content
 
-First-party resources for [OfflineOwl](https://offlineowl.com) — your offline survival and preparedness companion.
+First-party content for [OfflineOwl](https://offlineowl.com) — your offline survival and preparedness companion.
 
 This repository contains original guides, interactive tools, games, and media created by the OfflineOwl team and contributors.
 
 ## Structure
 
 ```
-resource/
+content/
 ├── basic-first-aid-k2m8/        # One folder per resource
 │   ├── index.md                  # Markdown version
 │   ├── index.mdx                 # Interactive MDX version
@@ -51,7 +51,7 @@ Resources can include multiple formats (e.g., MDX for interactive + PDF for prin
 
 ## How Content Is Indexed
 
-Each resource has a corresponding JSON file in the [registry](https://github.com/offlineowl/registry) repo that defines its metadata — title, description, category, tags, license, etc. The registry is what the OfflineOwl app reads to display and search resources.
+Each resource has a corresponding JSON file in the [manifest](https://github.com/offlineowl/manifest) repo that defines its metadata — title, description, category, tags, license, etc. The manifest is what the OfflineOwl app reads to display and search resources.
 
 ## Contributing
 
@@ -65,7 +65,7 @@ Want to create and share your own resource? See the full guide:
 - **Accuracy** — information must be factually correct, especially survival/medical content
 - **Clarity** — write for beginners, explain technical terms
 - **Offline-first** — no external dependencies or links
-- **Self-contained** — all assets must be in the resource folder
+- **Self-contained** — all assets must be in the content folder
 
 ## License
 
