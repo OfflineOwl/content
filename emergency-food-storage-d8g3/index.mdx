@@ -1,318 +1,270 @@
 # Emergency Food Storage Basics
 
-> **Food Security Starts at Home** - A well-planned food storage system provides peace of mind and sustenance during any emergency. This guide covers the fundamentals of building and maintaining your food supply.
+> **Food security starts at home.** A disaster can cut off stores, power, and water for days or weeks. A stocked pantry of food your household actually eats, that needs little water or cooking, keeps everyone fed and calmer while you wait it out.
 
-## How Much to Store?
+## Do This Now
 
-### Minimum Recommendations
-
-| Duration | Purpose |
-|----------|---------|
-| **3 days** | FEMA minimum, short-term emergencies |
-| **2 weeks** | Better preparedness for most situations |
-| **1 month** | Recommended for serious preparedness |
-| **3+ months** | Extended crisis capability |
-
-### Calculating Your Needs
-
-**Per person per day:**
-- Calories: 1,500-2,000 (survival), 2,000-2,500 (active)
-- Consider special needs (children, medical conditions)
-- Don't forget pets
-
-**Example: Family of 4, 2-week supply**
-- 2,000 cal/person × 4 people × 14 days = 112,000 calories needed
+1. **Start with a few days.** Gather at least a several-day supply of non-perishable food. Most households already have much of it in the cupboard.
+2. **Choose food that needs no refrigeration, water, or cooking:** canned meat, fish, beans, fruit, vegetables, and soup; peanut butter; crackers; cereal; dried fruit; nuts; shelf-stable milk.
+3. **Get a manual can opener** and disposable plates and utensils.
+4. **Cover special needs:** ready-to-feed infant formula and baby food, medical diets, allergies, and pet food.
+5. **Store more water than you think:** at least 1 gallon per person per day (see the Water Storage and Rotation guide).
+6. **Date everything and use oldest first.** Build toward a 2-week supply over time.
 
 ---
 
-## Food Categories for Storage
+## How Much to Store
 
-### Long-Term Storage (1-30 years)
+| Supply | Purpose |
+|--------|---------|
+| **Several days (at least 3)** | Minimum for every household; also the amount for a go-bag (Ready.gov, FEMA) |
+| **2 weeks** | Recommended home supply (FEMA) |
+| **1 month or more** | Extended outages, remote areas, or supply disruptions |
 
-| Food | Shelf Life | Notes |
-|------|-----------|-------|
-| White rice | 20-30 years | Must be stored properly |
-| Dried beans | 20-30 years | Store with oxygen absorbers |
-| Wheat berries | 30+ years | Requires grinder |
-| Rolled oats | 20-30 years | Sealed, cool storage |
-| Honey | Indefinite | Never spoils |
-| Salt | Indefinite | Store dry |
-| Sugar | Indefinite | Keep moisture-free |
-| Dried pasta | 20-30 years | Sealed containers |
+### Calories
 
-### Medium-Term Storage (1-5 years)
+- Adults typically need about **1,600 to 3,000 calories a day**, depending on age, sex, and activity (Dietary Guidelines for Americans). About 2,000 per adult per day is a reasonable planning figure.
+- Children need fewer calories but more frequent snacks. People doing hard physical work need more.
+- Healthy adults can safely eat less than usual for a while if supplies run short. **Children and pregnant women should not have food rationed.** Water should never be rationed.
 
-| Food | Shelf Life | Notes |
-|------|-----------|-------|
-| Canned goods | 2-5 years | Rotate regularly |
-| Peanut butter | 2-5 years | Unopened |
-| Freeze-dried foods | 25-30 years | Expensive but lightweight |
-| Powdered milk | 2-5 years | Sealed container |
-| Cooking oils | 1-2 years | Cool, dark storage |
-| Spices | 2-4 years | Sealed containers |
-
-### Short-Term Rotation (6 months-1 year)
-
-| Food | Shelf Life | Notes |
-|------|-----------|-------|
-| Crackers | 6-12 months | Watch for staleness |
-| Cereal | 6-12 months | Sealed after opening |
-| Granola bars | 6-12 months | Check dates |
-| Trail mix | 6-12 months | Contains oils that can spoil |
+**Example: family of 4 for 2 weeks**
+2,000 calories × 4 people × 14 days = 112,000 calories
 
 ---
 
-## The Balanced Pantry
+## What to Store
 
-### Categories to Include
+### For the first two weeks: no-cook basics
 
-**Grains (40% of storage)**
-- Rice (white stores longest)
-- Pasta
-- Oats
-- Flour
-- Cornmeal
+Pick foods that are ready to eat, need little or no water, and won't make you thirsty:
 
-**Proteins (20% of storage)**
-- Canned meats (tuna, chicken, spam)
-- Dried beans and lentils
-- Peanut butter
-- Canned beans
-- Protein powder
+- Canned meat, fish, and poultry (tuna, chicken, salmon)
+- Canned beans, chili, stews, and soups
+- Canned fruit and vegetables (their liquid also counts as water)
+- Peanut butter and other nut butters
+- Crackers (salt-free if water may be short), granola bars
+- Ready-to-eat cereal, instant oatmeal
+- Dried fruit, nuts, trail mix
+- Shelf-stable (UHT) milk, powdered milk
+- Ready-to-feed infant formula and baby food
+- Comfort foods: coffee, tea, cocoa, hard candy
 
-**Fruits & Vegetables (20% of storage)**
-- Canned vegetables
-- Canned fruits
-- Dried fruits
-- Freeze-dried options
+**If water is limited, avoid salty foods**: they make you thirsty. Choose salt-free crackers, whole-grain cereals, and canned foods with a high liquid content.
 
-**Dairy & Fats (10% of storage)**
-- Powdered milk
-- Shelf-stable milk
-- Cooking oils
-- Shortening
-- Canned butter
+### For longer storage: dry staples
 
-**Comfort & Variety (10% of storage)**
-- Coffee/tea
-- Hot cocoa
-- Candy
-- Comfort foods
-- Spices and seasonings
+Rice, dried beans, pasta, wheat, oats, and flour store well but need **water, fuel, and time** to cook. Add them once your no-cook supply is in place.
+
+---
+
+## How Long Food Keeps
+
+Dates on most packages are about quality, not safety (infant formula is the exception: don't use it past its date). Cool, dry storage makes everything last longer.
+
+### Canned and packaged foods
+
+| Food | Keeps (unopened, cool, dry) | Notes |
+|------|-----------------------------|-------|
+| Low-acid canned food (meat, fish, poultry, most vegetables, soups) | 2 to 5 years | USDA |
+| High-acid canned food (tomatoes, fruit, juice) | 12 to 18 months | USDA |
+| Peanut butter, jelly, canned nuts, hard candy | About 1 year or the package date | FEMA |
+| Ready-to-eat cereal | About 1 year or the package date | FEMA |
+| Boxed powdered milk, dried fruit, crisp crackers | About 6 months | FEMA |
+| Cooking oil | Check the date; goes rancid faster in heat | |
+| Freeze-dried meals | Follow the manufacturer's date | |
+
+### Long-term dry staples
+
+Shelf lives below assume the food is **sealed without oxygen** (for example, #10 cans or Mylar bags with oxygen absorbers) and kept **cool and dry**. Heat shortens all of them.
+
+| Food | Keeps | Notes |
+|------|-------|-------|
+| White rice | Up to 30 years in cool storage; about 10 years at a steady 70°F | Brown rice goes rancid much sooner |
+| Wheat (whole grains) | 25+ years cool; about 5 years in a hot garage or attic | Needs a grain mill |
+| Dried beans | 10+ years | Older beans take longer to soften |
+| Pasta, rolled oats | Several years sealed and cool | Check package dates |
+| Salt, sugar | Indefinitely if kept dry | Don't add oxygen absorbers to sugar; it hardens |
+| Honey | Years; may crystallize | Warm gently to re-liquefy. Never give honey to babies under 1 year |
+
+---
+
+## A Balanced Pantry
+
+Aim for variety. Eating the same thing every day gets hard fast, and people stop eating enough.
+
+- **Grains:** rice, pasta, oats, crackers, cereal, flour, cornmeal
+- **Proteins:** canned meat and fish, beans, lentils, peanut butter, nuts
+- **Fruits and vegetables:** canned, dried, and freeze-dried
+- **Dairy and fats:** powdered or shelf-stable milk, cooking oil, shelf-stable butter
+- **Comfort and variety:** coffee, tea, cocoa, spices, treats
+- **Supplements:** a multivitamin if your stored diet is limited
 
 ---
 
 ## Storage Methods
 
-### Food-Grade Containers
+### Containers
 
-**Acceptable:**
-- HDPE #2 plastic buckets
-- Mylar bags
-- Glass jars (for smaller quantities)
-- #10 cans (commercial)
-- PETE bottles (repurposed 2-liter)
+**Good choices:**
+- Original sealed cans and packages
+- Food-grade plastic buckets with tight lids (often marked HDPE #2)
+- Mylar bags (inside buckets for protection)
+- Glass jars with tight lids for small amounts
+- Screw-top jars or airtight canisters for opened sugar, dried fruit, and nuts (keeps pests out)
 
-**Not acceptable:**
-- Non-food-grade plastic
+**Avoid:**
+- Non-food-grade plastic, trash bags
 - Containers that held chemicals
-- Garbage bags
-- Metal cans with rust
+- Rusty, dented, or swollen cans
 
-### Oxygen Absorbers
+### Oxygen absorbers
 
-**Purpose:** Remove oxygen to prevent spoilage
+Oxygen absorbers remove oxygen from sealed containers so dry food keeps its quality and insects can't survive.
 
-**Use with:**
-- Dried grains
-- Beans
-- Pasta
-- Dehydrated foods
+- **Use only with dry foods** (about 10% moisture or less): rice, dried beans, pasta, oats, wheat, flour.
+- **Never use with moist foods.** Removing oxygen from moist, low-acid food can let botulism bacteria grow. Vacuum sealing is not a preservation method on its own.
+- Not needed for salt. Don't use with sugar.
 
-**Don't use with:**
-- Sugar (hardens)
-- Salt (unnecessary)
-- Foods with moisture
+### Mylar bags
 
-### Mylar Bags
-
-**Benefits:**
-- Block light
-- Moisture barrier
-- Oxygen barrier
-- Pest resistant
-
-**Use for:**
-- Long-term dry food storage
-- Inside buckets or containers
-- With oxygen absorbers
+Block light, moisture, and oxygen. Use them for dry staples with oxygen absorbers, sealed with heat, and store them inside buckets to protect against punctures and rodents.
 
 ---
 
 ## Storage Conditions
 
-### The COLD Rule
+- **Cool:** keep food in a cool spot. Heat is the main thing that shortens shelf life. In Utah State University tests, stored wheat stayed good for about 25 years in a cool basement but only about 5 years in a hot garage or attic.
+- **Dry:** moisture causes mold and rust.
+- **Dark:** light degrades food and some packaging.
+- **Pest-free:** sealed containers, off the floor.
+- **Off the floor and above flood level** if your area floods.
 
-- **C**ool: 50-70°F ideal (each 10°F reduces shelf life by half)
-- **O**ut of light: Dark prevents degradation
-- **L**ow humidity: Below 15% ideal
-- **D**ry: No moisture intrusion
+**Good locations:** interior closets, under beds, cool dry basements, climate-controlled rooms.
 
-### Where to Store
-
-**Good locations:**
-- Basement (if dry)
-- Interior closets
-- Under beds
-- Climate-controlled areas
-
-**Avoid:**
-- Garages (temperature extremes)
-- Attics (heat)
-- Near chemicals
-- Direct sunlight
-- Areas with pest problems
+**Avoid:** garages and attics (heat), spots near chemicals or fuel, direct sunlight, and damp areas.
 
 ---
 
 ## Rotation System
 
-### FIFO: First In, First Out
+### First in, first out
 
-1. Date all items when purchased
-2. Place new items in back
-3. Use oldest items first
-4. Check dates regularly
-5. Replace items before expiration
+1. Write the purchase date on each item with a marker.
+2. Put new items at the back, older ones in front.
+3. Use the oldest first and replace what you use.
+4. Check supplies at least twice a year.
 
-### Making Rotation Easy
+### Make rotation easy
 
-- Store in visible locations
-- Use what you store regularly
-- Cook with storage foods monthly
-- Keep inventory list
-- Set calendar reminders
+- Store what you normally eat, and cook from your stockpile regularly.
+- Keep an inventory list on the shelf or in your phone.
+- Set calendar reminders.
 
-### Rotation Schedule
+### Inspect before eating
 
-| Food Type | Check Frequency | Replace |
-|-----------|-----------------|---------|
-| Canned goods | Every 6 months | Yearly |
-| Crackers/snacks | Monthly | 6 months |
-| Cooking oils | Every 3 months | Yearly |
-| Long-term storage | Yearly | As needed |
+**Throw out** cans that are bulging, leaking, rusted, or deeply dented (a dent deep enough to lay your finger in, or any dent on a seam). Don't eat food that looks or smells abnormal, even if the can looks normal. Never taste food to test it.
 
 ---
 
-## Sample Emergency Pantry
+## Sample No-Cook Supply: One Adult, One Week
 
-### One Week Per Person
+Roughly 2,000 to 2,500 calories a day, no cooking or extra water needed:
 
-**Grains:**
-- 5 lbs rice
-- 3 lbs pasta
-- 2 lbs oatmeal
+- **Breakfast:** 1 box ready-to-eat cereal, 4 cartons (32 oz) shelf-stable milk or powdered milk, 1 jar peanut butter
+- **Protein:** 7 cans tuna, chicken, or salmon; 3 cans beans or chili
+- **Fruits and vegetables:** 4 cans fruit, 4 cans vegetables, 1 bag dried fruit
+- **Snacks and extras:** 2 boxes crackers, 1 box granola bars, 1 large bag nuts or trail mix, hard candy, instant coffee or tea
+- **Water:** at least 7 gallons
 
-**Proteins:**
-- 6 cans tuna/chicken
-- 2 cans beans
-- 2 jars peanut butter
-- 1 lb dried beans
-
-**Fruits/Vegetables:**
-- 7 cans vegetables
-- 4 cans fruit
-- Dried fruit assortment
-
-**Other:**
-- Cooking oil
-- Salt, sugar
-- Powdered milk
-- Coffee/tea
-- Honey
-- Multivitamin
-
-**Water:** 7 gallons
+Adjust portions for children, appetites, and diets.
 
 ---
 
 ## Special Considerations
 
-### Dietary Restrictions
+### Infants
 
-- Store foods your family actually eats
-- Consider allergies
-- Plan for special diets (diabetic, gluten-free)
-- Include comfort foods
+- **Breastfeeding** needs no water or supplies and protects the baby. Keep it going if you can.
+- Store **ready-to-feed formula**; it needs no water. If you must mix formula, use bottled water or water that was boiled and cooled.
+- Keep baby food, bottles, and a way to clean them.
+- Don't use formula past its "use by" date.
 
-### Infants and Children
+### Children
 
-- Formula (ready-to-feed preferred)
-- Baby food
-- Familiar comfort foods
-- Extra snacks
+- Pack familiar foods and treats. Comfort foods help with stress.
+- Children shouldn't have food rationed.
+
+### Older adults and people with medical needs
+
+- Plan for diabetic, low-sodium, soft, or allergy-safe diets.
+- Canned soups, juices, and nutrition drinks can help people who are ill or elderly.
+- Keep extra medicine and any supplies needed to take it.
+
+### People with disabilities
+
+- Store food where the person can reach it and open it (easy-open cans, pouches).
+- Keep any adaptive utensils with the supply.
 
 ### Pets
 
-- Dry food (stores well)
-- Canned food
-- Store separately from human food
-- Same rotation principles
+- Store pet food in its original bag inside a sealed container, plus extra water.
+- Rotate it like human food.
 
 ---
 
-## Budget Building
+## Building Your Supply on a Budget
 
-### Start Small
-
-**Week 1:** Extra canned goods ($10-15)
-**Week 2:** Rice and beans ($10-15)
-**Week 3:** Peanut butter and pasta ($10-15)
-**Week 4:** Water containers ($20)
-
-### Build Over Time
-
-- Add to regular grocery shopping
-- Buy on sale
-- Focus on shelf-stable basics
-- Quality over quantity
-
-### Cost-Effective Options
-
-- Store brands work fine
-- Buy bulk staples
-- Watch for sales on canned goods
-- Grow and preserve your own
+- Add a few extra cans or staples to each grocery trip.
+- Buy store brands and stock up during sales.
+- Start with the no-cook basics, then add dry staples.
+- Don't buy foods your household won't eat.
 
 ---
 
-## Common Mistakes to Avoid
+## Common Mistakes
 
-- ❌ Storing foods you don't eat
+- ❌ Storing food you don't normally eat
 - ❌ Not rotating stock
-- ❌ Poor storage conditions
-- ❌ All-or-nothing approach
+- ❌ Storing food in hot garages or attics
+- ❌ Relying on foods that need lots of water or cooking
+- ❌ Forgetting a manual can opener
 - ❌ Forgetting water
-- ❌ No variety (appetite fatigue)
-- ❌ Ignoring special dietary needs
-- ❌ Storing in garage/attic extremes
+- ❌ No variety
+- ❌ Ignoring infants, medical diets, allergies, and pets
 
 ---
 
 ## Quick Start Checklist
 
-- [ ] Calculate calorie needs
-- [ ] Inventory current food
-- [ ] Identify storage location
-- [ ] Purchase storage containers
-- [ ] Start with 3-day supply
-- [ ] Build to 2-week supply
-- [ ] Establish rotation system
-- [ ] Include comfort foods
-- [ ] Don't forget water
-- [ ] Plan for cooking needs
+- [ ] Count people, pets, and special diets
+- [ ] Check what's already in your cupboards
+- [ ] Pick a cool, dry, dark storage spot
+- [ ] Gather at least several days of no-cook food
+- [ ] Add a manual can opener and disposable utensils
+- [ ] Store at least 1 gallon of water per person per day
+- [ ] Build toward 2 weeks
+- [ ] Date everything and rotate
+- [ ] Add dry staples, a way to cook them, and fuel (see Cooking Without Power)
 
 ---
 
-*Last updated: January 2026*
+## Sources
+
+- [Ready.gov: Food](https://www.ready.gov/food)
+- [Ready.gov: Build a Kit](https://www.ready.gov/kit)
+- [FEMA: Food and Water in an Emergency (FEMA 477)](https://www.fema.gov/pdf/library/f&web.pdf)
+- [USDA FSIS: Shelf-Stable Food Safety](https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/shelf-stable-food)
+- [USDA FSIS: Food Product Dating](https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/food-product-dating)
+- [Utah State University Extension: Storing White Rice](https://extension.usu.edu/preserve-the-harvest/research/storing-white-rice)
+- [Utah State University Extension: Storing Wheat](https://extension.usu.edu/preserve-the-harvest/research/storing-wheat)
+- [Utah State University Extension: Storing Dry Beans](https://extension.usu.edu/preserve-the-harvest/dev/storing-dry-beans-1)
+- [Utah State University Extension: Packaging Foods](https://extension.usu.edu/preserve-the-harvest/food-storage-packaging)
+- [Dietary Guidelines for Americans](https://www.dietaryguidelines.gov/)
+- [CDC: Preventing Botulism](https://www.cdc.gov/botulism/prevention/index.html)
+- [CDC: How to Create an Emergency Water Supply](https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html)
+
+---
+
+Last reviewed: October 2026
+
 *License: CC-BY-SA 4.0*

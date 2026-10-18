@@ -1,53 +1,86 @@
 WATER STORAGE & ROTATION
 ========================
 
-Stored water is your first line of defense against water emergencies.
-This guide covers proper storage methods to keep your water safe.
+Stored water is your first line of defense when the taps stop or the
+water becomes unsafe. This guide covers how much to store, which
+containers to use, and how to keep stored water safe.
+
+DO THIS NOW
+-----------
+
+1. Count people and pets. Plan at least 1 gallon (about 4 liters)
+   per person per day.
+2. Start with a 3-day supply. Build toward 2 weeks if you have space.
+3. Easiest and safest: buy commercially bottled water and keep it
+   sealed until you need it.
+4. Filling your own containers? Use food-grade containers, wash and
+   sanitize them, fill with chlorinated tap water, and label them
+   "drinking water" with the date.
+5. Store in a cool, dark place, away from gasoline, pesticides, and
+   other chemicals.
+6. Replace water you bottled yourself every 6 months. Use store-bought
+   water by its expiration or "use by" date.
+7. Storm or outage coming? Fill extra containers and the bathtub
+   (see EMERGENCY WATER EXPANSION below).
 
 HOW MUCH TO STORE
 -----------------
 
-MINIMUM RECOMMENDATION:
-1 gallon per person per day
+MINIMUM: 1 gallon per person per day, for drinking and sanitation.
 
-This covers:
-- Drinking: 1/2 gallon
-- Hygiene/cooking: 1/2 gallon
+- A normally active person needs about 3/4 gallon of fluid a day
+  for drinking alone.
+- The rest covers basic hygiene and food preparation.
+
+STORE MORE FOR:
+- Hot climates (drinking needs can double in very hot weather)
+- Pregnant or nursing women
+- Children
+- People who are sick
+- Pets
 
 STORAGE TARGETS:
-- 3 days (72 hours): FEMA minimum
-- 2 weeks: Recommended for most households
-- 1 month: Better preparedness
-- Longer: Consider rainwater collection
+- 3 days: minimum for every household (CDC, Ready.gov)
+- 2 weeks: recommended if you have space (CDC, FEMA)
+- Longer: add a way to collect and treat rainwater or other sources
 
-FAMILY EXAMPLE (4 people):
+FAMILY EXAMPLE (4 people, 1 gallon each per day):
 - 3 days: 12 gallons
 - 2 weeks: 56 gallons
-- 1 month: 120 gallons
+- 1 month (30 days): 120 gallons
+
+Add more for pets and hot weather.
 
 CONTAINER OPTIONS
 -----------------
 
-COMMERCIAL WATER CONTAINERS:
+BEST: COMMERCIALLY BOTTLED WATER
+- Safest and most reliable option
+- Keep it sealed in the original container until you need it
+- Observe the expiration or "use by" date
 
-Food-Grade Plastic Jugs (1-7 gallons)
+FOOD-GRADE WATER STORAGE CONTAINERS:
+
+Food-Grade Jugs (1-7 gallons)
 - Pros: Portable, affordable, stackable
-- Cons: Limited capacity, many containers
-- Best for: Portable supply, bug-out bag
+- Cons: Many containers needed
+- Best for: Portable supply, go-bag, evacuation
 
-WaterBricks (3.5 gallons each)
+Stackable Bricks (about 3-5 gallons)
 - Pros: Stackable, modular, portable
-- Cons: More expensive, smaller capacity
-- Best for: Organized storage, mobility
+- Cons: Cost more per gallon
+- Best for: Organized storage in small spaces
 
 55-Gallon Drums
-- Pros: Large capacity, affordable per gallon
-- Cons: Heavy, need pump to access, hard to move
+- Pros: Large capacity, lower cost per gallon
+- Cons: Over 450 lb when full, need a pump to get water out,
+  can't be moved
 - Best for: Primary home storage
 
-IBC Totes (275 gallons)
-- Pros: Very large capacity, pallet-ready
-- Cons: Heavy, need space, hard to move
+IBC Totes (about 275 gallons)
+- Pros: Very large capacity
+- Cons: Very heavy, need space and a sturdy base; buy food-grade
+  totes that held only food or water
 - Best for: Large-scale home storage
 
 Water Storage Tanks (100+ gallons)
@@ -55,218 +88,219 @@ Water Storage Tanks (100+ gallons)
 - Cons: Expensive, fixed location
 - Best for: Permanent installation
 
-CONTAINERS TO AVOID:
-- Milk jugs (hard to sanitize, degrade quickly)
-- Non-food-grade plastic (chemical leaching)
-- Containers that held chemicals
-- Cardboard juice containers
-- Thin disposable bottles (long-term)
+REUSING CONTAINERS:
 
-REPURPOSING CONTAINERS:
+OK to reuse (after washing and sanitizing):
+- 2-liter plastic soda bottles
+- Food-grade buckets or jugs with tight lids that held only food
+  or water
 
-Safe to reuse (after cleaning):
-- 2-liter soda bottles
-- Juice containers (not cardboard)
-- Food-grade buckets (with lids)
-- Commercial water containers
+DON'T USE:
+- Milk jugs or cardboard containers that held milk or fruit juice
+  (milk protein and fruit sugar can't be fully washed out and feed
+  bacteria; cardboard leaks)
+- Any container that held toxic chemicals, including bleach,
+  pesticides, or petroleum products
+- Non-food-grade plastic
+- Glass (heavy and breaks)
+- Containers that can't be sealed tightly
 
-NEVER reuse containers that held:
-- Non-food substances
-- Chemicals
-- Bleach (unless for non-drinking)
-- Petroleum products
+Pick containers with tight-closing caps and, if possible, a narrow
+opening so hands and scoops stay out.
 
 PREPARING CONTAINERS
 --------------------
 
-FOR NEW FOOD-GRADE CONTAINERS:
-1. Rinse with clean water
-2. Ready to fill
+NEW FOOD-GRADE CONTAINERS:
+Wash and rinse, or follow the manufacturer's instructions.
 
-FOR REUSED CONTAINERS:
-1. Wash with dish soap
-2. Rinse thoroughly (no soap residue)
-3. Sanitize with dilute bleach solution:
-   - 1 teaspoon bleach per quart of water
-   - Swish to coat all surfaces
-   - Let sit 30 seconds
-   - Rinse with clean water
-4. Air dry completely
+REUSED CONTAINERS (CDC method):
+1. Wash with dish soap and water. Rinse well.
+2. Mix 1 teaspoon of unscented liquid household chlorine bleach
+   (5-9% sodium hypochlorite) into 1 quart (4 cups) of water.
+3. Pour the solution into the container, cap it, and shake so it
+   touches every inside surface.
+4. Wait at least 30 seconds, then pour it out.
+5. Let the container air-dry, or rinse it with clean, safe water.
 
-WATER SOURCES FOR STORAGE
--------------------------
+FILLING CONTAINERS
+------------------
 
-BEST OPTIONS (in order):
-1. Municipal tap water (already treated)
-2. Well water (test first, may need treatment)
-3. Commercial bottled water
-4. Filtered water
+CHLORINATED TAP WATER (most city water):
+- Fill straight from the tap. Nothing else needs to be added.
+- Don't touch the inside of the cap or container with your fingers.
 
-MUNICIPAL WATER:
-- Already chlorinated
-- Generally safe to store as-is
-- May benefit from small bleach addition for long-term
+WELL WATER OR OTHER UNCHLORINATED WATER:
+- Have the well tested if you can.
+- Disinfect before storing. With unscented bleach, EPA's dose is
+  8 drops of 6% bleach or 6 drops of 8.25% bleach per gallon
+  (2 drops per quart or liter). Double it if the water is cloudy,
+  colored, or very cold. Stir, wait 30 minutes, then seal.
+- See the Water Purification guide for other methods.
 
-WELL WATER:
-- Test before storing long-term
-- Treat with bleach if untreated
-- Consider filtration
+COMMERCIAL WATER PRESERVERS:
+- Follow the product's instructions and replacement interval.
 
-TREATING WATER FOR STORAGE
---------------------------
-
-IF USING MUNICIPAL WATER:
-- Usually no treatment needed
-- For extra security: 1/8 teaspoon bleach per gallon
-- Unscented household bleach (5.25-8.25% sodium hypochlorite)
-
-IF USING UNTREATED WATER:
-- 1/4 teaspoon bleach per gallon
-- Mix thoroughly
-- Wait 30 minutes before sealing
-
-COMMERCIAL TREATMENT:
-- Water preserver drops (5+ year shelf life)
-- Follow manufacturer instructions
-- More expensive but convenient
+LABEL EVERY CONTAINER:
+"DRINKING WATER" plus the date you filled it.
 
 STORAGE CONDITIONS
 ------------------
 
-IDEAL CONDITIONS:
-- Cool: 50-70°F
-- Dark: Away from light
-- Stable temperature: Avoid freeze/thaw
-- Off concrete: On wood or pallets
-- Away from chemicals: No fumes to absorb
+KEEP IT:
+- Cool: about 50-70°F (10-21°C)
+- Dark: out of direct sunlight
+- Away from gasoline, kerosene, paint, pesticides, and other
+  chemicals (plastic can absorb their vapors)
+- Where it won't freeze (freezing can crack containers)
+- Off the floor on a shelf or pallet, where you can inspect it and
+  where it is safer from floods
 
 AVOID:
-- Direct sunlight (algae growth, plastic degradation)
-- Near gasoline, pesticides, chemicals (odor absorption)
-- Extreme heat (accelerates degradation)
-- Freezing (can crack containers)
-- On bare concrete (absorbs chemicals)
+- Direct sunlight (algae growth, plastic breakdown)
+- Hot attics, cars, and sheds
+- Garages with fuel, chemicals, or freezing temperatures
 
-LOCATIONS:
-Good:
-- Basement (if not damp)
+GOOD LOCATIONS:
 - Interior closets
 - Under beds
-- Climate-controlled garage
-
-Less ideal:
-- Attic (temperature extremes)
-- Outdoor (exposure)
-- Near windows (light)
+- Cool basements that don't flood
+- Several places in the house, so one damaged area doesn't take
+  all your water
 
 ROTATION SCHEDULE
 -----------------
 
-GENERAL GUIDELINES:
-
-Store-bought sealed water: Check manufacturer date (usually 1-2 years)
-Home-stored tap water: 6-12 months (or use preserver)
-Home-stored with preserver: 5+ years
+- Water you bottled yourself: replace every 6 months.
+- Commercially bottled water: use by its expiration or
+  "use by" date; keep it sealed.
+- Commercial water preservers: follow the product label.
 
 ROTATION PROCESS:
-1. Mark containers with fill date
-2. Use oldest water first (FIFO)
-3. When using, refill immediately
-4. Use stored water for regular needs before replacement
-
-EASY ROTATION METHODS:
-- Use stored water for cooking/drinking, refill
-- Water plants with old stored water
-- Use for cleaning, refill
-- Cycle through before expiration
+1. Label every container with the fill date.
+2. Use the oldest water first.
+3. Use rotated-out water for cooking, cleaning, or plants.
+4. Wash, sanitize, and refill containers right away.
+5. Set a reminder (for example, when clocks change in spring
+   and fall).
 
 WHY ROTATION MATTERS:
-- Chlorine dissipates over time
-- Plastic can degrade
-- Containers can develop leaks
-- Ensures freshness when needed
+- Chlorine in tap water fades over time
+- Containers can crack, leak, or lose their seal
+- Old containers you never check can fail when you need them
 
-WATER STORAGE CHECKLIST
------------------------
+USING STORED WATER SAFELY
+-------------------------
 
-[ ] Calculate needed amount (1 gal/person/day)
-[ ] Select appropriate containers
-[ ] Clean and sanitize containers
-[ ] Fill with clean water
-[ ] Treat if necessary
-[ ] Label with date
-[ ] Store in appropriate location
-[ ] Set rotation reminder (6-12 months)
-[ ] Keep spare containers for additional collection
-
-ACCESSING STORED WATER
-----------------------
+- Pour water out, or use a clean scoop each time. Don't dip hands
+  or cups into the container.
+- Keep the container covered between uses.
+- Open one container at a time.
 
 55-GALLON DRUMS:
-- Siphon pump (manual or battery)
-- Bung wrench to open
-- Small containers for daily use
-- Practice accessing before emergency
+- Siphon or drum pump (manual or battery) and a bung wrench
+- Fill smaller containers for daily use
+- Practice getting water out before an emergency
 
 IBC TOTES:
-- Built-in valve at bottom
-- May need raised platform for gravity flow
-- Use smaller containers for daily needs
+- Valve at the bottom
+- Raise the tote on a sturdy platform for gravity flow
+- Fill smaller containers for daily use
 
 LARGE TANKS:
-- Gravity feed if elevated
-- Pump if not elevated
-- Know how to access manually
+- Gravity feed if elevated, pump if not
+- Know how to get water out without power
 
-SIGNS OF COMPROMISED WATER
---------------------------
+CHECK BEFORE DRINKING
+---------------------
 
-CHECK BEFORE DRINKING:
-- Unusual color
-- Cloudiness
-- Strange smell
-- Visible contamination
-- Container damage
-- Compromised seal
+LOOK FOR:
+- Unusual color or cloudiness
+- Strange smell or taste
+- Anything floating in it
+- Cracked containers or broken seals
 
 IF WATER SEEMS OFF:
-- Use for non-drinking purposes
-- Or re-treat before drinking
-- Or dispose safely
+- Don't drink it as-is
+- Use it for flushing or cleaning, or
+- Treat it (boil or disinfect) before drinking, or
+- Discard it and use another container
 
 EMERGENCY WATER EXPANSION
 -------------------------
 
-When emergency warning received:
+When a storm, outage, or water shutoff is forecast:
 
-1. Fill bathtub (with WaterBOB if available)
-2. Fill all available containers
-3. Fill washing machine
-4. Fill pots and pans
-5. Fill bottles and pitchers
-6. Fill sinks with stoppers
+1. Fill every clean, food-grade container you have with tap water
+2. Fill pitchers, pots, and bottles
+3. Fill the bathtub (a tub liner keeps it cleaner). Use tub water
+   for flushing and washing, or treat it before drinking
+4. Freeze containers of water (leave room for expansion). They help
+   keep food cold and become drinking water as they melt
+5. Know how to drain your water heater and pipes (see the Finding
+   Safe Water guide)
 
-Can significantly increase available water with advance warning.
+DON'T RATION DRINKING WATER
+---------------------------
+
+If supplies run low, drink what you need today and look for more
+for tomorrow. Don't ration drinking water unless officials tell you
+to. Cut back on other uses instead, and reduce your need by staying
+cool and resting. See the Water Rationing guide.
+
+WATER STORAGE CHECKLIST
+-----------------------
+
+[ ] Calculate your amount (1 gal/person/day, plus pets)
+[ ] Buy bottled water or food-grade containers
+[ ] Wash and sanitize reused containers
+[ ] Fill with chlorinated tap water (or disinfect other water)
+[ ] Label "drinking water" with the date
+[ ] Store cool, dark, and away from chemicals
+[ ] Set a 6-month replacement reminder
+[ ] Keep a pump, scoop, or spigot for large containers
+[ ] Keep a way to treat water (bleach, filter, fuel for boiling)
 
 QUICK REFERENCE
 ---------------
 
-STORAGE TARGETS:
-Minimum: 1 gallon/person/day
-Goal: 2 weeks supply
+AMOUNT:
+1 gallon per person per day
+Minimum 3 days; goal 2 weeks
 
-TREATMENT:
-Tap water: Usually none needed
-Untreated: 1/4 tsp bleach per gallon
+CONTAINERS:
+Bottled water, food-grade containers, or clean soda bottles
+Never milk or juice jugs, or chemical containers
+
+SANITIZE CONTAINERS:
+1 tsp unscented bleach per quart of water, shake, wait 30 seconds
 
 CONDITIONS:
-Cool, dark, off concrete, away from chemicals
+Cool (50-70°F), dark, away from chemicals
 
-ROTATION:
-Untreated: 6-12 months
-With preserver: 5+ years
+REPLACE:
+Self-filled water every 6 months
+Store-bought water by its date
+
+SOURCES
+-------
+
+CDC: How to Create an Emergency Water Supply
+https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html
+
+Ready.gov: Water
+https://www.ready.gov/water
+
+FEMA: Food and Water in an Emergency (FEMA 477)
+https://www.fema.gov/pdf/library/f&web.pdf
+
+EPA: Emergency Disinfection of Drinking Water
+https://www.epa.gov/ground-water-and-drinking-water/emergency-disinfection-drinking-water
+
+FDA: Food and Water Safety During Power Outages and Floods
+https://www.fda.gov/food/buy-store-serve-safe-food/food-and-water-safety-during-power-outages-and-floods
 
 ========================
-Last updated: January 2026
+Last reviewed: October 2026
 License: CC-BY-SA 4.0
 ========================

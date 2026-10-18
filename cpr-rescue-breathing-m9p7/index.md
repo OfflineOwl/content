@@ -1,341 +1,310 @@
 # CPR & Rescue Breathing (No Equipment)
 
-> **The Most Important Skill** - When someone's heart stops, brain damage begins within 4-6 minutes. CPR keeps blood flowing until the heart can restart. You can do this with nothing but your hands.
+> When someone's heart stops, CPR keeps blood moving to the brain until an AED or paramedics can restart it. Started right away, CPR can double or triple a person's chance of survival. You need nothing but your hands.
 
-## When CPR is Needed
+## Do this now
 
-Start CPR when someone:
-- Is unresponsive (doesn't respond to voice or touch)
-- Is not breathing (or only gasping)
-- Has no pulse (for trained rescuers)
+For someone who is **unresponsive** and **not breathing normally** (not breathing, or only gasping):
 
-**When in doubt, start CPR.** It won't harm someone who doesn't need it, but delay can kill someone who does.
+1. **Check the scene is safe**, then tap their shoulders and shout, "Are you okay?"
+2. **Shout for help. Call 911** (or your local emergency number, such as 112 or 999) and put the phone on speaker. Send someone to find an **AED** (automated external defibrillator).
+3. **Check breathing** for no more than 10 seconds. Gasping is not normal breathing. If you're not sure, start CPR.
+4. **Push hard and fast** in the center of the chest:
+   - **Adult:** two hands, at least 2 inches (5 cm) deep, 100–120 pushes a minute.
+   - **Child:** two hands (one for a small child), about 2 inches (5 cm), one-third the depth of the chest.
+   - **Infant:** the heel of one hand, or two thumbs with your hands wrapped around the chest, about 1.5 inches (4 cm), one-third the depth of the chest. (Two-finger compressions are no longer recommended.)
+5. **Breaths:** if you're trained and willing, give 2 breaths after every 30 compressions. For an adult, compressions alone (hands-only CPR) are fine if you can't or won't give breaths. For children and infants, breaths matter more; give them if you can.
+6. **Use the AED** as soon as it arrives. Turn it on and follow its voice prompts.
+7. **Keep going** until the person starts breathing normally, help takes over, or you physically can't continue.
 
 ---
 
-## Adult CPR (Age 12+)
+## When CPR Is Needed
 
-### The Sequence
+Start CPR when someone:
+- **Doesn't respond** when you tap them and shout, **and**
+- **Isn't breathing normally:** not breathing at all, or only gasping (slow, irregular gasps are a sign of cardiac arrest, not normal breathing)
 
-**C-A-B: Compressions, Airway, Breathing**
+Lay rescuers don't need to check for a pulse.
 
-### Step 1: Scene Safety & Response Check
+**When in doubt, start CPR.** The risk of harming someone who turns out not to be in cardiac arrest is low. Waiting can cost a life.
 
-1. Make sure the scene is safe
-2. Tap shoulders and shout "Are you okay?"
-3. If no response, call for help or send someone to call
-4. Check for breathing (look, listen, feel for 10 seconds)
+### Who counts as an adult, child, or infant
 
-### Step 2: Position the Patient
+| Group | Age |
+|-------|-----|
+| **Infant** | Under 1 year |
+| **Child** | 1 year to puberty (signs of puberty: breast development in girls, underarm hair in boys) |
+| **Adult** | Puberty and older |
 
-1. Place patient on their back on a firm, flat surface
-2. Kneel beside them at chest level
-3. Remove or open clothing to access chest
+---
 
-### Step 3: Chest Compressions
+## Adult CPR
 
-**Hand Position:**
-1. Place heel of one hand on center of chest (lower half of breastbone)
-2. Place heel of other hand on top
-3. Interlock fingers, keep them off the chest
-4. Position shoulders directly over hands
-5. Arms straight, elbows locked
+### Step 1: Check, call, and get an AED
 
-**Compression Technique:**
-- Push hard and fast
-- Depth: At least 2 inches (5 cm), no more than 2.4 inches
-- Rate: 100-120 compressions per minute
-- Allow full chest recoil between compressions
-- Minimize interruptions
+1. Make sure the scene is safe.
+2. Tap the person's shoulders and shout, "Are you okay?"
+3. If there's no response, **shout for help** and **call 911** on speaker. Send someone for an AED. If you're alone with a phone, call and start CPR with the phone on speaker. If you're alone with no phone, go call 911 (and grab an AED if one is close), then come back and start CPR.
+4. **Look at the chest** for no more than 10 seconds. If they aren't breathing or are only gasping, start compressions.
 
-**Rhythm help:** Push to the beat of "Stayin' Alive" by the Bee Gees (100-120 BPM)
+### Step 2: Position
 
-### Step 4: Open the Airway
+1. Lay them on their **back on a firm, flat surface** (the floor, not a bed or couch).
+2. Kneel beside their chest.
+3. Move or open clothing so you can see the center of the chest.
 
-**Head-Tilt, Chin-Lift:**
-1. Place one hand on forehead
-2. Place two fingers under chin bone (not soft tissue)
-3. Tilt head back, lift chin up
-4. This opens the airway
+### Step 3: Chest compressions
 
-**If spinal injury suspected:**
-- Use jaw thrust instead
-- Minimal neck movement
-
-### Step 5: Rescue Breaths
+**Hand position:**
+1. Put the heel of one hand on the **center of the chest**, on the lower half of the breastbone.
+2. Put your other hand on top and interlock your fingers.
+3. Lock your elbows and position your shoulders directly over your hands.
 
 **Technique:**
-1. Maintain head-tilt, chin-lift
-2. Pinch nose closed
-3. Create seal over mouth
-4. Give breath for 1 second
-5. Watch for chest rise
-6. Allow air to exit
-7. Give second breath
+- **Depth:** at least **2 inches (5 cm)**, but no more than **2.4 inches (6 cm)**.
+- **Rate:** **100–120 compressions per minute.** "Stayin' Alive" by the Bee Gees is about the right tempo.
+- **Recoil:** let the chest come all the way back up after each push. Don't lean on it.
+- **Interruptions:** keep any pause under 10 seconds.
 
-**If chest doesn't rise:**
-- Reposition head (more tilt)
-- Check for obstruction
-- Try again
-- Don't delay compressions
+### Step 4: Open the airway (if giving breaths)
 
-### Step 6: Continue CPR Cycle
+**Head-tilt, chin-lift:**
+1. Put one hand on the forehead and tilt the head back.
+2. Put the fingertips of your other hand under the bony part of the chin and lift.
 
-**Ratio:** 30 compressions : 2 breaths
+**Suspected neck injury** (a fall, a crash, a diving accident): trained rescuers can lift the jaw forward without tilting the head (jaw thrust). If that doesn't open the airway, use head-tilt, chin-lift anyway. An open airway comes first.
 
-1. Give 30 compressions (about 18 seconds)
-2. Give 2 rescue breaths (about 4 seconds)
-3. Immediately resume compressions
-4. Continue until:
-   - Patient shows signs of life
-   - AED arrives and is ready
-   - Professional help takes over
-   - You are physically unable to continue
-   - Scene becomes unsafe
+### Step 5: Rescue breaths
+
+1. Keep the airway open.
+2. Pinch the nose shut and make a seal over their mouth with yours (or use a face shield or pocket mask).
+3. Blow for about **1 second**, just enough to make the chest rise. Avoid big, forceful breaths.
+4. Let the chest fall, then give a **second breath**.
+5. If the chest doesn't rise, re-tilt the head and try once more. Then go straight back to compressions. **Don't pause compressions for more than 10 seconds** to give breaths.
+
+### Step 6: Keep going
+
+**Ratio: 30 compressions, then 2 breaths.** Repeat.
+
+Continue until:
+- The person starts breathing normally, moves, or opens their eyes
+- An AED is ready to analyze (follow its prompts)
+- Trained help takes over
+- You're too exhausted to continue
+- The scene becomes unsafe
+
+If they start breathing normally, roll them onto their side (recovery position) and keep watching their breathing.
 
 ---
 
 ## Hands-Only CPR
 
-**When to use:** If you're untrained, unwilling, or unable to give rescue breaths.
+**For adults and teens, if you're untrained, unsure, or unwilling to give breaths:**
 
-**Procedure:**
-1. Call for help
-2. Push hard and fast in center of chest
-3. Continue without stopping until help arrives
+1. Call 911.
+2. Push hard and fast in the center of the chest, 100–120 a minute, at least 2 inches deep.
+3. Don't stop until help arrives or an AED is ready.
 
-**Why it works:**
-- Compressions alone maintain some oxygen circulation
-- Blood still has oxygen immediately after arrest
-- Any CPR is better than no CPR
+When an adult's heart suddenly stops, their blood still holds oxygen for the first few minutes. Compressions alone move that oxygen to the brain. **Any CPR is better than no CPR.**
+
+**For children and infants**, and for people who drowned or overdosed, breathing problems often cause the arrest. CPR **with** breaths is better if you can give them. If you can't, do compressions only.
 
 ---
 
-## Child CPR (Ages 1-12)
+## Using an AED
 
-### Differences from Adult CPR
+An AED checks the heart rhythm and tells you whether a shock is needed. It talks you through every step.
 
-| Factor | Adult | Child |
-|--------|-------|-------|
-| Compression depth | 2+ inches | 2 inches (1/3 chest depth) |
-| Hand position | Two hands | One or two hands |
-| Compression rate | 100-120/min | 100-120/min |
-| Ratio | 30:2 | 30:2 (one rescuer) |
-|  |  | 15:2 (two rescuers) |
+1. **Turn it on** and follow the voice prompts.
+2. **Bare the chest.** Wipe it dry if it's wet. A bra can be moved aside rather than removed.
+3. **Attach the pads** exactly as shown in the pictures on them, usually one below the right collarbone and one on the left side below the armpit.
+4. **Stand clear** while it analyzes. Make sure no one is touching the person.
+5. **If it says to shock,** make sure no one is touching them and press the shock button (some AEDs shock on their own).
+6. **Restart compressions immediately** after the shock, or if no shock is advised. Don't wait for the person to wake up.
+7. The AED will re-check every 2 minutes. Keep the pads on and keep following it.
 
-### Child CPR Sequence
-
-1. **Check responsiveness** - Tap and shout
-2. **Call for help** - If alone, do 2 minutes of CPR first, then call
-3. **Open airway** - Head-tilt, chin-lift (less extension than adult)
-4. **Check breathing** - 10 seconds
-5. **Compressions** - Center of chest, one or two hands
-6. **Rescue breaths** - Gentle breaths, just enough to see chest rise
-7. **Continue** - 30:2 ratio
+**Children and infants:** use child pads or a child setting if the AED has them (recommended under 8 years old). If it doesn't, use the adult pads; don't skip the AED. **The pads must not touch each other.** On a small chest, put one pad on the center of the chest and the other on the center of the back.
 
 ---
 
-## Infant CPR (Under Age 1)
+## Child CPR (1 Year to Puberty)
 
-### Key Differences
+| | Adult | Child |
+|---|---|---|
+| **Depth** | At least 2 in (5 cm), max 2.4 in (6 cm) | About 2 in (5 cm), one-third of chest depth |
+| **Hands** | Two hands | Two hands, or one for a small child |
+| **Rate** | 100–120/min | 100–120/min |
+| **Ratio, one rescuer** | 30:2 | 30:2 |
+| **Ratio, two rescuers** | 30:2 | **15:2** |
+| **Breaths** | Hands-only is acceptable | Breaths strongly preferred |
 
-| Factor | Infant |
-|--------|--------|
-| Check responsiveness | Flick foot |
-| Compression location | Just below nipple line |
-| Compression method | Two fingers or two thumbs |
-| Compression depth | 1.5 inches (1/3 chest depth) |
-| Breath size | Small puffs (cheeks, not lungs) |
-| Ratio | 30:2 (one rescuer), 15:2 (two rescuers) |
+### Child CPR sequence
 
-### Infant CPR Sequence
-
-1. **Check responsiveness** - Flick bottom of foot, call name
-2. **Position** - On firm surface, head neutral (not tilted back)
-3. **Check breathing** - Look, listen, feel for 10 seconds
-4. **Call for help** - If alone, 2 minutes CPR first
-
-### Infant Compressions
-
-**Two-finger technique (one rescuer):**
-1. Place two fingers on breastbone, just below nipple line
-2. Push down about 1.5 inches
-3. Allow full recoil
-4. Rate: 100-120/min
-
-**Two-thumb technique (two rescuers):**
-1. Encircle chest with hands
-2. Place thumbs side-by-side on lower breastbone
-3. Squeeze chest with thumbs
-4. More effective than two-finger
-
-### Infant Rescue Breaths
-
-1. Keep head in neutral position (slight tilt only)
-2. Cover both mouth AND nose with your mouth
-3. Give gentle puff (from cheeks, not deep breath)
-4. Watch for chest rise
-5. If no rise, reposition and try again
+1. **Check:** tap and shout. Look for normal breathing for no more than 10 seconds.
+2. **Call:**
+   - If someone is with you, have them call 911 and get an AED while you start CPR.
+   - **Alone with a phone:** call 911 on speaker and start CPR.
+   - **Alone without a phone,** and you didn't see the child collapse: give about **2 minutes of CPR** first, then go call 911 and get an AED, then come back and continue.
+   - **Alone, and you saw the child suddenly collapse:** go call 911 and get an AED first, then start CPR.
+3. **Compress** in the center of the chest with two hands (one for a small child), about 2 inches deep.
+4. **Breathe:** tilt the head back to open the airway. Pinch the nose, seal your mouth over theirs, and breathe just enough to make the chest rise.
+5. **Continue** 30:2 alone, or 15:2 with two rescuers. Use an AED as soon as it arrives.
 
 ---
 
-## Choking & CPR
+## Infant CPR (Under 1 Year)
 
-### If Patient Becomes Unresponsive During Choking
+| | Infant |
+|---|---|
+| **Check** | Tap the foot and shout |
+| **Compression spot** | Center of the chest, just below the nipple line, on the breastbone |
+| **Technique** | **Heel of one hand**, or **two thumbs** with your hands wrapped around the chest. Not two fingers. |
+| **Depth** | About 1.5 in (4 cm), one-third of chest depth |
+| **Rate** | 100–120/min |
+| **Ratio** | 30:2 alone, 15:2 with two rescuers |
+| **Head** | Neutral "sniffing" position; don't tilt far back |
+| **Breaths** | Cover mouth **and** nose; small puffs |
 
-1. Lower patient to ground
-2. Begin CPR (compressions first)
-3. Before giving breaths, look in mouth for visible object
-4. Remove object only if clearly visible
-5. Attempt breath
-6. Continue CPR
+### Infant compressions
 
-### Infant Choking Becoming Unresponsive
+The 2025 AHA guidelines dropped the old two-finger method. Use either of these:
 
-1. Support head, place face-down on forearm
-2. Give 5 back blows between shoulder blades
-3. Turn over, support head
-4. Give 5 chest thrusts (same location as CPR)
-5. Check mouth for visible object
-6. If becomes unresponsive, begin CPR
+**Heel of one hand:**
+1. Put the heel of one hand on the center of the breastbone, just below the nipple line.
+2. Press down about 1.5 inches (4 cm), then let the chest come all the way back up.
+
+**Two thumbs (if your hands can wrap around the chest):**
+1. Wrap both hands around the infant's chest, fingers supporting the back.
+2. Put both thumbs side by side on the same spot.
+3. Press down about 1.5 inches (4 cm), then let the chest come all the way back up.
+
+If you can't wrap your hands around the chest, use the heel of one hand.
+
+### Infant breaths
+
+1. Keep the head in a **neutral position**, tilted just enough to open the airway. Tilting it too far can block the airway.
+2. Cover the baby's **mouth and nose** with your mouth.
+3. Give a **gentle puff**, just enough to see the chest rise.
+4. If the chest doesn't rise, reposition the head and try once more, then resume compressions.
+
+**Calling for help:** the same as for a child. Alone without a phone and you didn't see the collapse, give about 2 minutes of CPR, then go call 911.
+
+---
+
+## Rescue Breathing (Pulse Present, Not Breathing): Trained Rescuers
+
+If you are trained to check a pulse and you feel one within 10 seconds, but the person isn't breathing normally:
+- **Adult:** give 1 breath every 6 seconds (10 a minute).
+- **Child or infant:** give 1 breath every 2–3 seconds (20–30 a minute).
+- Recheck the pulse about every 2 minutes. If there's no pulse, or you're unsure, start CPR.
+
+If you aren't trained to check a pulse, don't. Start CPR for anyone unresponsive and not breathing normally.
+
+---
+
+## Choking and CPR
+
+If a choking person **becomes unresponsive:**
+
+1. Lower them carefully to the floor. Call 911 if no one has.
+2. **Start CPR**, beginning with compressions. Compressions can push the object out.
+3. Each time you open the airway to give breaths, **look in the mouth.** If you can see the object, remove it. **Never do a blind finger sweep.**
+4. Continue CPR until the object comes out and they breathe, or help arrives.
+
+For a conscious choking person (back blows and abdominal or chest thrusts), see the Basic First Aid guide.
 
 ---
 
 ## Special Situations
 
-### Drowning
-
-1. Remove from water (ensure your safety)
-2. Begin CPR immediately
-3. Prioritize rescue breaths (oxygen deprivation is primary issue)
-4. Consider: 5 initial breaths, then standard CPR
-5. Expect vomiting—turn to side, clear mouth, continue
-
-### Hypothermia
-
-1. Handle gently (heart is irritable)
-2. CPR is still appropriate
-3. Check pulse longer (up to 60 seconds)
-4. Continue CPR until rewarming possible
-5. "Not dead until warm and dead"
-
-### Pregnancy
-
-1. Position with slight left tilt (wedge under right hip)
-2. Standard CPR technique
-3. Hand position may be slightly higher on chest
-4. Don't delay—two lives at stake
-
-### Trauma
-
-1. If spinal injury suspected, use jaw thrust for airway
-2. Control severe bleeding (may be cause of arrest)
-3. CPR with minimal movement if possible
-4. Survival rates lower but still attempt
+| Situation | What changes |
+|-----------|--------------|
+| **Drowning** | Get the person out of the water without putting yourself at risk. Lack of oxygen caused the arrest, so give CPR **with breaths** (trained rescuers may start with breaths). If you can't give breaths, do compressions. Use an AED when it arrives. If they vomit, roll them to the side, clear the mouth, and continue. |
+| **Opioid overdose** | If they're unresponsive and not breathing normally, start CPR **with breaths**. If naloxone (Narcan) is available, give it, then go straight back to CPR. Don't delay CPR or the 911 call to give naloxone or wait for it to work. |
+| **Pregnancy** | Do standard CPR with her flat on her back; hand position doesn't change. If the top of the belly is at or above the belly button and a second person is there, they can push the belly toward her left side with their hands during CPR, to take pressure off the major blood vessels. Don't tilt her or stop compressions to do this. Call 911 right away. |
+| **Hypothermia** | Start CPR if they're unresponsive and not breathing normally, and keep it going while they're moved somewhere warmer and rewarmed. Let professionals decide when to stop. |
+| **Electric shock** | Don't touch them until the power is off or they're clear of the source. Then start CPR and use an AED. |
+| **Neck or head injury** | Trained rescuers can open the airway with a jaw thrust; if that doesn't work, use head-tilt, chin-lift. Don't put a neck collar on them. Control severe bleeding too; with two rescuers, one can do CPR while the other controls bleeding. |
 
 ---
 
-## Rescuer Care
+## Switching Rescuers and Staying Safe
 
-### Switching Rescuers
-
-- CPR is exhausting
-- Quality decreases after 2 minutes
-- Switch every 2 minutes if possible
-- Switch during pulse/rhythm checks
-- Minimize pause during switch (<10 seconds)
-
-### Protecting Yourself
-
-**Rescue breathing barriers:**
-- Face shield
-- Pocket mask
-- Even plastic wrap with hole
-- Reduces disease transmission risk
-
-**If no barrier:**
-- Hands-only CPR is acceptable
-- Risk of disease transmission is low
-- Your safety matters too
+- **Switch compressors about every 2 minutes** (every 5 cycles of 30:2, or when the AED analyzes), even if you don't feel tired. Compressions start getting shallower after 90 seconds to 2 minutes without your noticing.
+- **Make the switch quickly**, in under 10 seconds.
+- **Barriers:** a CPR face shield or pocket mask protects you and is worth carrying. If you don't have one, hands-only CPR is fine for adults.
 
 ---
 
 ## When to Stop CPR
 
-Stop CPR when:
-- Patient shows signs of life (breathing, movement)
-- AED advises to stop
-- Professional help takes over
-- You are physically unable to continue
-- Scene becomes unsafe
-- Medical professional pronounces death
+**Stop when:**
+- The person starts breathing normally, moves, or opens their eyes
+- An AED tells you to stand clear (then follow its prompts)
+- Trained help takes over
+- You're physically unable to continue and no one can take over
+- The scene becomes unsafe
 
-**Do NOT stop because:**
-- You're tired (find someone to switch)
-- It's been a long time (continue until help arrives)
-- You think it's hopeless (let professionals decide)
+**Don't stop because** you're tired (switch with someone), it's been a long time (keep going until help arrives), or it seems hopeless (let professionals decide).
 
 ---
 
 ## CPR Quality Checklist
 
-For effective CPR, ensure:
-
-- [ ] Patient on firm, flat surface
-- [ ] Correct hand position
-- [ ] Compression depth adequate (2+ inches adult)
-- [ ] Compression rate correct (100-120/min)
-- [ ] Full chest recoil
-- [ ] Minimal interruptions
-- [ ] Visible chest rise with breaths
-- [ ] Switching rescuers every 2 minutes
+- [ ] Firm, flat surface
+- [ ] Hands in the center of the chest
+- [ ] Depth: at least 2 in (5 cm) for adults, about 2 in for children, about 1.5 in (4 cm) for infants
+- [ ] Rate 100–120 a minute
+- [ ] Full chest recoil every time
+- [ ] Pauses under 10 seconds
+- [ ] Each breath makes the chest rise (if giving breaths)
+- [ ] Compressors switch about every 2 minutes
+- [ ] AED on as soon as it arrives
 
 ---
 
-## Training Recommendation
+## Training
 
-This guide is not a substitute for hands-on training.
-
-**Take a course:**
-- American Heart Association
-- American Red Cross
-- Community CPR classes
-- Employer-offered training
-
-**Practice regularly:**
-- Skills decay without practice
-- Refresh annually at minimum
-- Practice on mannequins
-- Take refresher courses
+Reading a guide is a start. Hands-on practice on a manikin is what makes CPR work under stress. Take a course from the American Heart Association, the American Red Cross, or a local equivalent, and refresh your skills regularly.
 
 ---
 
 ## Quick Reference
 
 ```
-ADULT CPR
+CPR: UNRESPONSIVE + NOT BREATHING NORMALLY
 
-1. CHECK - Responsive? Breathing?
-2. CALL - Call for help
-3. COMPRESS - 30 compressions
-   - Center of chest
-   - 2+ inches deep
-   - 100-120 per minute
-4. BREATHE - 2 rescue breaths
-   - Head-tilt, chin-lift
-   - Pinch nose, seal mouth
-   - 1 second each
-5. REPEAT - Continue 30:2
-
-HANDS-ONLY: Just compressions, no breaths
-
-CHILD: Same as adult, 2" deep, one or two hands
-INFANT: Two fingers, 1.5" deep, cover mouth+nose
+1. CHECK   Safe? Tap and shout. Breathing? (max 10 sec)
+2. CALL    911 on speaker. Get an AED.
+3. PUSH    Center of chest, 100-120/min, full recoil
+           Adult:  2 hands, at least 2 in (5 cm), max 2.4 in
+           Child:  2 hands (1 if small), about 2 in (5 cm)
+           Infant: heel of 1 hand or 2 thumbs, about 1.5 in (4 cm)
+                   (NOT 2 fingers)
+4. BREATHE (if trained) 30:2
+           Two rescuers on a child or infant: 15:2
+           Adult: hands-only is OK
+           Child/infant: give breaths if you can
+5. AED     On as soon as it arrives. Follow prompts.
+           Resume compressions right after each shock.
+6. REPEAT  Until they breathe, help takes over, or you can't go on.
 ```
 
 ---
 
-*Last updated: January 2026*
-*License: CC-BY-SA 4.0*
+## Sources
 
-**Disclaimer:** This guide is for educational purposes. Hands-on CPR training is essential. This information is not a substitute for professional medical training or care.
+- [American Heart Association 2025 Guidelines, Part 7: Adult Basic Life Support](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-basic-life-support)
+- [American Heart Association 2025 Guidelines, Part 6: Pediatric Basic Life Support](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-basic-life-support)
+- [American Heart Association 2025 Guidelines, Part 10: Special Circumstances of Resuscitation](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation)
+- [American Heart Association 2025 Guidelines, Part 1: Executive Summary](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/executive-summary)
+- [American Heart Association: CPR Facts and Stats](https://cpr.heart.org/en/resources/cpr-facts-and-stats)
+- [2024 American Heart Association and American Red Cross Guidelines for First Aid (recovery position)](https://www.ahajournals.org/doi/10.1161/CIR.0000000000001281)
+- [American Red Cross: Adult and Child Choking](https://www.redcross.org/take-a-class/resources/learn-first-aid/adult-child-choking)
+
+Last reviewed: October 2026
+
+*This guide doesn't replace hands-on CPR training or professional medical care.*
+
+*License: CC-BY-SA 4.0*

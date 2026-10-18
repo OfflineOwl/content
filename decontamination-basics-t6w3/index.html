@@ -366,6 +366,12 @@
     @media (max-width: 600px) {
       .contam-buttons { grid-template-columns: 1fr; }
     }
+    /* Links, setup grid, warning box */
+    a { color: var(--accent-blue); }
+    .setup-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; background: var(--bg-secondary); border-radius: 8px; padding: 1rem; margin: 1rem 0; }
+    .setup-grid h4 { color: var(--accent-blue); margin-top: 0; }
+    .warn-box { background: rgba(245, 158, 11, 0.1); border: 1px solid var(--accent-amber); border-radius: 8px; padding: 1rem; margin: 1rem 0; }
+    .warn-box h4 { color: var(--accent-amber); margin-top: 0; }
   </style>
 </head>
 <body>
@@ -377,14 +383,31 @@
     <span>⚠️</span>
     <span>CRITICAL SAFETY</span>
   </div>
-  <p><strong>If you've been exposed to hazardous materials, proper decontamination reduces harm and prevents spreading contamination to others.</strong> Act quickly but carefully.</p>
+  <p><strong>If a chemical, radioactive dust, or a biological agent got on you, get it off fast.</strong> Taking off your clothes removes most of it; washing with soap and water removes most of the rest. Call <strong>911</strong> for trouble breathing, seizures, collapse, or burns. <strong>Poison Control (US): 1-800-222-1222.</strong></p>
 </div>
+
+<h2>Do This Now</h2>
+
+<ol>
+  <li><strong>Get away from the source</strong> and into fresh air or a safe building (for radiation, get inside).</li>
+  <li><strong>Take off your clothes</strong>, starting with the outer layer, ideally within 10 minutes for a chemical. This removes about 80-90% of the contamination. <strong>Cut off</strong> anything you'd have to pull over your head; if you can't, hold your breath and close your eyes while you pull it off.</li>
+  <li><strong>Bag it.</strong> Put clothes, jewelry, and contact lenses in a plastic bag, close it, and put that in a second bag. Keep it away from people and pets, and out of the regular trash.</li>
+  <li><strong>Wash</strong> with lukewarm water and mild soap, head to toe, for at least 2-3 minutes. <strong>Don't scrub</strong>, scald, or scratch your skin. Keep water out of your eyes, nose, and mouth. Keep cuts covered.</li>
+  <li><strong>No shower?</strong> Blot (don't rub) your skin, face, hands, and hair with a moist wipe, wet cloth, or damp paper towel.</li>
+  <li><strong>Eyes burning or vision blurry?</strong> Flush with clean water for 10-15 minutes. No eye drops.</li>
+  <li><strong>Put on clean clothes</strong> that were stored away from the contamination.</li>
+  <li><strong>Get help:</strong> call 911 or Poison Control if you have symptoms, can't get the chemical off, or swallowed it.</li>
+</ol>
+
+<p><strong>If a chemical was swallowed:</strong> don't make yourself throw up and don't drink anything else. Call Poison Control or 911.</p>
+
+<p><strong>Tap water is fine for washing</strong> even if officials say not to drink it.</p>
 
 <hr>
 
-<h2>🎯 Identify Your Contamination Type</h2>
+<h2>Identify Your Contamination Type</h2>
 
-<p>Different contamination types require different approaches:</p>
+<p>Different contamination types need slightly different steps:</p>
 
 <div class="contam-selector">
   <div class="contam-buttons" id="contamButtons">
@@ -401,58 +424,60 @@
       <span class="label">Radiological</span>
     </button>
   </div>
-  
+
   <div class="contam-result" id="chemicalResult">
     <p style="color: var(--text-muted);">Industrial spills, household chemicals, unknown substances</p>
     <div class="contam-steps">
       <h5 style="margin-bottom: 0.75rem;">Steps for Chemical Decon:</h5>
-      <div class="contam-step"><span class="contam-step-num">1</span><span>Remove ALL contaminated clothing immediately</span></div>
-      <div class="contam-step"><span class="contam-step-num">2</span><span>Rinse with large amounts of water (15+ minutes)</span></div>
-      <div class="contam-step"><span class="contam-step-num">3</span><span>Wash with soap and water thoroughly</span></div>
-      <div class="contam-step"><span class="contam-step-num">4</span><span>Flush eyes if affected (15-20 minutes)</span></div>
-      <div class="contam-step"><span class="contam-step-num">5</span><span>Seek medical attention immediately</span></div>
+      <div class="contam-step"><span class="contam-step-num">1</span><span>Get to fresh air. Outdoors, move upwind. Indoors, leave the building if the chemical is inside.</span></div>
+      <div class="contam-step"><span class="contam-step-num">2</span><span>Take off your clothes within 10 minutes if you can. Cut off anything that goes over your head.</span></div>
+      <div class="contam-step"><span class="contam-step-num">3</span><span>Double-bag clothing, jewelry, and contact lenses. Keep the bag out of the regular trash.</span></div>
+      <div class="contam-step"><span class="contam-step-num">4</span><span>Wash at least 2-3 minutes with lukewarm water and mild soap, head to toe</span></div>
+      <div class="contam-step"><span class="contam-step-num">5</span><span>Eyes burning? Flush with clean water for 10-15 minutes. No eye drops.</span></div>
+      <div class="contam-step"><span class="contam-step-num">6</span><span>Call Poison Control (1-800-222-1222) or 911 if you have symptoms or cannot get it off</span></div>
     </div>
     <div style="padding: 0.75rem; background: rgba(234, 179, 8, 0.15); border: 1px solid var(--accent-yellow); border-radius: 6px; margin-top: 1rem;">
-      <strong>⚠️ Warning:</strong> Do NOT use hot water - it can increase absorption through skin
+      <strong>⚠️ Warning:</strong> Do NOT scrub your skin. If the chemical was swallowed, do NOT make yourself vomit.
     </div>
   </div>
-  
+
   <div class="contam-result" id="biologicalResult">
     <p style="color: var(--text-muted);">Infectious disease, bodily fluids, biological agents</p>
     <div class="contam-steps">
       <h5 style="margin-bottom: 0.75rem;">Steps for Biological Decon:</h5>
-      <div class="contam-step"><span class="contam-step-num">1</span><span>Remove contaminated clothing carefully</span></div>
-      <div class="contam-step"><span class="contam-step-num">2</span><span>Shower with soap and warm water</span></div>
-      <div class="contam-step"><span class="contam-step-num">3</span><span>Wash hands for at least 20 seconds</span></div>
-      <div class="contam-step"><span class="contam-step-num">4</span><span>Clean under fingernails</span></div>
-      <div class="contam-step"><span class="contam-step-num">5</span><span>Monitor for symptoms over coming days</span></div>
+      <div class="contam-step"><span class="contam-step-num">1</span><span>Get away from the suspicious substance. Do not touch or clean it up.</span></div>
+      <div class="contam-step"><span class="contam-step-num">2</span><span>Cover your mouth and nose with layers of fabric or a mask</span></div>
+      <div class="contam-step"><span class="contam-step-num">3</span><span>Take off and bag your clothes and personal items</span></div>
+      <div class="contam-step"><span class="contam-step-num">4</span><span>Wash with soap and water, then put on clean clothes</span></div>
+      <div class="contam-step"><span class="contam-step-num">5</span><span>Report it to authorities and follow public health instructions</span></div>
     </div>
     <div style="padding: 0.75rem; background: rgba(34, 197, 94, 0.15); border: 1px solid var(--accent-green); border-radius: 6px; margin-top: 1rem;">
-      <strong>⚠️ Warning:</strong> Avoid touching face during decontamination
+      <strong>⚠️ Warning:</strong> Do not touch your face until you have washed
     </div>
   </div>
-  
+
   <div class="contam-result" id="radiologicalResult">
     <p style="color: var(--text-muted);">Nuclear fallout, radiation exposure, dirty bomb</p>
     <div class="contam-steps">
       <h5 style="margin-bottom: 0.75rem;">Steps for Radiological Decon:</h5>
-      <div class="contam-step"><span class="contam-step-num">1</span><span>Remove outer clothing (removes ~90% contamination)</span></div>
-      <div class="contam-step"><span class="contam-step-num">2</span><span>Bag clothing and set aside</span></div>
-      <div class="contam-step"><span class="contam-step-num">3</span><span>Shower with shampoo ONLY (no conditioner)</span></div>
-      <div class="contam-step"><span class="contam-step-num">4</span><span>Blow nose, wipe ears, clean eyelids gently</span></div>
-      <div class="contam-step"><span class="contam-step-num">5</span><span>Put on clean, uncontaminated clothes</span></div>
+      <div class="contam-step"><span class="contam-step-num">1</span><span>Take off your outer layer of clothing without shaking it (removes up to 90%)</span></div>
+      <div class="contam-step"><span class="contam-step-num">2</span><span>Seal it in a plastic bag, away from people and pets</span></div>
+      <div class="contam-step"><span class="contam-step-num">3</span><span>Shower with warm water and lots of soap. Do not scald, scrub, or scratch.</span></div>
+      <div class="contam-step"><span class="contam-step-num">4</span><span>Wash hair with shampoo or soap. NO conditioner.</span></div>
+      <div class="contam-step"><span class="contam-step-num">5</span><span>Gently blow your nose; wipe eyelids, eyelashes, and ears</span></div>
+      <div class="contam-step"><span class="contam-step-num">6</span><span>Put on clean clothes that were stored inside</span></div>
     </div>
     <div style="padding: 0.75rem; background: rgba(147, 51, 234, 0.15); border: 1px solid var(--accent-purple); border-radius: 6px; margin-top: 1rem;">
-      <strong>⚠️ Warning:</strong> NEVER use conditioner - it binds radioactive particles to hair
+      <strong>⚠️ Warning:</strong> NEVER use conditioner: it makes radioactive material stick to hair. Hand sanitizer does not remove it.
     </div>
   </div>
 </div>
 
 <hr>
 
-<h2>✅ Interactive Decon Checklist</h2>
+<h2>Interactive Decon Checklist</h2>
 
-<p>Track your progress through each step. Click steps to mark complete:</p>
+<p>Track your progress through each step. Click steps to mark them complete:</p>
 
 <div class="decon-tracker">
   <h4>
@@ -462,146 +487,217 @@
   <div class="progress-bar">
     <div class="progress-fill" id="progressFill" style="width: 0%"></div>
   </div>
-  
+
   <div class="decon-step-card" data-step="1">
     <div class="step-header">
       <button class="step-check" onclick="toggleStep(1)">👔</button>
       <div class="step-info">
         <h5>Remove Clothing</h5>
-        <div class="desc">Remove outer clothing first, cut off if needed</div>
-        <div class="step-result">✓ Removes ~90% of contamination</div>
+        <div class="desc">Outer layer first. Cut off anything that goes over your head.</div>
+        <div class="step-result">✓ Removes about 80-90% of contamination</div>
       </div>
     </div>
   </div>
-  
+
   <div class="decon-step-card" data-step="2">
     <div class="step-header">
       <button class="step-check" onclick="toggleStep(2)">🛍️</button>
       <div class="step-info">
-        <h5>Bag & Seal</h5>
-        <div class="desc">Place contaminated items in plastic bag, seal tightly</div>
-        <div class="step-result">✓ Prevents further spread</div>
+        <h5>Bag &amp; Seal</h5>
+        <div class="desc">Double-bag clothing, jewelry, and contact lenses. Not in the regular trash.</div>
+        <div class="step-result">✓ Keeps it from spreading</div>
       </div>
     </div>
   </div>
-  
+
   <div class="decon-step-card" data-step="3">
     <div class="step-header">
       <button class="step-check" onclick="toggleStep(3)">🚿</button>
       <div class="step-info">
-        <h5>Rinse Body</h5>
-        <div class="desc">Rinse with lukewarm water, head to toe</div>
-        <div class="step-result">✓ Removes loose particles</div>
+        <h5>Wash with Soap (2-3 minutes)</h5>
+        <div class="desc">Lukewarm water and mild soap, head to toe. Do not scrub. Keep cuts covered.</div>
+        <div class="step-result">✓ Removes most of what is left</div>
       </div>
     </div>
   </div>
-  
+
   <div class="decon-step-card" data-step="4">
     <div class="step-header">
       <button class="step-check" onclick="toggleStep(4)">🧴</button>
       <div class="step-info">
-        <h5>Wash with Soap</h5>
-        <div class="desc">Wash entire body with soap, focus on hair and nails</div>
-        <div class="step-result">✓ Deep cleaning</div>
+        <h5>Face, Eyes, Hair</h5>
+        <div class="desc">Blow your nose; wipe eyelids and ears. Radiation: shampoo, no conditioner. Eyes burning? Use the eye flush timer below.</div>
+        <div class="step-result">✓ Face and hair cleaned</div>
       </div>
     </div>
   </div>
-  
+
   <div class="decon-step-card" data-step="5">
     <div class="step-header">
       <button class="step-check" onclick="toggleStep(5)">👕</button>
       <div class="step-info">
-        <h5>Dry & Dress</h5>
-        <div class="desc">Dry with clean towel, put on clean clothes</div>
+        <h5>Dry &amp; Dress</h5>
+        <div class="desc">Dry with a clean towel, put on clean clothes, bag the towel</div>
         <div class="step-result">✓ Decontamination complete</div>
       </div>
     </div>
   </div>
-  
+
   <div id="completionMessage" style="display: none; margin-top: 1rem; padding: 1rem; background: rgba(34, 197, 94, 0.15); border: 1px solid var(--accent-green); border-radius: 8px; text-align: center;">
     <span style="font-size: 2rem;">✅</span>
     <p style="color: var(--accent-green); font-weight: bold; margin: 0.5rem 0;">Decontamination Complete!</p>
-    <p style="color: var(--text-muted); margin: 0;">Continue monitoring for symptoms as advised</p>
+    <p style="color: var(--text-muted); margin: 0;">Call Poison Control (1-800-222-1222) or 911 if you have symptoms</p>
   </div>
 </div>
 
 <hr>
 
-<h2>👁️ Eye Contamination</h2>
+<h2>Eye Contamination</h2>
 
-<p>If eyes are affected, flush for a <strong>minimum of 15 minutes</strong>:</p>
+<p>If your eyes burn or you can't see normally, flush them for <strong>10-15 minutes</strong>:</p>
 
 <div class="eye-timer">
-  <h4>👁️ Eye Flush Timer (15 min minimum)</h4>
-  
+  <h4>👁️ Eye Flush Timer (10-15 minutes)</h4>
+
   <div class="timer-display" id="timerDisplay">0:00</div>
-  
+
   <div class="timer-progress">
     <div class="timer-progress-fill" id="timerProgress" style="width: 0%"></div>
   </div>
-  
-  <p id="timerStatus" style="color: var(--text-muted);">15:00 remaining (minimum)</p>
-  
+
+  <p id="timerStatus" style="color: var(--text-muted);">15:00 remaining</p>
+
   <div class="timer-buttons">
     <button class="timer-btn start" id="timerStartBtn" onclick="toggleTimer()">Start Timer</button>
     <button class="timer-btn reset" onclick="resetTimer()">Reset</button>
   </div>
-  
+
   <div class="timer-instructions">
     <p><strong>Instructions:</strong></p>
     <ul>
-      <li>Flush from inner corner to outer corner</li>
-      <li>Use clean, cool water</li>
-      <li>Hold eyelids open during flushing</li>
-      <li>Do NOT rub eyes</li>
-      <li>Seek medical care after flushing</li>
+      <li>Take out contact lenses first</li>
+      <li>Hold eyelids open; let water run from the inner corner (by the nose) outward</li>
+      <li>Use clean, lukewarm water</li>
+      <li>Do NOT rub your eyes or use eye drops</li>
+      <li>Get medical care after flushing</li>
     </ul>
   </div>
 </div>
 
 <hr>
 
-<h2>✓ Do's and Don'ts</h2>
+<h2>Do's and Don'ts</h2>
 
 <div class="dos-donts">
   <div class="do-box">
     <h4>✅ DO</h4>
     <div class="list-item do"><span class="icon">✓</span><span>Use lukewarm water</span></div>
     <div class="list-item do"><span class="icon">✓</span><span>Work from head to toe</span></div>
-    <div class="list-item do"><span class="icon">✓</span><span>Clean under fingernails</span></div>
-    <div class="list-item do"><span class="icon">✓</span><span>Bag contaminated items</span></div>
-    <div class="list-item do"><span class="icon">✓</span><span>Wear PPE when helping others</span></div>
+    <div class="list-item do"><span class="icon">✓</span><span>Cut off clothing that goes over your head</span></div>
+    <div class="list-item do"><span class="icon">✓</span><span>Double-bag contaminated items</span></div>
+    <div class="list-item do"><span class="icon">✓</span><span>Wear gloves and a mask when helping others</span></div>
   </div>
-  
+
   <div class="dont-box">
     <h4>❌ DON'T</h4>
-    <div class="list-item dont"><span class="icon">✗</span><span>Use HOT water (opens pores)</span></div>
-    <div class="list-item dont"><span class="icon">✗</span><span>Scrub vigorously (damages skin)</span></div>
-    <div class="list-item dont"><span class="icon">✗</span><span>Use conditioner (binds particles)</span></div>
-    <div class="list-item dont"><span class="icon">✗</span><span>Contaminate clean areas</span></div>
+    <div class="list-item dont"><span class="icon">✗</span><span>Scald, scrub, or scratch your skin</span></div>
+    <div class="list-item dont"><span class="icon">✗</span><span>Pull contaminated clothes over your head</span></div>
+    <div class="list-item dont"><span class="icon">✗</span><span>Use conditioner after radiation exposure</span></div>
+    <div class="list-item dont"><span class="icon">✗</span><span>Use eye drops after a chemical splash</span></div>
     <div class="list-item dont"><span class="icon">✗</span><span>Eat/drink until fully clean</span></div>
+  </div>
+</div>
+
+<p>Also: <strong>don't</strong> make yourself vomit if you swallowed a chemical, <strong>don't</strong> rely on hand sanitizer or household cleaning wipes for radioactive contamination, and <strong>don't</strong> put contaminated items in the regular trash.</p>
+
+<hr>
+
+<h2>Special Situations</h2>
+
+<ul>
+  <li><strong>Wounds:</strong> keep cuts and scrapes covered while you wash, and get medical care for wounds that may be contaminated.</li>
+  <li><strong>Glasses:</strong> after a chemical, soak them in household bleach, then rinse and dry before wearing.</li>
+  <li><strong>Children:</strong> put on a mask and gloves if you have them, then help them through every step. Cut clothing off rather than pulling it over their heads. Keep them warm afterward.</li>
+  <li><strong>Pets:</strong> wear gloves. For radioactive dust, gently brush the coat, then wash with shampoo or soap and water. Wash your own hands and face afterward. Ask a veterinarian about chemical exposure.</li>
+  <li><strong>Cold weather:</strong> dry off and dress quickly; washing can chill you fast.</li>
+</ul>
+
+<hr>
+
+<h2>Setting Up a Decon Area</h2>
+
+<div class="setup-grid">
+  <div>
+    <h4>Location</h4>
+    <ul>
+      <li>Just inside an entrance, garage, or porch</li>
+      <li>Away from HVAC air intakes</li>
+      <li>Near a water source</li>
+      <li>Easy to clean</li>
+    </ul>
+  </div>
+  <div>
+    <h4>Supplies Ready</h4>
+    <ul>
+      <li>Plastic sheeting for the floor</li>
+      <li>Trash bags (to double-bag clothing)</li>
+      <li>Mild soap, water, moist wipes</li>
+      <li>Clean towels and clothes</li>
+    </ul>
   </div>
 </div>
 
 <hr>
 
-<h2>📋 Quick Reference</h2>
+<h2>Helping Others Decontaminate</h2>
+
+<div class="warn-box">
+  <h4>⚠️ Protect Yourself First</h4>
+  <ol>
+    <li>Wear waterproof gloves, a mask, and eye protection if you have them</li>
+    <li>Avoid touching the contamination</li>
+    <li>Help them undress (cut off over-the-head clothing) and wash gently</li>
+    <li>Watch for trouble breathing or worse symptoms; call 911 if they appear</li>
+    <li>Wash your own hands, face, and exposed skin afterward</li>
+  </ol>
+</div>
+
+<hr>
+
+<h2>Quick Reference</h2>
 
 <div class="quick-ref">
 <pre>DECONTAMINATION STEPS
 
-1. REMOVE clothing → Removes ~90% of contamination
-2. RINSE with water → Head to toe, not hot
-3. WASH with soap → Hair with shampoo, no conditioner
+1. GET AWAY from the source
+2. CLOTHES OFF → ~80-90% removed (within 10 min for chemicals)
+   Cut off, don't pull over head. Double-bag.
+3. WASH → Lukewarm water, mild soap, head to toe, 2-3 min, no scrubbing
+   Radiation: shampoo, NO conditioner
 4. DRY and dress → Clean clothes only
 
-EYES: Flush 15-20 minutes, inner to outer corner
-WOUNDS: Cover before washing, avoid contaminating</pre>
+EYES: Flush 10-15 minutes, no eye drops
+SWALLOWED: Don't vomit, call Poison Control
+CALL 911: breathing trouble, seizures, burns
+Poison Control (US): 1-800-222-1222</pre>
 </div>
 
+<h2>Sources</h2>
+
+<ul>
+  <li><a href="https://www.cdc.gov/chemical-emergencies/response/get-clean.html">CDC: About Getting Clean (chemical)</a></li>
+  <li><a href="https://www.cdc.gov/chemical-emergencies/response/index.html">CDC: What to Do in a Chemical Emergency</a></li>
+  <li><a href="https://www.cdc.gov/chemical-emergencies/chemical-fact-sheets/sarin.html">CDC: Sarin fact sheet</a></li>
+  <li><a href="https://www.cdc.gov/radiation-emergencies/prevention/self-decontaminate.html">CDC: How to Self-Decontaminate after a Radiation Emergency</a></li>
+  <li><a href="https://www.cdc.gov/radiation-emergencies/infographic/decontamination.html">CDC: Decontamination for Yourself and Others (radiation)</a></li>
+  <li><a href="https://www.ready.gov/chemical">Ready.gov: Chemical Emergencies</a></li>
+  <li><a href="https://www.ready.gov/bioterrorism">Ready.gov: Bioterrorism</a></li>
+  <li><a href="https://www.ready.gov/radiation">Ready.gov: Radiation Emergencies</a></li>
+</ul>
+
 <div class="footer">
-  <p>Last updated: January 2026 | License: CC-BY-SA 4.0</p>
-  <p><strong>When in doubt, decontaminate. It's always better to be safe.</strong></p>
+  <p>Last reviewed: October 2026 | License: CC-BY-SA 4.0</p>
+  <p><strong>This guide doesn't replace professional medical care. After decontamination, follow the advice of Poison Control, emergency responders, or a doctor.</strong></p>
 </div>
 
 <script>
@@ -612,13 +708,13 @@ const contamResults = document.querySelectorAll('.contam-result');
 contamButtons.forEach(btn => {
   btn.addEventListener('click', () => {
     const type = btn.dataset.type;
-    
+
     // Update buttons
     contamButtons.forEach(b => {
       b.classList.remove('active', 'chemical', 'biological', 'radiological');
     });
     btn.classList.add('active', type);
-    
+
     // Show result
     contamResults.forEach(r => r.classList.remove('show'));
     document.getElementById(type + 'Result').classList.add('show');
@@ -631,19 +727,17 @@ let completedSteps = [];
 function toggleStep(stepNum) {
   const card = document.querySelector(`[data-step="${stepNum}"]`);
   const check = card.querySelector('.step-check');
-  
+
   if (completedSteps.includes(stepNum)) {
-    // Remove from completed
     completedSteps = completedSteps.filter(s => s !== stepNum);
     card.classList.remove('complete');
     check.classList.remove('complete');
   } else {
-    // Add to completed
     completedSteps.push(stepNum);
     card.classList.add('complete');
     check.classList.add('complete');
   }
-  
+
   updateProgress();
 }
 
@@ -651,11 +745,10 @@ function updateProgress() {
   const total = 5;
   const completed = completedSteps.length;
   const percent = (completed / total) * 100;
-  
+
   document.getElementById('progressFill').style.width = percent + '%';
   document.getElementById('progressCount').textContent = `${completed}/${total} complete`;
-  
-  // Show completion message
+
   if (completed === total) {
     document.getElementById('completionMessage').style.display = 'block';
   } else {
@@ -670,16 +763,14 @@ const targetSeconds = 900; // 15 minutes
 
 function toggleTimer() {
   const btn = document.getElementById('timerStartBtn');
-  
+
   if (timerInterval) {
-    // Pause
     clearInterval(timerInterval);
     timerInterval = null;
     btn.textContent = 'Resume';
     btn.classList.remove('pause');
     btn.classList.add('start');
   } else {
-    // Start
     timerInterval = setInterval(() => {
       elapsedSeconds++;
       updateTimerDisplay();
@@ -697,7 +788,7 @@ function resetTimer() {
   }
   elapsedSeconds = 0;
   updateTimerDisplay();
-  
+
   const btn = document.getElementById('timerStartBtn');
   btn.textContent = 'Start Timer';
   btn.classList.remove('pause');
@@ -708,20 +799,20 @@ function updateTimerDisplay() {
   const mins = Math.floor(elapsedSeconds / 60);
   const secs = elapsedSeconds % 60;
   const display = `${mins}:${secs.toString().padStart(2, '0')}`;
-  
+
   const timerEl = document.getElementById('timerDisplay');
   const progressEl = document.getElementById('timerProgress');
   const statusEl = document.getElementById('timerStatus');
-  
+
   timerEl.textContent = display;
-  
+
   const percent = Math.min((elapsedSeconds / targetSeconds) * 100, 100);
   progressEl.style.width = percent + '%';
-  
+
   if (elapsedSeconds >= targetSeconds) {
     timerEl.classList.add('complete');
     progressEl.classList.add('complete');
-    statusEl.textContent = '✓ Minimum flush time reached';
+    statusEl.textContent = '✓ 15 minutes reached. Keep flushing if it still burns, and get medical care.';
     statusEl.style.color = 'var(--accent-green)';
   } else {
     timerEl.classList.remove('complete');
@@ -729,7 +820,7 @@ function updateTimerDisplay() {
     const remaining = targetSeconds - elapsedSeconds;
     const remMins = Math.floor(remaining / 60);
     const remSecs = remaining % 60;
-    statusEl.textContent = `${remMins}:${remSecs.toString().padStart(2, '0')} remaining (minimum)`;
+    statusEl.textContent = `${remMins}:${remSecs.toString().padStart(2, '0')} remaining`;
     statusEl.style.color = 'var(--text-muted)';
   }
 }

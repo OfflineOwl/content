@@ -1,346 +1,291 @@
 # Cooking Without Power or Gas
 
-> **Hot Meals Matter** - When the power goes out, you can still cook hot, nourishing meals. This guide covers safe methods for cooking when your normal appliances don't work.
+> **Hot meals matter, but carbon monoxide kills.** When the power goes out, you can still heat food safely. The deadliest mistake in an outage is bringing a grill, camp stove, or generator indoors. This guide covers which methods are safe where, and how to cook with them.
 
-## Why Hot Meals Are Important
+## Do This Now
 
-During emergencies, hot food provides:
-- Better nutrition (some foods need cooking)
-- Improved morale
-- Warmth in cold weather
-- Safe food (kills bacteria)
-- Psychological comfort
-
----
-
-## Cooking Methods Overview
-
-| Method | Indoor Safe? | Fuel Needed | Best For |
-|--------|-------------|-------------|----------|
-| Camp stove | Ventilation needed | Propane/butane | General cooking |
-| Grill (charcoal/gas) | **NO** | Charcoal/propane | Outdoor only |
-| Fire pit | **NO** | Wood | Outdoor only |
-| Solar oven | N/A | Sunlight | Daytime, clear weather |
-| Chafing dish | Yes | Sterno cans | Warming, light cooking |
-| Fondue pot | Yes | Sterno/alcohol | Small portions |
-| Car engine | N/A | Running vehicle | Emergency only |
+1. **Grills, camp stoves, and generators go OUTDOORS ONLY.** Never use a charcoal grill, gas grill, propane or butane camp stove, or generator inside your home, basement, garage (even with the door open), tent, or camper, or near an open window, door, or vent. Opening windows does not make it safe.
+2. **Keep generators at least 20 feet (6 m) from any window, door, or vent**, with the exhaust pointed away from buildings.
+3. **Never heat your home with a gas oven or range.**
+4. **Indoors, use only devices made for indoor use:** a fireplace, chafing dishes, fondue pots, or candle warmers. Keep a battery-powered CO alarm working.
+5. **If a CO alarm sounds, or anyone gets a headache, dizziness, weakness, nausea, vomiting, chest pain, or confusion:** get everyone outside to fresh air immediately, then call 911. Don't go back in until responders say it's safe.
+6. **Remember: canned food can be eaten cold.** Choose no-cook meals when fuel is short or conditions are unsafe.
 
 ---
 
-## Indoor-Safe Options
+## Carbon Monoxide: The Hidden Killer
 
-### Chafing Dish / Sterno
+Carbon monoxide (CO) is a poisonous gas from burning charcoal, propane, butane, gasoline, wood, and other fuels. **You can't see, smell, or taste it.** It can kill people who are asleep or drunk before they notice any symptoms.
 
-**How it works:**
-- Sterno cans (gel fuel) burn cleanly
-- Can be used indoors with ventilation
-- Good for warming and light cooking
+**Never use these indoors, in a garage, or near windows:**
+- Charcoal grills, hibachis, and smokers
+- Gas or propane grills
+- Propane, butane, or white-gas camp stoves
+- Generators
+- Kerosene heaters for cooking
+- A car engine (don't run a vehicle in an attached garage, even with the door open)
 
-**Best uses:**
-- Heating canned foods
-- Warming water
-- Keeping food warm
-- Simple cooking (soup, beans)
+**Symptoms** (often described as "flu-like"): headache, dizziness, weakness, upset stomach, vomiting, chest pain, confusion. If several people or pets feel sick at the same time, suspect CO.
 
-**Limitations:**
-- Low heat output
-- Not for heavy cooking
-- Fuel cans burn 2-6 hours each
+**Higher risk:** infants, older adults, and people with heart disease, anemia, or breathing problems.
 
-**Safety:**
-- Use in ventilated area
-- Keep away from flammables
-- Never refuel while burning
-- Let cool before handling
+**What to do:**
+1. Get everyone, including pets, outside to fresh air right away.
+2. Call 911 or your local emergency number.
+3. Don't go back inside until emergency responders say it's safe.
 
-### Fondue Pot
-
-**Similar to chafing dish but:**
-- Deeper for soups and stews
-- Better heat control
-- Can use Sterno or alcohol fuel
-- Good for melting, warming
-
-### Camp Stove (with caution)
-
-**Can be used indoors IF:**
-- Adequate ventilation (windows open)
-- No propane leaks
-- Fire extinguisher nearby
-- Never leave unattended
-- CO detector active
-
-**Better:**
-- Use in garage with door open
-- Use on covered patio
-- Use near open window
+**Prevent it:**
+- Install battery-operated or battery-backup CO alarms near every sleeping area.
+- Test them, and replace batteries when you change your clocks in spring and fall.
+- Keep chimneys, flues, and vents clear of snow and debris.
 
 ---
 
-## Outdoor Cooking Methods
+## Cooking Methods: Where Each Is Safe
 
-### Charcoal Grill
+| Method | Where to use it | Fuel | Best for |
+|--------|-----------------|------|----------|
+| Camp stove (propane, butane, white gas) | **Outdoors only** | Fuel canisters | General cooking, boiling water |
+| Charcoal grill | **Outdoors only** | Charcoal | Grilling, pots on the grate |
+| Gas grill | **Outdoors only** | Propane | General cooking |
+| Campfire or fire pit | **Outdoors only** | Wood | Cooking over coals |
+| Rocket stove | **Outdoors only** | Sticks, twigs | Boiling water, one-pot meals |
+| Solar oven | Outdoors in sun | Sunlight | Slow cooking on clear days |
+| Fireplace | Indoors, with a working chimney | Wood | Pots, foil packets, roasting |
+| Chafing dish or fondue pot | Indoors (made for indoor use) | Canned heat (gel fuel) | Warming food, heating soup |
+| Candle warmer | Indoors | Candles | Keeping food warm |
 
-**Setup:**
-- Use chimney starter or lighter fluid
-- Let coals ash over (20-30 minutes)
-- Spread for even cooking
+---
 
-**Cooking tips:**
-- Direct heat for fast cooking (burgers, chicken)
-- Indirect heat for slow cooking (roasts)
-- Use cast iron for versatility
-- Can boil water, make soup
+## Indoor Options
 
-**Safety:**
-- Never use indoors (carbon monoxide)
-- Keep away from structures
-- Have water/sand nearby
-- Let cool completely before disposal
+### Fireplace
 
-### Propane Grill
+- Only use a fireplace with a working, clean chimney. Open the damper before lighting.
+- Cook in cast iron or foil at the edge of the coals, or hang a pot from a grate or crane.
+- Use a fireplace screen. Keep children, pets, and anything that burns away.
+- Never burn charcoal indoors, including in a fireplace. It gives off large amounts of CO.
+- Put the fire out completely before leaving the room or going to sleep.
 
-**Advantages:**
-- Quick start
-- Easy temperature control
-- Versatile cooking
+### Chafing dish, fondue pot, and canned heat
 
-**Considerations:**
-- Propane supply limited
-- Store tanks properly
-- Never use indoors
+- Use only devices and fuels made for indoor food warming.
+- Good for heating canned food, soup, and water, and keeping food warm. Heat output is low.
+- Set them on a stable, heat-proof surface, away from curtains and other things that burn.
+- Never refill or move a burning fuel can. Let it cool first.
+- Any flame uses oxygen and gives off fumes. Use them in a room with some fresh air, and keep your CO alarm on.
+- Put out the flame before leaving the room.
 
-### Campfire / Fire Pit
+### Candle warmers
 
-**Building a cooking fire:**
-1. Clear area of debris
-2. Create fire ring with rocks
-3. Build fire with tinder, kindling, fuel wood
-4. Let burn down to coals for cooking
-5. Cooking coals are gray/white
+- Only for keeping already-cooked food warm.
+- Never leave a lit candle unattended.
 
-**Cooking methods:**
-- Grill grate over coals
-- Cast iron on coals
-- Foil packet in coals
-- Stick cooking
-- Dutch oven in/beside fire
+### Heating canned food
 
-### Rocket Stove
+You can eat canned food straight from the can. To heat it **in** the can: remove the paper label, wipe the can clean, and **open it before heating** so it can't burst.
 
-**DIY efficient wood stove:**
-- Uses small sticks and twigs
-- Very fuel efficient
-- Can make from cans or cinder blocks
-- Concentrated heat for cooking
-- Good for boiling water
+---
 
-**Basic design:**
-1. Vertical burn chamber
-2. Horizontal fuel feed
-3. Insulation around chamber
-4. Cooking surface on top
+## Outdoor Cooking
+
+**Set up away from the house.** Keep grills and stoves well away from the house, deck railings, and overhanging eaves or branches, and well away from any window, door, or vent. Keep children and pets at least 3 feet away. Don't cook in a garage, carport, or covered porch that traps fumes.
+
+### Camp stove
+
+- Use it outdoors on a flat, stable surface, sheltered from wind but not enclosed.
+- Change fuel canisters outdoors, away from flames.
+- Store fuel canisters outdoors or in a detached shed, never in the living space.
+- Never leave a lit stove unattended.
+
+### Charcoal grill
+
+- Light charcoal with a chimney starter or charcoal starter fluid only. Never use gasoline. Never add starter fluid to coals that are already lit.
+- Coals are ready when covered in gray ash (about 20 to 30 minutes).
+- Direct heat for fast cooking; indirect heat for slow cooking. A pot on the grate can boil water or cook soup.
+- **When done:** let the coals cool completely, then put them in a metal container with a tight lid that holds only coals, outside and away from anything that burns. Never dump coals in a trash can. **Never bring a grill inside to keep warm, even after cooking.** Coals keep producing CO.
+
+### Propane grill
+
+- Check hoses for leaks before first use each season: brush on soapy water and look for bubbles.
+- If you smell gas while cooking, move away from the grill and call the fire department. Don't move the grill.
+- Store propane cylinders outdoors, upright, away from heat. Never store them indoors or in a garage.
+
+### Campfire or fire pit
+
+1. Check local fire restrictions first.
+2. Clear a 10-foot area of leaves and debris, and build a ring of rocks.
+3. Build the fire with tinder, kindling, then larger wood.
+4. Let it burn down to coals. Glowing coals covered in gray ash are best for cooking.
+5. Cook on a grate over the coals, in cast iron on the coals, in foil packets in the coals, or in a Dutch oven.
+6. Keep water and a shovel nearby. Drown the fire, stir, and drown again until it's cold to the touch.
+
+### Rocket stove
+
+A rocket stove burns small sticks very efficiently and concentrates heat under a pot.
+1. A vertical burn chamber (a large can, cinder blocks, or bricks)
+2. A horizontal opening at the bottom to feed sticks
+3. Insulation around the chamber if you can
+4. A pot stand on top
+
+Use it outdoors like any other open flame.
 
 ---
 
 ## Solar Cooking
 
-### How It Works
+Solar cookers trap sunlight to cook with no fuel and no fumes.
 
-Solar cookers concentrate sunlight to generate heat. No fuel needed—just sun.
+**Box cooker:** an insulated box with a clear lid and reflectors. Good for slow cooking.
+**Panel cooker:** folding reflective panels aimed at a dark pot inside a clear bag. Simple and portable.
+**Parabolic cooker:** a dish-shaped reflector focused on the pot. Hotter and faster, but the focus point can burn skin and eyes. Don't look into it.
 
-### Types
+**Tips:**
+- Works best in the middle of the day with a clear sky.
+- Use dark, thin-walled pots with lids.
+- Allow extra time and turn the cooker to follow the sun.
+- Use a thermometer to check that meat reaches a safe temperature.
 
-**Box cooker:**
-- Insulated box with glass top
-- Reflectors direct sunlight
-- 250-350°F possible
-- Good for slow cooking
+### DIY box cooker
 
-**Parabolic cooker:**
-- Dish-shaped reflector
-- Focuses light on cooking pot
-- Higher temperatures
-- Faster cooking
+1. Place a smaller cardboard box inside a larger one.
+2. Fill the gap with crumpled newspaper for insulation.
+3. Line the inner box with aluminum foil and put a dark pot or dark sheet in the bottom.
+4. Cover the top with glass or clear plastic.
+5. Add a foil-covered flap to reflect sunlight in.
+6. Set it in full sun.
 
-**Panel cooker:**
-- Folding reflective panels
-- Directs sun to dark pot in bag
-- Lower temperatures
-- Simple, portable
+---
 
-### Solar Cooking Tips
+## Food Safety While Cooking
 
-- Works best 10am-4pm
-- Requires clear or mostly clear sky
-- Use dark-colored pots
-- Allow extra cooking time
-- Reposition to follow sun
-
-### DIY Solar Oven
-
-**Simple box cooker:**
-1. Get two cardboard boxes (one smaller)
-2. Place smaller inside larger
-3. Fill gap with insulation (newspaper)
-4. Line inside with aluminum foil
-5. Paint bottom black
-6. Cover top with glass or plastic
-7. Add reflector flap
-8. Place in direct sunlight
+- **Use safe water** for cooking and washing (boiled, disinfected, or stored). See the Water Purification guide.
+- **Cook to safe temperatures (USDA):** poultry 165°F (74°C); ground meat 160°F (71°C); steaks, chops, and roasts 145°F (63°C) plus 3 minutes rest; fish 145°F (63°C); egg dishes 160°F (71°C); leftovers 165°F (74°C). A food thermometer is the only reliable check.
+- **Don't let food sit in the danger zone** (40°F to 140°F) for more than 2 hours, or 1 hour above 90°F.
+- **Wash hands** before cooking, and keep raw meat away from other food.
+- **Eat cooked food promptly.** Without a refrigerator, don't keep leftovers.
 
 ---
 
 ## Fuel Management
 
-### Fuel Storage
+### Storing fuel
 
-| Fuel | Storage Life | Notes |
-|------|-------------|-------|
-| Propane | Indefinite | Store outdoors |
-| Butane | 8+ years | Store cool |
-| Charcoal | 1-2 years | Keep dry |
-| Sterno | 10+ years | Check cans for damage |
-| Wood | Indefinite | Keep dry, seasoned |
-| White gas | 5+ years | Seal tightly |
+- Follow the storage instructions on each fuel's label.
+- Store propane cylinders and liquid fuels outdoors or in a detached shed, away from heat and out of the living space.
+- Keep charcoal dry, and keep matches and lighters in a waterproof container.
+- Check canisters and canned heat for rust, dents, or leaks before you need them.
 
-### Conserving Fuel
+### Saving fuel
 
-- Plan meals to minimize cooking
-- Cook multiple items at once
-- Use lids to retain heat
-- Cut food smaller (cooks faster)
-- Soak beans/grains (reduces cook time)
-- Use retained heat cooking
+- Plan meals to cook as little as possible.
+- Use lids. They make water boil much faster.
+- Cut food into small pieces.
+- Soak dried beans overnight before cooking.
+- Cook one-pot meals, or cook several items at once.
+- Choose foods that cook fast (instant rice, thin pasta, instant oatmeal, canned food).
 
-### Retained Heat Cooking
+### Retained-heat cooking
 
-**How it works:**
-1. Bring food to boil
-2. Cook for 1-2 minutes
-3. Remove from heat
-4. Place in insulated container
-5. Food continues cooking from retained heat
+Bring food to a boil, simmer briefly, then move the covered pot into an insulated box, cooler, or nest of blankets to finish cooking without more fuel.
 
-**Works for:**
-- Rice
-- Pasta
-- Beans (pre-soaked)
-- Soups and stews
-- Oatmeal
+**Works well for:** rice, pasta, oats, soaked beans, grains.
+
+**Food safety:** food must stay hot (above 140°F) while it sits. Bring meat dishes, soups, and stews back to a full boil before serving. Don't leave food to cool slowly overnight.
 
 ---
 
 ## Cooking Equipment
 
-### Essential Items
+### Essentials
 
-- [ ] Camp stove with fuel
-- [ ] Cast iron skillet
-- [ ] Pot with lid
+- [ ] Camp stove with extra fuel (for outdoor use)
+- [ ] Battery-powered CO alarm
 - [ ] Manual can opener
-- [ ] Long-handled utensils
-- [ ] Hot pads/gloves
-- [ ] Fire starter/matches
+- [ ] Pot with lid
+- [ ] Cast iron skillet
+- [ ] Long-handled utensils and heat-resistant gloves
+- [ ] Matches or lighter in a waterproof container
+- [ ] Fire extinguisher
+- [ ] Food thermometer
 - [ ] Aluminum foil
 
-### Nice to Have
+### Nice to have
 
 - [ ] Dutch oven
-- [ ] Grill grate
-- [ ] Coffee percolator
-- [ ] Pressure cooker (speeds cooking)
+- [ ] Chafing dish or fondue pot with canned heat
+- [ ] Grill grate for a fire
 - [ ] Solar oven
-- [ ] Cast iron griddle
+- [ ] Coffee percolator
 
 ---
 
-## Safety Essentials
+## Fire Safety
 
-### Carbon Monoxide Warning
-
-**NEVER use indoors:**
-- Charcoal grills
-- Gas grills
-- Kerosene heaters (for cooking)
-- Generators
-
-**Carbon monoxide is:**
-- Colorless and odorless
-- Deadly in enclosed spaces
-- Produced by burning fuels
-
-### Fire Safety
-
-- Keep fire extinguisher nearby
-- Have water/sand available
-- Clear area of flammables
-- Never leave fires unattended
-- Ensure fires are fully extinguished
-- Watch for wind changes
-
-### Food Safety
-
-- Cook meat to proper temperatures
-- Don't let food sit in danger zone
-- Use clean utensils
-- Wash hands before cooking
-- Consume cooked food promptly
+- Keep a fire extinguisher, water, or sand nearby.
+- Never leave any flame unattended, indoors or out.
+- Keep children and pets away from flames and hot surfaces.
+- Keep flammable materials (curtains, paper, fuel) well away.
+- Watch for wind shifts outdoors.
+- Make sure every fire and coal is fully out before you leave it.
 
 ---
 
-## Quick Recipes for Emergency Cooking
+## Quick Recipes
 
-### One-Pot Rice and Beans
+### One-pot rice and beans
 
-1. Combine 1 cup rice, 2 cups water
-2. Bring to boil, simmer 15 min
-3. Add canned beans (drained)
-4. Heat through, season to taste
+1. Combine 1 cup rice and 2 cups safe water in a pot with a lid.
+2. Bring to a boil, then simmer about 15 minutes until the water is absorbed.
+3. Stir in a can of drained beans and heat through. Season to taste.
 
-### Foil Packet Meal
+### Foil packet meal (outdoor fire or grill)
 
-1. Place protein and vegetables on foil
-2. Add seasoning and small amount of water
-3. Seal tightly
-4. Cook on coals 20-30 minutes
+1. Place meat or fish and chopped vegetables on heavy foil.
+2. Add seasoning and a splash of water, and seal tightly.
+3. Cook on hot coals for 20 to 30 minutes, turning once.
+4. Check that meat reaches a safe temperature before eating.
 
-### Campfire Coffee
+### Campfire coffee
 
-1. Boil water in pot
-2. Remove from heat
-3. Add ground coffee (2 tbsp per cup)
-4. Steep 4 minutes
-5. Let grounds settle, pour carefully
+1. Boil safe water in a pot.
+2. Remove from heat and stir in about 2 tablespoons of ground coffee per cup.
+3. Steep 4 minutes, let the grounds settle, and pour carefully.
 
-### Sterno-Warmed Soup
+### Chafing-dish soup (indoor)
 
-1. Open can of soup
-2. Pour into pot over Sterno
-3. Stir occasionally
-4. Heat until warm (10-15 minutes)
+1. Pour a can of soup into a pot over canned heat.
+2. Stir occasionally until hot, about 10 to 15 minutes.
 
 ---
 
-## Meal Planning for Alternative Cooking
+## Meal Planning for Outages
 
-### Prioritize
+1. **No-cook meals first** when fuel is scarce or the weather makes outdoor cooking unsafe.
+2. **One-pot meals** to use the least fuel.
+3. **Batch cooking** only if everyone will eat it right away.
+4. **Retained-heat cooking** to stretch fuel.
 
-1. **No-cook meals** when fuel is scarce
-2. **One-pot meals** to minimize fuel use
-3. **Batch cooking** multiple meals at once
-4. **Retained heat cooking** to stretch fuel
-
-### Good Emergency Foods for Cooking
-
-- Canned soups (just heat)
-- Rice (versatile, fills)
-- Pasta (fast cooking)
-- Oatmeal (breakfast staple)
-- Canned vegetables (heat through)
-- Instant potatoes (just add water)
+**Good foods for outage cooking:** canned soup, chili, and stew; instant rice; thin pasta; instant oatmeal; canned vegetables; instant potatoes.
 
 ---
 
-*Last updated: January 2026*
+## Sources
+
+- [CDC: Carbon Monoxide Poisoning Basics](https://www.cdc.gov/carbon-monoxide/about/index.html)
+- [CDC: Stay Safe During and After a Winter Storm](https://www.cdc.gov/winter-weather/safety/stay-safe-during-after-a-winter-storm-safety.html)
+- [CDC: Avoiding Carbon Monoxide Poisoning (natural disasters)](https://www.cdc.gov/natural-disasters/psa-toolkit/avoiding-carbon-monoxide-poisoning.html)
+- [CPSC: Generators and Engine-Driven Tools](https://www.cpsc.gov/Safety-Education/Safety-Guides/Carbon-Monoxide-Home/Generators-and-Engine-Driven-Tools)
+- [CPSC: Carbon Monoxide Fact Sheet](https://www.cpsc.gov/safety-education/safety-guides/carbon-monoxide/carbon-monoxide-fact-sheet)
+- [Ready.gov: Food](https://www.ready.gov/food)
+- [FEMA: Food and Water in an Emergency (FEMA 477)](https://www.fema.gov/pdf/library/f&web.pdf)
+- [NFPA: Grilling Safety Tip Sheet](https://www.nfpa.org/downloadable-resources/safety-tip-sheets/grilling-safety-tip-sheet)
+- [NFPA: Educational Messages Desk Reference](https://www.nfpa.org/-/media/project/storefront/catalog/files/home-fire-safety/emac/educationalmessagesdeskreference.pdf)
+- [USDA FSIS: Safe Minimum Internal Temperature Chart](https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart)
+- [FDA: Food and Water Safety During Power Outages and Floods](https://www.fda.gov/food/buy-store-serve-safe-food/food-and-water-safety-during-power-outages-and-floods)
+
+---
+
+Last reviewed: October 2026
+
 *License: CC-BY-SA 4.0*

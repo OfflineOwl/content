@@ -1,218 +1,212 @@
 # Complete Water Purification Guide
 
-> **Critical Skill** - Clean water is essential for survival. Without it, you can only survive 3 days. This guide covers every method to make water safe to drink.
+> **Critical skill.** Most people can survive only a few days without water, and less in heat. Untreated water can carry germs that cause severe diarrhea, which drains the body of water even faster. This guide covers every practical way to make water safe to drink.
+
+## Do This Now
+
+1. **Use safe water first.** Drink stored or commercially bottled water before treating anything. If local officials have issued a boil-water or do-not-drink notice, follow it.
+2. **Rule out chemicals.** If the water may contain fuel, toxic chemicals, or radioactive material (chemical or fuel smell, oily sheen, floodwater, runoff from industrial sites), don't drink it. Boiling and disinfecting will not make it safe. Find another source.
+3. **Clear it.** If the water is cloudy, let it settle, then pour the clear water through a clean cloth, paper towel, or coffee filter.
+4. **Boil it.** Bring it to a rolling boil for **1 minute**. If you are above **5,000 ft (about 1,500 m)**, boil for **3 minutes**. Let it cool.
+5. **Can't boil? Use unscented household bleach.** Per gallon: **8 drops of 6% bleach** or **6 drops of 8.25% bleach**. Per quart or liter: 2 drops of either. **Double the dose** if the water is cloudy, colored, or very cold. Stir, then wait **30 minutes**.
+6. **Store it in clean, covered containers.** Use treated water for drinking, cooking, brushing teeth, making ice, washing food, and mixing baby formula.
+
+---
 
 ## Quick Reference
 
-| Method | Effectiveness | Time | Equipment Needed |
-|--------|--------------|------|------------------|
-| Boiling | 99.9% | 1-10 min | Heat source, container |
-| Chemical (Chlorine/Iodine) | 99%+ | 30 min | Tablets/drops |
-| UV Light | 99.9% | 1-2 min | UV device or sunlight |
-| Filtration | 90-99.9% | Varies | Filter system |
-| Solar (SODIS) | 99%+ | 6-48 hours | Clear bottles |
+| Method | What it handles | Time | You need |
+|--------|-----------------|------|----------|
+| Boiling | Bacteria, viruses, and parasites | Rolling boil for 1 min (3 min above 5,000 ft), then cool | Heat source, pot |
+| Household bleach | Bacteria and viruses; weak against Giardia, not effective against Cryptosporidium | 30 min wait | Unscented bleach, dropper |
+| Chlorine dioxide tablets or drops | Bacteria, viruses, Giardia; Cryptosporidium only with a long wait | 30 min to several hours (follow the label) | Tablets or drops |
+| Iodine | Bacteria and viruses; not Cryptosporidium | At least 30 min | 2% tincture or tablets |
+| UV device (battery or USB pen) | Bacteria, viruses, and parasites in clear water | Per device, usually a minute or two per batch | Device, charged batteries |
+| Sunlight (SODIS) | Most germs in clear water; slower and less certain than boiling | 6 hours of sun, or 2 days if mostly cloudy | Clear plastic (PET) bottles, 2 L or smaller |
+| Portable filter | Parasites (1 micron or smaller); bacteria (0.3 micron or smaller); not viruses | Minutes | Filter, then a disinfectant |
+| Distillation | Germs, salt, heavy metals, and most chemicals | Slow; small amounts | Heat, pot, lid, cup |
 
-## Understanding Water Contamination
+**Boiling is the most reliable method.** If you can't boil, filter first and then disinfect.
 
-Before purifying water, understand what you're dealing with:
+---
 
-### Biological Contaminants
-- **Bacteria** (E. coli, Salmonella, Cholera) - Most common
-- **Viruses** (Hepatitis A, Norovirus, Rotavirus) - Smaller, harder to filter
-- **Protozoa** (Giardia, Cryptosporidium) - Cyst-forming, resistant to chemicals
+## What Can Be in Water
 
-### Chemical Contaminants
-- Heavy metals
-- Pesticides
-- Industrial pollutants
+- **Bacteria** (E. coli, Salmonella, cholera): common in water polluted by sewage or animal waste.
+- **Viruses** (norovirus, hepatitis A): too small for most portable filters.
+- **Parasites** (Giardia, Cryptosporidium): Cryptosporidium survives normal doses of bleach and iodine.
+- **Chemicals** (fuel, pesticides, industrial waste, heavy metals, salt): not removed by boiling, bleach, iodine, or UV. Boiling can even concentrate some, such as nitrate and lead.
+- **Sediment and cloudiness:** shields germs from bleach and UV light. Clear the water first.
 
-### Physical Contaminants
-- Sediment
-- Debris
-- Turbidity
+Clear water is not necessarily safe. Most germs are invisible.
 
 ---
 
 ## Method 1: Boiling
 
-**The gold standard** - Boiling is the most reliable method available to most people.
+**The gold standard.** Boiling kills bacteria, viruses, and parasites, including Cryptosporidium.
 
-### How It Works
-Heat kills pathogens by denaturing their proteins and destroying cell structures.
+### Steps
 
-### Procedure
+1. **Collect water** in a heat-safe pot or kettle.
+2. **Clear it** if cloudy: let it settle, then pour through a clean cloth, paper towel, or coffee filter.
+3. **Bring to a rolling boil**: large bubbles breaking the surface continuously, even when stirred.
+4. **Keep it boiling for 1 minute.** Above 5,000 ft (about 1,500 m), boil for 3 minutes.
+5. **Let it cool** with a lid on. Don't add ice unless the ice was made from safe water.
+6. **Store** in clean, covered containers.
 
-1. **Collect water** in a heat-safe container
-2. **Pre-filter** if cloudy (cloth, coffee filter, sand)
-3. **Bring to a rolling boil** (large bubbles breaking the surface)
-4. **Maintain boil** for:
-   - Sea level: **1 minute**
-   - Above 6,500 ft (2,000m): **3 minutes**
-5. **Let cool** before drinking
-6. **Store** in clean, covered container
+Boiled water tastes flat. Pour it back and forth between two clean containers, or add a pinch of salt per quart or liter, to improve the taste.
 
-### Altitude Adjustments
+### Altitude
 
-| Altitude | Boiling Point | Required Boil Time |
-|----------|---------------|-------------------|
+Water boils at a lower temperature as you climb, just under 1°F lower for every 500 ft.
+
+| Altitude | Boiling point (approx.) | Boil time |
+|----------|-------------------------|-----------|
 | Sea level | 212°F (100°C) | 1 minute |
-| 5,000 ft | 203°F (95°C) | 1 minute |
-| 10,000 ft | 194°F (90°C) | 3 minutes |
-| 15,000 ft | 185°F (85°C) | 3 minutes |
+| 5,000 ft (1,500 m) | 203°F (95°C) | 3 minutes |
+| 6,500 ft (2,000 m) | 200°F (93°C) | 3 minutes |
+| 10,000 ft (3,000 m) | 194°F (90°C) | 3 minutes |
+| 15,000 ft (4,600 m) | 185°F (85°C) | 3 minutes |
 
-### Pros & Cons
+**Why 5,000 ft?** CDC says to boil for 3 minutes above 6,500 ft. EPA says above 5,000 ft. Boiling for 3 minutes anywhere above 5,000 ft satisfies both.
 
-**Pros:**
-- Kills all pathogens (bacteria, viruses, protozoa)
-- Requires no special equipment
-- Works on any water source
+**Short on fuel?** CDC's travel guidance says you can heat water until it first starts to simmer, then take it off the heat and keep it covered for 30 minutes. A full rolling boil is still the most reliable choice when fuel allows.
 
-**Cons:**
-- Requires fuel/heat source
-- Time and energy intensive
-- Doesn't remove chemicals or improve taste
-- Water must cool before drinking
+### Pros and cons
+
+**Pros:** kills every type of germ, needs no special equipment, works on any water that is free of chemicals.
+
+**Cons:** uses fuel and time, doesn't remove chemicals or salt, water must cool before drinking.
 
 ---
 
-## Method 2: Chemical Treatment
+## Method 2: Chemical Disinfection
 
-Chemical treatment is lightweight and effective for most biological contaminants.
+Chemicals are light and cheap. They kill most bacteria and viruses, but they are weak against parasites, especially Cryptosporidium. They also work poorly in cloudy or very cold water.
 
-### Chlorine-Based Treatment
+### Household bleach (EPA method)
 
-#### Household Bleach (Sodium Hypochlorite)
-Use **unscented** bleach with 5.25-8.25% sodium hypochlorite.
+**Use the right bleach:**
+- Regular, **unscented** liquid chlorine bleach whose label says it is suitable for disinfection or sanitization.
+- **Not** scented, color-safe, splashless, or "with cleaners" products.
+- Check the strength on the label (usually 6% or 8.25% sodium hypochlorite).
+- Use bleach that is less than a year old and stored at room temperature. Bleach weakens over time.
 
-| Water Clarity | Bleach Amount per Gallon |
-|---------------|--------------------------|
-| Clear water | 8 drops (1/8 tsp) |
-| Cloudy water | 16 drops (1/4 tsp) |
+**Dose (EPA):**
 
-**Procedure:**
-1. Pre-filter cloudy water
-2. Add appropriate amount of bleach
-3. Stir thoroughly
-4. Wait **30 minutes** minimum
-5. Water should have slight chlorine smell (if not, repeat)
+| Water volume | 6% bleach | 8.25% bleach |
+|--------------|-----------|--------------|
+| 1 quart or 1 liter | 2 drops | 2 drops |
+| 1 gallon | 8 drops | 6 drops |
+| 2 gallons | 16 drops (1/4 tsp) | 12 drops (1/8 tsp) |
+| 4 gallons | 1/3 tsp | 1/4 tsp |
+| 8 gallons | 2/3 tsp | 1/2 tsp |
 
-#### Chlorine Dioxide Tablets (Aquatabs, Katadyn, etc.)
-- Follow manufacturer instructions
-- Typically 1 tablet per liter
-- Wait 30 minutes for bacteria, 4 hours for Cryptosporidium
+**Double the dose if the water is cloudy, colored, or very cold.** For a gallon of cloudy water, that is 16 drops of 6% bleach or 12 drops of 8.25% bleach.
 
-### Iodine Treatment
+If your bleach is a different strength, such as the 1% bleach sold in some countries, use CDC's 1% dose: 10 drops per quart or liter, 40 drops per gallon. Otherwise follow the label's drinking-water directions.
 
-**Warning:** Not suitable for pregnant women, those with thyroid conditions, or long-term use.
+**Steps:**
+1. Clear cloudy water first (settle, then filter through cloth or a coffee filter).
+2. Add the bleach with a clean dropper.
+3. Stir well and let it stand **30 minutes**.
+4. Smell it. A **slight chlorine smell** means it's ready.
+5. No smell? Repeat the dose and wait **another 15 minutes**. If it still doesn't smell of chlorine, don't drink it; find another source.
+6. Too strong? Pour it between clean containers and let it stand a few hours.
 
-| Form | Dosage per Liter | Wait Time |
-|------|------------------|-----------|
-| 2% Tincture | 5-10 drops | 30 min |
-| Tablets | 1-2 tablets | 30 min |
-| Crystals | Follow kit instructions | 30 min |
+### Chlorine dioxide tablets or drops
 
-### Pros & Cons
+- Kill bacteria, viruses, and Giardia, and are the only common chemical option that works against Cryptosporidium.
+- Cryptosporidium needs a long contact time, often several hours. Follow the product's label for dose and wait time.
+- A good choice for a go-bag or emergency kit.
 
-**Pros:**
-- Lightweight and portable
-- Long shelf life
-- Effective against most pathogens
+### Iodine
 
-**Cons:**
-- Less effective against Cryptosporidium
-- Affects taste
-- Some health restrictions
-- Doesn't remove chemicals or particulates
+- **2% tincture of iodine:** 5 drops per quart or liter of clear water, 10 drops if cloudy or colored. Wait at least 30 minutes.
+- **Iodine tablets:** follow the label.
+- **Does not kill Cryptosporidium.**
+- **Don't use iodine if you are pregnant, have thyroid problems, or are sensitive to iodine.** No one should drink iodine-treated water for more than a few weeks at a time.
 
----
+### Pros and cons
 
-## Method 3: UV Purification
+**Pros:** light, cheap, long shelf life (bleach about a year), no fuel needed.
 
-Ultraviolet light destroys pathogen DNA, preventing reproduction.
-
-### Commercial UV Devices (SteriPen, etc.)
-
-1. Pre-filter water to improve clarity
-2. Insert UV device into water container
-3. Activate and stir for recommended time (usually 60-90 seconds)
-4. Wait for completion indicator
-
-### Solar Disinfection (SODIS)
-
-A free method using the sun's UV rays.
-
-**Requirements:**
-- Clear PET plastic bottles (1-2 liter soda bottles work well)
-- 6+ hours of strong sunlight (or 2 days if cloudy)
-- Relatively clear water
-
-**Procedure:**
-
-1. **Select bottles** - Clear PET plastic, no scratches, under 3 liters
-2. **Pre-filter water** - Must be able to read newspaper through bottle
-3. **Fill bottles** - Leave 1 inch of air at top
-4. **Shake vigorously** - Oxygenates water, improves effectiveness
-5. **Place in direct sunlight** - On dark surface or corrugated metal
-6. **Expose for minimum time:**
-   - Full sun: 6 hours
-   - 50% cloudy: 6 hours
-   - Mostly cloudy: 2 days
-   - Continuous rain: Not effective, use other method
-
-### Pros & Cons
-
-**Pros:**
-- Very effective against all pathogens
-- SODIS is free and requires no equipment
-- No taste alteration
-- No chemical residue
-
-**Cons:**
-- UV devices need batteries/power
-- SODIS requires time and sunlight
-- Not effective for turbid water
-- Doesn't remove chemicals
+**Cons:** weak or ineffective against Cryptosporidium (except chlorine dioxide with a long wait), needs clear water, affects taste, doesn't remove chemicals or salt.
 
 ---
 
-## Method 4: Filtration
+## Method 3: UV Devices
 
-Physical filtration removes particles and, depending on pore size, pathogens.
+Battery or USB-powered UV pens and bottle caps damage germs' DNA so they can't cause infection.
 
-### Filter Types by Pore Size
+1. Use **clear** water. Cloudy water shields germs from the light, so filter it first.
+2. Treat small batches (about 1 liter at a time) in a wide-mouth container.
+3. Turn on the device and stir or shake for the time the manufacturer specifies.
+4. Wait for the completion signal. If the device fails mid-cycle, start again.
 
-| Filter Type | Pore Size | Removes |
-|-------------|-----------|---------|
-| Sediment filter | >10 microns | Debris, large particles |
-| Microfiltration | 0.1-1 micron | Bacteria, protozoa |
-| Ultrafiltration | 0.01-0.1 micron | Bacteria, protozoa, some viruses |
-| Nanofiltration | 0.001 micron | Most viruses |
-| Reverse Osmosis | 0.0001 micron | Everything including salts |
+**Pros:** works on bacteria, viruses, and parasites in clear water; fast; no taste.
 
-### Commercial Filters
+**Cons:** needs batteries or power; useless in cloudy water; small batches; doesn't remove chemicals.
 
-Popular options:
-- **Sawyer Mini/Squeeze** - 0.1 micron, filters 100,000+ gallons
-- **LifeStraw** - 0.2 micron, personal use
-- **Katadyn Pocket** - 0.2 micron, expedition-grade
-- **MSR Guardian** - 0.02 micron, removes viruses
+---
 
-### DIY Filtration Systems
+## Method 4: Solar Disinfection (SODIS)
 
-#### Simple Cloth Filter
-- Fold clean cloth 4+ times
-- Pour water through
-- **Only removes large particles** - Must combine with other methods
+Sunlight and heat can disinfect clear water in clear plastic bottles. It's free, but slower and less certain than boiling. Use it when you have no fuel, no chemicals, and no filter.
 
-#### Improvised Sand/Charcoal Filter
+**You need:**
+- Clear PET plastic bottles (soda or water bottles), **2 liters or smaller**, without deep scratches.
+- Clear water. Set the filled bottle on a newspaper headline and look down through it. If you can't read the headline, filter or settle the water first.
+- Strong, direct sunlight.
+
+**Steps:**
+1. Fill the bottle completely and close it.
+2. Lay it on its side in full sun, ideally on a roof or a sheet of metal, away from shade.
+3. Leave it for the required time:
+
+| Sky | Exposure time |
+|-----|---------------|
+| Clear, or up to half cloudy | At least 6 hours |
+| More than half cloudy | 2 days in a row |
+| Continuous rain | Not reliable; use another method |
+
+4. Drink straight from the bottle or pour into a clean cup.
+
+**SODIS does not remove chemicals.** Don't use it on water that might contain fuel or industrial waste.
+
+---
+
+## Method 5: Filtration
+
+Filters physically remove germs and particles. What they catch depends on pore size.
+
+### What filters remove
+
+| Filter type | Removes | Doesn't remove |
+|-------------|---------|----------------|
+| Absolute pore size 1 micron or smaller, or certified to NSF/ANSI 53 or 58 for "cyst reduction" | Parasites (Giardia, Cryptosporidium) | Viruses, some bacteria |
+| Absolute pore size 0.3 micron or smaller | Parasites and bacteria | Viruses |
+| Ultrafilter (about 0.01 micron) | Parasites, bacteria, most viruses | Chemicals |
+| Reverse osmosis (RO) | Parasites, bacteria, viruses, salt, many chemicals | Check the label for which chemicals |
+| Activated carbon alone | Improves taste and odor; may reduce some chemicals | Germs (not rated for them) |
+
+- **Most portable hiking filters do not remove viruses.** After filtering, add bleach, iodine, or chlorine dioxide, or boil the water.
+- Filters labeled "purifier" are meant to remove viruses too. Manufacturers make that claim; EPA does not independently test it.
+- Look for **"absolute"** pore size. A "nominal" rating lets some germs of that size through.
+- Follow the manufacturer's instructions for cleaning, storing, and replacing the filter.
+
+### Improvised sand and charcoal filter
+
+An improvised filter clears sediment so that disinfection works better. **It does not make water safe on its own.**
 
 ```
 ┌─────────────┐
-│   CLOTH     │ ← Top layer (keeps sand in)
+│   CLOTH     │ ← Top layer (spreads water, keeps sand in place)
 ├─────────────┤
-│   SAND      │ ← Fine filtration layer (2-3 inches)
+│   SAND      │ ← Fine layer (2-3 inches)
 ├─────────────┤
-│  CHARCOAL   │ ← Absorbs chemicals, improves taste (2-3 inches)
+│  CHARCOAL   │ ← May improve taste and odor (2-3 inches)
 ├─────────────┤
 │   GRAVEL    │ ← Keeps charcoal in place (1-2 inches)
 ├─────────────┤
@@ -222,145 +216,111 @@ Popular options:
     OUTPUT
 ```
 
-**Building Instructions:**
+1. **Container:** a plastic bottle with the bottom cut off, or a bucket with a small hole.
+2. **Layer from bottom to top:** rocks, gravel, crushed charcoal from a hardwood fire (not briquettes), fine sand, then cloth.
+3. **Pour water slowly** through the top. Re-filter if it's still cloudy.
+4. **Then disinfect it** by boiling, bleach, or another method above.
 
-1. **Container** - Use plastic bottle (cut bottom off), bucket with hole, or bamboo
-2. **Layer materials** from bottom to top:
-   - Rocks/pebbles (drainage)
-   - Gravel
-   - Crushed charcoal (from hardwood fire, NOT briquettes)
-   - Fine sand
-   - Cloth or grass
-3. **Pour water slowly** through top
-4. **Re-filter** 2-3 times for better results
-5. **STILL REQUIRES DISINFECTION** - This removes particles, not all pathogens
-
-### Pros & Cons
-
-**Pros:**
-- Removes particles and improves taste
-- Many filters are reusable
-- Fast water production
-
-**Cons:**
-- Most filters don't remove viruses
-- Requires maintenance/replacement
-- Can clog with dirty water
-- DIY filters need additional disinfection
+Campfire charcoal is not the activated carbon used in commercial filters. It won't make chemically contaminated water safe.
 
 ---
 
-## Method 5: Distillation
+## Method 6: Distillation
 
-Distillation purifies water through evaporation and condensation.
+Distillation boils water and collects the steam that condenses. It removes germs, salt, heavy metals, and most chemicals. It does not reliably remove some chemicals that evaporate easily, such as certain solvents and fuels. It's the main home method for making seawater drinkable.
 
-### Solar Still (Ground)
+### Pot distillation (FEMA method)
 
-1. **Dig a hole** 3 feet wide, 2 feet deep
-2. **Place container** in center
-3. **Add vegetation** around container (adds moisture)
-4. **Cover with plastic sheet**
-5. **Place small rock** in center (creates low point over container)
-6. **Seal edges** with soil
-7. **Wait** - Condensation drips into container
+1. Fill a pot about halfway with water.
+2. Tie a cup to the handle on the pot's lid so the cup hangs right-side up when the lid is upside down. Make sure the cup doesn't touch the water.
+3. Put the lid on upside down and boil the water for 20 minutes.
+4. The water that drips from the lid into the cup is distilled.
 
-**Yield:** 1-3 cups per day depending on conditions
+This yields only a small amount for the fuel used. Let the cup cool before handling.
 
-### Improvised Pot Distillation
+### Solar still
 
-1. Fill pot with contaminated water
-2. Place heat-safe collection container inside (floating or raised)
-3. Invert pot lid (creates low point for condensation)
-4. Heat to gentle boil
-5. Condensation collects on lid and drips into inner container
+A plastic sheet stretched over a hole, with a container in the center, collects condensation from the ground and from plants placed in the hole. Yields are small and unreliable, and digging can cost you more sweat than the still produces. Treat it as a supplement, not a main supply.
 
 ---
 
-## Choosing the Right Method
+## Choosing a Method
 
-### Decision Matrix
+| Situation | Best choice |
+|-----------|-------------|
+| You have fuel | Boil |
+| No fuel, but you have unscented bleach | Bleach (EPA dose above) |
+| Hiking or backpacking | Filter, then chemical disinfection |
+| Building an emergency kit | Chlorine dioxide tablets, unscented bleach, and a filter |
+| No fuel or chemicals, sunny weather | SODIS |
+| Only salt water | Distill (or use a reverse-osmosis desalinator) |
+| Water may contain fuel or chemicals | Don't treat it. Find another source. |
 
-| Situation | Recommended Method |
-|-----------|-------------------|
-| **Have fire/fuel** | Boiling |
-| **Backpacking/hiking** | Filter + chemical backup |
-| **Emergency kit** | Chemical tablets |
-| **Long-term survival** | SODIS + DIY filter |
-| **Questionable source** | Multiple methods combined |
-| **Saltwater** | Distillation only |
+### Combining methods
 
-### Combining Methods for Maximum Safety
-
-For questionable water sources, combine methods:
-
-1. **Pre-filter** (cloth, coffee filter)
-2. **Filter** (commercial or DIY sand filter)
-3. **Disinfect** (boil, chemical, or UV)
-4. **Store safely** (covered, clean container)
+For doubtful water:
+1. **Settle and pre-filter** (cloth, coffee filter).
+2. **Filter** (commercial filter if you have one).
+3. **Disinfect** (boil, chemical, or UV).
+4. **Store safely** in a clean, covered container. Pour water out instead of dipping hands or cups in.
 
 ---
 
-## Water Storage Guidelines
+## Special Cases
 
-### Short-term (Days)
-- Clean, covered containers
-- Away from direct sunlight
-- Cool location
-
-### Long-term (Weeks to Months)
-- Add 1/4 tsp bleach per gallon every 6 months
-- Food-grade containers only
-- Rotate stock every 6-12 months
-
-### Emergency Water Sources
-
-In priority order:
-1. Rainwater
-2. Flowing streams (faster flow = less contamination)
-3. Springs
-4. Morning dew (collect with cloth)
-5. Standing water (treat thoroughly)
-6. Snow/ice (melt and purify)
-
-**Avoid:**
-- Water near industrial sites
-- Stagnant pools with no inflow
-- Water with visible contamination/foam
+- **Babies:** use ready-to-feed formula if you have it. If you must mix formula, use bottled water, or water that has been boiled and cooled.
+- **People with weakened immune systems:** Cryptosporidium can be severe for them. Boil water, or use bottled water, rather than relying on bleach or iodine.
+- **Pregnancy or thyroid problems:** avoid iodine. Use boiling, bleach, chlorine dioxide, or a filter.
+- **Pets:** give pets the same treated or bottled water you drink.
+- **Chemical spill, fuel, or radiation:** no home method reliably fixes this. Use stored or bottled water, and contact the local health department.
 
 ---
 
-## Quick Action Cards
+## Storing Treated Water
 
-### Emergency: No Equipment Available
+- Use clean, food-grade containers with tight lids.
+- Keep them cool and out of sunlight, away from gasoline, pesticides, and other chemicals.
+- Label them with the date. Replace water you treated and stored yourself every 6 months.
+- See the Water Storage and Rotation guide for container cleaning and storage targets.
 
-1. Collect cleanest water possible
-2. Let sediment settle (30 minutes)
-3. Strain through cloth
-4. If possible, expose to sunlight (6+ hours)
-5. **Understand risk** - some purification better than dehydration
+---
 
-### Emergency: Chemical Spill Suspected
+## If Someone Gets Sick
 
-- **Do not use** boiling, chemicals, or UV
-- **Only distillation** removes chemical contaminants
-- Seek alternative water source if possible
+Diarrhea and vomiting after drinking untreated water can quickly cause dehydration. Get medical help, or call 911 or your local emergency number, for bloody diarrhea, a fever over 102°F (38.9°C), vomiting that prevents keeping fluids down, diarrhea lasting more than 3 days, confusion, or signs of severe dehydration (little or no urine, dizziness when standing). See the Foodborne Illness guide for rehydration.
 
 ---
 
 ## Summary
 
-| Method | Bacteria | Viruses | Protozoa | Chemicals | Taste |
-|--------|----------|---------|----------|-----------|-------|
-| Boiling | ✅ | ✅ | ✅ | ❌ | ❌ |
-| Chlorine | ✅ | ✅ | ⚠️ | ❌ | ⚠️ |
-| Iodine | ✅ | ✅ | ⚠️ | ❌ | ⚠️ |
-| UV Light | ✅ | ✅ | ✅ | ❌ | ✅ |
-| Filtration | ✅ | ⚠️ | ✅ | ⚠️ | ✅ |
-| Distillation | ✅ | ✅ | ✅ | ✅ | ✅ |
-
-✅ = Effective | ⚠️ = Partially effective | ❌ = Not effective
+| Method | Bacteria | Viruses | Giardia | Cryptosporidium | Chemicals and salt |
+|--------|----------|---------|---------|-----------------|--------------------|
+| Boiling | Yes | Yes | Yes | Yes | No |
+| Bleach (chlorine) | Yes | Yes | Partly (longer wait) | No | No |
+| Iodine | Yes | Yes | Partly (longer wait) | No | No |
+| Chlorine dioxide | Yes | Yes | Yes | Partly to yes (hours of contact) | No |
+| UV device (clear water) | Yes | Yes | Yes | Yes | No |
+| Filter, 0.3 micron or smaller | Yes | No | Yes | Yes | No |
+| Reverse osmosis | Yes | Yes | Yes | Yes | Salt and many chemicals |
+| Distillation | Yes | Yes | Yes | Yes | Salt and most chemicals |
 
 ---
 
-*Last updated: January 2026*
+## Sources
+
+- [EPA: Emergency Disinfection of Drinking Water](https://www.epa.gov/ground-water-and-drinking-water/emergency-disinfection-drinking-water)
+- [CDC: How to Make Water Safe in an Emergency](https://www.cdc.gov/water-emergency/about/index.html)
+- [CDC: About Water Treatment Options When Hiking, Camping, or Traveling](https://www.cdc.gov/drinking-water/prevention/water-treatment-hiking-camping-traveling.html)
+- [CDC Yellow Book: Water Disinfection for Travelers](https://www.cdc.gov/yellow-book/hcp/preparing-international-travelers/water-disinfection-for-travelers.html)
+- [CDC: About Home Water Treatment Systems](https://www.cdc.gov/drinking-water/about/about-home-water-treatment-systems.html)
+- [CDC: How to Create an Emergency Water Supply](https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html)
+- [FEMA: Food and Water in an Emergency (FEMA 477)](https://www.fema.gov/pdf/library/f&web.pdf)
+- [EPA: Will boiling my water help? (nitrate and lead)](https://www.epa.gov/mn/will-boiling-my-water-help)
+- [USDA FSIS: High Altitude Cooking](https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/high-altitude-cooking)
+- [Eawag SODIS Manual](https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/publikationen/SWP/SODIS_manual_2016.pdf)
+
+---
+
+Last reviewed: October 2026
+
 *License: CC-BY-SA 4.0*

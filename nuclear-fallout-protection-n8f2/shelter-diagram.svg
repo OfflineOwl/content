@@ -58,7 +58,7 @@
     filter="url(#glow)" />
   <text x="200" y="225" text-anchor="middle" fill="#10b981" font-size="11" font-weight="bold">INTERIOR</text>
   <text x="200" y="240" text-anchor="middle" fill="#10b981" font-size="11" font-weight="bold">ROOM</text>
-  <text x="200" y="265" text-anchor="middle" fill="#a7f3d0" font-size="9"> SAFE ZONE</text>
+  <text x="200" y="265" text-anchor="middle" fill="#a7f3d0" font-size="9">BETTER</text>
 
   <!-- Arrow pointing to safe zone -->
   <path d="M200 140 L200 185" stroke="#10b981" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)" />
@@ -74,17 +74,17 @@
     <text x="0" y="0" fill="#94a3b8" font-size="9" font-weight="bold">PROTECTION</text>
     <text x="0" y="12" fill="#94a3b8" font-size="9" font-weight="bold">FACTORS:</text>
     <text x="0" y="30" fill="#ef4444" font-size="8">Outside: 1x</text>
-    <text x="0" y="42" fill="#f59e0b" font-size="8">This room: 10x</text>
-    <text x="0" y="54" fill="#10b981" font-size="8">Interior: 40x</text>
-    <text x="0" y="66" fill="#3b82f6" font-size="8">Basement: 200x</text>
+    <text x="0" y="42" fill="#f59e0b" font-size="8">Main floor: 2-3x</text>
+    <text x="0" y="54" fill="#10b981" font-size="8">Center: a bit more</text>
+    <text x="0" y="66" fill="#3b82f6" font-size="8">Basement: 10x+</text>
   </g>
 
   <!-- Legend -->
   <g transform="translate(10, 10)">
     <rect x="0" y="0" width="100" height="50" fill="#0f172a" stroke="#334155" rx="5" />
     <rect x="10" y="10" width="12" height="12" fill="#065f46" stroke="#10b981" />
-    <text x="28" y="20" fill="#10b981" font-size="9">Safe Zone</text>
+    <text x="28" y="20" fill="#10b981" font-size="9">Better / best</text>
     <rect x="10" y="28" width="12" height="12" fill="#1e1e2e" stroke="#ef4444" />
-    <text x="28" y="38" fill="#ef4444" font-size="9">Danger Zone</text>
+    <text x="28" y="38" fill="#ef4444" font-size="9">Avoid</text>
   </g>
 </svg>

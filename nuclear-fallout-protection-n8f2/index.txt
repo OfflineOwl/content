@@ -1,157 +1,336 @@
 NUCLEAR FALLOUT PROTECTION
 ==========================
-CRITICAL SURVIVAL INFORMATION
 
-!!! YOU HAVE MINUTES TO ACT !!!
+GET INSIDE. STAY INSIDE. STAY TUNED.
 
-If you receive warning of a nuclear event, immediately execute
-these steps. Do not wait to gather belongings. Do not wait for
-others. Every second counts.
-
-============================================================
-SECTION 1: IMMEDIATE ACTIONS (FIRST 10 MINUTES)
-============================================================
-
-STEP 1: GET INSIDE IMMEDIATELY
-------------------------------
-The single most important action. Any building > outside.
-
-BEST SHELTER:
-+ Underground (basement, subway)
-+ Center of large concrete building
-+ Middle floors of high-rise
-
-AVOID:
-- Near windows
-- Exterior walls
-- Top floors
-- Vehicles (minimal protection)
-
-STEP 2: SEAL THE SPACE
-----------------------
-[ ] Close ALL windows
-[ ] Close ALL doors
-[ ] Turn OFF HVAC/ventilation
-[ ] Close fireplace damper
-[ ] Seal vents with tape or wet cloth
-
-STEP 3: IF YOU WERE OUTSIDE - DECONTAMINATE
--------------------------------------------
-Do this BEFORE joining others inside:
-
-1. REMOVE clothing (removes ~90% of contamination)
-2. BAG clothing in plastic, seal, set aside
-3. SHOWER with soap and water, head to toe
-4. SHAMPOO hair - NO CONDITIONER (binds particles)
-5. PUT ON clean, uncontaminated clothes
+After a nuclear explosion you will usually have 10 minutes or more
+before fallout arrives. Use that time to get into the best shelter
+you can reach. Do not stop to gather belongings.
 
 ============================================================
-SECTION 2: THE CRITICAL FIRST 24 HOURS
+DO THIS NOW
 ============================================================
 
-Radiation decreases significantly over time:
+1. GET INSIDE the nearest sturdy building. Brick or concrete is
+   best. Any building is better than staying outside. A car is
+   NOT a shelter.
+   - If you are outside when the blast happens: take cover behind
+     anything solid and lie face down to protect exposed skin.
+     When the blast wave has passed, get inside right away.
+   - If you can't get inside right away, cover your nose and
+     mouth with a mask, cloth, or towel.
 
-Time After Event    | Radiation Level
---------------------|----------------
-1 hour              | 100% (MOST DANGEROUS)
-7 hours             | ~10%
-24 hours            | ~1%
-2 weeks             | ~0.1%
+2. GO TO THE BASEMENT OR THE CENTER OF THE BUILDING.
+   Put as many walls and floors as you can between you and the
+   outside. Stay away from windows, doors, outside walls, and the
+   roof. In a tall building, go to the center of a middle floor.
 
-THE "7-10 RULE":
-For every 7x increase in time, radiation decreases 10x.
+3. IF YOU WERE OUTSIDE, TAKE OFF YOUR OUTER LAYER OF CLOTHING
+   before you join others. This can remove up to 90% of the
+   radioactive material. Bag it. Then wash (see Section 4).
 
-STAY SHELTERED MINIMUM 24 HOURS unless official guidance
-says otherwise.
+4. CLOSE UP THE BUILDING.
+   - Close and lock windows and doors.
+   - Close fireplace dampers.
+   - Turn off fans, air conditioners, and forced-air heating that
+     pull in outside air.
+   You do NOT need to tape or seal the room. Heavy materials and
+   distance protect you from fallout; airtightness doesn't. Never
+   delay getting to the basement or center to tape windows.
 
-============================================================
-SECTION 3: SHELTER PROTECTION FACTORS
-============================================================
+5. STAY INSIDE FOR AT LEAST 24 HOURS unless officials tell you
+   otherwise, or there is an immediate danger such as fire, a gas
+   leak, or building collapse.
 
-Different materials reduce radiation by different amounts:
+6. STAY TUNED. Use a battery or hand-crank radio, phone alerts,
+   or TV. Follow official instructions. If told to evacuate, do
+   it, and don't come back until officials say it's safe.
 
-Material                    | Protection Factor
-----------------------------|------------------
-Open air                    | 1x (no protection)
-Wood frame house            | 2x
-Brick house                 | 10x
-Concrete building           | 40x
-Basement (3ft earth cover)  | 200x
-Underground shelter         | 1000x
+7. BRING PETS INSIDE. Do NOT go outside to collect family.
+   Schools, daycares, hospitals, and nursing homes have their own
+   shelter plans. Going out exposes you and them.
 
-Higher = Better. Get as much mass between you and outside.
-
-============================================================
-SECTION 4: WATER & FOOD SAFETY
-============================================================
-
-WATER:
-+ Sealed containers (bottles, cans) = SAFE
-+ Municipal water (pipes underground) = Usually SAFE
-- Open containers = CONTAMINATED
-- Well water = TEST FIRST before using
-
-FOOD:
-+ Sealed cans/packages = Safe (wash exterior first)
-+ Refrigerator food = Safe if sealed
-~ Closed cabinet food = Wash containers first
-- Open food = DISCARD
-- Fresh outdoor produce = DISCARD
+CALL 911 (or your local emergency number) for serious injuries,
+burns, fire, or someone not breathing. Networks may be jammed:
+keep trying for emergencies, and text family instead of calling.
 
 ============================================================
-SECTION 5: INFORMATION SOURCES
+SECTION 1: WHERE TO SHELTER
 ============================================================
 
-Monitor these for official guidance:
-1. Emergency Alert System (EAS) - TV/Radio
-2. NOAA Weather Radio - All hazards
-3. Local emergency management
-4. FEMA - Federal guidance
+Fallout settles on the ground and on roofs. Its radiation passes
+through walls, so the more mass (concrete, brick, earth) and the
+more distance between you and the outside, the safer you are.
 
-DO NOT leave shelter to seek information.
-Use radio. Leaving increases exposure.
+BEST:
++ Basement (the deeper and more central, the better)
++ Center of a large brick or concrete building
++ Center of the middle floors of a tall building
++ Underground parking garage, subway, or tunnel
+
+POOR:
+- Vehicles
+- Single-story wood-frame house without a basement
+- Rooms next to windows or outside walls
+- The top floor (fallout lands on the roof) and the ground floor
+  of tall buildings
+
+PROTECTION FACTOR (PF): how much a spot reduces your dose. PF 10
+means you get 1/10 of the dose you'd get outside. FEMA counts PF
+10 or more as adequate shelter.
+
+Where you are                                      | About PF
+---------------------------------------------------|---------
+Outside                                            | 1
+Car                                                | Very low
+1-story wood-frame house, main floor               | 2-3
+1-story wood-frame house, basement                 | 10
+2-story brick-veneer house, main floor             | 3
+2-story brick-veneer house, basement               | 20
+3-story brick/concrete building, middle floor      | 7
+3-story brick/concrete building, basement          | 50
+5-story brick/concrete building, middle floor      | 20
+5-story brick/concrete building, basement          | 100-200
+Large office/apartment building, center of the     | 50-100
+  middle floors                                    |
+Large office/apartment building, top or ground     | about 10
+  floor                                            |
+Large office/apartment building, underground       | 200
+(Source: FEMA, Planning Guidance for Response to a Nuclear
+Detonation, 3rd ed., Figure 24)
+
+IF YOUR SHELTER IS POOR (a car, or a wood house with no basement)
+and a much better building is within about 15 minutes, FEMA's
+planning guidance says to move there early, within roughly the
+first 30 minutes after the explosion, then stay put. If no better
+shelter is close, stay where you are, in the most central spot.
 
 ============================================================
-SECTION 6: WHEN TO LEAVE SHELTER
+SECTION 2: HOW FALLOUT DECAYS (THE 7-10 RULE)
 ============================================================
 
-DO NOT leave until:
-- Official all-clear given, OR
-- Minimum 24 hours passed AND critical need
+Fallout is most dangerous right after it arrives. It gives off
+over half of its energy in the first hour, then drops fast.
 
-IF YOU MUST LEAVE EARLY:
-1. Minimize time outside (minutes only)
-2. Cover ALL skin
-3. Wear mask/cover nose and mouth
-4. Do NOT touch anything unnecessarily
-5. Decontaminate immediately upon return
-6. Do NOT bring outside items inside
+Rule of thumb: every time the time since the explosion multiplies
+by 7, the radiation level drops to about one-tenth.
+
+Time after explosion   | Radiation level (vs. 1 hour after)
+-----------------------|-----------------------------------
+1 hour                 | 100%
+7 hours                | about 10%
+2 days (49 hours)      | about 1%
+2 weeks                | about 0.1%
+
+This is an estimate. Real levels depend on the weapon, the
+weather, and where fallout lands. Only officials with radiation
+meters can tell you an area is safe. Lower levels later on may
+make it safer to leave, not necessarily safe to stay outside.
+
+============================================================
+SECTION 3: IF YOU MUST MOVE OR GO OUTSIDE
+============================================================
+
+Leave shelter early only for an immediate danger (fire, gas leak,
+collapse, a medical emergency) or when officials tell you to.
+
+1. Spend as little time outside as possible.
+2. Cover your skin and hair. Cover your nose and mouth with a
+   mask or cloth.
+3. Don't touch or pick up things outside.
+4. Before going back in, take off your outer layer of clothing
+   and shoes, bag them, and wash (Section 4).
+5. Wipe sealed containers you bring in with a damp cloth.
+
+============================================================
+SECTION 4: DECONTAMINATION (CLEANING UP)
+============================================================
+
+Do this as soon as you get inside, before joining others. Tap
+water is fine for washing even if officials say not to drink it.
+
+1. TAKE OFF YOUR OUTER LAYER of clothing (and shoes) carefully,
+   without shaking it, so dust doesn't get into the air. This
+   can remove up to 90% of the radioactive material.
+2. BAG IT. Seal clothing in a plastic bag or container. Keep the
+   bag away from people and pets.
+3. SHOWER if you can. Use warm water and lots of soap.
+   - Do NOT scald, scrub, or scratch your skin. Broken skin lets
+     contamination in.
+   - Wash your hair with shampoo or soap.
+   - Do NOT use conditioner. It makes radioactive material stick
+     to your hair.
+   - Keep cuts and scrapes covered while you wash.
+4. NO SHOWER? Wash your hands, face, and any skin that was
+   uncovered at a sink. No sink? Use a moist wipe, clean wet
+   cloth, or damp paper towel.
+5. Gently BLOW YOUR NOSE, then wipe your eyelids, eyelashes, and
+   ears with a moist wipe or wet cloth.
+6. PUT ON CLEAN CLOTHES (clothes that were stored inside are
+   fine). If you have none, shake or brush off what you have, put
+   it back on, and rewash your hands, face, and exposed skin.
+7. Bag used wipes and towels and keep them away from people and
+   pets.
+
+DON'T:
+- Use household cleaning wipes on skin.
+- Rely on hand sanitizer. It does not remove radioactive material.
+- Touch your eyes, nose, or mouth until you've washed.
+
+HELPING OTHERS: wear waterproof gloves and a dust mask if you
+have them, keep their cuts covered, then rewash your own hands,
+face, and exposed skin.
+
+============================================================
+SECTION 5: POTASSIUM IODIDE (KI)
+============================================================
+
+- Take KI ONLY if public health or emergency officials (or your
+  doctor) tell you to.
+- KI protects ONLY the thyroid, and ONLY from radioactive iodine.
+  It does not protect the rest of your body or from other
+  radioactive materials. Getting inside protects you far more.
+- Infants, children, and pregnant or breastfeeding women benefit
+  most. Adults over 40 should take it only when officials
+  recommend it.
+- Never take more than directed. Too much can cause severe
+  illness or death.
+- Table salt and iodine-rich foods are NOT substitutes.
+
+============================================================
+SECTION 6: FOOD AND WATER
+============================================================
+
++ Food and drinks that were inside the building are safe.
++ Sealed containers that were outside are safe once you wipe them
+  with a damp cloth. Bag the cloth.
++ Bottled water and sealed drinks are safe.
+~ Tap water: safe for washing. For drinking, follow official
+  instructions.
+- Do NOT eat garden produce, or food or water that sat uncovered
+  outside, until officials say it is safe.
+- Never ration drinking water unless officials tell you to.
+
+============================================================
+SECTION 7: PETS
+============================================================
+
+- Bring pets and service animals inside.
+- If a pet was outside after fallout arrived: wear gloves if you
+  can, gently brush its coat, then wash it with shampoo or soap
+  and water and rinse well. Wash your own hands and face after.
+- Sealed pet food is safe. Wipe containers before opening.
+
+============================================================
+SECTION 8: STAYING INFORMED
+============================================================
+
+- AM/FM radio is the most reliable source. Keep a battery or
+  hand-crank radio and spare batteries.
+- Wireless Emergency Alerts on phones, NOAA Weather Radio, TV,
+  and the internet if they work.
+- Officials will tell you where to go for contamination screening
+  and medical care.
+- Do NOT leave shelter to look for information.
+
+============================================================
+SECTION 9: SPECIAL SITUATIONS
+============================================================
+
+CHILDREN: Keep them away from windows and in the most central
+spot. Decontaminate them the same way; help them so they don't
+rub their eyes or mouth. Keep them busy and reassured.
+
+OLDER ADULTS, PEOPLE WITH DISABILITIES OR MEDICAL NEEDS: Move them
+to the best spot first. Keep medications, glasses, hearing aids,
+and spare batteries for medical devices with you. Plan ahead for
+power-dependent equipment.
+
+PEOPLE WHO ARE SICK OR HURT: Call 911 for life-threatening
+emergencies. Otherwise follow official instructions on where to
+get care, and tell shelter staff.
+
+============================================================
+SECTION 10: SIGNS OF RADIATION SICKNESS
+============================================================
+
+Only a large dose in a short time causes radiation sickness.
+Early signs can start within minutes to days:
+- Nausea and vomiting
+- Headache
+- Diarrhea
+Skin redness or burns may appear within hours or be delayed for
+days. People often feel better for a while before getting sick
+again (tiredness, fever, loss of appetite).
+
+Seek medical care as soon as officials say it is safe to travel.
+Call 911 for emergencies.
+
+============================================================
+PREPARE NOW (BEFORE ANYTHING HAPPENS)
+============================================================
+
+[ ] Pick the best shelter spot at home, work, and school
+    (basement or the center of a large building).
+[ ] Learn the shelter plans of your children's schools and care
+    facilities, and your workplace.
+[ ] Kit: water (1 gallon per person per day for several days),
+    sealed food, medications, battery or hand-crank radio, spare
+    batteries, flashlight, first aid kit, a spare set of clothes
+    for each person, and trash bags for contaminated clothing.
+[ ] Make a family communication plan with an out-of-town contact
+    and a meeting place.
+[ ] Sign up for local alerts and make sure your phone receives
+    Wireless Emergency Alerts.
+[ ] If you live near a nuclear power plant, ask your local
+    emergency management office about its plan and KI.
 
 ============================================================
 QUICK ACTION CHECKLIST
 ============================================================
 
-[ ] GET INSIDE (any building, NOW)
-[ ] Go to interior room / basement
-[ ] CLOSE all windows and doors
-[ ] Turn OFF ventilation / HVAC
-[ ] SEAL gaps (tape, wet towels)
-[ ] DECONTAMINATE if exposed outside
-[ ] MONITOR radio for updates
-[ ] STAY INSIDE minimum 24 hours
-[ ] RATION supplies if needed
-
-============================================================
+[ ] GET INSIDE a sturdy building (not a car)
+[ ] Go to the BASEMENT or CENTER, away from windows and roof
+[ ] Outer clothing OFF and bagged if you were outside
+[ ] WASH: warm water, soap, shampoo, NO conditioner
+[ ] Close windows, doors, dampers; ventilation OFF
+[ ] Pets inside; don't go out for family
+[ ] STAY INSIDE at least 24 hours
+[ ] LISTEN to the radio for official instructions
+[ ] KI only if officials say so
 
 Remember:
-TIME - Less time exposed = less dose
-DISTANCE - Further from source = less exposure
-SHIELDING - More mass between you and fallout = better
+TIME      - Less time near fallout = less dose
+DISTANCE  - Farther from fallout on the ground and roof = less dose
+SHIELDING - More concrete, brick, or earth between you = less dose
 
 ============================================================
-Last updated: January 2026
+SOURCES
+============================================================
+
+- Ready.gov, Nuclear Explosion:
+  https://www.ready.gov/nuclear-explosion
+- Ready.gov, Radiation Emergencies:
+  https://www.ready.gov/radiation
+- CDC, What to Do: Get Inside:
+  https://www.cdc.gov/radiation-emergencies/response/get-inside.html
+- CDC, How to Self-Decontaminate after a Radiation Emergency:
+  https://www.cdc.gov/radiation-emergencies/prevention/self-decontaminate.html
+- CDC, Decontamination for Yourself and Others (infographic):
+  https://www.cdc.gov/radiation-emergencies/infographic/decontamination.html
+- CDC, Potassium Iodide (KI):
+  https://www.cdc.gov/radiation-emergencies/treatment/potassium-iodide.html
+- CDC, Acute Radiation Syndrome:
+  https://www.cdc.gov/radiation-emergencies/signs-symptoms/acute-radiation-syndrome.html
+- FEMA, Planning Guidance for Response to a Nuclear Detonation,
+  3rd ed. (2022):
+  https://www.fema.gov/sites/default/files/documents/fema_nuc-detonation-planning-guide.pdf
+- HHS REMM, Nuclear Detonation (fallout decay):
+  https://remm.hhs.gov/nuclearexplosion.htm
+
+Last reviewed: October 2026
 License: CC-BY-SA 4.0
 
-This is general preparedness information.
-Follow official guidance during any actual emergency.
+This is general preparedness information. Follow official
+guidance during any actual emergency.
 ============================================================

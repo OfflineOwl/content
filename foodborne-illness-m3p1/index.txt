@@ -1,300 +1,339 @@
 RECOGNIZING FOODBORNE ILLNESS
 =============================
 
-When medical care is limited, preventing and recognizing 
-foodborne illness becomes critical. This guide covers 
-symptoms, treatment, and prevention.
+Food poisoning usually passes in a few days, but it can turn
+dangerous, especially when clean water and medical care are hard to
+reach. This guide covers what to do, the warning signs that need
+help, and how to prevent it.
+
+DO THIS NOW
+-----------
+
+1. CALL 911 (or your local emergency number) for:
+   - Double or blurred vision, drooping eyelids, slurred speech,
+     trouble swallowing, or weakness that spreads down the body
+     (possible botulism)
+   - Trouble breathing
+   - Confusion, fainting, a seizure, or unresponsiveness
+   - Signs of severe dehydration (no urine, very dizzy, rapid
+     heartbeat)
+2. Stop eating the food you suspect. Warn anyone else who ate it.
+3. Drink fluids. Take small, frequent sips of water, broth, or an
+   oral rehydration solution. This is the most important treatment.
+4. Get medical care soon (see WHEN TO GET MEDICAL CARE) for bloody
+   diarrhea, fever over 102°F (38.9°C), vomiting that stops you
+   keeping fluids down, diarrhea lasting more than 3 days, or signs
+   of dehydration.
+5. Infants: keep breastfeeding or formula feeding as usual. Ask a
+   doctor before giving oral rehydration solution to an infant.
+6. Prevent spread: wash hands with soap and water after using the
+   toilet and before handling food. Don't prepare food for others
+   while sick.
+
+WHEN TO GET MEDICAL CARE
+------------------------
+
+SEE A DOCTOR OR CLINIC FOR (CDC):
+- Bloody diarrhea
+- Diarrhea lasting more than 3 days
+- Fever over 102°F (38.9°C)
+- Vomiting so often you can't keep liquids down
+- Signs of dehydration: peeing very little, dry mouth and throat,
+  feeling dizzy when standing up
+
+GET HELP SOONER FOR HIGH-RISK PEOPLE:
+- Infants and young children
+- Adults over 65
+- Pregnant women (see a doctor for fever and flu-like symptoms;
+  Listeria can cause miscarriage, stillbirth, or a life-threatening
+  infection in the newborn)
+- People with weakened immune systems (for example, cancer
+  treatment, transplant medicines, HIV, or diabetes)
+
+BOTULISM IS A MEDICAL EMERGENCY:
+- Symptoms: double or blurred vision, drooping eyelids, slurred
+  speech, trouble swallowing, trouble moving the eyes, muscle
+  weakness that starts in the head and moves down, trouble
+  breathing. Nausea, vomiting, stomach pain, or diarrhea may come
+  first.
+- Usually starts 18-36 hours after eating the food, but timing
+  varies.
+- Infants: constipation, poor feeding, weak or unusual cry,
+  drooping eyelids, reduced facial expression.
+- Go to an emergency room or call 911 immediately. Botulism can
+  paralyze the breathing muscles and needs hospital treatment.
+- Common sources: improperly home-canned, preserved, or fermented
+  foods, and bulging or leaking cans.
 
 WHAT CAUSES FOODBORNE ILLNESS
 -----------------------------
 
 BACTERIA:
 - Salmonella (poultry, eggs, produce)
-- E. coli (undercooked beef, contaminated water)
-- Listeria (deli meats, soft cheese)
-- Campylobacter (raw poultry, unpasteurized milk)
-- Clostridium botulinum (improperly canned foods)
-- Staphylococcus (foods left at room temperature)
+- E. coli (undercooked ground beef, raw produce, contaminated water)
+- Listeria (deli meats, soft cheeses, unpasteurized milk)
+- Campylobacter (raw or undercooked poultry, unpasteurized milk)
+- Clostridium perfringens (large batches of meat or gravy kept warm
+  or cooled slowly)
+- Staphylococcus (food handled by people, then left at room
+  temperature; its toxin isn't destroyed by reheating)
+- Clostridium botulinum (improperly canned or preserved food)
 
 VIRUSES:
-- Norovirus (contaminated food/water)
-- Hepatitis A (contaminated food/water)
+- Norovirus (food handled by a sick person, contaminated water;
+  spreads easily person to person)
+- Hepatitis A (contaminated food or water)
 
 PARASITES:
-- Giardia (contaminated water)
-- Cryptosporidium (contaminated water)
+- Giardia, Cryptosporidium (contaminated water)
+- Cyclospora (contaminated produce)
 
 TOXINS:
-- From bacteria in spoiled food
-- From certain mushrooms and plants
-- From contaminated shellfish
+- From certain mushrooms and wild plants
+- From contaminated shellfish and some fish
+
+WHEN SYMPTOMS START (CDC)
+-------------------------
+
+Symptoms can start within 30 minutes or not for weeks, depending on
+the germ:
+
+Staph                     30 minutes - 8 hours
+Clostridium perfringens   6 - 24 hours
+Salmonella                6 hours - 6 days
+Norovirus                 12 - 48 hours
+Botulism                  usually 18 - 36 hours
+Campylobacter             2 - 5 days
+E. coli (toxin-producing) 3 - 4 days
+Cryptosporidium           2 - 10 days (average 7)
+Cyclospora                about 1 week
+Giardia                   1 - 2 weeks
+Listeria (invasive)       about 2 weeks
+
+The last thing you ate is not always the cause.
 
 COMMON SYMPTOMS
 ---------------
 
-TYPICAL FOOD POISONING:
-Onset: 2-6 hours after eating
-
-Symptoms:
-- Nausea
-- Vomiting
-- Diarrhea
-- Stomach cramps
-- Fever (sometimes)
-- Headache
-
-Duration: Usually 1-3 days
-
-BACTERIAL INFECTIONS:
-Onset: 12-72 hours after eating
-
-Symptoms:
-- Watery or bloody diarrhea
-- Severe abdominal cramps
+- Diarrhea (watery or bloody)
+- Stomach pain or cramps
+- Nausea and vomiting
 - Fever
-- Vomiting
-- May last longer (up to a week)
+- Headache, body aches
 
-VIRAL INFECTIONS:
-Onset: 12-48 hours
+Most cases last 1 to 3 days. Some parasites cause diarrhea, greasy
+stools, gas, and bloating that can last weeks. E. coli infections
+that produce bloody diarrhea can lead to kidney failure (hemolytic
+uremic syndrome) in some people, especially young children; watch
+for very little urine, unusual tiredness, or pale skin, and get
+care right away.
 
-Symptoms:
-- Sudden onset of vomiting
-- Watery diarrhea
-- Stomach cramps
-- Low-grade fever
-- Highly contagious
+TREATMENT AT HOME
+-----------------
 
-PARASITIC INFECTIONS:
-Onset: 1-2 weeks after exposure
+1. REPLACE FLUIDS (most important)
 
-Symptoms:
-- Prolonged diarrhea
-- Greasy, foul-smelling stools
-- Stomach cramps
-- Bloating and gas
-- Weight loss
-- Fatigue
+Adults:
+- Water, broth, diluted fruit juice, or sports drinks
+- Saltine crackers help replace salt
+- Small, frequent sips if vomiting; increase as tolerated
 
-WARNING SIGNS - SEEK MEDICAL HELP
----------------------------------
+Older adults, people with weak immune systems, and anyone with
+severe diarrhea or dehydration:
+- Use an oral rehydration solution (ORS), store-bought if possible
 
-EMERGENCY SYMPTOMS:
-- Blood in vomit or stool
-- High fever (over 101.5°F)
-- Signs of severe dehydration
-- Symptoms lasting more than 3 days
-- Inability to keep any fluids down
-- Severe abdominal pain
-- Neurological symptoms (blurred vision, weakness)
-- Symptoms of botulism (see below)
+Children:
+- Give an oral rehydration solution as directed on the package
+- Infants: keep breastfeeding or formula feeding as usual; ask a
+  doctor before giving ORS
 
-BOTULISM WARNING SIGNS (Medical Emergency):
-- Double or blurred vision
-- Drooping eyelids
-- Slurred speech
-- Difficulty swallowing
-- Difficulty breathing
-- Muscle weakness spreading down body
-- Onset: 12-36 hours after eating contaminated food
+HOMEMADE ORAL REHYDRATION SOLUTION (WHO):
+- 1 liter (about 1 quart) of safe drinking water
+- 6 level teaspoons of sugar
+- 1/2 level teaspoon of salt
+Stir until dissolved. Measure carefully: too much salt is harmful.
+Use treated or boiled-and-cooled water. Store-bought ORS packets
+are better if you have them.
 
-Botulism requires immediate medical attention.
-It can be fatal without treatment.
+2. EAT WHEN YOU'RE READY
+- While vomiting, stick to small sips of clear liquids.
+- When your appetite returns, you can usually go back to your
+  normal diet, even if you still have diarrhea.
+- Bland foods (rice, toast, crackers, bananas, soup) may be easier
+  at first.
+- Avoid alcohol, and go easy on fatty or spicy foods until you feel
+  better.
 
-HIGH-RISK GROUPS:
-- Young children
-- Elderly
-- Pregnant women
-- Immunocompromised individuals
-Seek help sooner for these groups.
+3. MEDICINES
+- Adults may use loperamide (Imodium) or bismuth subsalicylate
+  (Pepto-Bismol, Kaopectate) for diarrhea.
+- DON'T use these if there is blood in the stool or a fever. See a
+  doctor instead.
+- DON'T give them to children unless a doctor says to.
+- For fever or aches: acetaminophen or ibuprofen, following the
+  label dose. Don't give aspirin to children or teenagers.
+- Antibiotics are only for some infections and need a doctor's
+  prescription.
 
-TREATMENT WITHOUT MEDICAL CARE
-------------------------------
+4. REST
+- Rest and stay cool. Keep drinking.
 
-HYDRATION (Most Important):
+PREVENT SPREAD TO OTHERS
+------------------------
 
-Goal: Replace fluids and electrolytes
+- Wash hands with soap and water after using the toilet, changing
+  diapers, or cleaning up vomit or diarrhea. Hand sanitizer does
+  not work well against norovirus.
+- Clean up vomit and diarrhea right away. Wear gloves. Disinfect
+  the area with a bleach solution of 5 to 25 tablespoons of
+  household bleach per gallon of water, leave it at least 5 minutes,
+  then clean with soap and hot water.
+- Wash soiled laundry in hot water on the longest cycle. Don't
+  shake it out.
+- Don't prepare food or care for others while sick, and for at
+  least 2 days after symptoms stop.
 
-Options:
-1. Oral rehydration solution (best)
-   - Commercial: Pedialyte, Drip Drop
-   - Homemade: 1L water + 6 tsp sugar + 1/2 tsp salt
-   
-2. Clear fluids
-   - Water
-   - Broth
-   - Diluted juice (not citrus)
-   - Weak tea
-
-How to rehydrate:
-- Small, frequent sips (not large amounts)
-- 1-2 tablespoons every 5 minutes
-- Increase as tolerated
-- Don't wait until thirsty
-
-DIET PROGRESSION:
-
-First 24-48 hours:
-- Clear liquids only
-- No solid food
-- No dairy
-- No fatty foods
-
-When vomiting stops:
-- BRAT diet: Bananas, Rice, Applesauce, Toast
-- Plain crackers
-- Boiled potatoes
-- Plain pasta
-
-Gradually add:
-- Lean proteins (chicken, fish)
-- Cooked vegetables
-- Eggs
-
-Avoid for 24-48 hours after recovery:
-- Dairy products
-- Fatty foods
-- Spicy foods
-- Alcohol
-- Caffeine
-
-SYMPTOM MANAGEMENT:
-
-For nausea:
-- Ginger (tea, chews, candies)
-- Peppermint tea
-- Small sips of fluids
-- Avoid strong odors
-
-For vomiting:
-- Small, frequent sips of fluids
-- Don't eat until vomiting stops
-- Rest
-- Avoid activity
-
-For diarrhea:
-- Stay hydrated
-- Avoid anti-diarrheal medications initially
-  (body is trying to expel toxin)
-- After 24 hours, may use as needed
-- Bismuth subsalicylate (Pepto-Bismol) can help
-
-For fever:
-- Acetaminophen or ibuprofen
-- Rest
-- Stay hydrated
-- Cool compresses
-
-PREVENTION PRINCIPLES
----------------------
+PREVENTION: CLEAN, SEPARATE, COOK, CHILL
+----------------------------------------
 
 CLEAN:
-- Wash hands before food prep
-- Wash hands after bathroom
+- Wash hands before and after handling food and after using the
+  toilet
 - Clean surfaces and utensils
-- Wash produce
+- Rinse produce with safe water
 
 SEPARATE:
-- Keep raw meat separate from other foods
-- Use separate cutting boards
+- Keep raw meat, poultry, seafood, and eggs away from other foods
+- Use separate cutting boards and plates for raw meat
 - Don't reuse marinade from raw meat
 
-COOK:
-- Cook to proper temperatures
-- Use food thermometer
-- Don't eat raw or undercooked meat/eggs
+COOK (use a thermometer, USDA temperatures):
+- Poultry: 165°F (74°C)
+- Ground meat: 160°F (71°C)
+- Steaks, chops, roasts: 145°F (63°C), then rest 3 minutes
+- Fish: 145°F (63°C)
+- Egg dishes: 160°F (71°C)
+- Leftovers and casseroles: 165°F (74°C)
 
 CHILL:
-- Keep cold foods cold (below 40°F)
-- Don't leave food out more than 2 hours
-- Cool leftovers quickly
+- Keep cold food at 40°F (4°C) or below
+- Don't leave perishable food out more than 2 hours (1 hour above
+  90°F / 32°C)
+- Cool leftovers quickly in shallow containers
 
 HIGH-RISK FOODS
 ---------------
 
-MOST LIKELY TO CAUSE ILLNESS:
-
-Raw/undercooked:
-- Meat (especially ground)
-- Poultry
-- Eggs
-- Seafood
-- Unpasteurized dairy
-
-Prepared foods:
-- Deli meats and salads
+RAW OR UNDERCOOKED:
+- Meat (especially ground), poultry, eggs, seafood, shellfish
+- Unpasteurized milk and juice
 - Sprouts
-- Pre-cut fruits/vegetables
-- Foods left at room temperature
 
-In emergencies:
-- Food without refrigeration
-- Water from unknown sources
-- Food of unknown age/handling
+HIGH-RISK IN AN EMERGENCY:
+- Perishable food after a power outage (see the Food Safety Without
+  Refrigeration guide)
+- Food that touched floodwater
+- Home-canned food, especially low-acid foods such as vegetables
+  and meat
+- Bulging, leaking, or deeply dented cans
+- Food prepared with untreated water
+- Wild mushrooms and plants you can't identify with certainty
 
 EMERGENCY FOOD SAFETY
 ---------------------
 
 WITHOUT REFRIGERATION:
-- Eat perishables first
+- Eat perishables first, then frozen food, then shelf-stable food
+- Never taste food to test it
 - When in doubt, throw it out
-- Don't rely on smell/taste alone
-- Use shelf-stable alternatives
 
 WITHOUT CLEAN WATER:
-- Treat all water before use
-- Use treated water for food prep
-- Avoid raw produce you can't peel
+- Treat all water used for drinking, cooking, washing produce, and
+  washing hands (see the Water Purification guide)
+- Use hand sanitizer between handwashes, but wash with soap and
+  safe water when you can
 
-CONTAMINATION SUSPECTED:
-- Don't eat potentially contaminated food
-- Inform others who may have eaten it
-- Note what was eaten and when
+IF SOMEONE GETS SICK:
+- Stop serving the suspected food
+- Tell others who ate it
+- Write down what was eaten and when (see the log below)
 
 FOOD POISONING LOG
 ------------------
 
-If someone gets sick, document:
-- What was eaten (last 72 hours)
-- When eaten
+If someone gets sick, write down:
+- What they ate in the last 3 days, and when
 - When symptoms started
-- Symptoms experienced
-- Severity and progression
-- Treatment given
+- Symptoms and how they changed
+- Fluids and medicines given, with times
+- Who else ate the same food
 
-This helps identify cause and aids medical care.
+This helps doctors and health departments find the cause.
 
 QUICK REFERENCE
 ---------------
 
-FOOD POISONING RESPONSE:
-1. Stop eating suspected food
-2. Hydrate (small, frequent sips)
+CALL 911:
+Vision problems, drooping eyelids, slurred speech, trouble
+swallowing or breathing, confusion, fainting, severe dehydration
+
+SEE A DOCTOR:
+Bloody diarrhea, fever over 102°F, can't keep fluids down,
+diarrhea over 3 days, dehydration, pregnant with fever
+
+AT HOME:
+1. Stop eating the suspect food
+2. Sip fluids often (ORS if available)
 3. Rest
-4. BRAT diet when ready
-5. Seek help if severe symptoms
+4. Eat normally once appetite returns
 
-DEHYDRATION SOLUTION (homemade):
-1 liter clean water
-6 teaspoons sugar
-1/2 teaspoon salt
-Mix well, sip frequently
+HOMEMADE ORS:
+1 liter safe water + 6 level tsp sugar + 1/2 level tsp salt
 
-WARNING SIGNS (seek help):
-- Blood in stool/vomit
-- High fever
-- Can't keep fluids down
-- Symptoms over 3 days
-- Neurological symptoms
-
-PREVENTION CHECKLIST:
-[ ] Wash hands
-[ ] Cook thoroughly
+PREVENTION:
+[ ] Wash hands with soap and water
 [ ] Separate raw meat
-[ ] Keep cold foods cold
+[ ] Cook to safe temperatures
+[ ] Keep cold food at 40°F or below
 [ ] When in doubt, throw it out
 
+SOURCES
+-------
+
+CDC: Symptoms of Food Poisoning
+https://www.cdc.gov/food-safety/signs-symptoms/index.html
+
+CDC: Botulism Symptoms
+https://www.cdc.gov/botulism/signs-symptoms/index.html
+
+CDC: Giardia Symptoms
+https://www.cdc.gov/giardia/signs-symptoms/index.html
+
+CDC: Cryptosporidium Symptoms
+https://www.cdc.gov/cryptosporidium/signs-symptoms/index.html
+
+CDC: Preventing Norovirus
+https://www.cdc.gov/norovirus/prevention/index.html
+
+NIDDK (NIH): Treatment for Food Poisoning
+https://www.niddk.nih.gov/health-information/digestive-diseases/food-poisoning/treatment
+
+WHO: Cholera outbreaks Q&A (homemade oral rehydration solution)
+https://www.who.int/news-room/questions-and-answers/item/cholera-outbreaks
+
+USDA FSIS: Safe Minimum Internal Temperature Chart
+https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart
+
+CDC: Keep Food Safe After a Disaster or Emergency
+https://www.cdc.gov/food-safety/foods/keep-food-safe-after-emergency.html
+
+MedlinePlus: Dehydration
+https://medlineplus.gov/ency/article/000982.htm
+
+This guide does not replace hands-on training or professional
+medical care.
+
 =============================
-Last updated: January 2026
+Last reviewed: October 2026
 License: CC-BY-SA 4.0
 =============================

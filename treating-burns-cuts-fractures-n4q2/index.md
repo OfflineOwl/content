@@ -1,353 +1,292 @@
 # Treating Burns, Cuts, and Fractures
 
-> **Common Injuries, Critical Care** - These three injury types are among the most common in emergencies. Proper treatment prevents complications and promotes healing.
+> Burns, cuts, and broken bones are among the most common injuries in any emergency. The right first steps limit damage, ease pain, and prevent infection.
+
+## Do this now
+
+### Burn
+
+1. **Stop the burning.** Get the person away from the heat. If their clothes are on fire: stop, drop, and roll, or smother the flames with a heavy blanket or coat.
+2. **Electrical burn?** Don't touch the person until the power is off. Call 911.
+3. **Cool it right away** under cool, clean running water for **5 to 20 minutes** (aim for 20). Don't put ice on it.
+4. **Remove rings, watches, belts, and tight clothing** near the burn before it swells. Leave anything that's stuck to the skin.
+5. **Cover it loosely** with plastic wrap or a clean, dry, non-stick dressing.
+6. **Call 911** for deep burns, burns larger than the person's palm, burns on the face, hands, feet, genitals, or joints, electrical or chemical burns, or any sign of smoke inhalation.
+
+### Cut that's bleeding
+
+1. **Press firmly** on the wound with a clean cloth or gauze, and keep pressing.
+2. **Blood spurting, pooling, or soaking through,** or still bleeding after 10 minutes of firm pressure? Call 911 and see the Bleeding Control guide (tourniquet, wound packing).
+3. **Once bleeding stops,** rinse the wound under clean running water, cover it, and decide whether it needs stitches.
+
+### Suspected broken bone
+
+1. **Don't straighten it** or push a bone back in. Keep the injured part still, in the position you found it.
+2. **Bone through the skin?** Control bleeding by pressing around (not on) the bone, cover the wound with a clean dressing, and call 911.
+3. **Splint it** so the joints above and below the break can't move, then check that the hand or foot beyond it is still warm, normal in color, and has feeling.
+4. **Call 911** if the limb beyond the injury turns pale, blue, or purple, for an open fracture, for a suspected break of the thigh, hip, pelvis, neck, or back, or for signs of shock. Don't move someone with a suspected neck, back, hip, or pelvis injury unless they're in danger.
+
+---
 
 ## Burns
 
-### Burn Classification
+### How deep is it?
 
-| Degree | Depth | Appearance | Pain Level |
-|--------|-------|------------|------------|
-| **First** | Epidermis only | Red, dry, no blisters | Painful |
-| **Second** | Epidermis + dermis | Red, wet, blisters | Very painful |
-| **Third** | Full thickness | White/brown/black, leathery | Less pain (nerves damaged) |
+| Depth | Also called | What it looks like | Pain |
+|-------|-------------|--------------------|------|
+| **Superficial** | First-degree | Red, dry, no blisters (like sunburn) | Painful |
+| **Partial thickness** | Second-degree | Red, blistered, moist, swollen | Very painful |
+| **Full thickness** | Third-degree | White, leathery, brown, or charred | May hurt little, because nerves are damaged |
 
-### Burn Severity Assessment
+### When a burn needs medical care
 
-**Minor burns (treat at home):**
-- First-degree burns
-- Second-degree burns smaller than 3 inches
-- Not on face, hands, feet, genitals, or joints
+**Call 911 or get emergency care for:**
+- Any full-thickness (deep) burn
+- A partial-thickness (blistered) burn **larger than the person's palm**
+- Burns on the face, mouth, nose, hands, feet, genitals, groin, or a joint
+- Burns that go around an arm, leg, the chest, or the neck
+- Electrical burns, including lightning
+- Chemical, radiation, or explosion burns
+- **Signs of smoke inhalation:** burns on the face, singed nose hair, soot around the nose or mouth, a hoarse voice, coughing, or trouble breathing
+- Burns in very young children or older adults, or in someone with other injuries or serious health problems
 
-**Major burns (seek medical care):**
-- Third-degree burns of any size
-- Second-degree burns larger than 3 inches
-- Burns on face, hands, feet, genitals, joints
-- Burns encircling a limb
-- Inhalation injury suspected
-- Chemical or electrical burns
-- Burns in elderly, children, or those with medical conditions
+**Can usually be treated at home:** small superficial burns, and small partial-thickness burns (smaller than the palm) that aren't on any of the areas above.
 
-### Immediate Burn Treatment
+### Treating a burn step by step
 
-**Step 1: Stop the burning process**
-- Remove from heat source
-- Remove clothing/jewelry near burn (unless stuck)
-- Do NOT break blisters
+**1. Stop the burning**
+- Get the person away from the heat source.
+- Take off jewelry, watches, belts, and tight clothing near the burn before it swells.
+- **Don't** pull off clothing that's stuck to the burn. Cut around it.
 
-**Step 2: Cool the burn**
-- Run cool (not cold) water over burn
-- 10-20 minutes of cooling
-- Do NOT use ice (causes frostbite on damaged tissue)
-- Do NOT use butter, oil, or grease
+**2. Cool the burn**
+- Run cool, clean running water (water you'd be willing to drink) over it **as soon as possible, for 5 to 20 minutes.** Twenty minutes is better if you can manage it. Lukewarm water is fine if that's all you have.
+- **Don't put ice directly on a burn.**
+- **Watch for chilling.** Children and anyone with a large burn can get dangerously cold while being cooled. Keep the rest of the body covered and warm, and watch for shivering.
 
-**Step 3: Protect the burn**
-- Cover with clean, non-stick bandage
-- Loosely wrap—don't apply pressure
-- Change dressing daily or when soiled
+**3. Cover the burn**
+- Cover loosely with plastic wrap (laid over the burn, not wrapped tightly around a limb) or a clean, dry, non-stick dressing. Don't use adhesive bandages on the burn.
+- **Don't break blisters.**
+- **Don't put butter, grease, or other home remedies on a burn.**
 
-**Step 4: Pain management**
-- Over-the-counter pain relievers
-- Keep burn elevated if possible
-- Cool compresses for comfort (not directly on wound)
+**4. Ease the pain**
+- Over-the-counter pain relievers (acetaminophen or ibuprofen) as directed on the label. Never give aspirin to children or teenagers.
 
-### Special Burn Situations
+### Chemical burns
 
-**Chemical burns:**
-1. Remove contaminated clothing
-2. Brush off dry chemicals before water
-3. Flush with large amounts of water (20+ minutes)
-4. Do NOT try to neutralize chemicals
-5. Seek medical care
+1. Protect yourself with gloves. Don't touch the chemical with bare skin.
+2. **Brush off dry chemicals** before using water.
+3. **Remove contaminated clothing and jewelry.**
+4. **Flush with plenty of running water for at least 15 minutes**, letting it run off the body and away from unburned skin.
+5. **Chemical in the eye:** flush the eye with lots of clean running water right away, and keep flushing.
+6. **Call Poison Help (US: 1-800-222-1222)** and follow their advice. Keep the container or label. **Call 911** for a large exposure, trouble breathing, or if the person feels ill.
 
-**Electrical burns:**
-1. Ensure power source is off before touching patient
-2. Check for entrance AND exit wounds
-3. Monitor for cardiac issues
-4. Always seek medical care (internal damage)
+### Electrical burns
 
-**Inhalation burns:**
-- Signs: Singed nose hairs, soot around mouth/nose, hoarse voice, difficulty breathing
-- This is an emergency
-- Position upright to ease breathing
-- Seek immediate medical care
+1. **Don't touch the person until the power is off.** Turn it off at the switch, breaker, or plug. Stay well away from downed power lines and call 911.
+2. **Get every electrical injury checked by a professional**, even if the burn looks small. Electricity can injure organs inside the body.
+3. If the person is unresponsive and not breathing normally, **start CPR and use an AED** as soon as one is available.
+4. Look for burns where the current went in and where it came out. Cool and cover them.
 
-### Long-term Burn Care
+### Smoke inhalation
 
-- Keep burn clean and dry
-- Watch for infection signs
-- Protect from sun (scarring increases with UV)
-- Gentle range-of-motion exercises to prevent contractures
-- Moisturize healed burns to prevent cracking
+**Warning signs:** burns on the face, singed nose hair, soot around the mouth or nose, a hoarse voice, coughing, wheezing, or trouble breathing.
+
+- **Call 911.**
+- Get them into fresh air, and let them sit in whatever position makes breathing easiest.
+- Fire smoke contains carbon monoxide. Headache, dizziness, nausea, or confusion after a fire need medical care.
+
+### Caring for a healing burn
+
+- Keep it clean. Use a fresh, clean, non-stick dressing daily or whenever it's wet or dirty.
+- Watch for infection: increasing pain, spreading redness, swelling, pus, a bad smell, or fever.
+- Burns count as "dirty" wounds for tetanus: get a booster if it's been 5 years or more since the last dose.
 
 ---
 
 ## Cuts and Lacerations
 
-### Assessment
+### First, control the bleeding
 
-**Questions to ask:**
-1. How deep is the wound?
-2. Is bleeding controlled?
-3. Are there foreign objects embedded?
-4. Was the wound contaminated (dirt, rust, animal)?
-5. When was last tetanus shot?
+1. Put on gloves if you have them.
+2. **Press firmly and directly** on the wound with clean gauze or cloth. Keep steady pressure; don't keep lifting it to look.
+3. If blood soaks through, **don't remove the first pad.** Press harder, and add another pad on top if you need to.
+4. **Life-threatening bleeding** (spurting, pooling, soaking through, or not stopping with pressure): call 911 and use a tourniquet or wound packing. See the Bleeding Control guide.
 
-**Wounds needing professional care:**
-- Deep wounds (fat or muscle visible)
-- Wounds that won't stop bleeding
-- Wounds with embedded objects
-- Wounds on face or over joints
-- Animal or human bites
+### Then, clean it
+
+1. Wash your hands.
+2. **Rinse the wound under clean running water** (tap water you'd drink, or boiled and cooled water) until you can't see any dirt. Running water is better for this than antiseptics such as iodine.
+3. **Wash the skin around the wound with mild soap.**
+4. Remove small bits of dirt or splinters with tweezers cleaned with alcohol. Don't dig. **Don't remove a long or deeply stuck object**; pad around it to keep it still and get help.
+5. Cover with a clean dressing. A thin layer of petroleum jelly or antibiotic ointment keeps a minor wound moist.
+6. **Change the dressing** daily, or whenever it's wet or dirty.
+
+### Wounds that need professional care
+
+**Get care promptly for:**
+- Bleeding that doesn't stop after 10 minutes of firm pressure
+- Deep wounds (more than about ¼ inch / 6 mm deep), or wounds where fat, muscle, or bone shows
+- Gaping wounds whose edges don't stay together, or cuts longer than about ¾ inch (2 cm)
+- Wounds on the face
+- Embedded objects
+- **Animal or human bites** (get them checked as soon as possible)
+- Punctures, especially from a dirty or rusty object
 - Signs of infection
-- Tetanus risk and not current on vaccination
+- A dirty or deep wound and no tetanus shot in the last 5 years, or a clean minor wound and none in 10 years
 
-### Wound Cleaning
+### Stitches
 
-**Step 1: Control bleeding**
-- Apply direct pressure
-- Elevate if possible
-- Wait until bleeding stops
+Wounds that may need stitches should be seen **as soon as possible.** A clinician decides whether to close a wound; dirty wounds, bites, and punctures are often left open to lower the infection risk.
 
-**Step 2: Clean the wound**
-1. Wash your hands
-2. Rinse wound with clean water
-3. Remove debris gently with clean tweezers
-4. Wash around wound with mild soap
-5. Do NOT put soap directly in wound
-6. Do NOT use hydrogen peroxide or alcohol IN wound (damages tissue)
+### Closing a small cut without stitches
 
-**Step 3: Apply antibiotic**
-- Thin layer of antibiotic ointment
-- Prevents infection, keeps wound moist
-- Some people are allergic—watch for reaction
+Adhesive wound-closure strips (Steri-Strips, butterfly bandages) can hold a **small, clean, straight, shallow cut** together:
 
-**Step 4: Bandage**
-- Apply sterile gauze or adhesive bandage
-- Change daily or when wet/dirty
-- Keep wound moist but not soaking
+1. Clean the wound and dry the skin around it thoroughly.
+2. Starting in the middle of the cut, stick one end of a strip on one side, gently push the edges together, and press the other end down on the other side. Don't overlap the edges.
+3. Add more strips with small gaps between them until the cut is closed.
+4. Cover with a clean bandage.
 
-### When Stitches May Be Needed
+**Don't use strips** on a dirty wound, a bite, a puncture, or a deep or gaping wound. Get those seen.
 
-**Stitches likely needed if:**
-- Wound edges gape open
-- Wound is on face
-- Wound is over a joint
-- Wound is deep
-- Wound is longer than 1/2 inch
-- Fat or muscle visible
-- Heavy bleeding that's hard to control
+### Watch for infection
 
-**Timing:**
-- Stitches work best within 6-8 hours
-- Facial wounds can be closed up to 24 hours
-- After this, wound may be left to heal open
+Check the wound every day for:
+- Redness, swelling, or warmth that's increasing
+- Pain that gets worse instead of better
+- Pus or cloudy drainage
+- Red streaks spreading from the wound
+- Fever or chills
 
-### Wound Closure Without Stitches
-
-**Butterfly bandages / Steri-Strips:**
-1. Clean and dry the wound
-2. Apply benzoin tincture to skin (helps adhesive stick)
-3. Apply strip perpendicular to wound
-4. Start in middle, work outward
-5. Pull wound edges together, don't overlap
-6. Leave space between strips for drainage
-7. Cover with sterile bandage
-
-**Limitations:**
-- Only for clean, non-gaping wounds
-- Won't work on high-tension areas (joints)
-- Not as strong as stitches
-- Requires dry skin to adhere
-
-### Infection Prevention
-
-**Signs of wound infection:**
-- Increasing redness/swelling
-- Warmth around wound
-- Pus or drainage
-- Red streaks from wound
-- Fever
-- Increasing pain after first day
-
-**Prevention:**
-- Keep wound clean and covered
-- Change dressing daily
-- Don't pick at scabs
-- Watch for infection signs
-- Complete any prescribed antibiotics
+**Spreading redness, red streaks, or fever need medical care quickly.**
 
 ---
 
-## Fractures
+## Fractures (Broken Bones)
 
-### Types of Fractures
+### Signs of a fracture
 
-**Closed fracture:** Bone broken but skin intact
-**Open fracture:** Bone broken and protruding through skin (emergency)
-
-### Signs of Fracture
-
-- Deformity or abnormal angle
+- Deformity or an abnormal angle
 - Swelling and bruising
-- Pain, especially with movement
-- Inability to bear weight or use limb
-- Grinding sensation (crepitus)
-- Numbness or tingling below injury
-- Visible bone (open fracture)
+- Pain at a specific spot, worse with movement or pressure
+- Can't move it or bear weight
+- A grinding feeling or sound
+- Numbness or tingling, or a pale, blue, or cold hand or foot beyond the injury
+- Bone visible through the skin (open fracture)
 
-### Fracture vs. Sprain
+You often can't tell a fracture from a bad sprain without an X-ray. **When in doubt, treat it as a fracture.**
 
-| Fracture | Sprain |
-|----------|--------|
-| Immediate swelling | Gradual swelling |
-| Deformity possible | Normal alignment |
-| Point tenderness over bone | Tenderness over joint |
-| Can't bear weight | May be able to bear some weight |
-| Bruising appears quickly | Bruising develops slowly |
+### Immediate care
 
-**When in doubt, treat as fracture.**
+1. **Keep it still.** Support it in the position you found it. Only straighten a limb if you must to move the person to safety.
+2. **Open fracture:** control bleeding by pressing around the bone, not on it. Cover the wound with a clean dressing. Never push the bone back in.
+3. **Splint it** (see below).
+4. **Apply cold:** ice and water in a bag wrapped in a damp cloth, or a cold pack wrapped in cloth, up to 20 minutes at a time. Never put ice directly on skin.
+5. **Watch for shock:** pale, cold, clammy skin, fast breathing, confusion. Have them lie on their back, keep them warm, and call 911.
 
-### Immediate Fracture Care
+**Suspected neck, back, hip, or pelvis injury:** call 911. Keep the person still in the position you found them, unless they're in immediate danger (fire, traffic, rising water). Don't improvise a neck collar.
 
-**Priority:** Immobilize to prevent further damage
+### Splinting
 
-**Step 1: Don't move the injury**
-- Support in position found
-- Don't try to straighten
-- Don't push protruding bone back
+**Principles:**
+- Immobilize the **joints above and below** the injury (for a forearm break, the wrist and elbow).
+- **Splint in the position found.**
+- **Pad** the splint, especially over bony spots.
+- **Secure it firmly but not so tight** that it cuts off circulation. Don't tie directly over the break.
+- **Check circulation before and after** splinting, and often afterward.
 
-**Step 2: Control bleeding (if open fracture)**
-- Apply pressure around bone, not on it
-- Cover with sterile dressing
-- Do NOT push bone back
+**Improvised splint materials:** rolled newspapers or magazines, sticks or boards, a folded sleeping pad or blanket, a pillow (good for ankles), trekking poles, or the body itself (an injured finger taped to the next one, an injured leg padded and tied to the good leg).
 
-**Step 3: Splint the injury**
-- Immobilize joint above and below fracture
-- Pad splint for comfort
-- Secure firmly but not tight enough to cut circulation
+**Forearm or wrist:**
+1. Place a rigid, padded support under the forearm, from the elbow past the wrist.
+2. Secure it above and below the injury.
+3. Support the arm in a sling with the hand slightly higher than the elbow.
 
-**Step 4: Apply cold**
-- Ice or cold pack wrapped in cloth
-- 20 minutes on, 20 minutes off
-- Reduces swelling and pain
-
-**Step 5: Elevate if possible**
-- Reduces swelling
-- Support with pillows or padding
-
-### Splinting Techniques
-
-**General principles:**
-- Immobilize joint above AND below break
-- Pad splint to prevent pressure sores
-- Check circulation before and after
-- Don't wrap too tight
-- Splint in position found (don't straighten)
-
-**Improvised splint materials:**
-- Sticks or branches
-- Magazines or newspapers
-- Pillows
-- Sleeping pad
-- Another body part (finger to finger, leg to leg)
-- SAM splint (commercial, highly versatile)
-
-**Splinting specific areas:**
-
-**Forearm/Wrist:**
-1. Place rigid material under forearm
-2. Pad and secure
-3. Support with sling
-4. Elevate hand
-
-**Lower Leg:**
-1. Place padding between legs
-2. Place rigid material on both sides
-3. Secure at thigh, above and below knee, ankle
-4. Or tape injured leg to uninjured leg
+**Lower leg:**
+1. Place padding between the legs.
+2. Put rigid padded supports on both sides of the injured leg, from above the knee to below the ankle, or tie the injured leg to the good leg.
+3. Secure at the thigh, above and below the knee, and at the ankle.
 
 **Finger:**
-1. Tape to adjacent finger (buddy tape)
-2. Place padding between fingers
-3. Or use tongue depressor/popsicle stick
+1. Put a thin pad of gauze between the injured finger and its neighbor.
+2. Tape them together (buddy taping).
 
-### Circulation Check
+### Circulation check
 
-**After splinting, check:**
-- Color below injury (pink = good, blue/white = problem)
-- Temperature (should be warm)
-- Pulse below injury if accessible
-- Capillary refill (press nail, color should return in 2 seconds)
-- Sensation (can they feel touch?)
-- Movement (can they wiggle fingers/toes?)
+After splinting, check beyond the injury (fingers or toes):
 
-**If circulation compromised:**
-- Loosen bandages
-- Reposition splint
-- Seek immediate medical care
+- **Color:** normal is good; pale, blue, purple, or gray is a problem.
+- **Temperature:** should be warm, like the other side.
+- **Feeling:** can they feel your touch?
+- **Movement:** can they wiggle their fingers or toes?
 
-### Sling and Swathe
+**If the hand or foot turns pale, blue, or purple, or goes numb:** loosen the ties and recheck. If it doesn't improve right away, call 911.
 
-**For arm/shoulder injuries:**
+### Sling and swathe (arm, shoulder, collarbone)
 
 **Sling:**
-1. Use triangular bandage or improvise from shirt
-2. Support forearm with point at elbow
-3. Tie ends behind neck
-4. Hand should be slightly elevated
+1. Use a triangular bandage, or improvise with a shirt, scarf, or jacket.
+2. Place it under the forearm with the point at the elbow.
+3. Tie the ends behind the neck (pad the knot), with the hand slightly higher than the elbow.
 
 **Swathe:**
-1. Wrap bandage around body
-2. Secure arm against torso
-3. Prevents movement
-4. Provides additional support
+1. Wrap a wide bandage or strip of cloth around the body and over the sling.
+2. Snug it so the arm is held against the chest, without making it hard to breathe.
 
 ---
 
-## Pain Management Without Medication
+## Sprains and Strains
 
-**Cold therapy:**
-- First 48 hours
-- 20 minutes on, 20 off
-- Reduces swelling and numbs pain
+- Avoid any activity that hurts.
+- Cold: ice and water in a bag wrapped in a damp cloth, up to 20 minutes at a time.
+- A snug (not tight) elastic wrap can support an ankle.
+- Get it checked if they can't bear weight, there's deformity or numbness, or it isn't improving.
 
-**Elevation:**
-- Above heart level if possible
-- Reduces swelling
+---
 
-**Immobilization:**
-- Prevents pain from movement
-- Proper splinting essential
+## Pain Relief Without Medication
 
-**Distraction:**
-- Conversation, music, activities
-- Especially helpful for children
+- **Cold:** wrapped ice or a cold pack, up to 20 minutes at a time, for fractures, sprains, and bruises (for burns, use cool running water instead).
+- **Immobilization:** a good splint is one of the best pain relievers for a fracture.
+- **Calm and distraction:** talking, music, and slow breathing help, especially for children.
 
 ---
 
 ## When to Seek Professional Help
 
-**Immediately:**
-- Open fractures
-- Loss of circulation below injury
-- Severe deformity
-- Burns with inhalation injury
-- Chemical or electrical burns
-- Major burns
-- Uncontrollable bleeding
+**Call 911:**
+- An open fracture, or a limb that's pale, blue, purple, or numb beyond the injury
+- Suspected fracture of the neck, back, hip, pelvis, or thigh
+- Bleeding that won't stop with firm pressure
+- Deep or large burns, burns with smoke inhalation, electrical or chemical burns
+- Signs of shock
 
-**As soon as available:**
-- Suspected fractures (need X-ray)
-- Deep cuts (may need stitches)
-- Signs of infection
-- Wounds with embedded objects
+**Get care as soon as possible:**
+- Suspected fractures (they need an X-ray)
+- Cuts that may need stitches
+- Burns on the face, hands, feet, genitals, or joints
 - Animal or human bites
-- Burns on face, hands, feet, genitals
+- Wounds with embedded objects
+- Signs of infection
 
 ---
 
-*Last updated: January 2026*
-*License: CC-BY-SA 4.0*
+## Sources
 
-**Disclaimer:** This guide is for educational purposes. Seek professional medical care when available. This information is not a substitute for proper medical treatment.
+- [2024 American Heart Association and American Red Cross Guidelines for First Aid](https://www.ahajournals.org/doi/10.1161/CIR.0000000000001281)
+- [American Red Cross: Burns](https://www.redcross.org/take-a-class/resources/learn-first-aid/burns)
+- [NHS: Burns and Scalds](https://www.nhs.uk/conditions/burns-and-scalds/)
+- [American Red Cross: Life-Threatening External Bleeding](https://www.redcross.org/take-a-class/resources/learn-first-aid/bleeding-life-threatening-external)
+- [MedlinePlus: Cuts and Puncture Wounds](https://medlineplus.gov/ency/article/000043.htm)
+- [American Academy of Dermatology: How to Treat Minor Cuts](https://www.aad.org/public/everyday-care/injured-skin/burns/treat-minor-cuts)
+- [CDC: Tetanus Clinical Guidance (booster timing)](https://www.cdc.gov/tetanus/hcp/clinical-guidance/index.html)
+- [MedlinePlus: How to Make a Splint](https://medlineplus.gov/ency/article/000040.htm)
+- [American Red Cross: Fractures](https://www.redcross.org/take-a-class/resources/learn-first-aid/fractures)
+- [Poison Control: First Aid for Poisonings](https://www.poison.org/first-aid-for-poisonings)
+
+Last reviewed: October 2026
+
+*This guide doesn't replace hands-on first aid training or professional medical care.*
+
+*License: CC-BY-SA 4.0*

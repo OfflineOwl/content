@@ -1,13 +1,13 @@
-{/* Nuclear Fallout Protection - Advanced Interactive Guide */}
+{/* Nuclear Fallout Protection - Interactive Guide */}
 
 import { useState } from 'react'
-import { AlertTriangle, Shield, Clock, Home, Droplets, Wind } from 'lucide-react'
+import { AlertTriangle, Shield, Clock, Droplets } from 'lucide-react'
 
-export const CriticalAlert = ({ children }) => (
-  <div className="bg-red-900/20 border-2 border-red-500 rounded-lg p-4 my-4 animate-pulse-slow text-red-100">
+export const CriticalAlert = ({ title = 'DO THIS FIRST', children }) => (
+  <div className="bg-red-900/20 border-2 border-red-500 rounded-lg p-4 my-4 text-red-100">
     <div className="flex items-center gap-2 text-red-400 font-bold mb-2">
       <AlertTriangle className="w-6 h-6" />
-      <span className="text-lg">CRITICAL - DO THIS FIRST</span>
+      <span className="text-lg">{title}</span>
     </div>
     {children}
   </div>
@@ -22,16 +22,16 @@ export const TimelineBadge = ({ time, label }) => (
   </div>
 )
 
-export const ProtectionMeter = ({ material, factor }) => {
-  const width = Math.min((factor / 1000) * 100, 100)
+export const ProtectionMeter = ({ material, factor, label }) => {
+  const width = Math.max(Math.min((factor / 200) * 100, 100), 1)
   return (
     <div className="my-2">
-      <div className="flex justify-between text-sm mb-1">
+      <div className="flex justify-between text-sm mb-1 gap-4">
         <span>{material}</span>
-        <span className="font-mono">{factor}x protection</span>
+        <span className="font-mono shrink-0">PF {label || factor}</span>
       </div>
       <div className="h-3 bg-gray-700 rounded-full overflow-hidden">
-        <div 
+        <div
           className="h-full bg-gradient-to-r from-green-500 to-emerald-400 transition-all duration-1000"
           style={{ width: `${width}%` }}
         />
@@ -42,69 +42,63 @@ export const ProtectionMeter = ({ material, factor }) => {
 
 export const ShelterDiagram = () => (
   <div className="my-6 p-4 bg-gray-800/50 rounded-lg">
-    <svg viewBox="0 0 400 300" className="w-full max-w-md mx-auto">
+    <svg viewBox="0 0 400 330" className="w-full max-w-md mx-auto" role="img" aria-label="House cross-section: avoid windows and outer walls; the center of the house is better; the basement is best">
       {/* House outline */}
       <path d="M50 150 L200 50 L350 150 L350 280 L50 280 Z" fill="#1a1a2e" stroke="#4a5568" strokeWidth="2"/>
-      
+
       {/* Roof */}
       <path d="M50 150 L200 50 L350 150" fill="none" stroke="#718096" strokeWidth="3"/>
-      
+
       {/* Windows - X marks */}
       <rect x="80" y="180" width="40" height="50" fill="#2d3748" stroke="#e53e3e" strokeWidth="2"/>
       <line x1="80" y1="180" x2="120" y2="230" stroke="#e53e3e" strokeWidth="2"/>
       <line x1="120" y1="180" x2="80" y2="230" stroke="#e53e3e" strokeWidth="2"/>
-      
+
       <rect x="280" y="180" width="40" height="50" fill="#2d3748" stroke="#e53e3e" strokeWidth="2"/>
       <line x1="280" y1="180" x2="320" y2="230" stroke="#e53e3e" strokeWidth="2"/>
       <line x1="320" y1="180" x2="280" y2="230" stroke="#e53e3e" strokeWidth="2"/>
-      
-      {/* Safe room - highlighted */}
+
+      {/* Center room */}
       <rect x="150" y="200" width="100" height="80" fill="#065f46" stroke="#10b981" strokeWidth="3"/>
-      <text x="200" y="245" textAnchor="middle" fill="#10b981" fontSize="12" fontWeight="bold">SAFE ZONE</text>
-      
+      <text x="200" y="240" textAnchor="middle" fill="#10b981" fontSize="12" fontWeight="bold">CENTER</text>
+      <text x="200" y="256" textAnchor="middle" fill="#a7f3d0" fontSize="10">better</text>
+
       {/* Basement indicator */}
       <rect x="50" y="280" width="300" height="40" fill="#1e3a5f" stroke="#3b82f6" strokeWidth="2"/>
       <text x="200" y="305" textAnchor="middle" fill="#60a5fa" fontSize="11">BASEMENT = BEST PROTECTION</text>
-      
-      {/* Arrows showing interior */}
-      <path d="M200 150 L200 195" stroke="#10b981" strokeWidth="2" markerEnd="url(#arrowhead)"/>
-      
+
       {/* Labels */}
-      <text x="100" y="170" fill="#ef4444" fontSize="10">AVOID</text>
-      <text x="300" y="170" fill="#ef4444" fontSize="10">AVOID</text>
-      
-      <defs>
-        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0, 10 3.5, 0 7" fill="#10b981"/>
-        </marker>
-      </defs>
+      <text x="100" y="170" textAnchor="middle" fill="#ef4444" fontSize="10">AVOID</text>
+      <text x="300" y="170" textAnchor="middle" fill="#ef4444" fontSize="10">AVOID</text>
     </svg>
-    <p className="text-center text-sm text-gray-400 mt-2">Interior rooms and basements provide the best protection</p>
+    <p className="text-center text-sm text-gray-400 mt-2">Basements and the center of the building protect best. Stay away from windows, outer walls, and the roof.</p>
   </div>
 )
 
 export const DecontaminationSteps = () => {
   const [currentStep, setCurrentStep] = useState(0)
   const steps = [
-    { title: "Remove Clothing", desc: "Removes ~90% of contamination", icon: "👔" },
-    { title: "Bag It", desc: "Seal in plastic, set aside", icon: "🛍️" },
-    { title: "Shower", desc: "Soap and water, head to toe", icon: "🚿" },
-    { title: "Shampoo Only", desc: "NO conditioner (binds particles)", icon: "🧴" },
-    { title: "Clean Clothes", desc: "Put on uncontaminated clothing", icon: "👕" }
+    { title: 'Outer Clothing Off', desc: 'Take it off carefully without shaking it. This can remove up to 90% of radioactive material.', icon: '👔' },
+    { title: 'Bag It', desc: 'Seal clothing in a plastic bag. Keep it away from people and pets.', icon: '🛍️' },
+    { title: 'Shower', desc: 'Warm water and lots of soap. Do not scald, scrub, or scratch your skin. Keep cuts covered.', icon: '🚿' },
+    { title: 'Hair: No Conditioner', desc: 'Wash hair with shampoo or soap. Conditioner makes radioactive material stick to hair.', icon: '🧴' },
+    { title: 'Nose, Eyes, Ears', desc: 'Gently blow your nose. Wipe eyelids, eyelashes, and ears with a moist wipe or wet cloth. No shower? Wipe hands, face, and uncovered skin the same way.', icon: '👃' },
+    { title: 'Clean Clothes', desc: 'Put on clothes that were stored inside. Bag used wipes and towels.', icon: '👕' },
   ]
-  
+
   return (
     <div className="my-6 p-4 bg-gray-800/50 rounded-lg">
-      <div className="flex justify-between mb-4">
+      <div className="flex justify-between mb-4 gap-1">
         {steps.map((step, i) => (
           <button
             key={i}
             onClick={() => setCurrentStep(i)}
-            className={`w-12 h-12 rounded-full flex items-center justify-center text-xl transition-all ${
-              i === currentStep 
-                ? 'bg-blue-600 scale-110' 
-                : i < currentStep 
-                  ? 'bg-green-600' 
+            aria-label={`Step ${i + 1}: ${step.title}`}
+            className={`w-11 h-11 rounded-full flex items-center justify-center text-xl transition-all ${
+              i === currentStep
+                ? 'bg-blue-600 scale-110'
+                : i < currentStep
+                  ? 'bg-green-600'
                   : 'bg-gray-600'
             }`}
           >
@@ -112,19 +106,19 @@ export const DecontaminationSteps = () => {
           </button>
         ))}
       </div>
-      <div className="text-center p-4 bg-gray-900/50 rounded animate-fade-in">
+      <div className="text-center p-4 bg-gray-900/50 rounded">
         <h4 className="text-xl font-bold text-blue-300">Step {currentStep + 1}: {steps[currentStep].title}</h4>
         <p className="text-gray-300 mt-2">{steps[currentStep].desc}</p>
       </div>
       <div className="flex justify-between mt-4">
-        <button 
+        <button
           onClick={() => setCurrentStep(Math.max(0, currentStep - 1))}
           className="px-4 py-2 bg-gray-600 rounded hover:bg-gray-500 disabled:opacity-50"
           disabled={currentStep === 0}
         >
           Previous
         </button>
-        <button 
+        <button
           onClick={() => setCurrentStep(Math.min(steps.length - 1, currentStep + 1))}
           className="px-4 py-2 bg-blue-600 rounded hover:bg-blue-500 disabled:opacity-50"
           disabled={currentStep === steps.length - 1}
@@ -138,12 +132,12 @@ export const DecontaminationSteps = () => {
 
 export const CountdownTimer = ({ hours = 24 }) => (
   <div className="my-4 p-4 bg-amber-900/20 border border-amber-500 rounded-lg text-center">
-    <p className="text-amber-300 text-sm mb-2">Most dangerous fallout period</p>
+    <p className="text-amber-300 text-sm mb-2">Minimum time to stay sheltered</p>
     <div className="text-4xl font-mono font-bold text-amber-400">
-      FIRST {hours} HOURS
+      AT LEAST {hours} HOURS
     </div>
     <p className="text-amber-200/70 text-sm mt-2">
-      Radiation decreases by ~90% after this period
+      Unless officials tell you otherwise or there is an immediate danger such as fire, a gas leak, or collapse
     </p>
   </div>
 )
@@ -154,23 +148,23 @@ export const CountdownTimer = ({ hours = 24 }) => (
   questions={[
     {
       id: "occurred",
-      text: "Has a detonation already occurred?",
+      text: "Has a nuclear explosion happened, or is one expected?",
       options: [
-        { label: "Yes, or imminent", next: "indoors" },
+        { label: "Yes, or warned it's coming", next: "indoors" },
         { label: "No, preparing in advance", result: "prepare" }
       ]
     },
     {
       id: "indoors",
-      text: "Are you indoors right now?",
+      text: "Are you inside a building right now?",
       options: [
         { label: "Yes, I'm inside", next: "exposed" },
-        { label: "No, I'm outside", result: "get-inside" }
+        { label: "No, outside or in a car", result: "get-inside" }
       ]
     },
     {
       id: "exposed",
-      text: "Were you exposed outdoors before getting inside?",
+      text: "Were you outside after fallout may have started falling?",
       options: [
         { label: "Yes, I was outside", result: "decontaminate" },
         { label: "No, I was already inside", result: "stay-sheltered" }
@@ -180,257 +174,325 @@ export const CountdownTimer = ({ hours = 24 }) => (
   results={[
     {
       id: "get-inside",
-      title: "Get Inside Immediately",
+      title: "Get Inside Now",
       steps: [
-        "Enter the nearest building NOW — any structure is better than outside",
-        "Go to the center of the building or basement",
-        "Close all doors and windows behind you",
-        "Remove and bag outer clothing before joining others"
+        "Get into the nearest sturdy building. Brick or concrete is best. A car is not a shelter.",
+        "Caught in the open during the blast? Take cover behind anything solid and lie face down, then go inside.",
+        "Go to the basement or the center of the building, away from windows, outer walls, and the roof",
+        "Take off your outer layer of clothing and bag it before joining others",
+        "Stay inside at least 24 hours unless officials say otherwise"
       ],
-      section: "GET INSIDE IMMEDIATELY",
+      section: "Get inside now",
       priority: "critical"
     },
     {
       id: "decontaminate",
-      title: "Decontaminate Now",
+      title: "Clean Up Now",
       steps: [
-        "Remove ALL outer clothing — this removes ~90% of contamination",
-        "Seal clothing in a plastic bag, set it aside",
-        "Shower with soap and water, head to toe",
-        "Use shampoo only — NO conditioner (it binds radioactive particles)"
+        "Take off your outer layer of clothing carefully. It can remove up to 90% of radioactive material.",
+        "Seal it in a plastic bag away from people and pets",
+        "Shower with warm water and lots of soap. Don't scald, scrub, or scratch your skin.",
+        "Shampoo or soap for hair, NO conditioner. Then blow your nose and wipe your eyelids and ears."
       ],
-      section: "IF YOU WERE OUTSIDE",
+      section: "Decontamination",
       priority: "critical"
     },
     {
       id: "stay-sheltered",
-      title: "Stay Sheltered and Seal the Space",
+      title: "Stay Sheltered",
       steps: [
-        "Move to the most interior room or basement",
-        "Close all windows, doors, and fireplace dampers",
-        "Turn off HVAC / ventilation systems",
-        "Seal vents and gaps with tape or wet towels"
+        "Move to the basement or the center of the building",
+        "Close windows, doors, and fireplace dampers. Turn off fans, AC, and forced-air heat.",
+        "Bring pets inside. Don't go out to collect family.",
+        "Stay at least 24 hours and listen to the radio for instructions"
       ],
-      section: "SEAL THE SPACE",
+      section: "Stay inside at least 24 hours",
       priority: "urgent"
     },
     {
       id: "prepare",
-      title: "Prepare Your Shelter Now",
+      title: "Prepare Now",
       steps: [
-        "Identify the best shelter location (basement or interior room)",
-        "Stock water, sealed food, radio, batteries, first aid kit",
-        "Learn the 7-10 rule: every 7x time increase = 10x radiation decrease",
-        "Read through this full guide while you have time"
+        "Pick the best shelter spot at home, work, and school: basement or the center of a large building",
+        "Stock water, sealed food, medications, a battery or hand-crank radio, spare clothes, and trash bags",
+        "Make a family communication plan with an out-of-town contact",
+        "Read this guide while you have time"
       ],
-      section: "Shelter Protection Factors",
+      section: "Prepare now",
       priority: "important"
     }
   ]}
 />
 
-<CriticalAlert>
-**YOU HAVE MINUTES TO ACT.** If you receive warning of a nuclear event, immediately execute these steps. Do not wait to gather belongings. Do not wait for others. Every second counts.
+<CriticalAlert title="GET INSIDE. STAY INSIDE. STAY TUNED.">
+After a nuclear explosion you will usually have **10 minutes or more** before fallout arrives. Use that time to get into the best shelter you can reach. Do not stop to gather belongings.
 </CriticalAlert>
 
 ---
 
-## 🚨 IMMEDIATE ACTIONS (First 10 Minutes)
+## Do This Now
 
-<TimelineBadge time="0-10 min" label="Critical Window" />
+<TimelineBadge time="First 10+ min" label="Get inside before fallout arrives" />
 
-### 1. GET INSIDE IMMEDIATELY
+### 1. Get inside now
 
-The single most important action. Any building is better than outside.
+Get into the nearest sturdy building. **Brick or concrete is best.** Any building is better than staying outside. **A car is not a shelter.**
+
+- **Outside when the blast happens?** Take cover behind anything solid and lie face down to protect exposed skin. When the blast wave has passed, get inside right away.
+- **Can't get inside right away?** Cover your nose and mouth with a mask, cloth, or towel.
+
+### 2. Go to the basement or the center of the building
+
+Put as many walls and floors as you can between you and the outside. Stay away from windows, doors, outside walls, and the roof. In a tall building, go to the center of a middle floor.
 
 <div className="grid md:grid-cols-2 gap-4 my-4">
   <div className="p-4 bg-green-900/20 border border-green-500 rounded-lg">
     <h4 className="text-green-400 font-bold flex items-center gap-2">
-      <Shield className="w-5 h-5" /> BEST SHELTER
+      <Shield className="w-5 h-5" /> BEST
     </h4>
     <ul className="mt-2 space-y-1 text-green-200">
-      <li>• Underground (basement, subway)</li>
-      <li>• Center of large concrete building</li>
-      <li>• Middle floors of high-rise</li>
+      <li>• Basement (deeper and more central is better)</li>
+      <li>• Center of a large brick or concrete building</li>
+      <li>• Center of the middle floors of a tall building</li>
+      <li>• Underground parking garage, subway, or tunnel</li>
     </ul>
   </div>
   <div className="p-4 bg-red-900/20 border border-red-500 rounded-lg">
     <h4 className="text-red-400 font-bold flex items-center gap-2">
-      <AlertTriangle className="w-5 h-5" /> AVOID
+      <AlertTriangle className="w-5 h-5" /> POOR
     </h4>
     <ul className="mt-2 space-y-1 text-red-200">
-      <li>• Near windows</li>
-      <li>• Exterior walls</li>
-      <li>• Top floors</li>
-      <li>• Vehicles (minimal protection)</li>
+      <li>• Vehicles</li>
+      <li>• Single-story wood house without a basement</li>
+      <li>• Rooms by windows or outside walls</li>
+      <li>• Top floor (fallout lands on the roof)</li>
     </ul>
   </div>
 </div>
 
 <ShelterDiagram />
 
-### 2. SEAL THE SPACE
+### 3. If you were outside, take off your outer clothing
 
-<div className="flex flex-wrap gap-2 my-3">
-  <span className="px-3 py-1 bg-blue-600 rounded-full text-sm">Close all windows</span>
-  <span className="px-3 py-1 bg-blue-600 rounded-full text-sm">Close all doors</span>
-  <span className="px-3 py-1 bg-blue-600 rounded-full text-sm">Turn off HVAC</span>
-  <span className="px-3 py-1 bg-blue-600 rounded-full text-sm">Close fireplace damper</span>
-  <span className="px-3 py-1 bg-blue-600 rounded-full text-sm">Seal vents with tape/wet cloth</span>
-</div>
+Do it **before** you join others. Taking off your outer layer can remove **up to 90%** of the radioactive material. Bag it, then wash. See Decontamination below.
 
-### 3. IF YOU WERE OUTSIDE
+### 4. Close up the building
 
-**Decontaminate immediately.** Do this BEFORE joining others inside.
+- Close and lock windows and doors
+- Close fireplace dampers
+- Turn off fans, air conditioners, and forced-air heating that pull in outside air
 
-<DecontaminationSteps />
+**You do not need to tape or seal the room.** Heavy materials and distance protect you from fallout; airtightness doesn't. Never delay getting to the basement or center to tape windows. (Sealing a room with plastic is for **chemical** releases, and that uses an above-ground room. See the Sealing a Room guide.)
 
----
-
-## ⏱️ THE CRITICAL FIRST 24 HOURS
+### 5. Stay inside at least 24 hours
 
 <CountdownTimer hours={24} />
 
-Fallout radiation intensity follows a predictable decay pattern:
+### 6. Stay tuned
 
-| Time After Event | Radiation Level |
+Use a battery or hand-crank radio, phone alerts, or TV, and follow official instructions. If you're told to evacuate, do it, and don't come back until officials say it's safe.
+
+<CriticalAlert title="DON'T GO OUT FOR FAMILY">
+Bring pets inside, but **do not go outside to collect family members.** Schools, daycares, hospitals, and nursing homes have their own shelter plans. Going out exposes you and them.
+</CriticalAlert>
+
+**Call 911** (or your local emergency number) for serious injuries, burns, fire, or someone not breathing. Networks may be jammed: keep trying for emergencies, and text family instead of calling.
+
+---
+
+## Where to Shelter: Protection Factors
+
+Fallout settles on the ground and on roofs, and its radiation passes through walls. The more concrete, brick, or earth and the more distance between you and the outside, the safer you are.
+
+The **Protection Factor (PF)** shows how much a spot cuts your dose. PF 10 means you get one-tenth of the dose you would get outside. FEMA counts **PF 10 or more** as adequate shelter. Values below are from FEMA's nuclear detonation planning guidance.
+
+<ProtectionMeter material="Outside" factor={1} />
+<ProtectionMeter material="1-story wood-frame house, main floor" factor={2.5} label="2-3" />
+<ProtectionMeter material="2-story brick-veneer house, main floor" factor={3} />
+<ProtectionMeter material="3-story brick/concrete building, middle floor" factor={7} />
+<ProtectionMeter material="1-story wood-frame house, basement" factor={10} />
+<ProtectionMeter material="Large building, top or ground floor" factor={10} label="about 10" />
+<ProtectionMeter material="2-story brick-veneer house, basement" factor={20} />
+<ProtectionMeter material="5-story brick/concrete building, middle floor" factor={20} />
+<ProtectionMeter material="3-story brick/concrete building, basement" factor={50} />
+<ProtectionMeter material="Large office/apartment building, center of middle floors" factor={75} label="50-100" />
+<ProtectionMeter material="5-story brick/concrete building, basement" factor={150} label="100-200" />
+<ProtectionMeter material="Large office/apartment building, underground" factor={200} />
+
+A **car** gives very little protection and is not an adequate shelter.
+
+**If your shelter is poor** (a car, or a wood house with no basement) and a much better building is within about 15 minutes, FEMA's planning guidance says to move there early, within roughly the first 30 minutes after the explosion, then stay put. If no better shelter is close, stay where you are, in the most central spot.
+
+---
+
+## How Fallout Decays: The 7-10 Rule
+
+Fallout is most dangerous right after it arrives. It gives off over half of its energy in the first hour, then drops fast. **Rule of thumb:** every time the time since the explosion multiplies by 7, the radiation level drops to about one-tenth.
+
+| Time after explosion | Radiation level (vs. 1 hour after) |
 |-----------------|-----------------|
 | 1 hour | 100% (most dangerous) |
-| 7 hours | ~10% |
-| 24 hours | ~1% |
-| 2 weeks | ~0.1% |
+| 7 hours | about 10% |
+| 2 days (49 hours) | about 1% |
+| 2 weeks | about 0.1% |
 
-**The "7-10 Rule":** For every 7-fold increase in time, radiation decreases by 10x.
-
----
-
-## 🏠 Shelter Protection Factors
-
-Different materials provide different levels of protection. The **Protection Factor (PF)** indicates how much radiation is reduced.
-
-<ProtectionMeter material="Open air" factor={1} />
-<ProtectionMeter material="Wood frame house" factor={2} />
-<ProtectionMeter material="Brick house" factor={10} />
-<ProtectionMeter material="Concrete building" factor={40} />
-<ProtectionMeter material="Basement (3ft earth)" factor={200} />
-<ProtectionMeter material="Underground shelter" factor={1000} />
+This is an estimate. Real levels depend on the weapon, the weather, and where fallout lands. Only officials with radiation meters can tell you an area is safe.
 
 ---
 
-## 💧 Water & Food Safety
+## If You Must Move or Go Outside
+
+Leave shelter early only for an immediate danger (fire, gas leak, collapse, a medical emergency) or when officials tell you to.
+
+1. Spend as little time outside as possible
+2. Cover your skin and hair; cover your nose and mouth with a mask or cloth
+3. Don't touch or pick up things outside
+4. Before going back in, take off your outer layer of clothing and shoes, bag them, and wash
+5. Wipe sealed containers you bring in with a damp cloth
+
+---
+
+## Decontamination: Cleaning Up
+
+Do this as soon as you get inside, before joining others. **Tap water is fine for washing** even if officials say not to drink it.
+
+<DecontaminationSteps />
+
+1. **Take off your outer layer** of clothing and shoes carefully, without shaking it. This can remove up to 90% of the radioactive material.
+2. **Bag it.** Seal clothing in a plastic bag or container, away from people and pets.
+3. **Shower** with warm water and lots of soap. **Do not scald, scrub, or scratch your skin**; broken skin lets contamination in. Keep cuts and scrapes covered.
+4. **Wash your hair** with shampoo or soap. **Do not use conditioner**; it makes radioactive material stick to hair.
+5. **No shower?** Wash hands, face, and uncovered skin at a sink. No sink? Use a moist wipe, clean wet cloth, or damp paper towel.
+6. **Gently blow your nose**, then wipe your eyelids, eyelashes, and ears.
+7. **Put on clean clothes** that were stored inside. If you have none, shake or brush off your clothes, put them back on, and rewash hands, face, and exposed skin.
+
+**Don't** use household cleaning wipes on skin, and **don't** rely on hand sanitizer: it does not remove radioactive material.
+
+**Helping others:** wear waterproof gloves and a dust mask if you have them, keep their cuts covered, then rewash your own hands, face, and exposed skin.
+
+---
+
+## Potassium Iodide (KI)
+
+- Take KI **only** if public health or emergency officials (or your doctor) tell you to.
+- KI protects **only the thyroid**, and only from radioactive iodine. It does not protect the rest of your body or from other radioactive materials. Getting inside protects you far more.
+- Infants, children, and pregnant or breastfeeding women benefit most. Adults over 40 should take it only when officials recommend it.
+- **Never take more than directed.** Too much can cause severe illness or death.
+- Table salt and iodine-rich foods are **not** substitutes.
+
+---
+
+## Food and Water
 
 <div className="my-4 p-4 bg-blue-900/20 border border-blue-500 rounded-lg">
   <h4 className="text-blue-400 font-bold flex items-center gap-2 mb-3">
-    <Droplets className="w-5 h-5" /> Water Guidelines
+    <Droplets className="w-5 h-5" /> What's safe
   </h4>
   <div className="space-y-2">
-    <div className="flex items-center gap-2">
+    <div className="flex items-start gap-2">
       <span className="text-green-400">✓</span>
-      <span>Sealed containers (bottles, cans) = SAFE</span>
+      <span>Food and drinks that were inside the building</span>
     </div>
-    <div className="flex items-center gap-2">
+    <div className="flex items-start gap-2">
       <span className="text-green-400">✓</span>
-      <span>Municipal water (pipes underground) = Usually SAFE</span>
+      <span>Sealed containers from outside, after wiping with a damp cloth (bag the cloth)</span>
     </div>
-    <div className="flex items-center gap-2">
-      <span className="text-red-400">✗</span>
-      <span>Open containers = CONTAMINATED</span>
+    <div className="flex items-start gap-2">
+      <span className="text-amber-400">~</span>
+      <span>Tap water: fine for washing; for drinking, follow official instructions</span>
     </div>
-    <div className="flex items-center gap-2">
+    <div className="flex items-start gap-2">
       <span className="text-red-400">✗</span>
-      <span>Well water = TEST FIRST</span>
+      <span>Garden produce, or food or water left uncovered outside, until officials say it's safe</span>
     </div>
   </div>
 </div>
 
-### Food Safety
-
-| Food Type | Status |
-|-----------|--------|
-| Sealed cans/packages | ✅ Safe (wash exterior) |
-| Refrigerator food | ✅ Safe if sealed |
-| Food in closed cabinets | ⚠️ Wash containers |
-| Open food | ❌ Discard |
-| Fresh produce (outdoors) | ❌ Discard |
+Never ration drinking water unless officials tell you to.
 
 ---
 
-## 📻 Information Sources
+## Pets
 
-Monitor these for official guidance:
+- Bring pets and service animals inside.
+- If a pet was outside after fallout arrived: wear gloves if you can, gently brush its coat, then wash it with shampoo or soap and water and rinse well. Wash your own hands and face afterward.
+- Sealed pet food is safe. Wipe containers before opening.
 
-1. **Emergency Alert System (EAS)** - TV/Radio
-2. **NOAA Weather Radio** - All hazards
-3. **Local emergency management**
-4. **FEMA** - Federal guidance
+---
+
+## Staying Informed
+
+- **AM/FM radio** is the most reliable source. Keep a battery or hand-crank radio and spare batteries.
+- **Wireless Emergency Alerts** on phones, **NOAA Weather Radio**, TV, and the internet if they work.
+- Officials will tell you where to go for contamination screening and medical care.
 
 <div className="my-4 p-4 bg-purple-900/20 border border-purple-500 rounded-lg">
   <span className="block text-purple-300">
-    <strong>Do NOT</strong> leave shelter to seek information. Use radio.
-    Leaving shelter increases exposure.
+    <strong>Do not</strong> leave shelter to look for information. Use the radio.
   </span>
 </div>
 
 ---
 
-## 🚪 When to Leave Shelter
+## Special Situations
 
-<CriticalAlert>
-Do NOT leave until official all-clear OR at least 24 hours have passed and you must leave for critical supplies.
-</CriticalAlert>
-
-### If You Must Leave Early
-
-1. Minimize time outside (minutes, not hours)
-2. Cover all skin
-3. Wear mask/cover nose and mouth
-4. Do NOT touch anything unnecessarily
-5. Decontaminate immediately upon return
-6. Do not bring outside items inside
+- **Children:** keep them in the most central spot. Help them wash so they don't rub their eyes or mouth. Keep them busy and reassured.
+- **Older adults, people with disabilities or medical needs:** move them to the best spot first. Keep medications, glasses, hearing aids, and spare batteries for medical devices with you.
+- **Sick or hurt:** call 911 for life-threatening emergencies. Otherwise follow official instructions on where to get care.
 
 ---
 
-## 📋 Quick Action Checklist
+## Signs of Radiation Sickness
+
+Only a large dose in a short time causes radiation sickness. Early signs can start within minutes to days: **nausea, vomiting, headache, and diarrhea.** Skin redness or burns may appear within hours or be delayed for days. People often feel better for a while before getting sick again.
+
+Seek medical care as soon as officials say it is safe to travel. Call 911 for emergencies.
+
+---
+
+## Prepare Now
+
+- Pick the best shelter spot at home, work, and school (basement or the center of a large building)
+- Learn the shelter plans of your children's schools, care facilities, and your workplace
+- Kit: water (1 gallon per person per day for several days), sealed food, medications, a battery or hand-crank radio, spare batteries, flashlight, first aid kit, a spare set of clothes for each person, and trash bags for contaminated clothing
+- Make a family communication plan with an out-of-town contact and a meeting place
+- Make sure your phone receives Wireless Emergency Alerts, and sign up for local alerts
+- Near a nuclear power plant? Ask your local emergency management office about its plan and KI
+
+---
+
+## Quick Action Checklist
 
 ```
-□ GET INSIDE (any building, NOW)
-□ Go to interior room / basement
-□ CLOSE all windows and doors
-□ Turn OFF ventilation / HVAC
-□ SEAL gaps (tape, wet towels)
-□ DECONTAMINATE if exposed outside
-□ MONITOR radio for updates
-□ STAY INSIDE minimum 24 hours
-□ RATION supplies if needed
+□ GET INSIDE a sturdy building (not a car)
+□ Go to the BASEMENT or CENTER, away from windows and roof
+□ Outer clothing OFF and bagged if you were outside
+□ WASH: warm water, soap, shampoo, NO conditioner
+□ Close windows, doors, dampers; ventilation OFF
+□ Pets inside; don't go out for family
+□ STAY INSIDE at least 24 hours
+□ LISTEN to the radio for official instructions
+□ KI only if officials say so
 ```
 
----
-
-## Additional Resources
-
-<div className="grid md:grid-cols-2 gap-4 my-4">
-  <a href="#radiation-safety" className="block p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
-    <h4 className="font-bold text-blue-400">Understanding Radiation</h4>
-    <span className="block text-sm text-gray-400">Time, distance, shielding principles</span>
-  </a>
-  <a href="#decontamination" className="block p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
-    <h4 className="font-bold text-blue-400">Full Decontamination Guide</h4>
-    <span className="block text-sm text-gray-400">Detailed step-by-step procedures</span>
-  </a>
-  <a href="#shelter-improvement" className="block p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
-    <h4 className="font-bold text-blue-400">Improving Your Shelter</h4>
-    <span className="block text-sm text-gray-400">How to increase protection factor</span>
-  </a>
-  <a href="#long-term" className="block p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
-    <h4 className="font-bold text-blue-400">Long-Term Survival</h4>
-    <span className="block text-sm text-gray-400">Beyond the first 24 hours</span>
-  </a>
-</div>
+**Related guides:** Radiation Safety Fundamentals, Decontamination Basics, Sealing a Room, Shelter-in-Place Procedures.
 
 ---
+
+## Sources
+
+- [Ready.gov: Nuclear Explosion](https://www.ready.gov/nuclear-explosion)
+- [Ready.gov: Radiation Emergencies](https://www.ready.gov/radiation)
+- [CDC: What to Do: Get Inside](https://www.cdc.gov/radiation-emergencies/response/get-inside.html)
+- [CDC: How to Self-Decontaminate after a Radiation Emergency](https://www.cdc.gov/radiation-emergencies/prevention/self-decontaminate.html)
+- [CDC: Decontamination for Yourself and Others](https://www.cdc.gov/radiation-emergencies/infographic/decontamination.html)
+- [CDC: Potassium Iodide (KI)](https://www.cdc.gov/radiation-emergencies/treatment/potassium-iodide.html)
+- [CDC: Acute Radiation Syndrome](https://www.cdc.gov/radiation-emergencies/signs-symptoms/acute-radiation-syndrome.html)
+- [FEMA: Planning Guidance for Response to a Nuclear Detonation, 3rd ed. (2022)](https://www.fema.gov/sites/default/files/documents/fema_nuc-detonation-planning-guide.pdf)
+- [HHS REMM: Nuclear Detonation](https://remm.hhs.gov/nuclearexplosion.htm)
 
 <div className="text-center text-gray-500 text-sm mt-8">
-  Last updated: January 2026 | License: CC-BY-SA 4.0
-  
+  Last reviewed: October 2026 | License: CC-BY-SA 4.0
+
   **This is general preparedness information. Follow official guidance during any actual emergency.**
 </div>

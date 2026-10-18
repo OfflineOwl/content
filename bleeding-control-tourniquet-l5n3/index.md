@@ -1,375 +1,266 @@
 # Bleeding Control & Tourniquet Use
 
-> **Critical Skill** - Severe bleeding can kill in minutes. Knowing how to stop it is one of the most important life-saving skills you can have. This guide covers techniques from simple pressure to tourniquet application.
+> A person can bleed to death in as little as 5 minutes, often before help arrives. Firm pressure, wound packing, and a tourniquet are the skills that stop it.
 
-## Understanding Blood Loss
+## Do this now
 
-The average adult has about 10 pints (5 liters) of blood.
+1. **Make sure you're safe.** Put on gloves if you have them.
+2. **Call 911** (or your local emergency number, such as 112 or 999), or point at one person and tell them to call. Put the phone on speaker.
+3. **Find the bleeding.** Open or cut away clothing so you can see the wound.
+4. **Arm or leg bleeding that's life-threatening?** Apply a **tourniquet** 2–3 inches (5–7 cm) above the wound, not on a joint. Tighten until the bleeding stops. Note the time.
+5. **No tourniquet, or the wound is on the neck, armpit, groin, or body?** **Press hard** directly on the wound with both hands, using a cloth or gauze if you have one.
+6. **Deep wound in the neck, armpit, or groin?** **Pack it:** stuff gauze or clean cloth tightly into the wound until it's full, then press hard on top.
+7. **Don't let up.** Keep pressure until help takes over. Don't remove the tourniquet or the first dressing.
+8. **Keep them lying down and warm.**
 
-| Blood Loss | Effect |
-|------------|--------|
-| 15% (1.5 pints) | Minimal symptoms |
-| 15-30% | Increased heart rate, anxiety |
-| 30-40% | Significant symptoms, confusion |
-| 40%+ | Life-threatening, unconsciousness |
+### Is it life-threatening?
 
-**Severe bleeding can cause death in 3-5 minutes.**
-
-## Types of Bleeding
-
-### Arterial Bleeding
-- Bright red blood
-- Spurts with each heartbeat
-- Most dangerous
-- Requires immediate action
-
-### Venous Bleeding
-- Dark red blood
-- Steady flow
-- Serious but slightly slower
-- Still requires prompt treatment
-
-### Capillary Bleeding
-- Oozing blood
-- Slowest type
-- Usually stops on its own
-- Clean and bandage
+Treat bleeding as life-threatening if:
+- Blood is **spurting** or **flowing steadily** out of the wound
+- Blood is **pooling** on the ground
+- Clothing or bandages are **soaking through**
+- Part of an arm or leg is **missing** (amputation)
+- The person is **confused, drowsy, or unresponsive** and bleeding
 
 ---
 
-## The Bleeding Control Sequence
+## Step 1: Direct Pressure
 
-Follow this sequence—move to the next step if the current one isn't working:
+**Works for most bleeding, and anywhere on the body.**
 
-### Step 1: Direct Pressure
+1. Put a clean cloth or gauze over the wound. If you have nothing, use your gloved hand.
+2. **Push down hard with both hands**, directly on the bleeding spot. Kneeling over the person with straight arms makes it easier to keep pushing hard.
+3. **Keep steady pressure.** Don't lift it to check; that lets the bleeding restart.
+4. If blood soaks through, **don't remove the first pad.** Press harder; you can add one more pad on top.
+5. **Hold until help takes over.** For a minor wound, hold until the bleeding stops; if it hasn't stopped after 10 minutes of firm pressure, call 911.
 
-**First choice for most bleeding:**
-
-1. Apply firm, direct pressure with:
-   - Sterile gauze (preferred)
-   - Clean cloth
-   - Your gloved hand (if nothing else)
-
-2. Press HARD—harder than you think
-   - Use palm of hand
-   - Apply body weight if needed
-   - Pain means they're alive
-
-3. Maintain pressure for at least 10 minutes
-   - Do NOT peek to check
-   - Releasing pressure restarts clotting
-
-4. If blood soaks through:
-   - Add more material on top
-   - Do NOT remove original dressing
-   - Increase pressure
-
-### Step 2: Wound Packing
-
-**For deep wounds where pressure isn't enough:**
-
-1. Get gauze or clean cloth
-2. Push material directly INTO the wound
-3. Pack tightly, filling the entire wound cavity
-4. Apply direct pressure on top
-5. Hold for minimum 3 minutes
-
-**With hemostatic gauze (QuikClot, Celox):**
-- Even more effective
-- Pack into wound as above
-- Follow product instructions
-- Still requires pressure
-
-### Step 3: Pressure Points
-
-**When direct pressure alone isn't controlling bleeding:**
-
-Apply pressure to arterial pressure points between wound and heart:
-
-| Location | Pressure Point |
-|----------|---------------|
-| Arm/Hand | Brachial artery (inside upper arm) |
-| Leg/Foot | Femoral artery (groin crease) |
-| Neck | Carotid artery (carefully) |
-
-**Technique:**
-- Use fingers or heel of hand
-- Press artery against bone
-- Maintain until bleeding controlled
-- Combine with direct pressure on wound
-
-### Step 4: Tourniquet
-
-**When other methods fail, or for life-threatening limb bleeding:**
+Pressure on the wound is what works. **Don't rely on "pressure points" or raising the limb** instead of pressing directly on the wound; there's little or no evidence they help.
 
 ---
 
-## Tourniquet Use
+## Step 2: Tourniquet (Arm or Leg)
 
-### When to Use a Tourniquet
+**Use a tourniquet right away for life-threatening bleeding from an arm or leg.** It's not a last resort. Tourniquets save lives, and the risk to the limb is low compared with the risk of bleeding to death.
 
-**Use immediately for:**
-- Amputation
-- Severe arterial bleeding (bright red, spurting)
-- Bleeding that won't stop with pressure
-- Multiple casualties (can't maintain pressure)
-- Mass casualty events
-- Combat/tactical situations
+### Use one when
 
-**Important:** Modern medical consensus—tourniquets save lives. Do not hesitate to use one for severe limb bleeding.
+- Bleeding from an arm or leg is spurting, pooling, or soaking through
+- There's an amputation
+- Pressure isn't stopping the bleeding
+- You can't keep pressure on (you're alone with several injured people, or you need to move)
 
-### Commercial Tourniquets
+### Commercial tourniquets
 
-**Recommended models:**
-- CAT (Combat Application Tourniquet)
-- SOFTT-W (Special Operations Forces Tactical Tourniquet-Wide)
-- SAM XT
+A commercial tourniquet with a windlass (a rod you twist to tighten) works better than an improvised one. Common models include the **CAT** (Combat Application Tourniquet), **SOF-T Wide**, and **SAM XT**. Buy from a reputable medical supplier.
 
-**Do NOT use:**
-- Elastic/rubber band tourniquets
-- Narrow belts or cords
-- Anything less than 1.5" wide
+### How to apply a windlass tourniquet
 
-### How to Apply a Tourniquet (CAT)
+1. **Place it 2–3 inches (5–7 cm) above the wound,** between the wound and the heart. **Not on a joint** (elbow or knee). If the wound is just below a joint, go above the joint. It can go over clothing; move anything bulky out of the pocket underneath.
+2. **Pull the strap as tight as you can** and fasten it.
+3. **Twist the windlass until the bleeding stops.** It will hurt, often a lot. That's expected; keep going.
+4. **Lock the windlass** in its clip and secure it so it can't unwind.
+5. **Note the time.** Write it on the tourniquet's label, or on the person's skin with a marker. Tell responders.
 
-1. **Position**
-   - Place 2-3 inches above wound
-   - NOT on a joint
-   - On bare skin if possible (or thin clothing)
-   - "High and tight" for life-threatening bleeding
+### If bleeding doesn't stop
 
-2. **Route the strap**
-   - Pull band through buckle
-   - Pull tight (should hurt!)
-   - Secure with velcro
+- Tighten the windlass more.
+- If it still bleeds, **put a second tourniquet just above the first** (closer to the heart) and tighten it.
 
-3. **Twist the windlass**
-   - Turn rod until bleeding STOPS
-   - Usually 2-4 full turns
-   - Check: bleeding must stop completely
+### After it's on
 
-4. **Secure the windlass**
-   - Lock rod in windlass holder
-   - Secure with strap
-   - Should not be able to spin
+- **Don't loosen or remove it.** Only trained medical staff should take it off. Loosening it lets the bleeding start again.
+- **Leave it uncovered** where responders can see it.
+- Keep checking that the bleeding hasn't restarted. Tighten more if it has.
+- Keep the person warm and lying down. Watch for shock.
+- **If help is hours away,** still leave it on. Studies find few complications when a tourniquet is on for under 2 hours; after that, the risk to the limb grows, which is why getting the person to medical care quickly matters.
 
-5. **Mark the time**
-   - Write time of application on patient
-   - Forehead or tourniquet itself
-   - Critical for medical personnel
+### Improvised tourniquet
 
-### Improvised Tourniquet
+If you don't have a commercial tourniquet and pressure isn't working, an improvised one can work, though commercial tourniquets are more reliable.
 
-**Only when commercial tourniquet unavailable:**
+- **Band:** a strip of cloth **at least 2 inches (5 cm) wide** (a folded triangular bandage, a shirt sleeve, a scarf). **Not** a cord, wire, rope, zip tie, or narrow belt; they cut into the limb and don't compress well.
+- **Windlass:** a strong stick, rod, large screwdriver, or similar.
 
-Materials needed:
-- Wide material (2"+ wide): Belt, tie, shirt sleeve, bandana
-- Windlass: Stick, pen, screwdriver, rod
+1. Wrap the band around the limb 2–3 inches above the wound and tie a half knot.
+2. Place the windlass on the knot and tie a full knot over it.
+3. Twist the windlass until the bleeding stops.
+4. Tie the windlass in place so it can't unwind. Note the time.
 
-Procedure:
-1. Place band 2-3" above wound
-2. Tie a half-knot
-3. Place windlass on top of half-knot
-4. Tie full knot over windlass
-5. Twist windlass until bleeding stops
-6. Secure windlass (tie in place)
-
-**Warning:** Improvised tourniquets are less effective than commercial. Use proper tourniquet if available.
-
-### Tourniquet Myths and Facts
+### Tourniquet myths
 
 | Myth | Fact |
 |------|------|
-| "Tourniquets cause amputation" | Rarely—bleeding out causes death |
-| "Only use as last resort" | Use early for severe bleeding |
-| "Loosen periodically" | NO—leave in place once applied |
-| "Never use on forearm/lower leg" | Can be used—may need two |
-| "Causes permanent damage in minutes" | Safe for at least 2 hours |
-
-### Second Tourniquet
-
-Apply a second tourniquet if:
-- First doesn't stop bleeding
-- Large limb (thigh)
-- Place just above first tourniquet
+| "Tourniquets cause amputations" | In a large study of combat casualties, no limbs were lost because of tourniquets. Bleeding to death is the bigger risk. |
+| "Use one only as a last resort" | Use one early for life-threatening arm or leg bleeding. |
+| "Loosen it every so often" | No. Loosening lets blood loss restart. Leave it on. |
+| "It shouldn't hurt" | A correctly tightened tourniquet is very painful. |
+| "It won't work on the forearm or lower leg" | It can. Place it above the wound, not on a joint, and add a second one if needed. |
 
 ---
 
-## Bleeding From Specific Areas
+## Step 3: Wound Packing
 
-### Scalp
+**For deep wounds where you can't use a tourniquet** (the neck, armpit, or groin) or a large wound on an arm or leg when you have no tourniquet.
 
-- Bleeds heavily but rarely life-threatening
-- Apply firm direct pressure
-- May need to hold wound edges together
-- Head wounds look worse than they are
+1. **Find where the blood is coming from**, at the bottom of the wound.
+2. **Push gauze or clean cloth directly into the wound** onto the bleeding spot with your fingers.
+3. **Keep feeding it in** and pack it as tightly as you can until the wound is completely full.
+4. **Press hard on top with both hands** and **keep pressing until help arrives.** Hemostatic gauze (QuikClot, Celox) helps blood clot; use it for packing if you have it, and follow the package directions.
+5. If blood soaks through, keep pressing. Don't pull the packing out.
+
+Packing is for wounds of the arms, legs, neck, armpits, and groin. For chest and belly wounds, see below.
+
+---
+
+## Special Wounds
 
 ### Neck
 
-- Potentially life-threatening
-- Apply direct pressure
-- Pack wound if possible
-- May need pressure on carotid (be careful)
-- Get professional help immediately
+- Life-threatening. Press firmly on the wound itself with gauze or cloth, and pack it if it's deep.
+- **Never wrap anything around the neck.**
+- Call 911.
 
 ### Chest
 
-- Do NOT remove impaled objects
-- Stabilize object in place
-- Cover open chest wounds with:
-  - Chest seal (commercial)
-  - Plastic taped on 3 sides
-  - Allows air out, prevents air in
+- **Don't remove an object stuck in the chest.**
+- Call 911. An open chest wound is a medical emergency.
+- **Don't seal it airtight.** Leave it open to the air, or cover it with a clean, dry cloth or gauze that lets air escape. A **vented chest seal** is also fine if you have one.
+- If breathing gets worse after anything is put on the wound, loosen or remove it.
+- Let the person sit in whatever position helps them breathe.
 
-### Abdomen
+### Belly (abdomen)
 
-- Cover wound with moist, clean dressing
-- Do NOT push organs back in
-- Cover exposed organs with clean, moist material
-- Position knees up to reduce tension
+- **Don't push organs back in.**
+- Cover any exposed organs with a clean, moist cloth (use clean water), then a dry cover.
+- Have them lie on their back with knees bent if that's comfortable.
+- Give nothing to eat or drink. Call 911.
 
-### Junctional Areas (Groin, Armpit, Neck)
+### Impaled objects (anywhere)
 
-- Cannot tourniquet
-- Pack wound firmly
-- Apply maximum direct pressure
-- May need two hands
-- Junctional hemostatic devices exist
+- **Leave it in.** Removing it can cause much worse bleeding.
+- Pad around it with bulky cloth to keep it from moving, and press around (not on) it.
+
+### Scalp and face
+
+- Scalp wounds bleed heavily but are rarely life-threatening.
+- Press firmly with gauze. Be gentle if the skull might be broken.
+
+### Nosebleed
+
+- Sit up with the head tilted slightly **forward** (not back), and pinch the soft part of the nose firmly for 10 to 15 minutes without letting go.
+- Get care if it doesn't stop after 15 minutes of steady pinching, the person feels lightheaded, it followed a hard blow to the head or face, or they take blood thinners.
 
 ---
 
 ## Internal Bleeding
 
-### Signs of Internal Bleeding
+You can't see it and can't stop it with first aid. Suspect it after a crash, fall, blow to the body, or crush injury.
 
-- Bruising without apparent cause
-- Rigid, swollen abdomen
-- Blood in vomit, stool, or urine
-- Shock symptoms without visible bleeding
-- Pain or tenderness
-- History of significant trauma
+**Signs:**
+- Swollen, firm, or tender belly
+- Large bruises on the chest, belly, or back
+- Vomiting or coughing up blood, or blood in stool or urine
+- Signs of shock with no visible bleeding
 
-### Treatment
-
-- You cannot stop internal bleeding
-- Position for shock (legs elevated if no spinal injury)
-- Keep warm
-- Monitor vital signs
-- Get professional help ASAP
-- Prepare for CPR if needed
+**What to do:**
+1. Call 911. The person needs hospital care urgently.
+2. Have them lie down and keep them still and warm.
+3. Give nothing to eat or drink.
+4. Watch their breathing. Start CPR if they become unresponsive and stop breathing normally.
 
 ---
 
-## Post-Bleeding Control
+## Shock
 
-### After Stopping Bleeding
+Heavy blood loss leads to shock: the body can't get enough blood to the organs.
 
-1. **Do NOT remove original dressing**
-   - Add more on top if needed
-   - Removal restarts bleeding
+**Signs:** pale, cold, clammy skin; fast, weak pulse; fast breathing; thirst; confusion, anxiety, or drowsiness.
 
-2. **Immobilize the injured area**
-   - Movement can restart bleeding
-   - Splint if fracture suspected
-
-3. **Treat for shock**
-   - Lay patient down
-   - Elevate legs if appropriate
-   - Keep warm
-   - Reassure
-
-4. **Monitor continuously**
-   - Watch for rebleeding
-   - Check circulation below tourniquet
-   - Document time and treatments
-
-### Tourniquet Care After Application
-
-- **Do NOT remove** once applied
-- Check that bleeding has stopped
-- Note time of application
-- Monitor patient for shock
-- Reassess every 15 minutes
-- Only medical professionals should remove
+**What to do:**
+1. Stop the bleeding first. Call 911.
+2. Have them lie flat on their back. If they're vomiting or you have to leave them, roll them onto their side.
+3. Keep them warm: a blanket under and over them, out of wind and wet.
+4. Give nothing to eat or drink.
+5. Reassure them and stay with them until help arrives.
 
 ---
 
-## Training Recommendations
+## Children
 
-Hands-on training is essential:
+- Use the same steps: firm pressure, packing, and a tourniquet 2–3 inches above the wound (not on a joint) for life-threatening arm or leg bleeding.
+- On a very small arm or leg, a commercial tourniquet may not tighten enough to stop the bleeding. If so, use hard direct pressure and packing.
+- Children have less blood to lose. Act fast.
 
-- **Stop the Bleed** - Free national campaign
-- **First Aid/CPR courses** - Red Cross, AHA
-- **Tactical Combat Casualty Care (TCCC)** - For advanced training
-- **EMT basic course** - Comprehensive training
+---
 
-Practice regularly:
-- Apply tourniquet to yourself
-- Apply to training arm
-- Practice under pressure
-- Include family members
+## Training
+
+Hands-on practice makes these skills work under stress.
+
+- **Stop the Bleed:** a short course from the American College of Surgeons, often free (stopthebleed.org).
+- **First aid and CPR courses:** American Red Cross, American Heart Association, or a local equivalent.
+
+Practice putting a tourniquet on your own arm and leg with either hand, and on family members.
 
 ---
 
 ## Bleeding Control Kit
 
-### Essential Items
-
-- [ ] Tourniquet (CAT or SOFTT-W) x2
+**Essentials:**
+- [ ] Commercial windlass tourniquet x2 (CAT, SOF-T Wide, or SAM XT, from a reputable source)
 - [ ] Hemostatic gauze (QuikClot or Celox)
-- [ ] Compressed gauze (multiple)
-- [ ] Israeli bandage (emergency bandage)
+- [ ] Compressed gauze (several)
+- [ ] Pressure bandage (such as an "Israeli" emergency bandage)
 - [ ] Nitrile gloves
-- [ ] Permanent marker (for time)
+- [ ] Permanent marker (to write the time)
 - [ ] Trauma shears
 
-### Optional Advanced Items
-
-- [ ] Chest seals (pair)
-- [ ] Nasopharyngeal airway
+**Extras (with training):**
+- [ ] Vented chest seals (pair)
 - [ ] SAM splint
-- [ ] Mylar blanket
-- [ ] Junctional tourniquet
+- [ ] Emergency (mylar) blanket
+
+Keep one kit at home and one in the car. Replace hemostatic gauze when it expires.
 
 ---
 
-## Quick Reference Card
+## Quick Reference
 
 ```
-BLEEDING CONTROL STEPS
+LIFE-THREATENING BLEEDING
 
-1. DIRECT PRESSURE
-   - Press HARD for 10 minutes
-   - Don't peek
-   - Add material, don't remove
-
-2. WOUND PACKING
-   - Pack gauze INTO wound
-   - Fill entire cavity
-   - Pressure on top
-
-3. TOURNIQUET (if needed)
-   - 2-3" above wound
-   - Pull tight
-   - Twist until bleeding STOPS
-   - Note the TIME
-
-TOURNIQUET RULES:
-✓ High and tight
-✓ On bare skin
-✓ Twist until bleeding stops completely
-✓ NEVER loosen or remove
-✓ Write time on patient
-
-IF BLEEDING DOESN'T STOP:
-- Add second tourniquet above first
-- Check tightness
-- Reposition higher
+1. CALL 911 (or send someone)
+2. FIND the bleeding (expose the wound)
+3. ARM OR LEG?
+   TOURNIQUET 2-3" above the wound, not on a joint
+   Twist until bleeding STOPS. Lock it. Write the TIME.
+   Still bleeding? Add a 2nd tourniquet above the 1st
+4. NECK, ARMPIT, GROIN, OR NO TOURNIQUET?
+   PACK the wound tight, then PRESS HARD
+5. KEEP PRESSURE until help takes over
+   Never loosen or remove a tourniquet
+   Don't remove the first dressing
+6. KEEP THEM WARM and lying down
 ```
 
 ---
 
-*Last updated: January 2026*
+## Sources
+
+- [American College of Surgeons: Stop the Bleed (lay public course slides)](https://stopthebleed.org/media/qk5jgpgs/lay-public-stop-the-bleed-presentation-pdf.pdf)
+- [American College of Surgeons: National Stop the Bleed Month 2025](https://www.facs.org/media-center/press-releases/2025/may-is-national-stop-the-bleed-month-learn-how-to-save-a-life-with-three-simple-actions/)
+- [Stop the Bleed: FAQ](https://www.stopthebleed.org/about/faq/)
+- [2024 American Heart Association and American Red Cross Guidelines for First Aid](https://www.ahajournals.org/doi/10.1161/CIR.0000000000001281)
+- [American Red Cross: Life-Threatening External Bleeding](https://www.redcross.org/take-a-class/resources/learn-first-aid/bleeding-life-threatening-external)
+- [American Red Cross: Nosebleeds](https://www.redcross.org/take-a-class/resources/learn-first-aid/nosebleeds)
+- [American Red Cross: Shock](https://www.redcross.org/take-a-class/resources/learn-first-aid/shock)
+- [European Resuscitation Council Guidelines 2025: First Aid](https://doi.org/10.1016/j.resuscitation.2025.110752)
+- [MedlinePlus: Cuts and Puncture Wounds](https://medlineplus.gov/ency/article/000043.htm)
+- [Kragh JF Jr et al. Practical use of emergency tourniquets to stop bleeding in major limb trauma. Journal of Trauma, 2008](https://pubmed.ncbi.nlm.nih.gov/18376170/)
+- [Joarder M et al. Impact of time and distance on outcomes following tourniquet use in civilian and military settings: a scoping review. Injury, 2023](https://pubmed.ncbi.nlm.nih.gov/36697284/)
+
+Last reviewed: October 2026
+
+*This guide doesn't replace hands-on Stop the Bleed or first aid training, or professional medical care.*
+
 *License: CC-BY-SA 4.0*
-
-**Disclaimer:** This guide is for educational purposes. Seek proper hands-on training. This information is not a substitute for professional medical care.

@@ -125,181 +125,280 @@
       color: var(--text-muted);
       font-size: 0.9rem;
     }
+  
+    .now-box {
+      background: rgba(239, 68, 68, 0.12);
+      border: 3px solid var(--accent-red);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .now-box h2 { margin-top: 0; border-bottom: none; color: var(--accent-red); }
+
+    .info-box {
+      background: rgba(59, 130, 246, 0.1);
+      border: 2px solid var(--accent-blue);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+
+    .checklist { list-style: none; margin-left: 0; }
+    .checklist li { position: relative; padding-left: 2rem; margin-bottom: 0.5rem; }
+    .checklist li::before { content: "\2610"; position: absolute; left: 0; color: var(--accent-blue); }
+
+    a { color: var(--accent-blue); }
   </style>
 </head>
 <body>
 
 <h1>Extreme Heat Survival</h1>
-
 <blockquote>
-  <strong>Heat Kills Silently</strong> - Extreme heat causes more deaths than any other weather event. Understanding heat illness and how to stay cool without AC can save lives.
+  <strong>Heat kills more people than any other weather hazard in the US.</strong> Heat stroke can push body temperature to 106°F or higher within 10 to 15 minutes. Know the signs, cool people fast, and check on anyone at higher risk.
 </blockquote>
+<div class="now-box">
 
-<h2>Understanding Heat Danger</h2>
+<h2>Do this now</h2>
+<p><strong>Heat stroke is a medical emergency.</strong> Suspect it if someone in the heat has a <strong>very high body temperature (103°F / 39.4°C or higher), is confused or acting strangely, or passes out</strong>. Their skin may be hot and red, and it can be dry or sweaty.</p>
+<ol>
+<li><strong>Call 911</strong> (or your local emergency number).</li>
+<li><strong>Move them somewhere cooler</strong>, such as shade or an air-conditioned room, and remove extra clothing.</li>
+<li><strong>Cool them immediately, while you wait for help.</strong> The fastest way is to put their body, from the neck down, in cool or cold water (a tub, kiddie pool, or tarp filled with water) for about 15 minutes or until they're alert again. Support their head above the water and stay with them.</li>
+<li><strong>If you can't immerse them,</strong> use a cold shower or hose, soak sheets or towels in ice water and cover them, or wet their skin and fan them. Add ice packs to the neck, armpits, and groin.</li>
+<li><strong>Don't give them anything to drink</strong>, and don't give aspirin or acetaminophen (Tylenol). If they're unconscious but breathing, lay them on their side. If they stop breathing, start CPR.</li>
+</ol>
+<p><strong>Heat exhaustion</strong> (heavy sweating; cold, pale, clammy skin; fast, weak pulse; nausea; dizziness; weakness): move to a cool place, loosen clothes, apply cool wet cloths or take a cool bath, and sip water. <strong>Get medical help right away if they vomit, get worse, become confused, or don't improve within 1 hour.</strong></p>
+</div>
 
-<h3>Heat Index</h3>
 
-<p>Combines temperature and humidity to show how hot it feels.</p>
-
-<table>
-  <thead>
-    <tr><th>Heat Index</th><th>Risk Level</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>80-90°F</td><td>Caution</td></tr>
-    <tr><td>91-103°F</td><td>Extreme Caution</td></tr>
-    <tr><td>103-124°F</td><td>Danger</td></tr>
-    <tr><td>125°F+</td><td>Extreme Danger</td></tr>
-  </tbody>
-</table>
-
-<h3>Who's at Risk</h3>
-<ul>
-  <li>Elderly (65+)</li>
-  <li>Infants and young children</li>
-  <li>People with chronic conditions</li>
-  <li>Those without AC</li>
-  <li>Outdoor workers</li>
-  <li>Athletes</li>
-</ul>
-
-<h2>Heat Illness Progression</h2>
-
+<h2>Heat Exhaustion vs. Heat Stroke</h2>
 <div class="illness-stages">
   <div class="stage early">
     <h4>Heat Cramps</h4>
     <p><em>Early warning</em></p>
     <ul>
-      <li>Muscle cramps</li>
-      <li>Heavy sweating</li>
+      <li>Painful muscle cramps or spasms</li>
+      <li>Heavy sweating during hard work or exercise</li>
     </ul>
+    <p>Stop, cool down, drink water or a sports drink.</p>
   </div>
-  
   <div class="stage serious">
     <h4>Heat Exhaustion</h4>
-    <p><em>Serious</em></p>
+    <p><em>Serious. Can turn into heat stroke.</em></p>
     <ul>
       <li>Heavy sweating</li>
       <li>Cold, pale, clammy skin</li>
-      <li>Weak pulse</li>
-      <li>Nausea, vomiting</li>
-      <li>Weakness, fatigue</li>
+      <li>Fast, weak pulse</li>
+      <li>Nausea or vomiting, muscle cramps</li>
+      <li>Tiredness or weakness, dizziness, headache, fainting</li>
+      <li>Alert, but may feel faint</li>
     </ul>
+    <p>Cool down, sip water, rest. Get help if vomiting, worsening, confused, or not better in 1 hour.</p>
   </div>
-  
   <div class="stage emergency">
     <h4>Heat Stroke</h4>
-    <p><em>EMERGENCY</em></p>
+    <p><em>EMERGENCY: call 911</em></p>
     <ul>
-      <li>High body temp (103°F+)</li>
-      <li>Hot, red, dry skin</li>
-      <li>Rapid pulse</li>
-      <li>Confusion</li>
-      <li>Loss of consciousness</li>
+      <li>Body temperature 103°F (39.4°C) or higher</li>
+      <li>Hot, red skin that can be dry <strong>or sweaty</strong></li>
+      <li>Fast, strong pulse</li>
+      <li>Confusion, slurred speech, strange behavior, seizures, or unconsciousness</li>
+      <li>Headache, dizziness, nausea</li>
     </ul>
+    <p>Call 911. Cool them fast. Nothing to drink.</p>
   </div>
 </div>
+<p><strong>Sweating doesn't rule out heat stroke.</strong> Confusion or other changes in behavior are the key warning sign. When in doubt, treat it as heat stroke.</p>
 
-<h2>Staying Cool Without AC</h2>
+<h2>First Aid for Heat Illness</h2>
 
-<h3>Body Cooling</h3>
-<ul>
-  <li>Wet cloths on pulse points (wrists, neck, ankles)</li>
-  <li>Cold water on skin</li>
-  <li>Misting with spray bottle</li>
-  <li>Cool (not cold) shower</li>
-  <li>Wet hair and let evaporate</li>
-</ul>
-
-<h3>Environment</h3>
-<ul>
-  <li>Close blinds/curtains</li>
-  <li>Use fans</li>
-  <li>Open windows at night</li>
-  <li>Stay on lowest floor</li>
-  <li>Create cross-ventilation</li>
-  <li>Block direct sunlight</li>
-</ul>
-
-<h3>Hydration</h3>
-<ul>
-  <li>Drink before you're thirsty</li>
-  <li>Water is best</li>
-  <li>Avoid alcohol and caffeine</li>
-  <li>Include electrolytes if sweating heavily</li>
-  <li>Monitor urine color (pale = hydrated)</li>
-</ul>
-
-<h3>Activity</h3>
-<ul>
-  <li>Stay indoors during hottest hours (10am-4pm)</li>
-  <li>Minimize physical activity</li>
-  <li>Rest frequently</li>
-  <li>Do necessary tasks early morning</li>
-</ul>
-
-<h3>Clothing</h3>
-<ul>
-  <li>Light-colored, loose-fitting</li>
-  <li>Natural fibers (cotton, linen)</li>
-  <li>Minimal coverage when indoors</li>
-  <li>Hat and sunglasses outdoors</li>
-</ul>
-
-<h2>Emergency Response</h2>
-
-<h3>Heat Exhaustion Treatment</h3>
+<h3>Heat Stroke (Emergency)</h3>
 <ol>
-  <li>Move to cool area</li>
-  <li>Lie down, elevate legs</li>
-  <li>Remove excess clothing</li>
-  <li>Apply cool, wet cloths</li>
-  <li>Sip water slowly</li>
-  <li>Seek medical care if worsening</li>
+<li><strong>Call 911.</strong></li>
+<li><strong>Move the person to a cooler place</strong> and remove excess clothing.</li>
+<li><strong>Cool them as fast as you can, starting right away:</strong>
+<ul>
+<li><strong>Best:</strong> whole-body (neck-down) immersion in cool to cold water for about 15 minutes, or until they're alert and acting normally again. Water anywhere from cold to cool tap temperature works; getting them into water quickly matters most.</li>
+<li><strong>If immersion isn't possible:</strong> a cold shower, ice-water-soaked sheets or towels, ice packs, wetting the skin while fanning, or any combination. Ice packs on the armpits and groin alone cool too slowly to rely on by themselves.</li>
+</ul></li>
+<li><strong>Stay with them</strong> and keep cooling until help arrives.</li>
+<li><strong>Don't give them anything to drink.</strong> Don't give fever medicines such as aspirin or acetaminophen; they don't help with heat stroke.</li>
+<li><strong>If they're unconscious and breathing,</strong> place them on their side. If they're not breathing normally, start CPR.</li>
 </ol>
 
-<div class="warning-box">
-  <h4>Heat Stroke Treatment (EMERGENCY)</h4>
-  <ol>
-    <li>Call 911</li>
-    <li>Move to cool area</li>
-    <li>Cool body rapidly</li>
-    <li>Cold water immersion if possible</li>
-    <li>Ice packs to armpits, neck, groin</li>
-    <li>Do NOT give fluids if unconscious</li>
-  </ol>
-</div>
+<h3>Heat Exhaustion</h3>
+<ol>
+<li>Move to a cool place, ideally with air conditioning.</li>
+<li>Loosen or remove tight and extra clothing.</li>
+<li>Put cool, wet cloths on the body, or take a cool bath.</li>
+<li>Sip water or a sports drink.</li>
+<li><strong>Get medical help right away if</strong> the person is vomiting, symptoms get worse, they become confused (treat as heat stroke), or symptoms last longer than 1 hour.</li>
+</ol>
 
-<hr>
+<h3>Heat Cramps</h3>
+<p>Painful muscle cramps or spasms, usually with heavy sweating during hard work or exercise.</p>
+<ol>
+<li>Stop the activity and move to a cool place.</li>
+<li>Drink water or a sports drink. Don't take salt tablets.</li>
+<li>Wait for the cramps to go away before doing more activity.</li>
+<li>Get medical help if cramps last longer than 1 hour, or if the person is on a low-sodium diet or has heart problems.</li>
+</ol>
 
+<h3>Heat Syncope (Fainting or Dizziness)</h3>
+<ol>
+<li>Sit or lie down in a cool place.</li>
+<li>Slowly drink water, clear juice, or a sports drink.</li>
+<li>Get medical help if they don't recover quickly, or if they were confused or hit their head.</li>
+</ol>
+
+<h3>Heat Rash</h3>
+<p>Clusters of small red bumps or blisters, often on the neck, chest, groin, or in skin folds.</p>
+<ul>
+<li>Stay in a cool, dry place and keep the rash dry.</li>
+<li>Powder can help. Avoid ointments and creams.</li>
+</ul>
+
+<h3>Sunburn</h3>
+<ul>
+<li>Stay out of the sun until it heals.</li>
+<li>Use cool cloths or a cool bath, and moisturizing lotion.</li>
+<li>Don't break blisters.</li>
+</ul>
+
+<h2>Who's Most at Risk</h2>
+<ul>
+<li><strong>Adults 65 and older,</strong> who may not feel thirst or notice they're overheating, and are more likely to take medicines that affect sweating or temperature control</li>
+<li><strong>Babies and young children</strong></li>
+<li><strong>People with chronic conditions</strong> such as heart disease, lung disease or asthma, diabetes, or kidney disease, and people with mental illness</li>
+<li><strong>People who take certain medicines.</strong> Many can cause dehydration or overheating. Ask a doctor or pharmacist.</li>
+<li><strong>Pregnant people</strong></li>
+<li><strong>Outdoor workers and athletes</strong></li>
+<li><strong>People without air conditioning</strong> or a cool place to go, including people who are unhoused</li>
+<li><strong>People who live alone or have disabilities</strong> that make it harder to cool off or get help</li>
+</ul>
+<p><strong>Check on these people at least twice a day during a heat wave.</strong> Ask how they're feeling, and look for confusion, weakness, or a hot home.</p>
+
+<h2>Know the Alerts (US National Weather Service)</h2>
+<ul>
+<li><strong>Heat Advisory:</strong> dangerous heat is expected. Take precautions.</li>
+<li><strong>Extreme Heat Watch:</strong> dangerous, possibly life-threatening heat is possible in the next few days. (Called "Excessive Heat Watch" before March 2025.)</li>
+<li><strong>Extreme Heat Warning:</strong> dangerous, life-threatening heat is expected or happening. Take action now. (Formerly "Excessive Heat Warning.")</li>
+<li><strong>HeatRisk:</strong> a 0 to 4 color-coded forecast (green, yellow, orange, red, magenta) of how dangerous heat is for health in your area. Orange (2) affects most people who are sensitive to heat; red (3) and magenta (4) affect anyone without effective cooling and hydration.</li>
+</ul>
+<p>The <strong>heat index</strong> combines temperature and humidity to show how hot it feels. It's measured in shade: <strong>full sun can make it feel up to 15°F hotter.</strong> Danger levels vary by person and region, so follow local alerts.</p>
+<p>Outside the US, follow your national weather service's heat warnings.</p>
+
+<h2>Staying Safe in a Heat Wave</h2>
+
+<h3>Stay Cool</h3>
+<ul>
+<li><strong>Air conditioning is the best protection.</strong> If you don't have it, spend the hottest part of the day in an air-conditioned place: a cooling center, library, mall, or a friend's home. In the US, call 2-1-1 or check with your local health department to find cooling centers.</li>
+<li><strong>Use fans only when the indoor temperature is below 90°F (32°C).</strong> Above 90°F, a fan blowing on you can raise your body temperature. Use fans in windows to pull in cooler night air or push hot air out instead.</li>
+<li>Take cool showers or baths.</li>
+<li>Wet your skin with a damp cloth or spray bottle, or wear damp clothing, and let it evaporate.</li>
+<li>Keep blinds and curtains closed on sunny windows during the day. Open windows at night if it's cooler outside.</li>
+<li>Use the stove and oven less. Turn off lights and devices you don't need.</li>
+<li>Spend time in the coolest room in your home.</li>
+</ul>
+<p>See the Cooling Strategies in Extreme Heat guide for more ways to cool down without air conditioning.</p>
+
+<h3>Stay Hydrated</h3>
+<ul>
+<li><strong>Drink water regularly. Don't wait until you're thirsty.</strong></li>
+<li>Limit drinks high in sugar, salt, caffeine, or alcohol.</li>
+<li>Light yellow or clear urine usually means you're drinking enough.</li>
+<li><strong>If your doctor limits your fluids or you take water pills,</strong> ask how much to drink in hot weather.</li>
+<li><strong>Working or exercising in the heat:</strong> drink about 1 cup (8 oz) of water every 15 to 20 minutes. If you're sweating for several hours, use sports drinks with electrolytes too. <strong>Don't drink more than about 48 oz (1.5 quarts) an hour</strong>; too much water can dangerously lower your blood salt levels.</li>
+<li>For babies, ask a pediatrician how to keep them hydrated.</li>
+</ul>
+
+<h3>Limit Exertion</h3>
+<ul>
+<li>Do outdoor work and exercise in the coolest part of the day, early morning or evening.</li>
+<li>Rest often in the shade or air conditioning.</li>
+<li>If you're not used to the heat, ease in gradually over several days.</li>
+<li><strong>Stop all activity</strong> and get to a cool place if you feel dizzy, weak, confused, faint, or have a pounding heart.</li>
+</ul>
+
+<h3>Dress for the Heat</h3>
+<ul>
+<li>Lightweight, loose, light-colored clothing</li>
+<li>A wide-brimmed hat and sunglasses outdoors</li>
+<li>Sunscreen (SPF 15 or higher). Sunburn makes it harder for your body to cool itself.</li>
+</ul>
+
+<h3>Never Leave Anyone in a Parked Car</h3>
+<ul>
+<li>A car can heat up almost <strong>20°F in 10 minutes</strong>, even with a window cracked open. It can become dangerous even on a mild day in the 70s.</li>
+<li>A child's body heats up 3 to 5 times faster than an adult's.</li>
+<li><strong>Never leave children, older adults, or pets in a parked car, even for a minute.</strong></li>
+<li>Always check the back seat before you lock the car.</li>
+<li><strong>If you see a child or pet alone in a hot car, call 911.</strong></li>
+</ul>
+
+<h3>Pets</h3>
+<ul>
+<li>Give pets plenty of water and shade, and bring them inside when you can.</li>
+<li>Walk dogs in the cool of the morning or evening. Hot pavement can burn paws.</li>
+</ul>
+
+<h2>During a Power Outage in the Heat</h2>
+<ul>
+<li>Go to a cooling center or another place with power if you can, especially for at-risk people.</li>
+<li>Never run a generator indoors or in a garage, even to power an air conditioner. Keep it outdoors, at least 20 feet from windows, doors, and vents. See the Generator Safety guide.</li>
+<li>Use battery-powered fans only while the indoor temperature is below 90°F.</li>
+</ul>
 <div class="quick-ref">
   <h3>Quick Reference</h3>
-<pre>HEAT ILLNESS SIGNS
+  <pre>HEAT STROKE = CALL 911
+Temp 103 F+ (39.4 C), CONFUSION, strange
+behavior, or passing out. Skin hot, red,
+dry OR sweaty.
+-&gt; Cool fast: neck-down in cool/cold water
+   ~15 min, or cold shower, ice-water
+   sheets, wet skin + fanning, ice packs
+-&gt; Nothing to drink. No aspirin/Tylenol.
+-&gt; Unconscious but breathing: on side.
+   Not breathing: CPR.
 
-Heat Exhaustion:
-- Heavy sweating
-- Cold, clammy skin
-- Weakness, nausea
+HEAT EXHAUSTION
+Heavy sweating; cold, pale, clammy skin;
+fast weak pulse; nausea; dizziness.
+-&gt; Cool place, loosen clothes, cool cloths
+   or bath, sip water
+-&gt; Get help: vomiting, worse, confused,
+   or not better in 1 hour
 
-Heat Stroke (EMERGENCY):
-- High temp (103°F+)
-- Hot, red skin
-- Confusion
-
-COOL DOWN:
-- Wet cloths on pulse points
-- Stay hydrated
-- Stay indoors
-- Use fans
-- Avoid activity 10am-4pm
-
-HEAT STROKE = CALL 911
-Cool body immediately</pre>
+STAY SAFE
+- AC is best; cooling centers
+- Fans only below 90 F indoors
+- Drink water before you&#39;re thirsty
+- Work/exercise in cooler hours
+- NEVER leave kids or pets in a car
+- Check on older adults twice a day</pre>
 </div>
 
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.cdc.gov/disasters/extremeheat/pdf/Heat_Related_Illness.pdf">CDC: Heat-Related Illness (signs and first aid)</a></li>
+<li><a href="https://www.cdc.gov/heat-health/about/index.html">CDC: About Heat and Your Health</a></li>
+<li><a href="https://www.cdc.gov/heat-health/risk-factors/">CDC: Heat and Health Risk Factors</a></li>
+<li><a href="https://www.cdc.gov/heat-health/risk-factors/infants-and-children.html">CDC: Heat and Infants and Children</a></li>
+<li><a href="https://www.cdc.gov/niosh/heat-stress/about/illnesses.html">CDC NIOSH: Heat-Related Illnesses</a></li>
+<li><a href="https://www.cdc.gov/niosh/heat-stress/recommendations/index.html">CDC NIOSH: Heat Stress Recommendations</a></li>
+<li><a href="https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001281">American Heart Association and American Red Cross: 2024 First Aid Guidelines</a></li>
+<li><a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/extreme-heat-safety.html">American Red Cross: Extreme Heat Safety</a></li>
+<li><a href="https://www.weather.gov/safety/heat-ww">National Weather Service: Heat Watches and Warnings</a></li>
+<li><a href="https://www.weather.gov/safety/heat-during">National Weather Service: During a Heat Wave</a></li>
+<li><a href="https://www.wpc.ncep.noaa.gov/heatrisk/">NOAA: HeatRisk</a></li>
+<li><a href="https://www.nhtsa.gov/campaign/heatstroke">NHTSA: Child Heatstroke Prevention</a></li>
+<li><a href="https://www.ready.gov/heat">Ready.gov: Extreme Heat</a></li>
+<li><a href="https://www.who.int/news-room/questions-and-answers/item/heatwaves-how-to-stay-cool">World Health Organization: Heatwaves, How to Stay Cool</a></li>
+</ul>
 <div class="footer">
-  <p>Last updated: January 2026</p>
-  <p>License: CC-BY-SA 4.0</p>
+<p>Last reviewed: October 2026</p>
+<p>This guide doesn't replace first aid training or professional medical care.</p>
+<p><em>License: CC-BY-SA 4.0</em></p>
 </div>
 
 </body>

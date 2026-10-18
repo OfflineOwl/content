@@ -148,232 +148,377 @@
         grid-template-columns: 1fr;
       }
     }
+  
+    .now-box {
+      background: rgba(239, 68, 68, 0.12);
+      border: 3px solid var(--accent-red);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .now-box h2 { margin-top: 0; border-bottom: none; color: var(--accent-red); }
+
+    .info-box {
+      background: rgba(59, 130, 246, 0.1);
+      border: 2px solid var(--accent-blue);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+
+    .checklist { list-style: none; margin-left: 0; }
+    .checklist li { position: relative; padding-left: 2rem; margin-bottom: 0.5rem; }
+    .checklist li::before { content: "\2610"; position: absolute; left: 0; color: var(--accent-blue); }
+
+    a { color: var(--accent-blue); }
   </style>
 </head>
 <body>
 
 <h1>Wildfire Preparedness</h1>
-
 <blockquote>
-  <strong>When Fire Threatens</strong> - Wildfires can move faster than you can run. Preparation and early evacuation save lives.
+  <strong>Leave early.</strong> Wind-driven wildfires can spread very fast, and smoke, fire, and traffic can cut off escape routes. Preparing your home ahead of time and leaving before the fire arrives are the best ways to stay safe.
 </blockquote>
+<div class="now-box">
 
-<h2>Understanding Wildfire Threat</h2>
-
-<h3>How Fires Spread</h3>
-<ul>
-  <li><strong>Direct flame contact</strong> - Fire reaches structure</li>
-  <li><strong>Radiant heat</strong> - Intense heat ignites materials</li>
-  <li><strong>Embers</strong> - Flying embers land on combustibles</li>
-</ul>
-
-<p><strong>Ember attack is the most common cause of home ignition during wildfires.</strong></p>
-
-<h3>Risk Factors</h3>
-<p>Higher risk if:</p>
-<ul>
-  <li>Near wildland areas</li>
-  <li>Dense vegetation near home</li>
-  <li>Dry climate/drought conditions</li>
-  <li>Limited evacuation routes</li>
-  <li>Wooden construction</li>
-</ul>
-
-<h2>Defensible Space</h2>
-
-<div class="zone-section">
-  <div class="zone-header">Zone 0: 0-5 feet from home</div>
-  <p><strong>Hardscape zone:</strong></p>
-  <ul>
-    <li>No combustibles</li>
-    <li>No mulch</li>
-    <li>No plants except well-watered lawn</li>
-    <li>Clean gutters</li>
-    <li>No stored combustibles</li>
-  </ul>
+<h2>Do this now</h2>
+<p>If a wildfire is threatening your area:</p>
+<ol>
+<li><strong>Leave immediately if officials tell you to, or sooner.</strong> Don't wait to be told to leave if the fire could threaten your home or your way out, or if someone in your household needs extra time.</li>
+<li><strong>Grab your go bag, medications, phone, documents, and pets</strong>, and go. Follow the routes officials give you.</li>
+<li><strong>Wear protective clothing:</strong> long sleeves and pants of natural fibers such as cotton or wool, sturdy shoes, and an N95 respirator if you have one.</li>
+<li><strong>Before leaving, if there's time:</strong> close all windows and doors and leave them unlocked.</li>
+<li><strong>Trapped by fire?</strong> Call 911 (or your local emergency number) and give your location. See "If You're Trapped" below.</li>
+</ol>
 </div>
 
-<div class="zone-section">
-  <div class="zone-header">Zone 1: 5-30 feet from home</div>
-  <p><strong>Lean, clean, green zone:</strong></p>
-  <ul>
-    <li>Minimal vegetation</li>
-    <li>No ladder fuels</li>
-    <li>Trees spaced 10+ feet apart</li>
-    <li>Trim branches 6+ feet from ground</li>
-    <li>Remove dead vegetation</li>
-  </ul>
-</div>
 
-<div class="zone-section">
-  <div class="zone-header">Zone 2: 30-100 feet</div>
-  <p><strong>Reduced fuel zone:</strong></p>
-  <ul>
-    <li>Reduced vegetation density</li>
-    <li>Space trees appropriately</li>
-    <li>Remove dead material</li>
-    <li>Create fuel breaks</li>
-  </ul>
-</div>
-
-<h2>Home Hardening</h2>
-
-<h3>Priority Upgrades</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>Area</th>
-      <th>Improvement</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Roof</td>
-      <td>Class A fire-rated materials</td>
-    </tr>
-    <tr>
-      <td>Vents</td>
-      <td>1/8" or smaller mesh (ember-resistant)</td>
-    </tr>
-    <tr>
-      <td>Windows</td>
-      <td>Double-pane, tempered glass</td>
-    </tr>
-    <tr>
-      <td>Decking</td>
-      <td>Non-combustible or ignition-resistant</td>
-    </tr>
-    <tr>
-      <td>Fencing</td>
-      <td>Non-combustible near house</td>
-    </tr>
-    <tr>
-      <td>Eaves</td>
-      <td>Enclosed or fire-resistant</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2>When Fire Threatens</h2>
-
-<h3>Warning Levels</h3>
-<ul>
-  <li><strong>Fire Weather Watch</strong> - Conditions favorable for fire</li>
-  <li><strong>Red Flag Warning</strong> - Extreme fire conditions expected</li>
-  <li><strong>Evacuation Warning</strong> - Be ready to leave</li>
-  <li><strong>Evacuation Order</strong> - Leave NOW</li>
-</ul>
-
-<h3>Evacuation Preparation</h3>
-
-<p><strong>Go-bag ready with:</strong></p>
-<ul>
-  <li>Important documents</li>
-  <li>Medications</li>
-  <li>Phone chargers</li>
-  <li>Clothing</li>
-  <li>Water</li>
-  <li>Pet supplies</li>
-  <li>N95 masks</li>
-</ul>
-
-<h3>Ready-Set-Go</h3>
-
+<h2>Ready, Set, Go!</h2>
+<p>The Ready, Set, Go! program (from the International Association of Fire Chiefs and fire agencies) breaks wildfire safety into three stages:</p>
 <div class="ready-set-go">
   <div class="rsg-item rsg-ready">
     <h4>READY</h4>
-    <p>Prepare home and family</p>
+    <p><strong>Prepare before fire season.</strong> Create defensible space, harden your home against embers, make an evacuation plan, and pack go bags.</p>
   </div>
   <div class="rsg-item rsg-set">
     <h4>SET</h4>
-    <p>Be alert, ready to leave</p>
+    <p><strong>When there's fire in your area.</strong> Monitor fire conditions and official information, and pack your car. The program's advice: evacuate as soon as you're set.</p>
   </div>
   <div class="rsg-item rsg-go">
     <h4>GO</h4>
-    <p>Evacuate immediately</p>
+    <p><strong>Act early.</strong> Don't wait to be told to leave if there's a possible threat to your home or evacuation route. Leave early enough to avoid being caught by fire, smoke, or traffic. If officials tell you to leave, don't hesitate.</p>
   </div>
 </div>
+<p>Some areas use matching evacuation levels (Level 1 "Be Ready," Level 2 "Be Set," Level 3 "Go Now"). Others use:</p>
+<ul>
+<li><strong>Evacuation Warning:</strong> a potential threat to life or property. <strong>People who need extra time, and people with pets or livestock, should leave now.</strong></li>
+<li><strong>Evacuation Order:</strong> an immediate threat to life. Leave now.</li>
+<li><strong>Shelter in Place:</strong> go indoors, close doors and windows, and stay put until told otherwise.</li>
+</ul>
+<p>Learn the terms your area uses, and find out your evacuation zone.</p>
 
-<h3>If Ordered to Evacuate</h3>
-<ol>
-  <li>Leave immediately</li>
-  <li>Follow designated routes</li>
-  <li>Don't block roadways</li>
-  <li>Check in with out-of-area contact</li>
-  <li>Don't return until cleared</li>
-</ol>
+<h3>Fire Weather Alerts (US National Weather Service)</h3>
+<ul>
+<li><strong>Fire Weather Watch:</strong> critical fire weather (such as strong wind and low humidity) is possible but not imminent.</li>
+<li><strong>Red Flag Warning:</strong> critical fire weather is happening now or expected shortly. Any fire can spread fast. Avoid anything that could spark a fire and be ready to leave.</li>
+</ul>
 
-<h2>If Trapped by Fire</h2>
+<h2>How Homes Catch Fire</h2>
+<p>Homes ignite three ways during wildfires:</p>
+<ul>
+<li><strong>Embers:</strong> burning bits blown ahead of the fire, sometimes more than a mile. <strong>Most homes lost in wildfires are ignited by embers, not by direct contact with flames.</strong> Embers land in gutters, on decks, in vents, and in mulch or debris next to the house.</li>
+<li><strong>Radiant heat:</strong> intense heat from nearby burning plants, sheds, fences, or neighboring homes.</li>
+<li><strong>Direct flame contact:</strong> fire reaching the house through plants, fences, or anything burnable touching it.</li>
+</ul>
+<p>Conditions up to 100 feet from your home (up to 200 feet on slopes) affect whether it ignites, and the area right around the house matters most.</p>
 
-<div class="warning-box">
-  <strong>This is last resort - always evacuate early.</strong>
+<h2>Defensible Space (Home Ignition Zone)</h2>
+
+<div class="zone-section">
+  <div class="zone-header">Zone 0: 0 to 5 feet (Ember-Resistant Zone)</div>
+  <p>The most important zone. The goal is nothing that can burn next to the house.</p>
+  <ul>
+  <li>Use non-burnable ground cover such as gravel, crushed stone, or pavers instead of bark or wood mulch.</li>
+  <li>Remove dead plants, leaves, and pine needles from the ground, roof, gutters, decks, and under decks.</li>
+  <li>Remove trees and shrubs from this zone. If you keep plants, use only a few low, non-woody, well-watered ones (some areas have specific rules).</li>
+  <li>Cut back branches that hang over this zone or the roof, and keep branches at least 10 feet from the chimney.</li>
+  <li>Move firewood, lumber, and anything else that burns out of this zone, and don't store anything under decks.</li>
+  <li>A fence or gate that attaches to the house should have at least 5 feet of non-burnable material next to the house.</li>
+  </ul>
 </div>
 
-<p>If trapped at home:</p>
+<div class="zone-section">
+  <div class="zone-header">Zone 1: 5 to 30 feet (Lean, Clean, and Green)</div>
+  <ul>
+  <li>Remove dead plants, grass, weeds, leaves, and needles.</li>
+  <li>Mow grass to 4 inches or less.</li>
+  <li>Space trees so fire can't jump from one crown to the next. NFPA recommends at least 18 feet between tree crowns in this zone, more on slopes; CAL FIRE's minimum is 10 feet between branches. Keep tree canopies at least 10 feet from the house.</li>
+  <li>Remove "ladder fuels," the low branches and shrubs that let fire climb into trees. Prune tree branches 6 to 10 feet up from the ground (no more than a third of a small tree's height).</li>
+  <li>Use driveways, paths, and patios as fuel breaks.</li>
+  </ul>
+</div>
+
+<div class="zone-section">
+  <div class="zone-header">Zone 2: 30 to 100 feet (Reduced Fuel Zone)</div>
+  <ul>
+  <li>Cut grass to 4 inches or less.</li>
+  <li>Thin trees so there's space between crowns: NFPA recommends at least 12 feet between crowns 30 to 60 feet from the house, and 6 feet between crowns 60 to 100 feet out.</li>
+  <li>Clear dead branches, leaves, and needles, and small trees growing between large ones.</li>
+  <li>Clear vegetation around sheds and other outbuildings.</li>
+  </ul>
+  <p>Exact rules vary by place, and many areas, including California, have legal defensible space requirements. On slopes, you'll need more space between plants, out to 200 feet. Check with your local fire department.</p>
+</div>
+
+<h2>Harden Your Home</h2>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>What helps</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Roof</strong></td>
+<td>Class A fire-rated roofing. Keep it clear of leaves and needles.</td>
+</tr>
+<tr>
+<td><strong>Gutters</strong></td>
+<td>Keep them clear of leaves and needles.</td>
+</tr>
+<tr>
+<td><strong>Vents</strong></td>
+<td>Cover attic, eave, and crawl space vents with 1/8-inch metal mesh, or use ember-resistant vents.</td>
+</tr>
+<tr>
+<td><strong>Windows</strong></td>
+<td>Multi-pane, tempered glass. Close them, and the shutters if you have them, when you leave.</td>
+</tr>
+<tr>
+<td><strong>Decks</strong></td>
+<td>Non-combustible or fire-rated materials. Clear everything burnable underneath.</td>
+</tr>
+<tr>
+<td><strong>Fences</strong></td>
+<td>Use metal or masonry for the first 5 feet from the house.</td>
+</tr>
+<tr>
+<td><strong>Eaves</strong></td>
+<td>Enclose them (box them in) to keep embers out.</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Getting Ready to Leave</h2>
+
+<h3>Go Bag</h3>
+<ul class="checklist">
+<li>Water and snacks</li>
+<li>Medications, glasses, and medical supplies</li>
+<li>Important documents (ID, insurance, prescriptions) or copies</li>
+<li>Phone, charger, and power bank</li>
+<li>N95 respirators for each adult</li>
+<li>Flashlight and battery radio</li>
+<li>Change of clothes, sturdy shoes</li>
+<li>Pet food, leash, carrier, and records</li>
+<li>Cash and a map in case phones and card readers are down</li>
+</ul>
+
+<h3>When a Fire Is Nearby (SET)</h3>
+<ul>
+<li>Load your go bags and park your car facing out, with a full tank.</li>
+<li>Keep pets close and ready to load. Move livestock early.</li>
+<li>Bring patio furniture, doormats, and other burnables inside, or move them away from the house.</li>
+<li>Close all windows and doors, and leave them unlocked.</li>
+<li>Keep monitoring official alerts. <strong>If you're set, it's time to go.</strong></li>
+</ul>
+
+<h3>Evacuating (GO)</h3>
 <ol>
-  <li>Call 911 with location</li>
-  <li>Stay inside</li>
-  <li>Close all windows and doors</li>
-  <li>Close interior doors</li>
-  <li>Move away from exterior walls/windows</li>
-  <li>Get in room with fewest windows</li>
-  <li>Stay low if smoke enters</li>
-  <li>Fill sinks/tubs with water</li>
+<li>Leave immediately when told to, or earlier.</li>
+<li>Follow the routes officials give you. Shortcuts can lead into fire.</li>
+<li>Drive with headlights on, windows up, and air set to recirculate. Watch for fire crews and people on foot.</li>
+<li>Tell an out-of-area contact where you're going.</li>
+<li><strong>Don't return until officials say it's safe.</strong></li>
 </ol>
 
-<h2>Air Quality During Wildfires</h2>
+<h3>People Who Need More Time</h3>
+<p>Older adults, people with disabilities, families with young children or babies, people without a car, and people with pets or livestock should <strong>leave at the first warning, or earlier</strong>. Arrange rides ahead of time.</p>
 
-<h3>Smoke Protection</h3>
+<h2>If You're Trapped</h2>
+<p>This is a last resort. Call 911 and give your location.</p>
+
+<h3>In Your Car</h3>
 <ul>
-  <li>Stay indoors</li>
-  <li>Keep windows/doors closed</li>
-  <li>Run AC on recirculate</li>
-  <li>Use HEPA air purifiers</li>
-  <li>Wear N95 mask outdoors</li>
-  <li>Avoid physical exertion</li>
+<li>Park in an area clear of vegetation.</li>
+<li>Close all windows and air vents.</li>
+<li>Cover yourself with a wool or cotton blanket or jacket.</li>
+<li>Lie on the floor of the vehicle.</li>
+<li>Call 911.</li>
+<li>Stay in the vehicle until the fire passes.</li>
 </ul>
 
-<h3>Health Effects</h3>
+<h3>On Foot</h3>
 <ul>
-  <li>Irritated eyes/throat</li>
-  <li>Coughing</li>
-  <li>Difficulty breathing</li>
-  <li>Headaches</li>
-  <li>May worsen existing conditions</li>
+<li>Go to an area clear of vegetation. A ditch or low spot on level ground is best if you can find one.</li>
+<li>Lie face down and cover your body.</li>
+<li>Call 911.</li>
 </ul>
 
-<hr>
+<h3>In Your Home</h3>
+<ul>
+<li>Stay inside until the fire passes. Keep your family together, and shelter away from outside walls and windows.</li>
+<li>Call 911 and give your location. Turn on lights to help rescuers find you.</li>
+<li>Close all doors and windows, but leave them unlocked. Put wet towels under doors.</li>
+<li>Fill sinks and tubs with water. Bring garden hoses inside.</li>
+<li>Wear long sleeves and pants of natural fibers such as cotton.</li>
+<li>Make sure you can get out if the house catches fire.</li>
+<li>After the fire passes, check the roof, attic, and around the house for embers and small fires.</li>
+</ul>
 
+<h2>Wildfire Smoke</h2>
+<p>Smoke can travel hundreds of miles and harm your health even when the fire is far away. Fine particles in smoke irritate the eyes and lungs and can make heart and lung disease worse.</p>
+
+<h3>Who's Most at Risk</h3>
+<ul>
+<li>People with asthma, COPD, or other lung disease</li>
+<li>People with heart disease, diabetes, or chronic kidney disease</li>
+<li>Children</li>
+<li>Older adults</li>
+<li>Pregnant people</li>
+<li>Outdoor workers and people without a place to get clean indoor air</li>
+</ul>
+
+<h3>Check the Air Quality Index (AQI)</h3>
+<table>
+<thead>
+<tr>
+<th>AQI</th>
+<th>Level</th>
+<th>Who's affected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0 to 50</td>
+<td>Good</td>
+<td>Little or no risk</td>
+</tr>
+<tr>
+<td>51 to 100</td>
+<td>Moderate</td>
+<td>A few unusually sensitive people may be affected</td>
+</tr>
+<tr>
+<td>101 to 150</td>
+<td>Unhealthy for Sensitive Groups</td>
+<td>People in the at-risk groups above may have health effects</td>
+</tr>
+<tr>
+<td>151 to 200</td>
+<td>Unhealthy</td>
+<td>Some healthy people may have effects; at-risk groups more serious ones</td>
+</tr>
+<tr>
+<td>201 to 300</td>
+<td>Very Unhealthy</td>
+<td>Health alert: risk is higher for everyone</td>
+</tr>
+<tr>
+<td>301 and up</td>
+<td>Hazardous</td>
+<td>Health warning of emergency conditions: everyone is likely to be affected</td>
+</tr>
+</tbody>
+</table>
+<p>The higher the AQI, the more you should limit time and exertion outdoors, starting with the at-risk groups.</p>
+<p>In the US, check AirNow.gov or a local air quality report. If you can't check, use your eyes and nose: if the air looks or smells smoky, act as if it's unhealthy.</p>
+
+<h3>Protect Yourself From Smoke</h3>
+<ul>
+<li><strong>Limit your time outdoors.</strong> It's the most effective protection. Stay indoors with windows and doors closed.</li>
+<li><strong>Make a clean room:</strong> pick one room, keep it closed up, and run a portable air cleaner sized for the room that doesn't produce ozone, continuously on high. If you can't get one, a box fan (made in 2012 or later, with a UL or ETL mark) with a MERV 13 or higher furnace filter attached is a do-it-yourself option. Replace filters when they get dirty.</li>
+<li><strong>Set central air to recirculate</strong>, or close the outside air intake. Use a MERV 13 or higher filter if your system can take it, and set the fan to "On."</li>
+<li><strong>Don't add indoor pollution:</strong> avoid gas, propane, or wood-burning stoves, frying or broiling, candles, aerosol sprays, smoking, and vacuuming without a HEPA filter.</li>
+<li><strong>Take it easy.</strong> Limit exercise and heavy work, indoors and out.</li>
+<li><strong>If it's very hot,</strong> don't overheat in a closed house. Go to a cleaner-air or cooling center.</li>
+</ul>
+
+<h3>Respirators</h3>
+<ul>
+<li>A NIOSH-approved <strong>N95 or P100 respirator</strong> with <strong>two straps</strong> that go around your head can filter out smoke particles, but only if it seals tightly to your face. A good seal isn't possible with facial hair.</li>
+<li><strong>Surgical masks, one-strap dust masks, and masks with ear loops won't protect your lungs</strong> from smoke.</li>
+<li>Children 2 and older can wear respirators, but approved respirators don't come in sizes that fit young children.</li>
+<li>Respirators make breathing harder and can add to heat stress. <strong>If you have heart or lung problems or are pregnant, ask a doctor</strong> before using one.</li>
+<li>Reducing time in smoke is still the best protection.</li>
+</ul>
+
+<h3>When to Get Medical Help</h3>
+<p>Call 911 or get medical care right away for chest pain, severe shortness of breath, a fast or irregular heartbeat, or an asthma attack that doesn't respond to medication.</p>
+
+<h2>After the Fire</h2>
+<ul>
+<li><strong>Return only when officials say it's safe.</strong></li>
+<li>Avoid hot ash, charred trees, smoldering debris, and live embers. The ground can hold pockets of heat that can burn you or start another fire. Watch for downed power lines and damaged trees that could fall.</li>
+<li><strong>Ash cleanup:</strong> wear an N95 or P100 respirator, gloves, goggles, long sleeves and pants, and thick-soled shoes. Wet ash can cause chemical burns on skin. Mist surfaces lightly, then wet-mop or use a HEPA vacuum. <strong>Never use a leaf blower</strong>, and don't wash ash into storm drains.</li>
+<li><strong>Children shouldn't help with cleanup.</strong> People with heart or lung disease, older adults, and pregnant people shouldn't either. Keep children and pets away until the area is clean.</li>
+<li>Watch for damaged lithium-ion batteries, asbestos, and other hazardous debris.</li>
+<li>Check with your water provider before drinking tap water. Private wells may need testing.</li>
+<li>Throw out food that was exposed to heat, smoke, or soot.</li>
+<li>Photograph damage for insurance.</li>
+</ul>
 <div class="quick-ref">
   <h3>Quick Reference</h3>
-  <pre>EVACUATION LEVELS
+  <pre>READY  - Before fire season: defensible
+         space, harden home, plan, go bags
+SET    - Fire nearby: car packed and
+         facing out. Set = time to go.
+GO     - Leave early. Don&#39;t wait to be
+         told if you could be threatened.
 
-Warning: Get ready to leave
-Order: Leave immediately
+DEFENSIBLE SPACE
+Zone 0 (0-5 ft): nothing that burns
+Zone 1 (5-30 ft): lean, clean, green
+Zone 2 (30-100 ft): reduce fuel
 
-DEFENSIBLE SPACE:
-Zone 0 (0-5 ft): No combustibles
-Zone 1 (5-30 ft): Minimal vegetation
-Zone 2 (30-100 ft): Reduced fuel
+TRAPPED
+Car: park clear of vegetation, close
+  windows/vents, lie on floor, cover
+  with wool or cotton. Stay in.
+Foot: area clear of vegetation, low
+  spot, face down, cover up
+Home: stay in, close up (unlocked),
+  away from outside walls
+Call 911 with your location.
 
-IF TRAPPED:
-- Call 911
-- Stay inside
-- Close all openings
-- Move away from exterior walls
-- Stay low if smoke
-
-AIR QUALITY:
-- Stay indoors
-- HEPA filters
-- N95 masks outdoors
-- Avoid exertion</pre>
+SMOKE
+- Stay inside, clean room, HEPA
+- N95/P100, two straps, tight seal.
+  Surgical and ear-loop masks
+  don&#39;t protect
+- Check AQI</pre>
 </div>
 
+<h2>Sources</h2>
+<ul>
+<li><a href="https://wildlandfirersg.org/">Ready, Set, Go! Program (International Association of Fire Chiefs)</a></li>
+<li><a href="https://www.cabq.gov/fire/documents/rsg-guide-2018.pdf">Ready, Set, Go! Personal Wildland Fire Action Guide (PDF)</a></li>
+<li><a href="https://www.ready.gov/wildfires">Ready.gov: Wildfires</a></li>
+<li><a href="https://cd.bentoncountyor.gov/wp-content/uploads/2023/12/18._final_hiz_fw_oct_2017_nfpa-compressed.pdf">NFPA Firewise USA: Reducing Wildfire Risks in the Home Ignition Zone (PDF)</a></li>
+<li><a href="https://www.nfpa.org/education-and-research/wildfire/preparing-homes-for-wildfire">NFPA: Preparing Homes for Wildfire</a></li>
+<li><a href="https://readyforwildfire.org/prepare-for-wildfire/defensible-space/">CAL FIRE: Defensible Space</a></li>
+<li><a href="https://firescope.caloes.ca.gov/ICS%20Documents/FIRESCOPE%20Evacuation%20Terminology%20Working%20Group%20White%20Paper.pdf">Cal OES FIRESCOPE: Evacuation Terminology</a></li>
+<li><a href="https://www.weather.gov/safety/wildfire-ww">National Weather Service: Red Flag Warning and Fire Weather Watch</a></li>
+<li><a href="https://www.airnow.gov/aqi/aqi-basics/">AirNow: AQI Basics</a></li>
+<li><a href="https://www.epa.gov/emergencies-iaq/create-clean-room-protect-indoor-air-quality-during-wildfire">EPA: Create a Clean Room During a Wildfire</a></li>
+<li><a href="https://www.epa.gov/system/files/documents/2026-06/protect-your-lungs-factsheet.pdf">EPA: Protect Your Lungs From Wildfire Smoke (2026)</a></li>
+<li><a href="https://www.epa.gov/system/files/documents/2026-06/protect-yourself-from-ash-factsheet.pdf">EPA: Protect Yourself From Ash (2026)</a></li>
+<li><a href="https://www.cdc.gov/wildfires/safety/how-to-safely-stay-safe-during-a-wildfire.html">CDC: Stay Safe During a Wildfire</a></li>
+<li><a href="https://www.cdc.gov/wildfires/safety/how-to-safely-stay-safe-after-a-wildfire.html">CDC: Stay Safe After a Wildfire</a></li>
+</ul>
 <div class="footer">
-  <p>Last updated: January 2026</p>
-  <p>License: CC-BY-SA 4.0</p>
+<p>Last reviewed: October 2026</p>
+<p><em>License: CC-BY-SA 4.0</em></p>
 </div>
 
 </body>

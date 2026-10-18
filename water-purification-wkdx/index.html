@@ -404,7 +404,6 @@
   </style>
 </head>
 <body>
-
 <h1>Complete Water Purification Guide</h1>
 
 <div class="critical-info">
@@ -412,8 +411,19 @@
     <span>💧</span>
     <span>CRITICAL - WATER IS LIFE</span>
   </div>
-  <p><strong>Clean water is essential for survival.</strong> Without it, you can survive only 3 days. This guide covers every method to make water safe to drink.</p>
+  <p><strong>Most people can survive only a few days without water, and less in heat.</strong> Untreated water can carry germs that cause severe diarrhea, which drains the body of water even faster. This guide covers every practical way to make water safe to drink.</p>
 </div>
+
+<h2>⚡ Do This Now</h2>
+
+<ol>
+  <li><strong>Use safe water first.</strong> Drink stored or commercially bottled water before treating anything. If local officials have issued a boil-water or do-not-drink notice, follow it.</li>
+  <li><strong>Rule out chemicals.</strong> If the water may contain fuel, toxic chemicals, or radioactive material (chemical or fuel smell, oily sheen, floodwater, runoff from industrial sites), don't drink it. Boiling and disinfecting will not make it safe. Find another source.</li>
+  <li><strong>Clear it.</strong> If the water is cloudy, let it settle, then pour the clear water through a clean cloth, paper towel, or coffee filter.</li>
+  <li><strong>Boil it.</strong> Bring it to a rolling boil for <strong>1 minute</strong>. If you are above <strong>5,000 ft (about 1,500 m)</strong>, boil for <strong>3 minutes</strong>. Let it cool.</li>
+  <li><strong>Can't boil? Use unscented household bleach.</strong> Per gallon: <strong>8 drops of 6% bleach</strong> or <strong>6 drops of 8.25% bleach</strong>. Per quart or liter: 2 drops of either. <strong>Double the dose</strong> if the water is cloudy, colored, or very cold. Stir, then wait <strong>30 minutes</strong>.</li>
+  <li><strong>Store it in clean, covered containers.</strong> Use treated water for drinking, cooking, brushing teeth, making ice, washing food, and mixing baby formula.</li>
+</ol>
 
 <hr>
 
@@ -428,28 +438,36 @@
       <span class="icon">🔥</span>
       <span>I have fire/fuel available</span>
     </button>
+    <button class="situation-btn" data-method="bleach">
+      <span class="icon">🧴</span>
+      <span>No fuel, but I have unscented bleach</span>
+    </button>
     <button class="situation-btn" data-method="filter">
       <span class="icon">🎒</span>
       <span>Backpacking/hiking</span>
     </button>
-    <button class="situation-btn" data-method="chemical">
+    <button class="situation-btn" data-method="kit">
       <span class="icon">🆘</span>
-      <span>Emergency kit prep</span>
+      <span>Building an emergency kit</span>
     </button>
     <button class="situation-btn" data-method="sodis">
-      <span class="icon">🏕️</span>
-      <span>Long-term survival</span>
+      <span class="icon">☀️</span>
+      <span>No fuel or chemicals, but it is sunny</span>
     </button>
     <button class="situation-btn" data-method="distillation">
       <span class="icon">🌊</span>
       <span>Only saltwater available</span>
+    </button>
+    <button class="situation-btn" data-method="avoid">
+      <span class="icon">☣️</span>
+      <span>Water may contain fuel or chemicals</span>
     </button>
   </div>
   <div class="recommendation" id="recommendation">
     <div class="icon" id="recIcon">🔥</div>
     <div>
       <div class="name" id="recName">Boiling</div>
-      <div class="desc" id="recDesc">Most reliable - kills 99.9% of pathogens</div>
+      <div class="desc" id="recDesc">Most reliable: kills bacteria, viruses, and parasites.</div>
     </div>
   </div>
 </div>
@@ -465,55 +483,89 @@
         <th>Method</th>
         <th>Bacteria</th>
         <th>Viruses</th>
-        <th>Protozoa</th>
+        <th>Giardia</th>
+        <th>Crypto</th>
         <th>Chemicals</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>Boiling</td>
-        <td class="good">✅ 100%</td>
-        <td class="good">✅ 100%</td>
-        <td class="good">✅ 100%</td>
-        <td class="bad">❌ 0%</td>
+        <td class="good">✅ Yes</td>
+        <td class="good">✅ Yes</td>
+        <td class="good">✅ Yes</td>
+        <td class="good">✅ Yes</td>
+        <td class="bad">❌ No</td>
       </tr>
       <tr>
-        <td>Chlorine</td>
-        <td class="good">✅ 99%</td>
-        <td class="good">✅ 99%</td>
-        <td class="medium">⚠️ 50%</td>
-        <td class="bad">❌ 0%</td>
+        <td>Bleach (chlorine)</td>
+        <td class="good">✅ Yes</td>
+        <td class="good">✅ Yes</td>
+        <td class="medium">⚠️ Partly</td>
+        <td class="bad">❌ No</td>
+        <td class="bad">❌ No</td>
       </tr>
       <tr>
-        <td>UV Light</td>
-        <td class="good">✅ 100%</td>
-        <td class="good">✅ 100%</td>
-        <td class="good">✅ 100%</td>
-        <td class="bad">❌ 0%</td>
+        <td>Iodine</td>
+        <td class="good">✅ Yes</td>
+        <td class="good">✅ Yes</td>
+        <td class="medium">⚠️ Partly</td>
+        <td class="bad">❌ No</td>
+        <td class="bad">❌ No</td>
       </tr>
       <tr>
-        <td>Filtration</td>
-        <td class="good">✅ 99%</td>
-        <td class="medium">⚠️ 60%</td>
-        <td class="good">✅ 99%</td>
-        <td class="medium">⚠️ 30%</td>
+        <td>Chlorine dioxide</td>
+        <td class="good">✅ Yes</td>
+        <td class="good">✅ Yes</td>
+        <td class="good">✅ Yes</td>
+        <td class="medium">⚠️ Partly</td>
+        <td class="bad">❌ No</td>
+      </tr>
+      <tr>
+        <td>UV device (clear water)</td>
+        <td class="good">✅ Yes</td>
+        <td class="good">✅ Yes</td>
+        <td class="good">✅ Yes</td>
+        <td class="good">✅ Yes</td>
+        <td class="bad">❌ No</td>
+      </tr>
+      <tr>
+        <td>Filter (0.3 micron or smaller)</td>
+        <td class="good">✅ Yes</td>
+        <td class="bad">❌ No</td>
+        <td class="good">✅ Yes</td>
+        <td class="good">✅ Yes</td>
+        <td class="bad">❌ No</td>
+      </tr>
+      <tr>
+        <td>Reverse osmosis</td>
+        <td class="good">✅ Yes</td>
+        <td class="good">✅ Yes</td>
+        <td class="good">✅ Yes</td>
+        <td class="good">✅ Yes</td>
+        <td class="medium">⚠️ Partly</td>
       </tr>
       <tr>
         <td>Distillation</td>
-        <td class="good">✅ 100%</td>
-        <td class="good">✅ 100%</td>
-        <td class="good">✅ 100%</td>
-        <td class="good">✅ 100%</td>
+        <td class="good">✅ Yes</td>
+        <td class="good">✅ Yes</td>
+        <td class="good">✅ Yes</td>
+        <td class="good">✅ Yes</td>
+        <td class="medium">⚠️ Partly</td>
       </tr>
     </tbody>
   </table>
 </div>
 
+<p>Partly: chlorine and iodine need a longer wait for Giardia; chlorine dioxide needs hours of contact for Cryptosporidium (follow the label). Reverse osmosis removes salt and many chemicals; distillation removes salt and most chemicals but not some that evaporate easily.</p>
+
+<p><strong>Boiling is the most reliable method.</strong> If you can't boil, filter first and then disinfect. Clear water is not necessarily safe: most germs are invisible, and chemicals such as fuel, pesticides, heavy metals, and salt are not removed by boiling, bleach, iodine, or UV. Boiling can even concentrate some chemicals, such as nitrate and lead.</p>
+
 <hr>
 
 <h2>🔥 Method 1: Boiling</h2>
 
-<p><strong>The gold standard</strong> - Most reliable method available to most people.</p>
+<p><strong>The gold standard.</strong> Boiling kills bacteria, viruses, and parasites, including Cryptosporidium.</p>
 
 <div class="altitude-calc">
   <h4>⛰️ Altitude Boiling Calculator</h4>
@@ -526,7 +578,7 @@
   </div>
   <div class="altitude-results">
     <div class="altitude-result">
-      <div class="label">Boiling Point</div>
+      <div class="label">Boiling Point (approx.)</div>
       <div class="value" id="boilTemp">212°F</div>
       <div class="unit" id="boilTempC">100°C</div>
     </div>
@@ -542,7 +594,7 @@
     </div>
   </div>
   <div class="altitude-warning" id="altWarning">
-    ⚠️ At high altitude, water boils at a lower temperature. Boil for 3 minutes to ensure safety.
+    ⚠️ <span id="altWarningText">At high altitude, water boils at a lower temperature. Boil for 3 minutes.</span>
   </div>
 </div>
 
@@ -560,7 +612,7 @@
   <div class="step-content" id="boilContent">
     <span class="step-number">1</span>
     <span class="step-title">Collect Water</span>
-    <div class="step-desc">Gather water in a heat-safe container (metal pot, can)</div>
+    <div class="step-desc">Gather water in a heat-safe container (metal pot, kettle)</div>
   </div>
   <div class="step-nav">
     <button class="prev" id="boilPrev" disabled>Previous</button>
@@ -569,128 +621,183 @@
   </div>
 </div>
 
-<h3>Pros & Cons</h3>
+<p>Boiled water tastes flat. Pour it back and forth between two clean containers, or add a pinch of salt per quart or liter, to improve the taste.</p>
+
+<p><strong>Why 5,000 ft?</strong> CDC says to boil for 3 minutes above 6,500 ft. EPA says above 5,000 ft. Boiling for 3 minutes anywhere above 5,000 ft satisfies both.</p>
+
+<p><strong>Short on fuel?</strong> CDC's travel guidance says you can heat water until it first starts to simmer, then take it off the heat and keep it covered for 30 minutes. A full rolling boil is still the most reliable choice when fuel allows.</p>
+
+<h3>Pros &amp; Cons</h3>
 
 <div class="pros-cons">
   <div class="pros">
     <h4>✓ Advantages</h4>
     <ul>
-      <li>Kills ALL pathogens (99.9%)</li>
+      <li>Kills every type of germ, including Cryptosporidium</li>
       <li>No special equipment needed</li>
-      <li>Works on any water source</li>
+      <li>Works on any water that is free of chemicals</li>
     </ul>
   </div>
   <div class="cons">
     <h4>⚠ Limitations</h4>
     <ul>
-      <li>Requires fuel/heat source</li>
-      <li>Time and energy intensive</li>
-      <li>Doesn't remove chemicals</li>
+      <li>Requires fuel and time</li>
+      <li>Water must cool before drinking</li>
+      <li>Doesn't remove chemicals or salt</li>
     </ul>
   </div>
 </div>
 
 <hr>
 
-<h2>💧 Method 2: Chemical Treatment</h2>
+<h2>💧 Method 2: Chemical Disinfection</h2>
 
-<p>Lightweight, portable, and effective for emergencies.</p>
+<p>Chemicals are light and cheap. They kill most bacteria and viruses, but they are weak against parasites, especially Cryptosporidium, and work poorly in cloudy or very cold water.</p>
 
-<h3>Dosage Chart</h3>
+<h3>Household Bleach (EPA Method)</h3>
+
+<p>Use regular, <strong>unscented</strong> liquid chlorine bleach labeled as suitable for disinfection or sanitization. Not scented, color-safe, splashless, or "with cleaners" products. Use bleach less than a year old.</p>
 
 <table>
   <thead>
     <tr>
-      <th>Water Clarity</th>
-      <th>Household Bleach per Gallon</th>
+      <th>Water volume</th>
+      <th>6% bleach</th>
+      <th>8.25% bleach</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Clear water</td>
-      <td>8 drops (1/8 tsp)</td>
-    </tr>
-    <tr>
-      <td>Cloudy water</td>
-      <td>16 drops (1/4 tsp)</td>
-    </tr>
+    <tr><td>1 quart or 1 liter</td><td>2 drops</td><td>2 drops</td></tr>
+    <tr><td>1 gallon</td><td>8 drops</td><td>6 drops</td></tr>
+    <tr><td>2 gallons</td><td>16 drops (1/4 tsp)</td><td>12 drops (1/8 tsp)</td></tr>
+    <tr><td>4 gallons</td><td>1/3 tsp</td><td>1/4 tsp</td></tr>
+    <tr><td>8 gallons</td><td>2/3 tsp</td><td>1/2 tsp</td></tr>
   </tbody>
 </table>
 
+<p><strong>Double the dose if the water is cloudy, colored, or very cold.</strong> If your bleach is 1% (sold in some countries), CDC's dose is 10 drops per quart or liter, 40 drops per gallon.</p>
+
+<ol>
+  <li>Clear cloudy water first (settle, then filter through cloth or a coffee filter).</li>
+  <li>Add the bleach with a clean dropper.</li>
+  <li>Stir well and let it stand <strong>30 minutes</strong>.</li>
+  <li>Smell it. A <strong>slight chlorine smell</strong> means it's ready.</li>
+  <li>No smell? Repeat the dose and wait <strong>another 15 minutes</strong>. If it still doesn't smell of chlorine, don't drink it; find another source.</li>
+  <li>Too strong? Pour it between clean containers and let it stand a few hours.</li>
+</ol>
+
+<h3>Chlorine Dioxide Tablets or Drops</h3>
+
+<p>Kill bacteria, viruses, and Giardia, and are the only common chemical option that works against Cryptosporidium. That takes a long contact time, often several hours. Follow the product label for dose and wait time.</p>
+
+<h3>Iodine</h3>
+
+<p><strong>2% tincture of iodine:</strong> 5 drops per quart or liter of clear water, 10 drops if cloudy or colored. Wait at least 30 minutes. For iodine tablets, follow the label. Iodine does not kill Cryptosporidium.</p>
+
 <div class="warning-box">
   <h4>⚠️ Iodine Warning</h4>
-  <p>Iodine is NOT suitable for pregnant women, those with thyroid conditions, or long-term use.</p>
+  <p>Don't use iodine if you are pregnant, have thyroid problems, or are sensitive to iodine. No one should drink iodine-treated water for more than a few weeks at a time.</p>
 </div>
 
 <hr>
 
-<h2>☀️ Method 3: Solar Disinfection (SODIS)</h2>
+<h2>🔦 Method 3: UV Devices</h2>
 
-<p><strong>Free method</strong> using the sun's UV rays - perfect for long-term survival.</p>
+<p>Battery or USB-powered UV pens and bottle caps damage germs' DNA so they can't cause infection. They work on bacteria, viruses, and parasites, but <strong>only in clear water</strong>: cloudy water shields germs, so filter it first.</p>
+
+<ol>
+  <li>Treat small batches (about 1 liter at a time) in a wide-mouth container.</li>
+  <li>Turn on the device and stir or shake for the time the manufacturer specifies.</li>
+  <li>Wait for the completion signal. If the device fails mid-cycle, start again.</li>
+</ol>
+
+<p>UV devices need charged batteries and don't remove chemicals.</p>
+
+<hr>
+
+<h2>☀️ Method 4: Solar Disinfection (SODIS)</h2>
+
+<p>Sunlight and heat can disinfect clear water in clear plastic bottles. It's free, but slower and less certain than boiling. Use it when you have no fuel, no chemicals, and no filter.</p>
+
+<ol>
+  <li>Use clear PET plastic bottles (soda or water bottles), <strong>2 liters or smaller</strong>, without deep scratches.</li>
+  <li>Check clarity: set the filled bottle on a newspaper headline and look down through it. If you can't read it, filter or settle the water first.</li>
+  <li>Fill the bottle completely and close it.</li>
+  <li>Lay it on its side in full sun, ideally on a roof or a sheet of metal, away from shade.</li>
+  <li>Leave it for the time below, then drink straight from the bottle or pour into a clean cup.</li>
+</ol>
 
 <h3>Exposure Times</h3>
 
 <table>
   <thead>
     <tr>
-      <th>Weather</th>
-      <th>Required Time</th>
+      <th>Sky</th>
+      <th>Exposure time</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Full sun</td>
-      <td>6 hours</td>
-    </tr>
-    <tr>
-      <td>50% cloudy</td>
-      <td>6 hours</td>
-    </tr>
-    <tr>
-      <td>Mostly cloudy</td>
-      <td>2 days</td>
-    </tr>
-    <tr>
-      <td>Continuous rain</td>
-      <td>❌ Use other method</td>
-    </tr>
+    <tr><td>Clear, or up to half cloudy</td><td>At least 6 hours</td></tr>
+    <tr><td>More than half cloudy</td><td>2 days in a row</td></tr>
+    <tr><td>Continuous rain</td><td>❌ Not reliable; use another method</td></tr>
   </tbody>
 </table>
 
+<p><strong>SODIS does not remove chemicals.</strong> Don't use it on water that might contain fuel or industrial waste.</p>
+
 <hr>
 
-<h2>🧪 Method 4: DIY Filtration</h2>
+<h2>🧪 Method 5: Filtration</h2>
 
-<p>Build your own filter from natural materials:</p>
+<p>Filters physically remove germs and particles. What they catch depends on pore size.</p>
+
+<table>
+  <thead>
+    <tr><th>Filter type</th><th>Removes</th><th>Doesn't remove</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Absolute pore size 1 micron or smaller, or NSF/ANSI 53 or 58 "cyst reduction"</td><td>Parasites (Giardia, Cryptosporidium)</td><td>Viruses, some bacteria</td></tr>
+    <tr><td>Absolute pore size 0.3 micron or smaller</td><td>Parasites and bacteria</td><td>Viruses</td></tr>
+    <tr><td>Ultrafilter (about 0.01 micron)</td><td>Parasites, bacteria, most viruses</td><td>Chemicals</td></tr>
+    <tr><td>Reverse osmosis (RO)</td><td>Parasites, bacteria, viruses, salt, many chemicals</td><td>Check the label for which chemicals</td></tr>
+    <tr><td>Activated carbon alone</td><td>Improves taste and odor; may reduce some chemicals</td><td>Germs (not rated for them)</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Most portable hiking filters do not remove viruses.</strong> After filtering, add bleach, iodine, or chlorine dioxide, or boil the water. Filters labeled "purifier" are meant to remove viruses too; manufacturers make that claim and EPA does not independently test it. Look for an <strong>absolute</strong> pore size, and follow the manufacturer's instructions for cleaning, storing, and replacing the filter.</p>
+
+<h3>Build an Improvised Filter</h3>
+
+<p>An improvised filter clears sediment so that disinfection works better. <strong>It does not make water safe on its own.</strong></p>
 
 <div class="filter-diagram">
-  <h4>🔬 DIY Sand/Charcoal Filter</h4>
+  <h4>🔬 Improvised Sand/Charcoal Filter</h4>
   <div class="filter-layout">
     <div class="filter-svg">
       <svg viewBox="0 0 200 320">
         <!-- Bottle outline -->
         <path d="M60 20 L60 10 L140 10 L140 20 L150 40 L150 300 L50 300 L50 40 Z" fill="#1a1a2e" stroke="#4a5568" stroke-width="2"/>
-        
+
         <!-- Layers -->
         <rect x="50" y="40" width="100" height="30" fill="#d4a574"/>
         <text x="100" y="58" text-anchor="middle" fill="#fff" font-size="10">CLOTH</text>
-        
+
         <rect x="50" y="70" width="100" height="50" fill="#f4d03f"/>
         <text x="100" y="98" text-anchor="middle" fill="#333" font-size="10">SAND</text>
-        
+
         <rect x="50" y="120" width="100" height="50" fill="#2c3e50"/>
         <text x="100" y="148" text-anchor="middle" fill="#fff" font-size="10">CHARCOAL</text>
-        
+
         <rect x="50" y="170" width="100" height="40" fill="#7f8c8d"/>
         <text x="100" y="193" text-anchor="middle" fill="#fff" font-size="10">GRAVEL</text>
-        
+
         <rect x="50" y="210" width="100" height="50" fill="#5d6d7e"/>
         <text x="100" y="238" text-anchor="middle" fill="#fff" font-size="10">ROCKS</text>
-        
+
         <!-- Output -->
         <path d="M95 300 L95 310 L105 310 L105 300" fill="#1a1a2e" stroke="#4a5568" stroke-width="2"/>
         <path d="M100 310 L100 320" stroke="#3b82f6" stroke-width="3"/>
-        
+
         <!-- Water drop -->
         <circle cx="100" cy="5" r="4" fill="#3b82f6"/>
       </svg>
@@ -698,15 +805,15 @@
     <div class="filter-legend">
       <div class="layer-item" style="background: rgba(212, 165, 116, 0.2);">
         <div class="layer-color" style="background: #d4a574;"></div>
-        <span><strong>Cloth:</strong> Keeps sand in place</span>
+        <span><strong>Cloth:</strong> Spreads water, keeps sand in place</span>
       </div>
       <div class="layer-item" style="background: rgba(244, 208, 63, 0.2);">
         <div class="layer-color" style="background: #f4d03f;"></div>
-        <span><strong>Sand:</strong> Fine filtration (2-3 inches)</span>
+        <span><strong>Sand:</strong> Fine layer (2-3 inches)</span>
       </div>
       <div class="layer-item" style="background: rgba(44, 62, 80, 0.3);">
         <div class="layer-color" style="background: #2c3e50;"></div>
-        <span><strong>Charcoal:</strong> Absorbs chemicals (2-3 inches)</span>
+        <span><strong>Charcoal:</strong> May improve taste and odor (2-3 inches); hardwood, not briquettes</span>
       </div>
       <div class="layer-item" style="background: rgba(127, 140, 141, 0.2);">
         <div class="layer-color" style="background: #7f8c8d;"></div>
@@ -719,11 +826,27 @@
     </div>
   </div>
   <div class="filter-warning">
-    ⚠️ <strong>Warning:</strong> DIY filters remove particles but NOT all pathogens. Always disinfect after filtering!
+    ⚠️ <strong>Warning:</strong> An improvised filter only clears sediment. It does not remove germs or chemicals. Always boil or disinfect the water afterward.
   </div>
 </div>
 
-<p><strong>Remember:</strong> Filtration removes particles but most DIY filters do NOT remove all pathogens. Always disinfect after filtering!</p>
+<p>Layer from bottom to top: rocks, gravel, crushed charcoal from a hardwood fire (not briquettes), fine sand, then cloth. Pour water slowly, re-filter if it's still cloudy, then <strong>boil or disinfect it</strong>. Campfire charcoal is not the activated carbon used in commercial filters and won't make chemically contaminated water safe.</p>
+
+<hr>
+
+<h2>♨️ Method 6: Distillation</h2>
+
+<p>Distillation boils water and collects the steam that condenses. It removes germs, salt, heavy metals, and most chemicals, but not some chemicals that evaporate easily, such as certain solvents and fuels. It's the main home method for making seawater drinkable.</p>
+
+<p><strong>Pot distillation (FEMA method):</strong></p>
+<ol>
+  <li>Fill a pot about halfway with water.</li>
+  <li>Tie a cup to the handle on the pot's lid so the cup hangs right-side up when the lid is upside down. Make sure the cup doesn't touch the water.</li>
+  <li>Put the lid on upside down and boil the water for 20 minutes.</li>
+  <li>The water that drips from the lid into the cup is distilled. Let it cool before handling.</li>
+</ol>
+
+<p>This yields only a small amount for the fuel used. A ground <strong>solar still</strong> (plastic sheet over a hole, container in the center) also works, but yields are small and unreliable, and digging can cost more sweat than it produces.</p>
 
 <hr>
 
@@ -733,34 +856,17 @@
   <thead>
     <tr>
       <th>Situation</th>
-      <th>Best Method</th>
+      <th>Best choice</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Have fire/fuel</td>
-      <td>Boiling</td>
-    </tr>
-    <tr>
-      <td>Backpacking</td>
-      <td>Filter + chemical backup</td>
-    </tr>
-    <tr>
-      <td>Emergency kit</td>
-      <td>Chemical tablets</td>
-    </tr>
-    <tr>
-      <td>Long-term survival</td>
-      <td>SODIS + DIY filter</td>
-    </tr>
-    <tr>
-      <td>Saltwater</td>
-      <td>Distillation only</td>
-    </tr>
-    <tr>
-      <td>Chemical spill</td>
-      <td>Distillation only</td>
-    </tr>
+    <tr><td>You have fuel</td><td>Boil</td></tr>
+    <tr><td>No fuel, but you have unscented bleach</td><td>Bleach (EPA dose above)</td></tr>
+    <tr><td>Hiking or backpacking</td><td>Filter, then chemical disinfection</td></tr>
+    <tr><td>Building an emergency kit</td><td>Chlorine dioxide tablets, unscented bleach, and a filter</td></tr>
+    <tr><td>No fuel or chemicals, sunny weather</td><td>SODIS</td></tr>
+    <tr><td>Only salt water</td><td>Distill (or use a reverse-osmosis desalinator)</td></tr>
+    <tr><td>Water may contain fuel or chemicals</td><td>Don't treat it. Find another source.</td></tr>
   </tbody>
 </table>
 
@@ -768,38 +874,81 @@
 
 <h2>🔄 Combining Methods (Maximum Safety)</h2>
 
-<p>For questionable water sources, combine methods:</p>
+<p>For doubtful water sources, combine methods:</p>
 
 <ol>
-  <li><strong>Pre-filter</strong> (cloth, coffee filter)</li>
-  <li><strong>Filter</strong> (commercial or DIY)</li>
+  <li><strong>Settle and pre-filter</strong> (cloth, coffee filter)</li>
+  <li><strong>Filter</strong> (commercial filter if you have one)</li>
   <li><strong>Disinfect</strong> (boil, chemical, or UV)</li>
-  <li><strong>Store safely</strong> (covered, clean container)</li>
+  <li><strong>Store safely</strong> in a clean, covered container. Pour water out instead of dipping hands or cups in.</li>
 </ol>
 
+<hr>
+
+<h2>👶 Special Cases</h2>
+
+<ul>
+  <li><strong>Babies:</strong> use ready-to-feed formula if you have it. If you must mix formula, use bottled water, or water that has been boiled and cooled.</li>
+  <li><strong>People with weakened immune systems:</strong> Cryptosporidium can be severe for them. Boil water, or use bottled water, rather than relying on bleach or iodine.</li>
+  <li><strong>Pregnancy or thyroid problems:</strong> avoid iodine. Use boiling, bleach, chlorine dioxide, or a filter.</li>
+  <li><strong>Pets:</strong> give pets the same treated or bottled water you drink.</li>
+  <li><strong>Chemical spill, fuel, or radiation:</strong> no home method reliably fixes this. Use stored or bottled water, and contact the local health department.</li>
+</ul>
+
+<hr>
+
+<h2>🫙 Storing Treated Water</h2>
+
+<p>Use clean, food-grade containers with tight lids. Keep them cool and out of sunlight, away from gasoline, pesticides, and other chemicals. Label them with the date, and replace water you treated and stored yourself every 6 months. See the Water Storage and Rotation guide for details.</p>
+
+<hr>
+
+<h2>🚑 If Someone Gets Sick</h2>
+
+<p>Diarrhea and vomiting after drinking untreated water can quickly cause dehydration. Get medical help, or call 911 or your local emergency number, for bloody diarrhea, a fever over 102°F (38.9°C), vomiting that prevents keeping fluids down, diarrhea lasting more than 3 days, confusion, or signs of severe dehydration (little or no urine, dizziness when standing). See the Foodborne Illness guide for rehydration.</p>
+
+<hr>
+
+<h2>Sources</h2>
+
+<ul>
+  <li><a href="https://www.epa.gov/ground-water-and-drinking-water/emergency-disinfection-drinking-water">EPA: Emergency Disinfection of Drinking Water</a></li>
+  <li><a href="https://www.cdc.gov/water-emergency/about/index.html">CDC: How to Make Water Safe in an Emergency</a></li>
+  <li><a href="https://www.cdc.gov/drinking-water/prevention/water-treatment-hiking-camping-traveling.html">CDC: About Water Treatment Options When Hiking, Camping, or Traveling</a></li>
+  <li><a href="https://www.cdc.gov/yellow-book/hcp/preparing-international-travelers/water-disinfection-for-travelers.html">CDC Yellow Book: Water Disinfection for Travelers</a></li>
+  <li><a href="https://www.cdc.gov/drinking-water/about/about-home-water-treatment-systems.html">CDC: About Home Water Treatment Systems</a></li>
+  <li><a href="https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html">CDC: How to Create an Emergency Water Supply</a></li>
+  <li><a href="https://www.fema.gov/pdf/library/f&amp;web.pdf">FEMA: Food and Water in an Emergency (FEMA 477)</a></li>
+  <li><a href="https://www.epa.gov/mn/will-boiling-my-water-help">EPA: Will boiling my water help? (nitrate and lead)</a></li>
+  <li><a href="https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/high-altitude-cooking">USDA FSIS: High Altitude Cooking</a></li>
+  <li><a href="https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/publikationen/SWP/SODIS_manual_2016.pdf">Eawag SODIS Manual</a></li>
+</ul>
+
 <div class="footer">
-  <p>Last updated: January 2026 | License: CC-BY-SA 4.0</p>
-  <p><strong>Safe water saves lives. When in doubt, use multiple methods.</strong></p>
+  <p>Last reviewed: October 2026 | License: CC-BY-SA 4.0</p>
+  <p><strong>Safe water saves lives. When in doubt, boil it, or find another source.</strong></p>
 </div>
 
 <script>
 // Method Selector
 const situations = {
-  boiling: { name: 'Boiling', desc: 'Most reliable - kills 99.9% of pathogens', icon: '🔥' },
-  filter: { name: 'Filtration + Chemical Backup', desc: 'Portable and effective for most situations', icon: '🔬' },
-  chemical: { name: 'Chemical Tablets', desc: 'Lightweight, long shelf life, easy to store', icon: '🧪' },
-  sodis: { name: 'Solar (SODIS) + DIY Filter', desc: 'Free, requires only sunlight and bottles', icon: '☀️' },
-  distillation: { name: 'Distillation', desc: 'Only method that removes salt', icon: '💧' }
+  boiling: { name: 'Boiling', desc: 'Most reliable: kills bacteria, viruses, and parasites. Rolling boil for 1 minute (3 minutes above 5,000 ft).', icon: '🔥' },
+  bleach: { name: 'Household Bleach', desc: 'Per gallon: 8 drops of 6% or 6 drops of 8.25% unscented bleach. Double it if cloudy, colored, or very cold. Wait 30 minutes.', icon: '🧴' },
+  filter: { name: 'Filter + Chemical Backup', desc: 'A 0.3-micron (or smaller) filter removes bacteria and parasites. Add chlorine or chlorine dioxide afterward to cover viruses.', icon: '🔬' },
+  kit: { name: 'Chlorine Dioxide Tablets + Bleach + Filter', desc: 'Light and long-lasting. Replace bleach yearly; chlorine dioxide is the only common chemical that handles Cryptosporidium (with a long wait).', icon: '🧪' },
+  sodis: { name: 'Solar Disinfection (SODIS)', desc: 'Clear water in clear PET bottles (2 L or smaller): 6 hours of sun, or 2 days if more than half cloudy. Slower and less certain than boiling.', icon: '☀️' },
+  distillation: { name: 'Distillation', desc: 'Removes salt. Boiling, chemicals, and ordinary filters do not. A reverse-osmosis desalinator also works.', icon: '💧' },
+  avoid: { name: "Don't Treat It - Find Another Source", desc: "Boiling and disinfectants don't remove fuel or toxic chemicals. Use stored or bottled water and contact the health department.", icon: '⚠️' }
 };
 
 document.querySelectorAll('.situation-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.situation-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    
+
     const method = btn.dataset.method;
     const rec = situations[method];
-    
+
     document.getElementById('recIcon').textContent = rec.icon;
     document.getElementById('recName').textContent = rec.name;
     document.getElementById('recDesc').textContent = rec.desc;
@@ -808,31 +957,36 @@ document.querySelectorAll('.situation-btn').forEach(btn => {
 });
 
 // Altitude Calculator
+// USDA FSIS: the boiling point drops just under 1°F per 500 ft of elevation.
 function getBoilTemp(alt) {
-  const tempDrop = Math.floor(alt / 500);
-  return Math.max(185, 212 - tempDrop);
+  return Math.round(212 - (alt / 500) * 0.9);
 }
 
+// CDC: 3 minutes above 6,500 ft. EPA: 3 minutes above 5,000 ft. 5,000 ft satisfies both.
 function getBoilTime(alt) {
-  return alt < 6500 ? 1 : 3;
+  return alt < 5000 ? 1 : 3;
 }
 
 document.querySelectorAll('.altitude-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.altitude-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    
+
     const alt = parseInt(btn.dataset.alt);
     const temp = getBoilTemp(alt);
     const time = getBoilTime(alt);
-    
+
     document.getElementById('boilTemp').textContent = temp + '°F';
     document.getElementById('boilTempC').textContent = Math.round((temp - 32) * 5/9) + '°C';
     document.getElementById('boilTime').textContent = time + ' min';
     document.getElementById('altValue').textContent = alt.toLocaleString();
-    
+
     const warning = document.getElementById('altWarning');
-    if (alt >= 6500) {
+    const warningText = document.getElementById('altWarningText');
+    if (alt >= 5000) {
+      warningText.textContent = alt < 6500
+        ? 'CDC uses 6,500 ft as the cutoff for a 3-minute boil; EPA uses 5,000 ft. Boil for 3 minutes to satisfy both.'
+        : 'At high altitude, water boils at a lower temperature. Boil for 3 minutes.';
       warning.classList.add('show');
     } else {
       warning.classList.remove('show');
@@ -842,11 +996,11 @@ document.querySelectorAll('.altitude-btn').forEach(btn => {
 
 // Boiling Steps
 const boilSteps = [
-  { title: 'Collect Water', desc: 'Gather water in a heat-safe container (metal pot, can)' },
-  { title: 'Pre-filter', desc: 'If cloudy, strain through cloth, coffee filter, or t-shirt' },
-  { title: 'Heat to Rolling Boil', desc: 'Large bubbles should break the surface continuously' },
-  { title: 'Maintain Boil', desc: '1 minute at sea level, 3 minutes above 6,500 ft' },
-  { title: 'Cool & Store', desc: 'Let cool in covered container before drinking' }
+  { title: 'Collect Water', desc: 'Gather water in a heat-safe container (metal pot, kettle)' },
+  { title: 'Clear It', desc: 'If cloudy, let it settle, then pour through a clean cloth, paper towel, or coffee filter' },
+  { title: 'Heat to Rolling Boil', desc: 'Large bubbles break the surface continuously, even when stirred' },
+  { title: 'Keep Boiling', desc: '1 minute; 3 minutes if you are above 5,000 ft (about 1,500 m)' },
+  { title: 'Cool & Store', desc: 'Let cool with a lid on, then store in clean, covered containers' }
 ];
 
 let boilStep = 0;
@@ -862,13 +1016,13 @@ function updateBoilStep() {
     if (i < boilStep) dot.classList.add('complete');
     if (i === boilStep) dot.classList.add('active');
   });
-  
+
   boilContent.innerHTML = `
     <span class="step-number">${boilStep + 1}</span>
     <span class="step-title">${boilSteps[boilStep].title}</span>
     <div class="step-desc">${boilSteps[boilStep].desc}</div>
   `;
-  
+
   boilCounter.textContent = `Step ${boilStep + 1} of ${boilSteps.length}`;
   boilPrev.disabled = boilStep === 0;
   boilNext.disabled = boilStep === boilSteps.length - 1;

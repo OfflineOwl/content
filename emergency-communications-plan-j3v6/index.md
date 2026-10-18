@@ -1,285 +1,290 @@
 # Emergency Communications Plan (Offline)
 
-> When cell towers are down and the internet is offline, how will your family communicate? This guide helps you establish reliable communication methods that don't depend on modern infrastructure.
+> When cell networks are jammed or down and the internet is out, how will your family reach each other? This guide sets up layers of backup, from texting an out-of-town contact to two-way radios to meeting places and notes, so you're never relying on one system.
 
-## Why You Need an Offline Communications Plan
+## Start Here
 
-During major emergencies:
-- Cell towers become overloaded or damaged
-- Internet service fails
-- Power outages disable communication equipment
-- Traditional phone lines may be cut
+1. **Pick an out-of-town contact** (ideally in another state) whom everyone checks in with. It's often easier to reach someone far away than across town.
+2. **Text, don't talk.** Unless you're in danger, send a text. Texts need far less network capacity, often get through when calls fail, and may send automatically once the network frees up.
+3. **Write it down.** Every person carries a paper card with key numbers, the out-of-town contact, and meeting places.
+4. **Agree on meeting places:** in your neighborhood, outside your neighborhood, and out of town.
+5. **Set check-in times** (for example, every 2 hours, on the even hour).
+6. **Have a radio:** a battery or hand-crank radio with NOAA Weather Radio to receive alerts, and optionally two-way radios for family use.
 
-**Historical examples:**
-- Hurricane Katrina: Cell service down for weeks
-- 9/11: NYC cell networks completely overwhelmed
-- 2011 Japan Earthquake: All communications failed for hours
-- Major power outages: Internet and cell service unavailable
-
-Your family needs a way to communicate that doesn't rely on working infrastructure.
+**If someone's life is in danger, call 911** (or your local emergency number) first. Keep trying even if networks are busy.
 
 ---
 
-## Communication Hierarchy
+## Why You Need an Offline Plan
 
-Plan for multiple levels of communication failure:
+During major emergencies:
+- Cell networks get overloaded in the first hours as everyone calls at once
+- Storms, earthquakes, and fires can knock out cell sites and phone lines for days
+- Power outages take down internet service, Wi-Fi, and phones that need power
+- Batteries run out
 
-### Level 1: Cell Phones Working (Congested)
+Your family needs ways to communicate that don't all depend on the same system.
 
-**Text before calling**
-- SMS uses less bandwidth than voice
-- Often works when calls won't connect
-- Keep messages short
+---
 
-**Use messaging apps with offline capability**
-- Some apps queue messages when offline
-- Messages send when connection returns
+## Communication Levels
 
-**Reduce battery use**
-- Lower screen brightness
-- Disable unnecessary apps
-- Enable airplane mode when not actively communicating
+Plan for each level of failure.
 
-### Level 2: Cell Service Down, Power Available
+### Level 1: Phones Work but Networks Are Jammed
 
-**Try landlines** (if you have one)
-- Traditional copper lines often work in power outages
-- May work when cell towers are down
+**Text first**
+- A text uses far less capacity than a call
+- Texts often get through when calls won't connect, and may send automatically once capacity frees up
+- Keep messages short: "I'm OK. At library."
 
-**Internet-based communication**
-- If WiFi works, use VoIP services
-- Email may still function
-- Social media check-in features
+**Keep calls brief**
+- Only vital information
+- Wait 10 seconds before redialing a failed call; redialing too fast adds to the jam
+
+**Save battery**
+- Lower screen brightness and close apps you don't need
+- Limit video and games (they also add network load)
+- **Don't leave the phone in airplane mode while waiting for alerts:** phones in airplane mode or turned off don't receive Wireless Emergency Alerts. Use airplane mode only for stretches when you've arranged a check-in time.
+- Charge from a car only when the car is outside, never in a closed garage (carbon monoxide)
+
+### Level 2: Cell Service Down, Power or Internet Available
+
+**Landline**
+- A traditional copper landline with a corded phone often works during power outages
+- Many "landlines" are now internet or fiber phones that need power or a battery backup
+- A cordless phone needs power; keep a corded phone if you have a copper line
+
+**Internet**
+- If Wi-Fi works: email, messaging apps, internet calling
+- Social media and safe-check features let many people know you're OK at once
+- Use Wi-Fi calling if your phone supports it
 
 ### Level 3: All Electronic Communication Down
 
-**Pre-arranged meeting points**
-- Rally Point A, B, C (see Evacuation Routes guide)
-- Specific times to check each location
+**Pre-arranged meeting places**
+- Neighborhood, outside your neighborhood, and out of town (see the Family Emergency Action Plan)
+- Agree on times to check each location
 
 **Written messages**
-- Leave notes at predetermined locations
-- Use family code if security is concern
+- Leave a note at home and at meeting places
+- Use a waterproof container in an agreed spot
 
-**Physical signals**
-- Visual signals (discussed below)
-- Sound signals (whistles, horns)
+**Signals**
+- Whistles, horns, lights, and visual markers (below)
 
 ---
 
 ## Family Communication Protocol
 
-### Out-of-Area Contact (OAC)
+### Out-of-Town Contact (OAC)
 
-Designate someone 200+ miles away as your communication hub.
+Choose someone **outside your community, ideally in another state**, as the family's communication hub.
 
-**Why out-of-area?**
-- Local contacts face same communication problems
-- Long-distance calls often work when local calls don't
-- Single point of contact simplifies coordination
+**Why out of town?**
+- Local contacts face the same outages
+- Long-distance calls and texts often get through when local ones don't
+- One central contact makes coordination simpler
 
 **OAC responsibilities:**
-- Answer calls from family members
-- Record status and location of each person
-- Relay information between family members
-- Know family meeting points and plans
+- Answer calls and texts from family members
+- Keep track of each person's location and status
+- Pass information between family members
+- Know the family's meeting places and plans
 
 **OAC Information Card:**
 ```
-OUT-OF-AREA CONTACT
+OUT-OF-TOWN CONTACT
 
 Name: _________________________
-Phone (mobile): ________________
-Phone (landline): ______________
+Cell: _________________________
+Landline: _____________________
 Email: ________________________
 Address: ______________________
-Backup OAC: ___________________
+Backup contact: _______________
 ```
+
+### Put It in Every Phone
+
+- Enter household members and emergency contacts in every phone
+- Save one contact as **"ICE"** (In Case of Emergency)
+- Create a group text of everyone you'd need to reach
+- Make sure everyone, including the OAC, knows how to text
+- Turn on Wireless Emergency Alerts and sign up for local alerts
 
 ### Check-In Protocol
 
-Establish regular check-in times:
+**During an emergency:**
+- Check in every 2-4 hours at first
+- Use fixed times (for example, the top of every even hour: 8, 10, 12)
+- Text the OAC: **where you are, how you are, what you plan to do**
 
-**During emergency:**
-- Check in every 2-4 hours initially
-- At specific times (top of even hours: 8, 10, 12, etc.)
-- Text/call OAC with: Location, Status, Plan
+**Status words (for texts):**
+- "Green" = safe, no help needed
+- "Yellow" = safe, minor problems
+- "Red" = need help, not life-threatening
+- "Black" = life-threatening emergency: **call 911 first**, then text the family
 
-**Status codes (keep messages short):**
-- "Green" = Safe, no assistance needed
-- "Yellow" = Safe, minor issues
-- "Red" = Need assistance, not life-threatening
-- "Black" = Life-threatening emergency
-
-**Example check-in message:**
+**Example check-in text:**
 ```
-"Green. Home. Staying put. Check 1400."
-Translation: Safe, at home, sheltering in place, next check-in at 2pm
+"Green. Home. Staying put. Next check 1400."
+Meaning: safe, at home, sheltering in place, next check-in at 2 pm
 ```
 
-### Family Password/Code Word
+On two-way radio, use plain language instead of codes (see below).
 
-Establish a family password for:
-- Verifying identity over phone
-- Authorizing someone to pick up children
-- Indicating duress (different word)
+### Family Password and Duress Word
+
+A family password helps you:
+- Verify someone's identity over the phone
+- Confirm that a person picking up your children was sent by you
 
 **Password guidelines:**
-- Memorable but not guessable
+- Easy to remember, hard to guess
 - Not used anywhere else
-- Known to all family members
-- Updated annually
+- Known to every family member and to schools' authorized pick-up people
+- Changed every year, or right after it's been used
 
-**Duress code:**
-- Different from regular password
-- Indicates you're in danger
-- Signals to listener that something is wrong
+**Duress word (optional):**
+- A different word that means "I'm in danger and can't say so"
+- Agree on what the listener should do (for example, call 911)
 
 ---
 
 ## Radio Communication
 
-When cell networks fail, radio remains one of the most reliable communication methods.
+When cell networks fail, radio is one of the most reliable ways to receive information, and two-way radios let family members talk over short distances.
 
 ### NOAA Weather Radio (Receive Only)
 
-**Essential for:**
-- Official emergency information
-- Weather alerts
-- Government instructions
+- Official National Weather Service warnings, plus non-weather emergencies like chemical releases
+- Broadcasts 24/7 on seven VHF frequencies (162.400-162.550 MHz)
+- Get a battery-powered or hand-crank model with tone alert and SAME (county alerts)
+- See the Radio Use for Emergency Updates guide
 
-**Equipment:**
-- Battery-powered or hand-crank NOAA radio
-- Know your local frequencies
-- Test regularly
-
-### FRS/GMRS Radios (Two-Way)
+### FRS Radios (Two-Way, No License)
 
 **Family Radio Service (FRS):**
-- No license required
-- Limited range (1-2 miles typical)
-- Good for family/group communication
-- Inexpensive
+- **No license needed** (US)
+- 22 channels (1-22)
+- Power is capped at 2 watts on channels 1-7 and 15-22, and 0.5 watt on channels 8-14
+- Range is short: often under a mile or two among buildings, trees, or hills; farther over open, flat ground or water. Box claims of "30+ miles" assume perfect line of sight.
+- Inexpensive and simple; good for family use nearby
+
+### GMRS Radios (Two-Way, License Required)
 
 **General Mobile Radio Service (GMRS):**
-- License required ($35, no test)
-- Better range (5-25 miles depending on conditions)
-- Can use repeaters
-- More power allowed
+- **FCC license required** (US); no exam
+- Fee: $35; lasts 10 years
+- Applicant must be at least 18; one license covers the licensee's immediate family members
+- Shares channels 1-22 with FRS, plus 8 repeater input channels
+- More power allowed (up to 50 watts on the main channels for mobile and base stations) and repeaters, so range can be several miles or more with good antennas
+- Say your FCC call sign at the end of a conversation and at least every 15 minutes during long ones
+- Any licensee may let anyone use their radio to send an emergency message
 
-**FRS/GMRS Protocol:**
-1. Establish primary and backup channels
-2. Set check-in times
-3. Keep transmissions brief
-4. Use plain language
+### FRS and GMRS Tips
+
+- **"Privacy codes" (CTCSS/DCS tones) do NOT make your conversation private.** They only filter out other users so you don't hear them. Anyone on the same channel without the code, or with a scanner, can hear you.
+- **In an emergency, turn privacy codes off** ("carrier squelch") so you hear everyone on the channel, including someone calling for help.
+- Use plain language. FCC rules don't allow coded messages with hidden meanings on GMRS.
+- Pick a primary and a backup channel. Channels 1-7 and 15-22 allow more power than 8-14.
+- Listen before you transmit, keep it brief, and leave gaps for others.
 
 **Sample family radio plan:**
 ```
-Primary channel: Channel 7
-Backup channel: Channel 14
-Privacy code: 15
-Check-in times: Top of each hour
-Call sign: [Family name] + number (Smith-1, Smith-2, etc.)
+Primary channel: 7
+Backup channel: 16
+Privacy codes: OFF in emergencies
+Check-in times: top of each hour
+Names: first names or "Smith-1, Smith-2"
+GMRS licensees: say your call sign
+  at the end of each conversation
 ```
 
 ### Ham Radio (Amateur Radio)
 
 **Advantages:**
-- Long-range communication possible
-- Network of emergency operators
-- Diverse modes (voice, digital, satellite)
+- Can reach across town, across the country, or farther
+- A network of trained emergency volunteers
+- Voice, digital, and satellite modes
 
 **Requirements:**
-- FCC license required (Technician level minimum)
-- Test required (35 multiple choice questions)
-- Equipment investment
+- FCC license required (US)
+- Entry-level Technician license: pass a 35-question multiple-choice exam (26 correct to pass)
+- FCC application fee: $35; volunteer exam sessions may charge a small fee
+- Equipment and practice
 
 **Emergency use:**
-- ARES (Amateur Radio Emergency Service)
-- RACES (Radio Amateur Civil Emergency Service)
-- Can relay messages for non-hams
-
-**If not licensed:**
-- In life-threatening emergency, anyone may use any frequency
-- Consider getting licensed for preparedness
+- ARES (Amateur Radio Emergency Service) and RACES (Radio Amateur Civil Emergency Service) volunteers support local emergency management
+- Hams can relay messages for people without radios
+- FCC rules allow amateur stations to use any means of radio communication when life is in immediate danger and normal systems are down. That's not a plan: an untrained person is unlikely to reach help. Get licensed and practice.
 
 ### CB Radio
 
 **Advantages:**
-- No license required
-- Widely available
-- Good for local communication
-- Vehicle mobile units common
+- No license needed (US)
+- Widely available, especially for vehicles
+- Good for road and local information
 
 **Limitations:**
-- Limited range (3-5 miles typical)
-- Channel congestion possible
-- Lower audio quality
+- Range is usually a few miles
+- Channels can be crowded and noisy
 
-**Emergency Channel:**
-- Channel 9: Official emergency channel
-- Channel 19: Unofficial, truckers/travelers
+**Channels:**
+- **Channel 9:** by FCC rule, for emergency communications and traveler assistance only
+- **Channel 19:** commonly used by truckers and highway travelers (by custom, not rule)
 
 ---
 
 ## Non-Electronic Communication
 
-When all else fails, go analog.
+When everything else fails, go analog.
 
 ### Visual Signals
 
 **Signal mirror:**
-- Can be seen for miles in sunlight
-- Aim flash at aircraft or distant observers
-- Three flashes = distress signal
+- A flash can be seen from miles away in sunlight
+- Aim the flash at aircraft or distant searchers
 
-**Flags/markers:**
-- Bright colored cloth on pole
-- International distress: flag upside down
-- Improvise from clothing, tarps
+**Ground-to-air signals** (international code, make them large and high-contrast):
+- **V** = need assistance
+- **X** = need medical assistance
+- **Arrow** = we are going this direction
+- **Y** = yes, **N** = no
 
-**Ground-to-air signals:**
-- Large symbols visible from aircraft
-- "X" = need medical help
-- "V" = need assistance
-- "→" = traveling this direction
+**Lights:**
+- Three flashes, repeated = distress
+- A steady light marks your location
 
-**Light signals:**
-- Flashlight at night
-- Three flashes = distress
-- Steady light = location marker
+**Flags and markers:**
+- Bright cloth on a pole or tied to a door
+- Some communities use colored cloths or signs to show "OK" or "need help" after a disaster; learn your local system
 
 ### Sound Signals
 
 **Whistle:**
-- Three short blasts = distress signal
-- Carries farther than voice
-- Doesn't tire you out
-- Every family member should carry one
+- **Three short blasts = distress.** It carries farther than your voice and takes less energy.
+- Everyone, including children, should carry one
 
 **Vehicle horn:**
 - Three short honks = distress
-- Can be heard at distance
 
-**Other noise makers:**
-- Pots and pans
-- Air horn
-- Gunshots (where legal, three shots)
+**Other noisemakers:**
+- Air horn, banging pots and pans
 
-### Physical Messages
+### Written Messages
 
 **Note system:**
-- Designated locations for leaving notes
-- Weatherproof container
-- Family code if needed
+- Agree on where to leave notes (inside the front door, at meeting places)
+- Use a waterproof container or bag
 
-**Message content template:**
+**Message template:**
 ```
 Date/Time: _______________
 From: ___________________
 Status: _________________
-Location going to: _______
-Next message time: _______
+Going to: _______________
+Next message/check-in: ___
 ```
 
 ---
@@ -289,41 +294,39 @@ Next message time: _______
 ### At Home
 
 **If separated:**
-1. Text/call family members
-2. If no response, contact OAC
-3. Leave note at home
-4. Proceed to Rally Point A
-5. Wait predetermined time
-6. Proceed to Rally Point B
-7. Contact OAC with updates
+1. Text family members (group text)
+2. No answer? Text or call the OAC
+3. Leave a note at home
+4. Go to the neighborhood meeting place
+5. Wait the agreed time
+6. Go to the outside-the-neighborhood meeting place
+7. Keep updating the OAC
 
-### At Work/School
+### At Work or School
 
-**Before emergency:**
-- Know workplace emergency procedures
-- Register children's school notification system
-- Authorize emergency pickup people
-- Give school OAC contact information
+**Before an emergency:**
+- Learn your workplace's emergency plan
+- Sign up for your children's school alerts
+- Tell schools who may pick up your children, and share the family password with them
+- Give schools your OAC's contact information
 
-**During emergency:**
-- Follow workplace procedures
-- Contact OAC when able
-- Don't rush to school—follow their protocols
-- Meet at predetermined point if needed
+**During an emergency:**
+- Follow workplace and school procedures
+- Text the OAC when you can
+- **Don't rush to the school during a shelter-in-place emergency** (chemical release, radiation). Schools have their own plans, and going out can endanger you and your children. Follow their pick-up instructions.
 
 ### While Traveling
 
-**Before travel:**
-- Inform OAC of travel plans
-- Carry communication equipment
-- Know emergency frequencies for area
-- Have paper maps
+**Before you go:**
+- Share your plans with the OAC
+- Bring chargers, a backup battery, and paper maps
+- Note local emergency information sources where you're going
 
-**During emergency while traveling:**
-- Contact OAC with location
-- Assess ability to return or proceed
-- Follow local emergency instructions
-- Use radio if cell service down
+**During an emergency:**
+- Text the OAC with your location
+- Decide whether to stay, return, or continue
+- Follow local officials' instructions
+- Use local radio for information
 
 ---
 
@@ -331,53 +334,53 @@ Next message time: _______
 
 ### Essential
 
-- [ ] NOAA weather radio (battery/hand-crank)
-- [ ] FRS/GMRS radios (one per family member)
+- [ ] Battery or hand-crank radio with NOAA Weather Radio (tone alert, SAME)
 - [ ] Extra batteries for all devices
+- [ ] Phone chargers and a charged backup battery
 - [ ] Emergency whistle (one per person)
-- [ ] Signal mirror
 - [ ] Paper and pencil
-- [ ] Emergency contact cards
-- [ ] Local maps
+- [ ] Emergency contact cards (one per person)
+- [ ] Local paper maps
 
 ### Enhanced
 
-- [ ] Ham radio (if licensed)
-- [ ] Satellite communicator (Garmin inReach, etc.)
+- [ ] FRS radios (no license) or GMRS radios (license)
+- [ ] Satellite messenger or satellite texting on your phone, if available
+- [ ] Ham radio (licensed operators)
 - [ ] CB radio (vehicle)
-- [ ] Solar charger for devices
-- [ ] Backup cell phone battery
-- [ ] Walkie-talkies for kids
+- [ ] Solar charger
+- [ ] Corded phone, if you have a copper landline
+- [ ] Signal mirror
 
 ### Documentation
 
 - [ ] Written communication plan
-- [ ] OAC contact information (multiple copies)
-- [ ] Radio frequencies and channels
-- [ ] Meeting points with addresses
-- [ ] Family codes/passwords
-- [ ] Contact lists (paper copies)
+- [ ] OAC contact information (several copies)
+- [ ] Radio channels and check-in times
+- [ ] Meeting places with addresses
+- [ ] Family password
+- [ ] Paper contact lists
 
 ---
 
-## Monthly Communication Drill
+## Regular Communication Drill
 
-Practice your communication plan regularly:
+Practice every few months, and review the plan at least once a year:
 
-1. **Test all equipment**
-   - Turn on radios, verify function
-   - Check batteries
-   - Verify weather radio receives signal
+1. **Test equipment**
+   - Turn on radios and confirm they work
+   - Check and replace batteries
+   - Confirm the weather radio receives your local station and SAME is set
 
-2. **Practice contact protocol**
-   - Call/text OAC
-   - Practice radio communication
-   - Review check-in procedures
+2. **Practice the protocol**
+   - Everyone texts the OAC; send a group text
+   - Practice short messages: "I'm OK. At library."
+   - Practice a short radio check on your family channels
 
-3. **Verify information is current**
-   - Contact numbers up to date
-   - Meeting points still valid
-   - All family members know procedures
+3. **Update information**
+   - Phone numbers current
+   - Meeting places still good
+   - Everyone, including children, knows the plan and how and when to call 911
 
 ---
 
@@ -386,33 +389,52 @@ Practice your communication plan regularly:
 ```
 COMMUNICATION PLAN QUICK REFERENCE
 
+Life in danger? CALL 911 first.
+
 When phones work:
-1. Text first (uses less bandwidth)
+1. Text first (uses less capacity)
 2. Keep messages short
-3. Contact OAC with status
+3. Text the out-of-town contact your status
+4. Keep the phone ON for emergency alerts
 
 When phones don't work:
-1. Try landline
-2. Use FRS/GMRS radio
-3. Monitor NOAA weather radio
-4. Proceed to meeting points
+1. Try a landline
+2. Use FRS/GMRS radio (privacy codes OFF)
+3. Listen to NOAA Weather Radio / AM-FM
+4. Go to the meeting places; leave notes
 
 Check-in times: Every ___ hours at ___
 Primary radio channel: ___
 Backup channel: ___
-OAC contact: _______________
+Out-of-town contact: _______________
 
-Status codes:
+Status words (texts):
 Green = Safe, no help needed
 Yellow = Safe, minor issues
 Red = Need non-emergency help
-Black = Life-threatening emergency
+Black = Life-threatening: CALL 911
 
 Family password: ___________
-Duress code: _______________
+Distress: 3 whistle blasts / 3 flashes
 ```
 
 ---
 
-*Last updated: January 2026*
+## Sources
+
+- [FEMA: Create Your Family Emergency Communication Plan](https://www.ready.gov/sites/default/files/2020-03/create-your-family-emergency-communication-plan.pdf)
+- [Ready.gov: Make a Plan](https://www.ready.gov/plan)
+- [Ready.gov: Emergency Alerts](https://www.ready.gov/alerts)
+- [FEMA: Wireless Emergency Alerts](https://www.fema.gov/emergency-managers/practitioners/integrated-public-alert-warning-system/public/wireless-emergency-alerts)
+- [National Weather Service: NOAA Weather Radio](https://www.weather.gov/nwr/)
+- [eCFR: 47 CFR Part 95 Subpart B, Family Radio Service](https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-95/subpart-B)
+- [eCFR: 47 CFR Part 95 Subpart E, General Mobile Radio Service](https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-95/subpart-E)
+- [eCFR: 47 CFR 95.931, CB Radio Service permissible uses (Channel 9)](https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-95/subpart-D/section-95.931)
+- [eCFR: 47 CFR 97.503, amateur exam elements](https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-97/subpart-F/section-97.503)
+- [eCFR: 47 CFR 97.403, amateur emergency communications](https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-97/subpart-E/section-97.403)
+- [eCFR: 47 CFR 1.1102, FCC application fees ($35 personal licenses)](https://www.ecfr.gov/current/title-47/section-1.1102)
+- [FCC: Portable Radio Fundamentals for CERT (privacy codes)](https://transition.fcc.gov/pshs/docs/clearinghouse/references/cert-radio-fundamentalsIG-pt1.doc)
+
+Last reviewed: October 2026
+
 *License: CC-BY-SA 4.0*
