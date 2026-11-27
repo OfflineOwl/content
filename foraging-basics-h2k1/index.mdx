@@ -1,310 +1,370 @@
-# Foraging Basics (High-Level, Regionalized)
+# Foraging Basics
 
-> **Caution Required** - Foraging can supplement your food supply, but misidentification can be fatal. This guide provides an overview—always verify with multiple expert sources before eating wild foods.
+> **A wrong guess can kill.** Wild food is real, and so are water hemlock and the death cap mushroom. This guide teaches you how not to get poisoned first, and names a few foods that are hard to get wrong second. It does not replace a field guide for your region and a local person who can check your finds.
 
-## Critical Safety Rules
+<QuickTriage
+  questions={[
+    {
+      id: "situation",
+      text: "What is happening right now?",
+      options: [
+        { label: "Someone ate a wild plant or mushroom", next: "symptoms" },
+        { label: "I found something and want to eat it", next: "certain" },
+        { label: "I want to learn to forage safely", result: "learn" }
+      ]
+    },
+    {
+      id: "symptoms",
+      text: "How is the person now?",
+      options: [
+        { label: "Collapsed, seizure, trouble breathing, or cannot be woken", result: "call-911" },
+        { label: "Sick but awake: vomiting, cramps, tingling mouth, weakness", result: "poison-urgent" },
+        { label: "No symptoms yet", result: "poison-now" }
+      ]
+    },
+    {
+      id: "certain",
+      text: "What is it, and how sure are you?",
+      options: [
+        { label: "A plant, confirmed with a regional guide and a local expert", result: "first-taste" },
+        { label: "A plant I am fairly sure of, or an app identified it", result: "do-not-eat" },
+        { label: "A mushroom", result: "mushroom" }
+      ]
+    }
+  ]}
+  results={[
+    {
+      id: "call-911",
+      title: "Call 911 Now",
+      steps: [
+        "Call 911 or your local emergency number",
+        "Say that a wild plant or mushroom was eaten, and when",
+        "If the person is not breathing normally, start CPR if you are trained",
+        "Keep a whole sample of what was eaten, including root or base, for the hospital"
+      ],
+      section: "Get emergency help if",
+      priority: "critical"
+    },
+    {
+      id: "poison-urgent",
+      title: "Call Poison Help Now: 1-800-222-1222",
+      steps: [
+        "Call Poison Help (US) at 1-800-222-1222, or your national poison centre",
+        "Switch to 911 if they collapse, seize, struggle to breathe, or get very drowsy",
+        "Do not make them vomit or give home remedies unless told to",
+        "Save a whole sample and note what, how much, and when",
+        "Check everyone else who ate it, sick or not"
+      ],
+      section: "If someone has eaten a wild plant or mushroom",
+      priority: "critical"
+    },
+    {
+      id: "poison-now",
+      title: "Call Before Symptoms Start",
+      steps: [
+        "Call Poison Help (US) at 1-800-222-1222 now. Do not wait and see",
+        "Some deadly mushrooms cause no symptoms for 6 to 24 hours",
+        "Save a whole sample, including root or mushroom base, in a paper bag",
+        "Write down what was eaten, how much, when, and who else ate it"
+      ],
+      section: "If someone has eaten a wild plant or mushroom",
+      priority: "urgent"
+    },
+    {
+      id: "do-not-eat",
+      title: "Do Not Eat It",
+      steps: [
+        "Fairly sure is not sure. Apps misidentify poisonous plants often",
+        "Check every feature against at least three references for your region",
+        "Rule out the local poisonous lookalikes one by one",
+        "Have a local expert confirm it in person before the first bite"
+      ],
+      section: "Positive identification: what it takes",
+      priority: "urgent"
+    },
+    {
+      id: "mushroom",
+      title: "Leave the Mushroom",
+      steps: [
+        "Do not eat any wild mushroom on your own identification",
+        "Deadly species can pass for edible ones, and cooking does not make them safe",
+        "Only a trained mycologist examining that specimen in person can clear it",
+        "If any was eaten, call Poison Help at 1-800-222-1222 now"
+      ],
+      section: "Mushrooms: do not start here",
+      priority: "urgent"
+    },
+    {
+      id: "first-taste",
+      title: "Go Slowly",
+      steps: [
+        "Make sure it came from unsprayed ground away from roads",
+        "Prepare it the way your regional guide says",
+        "Eat a small amount of one new food and wait a day",
+        "Keep an uneaten sample for a few days"
+      ],
+      section: "First time eating a wild food",
+      priority: "important"
+    },
+    {
+      id: "learn",
+      title: "Build the Skill First",
+      steps: [
+        "Save Poison Help, 1-800-222-1222, in every phone",
+        "Get a field guide for your region and find a local teacher",
+        "Learn your area's deadly plants before any edible ones",
+        "Start with dandelion and blackberry, and have your finds checked"
+      ],
+      section: "Start here",
+      priority: "important"
+    }
+  ]}
+/>
 
-### The Universal Foraging Rules
+## Start here
 
-1. **NEVER eat anything you cannot positively identify**
-2. **NEVER rely on a single identification characteristic**
-3. **NEVER assume similar-looking plants are safe**
-4. **NEVER eat anything based solely on animal consumption**
-5. **ALWAYS start with tiny amounts of new foods**
-6. **ALWAYS have a reliable field guide (or several)**
+1. **Adopt one rule: 100% sure, or do not eat it.** Not "pretty sure". Not "the app says so". Hunger takes weeks to kill. Water hemlock can do it in three hours.
+2. **Save Poison Help in every phone: 1-800-222-1222** (US, free and confidential). Outside the US, look up your national poison centre number today and save that.
+3. **Get a field guide written for your region,** with photos and descriptions. Mississippi State University Extension suggests checking any plant against at least three references.
+4. **Learn the killers before the edibles.** Know water hemlock, poison hemlock, death camas, and the death cap on sight before you pick anything.
+5. **Find a local teacher:** your county extension office, a native plant society, or a mycological (mushroom) society. Go out with people who can check your identification in person.
+6. **Begin with one or two plants you already know,** such as dandelion and blackberry, and stay there until someone experienced has confirmed your finds.
 
-### Dangerous Lookalikes Exist
+## Get emergency help if
 
-Many edible plants have poisonous lookalikes:
-- Wild carrot vs. Poison hemlock
-- Elderberry vs. Water hemlock
-- Morel mushrooms vs. False morels
-- Wild onion vs. Death camas
+Someone has eaten a wild plant or mushroom and:
 
-**One mistake can be fatal.**
+- collapses or cannot be woken
+- has a seizure
+- has trouble breathing
+- becomes very drowsy, confused, or weak
+
+**Call 911 (or your local emergency number) now.** For anything less, call Poison Help at 1-800-222-1222 straight away. Do not wait to see whether symptoms start.
+
+## If someone has eaten a wild plant or mushroom
+
+1. **Call before symptoms.** Water hemlock can cause seizures within 30 minutes. Death cap mushrooms cause nothing at all for 6 to 24 hours, and by then the damage has started.
+2. **Call 911 for the signs above. Otherwise call Poison Help: 1-800-222-1222.**
+3. **Save what was eaten.** Keep a whole specimen, including the root or the base of the mushroom, in a paper bag. Take a photo of where it grew. Poison specialists work with botanists and mycologists to identify it.
+4. **Write down** what was eaten, how much, when, and who else ate it. Everyone who ate it needs to be checked, sick or not.
+5. **Do not make the person vomit** or give home remedies unless Poison Help or a doctor tells you to.
+6. **Do not trust feeling better.** With the death cap, vomiting and diarrhea ease after a day or so, then the liver fails 3 to 5 days after the meal.
+
+Some of these poisons have no antidote. Hospital care keeps the person breathing and supports the organs while the body clears the toxin. Speed is the only advantage you have.
+
+## Why guessing fails
+
+- From 1979 to 1988, at least 58 people in the US died after eating a poisonous plant they took for an edible one. Water hemlock caused at least five of those deaths.
+- In Maine in 1992, two brothers looking for wild ginseng bit into a root from a swampy spot. The younger took three bites, convulsed within 30 minutes, and died about three hours later. His brother took one bite and had seizures two hours later. The root was water hemlock.
+- In California in December 2016, 14 people were poisoned by death cap mushrooms they had gathered. Three needed liver transplants, including an 18-month-old child who was left with permanent neurological damage.
+- In one study, three plant-identification apps recognized poisonous plants correctly only 5.8% to 59% of the time.
+
+Many of these people were sure of what they had picked. Confidence is not identification.
+
+## The deadly lookalikes
+
+| Deadly | Mistaken for | Where it grows | What it does |
+|--------|--------------|----------------|--------------|
+| **Water hemlock** | Wild parsnip, wild turnip, wild parsley and other carrot-family plants; ginseng | Wet meadows, stream banks, and swamps across North America | Violent seizures, sometimes within 30 minutes. A piece of root 2 to 3 cm (about 1 inch) long can kill an adult. No antidote. |
+| **Poison hemlock** | Wild carrot (Queen Anne's lace), wild parsnip, parsley, anise | Roadsides, ditches, field edges, creek beds | Muscle weakness, then paralysis of breathing. Signs can start within an hour. |
+| **Death camas** | Wild onion, ramps | Mostly the western US, from sagebrush foothills into the mountains | Tingling mouth, vomiting, slow heartbeat, low blood pressure. |
+| **Death cap and destroying angel mushrooms** | Edible mushrooms of many kinds | Varies by region; ask a local mycological society | Vomiting and diarrhea 6 to 24 hours later, a false recovery, then liver failure. |
+
+What to take from the table:
+
+- **Leave the whole carrot family to experts.** It has umbrella-shaped clusters of small white flowers and lacy leaves. Edible members and the two hemlocks look alike, can grow in the same kinds of places, and can smell alike: water hemlock's poison has a strong carrot-like odor. Do not eat any wild "carrot", "parsnip", "parsley", or "celery".
+- **Leave wild bulbs alone** unless an expert has shown you the plant. Death camas bulbs have no onion smell, but once your hands smell of onion you can no longer tell.
+- **No single feature is safe to rely on.** Poison hemlock is known for purple spots on a smooth hollow stem and a musty smell. Both can be missing at some stages of growth.
+- **Hollow stems are not toys.** Children have died after making whistles from hemlock stems.
+
+## Positive identification: what it takes
+
+A plant is identified when **every** feature matches, not most of them:
+
+- [ ] Overall size and shape of the plant
+- [ ] Leaf shape, edges, and how leaves attach to the stem
+- [ ] Stem: round or square, hollow or solid, hairy or smooth, any spots
+- [ ] Flowers, fruit, or seeds, if present
+- [ ] Root, bulb, or base
+- [ ] Smell and sap, as supporting clues only
+- [ ] Habitat and season match the guide
+- [ ] Your region's poisonous lookalikes are ruled out one by one
+- [ ] You know which part is eaten and how it must be prepared
+- [ ] At least three references agree, and ideally a local expert has seen it
+
+Rules that go with the checklist:
+
+- **Identify every plant, every time.** One hemlock leaf in a bag of greens is enough.
+- **Apps and photos are a starting point, never the answer.** The same goes for AI chat tools.
+- **Knowledge does not travel.** A plant or mushroom you knew in another region or country may have a poisonous twin here.
+- **Animals are not testers.** Birds and deer eat things that poison people.
+- **Do not forage alone** while you are learning. A second person catches mistakes.
+
+## The "universal edibility test": do not rely on it
+
+Survival manuals describe a step-by-step test for unknown plants: rub it on your skin, touch it to your lip, chew a little, swallow a little, wait some hours, eat more. It is still widely repeated. It is not a safe way to decide what to eat.
+
+- **Some poisons wait.** Death cap symptoms begin 6 to 24 hours after eating, and liver failure comes days later. A test with an 8-hour wait passes a deadly mushroom.
+- **Some poisons need only a taste.** One bite of water hemlock root caused seizures. The chew-and-wait step is already a dangerous dose.
+- **Toxicity varies** by plant part, by season, and from plant to plant. Passing with one leaf says little about the next root.
+- **It finds nothing slow.** Liver or kidney damage does not sting your lip.
+- **It is useless for mushrooms,** for the first reason above.
+
+If you are lost or cut off without food, the better plan is almost always water, shelter, signaling, and staying put. Going hungry for a few days is survivable. See the Rationing Calorie Planning guide.
+
+## Mushrooms: do not start here
+
+- Mushrooms are hard to identify even for trained people. Experts check the cap, the gills or pores, spore color, the stalk, the buried base, bruising, and what the mushroom grows on.
+- The death cap and its white relatives, the destroying angels, carry the liver poison behind the California cases above. They can pass for edible mushrooms, and the symptoms start late.
+- There are no shortcuts. Cooking does not make a poisonous mushroom safe.
+- **Never eat a wild mushroom unless a trained mycologist has identified that specimen in person.** Inexperienced foragers should not eat wild mushrooms at all.
+- Teach children never to put a wild mushroom in their mouth.
+
+Mushroom hunters have a saying: there are old mushroom hunters and bold mushroom hunters, but no old, bold ones.
+
+## Where not to pick
+
+Correctly identified plants can still carry chemicals and germs.
+
+- **Roadsides:** herbicide spraying, and lead and other metals in the soil along busy roads. Poison hemlock also favors roadsides and ditches.
+- **Power line rights-of-way:** often sprayed with herbicide.
+- **Lawns, parks, golf courses, and farm field edges** unless you know they have not been treated.
+- **Beside old painted buildings** and on industrial or dumping ground: lead and other metals.
+- **Places soiled by pets or livestock.**
+
+Wash everything in clean water. Washing removes dirt and some residue. It does not remove what the plant has taken up, and it does nothing about natural plant poisons.
+
+## A short list to start with
+
+These are widely known and hard to confuse once you have checked every feature. **Confirm each one with a local guide or expert before the first bite.**
+
+| Plant | Every one of these must be true | Part eaten |
+|-------|---------------------------------|------------|
+| **Dandelion** | Leaves all rise from the base in a rosette at ground level; leaves are deeply toothed and smooth or nearly hairless; each yellow flower sits alone on its own smooth, hollow, leafless, unbranched stalk; broken stalks leak white sap | Young leaves, raw or cooked. Older leaves are bitter. |
+| **Blackberries and raspberries** | Arching or trailing canes with thorns or prickles; each leaf made of 3 to 7 toothed leaflets; fruit is a cluster of many tiny juicy beads. Raspberries slip off hollow like a thimble; blackberries keep a pale core. | Ripe fruit |
+
+Notes:
+
+- Several lawn weeds have dandelion-like yellow flowers on branched or hairy stalks. If the stalk branches or carries leaves, it is not a dandelion.
+- Not every dark berry is a blackberry. Pokeweed has shiny purple-black berries hanging in long clusters on a smooth, thornless, reddish stem, and its berries and roots are poisonous. **If the fruit is not a beaded cluster on a prickly cane, it is not on this list.**
+- Pick only from ground you know is unsprayed.
+
+### Edible only when prepared correctly
+
+Some well-known wild foods are safe only with the right part and the right preparation. Learn these from a regional source, not from a list.
+
+- **Elderberries:** only ripe berries, cooked. Leaves, stems, bark, and roots are poisonous. Juice pressed from berries with leaves and stems made 11 people sick within 15 minutes.
+- **Fiddleheads:** only ostrich fern, and never raw or lightly cooked. Boil for 15 minutes or steam for 10 to 12 minutes before any other cooking. Bracken fern is not safe to eat.
+- **Pokeweed:** some traditions eat the young spring shoots after boiling in several changes of water. Roots and berries are never safe. Skip this plant.
+
+### First time eating a wild food
+
+Even with a certain identification:
+
+1. Eat a small amount, well prepared, and wait a day. Some people react to foods that are safe for others.
+2. Try only one new wild food at a time.
+3. Keep an uneaten sample in the refrigerator for a few days, in case anyone needs to identify it.
+4. Do not experiment on children, pregnant women, older adults, or anyone who is ill.
+
+## How much food is this, really?
+
+Not much. Do not plan on foraging to feed a household.
+
+- **Greens are mostly water.** For scale, 1.5 cups (85 g) of leaf lettuce has about 15 calories. An adult needs around 2,000 a day.
+- **Berries and nuts are seasonal** and slow to gather. Nuts and acorns also need hulling, cracking, or long processing before they are food.
+- **Every new plant adds risk,** and risk is what you cannot afford when help is far away.
+
+Foraging is worth learning for fresh vitamins, variety, and morale alongside stored food. Your calories should come from the pantry and the garden. See the Emergency Food Storage and Emergency Gardening & Food Growing guides.
+
+## Law and good manners
+
+Rules differ by country, state, park, and landowner. This is general information, not legal advice.
+
+- **Private land:** ask the owner first.
+- **Public land:** most parks and refuges forbid foraging or require a permit. In US national parks all plants are protected. Each park's superintendent may allow small amounts of certain fruits, berries, and nuts for personal use, and the list and limits differ from park to park. Ask before you pick.
+- **Take little:** no more than one third of any plant or patch, so it can recover and wildlife can eat.
+- **Leave rare and protected plants alone.**
+
+## Practice
+
+**10-minute drill:** Two parts. First, save 1-800-222-1222 (or your country's poison centre) in every phone in the house and write it by the door. Second, walk outside with the identification checklist and find one dandelion. Check every feature in the table: rosette, toothed smooth leaves, one flower per smooth hollow leafless stalk, white sap. Then find a yellow-flowered weed that fails one of the checks. Eat nothing today. The skill you are building is the checking.
+
+**What would you do?**
+
+1. *On a hike, a friend pulls a pale root from a stream bank. It smells like carrot. "Wild parsnip," he says, and offers you a piece.*
+
+   **Answer:** Do not taste it, and stop him if you can. Wet ground, a carrot-family plant, and a carrot smell describe water hemlock exactly, and a piece of root an inch long can kill an adult. Tasting to check is how people die. If he has already eaten some, call 911 or Poison Help now and keep the root.
+
+2. *Food is short. An app labels the white mushrooms in your yard as an edible species with high confidence, and your kids are hungry.*
+
+   **Answer:** Leave them. Apps misidentify poisonous species often, and white mushrooms include the destroying angels. A mushroom is safe to eat only when a trained mycologist has examined that specimen in person. Hungry children recover. A failed liver does not.
+
+3. *Your neighbor ate "wild onions" from the pasture two hours ago. His mouth is tingling and he feels a bit weak. He wants to sleep it off.*
+
+   **Answer:** Do not let him. Tingling in the mouth after eating a wild bulb fits death camas, and a slow heartbeat and low blood pressure can follow. Call Poison Help at 1-800-222-1222 now, or 911 if he becomes faint, confused, or short of breath. Stay with him, and bag the leftover bulbs for identification.
+
+## Quick Reference
+
+```
+FORAGING: 100% SURE OR DON'T EAT
+
+POISON HELP (US): 1-800-222-1222
+Call BEFORE symptoms. Free.
+911 if: collapse, seizure, trouble
+breathing, can't be woken.
+Keep a sample. Don't induce vomiting.
+
+NEVER EAT
+- Wild "carrot/parsnip/parsley/
+  celery" (hemlock lookalikes)
+- Wild bulbs or "onions" (death camas)
+- Any wild mushroom not checked
+  in person by a mycologist
+- Anything from roadsides, sprayed
+  ground, or near old buildings
+
+A REAL ID MEANS
+Every feature matches.
+3 references agree.
+Lookalikes ruled out.
+You know the part and the prep.
+Apps and AI do not count.
+
+EDIBILITY TEST: NOT RELIABLE.
+Some poisons kill in one bite.
+Some show nothing for 6-24 hours.
+
+START WITH
+Dandelion (1 flower per hollow,
+leafless stalk; toothed leaves)
+Blackberry / raspberry (beaded
+fruit on prickly canes)
+
+FIRST TASTE: small amount, one new
+food, wait a day, keep a sample.
+```
+
+## Sources
+
+- [CDC MMWR: Water Hemlock Poisoning, Maine, 1992](https://www.cdc.gov/mmwr/preview/mmwrhtml/00026056.htm)
+- [CDC MMWR: Amanita phalloides Mushroom Poisonings, Northern California, December 2016](https://www.cdc.gov/mmwr/volumes/66/wr/mm6621a1.htm)
+- [CDC MMWR: Poisoning from Elderberry Juice, California](https://www.cdc.gov/mmwr/preview/mmwrhtml/00000311.htm)
+- [USDA Agricultural Research Service: Water Hemlock](https://www.ars.usda.gov/pacific-west-area/logan-ut/poisonous-plant-research/docs/water-hemlock-cicuta-douglasii/)
+- [USDA Agricultural Research Service: Poison Hemlock](https://www.ars.usda.gov/pacific-west-area/logan-ut/poisonous-plant-research/docs/poison-hemlock-conium-maculatum/)
+- [USDA Agricultural Research Service: Deathcamas](https://www.ars.usda.gov/pacific-west-area/logan-ut/poisonous-plant-research/docs/deathcamas-zigadenus-gramineus-z-venenosus-z-paniculatus-z-nuttallii/)
+- [Utah State University Extension: Foothill Deathcamas](https://extension.usu.edu/rangeplants/forbs-herbaceous/deathcamas)
+- [Poison Control (National Capital Poison Center): Home](https://www.poison.org/)
+- [Poison Control: Wild Mushroom Warning](https://www.poison.org/articles/wild-mushroom-warning)
+- [Poison Control: Can Poison Hemlock Be Deadly?](https://www.poison.org/articles/can-poison-hemlock-be-deadly-184)
+- [Utah Poison Control Center: Dangers of Foraging](https://poisoncontrol.utah.edu/news/2023/08/dangers-of-foraging)
+- [Mississippi State University Extension: Forgotten Foods, an Introduction to Wild Edible Plants](https://extension.msstate.edu/publications/forgotten-foods-introduction-wild-edible-plants)
+- [University of Maine Cooperative Extension Bulletin 4198: Facts on Fiddleheads](https://extension.umaine.edu/publications/4198e/)
+- [EPA: Healthy Gardening Practices to Reduce Exposure to Lead-Contaminated Soil](https://www.epa.gov/lead/healthy-gardening-practices-reduce-exposure-lead-contaminated-soil)
+- [National Park Service, Shenandoah: Collecting Plants and Mushrooms](https://www.nps.gov/shen/learn/management/collecting-plants.htm)
+- [FDA: Nutrition Information for Raw Vegetables](https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/nutrition-information-raw-vegetables)
 
 ---
 
-## Identification Principles
+Last reviewed: November 2026
 
-### Positive ID Requirements
-
-Before eating any wild plant, verify:
-- Overall shape and size
-- Leaf shape, arrangement, and texture
-- Stem characteristics
-- Flower/fruit characteristics
-- Smell (some plants have distinct odors)
-- Habitat and season
-- Multiple expert sources agree
-
-### Learning to Forage Safely
-
-1. **Start with a class** from a local expert
-2. **Focus on a few plants** initially
-3. **Use multiple field guides**
-4. **Learn dangerous plants** in your area first
-5. **Practice identification** before emergencies
-6. **Join foraging groups** for mentorship
-
----
-
-## Categories of Wild Edibles
-
-### Greens and Vegetables
-
-**Widely distributed, often easier to identify:**
-
-| Plant | Description | Season | Notes |
-|-------|-------------|--------|-------|
-| Dandelion | Yellow flower, toothed leaves | Year-round | Leaves, roots, flowers edible |
-| Clover | Three-leaf clusters, round flowers | Spring-Fall | Flowers and leaves edible |
-| Plantain | Broad leaves, parallel veins | Spring-Fall | Common lawn "weed" |
-| Lamb's quarters | Diamond leaves, dusty appearance | Summer | Nutritious, like spinach |
-| Wood sorrel | Heart-shaped leaves in threes | Spring-Fall | Lemony taste (small amounts) |
-
-### Fruits and Berries
-
-**High-value foraging with caution:**
-
-| Berry | Color | Caution |
-|-------|-------|---------|
-| Blackberry | Black when ripe | Safe, widely known |
-| Raspberry | Red when ripe | Safe, widely known |
-| Blueberry | Blue with bloom | Learn to distinguish from lookalikes |
-| Elderberry | Dark purple/black | MUST be cooked, toxic raw |
-| Wild strawberry | Small, red | Safe, distinctive |
-
-**Dangerous berries to AVOID:**
-- Pokeweed berries (dark purple)
-- Holly berries (red)
-- Nightshade (various)
-- Yew berries
-- Bittersweet
-
-### Nuts
-
-**High calorie, worth learning:**
-
-| Nut | Identification | Processing |
-|-----|---------------|------------|
-| Acorns | Oak trees, cup shape | Requires leaching (tannins) |
-| Walnuts | Large compound leaves | Shell carefully |
-| Hickory | Shaggy bark, compound leaves | Sweet, edible raw |
-| Hazelnuts | Shrub, fringed husk | Edible raw |
-
-### Roots and Tubers
-
-**Higher risk category:**
-- Many poisonous roots exist
-- Require more knowledge
-- Some need processing
-- Not recommended for beginners
-
----
-
-## Regional Considerations
-
-### Northeast US
-
-**Common edibles:**
-- Dandelion
-- Garlic mustard (invasive, abundant)
-- Ramps (wild leeks) - spring
-- Blackberries and raspberries
-- Chanterelle mushrooms
-- Acorns
-
-**Dangerous plants:**
-- Poison hemlock
-- Water hemlock
-- Destroying angel mushroom
-- Pokeweed
-
-### Southeast US
-
-**Common edibles:**
-- Pawpaw fruit
-- Persimmons
-- Muscadine grapes
-- Pecans
-- Sassafras (root beer plant)
-- Cattails
-
-**Dangerous plants:**
-- Water hemlock
-- Angel's trumpet
-- Rosary pea
-- Carolina jessamine
-
-### Midwest US
-
-**Common edibles:**
-- Mulberries
-- Lamb's quarters
-- Morel mushrooms (spring)
-- Black walnuts
-- Wild asparagus
-
-**Dangerous plants:**
-- Poison hemlock
-- False morel
-- Water hemlock
-
-### Southwest US
-
-**Common edibles:**
-- Prickly pear cactus
-- Mesquite pods
-- Pinyon pine nuts
-- Yucca
-- Wild onions
-
-**Dangerous plants:**
-- Death camas
-- Datura (jimsonweed)
-- Oleander
-
-### Pacific Northwest
-
-**Common edibles:**
-- Salmonberries
-- Huckleberries
-- Fiddlehead ferns
-- Chanterelle mushrooms
-- Stinging nettle (cooked)
-
-**Dangerous plants:**
-- Death camas
-- Poison hemlock
-- Destroying angel mushroom
-- Water hemlock
-
-### Mountain West
-
-**Common edibles:**
-- Chokecherries (with processing)
-- Pine nuts
-- Wild strawberries
-- Serviceberries
-- Miner's lettuce
-
-**Dangerous plants:**
-- Death camas
-- Water hemlock
-- Monkshood
-
----
-
-## Mushroom Foraging Warning
-
-### Extreme Caution Required
-
-Mushroom misidentification kills people every year.
-
-**Never eat a mushroom unless:**
-- You have received hands-on training
-- You can positively identify it
-- You've made a spore print
-- Multiple experts have confirmed
-
-**Deadly mushrooms include:**
-- Death cap (Amanita phalloides)
-- Destroying angel (Amanita species)
-- False morel
-- Various others
-
-**Symptoms of poisoning may be delayed 6-24 hours**, at which point liver damage may be irreversible.
-
-### Safer Approach for Beginners
-
-If you want to forage mushrooms:
-1. Take multiple classes
-2. Go with experienced foragers
-3. Start with distinctive species only
-4. When in doubt, leave it out
-
----
-
-## The Universal Edibility Test
-
-**For unknown plants (absolute last resort):**
-
-This test takes 24+ hours and is NOT reliable for mushrooms or highly toxic plants.
-
-1. **Test one plant part at a time** (leaf, stem, root)
-2. **Smell** - Reject if smells like almonds or peaches
-3. **Skin contact** - Rub on inner wrist, wait 15 minutes
-4. **Lip test** - Touch to lip, wait 15 minutes
-5. **Tongue test** - Place on tongue, wait 15 minutes
-6. **Chew test** - Chew and spit out, wait 15 minutes
-7. **Swallow test** - Eat small amount, wait 8 hours
-8. **If no reaction**, eat larger amount, wait 8 more hours
-
-**Warning:** This test is NOT foolproof. Some toxins have delayed effects. Use only as absolute last resort.
-
----
-
-## Sustainable Foraging
-
-### Ethical Practices
-
-- Take only what you need
-- Never harvest entire populations
-- Leave some for wildlife and regeneration
-- Avoid endangered species
-- Follow local regulations
-- Don't damage plants during harvest
-
-### Legal Considerations
-
-- Some areas prohibit foraging
-- Parks often have regulations
-- Private property requires permission
-- Some plants are protected
-- Know the rules in your area
-
----
-
-## Getting Started Safely
-
-### Beginner Steps
-
-1. **Buy regional field guides** (multiple)
-2. **Take a local foraging class**
-3. **Learn 5-10 common plants** thoroughly
-4. **Learn dangerous plants** in your area
-5. **Practice identification** on walks
-6. **Start with obvious plants** (dandelion, blackberry)
-7. **Build knowledge slowly**
-
-### Resources
-
-- Local extension offices
-- Native plant societies
-- Foraging classes and walks
-- Regional field guides
-- Online forums (with caution)
-
----
-
-## Quick Reference - Very Safe Beginner Plants
-
-These are generally safe and easy to identify, but always verify locally:
-
-| Plant | Key Features | Use |
-|-------|-------------|-----|
-| Dandelion | Distinctive flower, toothed leaves | Salad, tea |
-| Clover | Three leaflets, round flower | Tea, salad |
-| Blackberry | Thorny canes, compound leaves | Fruit |
-| Wild strawberry | Small plant, white flower, red fruit | Fruit |
-| Plantain | Oval leaves, parallel veins, lawn weed | Salad, poultice |
-
-**Even these require positive identification before consumption.**
-
----
-
-*Last updated: January 2026*
 *License: CC-BY-SA 4.0*
-
-**CRITICAL DISCLAIMER:** Foraging can be dangerous. Misidentification can cause serious illness or death. This guide is for general education only. Always consult expert sources, take classes, and verify all identifications before consuming any wild food.

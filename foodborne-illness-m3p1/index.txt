@@ -270,25 +270,85 @@ If someone gets sick, write down:
 
 This helps doctors and health departments find the cause.
 
+PRACTICE
+--------
+
+10-MINUTE DRILL: Mix a practice batch of the homemade oral
+rehydration solution, so the first time isn't at 2 a.m. with a
+sick child. (1) Find a container that holds 1 liter (about 1
+quart) and a real measuring teaspoon. (2) Measure in 6 level
+teaspoons of sugar and 1/2 level teaspoon of salt, add 1 liter
+of safe drinking water, and stir until dissolved. (3) Copy the
+recipe and the CALL 911 list from the Quick Reference onto a
+card. Keep it with your thermometer and any store-bought ORS
+packets.
+
+WHAT WOULD YOU DO?
+
+1. Yesterday your family ate home-canned green beans from a
+   relative's cellar. This evening your husband says he is
+   seeing double, his words are slurring, and he is having
+   trouble swallowing. He has no fever and no diarrhea, and he
+   wants to sleep it off.
+
+   Answer: Call 911 or get him to an emergency room now. Double
+   vision, slurred speech, and trouble swallowing after
+   home-canned food point to botulism, which can paralyze the
+   breathing muscles and needs hospital treatment. Don't wait
+   to see how he is in the morning. Nobody eats any more of the
+   beans, and everyone else who ate them is warned.
+
+2. You have had diarrhea since yesterday. Today there is blood
+   in it and your temperature is 102.5°F (39.2°C). You have a
+   long drive tomorrow, and there is loperamide in the cabinet.
+
+   Answer: Leave the loperamide where it is. Diarrhea medicines
+   are not to be used when there is blood in the stool or a
+   fever. Bloody diarrhea and a fever over 102°F are each a
+   reason to see a doctor, so do that before the drive. Until
+   then, keep taking small, frequent sips of fluid or oral
+   rehydration solution.
+
+3. Your 3-year-old has been vomiting and has had diarrhea since
+   morning. She has passed almost no urine, her mouth is dry,
+   and she is turning down drinks. A relative suggests half an
+   adult anti-diarrhea tablet and letting her sleep.
+
+   Answer: No adult medicine: don't give diarrhea medicines to a
+   child unless a doctor says to. Offer oral rehydration
+   solution in small, frequent sips, as directed on the package.
+   A young child is high-risk, and peeing very little with a dry
+   mouth are signs of dehydration, so get medical care now
+   rather than waiting to see. Call 911 if she becomes confused,
+   faints, has a seizure, or can't be roused.
+
 QUICK REFERENCE
 ---------------
 
 CALL 911:
-Vision problems, drooping eyelids, slurred speech, trouble
-swallowing or breathing, confusion, fainting, severe dehydration
+Vision problems, drooping eyelids,
+slurred speech, trouble swallowing
+or breathing, confusion, fainting,
+severe dehydration
 
 SEE A DOCTOR:
-Bloody diarrhea, fever over 102°F, can't keep fluids down,
-diarrhea over 3 days, dehydration, pregnant with fever
+Bloody diarrhea, fever over 102°F,
+can't keep fluids down, diarrhea
+over 3 days, dehydration, pregnant
+with fever
 
 AT HOME:
 1. Stop eating the suspect food
-2. Sip fluids often (ORS if available)
+2. Sip fluids often (ORS if
+   available)
 3. Rest
-4. Eat normally once appetite returns
+4. Eat normally once appetite
+   returns
 
 HOMEMADE ORS:
-1 liter safe water + 6 level tsp sugar + 1/2 level tsp salt
+1 liter safe water
++ 6 level tsp sugar
++ 1/2 level tsp salt
 
 PREVENTION:
 [ ] Wash hands with soap and water
@@ -300,40 +360,36 @@ PREVENTION:
 SOURCES
 -------
 
-CDC: Symptoms of Food Poisoning
-https://www.cdc.gov/food-safety/signs-symptoms/index.html
+- CDC: Symptoms of Food Poisoning -
+  https://www.cdc.gov/food-safety/signs-symptoms/index.html
+- CDC: Botulism Symptoms -
+  https://www.cdc.gov/botulism/signs-symptoms/index.html
+- CDC: Giardia Symptoms -
+  https://www.cdc.gov/giardia/signs-symptoms/index.html
+- CDC: Cryptosporidium Symptoms -
+  https://www.cdc.gov/cryptosporidium/signs-symptoms/index.html
+- CDC: Preventing Norovirus -
+  https://www.cdc.gov/norovirus/prevention/index.html
+- CDC: Preventing Food Poisoning (cooking temperatures, 2-hour
+  rule) -
+  https://www.cdc.gov/food-safety/prevention/index.html
+- NIDDK (NIH): Treatment for Food Poisoning -
+  https://www.niddk.nih.gov/health-information/digestive-diseases/food-poisoning/treatment
+- WHO: Cholera outbreaks Q&A (homemade oral rehydration
+  solution) -
+  https://www.who.int/news-room/questions-and-answers/item/cholera-outbreaks
+- USDA FSIS: Safe Minimum Internal Temperature Chart -
+  https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart
+- CDC: Keep Food Safe After a Disaster or Emergency -
+  https://www.cdc.gov/food-safety/foods/keep-food-safe-after-emergency.html
+- MedlinePlus Medical Encyclopedia: Dehydration -
+  https://medlineplus.gov/ency/article/000982.htm
 
-CDC: Botulism Symptoms
-https://www.cdc.gov/botulism/signs-symptoms/index.html
-
-CDC: Giardia Symptoms
-https://www.cdc.gov/giardia/signs-symptoms/index.html
-
-CDC: Cryptosporidium Symptoms
-https://www.cdc.gov/cryptosporidium/signs-symptoms/index.html
-
-CDC: Preventing Norovirus
-https://www.cdc.gov/norovirus/prevention/index.html
-
-NIDDK (NIH): Treatment for Food Poisoning
-https://www.niddk.nih.gov/health-information/digestive-diseases/food-poisoning/treatment
-
-WHO: Cholera outbreaks Q&A (homemade oral rehydration solution)
-https://www.who.int/news-room/questions-and-answers/item/cholera-outbreaks
-
-USDA FSIS: Safe Minimum Internal Temperature Chart
-https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart
-
-CDC: Keep Food Safe After a Disaster or Emergency
-https://www.cdc.gov/food-safety/foods/keep-food-safe-after-emergency.html
-
-MedlinePlus: Dehydration
-https://medlineplus.gov/ency/article/000982.htm
+=============================
+Last reviewed: November 2026
 
 This guide does not replace hands-on training or professional
 medical care.
 
-=============================
-Last reviewed: October 2026
 License: CC-BY-SA 4.0
 =============================

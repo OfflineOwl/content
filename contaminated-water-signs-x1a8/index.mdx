@@ -199,7 +199,7 @@ Kits can check for coliform bacteria, pH, chlorine, hardness, lead, nitrate, and
 | Sediment | Settle, then filter through cloth or a coffee filter; then disinfect | Disinfecting cloudy water without clearing it |
 | Chemicals | Another water source. Reverse osmosis or distillation remove some chemicals | Boiling, bleach, iodine, UV, most portable filters |
 | Algae toxins | Another water source | Boiling (can concentrate toxins) |
-| Nitrate or lead | Another water source, or a filter certified for that contaminant | Boiling (concentrates them), activated carbon pitchers for nitrate |
+| Nitrate or lead | Another water source, or a filter certified for that contaminant | Boiling (it does not remove either, and it concentrates nitrate), activated carbon pitchers for nitrate |
 
 ---
 
@@ -263,6 +263,71 @@ Even if every box is checked, **treat the water** before drinking.
 
 ---
 
+## Practice
+
+**10-minute drill:** Do a notice walk-through. Write the three advisories on a card (boil-water, do-not-drink, do-not-use) with one line each on what you would do, and tape it inside a kitchen cupboard. Then walk the house and point to everything fed by tap water that you would have to stop using as it comes in a boil-water advisory: the refrigerator's water and ice dispenser, the filter pitcher, the toothbrush cup, the pets' bowl, the baby's bottles. Finish at the nearest outdoor water (a pond, a creek, a rain barrel) and run the Quick Checklist on it by looking and smelling only. Don't touch it and don't taste it.
+
+**What would you do?**
+
+1. *Your town issues a do-not-drink advisory after a chemical spill upstream. A neighbor says she is boiling all her tap water "to be safe" and offers you a potful.*
+
+   **Answer:** Turn it down, and tell her why. A do-not-drink advisory is issued for chemicals or toxins, and boiling does not help. It can even concentrate some chemicals. Use bottled or stored water for drinking, cooking, brushing teeth, formula, ice and pets until officials lift the advisory, which may take weeks.
+
+2. *A hot afternoon by a lake. Along the shore the water has green streaks that look like spilled paint. Your dog is heading down for a drink, and you have a stove in your pack to boil some for yourself.*
+
+   **Answer:** Call the dog back first: toxic algae can kill a dog within hours. Then find another source for yourself. Green or blue-green scum or a "spilled paint" look means don't drink, even boiled, because boiling does not remove the toxins and can concentrate them. If the dog did drink and starts vomiting, drooling, weakening or seizing, it needs a veterinarian right away.
+
+3. *A boil-water advisory is in effect. Your child asks for a glass of water with ice. The refrigerator door has a filtered water and ice dispenser, and there is a filter pitcher on the shelf.*
+
+   **Answer:** Neither one makes the water safe. Boil tap water even if it has been through a filter, and don't use ice or water from the refrigerator dispenser. Pour bottled water, or tap water that has been at a rolling boil for 1 minute (3 minutes above 5,000 ft) and then cooled. The same water goes on the toothbrush tonight.
+
+---
+
+## Quick Reference
+
+```
+CONTAMINATED WATER SIGNS
+
+OFFICIAL NOTICES
+- BOIL-WATER: rolling boil 1 min
+  (3 min above 5,000 ft / 1,500 m),
+  or use bottled water
+- DO-NOT-DRINK: boiling won't help.
+  Bottled or stored water only
+- DO-NOT-USE: no tap water at all
+
+DO NOT DRINK, EVEN BOILED
+- Floodwater
+- Fuel or chemical smell
+- Oily film or rainbow sheen
+- Green or blue-green scum,
+  "spilled paint" look
+- Dead fish or animals nearby
+
+TREAT EVERYTHING ELSE
+- Cloudy: settle, filter, treat
+- Clear and odorless does NOT
+  mean safe
+- Never taste-test unknown water
+- Flooded well: don't use until
+  disinfected and tested
+- Keep kids and pets out of
+  scummy water
+
+SICK AFTER DRINKING IT?
+Get medical help for:
+- Bloody diarrhea
+- Fever over 102°F (38.9°C)
+- Can't keep fluids down
+- Diarrhea for more than 3 days
+- Little or no urine, dizziness
+- Confusion, seizure or trouble
+  breathing: call 911
+US Poison Control: 1-800-222-1222
+```
+
+---
+
 ## Sources
 
 - [CDC: How to Make Water Safe in an Emergency](https://www.cdc.gov/water-emergency/about/index.html)
@@ -272,12 +337,13 @@ Even if every box is checked, **treat the water** before drinking.
 - [CDC: Preventing Illnesses Caused by Harmful Algal Blooms](https://www.cdc.gov/harmful-algal-blooms/prevention/index.html)
 - [CDC: Food Poisoning Symptoms](https://www.cdc.gov/food-safety/signs-symptoms/index.html)
 - [EPA: Emergency Disinfection of Drinking Water](https://www.epa.gov/ground-water-and-drinking-water/emergency-disinfection-drinking-water)
-- [EPA: Will boiling my water help? (nitrate and lead)](https://www.epa.gov/mn/will-boiling-my-water-help)
+- [EPA: Will boiling my water help? (nitrate)](https://www.epa.gov/mn/will-boiling-my-water-help)
+- [EPA: Basic Information about Lead in Drinking Water](https://www.epa.gov/ground-water-and-drinking-water/basic-information-about-lead-drinking-water)
 - [FEMA: Fact Sheet: How to Make Your Water Safe to Drink](https://www.fema.gov/press-release/20250602/fact-sheet-how-make-your-water-safe-drink)
 - [FEMA: Nuclear Detonation Preparedness: Communicating in the Immediate Aftermath](https://www.fema.gov/sites/default/files/documents/fema_oet_nuclear-detonation-preparedness-communicating-aftermath_052024.pdf)
 
 ---
 
-Last reviewed: October 2026
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

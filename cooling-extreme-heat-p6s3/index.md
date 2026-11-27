@@ -109,7 +109,7 @@ Water on your skin is one of the most effective ways to cool down without air co
 
 ## Heat Illness
 
-These signs and first aid steps match the Extreme Heat Survival guide, which has full details.
+These signs and first aid steps match the Extreme Heat Survival guide, which has full details. This guide doesn't replace first aid training or professional medical care.
 
 ### Heat Stroke: Call 911
 
@@ -171,6 +171,24 @@ Options include public cooling centers, libraries, community centers, malls, and
 - [ ] Kiddie pool or large tub (also useful for cooling someone with heat stroke)
 - [ ] Cooling towels
 
+## Practice
+
+**10-minute drill:** Do a heat walk-through of your home on an ordinary day. Put a thermometer in the room you use most, or find out that you need to buy one. Note which windows get direct sun and whether each has a blind, curtain or shade you can close. Pick the coolest room to sleep in, usually on the lowest floor, and the two windows on opposite sides that would give a cross-breeze at night. Then write down the nearest air-conditioned place you could reach, its opening hours and how you would get there, and put the note with your cooling supplies.
+
+**What would you do?**
+
+1. *It is 3 p.m. on the second day of a heat wave. You have no air conditioning, the thermometer in the living room reads 94°F, and the box fan blowing on your face feels like the only relief.*
+
+   **Answer:** Turn the fan away from yourself and plan to leave for the hottest hours. Above 90°F indoors, a fan blowing on you can raise your body temperature even while it feels pleasant. Go to an air-conditioned place such as a library, mall or cooling center. Until you can, use water: a cool shower or bath, wet cloths, damp clothing, and keep drinking. Save the fan for tonight, in a window, pulling in cooler outside air.
+
+2. *Mid-afternoon, the apartment feels stuffy and you want to throw open every window for fresh air. It is 99°F outside and 86°F inside.*
+
+   **Answer:** Keep them shut. When it is hotter outside than inside, open windows only let the heat in. Close the blinds or curtains on the sunny side and leave the oven and stove off. Open up at night and in the early morning, when the outside air is cooler, using windows on opposite sides for a cross-breeze and a fan in a window to pull the cool air through.
+
+3. *The power has been out since morning and the heat is forecast to last three more days. Your pregnant sister and her toddler are staying with you. Everyone is managing with wet towels, and she says they are fine where they are.*
+
+   **Answer:** Go now, before anyone has symptoms. A power outage in a heat wave is a reason to leave on its own, and so is a household with someone pregnant or very young when the heat is going to last. Find an air-conditioned place: a cooling center, a community center, or friends or family with power. In the US, call 2-1-1 to find one. On the way and once there, keep everyone drinking and watch for signs of heat illness.
+
 ## Quick Reference
 
 ```
@@ -194,13 +212,14 @@ KEEP HEAT OUT
 HEAT STROKE = CALL 911
 Temp 103 F+, confusion, passing out.
 Skin hot, dry OR sweaty.
-Cool fast (neck-down in cool/cold water).
-Nothing to drink.
+Cool fast: neck-down in cool or
+cold water. Nothing to drink.
 
 HEAT EXHAUSTION
 Heavy sweat; cold, clammy skin; weak.
-Cool down, sip water. Help if vomiting,
-worse, confused, or not better in 1 hour.
+Cool down, sip water. Get help if
+vomiting, worse, confused, or not
+better in 1 hour.
 
 NEVER leave kids or pets in a car.
 ```
@@ -220,8 +239,6 @@ NEVER leave kids or pets in a car.
 
 ---
 
-Last reviewed: October 2026
-
-This guide doesn't replace first aid training or professional medical care.
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

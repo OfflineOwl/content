@@ -273,53 +273,110 @@ Total used: _________
 Remaining: _________
 Days remaining at this rate: _________
 
+PRACTICE
+--------
+
+10-MINUTE DRILL: Count your water and do the sum. (1) Add up
+every gallon of drinking water in the house: bottles, jugs, and
+filled containers. Read the size of the water heater tank off
+its label and note it separately. Don't drain anything. (2) Use
+the formula in CALCULATING HOW LONG WATER LASTS: total gallons,
+divided by 1 gallon times the number of people. Count pets too.
+(3) Work it out again for a heat wave, when needs can double.
+(4) Write the answers on the Daily Water Log, and list the first
+three non-drinking uses your household would cut.
+
+WHAT WOULD YOU DO?
+
+1. The water has been off for two days in August. Four of you
+   have 6 gallons left and there is no word on when service
+   returns. Someone proposes two cups each per day so it lasts
+   the week.
+
+   Answer: Don't. Drinking water is the one use you do not cut.
+   Everyone drinks what they need today, and the household's
+   effort goes into finding more for tomorrow. At 1 gallon each
+   per day, 6 gallons is about a day and a half for four people,
+   so act now: stop flushing and washing with drinking water,
+   eat no-cook foods, stay cool and still, drain the water
+   heater and pipes, and find the official distribution point or
+   a shelter.
+
+2. Supplies are low and your 4-month-old is fed on powdered
+   formula. A relative suggests mixing each bottle with extra
+   water so the formula tin lasts longer.
+
+   Answer: Never dilute formula more than the label says. Mix it
+   as directed, with bottled water or water that was boiled and
+   cooled. Water for formula comes straight after drinking water
+   in the priority order, ahead of cooking and washing. If you
+   are running out, that is the emergency: get to a distribution
+   point or a shelter, or ask neighbors.
+
+3. Your 78-year-old father says he isn't thirsty and wants his
+   share saved for the grandchildren. By mid-afternoon he has a
+   headache, his urine is dark, and he is lightheaded when he
+   stands up.
+
+   Answer: He is dehydrated, and he drinks now. Older adults
+   often don't feel thirst, so "not thirsty" tells you nothing.
+   Give water or oral rehydration solution in small, frequent
+   sips, have him rest somewhere cool, and keep the fluids
+   going. Anyone showing signs of dehydration gets water first.
+   Call 911 if he becomes confused, faints, has a fever over
+   102°F (38.9°C), shows signs of heat stroke, or gets worse
+   despite fluids.
+
 QUICK REFERENCE
 ---------------
 
 GOLDEN RULE:
-Don't ration drinking water. Drink what you need today; find more
-for tomorrow.
+Don't ration drinking water.
+Drink what you need today;
+find more for tomorrow.
 
 NEEDS:
-About 3/4 gallon of fluid per active adult per day
-More for heat, illness, children, nursing mothers
+About 3/4 gallon of fluid per
+active adult per day
+More for heat, illness, children,
+nursing mothers
 Plan 1 gallon per person per day
 
 CUT FIRST:
-Laundry, flushing, bathing, dishes, outdoor use
+Laundry, flushing, bathing, dishes,
+outdoor use
 
 REDUCE NEED BY:
-Staying cool, staying still, staying in shade,
-avoiding salt and alcohol
+Staying cool, staying still,
+staying in shade, avoiding salt
+and alcohol
 
 EMERGENCY:
-Confusion, no urine, fainting, or heat stroke signs: call 911
+Confusion, no urine, fainting, or
+heat stroke signs: call 911
 
 SOURCES
 -------
 
-Ready.gov: Water
-https://www.ready.gov/water
+- Ready.gov: Water -
+  https://www.ready.gov/water
+- FEMA: Food and Water in an Emergency (FEMA 477) -
+  https://www.fema.gov/pdf/library/f&web.pdf
+- FEMA: Fact Sheet: How to Make Your Water Safe to Drink -
+  https://www.fema.gov/press-release/20250602/fact-sheet-how-make-your-water-safe-drink
+- CDC: How to Create an Emergency Water Supply -
+  https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html
+- CDC: Guidelines for Personal Hygiene During an Emergency -
+  https://www.cdc.gov/water-emergency/safety/guidelines-for-personal-hygiene-during-an-emergency.html
+- MedlinePlus: Dehydration -
+  https://medlineplus.gov/dehydration.html
+- MedlinePlus Medical Encyclopedia: Dehydration -
+  https://medlineplus.gov/ency/article/000982.htm
 
-FEMA: Food and Water in an Emergency (FEMA 477)
-https://www.fema.gov/pdf/library/f&web.pdf
-
-FEMA: Fact Sheet: How to Make Your Water Safe to Drink
-https://www.fema.gov/press-release/20250602/fact-sheet-how-make-your-water-safe-drink
-
-CDC: How to Create an Emergency Water Supply
-https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html
-
-CDC: Guidelines for Personal Hygiene During an Emergency
-https://www.cdc.gov/water-emergency/safety/guidelines-for-personal-hygiene-during-an-emergency.html
-
-MedlinePlus: Dehydration
-https://medlineplus.gov/dehydration.html
-https://medlineplus.gov/ency/article/000982.htm
+==========================
+Last reviewed: November 2026
 
 This guide does not replace professional medical care.
 
-==========================
-Last reviewed: October 2026
 License: CC-BY-SA 4.0
 ==========================

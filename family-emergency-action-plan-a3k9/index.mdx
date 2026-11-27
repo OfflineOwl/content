@@ -1,6 +1,6 @@
 # Family Emergency Action Plan (All Hazards)
 
-> Your family may not be together when a disaster strikes. A written plan answers the questions there's no time for in the moment: how you'll get alerts, where you'll shelter, how you'll leave, and how you'll find each other.
+> **Your family may not be together when a disaster strikes.** A written plan answers the questions there's no time for in the moment: how you'll get alerts, where you'll shelter, how you'll leave, and how you'll find each other.
 
 ## Start Here: The 30-Minute Version
 
@@ -42,6 +42,8 @@ During emergencies, stress makes it hard to think. A written plan:
 | **Security** | Active threats, terrorism | Varies |
 
 ### Assess Your Specific Risks
+
+OfflineOwl's Know Your Risks tool walks through this step: tick what is true of your home, and it lists the hazards to plan for first. Then check the details for your own address:
 
 1. **Research local history:** what disasters have happened in your area?
 2. **Check flood maps:** FEMA's Flood Map Service Center shows flood zones.
@@ -324,6 +326,26 @@ Last updated: [DATE]
 
 ---
 
+## Practice
+
+**10-minute drill:** Walk to the neighborhood meeting place. Tell everyone it is a drill, say "everybody out," and have each person leave by the nearest exit and walk to the spot right outside your home that you picked for fires. Count heads. While you stand there, ask each person to say the out-of-town contact's phone number from memory, then check it against their wallet card. Anyone without a card, or with an old number on it, gets a new one today.
+
+**What would you do?**
+
+1. *A chemical release is reported a mile from your daughter's school, and the school texts that it is sheltering in place. You are ten minutes away by car and every instinct says to go and get her.*
+
+   **Answer:** Don't go. Don't rush to a school during a shelter-in-place emergency: the school has its own plan, and going out can put both you and your child at risk. If you are in the affected area yourself, shelter in place too. Follow the school's instructions on when and where to pick up, and text your out-of-town contact so the rest of the family knows where everyone is.
+
+2. *A strong earthquake hits mid-afternoon. You are at work and your partner is across town. You call five times in two minutes and nothing connects.*
+
+   **Answer:** Stop redialing. Rapid redials add to the jam, so wait 10 seconds before trying a failed call again, and switch to text: a text needs far less network capacity and may send by itself once capacity frees up. Text your partner or the family group first. If there is no reply, text the out-of-town contact where you are and how you are, and check in again at the times you agreed. If you can't get home, go to the meeting place outside your neighborhood.
+
+3. *The smoke alarm goes off at 2 a.m. Everyone reaches the mailbox, your meeting place, and then your son realizes the dog is still inside. The front door is open and the smoke doesn't look that bad.*
+
+   **Answer:** Nobody goes back in, for anything or anyone. Stay at the meeting place, call 911 from outside, and tell the firefighters right away that the dog is in the house and where it is likely to be. The fire plan ends with "Never go back inside" for exactly this moment, when going back looks safe enough to try.
+
+---
+
 ## Quick Reference Card
 
 Print one for each person's wallet or backpack:
@@ -336,15 +358,19 @@ Life in danger? CALL 911.
 Out-of-town contact: ________________
 Phone: ________________
 
-Meeting place (neighborhood): ________________
-Meeting place (outside neighborhood): ________________
-Meeting place (out of town): ________________
+Meeting place (neighborhood):
+________________
+Meeting place (outside neighborhood):
+________________
+Meeting place (out of town):
+________________
 
 Family password: ________________
 
 TEXT, DON'T TALK: "I'm OK. At ____."
 Check in every ___ hours.
-Can't reach anyone? Go to the meeting place.
+Can't reach anyone?
+Go to the meeting place.
 ```
 
 ---
@@ -366,15 +392,18 @@ Can't reach anyone? Go to the meeting place.
 
 - [Ready.gov: Make a Plan](https://www.ready.gov/plan)
 - [Ready.gov: Make a Plan form](https://www.ready.gov/plan-form)
-- [FEMA: Create Your Family Emergency Communication Plan](https://www.ready.gov/sites/default/files/2020-03/create-your-family-emergency-communication-plan.pdf)
+- [FEMA: Create Your Family Emergency Communication Plan (FEMA P-1094, copy hosted by the National Weather Service)](https://www.weather.gov/media/ilx/Hydro/FSAW/family-emergency-communication-plan.pdf)
 - [Ready.gov: Emergency Alerts](https://www.ready.gov/alerts)
 - [Ready.gov: Safety Skills (utility shutoffs)](https://www.ready.gov/safety-skills)
 - [Ready.gov: Home Fires](https://www.ready.gov/home-fires)
+- [American Red Cross: Home Fire Safety](https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/fire.html)
 - [Ready.gov: People with Disabilities](https://www.ready.gov/disability)
 - [Ready.gov: Pets](https://www.ready.gov/pets)
 - [CDC: What to Do: Get Inside (radiation; don't go out to get family)](https://www.cdc.gov/radiation-emergencies/response/get-inside.html)
 - [CDC: What to Do to Shelter in Place for a Chemical Emergency](https://www.cdc.gov/chemical-emergencies/response/shelter-in-place.html)
 
-Last reviewed: October 2026
+---
+
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

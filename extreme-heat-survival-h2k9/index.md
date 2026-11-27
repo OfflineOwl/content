@@ -30,6 +30,8 @@
 
 ## First Aid for Heat Illness
 
+This guide doesn't replace first aid training or professional medical care.
+
 ### Heat Stroke (Emergency)
 
 1. **Call 911.**
@@ -156,6 +158,24 @@ See the Cooling Strategies in Extreme Heat guide for more ways to cool down with
 - Never run a generator indoors or in a garage, even to power an air conditioner. Keep it outdoors, at least 20 feet from windows, doors, and vents. See the Generator Safety guide.
 - Use battery-powered fans only while the indoor temperature is below 90°F.
 
+## Practice
+
+**10-minute drill:** Rehearse the heat stroke response at home, with nobody ill. Decide where you would cool someone from the neck down: the bathtub, a kiddie pool, or a tarp you could fill with water. Find the towels or sheets you would soak and check whether there is ice in the freezer. Then say the steps out loud in order: call 911, move them somewhere cooler, cool them fast, nothing to drink. Finish by writing down two things: the people you would check on twice a day in a heat wave, with their phone numbers, and the nearest air-conditioned place you could get to, with its opening hours.
+
+**What would you do?**
+
+1. *You check on a 78-year-old neighbor during a heat wave. His apartment is stifling. He is sitting by a fan, his skin is hot, red and damp with sweat, and he answers your questions slowly and strangely. He says he is fine and just needs a glass of water.*
+
+   **Answer:** Treat it as heat stroke and call 911. Confusion is the key warning sign, and sweating does not rule heat stroke out. Don't give him the water or anything else to drink, and no aspirin or acetaminophen. Move him somewhere cooler and start cooling right away: neck-down in a tub of cool or cold water if you can manage it safely, otherwise a cold shower, ice-water-soaked sheets or towels, or wet skin and fanning, with ice packs at the neck, armpits and groin. Stay with him until help arrives.
+
+2. *Your partner comes in from mowing the lawn drenched in sweat, pale, clammy, dizzy and queasy, but alert and making sense. An hour later, after resting in a cool room with cool cloths and sips of water, they feel no better and have just vomited.*
+
+   **Answer:** Get medical help now. This began as heat exhaustion, and the first hour was handled correctly, but vomiting or no improvement within 1 hour is the point to stop treating it at home. Keep cooling them while you get help. If they become confused or pass out, it is heat stroke: call 911 and cool them fast.
+
+3. *It is a mild, sunny day in the 70s. Your baby has just fallen asleep in the car seat and you need two minutes in the pharmacy. You could crack the windows.*
+
+   **Answer:** Take the baby with you. A parked car can heat up almost 20°F in 10 minutes, a cracked window makes little difference, and it can become dangerous even on a mild day. "Two minutes" in a shop is rarely two minutes. Never leave a child, an older adult or a pet in a parked car, even for a minute.
+
 ## Quick Reference
 
 ```
@@ -163,9 +183,10 @@ HEAT STROKE = CALL 911
 Temp 103 F+ (39.4 C), CONFUSION, strange
 behavior, or passing out. Skin hot, red,
 dry OR sweaty.
--> Cool fast: neck-down in cool/cold water
-   ~15 min, or cold shower, ice-water
-   sheets, wet skin + fanning, ice packs
+-> Cool fast: neck-down in cool or
+   cold water ~15 min, or cold shower,
+   ice-water sheets, wet skin +
+   fanning, ice packs
 -> Nothing to drink. No aspirin/Tylenol.
 -> Unconscious but breathing: on side.
    Not breathing: CPR.
@@ -173,8 +194,8 @@ dry OR sweaty.
 HEAT EXHAUSTION
 Heavy sweating; cold, pale, clammy skin;
 fast weak pulse; nausea; dizziness.
--> Cool place, loosen clothes, cool cloths
-   or bath, sip water
+-> Cool place, loosen clothes, cool
+   cloths or bath, sip water
 -> Get help: vomiting, worse, confused,
    or not better in 1 hour
 
@@ -193,6 +214,7 @@ STAY SAFE
 - [CDC: About Heat and Your Health](https://www.cdc.gov/heat-health/about/index.html)
 - [CDC: Heat and Health Risk Factors](https://www.cdc.gov/heat-health/risk-factors/)
 - [CDC: Heat and Infants and Children](https://www.cdc.gov/heat-health/risk-factors/infants-and-children.html)
+- [CDC: Heat and Older Adults (Aged 65+)](https://www.cdc.gov/heat-health/risk-factors/heat-and-older-adults-aged-65.html)
 - [CDC NIOSH: Heat-Related Illnesses](https://www.cdc.gov/niosh/heat-stress/about/illnesses.html)
 - [CDC NIOSH: Heat Stress Recommendations](https://www.cdc.gov/niosh/heat-stress/recommendations/index.html)
 - [American Heart Association and American Red Cross: 2024 First Aid Guidelines](https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001281)
@@ -206,8 +228,6 @@ STAY SAFE
 
 ---
 
-Last reviewed: October 2026
-
-This guide doesn't replace first aid training or professional medical care.
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

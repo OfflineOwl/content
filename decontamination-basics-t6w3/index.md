@@ -1,6 +1,6 @@
 # Decontamination Basics
 
-> If a chemical, radioactive dust, or a biological agent got on you, getting it off fast lowers the harm and keeps you from spreading it. Taking off your clothes removes most of it. Washing with soap and water removes most of the rest.
+> **Get it off fast.** If a chemical, radioactive dust, or a biological agent got on you, getting it off fast lowers the harm and keeps you from spreading it. Taking off your clothes removes most of it. Washing with soap and water removes most of the rest.
 
 ## Do This Now
 
@@ -140,6 +140,7 @@ If your eyes burn or you can't see normally:
 
 **Ideal setup:**
 - Just inside an entrance, garage, or porch, away from air intakes
+- Near a water source, on a floor that is easy to clean
 - Plastic sheeting on the floor
 - Plastic bags for clothing (double-bag)
 - Soap and water, or moist wipes
@@ -187,6 +188,26 @@ If your eyes burn or you can't see normally:
 
 ---
 
+## Practice
+
+**10-minute drill:** Walk through it dry, with your clothes on. First, pick the spot where you would undress: just inside an entrance, garage, or porch. Check that you can put your hands on two plastic bags, mild soap, a clean towel, and a set of clean clothes within a minute, and fix whatever is missing. Then time a pretend eye flush at the sink. Run lukewarm water, lean over as if letting it run from the inner corner of your eye (by the nose) to the outer corner, and start a timer without putting water in your eyes. See how long 10 minutes really is. Most people would stop far too soon.
+
+**What would you do?**
+
+1. *At work a container tips and a liquid splashes down the front of your pullover sweater. Your skin stings a little. A coworker says to sit tight until someone finds out what the chemical is.*
+
+   **Answer:** Don't wait to find out what it is. Get to fresh air and start now, ideally within 10 minutes. Cut the sweater off instead of pulling it over your head; if you can't cut it, hold your breath and close your eyes while you pull it off. Double-bag the clothes, then wash head to toe with lukewarm water and mild soap for at least 2-3 minutes, without scrubbing. Call Poison Control (1-800-222-1222 in the US) or 911 if you have symptoms or can't get it off.
+
+2. *You were outside while radioactive dust was falling. You have bagged your outer clothes and you are in the shower. Your instinct is to turn the water up hot, scrub hard with a brush, and finish with conditioner.*
+
+   **Answer:** Do the opposite. Use warm water and lots of soap, and wash gently: scalding, scrubbing, or scratching can break the skin and let contamination in. Wash your hair with shampoo or soap and skip the conditioner, which makes radioactive material stick to hair. Then gently blow your nose, wipe your eyelids, eyelashes, and ears, and put on clean clothes.
+
+3. *A neighbor comes to your door after a chemical spray hit them outside. Their eyes are burning, and they are rubbing them and asking for eye drops. Their clothes are damp with it.*
+
+   **Answer:** Protect yourself first: put on waterproof gloves, a mask, and eye protection if you have them, and avoid touching the contamination. No eye drops and no rubbing. Have them take out any contact lenses, then flush their eyes with clean, lukewarm water for 10-15 minutes, eyelids held open, water running from the inner corner outward. Help them cut off and double-bag the clothes and wash gently. Call 911 for trouble breathing or worsening symptoms, get medical care after flushing, and wash your own hands, face, and exposed skin afterward.
+
+---
+
 ## Quick Reference
 
 ```
@@ -194,7 +215,8 @@ DECONTAMINATION STEPS
 
 1. GET AWAY from the source
 
-2. CLOTHES OFF (within 10 min for chemicals)
+2. CLOTHES OFF
+   (within 10 min for chemicals)
    - Removes ~80-90% of contamination
    - Cut off, don't pull over head
    - Double-bag, not in regular trash
@@ -203,13 +225,17 @@ DECONTAMINATION STEPS
    - Lukewarm water, mild soap
    - Head to toe, 2-3 minutes
    - Don't scrub
-   - Radiation: shampoo, NO conditioner
+   - Radiation: shampoo,
+     NO conditioner
 
 4. DRY and dress in clean clothes
 
-EYES: Flush 10-15 minutes, no eye drops
-SWALLOWED: Don't vomit, call Poison Control
-CALL 911: breathing trouble, seizures, burns
+EYES: flush 10-15 minutes,
+  no eye drops
+SWALLOWED: don't vomit,
+  call Poison Control
+CALL 911: breathing trouble,
+  seizures, collapse, burns
 Poison Control (US): 1-800-222-1222
 ```
 
@@ -217,17 +243,19 @@ Poison Control (US): 1-800-222-1222
 
 ## Sources
 
-- [CDC: About Getting Clean (chemical)](https://www.cdc.gov/chemical-emergencies/response/get-clean.html)
+- [CDC: About Getting Chemicals Off Your Body](https://www.cdc.gov/chemical-emergencies/response/get-chemical-off-body.html)
 - [CDC: What to Do in a Chemical Emergency](https://www.cdc.gov/chemical-emergencies/response/index.html)
 - [CDC: Sarin fact sheet](https://www.cdc.gov/chemical-emergencies/chemical-fact-sheets/sarin.html)
 - [CDC: How to Self-Decontaminate after a Radiation Emergency](https://www.cdc.gov/radiation-emergencies/prevention/self-decontaminate.html)
 - [CDC: Decontamination for Yourself and Others (radiation)](https://www.cdc.gov/radiation-emergencies/infographic/decontamination.html)
-- [Ready.gov: Chemical Emergencies](https://www.ready.gov/chemical)
-- [Ready.gov: Bioterrorism](https://www.ready.gov/bioterrorism)
+- [Ready.gov: Chemicals and Hazardous Materials Incidents](https://www.ready.gov/hazmat)
+- [Ready.gov: Biohazard Exposure](https://www.ready.gov/biohazard)
 - [Ready.gov: Radiation Emergencies](https://www.ready.gov/radiation)
 
-Last reviewed: October 2026
+*This guide doesn't replace professional medical care. After decontamination, follow the advice of Poison Control, emergency responders, or a doctor.*
+
+---
+
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*
-
-*This guide doesn't replace professional medical care. After decontamination, follow the advice of Poison Control, emergency responders, or a doctor.*

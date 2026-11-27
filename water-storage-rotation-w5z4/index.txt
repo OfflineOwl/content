@@ -261,6 +261,59 @@ WATER STORAGE CHECKLIST
 [ ] Keep a pump, scoop, or spigot for large containers
 [ ] Keep a way to treat water (bleach, filter, fuel for boiling)
 
+PRACTICE
+--------
+
+10-MINUTE DRILL: Count it and date it. (1) Count every gallon of
+stored drinking water in the house. Divide by the number of
+people, plus pets, to get the days you have at 1 gallon each per
+day. Compare that with the 3-day minimum and the 2-week goal.
+(2) Find your oldest container and read its date: the fill date
+you wrote on it, or the "use by" date on store-bought water.
+(3) Put anything you filled yourself more than 6 months ago, and
+anything with no date at all, in a row to be emptied, washed,
+sanitized, and refilled this week. (4) Write today's date on
+every container that has none, and set a 6-month reminder.
+
+WHAT WOULD YOU DO?
+
+1. You are about to fill containers for storage. In the
+   recycling are four rinsed gallon milk jugs and an empty
+   bleach bottle with a good tight cap. They look clean.
+
+   Answer: Use neither. Milk protein can't be fully washed out
+   of a jug and feeds bacteria, and no container that held a
+   chemical, bleach included, should ever hold drinking water.
+   Use 2-liter soda bottles or food-grade containers. Wash them,
+   sanitize them with 1 teaspoon of unscented bleach in 1 quart
+   of water, shake, wait at least 30 seconds, and pour it out.
+
+2. A big storm is due tomorrow. In the basement you find six
+   jugs of tap water labeled 14 months ago. The water looks
+   clear, the taps are still running, and you are tempted to
+   count the jugs as they are and get on with other jobs.
+
+   Answer: Refill them today while the tap still works. Water
+   you bottled yourself is replaced every 6 months, and these
+   are long overdue. Use the old water for cleaning or plants,
+   wash and sanitize the jugs, refill, and write the new date
+   on them. Then fill every other clean container and the
+   bathtub. If you ever have to open old water after the taps
+   are off and it looks, smells, or tastes off, don't drink it
+   as it is: treat it first, or keep it for flushing.
+
+3. The only empty shelf is in the garage, next to the mower's
+   gasoline can and a jug of weed killer. The garage is hot in
+   summer and freezes in winter.
+
+   Answer: Not there. Plastic can absorb vapors from gasoline
+   and pesticides, stored water should stay cool (about
+   50-70°F), and freezing can crack containers. Find room
+   inside instead: an interior
+   closet, under the beds, or a cool basement that doesn't
+   flood. Split the supply between several spots so one damaged
+   area doesn't take all your water.
+
 QUICK REFERENCE
 ---------------
 
@@ -269,14 +322,18 @@ AMOUNT:
 Minimum 3 days; goal 2 weeks
 
 CONTAINERS:
-Bottled water, food-grade containers, or clean soda bottles
-Never milk or juice jugs, or chemical containers
+Bottled water, food-grade
+containers, or clean soda bottles
+Never milk or juice jugs, or
+chemical containers
 
 SANITIZE CONTAINERS:
-1 tsp unscented bleach per quart of water, shake, wait 30 seconds
+1 tsp unscented bleach per quart
+of water, shake, wait 30 seconds
 
 CONDITIONS:
-Cool (50-70°F), dark, away from chemicals
+Cool (50-70°F), dark, away from
+chemicals
 
 REPLACE:
 Self-filled water every 6 months
@@ -285,22 +342,19 @@ Store-bought water by its date
 SOURCES
 -------
 
-CDC: How to Create an Emergency Water Supply
-https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html
-
-Ready.gov: Water
-https://www.ready.gov/water
-
-FEMA: Food and Water in an Emergency (FEMA 477)
-https://www.fema.gov/pdf/library/f&web.pdf
-
-EPA: Emergency Disinfection of Drinking Water
-https://www.epa.gov/ground-water-and-drinking-water/emergency-disinfection-drinking-water
-
-FDA: Food and Water Safety During Power Outages and Floods
-https://www.fda.gov/food/buy-store-serve-safe-food/food-and-water-safety-during-power-outages-and-floods
+- CDC: How to Create an Emergency Water Supply -
+  https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html
+- Ready.gov: Water -
+  https://www.ready.gov/water
+- FEMA: Food and Water in an Emergency (FEMA 477) -
+  https://www.fema.gov/pdf/library/f&web.pdf
+- EPA: Emergency Disinfection of Drinking Water -
+  https://www.epa.gov/ground-water-and-drinking-water/emergency-disinfection-drinking-water
+- FDA: Food and Water Safety During Power Outages and Floods -
+  https://www.fda.gov/food/buy-store-serve-safe-food/food-and-water-safety-during-power-outages-and-floods
 
 ========================
-Last reviewed: October 2026
+Last reviewed: November 2026
+
 License: CC-BY-SA 4.0
 ========================

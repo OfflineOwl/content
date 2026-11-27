@@ -1,6 +1,6 @@
 # Radio Use for Emergency Updates
 
-> When the power is out and the internet is down, radio is often the most reliable way to get official emergency information. A battery or hand-crank radio, a NOAA Weather Radio set to your county, and phone alerts turned on give you three independent ways to be warned.
+> **Radio still works when the power is out and the internet is down.** It is often the most reliable way to get official emergency information. A battery or hand-crank radio, a NOAA Weather Radio set to your county, and phone alerts turned on give you three independent ways to be warned.
 
 ## Do This Now
 
@@ -229,6 +229,26 @@ Two-way radios let family members or neighbors talk over short distances when ph
 
 ---
 
+## Practice
+
+**10-minute drill:** Find your NOAA Weather Radio channel. Take the radio you would use in an outage, run it on its batteries or crank, and switch to the weather (WX) band. Step through all seven channels and stop on the clearest local broadcast. Write the channel and frequency on a label on the radio. Then find your local AM or FM emergency information station and write that on the label too. If the radio has SAME, check that your county's code is programmed and the radio is in alert mode. Next time you are online, confirm on the NWS county listing (weather.gov/nwr/counties) that the channel you chose is the station designated for your county, not just the loudest one. If you hear nothing on any channel, you may be in a weak-coverage area: note it, and count on phone alerts and local AM/FM until you can try an external antenna.
+
+**What would you do?**
+
+1. *A tornado watch runs until 4 a.m. To save the batteries, you plan to switch the weather radio off at bedtime and check your phone if the storm wakes you.*
+
+   **Answer:** Leave the weather radio on, in alert mode. That is the battery-saving setting: the radio stays quiet until an alert is sent for the county you programmed, then sounds its alarm, even overnight. Keep your phone on as well, and not in airplane mode, so Wireless Emergency Alerts can reach it. Don't count on the storm to wake you.
+
+2. *You are indoors when the outdoor sirens start. Nothing looks wrong through the window, so you head for the porch to see what is going on.*
+
+   **Answer:** Stay inside and turn on the radio or TV, or check your phone. A siren is meant to warn people who are outdoors to get inside and find out more. It doesn't tell you what the danger is, and you shouldn't leave a safe place just to look for information. Do what the alert says: shelter, evacuate, or stay put.
+
+3. *Phones are down after a storm. You and two neighbors agreed to use FRS channel 3 with privacy code 12. An hour in, the channel is silent, and you take that to mean nobody nearby needs anything.*
+
+   **Answer:** The silence may be the privacy code. A code doesn't make the channel private; it only stops your radio from playing anyone who isn't sending the same tone. Turn privacy codes off (carrier squelch) so you hear everyone on the channel, including someone calling for help. Then listen before you transmit, and keep it short.
+
+---
+
 ## Quick Reference
 
 ```
@@ -244,23 +264,31 @@ ALERT TERMS:
 Warning   = Take action now
 Watch     = Get ready
 Advisory  = Be careful
-Emergency = Highest level, severe threat now
+Emergency = Highest level,
+            severe threat now
 
 ALERT SOUNDS:
-NOAA radio: static burst + 1050 Hz tone
-EAS (TV/radio): data bursts + two-tone signal
-Phone (WEA): special tone + vibration, twice
-Keep the phone ON, not in airplane mode
+NOAA radio: static burst
+  + 1050 Hz tone
+EAS (TV/radio): data bursts
+  + two-tone signal
+Phone (WEA): special tone
+  + vibration, twice
+Keep the phone ON,
+not in airplane mode
 
 FRS: 22 channels, no license
-GMRS: FCC license, $35, 10 years, no exam
+GMRS: FCC license, $35, 10 years,
+  no exam
 Privacy codes are NOT private.
 Turn them OFF in emergencies.
 
 BATTERY TIPS:
 - Weather radio in alert mode
-- Listen on a schedule, not constantly
-- Hand-crank or solar to stretch batteries
+- Listen on a schedule,
+  not constantly
+- Hand-crank or solar to stretch
+  batteries
 ```
 
 ---
@@ -268,7 +296,8 @@ BATTERY TIPS:
 ## Sources
 
 - [Ready.gov: Emergency Alerts](https://www.ready.gov/alerts)
-- [FEMA: Wireless Emergency Alerts](https://www.fema.gov/emergency-managers/practitioners/integrated-public-alert-warning-system/public/wireless-emergency-alerts)
+- [National Weather Service: Wireless Emergency Alerts](https://www.weather.gov/wrn/wea)
+- [FEMA Fact Sheet: Wireless Emergency Alerts](https://www.ready.gov/sites/default/files/2020-08/wea-fact-sheet.pdf)
 - [National Weather Service: NOAA Weather Radio](https://www.weather.gov/nwr/)
 - [National Weather Service: Using NWR SAME](https://www.weather.gov/nwr/usingsame)
 - [National Weather Service: NWR Receiver Information](https://www.weather.gov/nwr/nwr_receivers)
@@ -282,6 +311,8 @@ BATTERY TIPS:
 - [eCFR: 47 CFR 1.1102, FCC application fees](https://www.ecfr.gov/current/title-47/section-1.1102)
 - [FCC: Portable Radio Fundamentals for CERT (privacy codes)](https://transition.fcc.gov/pshs/docs/clearinghouse/references/cert-radio-fundamentalsIG-pt1.doc)
 
-Last reviewed: October 2026
+---
+
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

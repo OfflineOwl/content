@@ -170,6 +170,24 @@ Anxiety, jumpiness, and trouble sleeping are normal after an earthquake and duri
 - Keep water, food, medications, and supplies for as long as you can manage. The USGS recommends water for at least two weeks in earthquake country (at least 1 gallon per person per day). Services can be out for a long time after a major quake.
 - Keep a go bag near the exit in case you need to leave.
 
+## Practice
+
+**10-minute drill:** Walk through your home with everyone who lives there. In each room you spend time in, agree on the safe spot: under a sturdy table or desk, or next to an interior wall away from windows. Then have someone call out "Earthquake!" when nobody expects it. Everyone drops, covers and holds on at the nearest safe spot, no more than a few steps away, and stays there for a slow count of 60. Anyone who can't get down to the floor practices their own version: lock the wheels, or sit, then bend over and cover the head and neck. Finish by checking that there are shoes, a flashlight and a whistle by each bed, and walk to the gas meter to see where the shutoff valve is and whether a wrench is kept there. Look, don't turn it.
+
+**What would you do?**
+
+1. *You are in the living room of a second-floor apartment when strong shaking starts. The front door is about ten steps away, and the stairs beyond it lead straight down to the street.*
+
+   **Answer:** Drop where you are. Don't run for the door or the stairs, and don't stand in the doorway. Glass and exterior building materials fall around exits during shaking, and trying to move more than a few steps is how people get hurt. Crawl under a sturdy table if one is within a few steps; otherwise get next to an interior wall away from windows, cover your head and neck, and hold on until the shaking stops. Then, if the building is damaged, leave by the stairs, not the elevator.
+
+2. *It is 3 a.m. Strong shaking wakes you, things are falling off shelves, and your child is crying in the bedroom down the hall.*
+
+   **Answer:** Stay in bed until the shaking stops: face down, pillow over your head and neck. Getting up in the dark over broken glass, while the floor is still moving, injures more people than staying put, and you are no use to your child with cut feet or a head injury. The moment it stops, put on the shoes by your bed, take the flashlight, and go. Expect aftershocks, and Drop, Cover, and Hold On again each time.
+
+3. *The shaking is over and the house looks fine, but there is a rotten-egg smell in the kitchen. It is getting dark, and someone reaches for the light switch.*
+
+   **Answer:** Stop them. A light switch can make a spark, so no switches, appliances, matches or lighters. Open a window if it takes only a moment, then get everyone out. Turn the gas off at the outside main valve if you know how and can do it safely, and call the gas company from outside, such as from a neighbor's home. Don't turn the gas back on yourself; that is a job for the gas company or a qualified professional.
+
 ## Quick Reference
 
 ```
@@ -213,6 +231,7 @@ AFTER:
 - [Ready.gov: Safety Skills (gas shutoff)](https://www.ready.gov/safety-skills)
 - [USGS: What is the "triangle of life"?](https://www.usgs.gov/faqs/what-triangle-life-and-it-legitimate)
 - [USGS: Aftershock Forecast Overview](https://earthquake.usgs.gov/data/oaf/overview.php)
+- [USGS: What is the probability that an earthquake is a foreshock to a larger earthquake?](https://www.usgs.gov/faqs/what-probability-earthquake-a-foreshock-a-larger-earthquake)
 - [USGS: What should I do after an earthquake?](https://www.usgs.gov/faqs/what-do-i-do-after-earthquake)
 - [USGS: What emergency supplies do I need for an earthquake?](https://www.usgs.gov/faqs/what-emergency-supplies-do-i-need-earthquake)
 - [USGS: ShakeAlert Earthquake Early Warning](https://www.usgs.gov/faq/BeShakeAlertSafe)
@@ -220,6 +239,6 @@ AFTER:
 
 ---
 
-Last reviewed: October 2026
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

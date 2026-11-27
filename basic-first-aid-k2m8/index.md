@@ -1,6 +1,6 @@
 # Basic First Aid Without Power
 
-> When the power is out and help is slow to come, a few basic skills keep people alive: checking the scene, calling for help, stopping bleeding, CPR, clearing a choking airway, and knowing what to do next. None of them need electricity.
+> **A few basic skills keep people alive.** When the power is out and help is slow to come, what matters is checking the scene, calling for help, stopping bleeding, CPR, clearing a choking airway, and knowing what to do next. None of them need electricity.
 
 ## Do this now
 
@@ -338,6 +338,68 @@ In a long emergency, written notes help whoever takes over care.
 
 ---
 
+## Practice
+
+**10-minute drill:** Run a kit-and-call drill with your household. Start a timer and have each person fetch the first aid kit from wherever they happen to be. Open it and check it against the Basic kit list above: are the gloves, gauze, and glucose tablets there? Next, one person lies on the floor as the casualty while another walks through steps 1 to 3 of "Do this now" out loud: check the scene, tap and shout, then point at one person and say, "You, call 911 and bring the AED and the first aid kit." Don't actually dial. Finish by rolling the volunteer into the recovery position using the seven steps above. Never practice chest compressions, back blows, or thrusts on a real person.
+
+**What would you do?**
+
+1. *At dinner, your uncle starts coughing violently on a piece of steak. He is red in the face, his eyes are watering, and someone jumps up to pound him on the back.*
+
+   **Answer:** Hold off. He can still cough forcefully, so encourage him to keep coughing and stay with him. Back blows and abdominal thrusts are for someone who can't breathe, cough, or speak, or whose cough has gone weak and silent. If that happens, have someone call 911, give 5 back blows, then 5 abdominal thrusts, and keep alternating until the food comes out.
+
+2. *A coworker with diabetes has been shaky and confused for a few minutes. Before anyone finds something sweet, she slumps in her chair and won't respond. Someone hands you a cup of orange juice.*
+
+   **Answer:** Put the juice down. Sugar by mouth is only for someone who is awake and able to swallow; given to an unresponsive person, it could choke her. Call 911 and check her breathing. If she is breathing normally, place her in the recovery position and keep watching her breathing. If she stops breathing normally, start CPR.
+
+3. *A stranger on the sidewalk falls and starts jerking all over. One bystander tries to hold his arms still, and another is looking for something to put between his teeth.*
+
+   **Answer:** Stop both of them. Don't hold him down and don't put anything in his mouth; he can't swallow his tongue. Time the seizure, move hard or sharp objects away, cushion his head, and loosen anything tight around his neck. When the jerking stops, roll him onto his side and stay with him until he's fully awake. Call 911 if it lasts more than 5 minutes, if another seizure follows, if he's injured or has trouble breathing, or, as here, if you don't know his history.
+
+---
+
+## Quick Reference
+
+```
+BASIC FIRST AID
+
+1. SCENE SAFE? Then check the person:
+   tap and shout
+2. CALL 911 (or have someone call).
+   Speaker on. Send for AED and kit
+3. SEVERE BLEEDING: press hard.
+   Arm or leg: tourniquet 2-3 in
+   above the wound, not on a joint
+4. NOT BREATHING NORMALLY (or only
+   gasping): CPR. Push hard and
+   fast, center of chest, at least
+   2 in (5 cm), 100-120 a minute.
+   Use an AED
+5. UNRESPONSIVE BUT BREATHING:
+   recovery position, keep checking
+
+CHOKING (can't breathe, cough,
+or speak)
+- Over 1 year: 5 back blows,
+  5 abdominal thrusts, repeat
+- Infant: 5 back blows, 5 chest
+  thrusts. NO abdominal thrusts
+- Coughing hard? Let them cough
+- Goes unresponsive: start CPR
+
+SEIZURE: don't hold them down,
+  nothing in the mouth.
+  911 if over 5 minutes
+ANAPHYLAXIS: epinephrine auto-
+  injector, outer thigh. Call 911
+LOW BLOOD SUGAR: awake = sugar.
+  Can't swallow = nothing by mouth
+SHOCK: on their back, keep warm,
+  no food or drink, 911
+```
+
+---
+
 ## Sources
 
 - [American Heart Association 2025 Guidelines, Part 7: Adult Basic Life Support (CPR, adult choking)](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-basic-life-support)
@@ -353,8 +415,10 @@ In a long emergency, written notes help whoever takes over care.
 - [MedlinePlus: Cuts and Puncture Wounds](https://medlineplus.gov/ency/article/000043.htm)
 - [911.gov: Frequently Asked Questions About Calling 911](https://www.911.gov/calling-911/frequently-asked-questions/)
 
-Last reviewed: October 2026
-
 *This guide doesn't replace hands-on first aid and CPR training or professional medical care.*
+
+---
+
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

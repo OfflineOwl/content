@@ -1,6 +1,6 @@
 # Bleeding Control & Tourniquet Use
 
-> A person can bleed to death in as little as 5 minutes, often before help arrives. Firm pressure, wound packing, and a tourniquet are the skills that stop it.
+> **A person can bleed to death in as little as 5 minutes.** That is often before help arrives. Firm pressure, wound packing, and a tourniquet are the skills that stop it.
 
 ## Do this now
 
@@ -224,21 +224,49 @@ Keep one kit at home and one in the car. Replace hemostatic gauze when it expire
 
 ---
 
+## Practice
+
+**10-minute drill:** Time how long it takes to put your hands on your bleeding control kit, at home and in the car. Then rehearse placement on your own thigh, over your clothes: pick an imaginary wound, empty the pocket underneath, and position the tourniquet 2 to 3 inches above the spot and clear of the knee. Pull the strap snug, then find the windlass, the clip that locks it, and the label where the time goes. Stop there and take it off; in a real bleed you would keep twisting until the bleeding stops. No commercial tourniquet yet? Use the ten minutes to find what you would improvise with: a strip of cloth at least 2 inches wide, a strong stick or rod, and clean cloth for packing.
+
+**What would you do?**
+
+1. *Your neighbor's chainsaw has kicked back into his thigh. Blood is soaking through his jeans and pooling on the ground. Neither of you has a tourniquet. His son pulls off his own narrow leather belt and holds it out.*
+
+   **Answer:** Not the belt. A narrow belt, cord, or rope cuts into the limb and doesn't compress well. Have the son call 911 while you open the clothing and press hard, directly on the bleeding spot, with both hands and your body weight. If the wound is large and deep, pack it tightly with clean cloth and press on top. If pressure isn't working, improvise properly: a strip of cloth at least 2 inches wide, tied 2 to 3 inches above the wound, twisted tight with a strong stick until the bleeding stops, then tied in place. Note the time.
+
+2. *You put a tourniquet on a friend's arm 40 minutes ago. The bleeding has stopped, but the ambulance is delayed, his arm is throbbing, and he is begging you to loosen it "just for a minute."*
+
+   **Answer:** Leave it tight. A tourniquet that is working hurts, often a lot, and loosening it lets the bleeding start again. Studies find few complications when a tourniquet is on for under 2 hours, and bleeding to death is the bigger risk. Keep it uncovered, keep checking that the bleeding hasn't restarted, keep him lying down and warm, and tell responders what time it went on. Only trained medical staff should take it off.
+
+3. *A coworker has a deep stab wound high in the groin, where the leg meets the body, and it is bleeding heavily. Someone runs up with a tourniquet.*
+
+   **Answer:** A tourniquet can't be used there. Call 911 and pack the wound: push gauze or clean cloth into it with your fingers, right onto the bleeding spot, and keep feeding it in until the wound is completely full. Then press hard on top with both hands. If blood soaks through, keep pressing and don't pull the packing out. Hold the pressure until help takes over.
+
+---
+
 ## Quick Reference
 
 ```
 LIFE-THREATENING BLEEDING
 
 1. CALL 911 (or send someone)
-2. FIND the bleeding (expose the wound)
+2. FIND the bleeding
+   (expose the wound)
 3. ARM OR LEG?
-   TOURNIQUET 2-3" above the wound, not on a joint
-   Twist until bleeding STOPS. Lock it. Write the TIME.
-   Still bleeding? Add a 2nd tourniquet above the 1st
-4. NECK, ARMPIT, GROIN, OR NO TOURNIQUET?
-   PACK the wound tight, then PRESS HARD
-5. KEEP PRESSURE until help takes over
-   Never loosen or remove a tourniquet
+   TOURNIQUET 2-3" above the wound,
+   not on a joint
+   Twist until bleeding STOPS.
+   Lock it. Write the TIME.
+   Still bleeding? Add a 2nd
+   tourniquet above the 1st
+4. NECK, ARMPIT, GROIN, OR
+   NO TOURNIQUET?
+   PACK the wound tight,
+   then PRESS HARD
+5. KEEP PRESSURE until help
+   takes over
+   Never loosen or remove a
+   tourniquet
    Don't remove the first dressing
 6. KEEP THEM WARM and lying down
 ```
@@ -259,8 +287,10 @@ LIFE-THREATENING BLEEDING
 - [Kragh JF Jr et al. Practical use of emergency tourniquets to stop bleeding in major limb trauma. Journal of Trauma, 2008](https://pubmed.ncbi.nlm.nih.gov/18376170/)
 - [Joarder M et al. Impact of time and distance on outcomes following tourniquet use in civilian and military settings: a scoping review. Injury, 2023](https://pubmed.ncbi.nlm.nih.gov/36697284/)
 
-Last reviewed: October 2026
-
 *This guide doesn't replace hands-on Stop the Bleed or first aid training, or professional medical care.*
+
+---
+
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

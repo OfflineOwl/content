@@ -160,18 +160,38 @@ If the generator labors or trips its breaker, unplug things until it recovers, t
 - [ ] Don't exceed the rated load
 - [ ] Shut down and let cool before refueling
 
+## Practice
+
+**10-minute drill:** Find the generator's spot before you need it. With a tape measure, or with paces you have checked against one, measure 20 feet out from your door and mark where the generator would sit: at least 20 feet from every window, door, and vent, yours and your neighbor's. Decide which way the exhaust would point, and which windows on that side you would keep shut. Lay out your extension cord to check that it reaches. Then go inside and press the test button on every CO alarm. Do not start the generator for this drill.
+
+**What would you do?**
+
+1. *The power went out in a rainstorm and it is still pouring. The generator would get soaked in the yard. The garage is dry, and with the big door rolled all the way up it feels as good as outdoors.*
+
+   **Answer:** Not in the garage, with the door open or shut. Carbon monoxide can build to deadly levels there in minutes and linger for hours. A porch or carport is no better. In rain, run the generator on a dry surface under an open, canopy-like cover, still 20 feet or more from the house with the exhaust pointed away, and dry your hands before you touch it. Don't drape a tarp over it. If you can't set that up, wait until the weather passes.
+
+2. *A neighbor offers to lend you a cord with a plug on each end, so you can run the whole house by plugging the generator into the dryer outlet. He says he has done it for years.*
+
+   **Answer:** Say no. That is backfeeding. It sends power out through the utility lines, where it can electrocute line workers and neighbors on the same transformer, and it bypasses some of your home's circuit protection. Plug appliances straight into the generator with heavy-duty outdoor cords rated above the load. If you want to power house circuits, that takes a transfer switch installed by a licensed electrician.
+
+3. *The generator is running about 8 feet from the back door, because that is as far as the cord reaches. Indoors, two of you have a headache and feel dizzy. The CO alarm is silent, and one person wants to lie down for a while.*
+
+   **Answer:** Get everyone outside into fresh air right now. Don't stop to open windows, and don't let anyone lie down: people who are asleep can die before they notice anything. Call 911 from outside, stay out until responders say it is safe, and get medical care for anyone with symptoms. Before the generator runs again, move it to 20 feet or more from the house with a cord long enough to reach, point the exhaust away, and keep the windows on that side closed.
+
 ## Quick Reference
 
 ```
-CO ALARM OR SYMPTOMS (headache, dizziness,
-nausea, weakness, confusion)?
+CO ALARM OR SYMPTOMS (headache,
+dizziness, nausea, weakness,
+confusion)?
 -> GET OUT NOW. Call 911 from outside.
 -> Don't go back in until cleared.
 
 GENERATOR RULES
 - Outdoors only
 - 20+ ft from the house
-- Exhaust away from windows/doors/vents
+- Exhaust away from windows, doors,
+  and vents
 - NEVER in home, garage, basement,
   shed, porch, or carport, even with
   doors open
@@ -192,7 +212,7 @@ FUEL
 
 ## Sources
 
-- [CPSC: Portable Generators](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Portable-Generators)
+- [CPSC: What to Know About Generators and Carbon Monoxide](https://www.cpsc.gov/s3fs-public/468-WhattoKnowGenerators_2022.pdf)
 - [CPSC: Carbon Monoxide Information Center](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center)
 - [CDC: Carbon Monoxide Poisoning Basics](https://www.cdc.gov/carbon-monoxide/about/index.html)
 - [Ready.gov: Power Outages](https://www.ready.gov/power-outages)
@@ -204,6 +224,6 @@ FUEL
 
 ---
 
-Last reviewed: October 2026
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

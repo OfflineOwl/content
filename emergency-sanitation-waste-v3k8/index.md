@@ -1,290 +1,242 @@
 # Emergency Sanitation & Waste Disposal
 
-> **Preventing Disease When the Sewers Stop** - Poor sanitation kills more people in disasters than the disaster itself. When water and sewer systems fail, you must manage human waste, greywater, and garbage safely or risk deadly outbreaks of cholera, dysentery, and hepatitis. This guide covers proven methods that work without running water or power.
+> **When the toilet stops, the clock starts.** Human waste carries the germs behind cholera, salmonella, and other diarrheal diseases. Keep it contained, covered, and away from water, hands, and flies, and you prevent most of the sickness that follows a long outage.
 
-## Why Sanitation Is a Top Priority
+## Do this now
 
-In the first 72 hours after infrastructure failure:
-- Toilets stop flushing when water pressure drops or sewer mains break
-- Garbage collection ceases
-- Standing water and waste attract disease-carrying insects and rodents
-- A single case of waterborne illness can spread through an entire shelter or neighborhood
+1. **Stop flushing** if the water is off, drains are slow or backing up, floodwater covers your septic field, or a strong earthquake has just hit. See "When Not to Flush".
+2. **Make a dry toilet.** Shut the valve behind the toilet, flush once to empty the bowl, and line the bowl with two garbage bags. Or line a 5-gallon bucket the same way.
+3. **Cover every use** with a handful of dry material: sawdust, shredded paper, dry leaves, peat moss, or cat litter. Close the lid.
+4. **Put a handwashing station next to it:** a jug with a spigot, soap, a towel, and a catch bucket.
+5. **Tie off the bag at half full.** Wearing gloves, double-bag it and store it in a lidded can away from food, water, children, pets, and flies.
+6. **Listen for official disposal instructions** before anything goes in the regular trash or the ground.
 
-**FEMA guidance is clear:** improper human waste disposal is one of the leading causes of disease outbreaks following disasters. Address sanitation immediately -- do not wait.
+## Get medical help if
 
----
+Call 911 (or your local emergency number) for anyone who is confused, cannot be woken, or is struggling to breathe. Get medical care promptly for:
 
-## Emergency Toilet Options
+- **Diarrhea or vomiting with dehydration:** very little urine, dry mouth, dizziness on standing, a child with no urine for 8 hours or no tears when crying
+- **Bloody diarrhea**
+- **A baby or older adult who cannot keep fluids down**
+- **A cut or wound that touched sewage** and is becoming red, swollen, or oozing
 
-When your toilet no longer flushes, you need an alternative within hours, not days.
+Give small, frequent sips of fluid while you get help. The Pediatric Emergency Care guide covers oral rehydration.
 
-### Option 1: The Bucket Toilet (Simplest and Most Reliable)
+## When Not to Flush
 
-**Materials needed:**
-- 5-gallon bucket with tight-fitting lid
-- Heavy-duty trash bags (contractor grade, 3+ mil)
-- Absorbent material: kitty litter, sawdust, wood ash, shredded newspaper, or peat moss
-- Pool noodle or pipe insulation (optional, for a seat rim)
+A toilet that still flushes is not proof that the sewer works. Flushing into a broken or flooded system pushes sewage into streets, basements, and sometimes back into your own home.
 
-**Setup:**
-1. Line the bucket with two heavy-duty trash bags (double-bag for safety)
-2. Add 2 inches of absorbent material to the bottom
-3. If available, cut a pool noodle lengthwise and fit it over the bucket rim for comfort
-4. Place the bucket in a private, ventilated area
+| Situation | Flush? | Why |
+|---|---|---|
+| Strong earthquake | No, until officials say the sewers are working | Street pipes may be broken even when your home's pipes are intact |
+| Flooding with a septic system | No, until the water over the drainfield has dropped below the level around the house | A saturated field cannot take wastewater, so it backs up |
+| Slow drains, gurgling, sewage smell, or backup | No. Stop sending any water down the drains | The line is blocked or broken |
+| Water is off, sewer or septic known to be working | Yes, by pouring water into the tank | The flush works; only the refill is missing |
+| Septic system, no flooding, no signs of damage | Yes | It does not depend on the street sewer |
 
-**After each use:**
-1. Sprinkle a generous handful of absorbent material over waste
-2. This controls odor and reduces fly attraction
-3. Replace the lid tightly between uses
-4. When the bag is two-thirds full, tie it securely and start a new bag
+**After an earthquake,** also shut off the house water supply if pipes may be broken, and get sewer news from emergency radio or community notice boards.
 
-**Tips:**
-- Keep one bucket per 4 people, minimum
-- Designate separate buckets for urine and solid waste if possible -- urine buckets fill faster but are less hazardous
-- A toilet seat from a camping supply store can be placed on the bucket for comfort
+**After a flood with a septic system:**
 
-### Option 2: Existing Toilet with Bag Liner
+- Plug basement drains and cut water use hard until the ground drains.
+- Do not have the tank pumped while the soil is saturated. An empty tank can float out of the ground and break its pipes.
+- Signs of damage: settling ground, soft or wet spots, sewage odor, or drains that will not take water. Have it inspected by a professional. Never open or enter a tank yourself; tanks can hold dangerous gases.
+- Do not drink well water until it has been tested.
 
-If your toilet bowl is intact but the water supply is cut off:
+**Flushing with a bucket** makes sense only when the sewer or septic system is known to be working, and every flush spends water you may need.
 
-1. Turn off the water supply valve behind the toilet
-2. Flush to empty the bowl (use stored water for one final flush if needed)
-3. Line the bowl with a heavy-duty trash bag, draping edges over the seat
-4. Lower the seat to hold the bag in place
-5. Use exactly as the bucket method above -- add absorbent material after each use
-6. Replace the bag when two-thirds full
+## The Twin-Bucket Toilet
 
-**Advantage:** Familiar, more comfortable, already in a private room with ventilation.
+For outages longer than a day or two, this is the system emergency planners in earthquake country recommend. It was used in Christchurch, New Zealand after the 2011 earthquake and later adopted around Portland, Oregon.
 
-### Option 3: Improvised Composting Toilet
+**The idea: keep pee and poo apart.** Urine is most of the volume and is far less hazardous. Feces are a small volume and carry most of the germs. Mixed, they make a heavy, sloshing, foul-smelling sewage. Kept apart, the poo dries out, smells far less, and is safer and easier to store.
 
-For longer-term situations (weeks or more):
+### What you need
 
-**Materials:**
-- Two 5-gallon buckets (rotating system)
-- Large supply of carbon material: sawdust, dry leaves, straw, or wood shavings
-- Dedicated composting area away from water sources
+- [ ] Two 5-gallon buckets with lids, marked PEE and POO
+- [ ] A snap-on toilet seat (smooth and easy to disinfect)
+- [ ] Heavy-duty 13-gallon garbage bags, the thickest you can find
+- [ ] Dry cover material: sawdust, wood shavings, shredded paper, dry leaves, or peat moss. Wood stove pellets store compactly
+- [ ] Toilet paper
+- [ ] Disposable gloves
+- [ ] A separate lidded garbage can for full bags
+- [ ] A tarp or curtain for privacy, and a flashlight
 
-**Process:**
-1. Use the bucket toilet method with a thick layer (3-4 inches) of carbon material after each use
-2. When full, transfer the sealed contents to a composting pile
-3. Cover the pile with 6+ inches of soil and additional carbon material
-4. Mark the pile with the date
-5. Do NOT use this compost on food gardens -- it requires 12+ months of proper thermophilic composting to be safe
-6. Start the second bucket while the first pile composts
+### The pee bucket
 
-### Option 4: Cat Hole / Latrine (Outdoor, Last Resort)
+- No liner. Keep toilet paper out of it so it pours cleanly.
+- Empty it when it is about a quarter full, before it gets heavy.
+- Dilute it with water if you can (used handwashing water is ideal) and pour it onto lawn or soil, in a different spot each time, away from wells, streams, and vegetable beds.
 
-When you have no buckets or bags:
+### The poo bucket
 
-1. Dig a hole at least **200 feet from any water source, dwelling, or food preparation area**
-2. Hole should be 6-8 inches deep and 4-6 inches wide
-3. After each use, cover waste with the excavated soil
-4. When the hole is within 4 inches of ground level, fill it completely and dig a new one
-5. Mark used holes to avoid re-digging
+- Line it with a heavy-duty bag. Toilet paper goes in here.
+- After each use, cover the surface completely with about half a cup of dry material.
+- Rest the lid or seat on top, but not airtight: the contents need to dry.
+- **Change the bag when it is half full, no later.** A fuller bag is heavy and tears.
+- Wear gloves, tie the bag, put it inside a second bag, and store it in the separate lidded can.
 
-**For groups, dig a trench latrine:**
-- 1 foot wide, 2 feet deep, and as long as needed
-- Pile excavated soil along one side
-- Users kick soil over waste after each use
-- Cover completely when within 6 inches of ground level
+A little urine in the poo bucket is unavoidable. Add more cover material.
 
----
+**Diarrhea or vomiting** goes in the poo bucket with extra cover material, and the bag is changed sooner. Wash the seat with detergent and disinfect it afterward.
 
-## Managing Used Waste Bags
+### Where full bags go
 
-This is critical. Improperly stored waste bags will burst, leak, and spread disease.
+- Store them away from food and water, and secure them from children, pets, flies, and rats.
+- Do **not** put them in household garbage, recycling, or yard waste unless local officials tell you to.
+- Do **not** bury the bags. Plastic keeps the waste from breaking down.
+- Do not burn them.
+- Expect to store them until the authorities announce a collection or drop-off plan. After a major earthquake that could be weeks.
 
-**Short-term storage (under 1 week):**
-1. Tie each bag with a tight knot, then place inside a second bag
-2. Store in a covered, outdoor trash can or bin with a tight lid
-3. Keep in shade to reduce heat buildup and odor
-4. Keep away from food storage, cooking areas, and water sources
-5. Minimize distance from your toilet area to reduce carrying distance
+Diapers and bagged pet waste go in regular garbage, double-bagged. Pads and tampons can go in the poo bucket or the garbage, never down a toilet.
 
-**Disposal when services resume:**
-- Follow local health department instructions
-- Some jurisdictions set up emergency waste collection points
-- Do NOT bury bags in your yard unless instructed by authorities
-- Do NOT burn bags -- this creates toxic fumes and does not fully destroy pathogens
+## The Lined Toilet
 
-**FEMA recommendation:** Store waste as safely as possible and await official disposal guidance. If you must bury waste in an extreme scenario, choose a location at least 200 feet from water sources and dig at least 2 feet deep.
+For a short outage, your own toilet is the easiest dry toilet.
 
----
+1. Turn off the water valve behind the toilet.
+2. Flush to empty the bowl. It should not refill.
+3. Lift the seat and line the bowl with one kitchen garbage bag inside another. Lower the seat to hold them.
+4. Put cat litter, peat moss, sawdust, or another absorbent material in the inner bag, and add more after each use.
+5. When the inner bag is about half full, tie it, lift it out, and put in a new one.
+6. Store tied bags as described above.
 
-## Greywater Management
+Everything goes into one bag, so it is wetter and heavier than a twin-bucket bag. Change it often.
 
-Greywater is wastewater from sinks, showers, and laundry (not toilets). It is less hazardous than sewage but still carries bacteria and must be managed.
+## Outdoors: Cat Holes and Latrines
 
-### Handling Greywater Without a Sewer
+Use the ground only if you have no bags or buckets, you have open land, and the outage is short. If the soil is waterlogged or the area floods, do not dig. Use bags.
 
-**Immediate steps:**
-- Collect greywater in buckets or basins
-- Do NOT pour greywater onto the ground near your home -- it pools, breeds mosquitoes, and can contaminate wells
-- Do NOT pour it into storm drains -- these often flow directly to rivers and streams
+**Where:**
 
-**Acceptable disposal methods:**
-1. **Subsurface dispersal:** Dig a shallow trench (12 inches deep) in an area away from water sources and pour greywater slowly so it absorbs into soil
-2. **Mulch basin:** Fill a shallow pit with wood chips or straw, pour greywater through it -- the mulch filters and breaks down contaminants
-3. **Reuse for flushing:** If you have a working toilet that still drains, greywater can be poured into the bowl to force a flush
+- **At least 100 feet (30 m) from any well, spring, stream, lake, or home.** That is the minimum. In the backcountry the standard is 200 feet (60 m) from water, camp, and trails. Farther is better.
+- Downhill from wells and springs, never uphill of a water source.
+- On dry, level ground that will not wash out in rain.
+- Not where buried gas, water, or power lines may run.
 
-### Reducing Greywater Volume
+**Cat hole (one use, one person):** dig at least 6 inches (15 cm) deep and about 6 inches across. Toilet paper can go in. Wipes, pads, and tampons go in a bag for the garbage. Fill the hole, pack the soil down, and mark the spot so nobody digs it up.
 
-- Use water sparingly for washing -- basin wash instead of running water
-- Reuse cooking water for cleaning when safe
-- Wear clothes longer between washes
-- Use hand sanitizer instead of soap and water when possible
+**Shallow family latrine (several days):** the WHO's emergency sanitation notes describe a pit about 1 foot wide, 20 inches long, and 3 feet deep (0.3 by 0.5 by 1 m), with boards on either side for footing and the dug soil piled beside it.
 
----
+- Everyone covers their waste with a scoop of soil each time.
+- Screen it for privacy, and put a handwashing station at the exit.
+- When the contents come within 1 foot (0.3 m) of the surface, fill it in with soil and dig a new one.
+- Keep children away from the open pit.
 
-## Garbage and Solid Waste
+## Handwashing at the Toilet
 
-Without trash collection, garbage becomes a disease vector quickly.
+A toilet without a handwashing station spreads disease. Set one up within arm's reach of the exit and make it a house rule: nobody leaves without washing.
 
-### Waste Separation
+- Soap and flowing water for 20 seconds, then dry.
+- Hand sanitizer (at least 60% alcohol) is a backup only. It does not work well on soiled hands or against norovirus and some other causes of diarrhea.
+- Whoever empties buckets or handles bags wears gloves, then washes anyway.
 
-Separate your waste into categories:
+The Hygiene With Limited Water guide shows how to build a station and wash with very little water.
 
-1. **Organic waste** (food scraps) -- highest disease risk, attracts pests
-2. **Recyclables / clean dry waste** -- low risk, store for later disposal
-3. **Hazardous waste** (batteries, chemicals, medical waste) -- isolate completely
-4. **Human waste** -- handle as described above, never mix with regular garbage
+## Cleaning and Disinfecting
 
-### Food Waste Management
+Clean with soap or detergent first. Disinfectant does not work through dirt.
 
-- **Bury food scraps** 12 inches deep, 100+ feet from dwellings and water
-- **Burn food scraps** in a well-ventilated outdoor fire if conditions permit (check fire safety)
-- **Compost** if you have a working compost system with proper carbon-to-nitrogen balance
-- **Double-bag and seal** if you cannot bury or burn -- store in animal-proof containers
+- **Toilet seat, bucket rims, handles, floors:** 5 tablespoons (1/3 cup) of bleach per gallon of room-temperature water, or 4 teaspoons per quart (about 20 mL per liter). Keep the surface wet for at least 1 minute.
+- **After vomit or diarrhea:** the CDC's norovirus mix is stronger, 5 to 25 tablespoons per gallon, left on for at least 5 minutes.
+- **Floors where sewage backed up:** the EPA advises half a cup of bleach per gallon of water.
 
-### Pest Control
+These ratios assume regular unscented household bleach labeled 5% to 9% sodium hypochlorite. Mix fresh daily. Never mix bleach with ammonia or any other cleaner, and work with windows open, gloves on, and eyes protected. No bleach? Clean thoroughly with detergent and water and use a store-bought disinfectant as its label directs.
 
-Accumulated waste attracts rats, mice, flies, and cockroaches -- all disease carriers.
+## Garbage, Wash Water, and Pests
 
-- **Seal all waste containers** with tight-fitting lids
-- **Elevate garbage storage** off the ground on pallets or shelves
-- **Remove standing water** -- mosquitoes breed in as little as a bottle cap of water
-- **Set traps** for rodents if available
-- **Maintain a clean perimeter** around your living area -- do not allow trash to accumulate within 50 feet
-
----
-
-## Disease Prevention
-
-### Handwashing -- The Single Most Important Act
-
-Handwashing prevents the fecal-oral transmission route that causes most sanitation-related illness.
-
-**When to wash hands:**
-- After using the toilet or handling waste
-- Before preparing or eating food
-- After caring for someone who is ill
-- After handling garbage
-- After contact with animals
-
-**Without running water:**
-1. Use a hand-washing station: a jug with a spigot over a basin
-2. Use soap -- even a small amount makes a large difference
-3. Scrub for at least 20 seconds, including between fingers and under nails
-4. Rinse with clean water
-5. Air dry or use a clean cloth
-
-**If no water is available:**
-- Use hand sanitizer with at least 60% alcohol
-- This is effective against most bacteria but not all pathogens
-- Wash with soap and water as soon as it becomes available
-
-### Recognizing Sanitation-Related Illness
-
-**Seek medical attention for these symptoms, which may indicate waterborne or waste-related disease:**
-- Severe or persistent diarrhea (especially with blood)
-- Vomiting that prevents keeping fluids down
-- Fever above 101.5F combined with GI symptoms
-- Signs of dehydration: dry mouth, dark urine, dizziness, confusion
-- Jaundice (yellowing of skin or eyes) -- may indicate hepatitis
-
-**Immediate treatment while awaiting medical care:**
-- Rehydrate aggressively with oral rehydration solution (ORS)
-- **DIY ORS:** 1 liter clean water + 6 teaspoons sugar + 1/2 teaspoon salt
-- Isolate the sick person to prevent spread
-- Disinfect any areas contaminated by vomit or diarrhea
-- Wash hands after every contact with the ill person
-
-### Disinfection Without Bleach
-
-If you have **unscented household bleach (5.25-8.25% sodium hypochlorite)**:
-- **Surface disinfection:** 1 tablespoon bleach per 1 gallon of water
-- **Sanitizing dishes:** 1 teaspoon bleach per 1 gallon of water, soak 1 minute
-- **Disinfecting waste areas:** Use a stronger solution of 1/4 cup per gallon
-
-If you have **no bleach:**
-- Boiling water kills most pathogens -- pour boiling water over surfaces
-- Direct sunlight has UV disinfection properties -- place items in sun for 6+ hours
-- White vinegar kills some bacteria but is NOT a substitute for bleach against viruses
-
----
-
-## Sanitation Supply Checklist
-
-Stock these items before an emergency:
-
-- [ ] Heavy-duty trash bags, 3+ mil (at least 50)
-- [ ] 5-gallon buckets with lids (at least 2)
-- [ ] Kitty litter or sawdust (25+ pounds)
-- [ ] Unscented household bleach (2 gallons)
-- [ ] Hand soap (multiple bars or bottles)
-- [ ] Hand sanitizer, 60%+ alcohol (several bottles)
-- [ ] Nitrile or latex gloves (box of 100)
-- [ ] Toilet paper (stock well beyond normal use)
-- [ ] Paper towels
-- [ ] Spray bottles for disinfectant solution
-- [ ] Twist ties or zip ties for sealing bags
-- [ ] Small shovel or trowel (for cat holes / burial)
-- [ ] Plastic sheeting (for containing contaminated areas)
-- [ ] Oral rehydration salt packets
-
----
+- **Keep human waste out of household garbage,** and keep both away from where you live, cook, and store water.
+- **Bag garbage and keep it in lidded containers.** Food scraps draw flies and rats, which carry germs from waste to food.
+- **Wash water** from the handwashing bucket is not clean enough to reuse for washing. Use it to dilute urine.
+- **Do not try to compost human waste for a garden.** Doing it safely takes a managed system and a long time. In an emergency, store it for collection.
 
 ## Special Situations
 
-### Apartment or High-Rise Living
+- **Apartments:** there is no ground to dig. Use the lined toilet or twin buckets, and store sealed bags in a lidded can on a balcony or in a spot agreed with neighbors and building staff. Never use a trash chute for waste bags.
+- **Young children:** line a potty chair with a bag, and wash their hands for them.
+- **Older adults and people with limited mobility:** a bucket is low and tips easily. Set it against a wall beside a sturdy chair or rail, keep a light there at night, and consider a bedside commode with a bag liner. Give them privacy, and help without fuss.
 
-- You cannot dig cat holes or bury waste
-- Bucket toilets are your primary option
-- Store sealed waste bags on a balcony or in a designated room away from living areas
-- Coordinate with neighbors to designate a building waste storage area
-- Ventilation is critical -- open windows in waste storage areas
+## Common Mistakes
 
-### Caring for Infants and Young Children
+- **"It still flushes, so it's fine."** After an earthquake or flood it can be sending sewage somewhere it should not go.
+- **One bucket for everything.** Mixed waste smells worse, weighs more, and spills.
+- **Filling the bag to the top,** or sealing the poo bucket airtight.
+- **Burying or binning the bags** before officials say how.
+- **No handwashing station,** or sanitizer only.
 
-- Stock disposable diapers generously (a minimum of 2 weeks' supply)
-- Cloth diapers can be washed and reused -- soak in bleach solution, then wash
-- Dispose of diaper contents in the waste system, not mixed with regular trash
-- Children are more vulnerable to dehydration from diarrheal illness -- monitor closely
+## Practice
 
-### Caring for Elderly or Mobility-Limited Individuals
+**10-minute drill:** Three small jobs. First, find the shutoff valve behind each toilet and turn it gently to be sure it moves (stop if it is stuck; do not force it). Second, dry-fit your emergency toilet: bucket, two bags, seat, cover material, and decide where it and the handwashing jug would go. Third, pace 100 feet from your well or the nearest stream or drain and see where that actually puts you. Many yards have no spot that qualifies, which tells you to stock bags.
 
-- Place a bucket toilet directly beside the bed if needed
-- Bedpans can be improvised from shallow containers with lids
-- Incontinence supplies should be stocked in advance
-- Maintain skin hygiene to prevent breakdown and infection
+**What would you do?**
+
+1. *A strong earthquake hit an hour ago. Your water still runs and the toilet flushed normally when your son used it. A neighbor says that means the sewer is fine.*
+
+   **Answer:** Stop flushing until officials confirm the sewers work. The pipes under the street can be broken even when your house's plumbing is intact, and your flush may be emptying into a neighbor's basement or the ground. Set up the lined toilet or twin buckets, and shut off the house water if you suspect broken pipes.
+
+2. *Day four. The bag in your only bucket is nearly full and smells. Garbage pickup has resumed for one day, and the roll cart is at the curb.*
+
+   **Answer:** Do not top it off and do not put it in the cart unless officials have said waste bags may go in household garbage. Put on gloves, tie the bag, double-bag it, and move it to a separate lidded can. From now on change bags at half full, cover every use with dry material, keep urine in a second bucket, and leave the lid resting rather than sealed. That fixes most of the smell.
+
+3. *Your home is on a septic system. Floodwater has pulled back from the house, but the lawn over the drainfield is still soggy. The family wants showers and normal flushing again.*
+
+   **Answer:** Not yet. Until the water in the drainfield is lower than the water level around the house, the system cannot absorb wastewater and will back up. Keep using the dry toilet and keep water use to a minimum. Do not pump the tank while the ground is saturated. If you see settling, wet spots, or slow drains after it dries, have it inspected, and do not drink well water until it has been tested.
+
+## Quick Reference
+
+```
+DO NOT FLUSH
+- After a strong quake (until
+  officials clear the sewers)
+- Septic field flooded or soggy
+- Slow drains, gurgling, backup
+
+DRY TOILET
+Bowl or 5-gal bucket + 2 bags
+Cover each use with dry material
+Bag out at HALF full, double-bag
+Store in lidded can, away from
+food, water, kids, pets, flies
+No trash, no burying, until
+officials say how
+
+TWIN BUCKETS
+PEE: no liner, no paper, empty at
+  1/4 full, dilute, pour on soil
+POO: bag + 1/2 cup cover each use
+  lid resting, not airtight
+
+DIGGING (last resort)
+100 ft (30 m)+ from wells, water,
+homes. Downhill of water sources.
+Cat hole 6 in deep. Fill latrine
+at 1 ft from the top.
+
+HANDS: soap + water every time
+Sanitizer is backup only
+
+BLEACH (unscented, 5%-9%)
+1/3 cup per gallon, wet 1 min
+Vomit/diarrhea: 5-25 Tbsp/gal,
+5 min. Never mix with cleaners.
+```
+
+## Sources
+
+- [Washington State Department of Health: Toilet Use During Emergencies](https://doh.wa.gov/community-and-environment/wastewater-management/toilet-use-during-emergencies)
+- [Oregon State University Extension: Survival Basics, Sanitation and Waste Management (EM 9334)](https://extension.oregonstate.edu/catalog/pub/em9334)
+- [Regional Disaster Preparedness Organization (Portland Metro): Emergency Toilet Guidebook](https://docs.google.com/document/d/1Pt4W2ul_nfBeES0-aI38SFGN9_5-rCDcV45lbfvligA/mobilebasic)
+- [EPA: Septic Systems, What to Do after the Flood](https://www.epa.gov/ground-water-and-drinking-water/septic-systems-what-do-after-flood)
+- [WHO / WEDC: Technical Note 14, Technical options for excreta disposal in emergencies (French edition)](https://wedc-knowledge.lboro.ac.uk/resources/who_notes/WHO_TNEF_14.pdf)
+- [National Park Service: Leave No Trace Seven Principles (cat holes)](https://www.nps.gov/articles/leave-no-trace-seven-principles.htm)
+- [CDC: Cleaning and Disinfecting with Bleach](https://www.cdc.gov/hygiene/about/cleaning-and-disinfecting-with-bleach.html)
+- [CDC: How to Prevent Norovirus](https://www.cdc.gov/norovirus/prevention/index.html)
+- [CDC: Hand Sanitizer Guidelines and Recommendations](https://www.cdc.gov/clean-hands/about/hand-sanitizer.html)
+- [CDC: About Norovirus (dehydration signs)](https://www.cdc.gov/norovirus/about/index.html)
+- [CDC: Signs and Symptoms of Flu (dehydration signs in children)](https://www.cdc.gov/flu/signs-symptoms/index.html)
 
 ---
 
-## Key Takeaways
+Last reviewed: November 2026
 
-1. **Act immediately** -- set up a waste management system within hours of infrastructure failure
-2. **Separate human waste** from all other garbage
-3. **Cover and contain** every deposit with absorbent material
-4. **Wash hands relentlessly** -- this is your strongest defense against disease
-5. **Store waste safely** in sealed, double-bagged containers with lids
-6. **Manage greywater** -- do not let it pool on the surface
-7. **Watch for illness** -- diarrhea and vomiting in a sanitation crisis can be deadly without rehydration
-8. **Stock supplies now** -- trash bags, buckets, litter, bleach, and soap are cheap insurance
-
----
-
-*Last updated: March 2026*
 *License: CC-BY-SA 4.0*
-
-**Disclaimer:** This guide is for educational purposes. Follow all directives from local health authorities during an actual emergency. This information is not a substitute for professional public health guidance.

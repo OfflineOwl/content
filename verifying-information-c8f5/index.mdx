@@ -1,162 +1,351 @@
 # Verifying Information During Emergencies
 
-> **Truth in Crisis** - During emergencies, misinformation spreads rapidly. Knowing how to verify information before acting can prevent panic and bad decisions.
+> **Pause before you pass it on.** In a disaster, rumors travel faster than official updates, and a false one can send people toward danger or away from help. Four quick checks sort most of them out.
 
-## Why Verification Matters
+<QuickTriage
+  questions={[
+    {
+      id: "what",
+      text: "What just reached you?",
+      options: [
+        { label: "A message telling me to act now (evacuate, shelter, don't drink the water)", next: "channel" },
+        { label: "Someone asking for money, a fee or personal details", result: "scam" },
+        { label: "A dramatic claim, photo or video people are sharing", result: "claim" },
+        { label: "Word of mouth, and I have no way to check online", result: "offline" }
+      ]
+    },
+    {
+      id: "channel",
+      text: "How did it reach you?",
+      options: [
+        { label: "Phone emergency alert, weather radio, siren, TV or radio alert, or an official in person", result: "act" },
+        { label: "A forwarded message, screenshot or social media post", result: "forwarded-order" }
+      ]
+    }
+  ]}
+  results={[
+    {
+      id: "act",
+      title: "Act First, Check Details After",
+      steps: [
+        "Do what the alert says now: take shelter, evacuate, or stay indoors",
+        "Don't wait for a second source before protecting yourself",
+        "Once you are safe, get details from local radio, TV or the official website",
+        "Stay protected until the warning expires or officials say it is over"
+      ],
+      section: "Do this now",
+      priority: "critical"
+    },
+    {
+      id: "forwarded-order",
+      title: "Confirm It Fast, Lean Toward Safety",
+      steps: [
+        "Don't forward it yet",
+        "Check an official channel right now: phone alerts, weather radio, county emergency management, local radio",
+        "Can't confirm an evacuation order within a minute or two? Treat it as real and go",
+        "Share the official version, with its source, not the screenshot"
+      ],
+      section: "The four checks",
+      priority: "urgent"
+    },
+    {
+      id: "scam",
+      title: "Stop: Likely a Scam",
+      steps: [
+        "Pay nothing and give no bank, card or Social Security details",
+        "FEMA never charges a fee. Ask for ID, then verify it yourself using a number you already have",
+        "Refuse anyone who wants a wire transfer, gift card, payment app, cryptocurrency or cash",
+        "Report it: ReportFraud.ftc.gov, the FEMA Helpline 800-621-3362, and local police"
+      ],
+      section: "Scams that follow disasters",
+      priority: "urgent"
+    },
+    {
+      id: "claim",
+      title: "Run the Four Checks",
+      steps: [
+        "Who said it? Find the original, not the forward",
+        "When? Look for a date and time",
+        "Where? Make sure it is really about your area",
+        "Who else confirms it? Check an official channel or a second independent source before sharing"
+      ],
+      section: "The four checks",
+      priority: "important"
+    },
+    {
+      id: "offline",
+      title: "Weigh the Cost of Being Wrong",
+      steps: [
+        "Ask the messenger: did you see it yourself, who told you, and when?",
+        "Cheap precaution (stored water, avoiding a road)? Take it now",
+        "Risky or costly move (leaving shelter, driving into danger, paying)? Wait for radio or an official",
+        "Write it down as unconfirmed and listen to local radio at your next check-in"
+      ],
+      section: "When you can't check",
+      priority: "important"
+    }
+  ]}
+/>
 
-### During Emergencies
+## Do this now
 
-- Rumors spread faster than facts
-- Wrong information causes panic
-- Bad data leads to bad decisions
-- Lives depend on accuracy
-- Resources wasted on false threats
+When an alarming message, post or rumor reaches you:
 
-### Common Misinformation
+1. **Is it an official alert telling you to act?** A phone emergency alert, a NOAA Weather Radio alarm, a siren, a broadcast alert, or an official at your door: do what it says first. Check details afterward. Verifying must never slow down taking shelter or evacuating.
+2. **For everything else, stop.** Don't forward it and don't act on it yet.
+3. **Ask the four questions:** Who said it? When? Where? Who else confirms it?
+4. **Check one official channel:** your city or county emergency management, the National Weather Service, your utility, or local radio.
+5. **Then choose:** act on it, share the official version (not the rumor), or let it drop.
 
-- Exaggerated damage reports
-- False evacuation orders
-- Inaccurate weather predictions
-- Made-up safety advice
-- Manipulated images/videos
+## Get emergency help if
 
-## Trusted Sources Hierarchy
+- **Someone is in danger right now.** Call 911 (or your local emergency number). Don't wait to verify a fire you can see or a person who is hurt.
+- **You are told to evacuate and can't tell if the order is real.** If you can't confirm it within a minute or two, treat it as real and go. Leaving for a false alarm costs you an evening. Staying for a real one can cost your life.
+- **Someone is pressuring you to pay or hand over personal details on the spot.** That is not an emergency, however urgent they make it sound. End the conversation. See "Scams that follow disasters" below.
 
-### Most Reliable
+Don't call 911 to check a rumor. Use the official channels in this guide and keep the lines open for emergencies.
 
-1. **Official government sources**
-   - FEMA
-   - National Weather Service
-   - CDC
-   - State/local emergency management
+## Why rumors spread in disasters
 
-2. **Emergency services**
-   - Local police/fire
-   - Emergency management office
-   - 911 dispatchers
+The first hours of an emergency are an information gap. Officials need time to confirm facts before they publish them, and people fill the silence with guesses. The guesses then travel as facts.
 
-3. **Established news organizations**
-   - Local TV/radio stations
-   - Wire services (AP, Reuters)
-   - Major newspapers
+Most false information is passed on by people trying to help. The US Cybersecurity and Infrastructure Security Agency (CISA) sorts it into three kinds:
 
-### Less Reliable
+| Kind | What it is | Disaster example |
+|------|------------|------------------|
+| **Misinformation** | False, but not shared to cause harm | A neighbor forwards a wrong shelter address in good faith |
+| **Disinformation** | Made on purpose to mislead, harm or manipulate | A fake "relief fund" page built to collect donations |
+| **Malinformation** | Based on fact but used out of context | A real flood photo from another year, posted as today's |
 
-- Social media posts
-- Forwarded messages
-- Unknown websites
-- "Friend of a friend" information
-- Unverified videos
+Rumors in disasters cluster around the things people most need to know: road closures, shelters, the path of the storm or fire, whether the water is safe, and who gets aid. That is exactly why a wrong one does damage.
 
-## Verification Techniques
+CISA's warning is worth remembering: this kind of content is built to provoke a strong emotional reaction that gets ahead of your thinking. If a post makes you shocked, angry or frightened, treat the feeling as a signal to slow down.
 
-### Check the Source
+## Rank your sources
 
-| Question | Action |
-|----------|--------|
-| Who is sharing this? | Check their credibility |
-| What's their source? | Trace back to origin |
-| When was it created? | Check date/time |
-| Why might they share this? | Consider motives |
+Not every source deserves the same trust. From strongest to weakest:
 
-### Cross-Reference
+| Rank | Source | How to treat it |
+|------|--------|-----------------|
+| 1 | **Official alerts aimed at you:** phone emergency alerts, NOAA Weather Radio, sirens, broadcast alerts, officials on your street | Act on it. |
+| 2 | **Official agencies' own channels:** city or county emergency management, the local National Weather Service office, state agencies, your utility, your school district | Trust it. Check the date and that the account or site is the real one. |
+| 3 | **Established local news:** radio, TV, newspapers | Usually reliable, and they name their sources. Early reports are often corrected later. |
+| 4 | **People you know describing what they saw themselves** | Good for your own street. Ask, "Did you see it yourself?" |
+| 5 | **Everything else:** forwarded messages, screenshots, anonymous posts, "a friend who works for the city" | A lead to check, never a fact. |
 
-- Check multiple independent sources
-- Official sources should confirm
-- If only one source, be skeptical
-- Breaking news takes time to verify
+The Understanding Sirens & Alert Systems and Radio Use for Emergency Updates guides explain how the rank 1 systems work and how to set them up.
 
-### Image/Video Verification
+## The four checks
 
-- Reverse image search
-- Check metadata if possible
-- Look for context clues
-- Old images often recycled
-- AI-generated content increasing
+### 1. Who said it?
 
-## Red Flags
+Trace the claim back to where it started. A forwarded message, a screenshot, or "they're saying" is not a source.
 
-### Suspicious Information
+- **Find the original.** If a post says "the county announced," look for the county's own announcement.
+- **Check that the account is real.** Fake accounts copy the names and logos of agencies and news outlets. Look at the handle and the web address for odd spellings. In the US, an address ending in .gov belongs to an official government organization, though not every local agency uses one.
+- **Ask what the source gains.** CISA's advice is to check who is really behind the information and what they gain by making people believe it. Clicks, donations and your personal details are all gains.
+- **Trust the original as much as the friend.** A message from someone you trust is only as good as wherever they got it.
 
-- Only one source
-- Emotional language
-- "Share this before deleted"
-- Anonymous sources
-- Too convenient/dramatic
-- Conflicts with official reports
+### 2. When?
 
-### Social Media Warning Signs
+Old content resurfaces in every disaster. A warning screenshot may be hours old, and warnings expire. A photo may be from a different storm years ago.
 
-- New accounts posting
-- Bot-like behavior
-- Unverified accounts
-- Copy-paste text
-- Appeal to panic
+- Look for a date and time on the original, not on the share.
+- Be suspicious of anything with no date at all.
 
-## Verification Checklist
+### 3. Where?
 
-### Before Acting on Information
+- **Is it about your area?** Many towns and counties share names across states. A "Springfield evacuation" may be 800 miles (1,300 km) away.
+- **Weather warnings cover specific areas.** A warning for the next county is a reason to pay attention, not proof that you are under it.
 
-- [ ] Identified original source
-- [ ] Source is credible
-- [ ] Information is recent
-- [ ] Cross-referenced with other sources
-- [ ] Official sources confirm
-- [ ] Details are specific, not vague
-- [ ] No obvious red flags
+### 4. Who else confirms it?
 
-## What to Do With Unverified Info
+- **Look for the same fact from a second, independent source.** Ten people forwarding one post is still one source.
+- **Check the official channel directly.** Go to the agency's own site, account or broadcast. Don't follow a link in the message.
+- **Notice silence.** If something huge is supposedly happening and no official or news source mentions it, it probably isn't happening.
 
-### Don't
+CISA's rule for sharing is short: if the content isn't from a credible source, or you can't find another credible source to confirm it, don't share it.
 
-- Share immediately
-- Panic
-- Take major action
-- Assume it's true
+## Red flags
 
-### Do
+Any one of these is a reason to check before believing:
 
-- Wait for verification
-- Check official sources
-- Ask questions
-- Report obvious misinformation
+- **"Share this before it gets deleted,"** or any pressure to forward it right away
+- **No named source,** or a source you can't check: "a nurse I know," "someone at the power company"
+- **A screenshot with no link** to where it came from
+- **A headline or caption that doesn't match** what the post or article actually says
+- **Language written to make you furious or terrified**
+- **A request for money, a fee, or personal details**
+- **It tells you exactly what you were hoping or dreading to hear.** People share content that confirms what they already believe, even when it is untrue.
 
-## Reliable Information Sources
+## Photos and video
 
-### Set Up Before Emergency
+A dramatic picture feels like proof. It isn't.
 
-- Local emergency management social media
-- Local news alerts
-- NOAA Weather Radio
-- Wireless Emergency Alerts
-- Community notification systems
+- **Old and borrowed images are the most common fakes.** A real flood, fire or tornado picture from another time or place gets posted as "happening now."
+- **Images can be generated or edited convincingly.** Don't try to judge by how real it looks. Go back to the four checks: who posted it first, when, where, and who else confirms it.
+- **When you have internet,** a reverse image search in a major search engine shows where a picture has appeared before. If it shows up in a news story from three years ago, you have your answer.
+
+## When you can't check
+
+With phones and internet down, word of mouth may be all you have. You can still sort it.
+
+- **Radio is the official channel that keeps working.** NOAA Weather Radio and local AM/FM stations carry official instructions when nothing else does. Listen on a schedule to save batteries.
+- **Question the messenger kindly.** "Did you see it yourself? Who told you? When was that?" A report that is third-hand and a day old gets less weight than something a neighbor watched an hour ago.
+- **Write it down.** Record the claim, who told you, and the time, and mark it "confirmed" or "unconfirmed." The Emergency Information Log guide has a template. Rumors look different on paper the next morning.
+- **Weigh the cost of being wrong.** This is the key judgment:
+
+| If the unconfirmed report is about... | Then |
+|---------------------------------------|------|
+| A danger you can avoid cheaply (unsafe tap water, a blocked road, rising water nearby) | Take the precaution now and confirm later. Use stored water. Move the car uphill. |
+| A reason to do something risky or costly (drive through the danger area, leave a safe shelter, hand over money or supplies) | Wait for confirmation from radio or an official. |
+
+- **Pass it on honestly, or not at all.** "I heard this, I haven't confirmed it, and I'm using bottled water to be safe" is useful. "The water is poisoned" is how panic starts.
+- **Use your out-of-town contact.** Someone outside the disaster area with working internet can look up official sources for you and text back. See the Emergency Communications Plan (Offline) guide.
+
+## Scams that follow disasters
+
+Scammers arrive with the cleanup crews. The US Federal Trade Commission (FTC) and FEMA warn about the same patterns after every disaster.
+
+**Fake officials and inspectors**
+
+- **FEMA never charges** to apply for help or for an inspection. Anyone asking for a fee is not FEMA.
+- Real FEMA inspectors wear an official government badge and show identification when asked. They do not ask for bank details.
+- Apply for FEMA assistance only at DisasterAssistance.gov, by calling 800-621-3362, or in person at a Disaster Recovery Center.
+- If an inspector comes and you never applied, say so. Someone may have used your identity. Call the FEMA Helpline.
+
+**Fake utility workers**
+
+After a storm, someone may call or knock claiming your equipment needs repair or replacement and asking for payment. Don't pay. Ask for identification, then check for yourself by calling the utility on the number printed on your bill.
+
+**Repair and cleanup contractors**
+
+- Hire only licensed and insured contractors. Check the license with your state or county and ask for proof of insurance.
+- Get a written contract. Never sign one with blank spaces.
+- Never pay cash, and never pay in full up front. Pay the balance only when the work is done and you are satisfied.
+- Never sign your insurance check over to a contractor.
+
+**Fake charities**
+
+- Give to organizations you know, or look the charity up yourself. Don't rely on a post, even one shared by a friend.
+- Be careful with crowdfunding pages for people you can't check out.
+- If you donate by text, confirm the number on the charity's own website first.
+
+**The payment tell.** Anyone who insists on a wire transfer, gift card, payment app, cryptocurrency or cash is almost certainly a scammer. Those payments are very hard to get back. A credit card gives you more protection.
+
+**Aid rumors FEMA has had to correct**
+
+| Rumor | Fact |
+|-------|------|
+| FEMA takes your land if you apply | False. Applying gives the government no ownership of your property. |
+| FEMA only pays once | False. You may receive more than one payment. |
+| You can earn $3,000 a week helping with storm cleanup | False. |
+
+**Report it.** In the US, report scams at ReportFraud.ftc.gov, call the FEMA Helpline (800-621-3362) about anything using FEMA's name, and tell local police. Outside the US, use your national consumer protection or fraud reporting service.
+
+## If you shared something false
+
+It happens to careful people. Fix it quickly:
+
+1. **Correct it where you posted it,** or delete it and say why.
+2. **Tell the people you sent it to directly.**
+3. **Lead with the truth.** Say what is correct. Don't repeat the false claim in detail, because repeating it spreads it.
+
+When someone else shares a rumor, CISA suggests replying privately rather than in public comments, staying calm and respectful, and pointing to a neutral, credible source. People hear a correction better when it doesn't embarrass them.
+
+## People who need extra thought
+
+- **Children and teens** see disaster rumors on their phones before adults do. Agree that anything frightening gets shown to an adult before it gets forwarded.
+- **Older relatives and anyone living alone** may have no one nearby to check with. Call them, tell them that FEMA never charges fees and that nobody who turns up at the door needs paying on the spot, and agree that they will phone you before paying anyone.
+- **Agree on a family password** so you can tell a real call from a relative from a fake one. See the Emergency Communications Plan (Offline) guide.
+
+## Set up trusted sources now
+
+Checking is fast when you already know where to look. Do this before you need it:
+
+- [ ] Find your city or county emergency management website and sign up for its alerts
+- [ ] Find your local National Weather Service office page
+- [ ] Save your electric, gas and water utilities' outage pages and phone numbers
+- [ ] Write down two local radio stations that carry emergency information
+- [ ] Set up a NOAA Weather Radio, or know where to hear it
+- [ ] Turn on emergency alerts on every phone
+- [ ] Copy the list onto paper for when the phone is dead
+
+## Practice
+
+**10-minute drill:** Build your trusted-sources card. Look up the items in the checklist above and write the web addresses, account names and radio frequencies on one card. Then scroll back through your messages or feed, pick one alarming thing someone forwarded this year, and run the four checks on it. Time yourself. Most people find the original, the date and the place in under two minutes, and a surprising number of forwards fail on the date alone.
+
+**What would you do?**
+
+1. *Heavy rain all day. A screenshot lands in your neighborhood group chat: "The dam upstream has FAILED. Everyone must evacuate NOW. Share with everyone!!" It has no source and no time on it. Three neighbors have already forwarded it.*
+
+   **Answer:** Don't forward it. Check an official channel right now: your phone's emergency alerts, the weather radio, the county emergency management page or local radio. A real dam failure would be all over them. If you live in a low spot near the river and can't confirm either way within a minute or two, move to higher ground while you keep checking. That precaution is cheap. Then tell the group what the official source says, with a link, instead of adding a fourth forward.
+
+2. *Two days after a hurricane, a man in a safety vest with a clipboard says he is a FEMA inspector. He can get your grant approved today for a $150 processing fee, and needs your bank account number for the deposit.*
+
+   **Answer:** This is a scam. FEMA never charges for an inspection or an application, and inspectors don't ask for bank details. Ask to see his official badge, pay nothing, give no account or Social Security number, and close the door. Then call the FEMA Helpline at 800-621-3362 to check your application and report him, and warn the neighbors, because he is going door to door.
+
+3. *Power, phones and internet have been out since yesterday. A neighbor tells you, "They were saying online before everything went down that the tap water is contaminated." Your household has been drinking it all morning.*
+
+   **Answer:** You can't confirm it, so weigh the cost of being wrong. Switching to stored or bottled water costs almost nothing, so do that now. Ask the neighbor where they saw it and when, write it in your log as unconfirmed, and listen to local radio at the next check-in for a boil-water or do-not-drink notice. If you pass it on, pass it on as unconfirmed. If anyone feels ill, that is a reason to seek medical help, not to wait for the radio.
 
 ## Quick Reference
 
 ```
-VERIFY BEFORE ACTING
+VERIFY BEFORE YOU SHARE OR ACT
 
-CHECK:
-- Who is the source?
-- Is it recent?
-- Can you confirm elsewhere?
-- What do officials say?
+OFFICIAL ALERT SAYING ACT NOW?
+(phone alert, weather radio, siren,
+ official at the door)
+-> Do it first. Check after.
 
-RED FLAGS:
-- "Share before deleted"
-- Anonymous sources
-- Single source only
-- Emotional language
-- Conflicts with officials
+EVERYTHING ELSE: 4 CHECKS
+1. WHO said it? Find the original.
+2. WHEN? Look for date and time.
+3. WHERE? Is it really your area?
+4. WHO ELSE confirms it?
+   Official channel or second source.
 
-TRUST HIERARCHY:
-1. Official emergency management
-2. Emergency services
-3. Established news media
-4. Everything else - verify first
+CAN'T CHECK?
+- Cheap precaution: take it now.
+- Risky or costly move: wait for
+  radio or an official.
+- Pass it on as "unconfirmed" or
+  not at all.
+
+RED FLAGS
+- "Share before it's deleted"
+- No source, no date, screenshot
+- Makes you furious or terrified
+- Asks for money or personal info
+
+SCAMS
+- FEMA never charges a fee.
+- Ask for ID. Verify it yourself.
+- No cash, gift cards, wire, crypto.
+- FEMA Helpline: 800-621-3362
+- Report: ReportFraud.ftc.gov
+
+MY OFFICIAL SOURCES
+County alerts: ___________________
+Radio: _________ and _________
+Utility outage line: _____________
 ```
+
+## Sources
+
+- [CISA: Disinformation Stops With You (infographic set)](https://www.cisa.gov/sites/default/files/2023-08/Disinformation%20Stops%20With%20You%20Infographic_508.pdf)
+- [FEMA: Common Disaster-Related Rumors](https://www.fema.gov/disaster/recover/rumor-response)
+- [FEMA: Disaster Fraud](https://www.fema.gov/about/offices/security/disaster-fraud)
+- [FTC: How To Avoid Scams After Weather Emergencies and Natural Disasters](https://consumer.ftc.gov/articles/how-avoid-scams-after-weather-emergencies-and-natural-disasters)
+- [FTC: Four Ways to Avoid Scams After a Weather-Related Disaster](https://consumer.ftc.gov/consumer-alerts/2025/01/four-ways-avoid-scams-after-weather-related-disaster)
+- [FTC: After a Disaster, Make Your Donations Count](https://consumer.ftc.gov/consumer-alerts/2024/10/after-disaster-make-your-donations-count)
+- [Maryland Department of Health: How to Identify and Counter Misinformation and Disinformation During a Disaster](https://health.maryland.gov/preparedness/Pages/Countering-Misinformation-&-Disinformation-During-a-Disaster.aspx)
+- [Ready.gov: Emergency Alerts](https://www.ready.gov/alerts)
+- [National Weather Service: Wireless Emergency Alerts](https://www.weather.gov/wrn/wea)
 
 ---
 
-*Last updated: January 2026*
+Last reviewed: November 2026
+
 *License: CC-BY-SA 4.0*

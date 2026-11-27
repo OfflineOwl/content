@@ -1,360 +1,206 @@
 # Rainwater Collection Basics
 
-> **Free Water from the Sky** - Rainwater harvesting is one of the best ways to build water resilience. It requires no energy to collect and can provide significant quantities of clean water.
+> **A roof is a water machine.** One inch of rain drops about 600 gallons on a 1,000 sq ft roof, and a simple system can catch roughly 500 of them: nine rain barrels' worth. Catching it is easy. Drinking it takes more care: roof water carries bird droppings, dust, and chemicals from the roof itself, so treat it before it goes in a glass.
 
-## Why Collect Rainwater?
+## Start here
 
-- Free and renewable
-- No energy required to pump
-- Reduces dependence on infrastructure
-- Generally cleaner than surface water
-- Available almost everywhere
-- Can provide substantial quantities
+1. **Check the rules where you live.** Most places allow a rain barrel, but some US states limit how much you can store or what you can use it for, and homeowner associations and plumbing codes can add their own rules.
+2. **Work out what your roof can give.** Roof footprint in square feet, times inches of rain, times 0.5, is a realistic number of gallons. The full arithmetic is below.
+3. **Set up one barrel properly:** food-grade, opaque, lidded, with a screen where water enters, sitting on a solid level base under a downspout, with an overflow that runs away from the foundation.
+4. **Throw away the first flush.** The first water off a roof after dry weather is the dirtiest. Divert it before it reaches the barrel.
+5. **Decide what the water is for.** Use it untreated for flushing toilets, washing things that don't touch food, and watering plants you won't eat. Treat it before drinking, cooking, brushing teeth, or washing food.
+6. **Rain coming during an outage?** Put out every clean pot, bucket, and tub you own, and stretch a clean tarp to catch more. Rain caught this way skips the roof and gutters. Still treat it before drinking.
 
-## How Much Can You Collect?
+## How much can you collect?
 
-**Formula:** 1 inch of rain on 1,000 sq ft = approximately 600 gallons
+In theory, a roof yields about **0.62 gallons per square foot for every inch of rain**. In practice some is lost to first flush, splash, gutter overshoot, evaporation, and leaks. The Texas Water Development Board says installers plan on catching 75 to 90 percent.
 
-### Example Calculations
+**Gallons = roof footprint (sq ft) x rain (inches) x 0.62 x 0.8**
 
-| Roof Size | 1" Rain | Annual (30" avg) |
-|-----------|---------|-----------------|
-| 500 sq ft | 300 gal | 9,000 gal |
-| 1,000 sq ft | 600 gal | 18,000 gal |
-| 1,500 sq ft | 900 gal | 27,000 gal |
-| 2,000 sq ft | 1,200 gal | 36,000 gal |
+Metric is simpler: 1 mm of rain on 1 square meter is exactly 1 liter, so **liters = area (m2) x rain (mm) x 0.8**.
 
-Even modest collection can provide significant emergency reserves.
+Measure the roof's footprint, the ground it covers, not the sloped surface. A steep roof and a flat roof over the same house catch the same rain.
 
----
+| Roof footprint | 1/4 inch of rain | 1 inch of rain | 20 inches a year |
+|----------------|------------------|----------------|------------------|
+| 250 sq ft (shed or one downspout's share) | 30 gal | 125 gal | 2,500 gal |
+| 500 sq ft | 60 gal | 250 gal | 5,000 gal |
+| 1,000 sq ft | 125 gal | 500 gal | 10,000 gal |
+| 2,000 sq ft | 250 gal | 1,000 gal | 20,000 gal |
 
-## Basic Collection Components
+Figures assume 80 percent capture, rounded.
 
-### 1. Catchment Surface
+Two things follow from this. First, storage runs out long before rain does: a single 55-gallon barrel fed by a 250 sq ft section of roof is full after less than half an inch of rain, and the rest goes down the overflow. Second, at the planning figure of 1 gallon per person per day, one full barrel is nearly two weeks of drinking and basic hygiene water for a family of four, once it is treated.
 
-**Best materials (ranked):**
-1. Metal roofing (galvanized, aluminum)
-2. Clay or concrete tiles
-3. Slate
-4. Asphalt shingles (less ideal but usable)
-
-**Avoid or treat carefully:**
-- Cedar shakes (tannins)
-- Treated wood
-- Lead-based materials
-- Moss-covered surfaces
+## What is in roof water
 
-### 2. Gutters and Downspouts
-
-**Requirements:**
-- Clean and well-maintained
-- Properly sloped (1/4" per 10 feet)
-- Adequate capacity for roof area
-- Leaf guards/screens
-- No rust or contamination
+Rain starts out clean and picks things up on the way down. CDC lists three routes:
 
-**Materials:**
-- Aluminum (common, good)
-- Vinyl (acceptable)
-- Copper (excellent, expensive)
-- Galvanized steel (watch for rust)
+- **From the air:** dust, smoke, and other particles.
+- **From the roof surface:** dirt and germs, especially bird and animal droppings. This is worst after several dry days.
+- **From the materials:** chemicals such as lead, copper, and asbestos can come from roofing, gutters, pipes, and tanks.
 
-### 3. First-Flush Diverter
+Boiling and bleach kill the germs. They do nothing about the chemicals. That is why the roof you collect from matters.
 
-**Purpose:** Discards first rain that washes debris off roof
+| Roof or part | For drinking water? | Why |
+|--------------|---------------------|-----|
+| Plain galvanized or coated steel (such as Galvalume), or metal with epoxy or latex paint | Recommended | Smooth, sheds dirt, little leaching |
+| Slate | Good | Smooth, as long as no toxic sealant was used |
+| Clay or concrete tile | Usable | Porous, so it can lose up to about 10 percent and can harbor growth unless sealed |
+| Asphalt or composite shingles | Not advised for a drinking system | The Texas manual warns that compounds can leach out. Fine for garden water |
+| Wood shingles, tar and gravel | Garden only | Leaching |
+| Lead flashing or lead-soldered gutters | No | Rain is slightly acidic and dissolves lead |
+| Old asbestos-cement roofing | No | CDC names asbestos as a roof-water contaminant |
 
-**Simple design:**
-1. Vertical pipe below downspout
-2. Holds first 10 gallons per 1,000 sq ft
-3. Ball floats up when full
-4. Diverts subsequent water to storage
-5. Drains slowly between rains
+Many homes have shingle roofs. In an emergency, FEMA lists rainwater as a source you can use after treating it. If you have a choice, drink the rain you caught on a clean tarp, plastic sheet, or in open containers, and keep shingle-roof water for washing and flushing.
 
-**Why it matters:**
-- First rain contains most contaminants
-- Bird droppings, dust, debris
-- Significantly improves water quality
+## Parts of a simple system
 
-### 4. Storage Container
+**Gutters and leaf screens.** Gutters must slope toward the downspout. Quarter-inch mesh leaf guards keep out leaves and twigs, and need regular cleaning or they clog and grow bacteria. Trim branches that overhang the roof: they drop litter and give rodents a bridge.
 
-**Options:**
+**First-flush diverter.** The simplest is a capped vertical pipe teed into the downspout ahead of the barrel. Rain fills this standpipe first, taking the dust and droppings with it, and only then flows on to storage. A pinhole or slightly loose cap lets it drain slowly so it is empty for the next storm. Size it to hold **1 to 2 gallons for every 100 sq ft of roof** feeding that downspout (about 0.4 to 0.8 liters per square meter), more if the roof is dusty or under trees. Clean it out after each rain. No diverter? Swing the downspout aside for the first several minutes of rain, then swing it back.
 
-| Type | Capacity | Pros | Cons |
-|------|----------|------|------|
-| Rain barrel | 50-80 gal | Inexpensive, easy | Limited capacity |
-| IBC tote | 275 gal | Good capacity, portable | Needs covering |
-| Cistern | 500+ gal | Large capacity | Permanent, expensive |
-| Multiple barrels | Varies | Expandable | Plumbing complexity |
+**Storage.** A barrel or tank should be:
 
-**Container requirements:**
-- Food-grade if drinking water intended
-- Opaque (prevents algae)
-- Covered (prevents mosquitoes, debris)
-- Overflow provision
-- Access for cleaning
+- **Opaque**, because sunlight grows algae
+- **Covered**, with every opening and vent screened against mosquitoes and debris
+- **Food-grade and never used for chemicals**, if anyone might drink from it
+- **Fitted with a tap** a few inches above the bottom, so sediment stays behind
 
-### 5. Overflow System
+**Base.** Water weighs just over 8 lb per gallon (1 kg per liter). A full 55-gallon barrel is about 460 lb (210 kg), and a 275-gallon tote is over a ton. Use a level pad of compacted gravel or pavers, or solid blocks. Raising the barrel gives you gravity pressure at the tap, but a tall, narrow stack can tip. Keep children from climbing it.
 
-**Essential because:**
-- Prevents flooding
-- Directs excess safely
-- Prevents standing water (mosquitoes)
+**Overflow.** A barrel fills fast, so the extra has to go somewhere. Fit an overflow near the top and lead it away from the foundation, or into a second barrel.
 
-**Options:**
-- Overflow pipe to garden
-- Connect to secondary storage
-- Direct to drainage area
+**Keep it separate from house plumbing.** CDC warns that rainwater must not be able to flow into pipes that carry safe tap water. Never connect a barrel to household plumbing without the backflow protection your plumbing code requires. That is a job for a licensed plumber.
 
----
+**Mosquitoes.** Still water breeds them. Screen the inlet, keep the lid on, and if you can't screen it, CDC says to empty the barrel at least every 10 days.
 
-## Simple Rain Barrel System
+## Catching rain without a roof
 
-### Materials Needed
+1. Tie a clean tarp, poncho, or plastic sheet between four points, lower on one side or with a weighted low point in the middle.
+2. Let the first few minutes of rain rinse it, and tip that water away.
+3. Put a clean container under the low point. Line up pots, buckets, coolers, and storage tubs in the open as well.
+4. Cover everything as soon as the rain stops.
 
-- 55-gallon food-grade barrel
-- Spigot/faucet (near bottom)
-- Overflow fitting (near top)
-- Screen/mesh for inlet
-- Downspout diverter
-- Stable base (cinder blocks)
+A 10 ft x 12 ft tarp catches about 60 gallons from one inch of rain.
 
-### Installation Steps
+## Using rainwater safely
 
-1. **Prepare barrel**
-   - Clean thoroughly
-   - Drill hole for spigot (4" from bottom)
-   - Install spigot with gaskets
-   - Drill overflow hole near top
-   - Install overflow fitting
+| Use | What to do |
+|-----|------------|
+| Flushing toilets, washing floors, cars, and tools | Use as is |
+| Watering lawns and plants you won't eat | Use as is |
+| Watering food crops, rinsing produce | CDC advises safe tap or bottled water for these. EPA also cautions that roof chemicals can end up in barrel water |
+| Washing hands, dishes, bathing | Treat it first when you can |
+| Drinking, cooking, brushing teeth, baby formula, ice | Always treat it |
 
-2. **Create stable base**
-   - Level ground
-   - Stack cinder blocks or build platform
-   - Barrel needs to be elevated for gravity flow
-   - Ensure it can support 400+ lbs when full
+**To treat rainwater for drinking in an emergency:**
 
-3. **Modify downspout**
-   - Install diverter or flex elbow
-   - Direct flow into barrel top
-   - Secure connections
+1. Let it settle, then pour it through a clean cloth, paper towel, or coffee filter.
+2. **Boil it:** a rolling boil for 1 minute, or 3 minutes above 5,000 ft (1,500 m).
+3. **Or disinfect it:** per gallon, 8 drops of 6% or 6 drops of 8.25% unscented household bleach. Double the dose if the water is cloudy, colored, or very cold. Stir and wait 30 minutes.
 
-4. **Screen inlet**
-   - Window screen over inlet
-   - Prevents mosquitoes and debris
-   - Check and clean regularly
+Treat the water you are about to use, in a separate clean container, not the whole barrel. See the Complete Water Purification Guide for every method, and the Water Storage and Rotation guide for containers.
 
-5. **Connect overflow**
-   - Hose from overflow fitting
-   - Direct away from foundation
-   - Can link to second barrel
+**Planning to drink rainwater every day?** That takes a designed system: a suitable roof, a sealed tank, sediment and carbon filters, and a disinfection step such as ultraviolet light, with equipment certified by NSF. CDC advises testing the water regularly and asking your health department what to test for. People with weakened immune systems, babies, pregnant women, and older adults are at greater risk from waterborne germs.
 
----
+**If someone gets sick:** get medical help for bloody diarrhea, a fever over 102°F (38.9°C), vomiting that prevents keeping fluids down, diarrhea lasting more than 3 days, or signs of dehydration such as little urine or dizziness on standing.
 
-## Intermediate System (Multiple Barrels)
+## After floods, storms, and freezes
 
-### Linking Barrels
+- **Floodwater or storm debris got into the tank:** don't drink from it. CDC says disinfecting does not work well in that case. Drain it, scrub the inside with 1 cup of bleach in 10 gallons of water, rinse, and start again.
+- **Fuel or chemical smell, or an oily sheen:** no treatment makes that water drinkable. Drain it. It can still flush a toilet.
+- **Freezing weather:** water expands as it freezes and will split a full barrel or its tap. Before a hard freeze, drain the barrel, leave the tap open, and send the downspout back to its normal drain.
 
-**Series connection:**
-- Overflow from one feeds next
-- Simple but uneven filling
-- First barrel always fullest
+## Upkeep
 
-**Parallel connection:**
-- Equal level in all barrels
-- Pipes connect barrels at bottom
-- Fills and drains evenly
-- Recommended for multiple barrels
+- [ ] After each rain: empty and clean the first-flush pipe
+- [ ] Clean leaf screens and gutters whenever debris builds up, and before the rainy season
+- [ ] Check that inlet and overflow screens are whole and tight
+- [ ] Look for mosquito larvae (wriggling specks). If you see them, drain onto the garden and fix the screen
+- [ ] Check the base for settling and the tap for drips
+- [ ] Once a year: drain, scrub out the sediment, rinse
+- [ ] Repair or replace broken parts promptly
 
-### Manifold System
+## Is it legal?
 
-Connect barrels at bottom with pipes:
-1. Install bulkhead fitting in each barrel (2" from bottom)
-2. Connect with PVC pipe
-3. Single valve controls flow to all barrels
-4. Water seeks equal level
+In the United States there is no federal rule on catching rain. States decide, and CDC notes that some treat rainwater as state property. Colorado is the best-known example: a household may have at most two rain barrels with a combined capacity of 110 gallons, the lids must seal, and the water may only be used outdoors on the same property. Other states encourage collection and publish design manuals. Counties, cities, and homeowner associations may add permit, placement, or plumbing rules. The US Department of Energy keeps a state-by-state map in its Alternative Water Supply Tool. Outside the US, check with your local water or environment agency. This guide is not legal advice.
 
----
+## Practice
 
-## Emergency Collection Methods
+**10-minute drill:** Pace out your roof. Walk the outside of your house, counting steps along the length and width (a normal step is roughly 2.5 ft; use a tape measure if you have one, and add the eaves). Multiply to get the footprint, then multiply by 0.5 to get gallons per inch of rain. Next, find every downspout and see where each one empties. Pick the one where a barrel could sit on firm, level ground with its overflow running downhill away from the house. You now know your yield and your spot.
 
-### Tarp Collection
+**What would you do?**
 
-**Quick setup:**
-1. Spread clean tarp
-2. Create low point in center
-3. Place container under low point
-4. Weight corners down
-5. Consider first-flush (wait for initial runoff)
+1. *Day three of a power and water outage. A storm overnight filled your barrel from the shingle roof, and the water is crystal clear. You have one day of bottled water left and the kids are asking for a drink.*
 
-### Improvised Containers
+   **Answer:** Clear is not clean. Bird droppings and germs are invisible. Drink the bottled water first, and treat barrel water before anyone drinks it: strain it, then boil for 1 minute or add bleach and wait 30 minutes. During the next shower, catch drinking water on a clean tarp or in open pots, and keep the shingle-roof water for flushing and washing.
 
-**Can use:**
-- Clean trash cans with lids
-- Storage tubs
-- Buckets (many small containers)
-- Kiddie pools (cover after rain)
-- Large pots
-- Inflatable pools
+2. *It hasn't rained in three weeks. A short shower is coming, maybe a quarter inch. Diverting the first flush might throw away a good part of what falls.*
 
-### Direct Container Collection
+   **Answer:** Divert it anyway. After a long dry spell the first water off the roof carries three weeks of dust and droppings, and letting it in fouls everything already in the barrel. Catch the diverted water in a separate bucket marked "not for drinking" and use it to flush toilets, so nothing is wasted.
 
-Place any clean containers outside during rain:
-- Pots and pans
-- Bowls
-- Buckets
-- Coolers
+3. *A neighbor offers you four free 55-gallon plastic drums from his workplace. They held a concentrated cleaning product. He says a good rinse with the hose will do.*
 
-Less efficient than roof collection but requires no setup.
-
----
-
-## Water Quality Considerations
-
-### Rainwater Quality Factors
-
-**Generally safe:**
-- No ground contamination
-- No chemical treatment
-- Soft water (no minerals)
-
-**Potential contaminants:**
-- Bird droppings
-- Roof debris
-- Air pollution
-- Pesticides (if nearby)
-- Pollen and dust
-
-### Treatment Recommendations
-
-| Use | Treatment Needed |
-|-----|-----------------|
-| Garden irrigation | Usually none |
-| Toilet flushing | Usually none |
-| Laundry | Usually none |
-| Bathing | Filtration recommended |
-| Drinking | Filtration + disinfection |
-
-### Making Rainwater Drinkable
-
-1. **Pre-filter** - Screen removes debris
-2. **First-flush** - Discards initial contamination
-3. **Settling** - Let particles settle
-4. **Filtration** - Remove remaining particles
-5. **Disinfection** - UV, boiling, or chemical
-
----
-
-## Maintenance Schedule
-
-### After Each Rain
-
-- Check that system is functioning
-- Empty first-flush diverter
-- Look for obvious problems
-
-### Monthly
-
-- Clean screens and filters
-- Check for leaks
-- Inspect overflow operation
-- Look for mosquito larvae
-
-### Quarterly
-
-- Clean gutters
-- Flush system
-- Inspect storage containers
-- Check connections
-
-### Annually
-
-- Empty and clean storage containers
-- Inspect roof catchment
-- Replace worn components
-- Assess capacity needs
-
----
-
-## Legal Considerations
-
-**Check local regulations:**
-- Some areas restrict rainwater collection
-- Permits may be required
-- Plumbing codes may apply
-- HOA restrictions possible
-
-Most areas allow basic rain barrel collection without restriction.
-
----
-
-## Maximizing Collection
-
-### Increase Catchment Area
-
-- Clean existing gutters to reduce overflow loss
-- Add gutters to unguttered roof sections
-- Use secondary structures (sheds, garages)
-- Install awnings with collection
-- Add ground-level catchments
-
-### Reduce Losses
-
-- Fix gutter leaks
-- Prevent overflow by adequate storage
-- Cover storage to prevent evaporation
-- Maintain proper gutter slope
-
-### Timing Optimization
-
-- Know your rainy season
-- Have storage ready before rains
-- Empty storage before expected rain (if full and rain predicted)
-
----
-
-## Winter Considerations
-
-### Freezing Climate Preparation
-
-**Barrel systems:**
-- Disconnect and drain before freeze
-- Store barrels upside down
-- Remove spigots to prevent cracking
-- Reconnect in spring
-
-**Fixed systems:**
-- Insulate if possible
-- Keep some water flowing during freeze
-- Or drain completely
-- Bury tanks below frost line if permanent
-
----
+   **Answer:** Not for water anyone might drink. Plastic can hold on to what it stored, and a rinse won't prove it is gone. A container that has held chemicals should never store drinking water. Take them for garden water if the product was mild, label them clearly, and buy or find food-grade barrels for the water your household may need to drink.
 
 ## Quick Reference
 
 ```
-RAINWATER COLLECTION BASICS
+RAINWATER BASICS
 
-1" rain × 1,000 sq ft roof = 600 gallons
+HOW MUCH
+Gallons = sq ft x inches x 0.5
+(0.62 in theory, about 80% caught)
+Liters = m2 x mm x 0.8
+1,000 sq ft x 1 in = ~500 gal
 
-SYSTEM COMPONENTS:
-1. Catchment (roof)
-2. Gutters (clean, sloped)
-3. First-flush diverter (skip first 10 gal)
-4. Storage (food-grade, covered)
-5. Overflow (away from foundation)
+BARREL
+Food-grade, opaque, lidded,
+screened inlet, solid level base
+(55 gal full = ~460 lb),
+overflow away from the house.
+Never tie into house plumbing.
 
-TREATMENT FOR DRINKING:
-Filter → Disinfect (UV, boil, chemical)
+FIRST FLUSH
+Divert 1-2 gal per 100 sq ft roof.
+Dirtiest after dry spells.
 
-MAINTENANCE:
-- Clean gutters regularly
-- Empty first-flush
-- Screen for mosquitoes
-- Clean storage annually
+USE AS IS: flushing, washing
+floors and tools, non-food plants.
+
+TO DRINK: strain, then
+- Boil 1 min (3 min above 5,000 ft)
+- or bleach per gallon: 8 drops 6%
+  or 6 drops 8.25%, wait 30 min
+  (double if cloudy or cold)
+Bleach and boiling don't remove
+roof chemicals. Tarp-caught rain
+is better for drinking.
+
+MOSQUITOES: screen it, or empty
+at least every 10 days.
+
+Flooded tank or fuel smell:
+don't drink. Check local rules.
 ```
+
+## Sources
+
+- [CDC: Collecting Rainwater and Your Health](https://www.cdc.gov/drinking-water/about/collecting-rainwater-and-your-health-an-overview.html)
+- [Texas Water Development Board: The Texas Manual on Rainwater Harvesting, 3rd edition](https://www.twdb.texas.gov/publications/brochures/conservation/doc/RainwaterHarvestingManual_3rdedition.pdf)
+- [Texas Water Development Board: Rainwater Harvesting FAQ](https://www.twdb.texas.gov/innovativewater/rainwater/faq.asp)
+- [EPA: Soak Up the Rain: Rain Barrels](https://www.epa.gov/soakuptherain/soak-rain-rain-barrels)
+- [EPA: Emergency Disinfection of Drinking Water](https://www.epa.gov/ground-water-and-drinking-water/emergency-disinfection-drinking-water)
+- [CDC: How to Make Water Safe in an Emergency](https://www.cdc.gov/water-emergency/about/index.html)
+- [CDC: Cistern Safety and Disasters](https://www.cdc.gov/water-emergency/about/cistern-safety-and-disasters-before-during-and-after.html)
+- [FEMA: Food and Water in an Emergency (FEMA 477)](https://www.fema.gov/pdf/library/f&web.pdf)
+- [US Department of Energy: Alternative Water Supply Tool (state rainwater rules)](https://www.energy.gov/cmei/femp/alternative-water-supply-tool)
+- [Colorado State University Extension: Rainwater Collection in Colorado](https://extension.colostate.edu/resource/rainwater-collection-in-colorado)
+- [National Weather Service: Essential Tasks After it Warms Up (why frozen water bursts pipes)](https://www.weather.gov/safety/cold-after)
 
 ---
 
-*Last updated: January 2026*
+Last reviewed: November 2026
+
 *License: CC-BY-SA 4.0*

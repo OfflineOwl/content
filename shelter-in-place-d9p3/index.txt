@@ -1,13 +1,13 @@
 SHELTER-IN-PLACE PROCEDURES
-============================
+===========================
 
 Shelter-in-place means staying inside, or getting inside, because
 going out would be more dangerous. WHERE you shelter depends on
 the danger. The wrong room can make things worse.
 
-============================================================
+
 DO THIS NOW
-============================================================
+-----------
 
 1. GET INSIDE. Bring everyone and pets in. Take your emergency
    kit, phone, and charger if they're within reach.
@@ -51,9 +51,9 @@ DO THIS NOW
 CALL 911 (or your local emergency number) if someone has trouble
 breathing, chest pain, seizures, burns, or serious injuries.
 
-============================================================
+
 WHY CHEMICAL AND RADIATION ARE OPPOSITE
-============================================================
+---------------------------------------
 
 CHEMICAL RELEASE: go UP and SEAL.
 Many toxic gases, including chlorine and sulfur mustard, are
@@ -69,9 +69,9 @@ middle of a large building puts the most mass and distance
 between you and the fallout. Buildings don't need to be airtight
 to protect you, so don't waste time taping. Close up and move.
 
-============================================================
+
 CHEMICAL RELEASE: SEALED ROOM
-============================================================
+-----------------------------
 
 Use when officials say to shelter from a chemical release, or
 you smell a strong chemical or see a cloud and can't get away.
@@ -120,9 +120,9 @@ AFTER THE ALL-CLEAR:
   Call Poison Control (1-800-222-1222 in the US) or 911 if you
   have symptoms.
 
-============================================================
+
 RADIATION: BASEMENT OR CENTER
-============================================================
+-----------------------------
 
 1. Get inside a sturdy building. Brick or concrete is best. A car
    is not a shelter.
@@ -140,9 +140,9 @@ RADIATION: BASEMENT OR CENTER
 
 See the Nuclear Fallout Protection guide for details.
 
-============================================================
+
 WEATHER
-============================================================
+-------
 
 TORNADO:
 - Go to a basement, safe room, or storm shelter. If none, a small
@@ -167,9 +167,9 @@ SEVERE THUNDERSTORM:
 - Stay off corded phones.
 - Stay away from windows.
 
-============================================================
+
 ACTIVE THREAT: RUN, HIDE, FIGHT
-============================================================
+-------------------------------
 
 1. RUN if you can do it safely. Leave belongings behind. Keep
    your hands visible and empty.
@@ -184,9 +184,9 @@ ACTIVE THREAT: RUN, HIDE, FIGHT
 - When police arrive: stay calm, keep hands visible and empty,
   follow their instructions.
 
-============================================================
+
 COMMUNICATION DURING SHELTER
-============================================================
+----------------------------
 
 - Text instead of calling. Texts often get through when calls
   don't, and they keep lines free for emergencies.
@@ -198,9 +198,9 @@ COMMUNICATION DURING SHELTER
 - Never charge a phone in a car in a closed garage (carbon
   monoxide).
 
-============================================================
+
 SUPPLIES
-============================================================
+--------
 
 Keep these where you'd shelter:
 - Water: 1 gallon per person per day
@@ -217,9 +217,9 @@ Keep these where you'd shelter:
 - Pet food and water
 - Things to keep children busy
 
-============================================================
+
 HOW LONG SHELTERING LASTS
-============================================================
+-------------------------
 
 - Sealed room (chemical): usually a few hours
 - Radiation: at least 24 hours, sometimes longer
@@ -228,9 +228,9 @@ HOW LONG SHELTERING LASTS
 
 Officials decide. Plan for longer than you expect.
 
-============================================================
+
 WHEN TO END SHELTER
-============================================================
+-------------------
 
 End it when:
 - Officials announce the all-clear, or
@@ -243,9 +243,9 @@ DON'T end it because:
 - You think the danger has passed
 - You're bored or uncomfortable
 
-============================================================
+
 MISTAKES TO AVOID
-============================================================
+-----------------
 
 - Going to the BASEMENT for a CHEMICAL release (gases sink)
 - Going UPSTAIRS or near the roof for RADIATION
@@ -258,9 +258,9 @@ MISTAKES TO AVOID
   monoxide)
 - Ignoring official instructions
 
-============================================================
+
 SPECIAL CONSIDERATIONS
-============================================================
+----------------------
 
 CHILDREN:
 - Keep them close and busy
@@ -281,9 +281,9 @@ MEDICAL NEEDS:
 - Spare batteries or a power plan for medical devices
 - If a medical emergency happens, call 911 even during shelter
 
-============================================================
+
 CHECKLIST
-============================================================
+---------
 
 [ ] Everyone and pets inside and accounted for
 [ ] Doors and windows closed and locked
@@ -297,49 +297,138 @@ CHECKLIST
 [ ] Out-of-town contact texted
 [ ] Waiting for the official all-clear
 
-============================================================
+
 EMERGENCY NUMBERS (US)
-============================================================
+----------------------
 
 Emergency: 911 (112 in the EU, 999 in the UK, 000 in Australia)
 Poison Control: 1-800-222-1222
 FEMA: 1-800-621-3362
 Red Cross: 1-800-733-2767
 
-============================================================
+
+PRACTICE
+--------
+
+10-MINUTE DRILL: Walk the household to each room in the DO THIS
+NOW table and say out loud which danger it is for: the interior
+room above ground you would seal for a chemical release, the
+basement or center spot for radiation, and the interior room on
+the lowest floor for a tornado. Then time everyone closing and
+locking the windows and outside doors, closing the fireplace
+damper, and switching off fans, air conditioning, and forced-air
+heating. Check that the radio works and that you know where the
+plastic sheeting, duct tape, and scissors are. Do not tape
+anything shut or seal anyone into a room for this drill.
+
+WHAT WOULD YOU DO?
+
+1. The outdoor sirens sound on a clear afternoon and your phone
+   says only "Shelter in place now." No reason is given. Half the
+   family heads for the basement and the other half starts
+   unrolling plastic sheeting upstairs.
+
+   ANSWER: Neither, yet. The right room depends on the danger,
+   and the wrong one can make things worse: the basement is the
+   wrong place for a chemical release, and an upstairs room is
+   the wrong place for radiation. Get everyone into an interior
+   room, close up, switch off the fans and air system, and turn
+   on the radio. Move to the right room as soon as officials say
+   what the danger is.
+
+2. A tornado warning is issued for your area while the storm is
+   still a few miles off. You live in a mobile home. A neighbor's
+   brick house with a basement is a one-minute walk away, but it
+   is raining hard and the children want to stay in the bathroom.
+
+   ANSWER: Go to the brick house now, before the tornado arrives.
+   Mobile homes, sheds, tents, and vehicles are not safe in a
+   tornado, whichever room you pick. Once inside the sturdy
+   building, go to the basement, or to a small interior room on
+   the lowest floor, away from windows, doors, and outside walls,
+   and cover your head and neck.
+
+3. You sealed an upstairs room three hours ago after officials
+   ordered shelter for a chemical release. It has been quiet for
+   a long time, the children are bored and restless, and the
+   street outside looks normal. The radio has said nothing new.
+
+   ANSWER: Stay put. Quiet, boredom, and a feeling that the
+   danger has passed are not reasons to end shelter. End it only
+   when officials announce the all-clear or tell you to evacuate,
+   or when staying becomes more dangerous: a fire, a gas leak, or
+   the building collapsing. Keep the windows and doors shut, keep
+   one person listening to the radio, and call 911 if anyone has
+   trouble breathing.
+
+
+QUICK REFERENCE
+---------------
+
+SHELTER-IN-PLACE:
+1. Get inside. Bring pets in.
+2. Close up: doors, windows, dampers.
+   Fans, AC, forced-air heat OFF.
+3. Go to the right room (below).
+4. Text family. Don't go out for them.
+5. Radio on. Stay until the all-clear.
+
+CHEMICAL: interior room ABOVE ground.
+  NOT the basement. Seal it: plastic
+  and tape, wet towels under the door.
+  Usually a few hours.
+RADIATION: BASEMENT or CENTER. No
+  sealing. Outer clothes off, wash.
+  At least 24 hours.
+TORNADO: LOWEST floor, interior room,
+  away from windows. Cover head, neck.
+ATTACKER: RUN if you safely can. If
+  not, HIDE. FIGHT as a last resort.
+NOT SURE: interior room, close up,
+  radio on.
+
+LEAVE EARLY ONLY FOR: fire, gas leak,
+  collapse, or an order to evacuate.
+
+CALL 911: trouble breathing, chest
+  pain, seizures, burns, serious injury
+POISON CONTROL (US): 1-800-222-1222
+
+
 SOURCES
-============================================================
+-------
 
-- Ready.gov, Shelter:
-  https://www.ready.gov/shelter
-- Ready.gov, Chemical Emergencies:
-  https://www.ready.gov/chemical
-- Ready.gov, Radiation Emergencies:
+- Ready.gov: Shelter - https://www.ready.gov/shelter
+- Ready.gov: Chemicals and Hazardous Materials Incidents -
+  https://www.ready.gov/hazmat
+- Ready.gov: Radiation Emergencies -
   https://www.ready.gov/radiation
-- Ready.gov, Tornadoes:
-  https://www.ready.gov/tornadoes
-- National Weather Service, During a Tornado:
+- Ready.gov: Tornadoes - https://www.ready.gov/tornadoes
+- National Weather Service: During a Tornado -
   https://www.weather.gov/safety/tornado-during
-- Ready.gov, Attacks in Crowded and Public Spaces:
-  https://www.ready.gov/public-spaces
-- CDC, What to Do to Shelter in Place for a Chemical Emergency:
+- Ready.gov: Mass Gathering Incidents (run, hide, fight) -
+  https://www.ready.gov/mass-gatherings-incidents
+- CDC: What to Do to Shelter in Place for a Chemical Emergency -
   https://www.cdc.gov/chemical-emergencies/response/shelter-in-place.html
-- CDC, Chlorine fact sheet (heavier than air, sinks):
+- CDC: Chlorine fact sheet (heavier than air, sinks) -
   https://www.cdc.gov/chemical-emergencies/chemical-fact-sheets/chlorine.html
-- CDC, Mustard Gas fact sheet (heavier than air, sinks):
+- CDC: Mustard Gas fact sheet (heavier than air, sinks) -
   https://www.cdc.gov/chemical-emergencies/chemical-fact-sheets/mustard-gas.html
-- CDC, What to Do: Get Inside (radiation):
+- CDC: What to Do: Get Inside (radiation) -
   https://www.cdc.gov/radiation-emergencies/response/get-inside.html
-- FEMA, Planning Guidance for Response to a Nuclear Detonation,
-  3rd ed. (2022):
+- FEMA: Planning Guidance for Response to a Nuclear Detonation,
+  3rd ed. (2022) -
   https://www.fema.gov/sites/default/files/documents/fema_nuc-detonation-planning-guide.pdf
-- American Red Cross, Talking About Disaster: How to
+- American Red Cross: Talking About Disaster, How to
   Shelter-in-Place (Chemical Incident), 2007 (above-ground room;
-  10 sq ft per person for up to 5 hours of air):
+  10 sq ft per person for up to 5 hours of air) -
   https://rmp.nc.gov/LCF/Publications/AL_Resources/HazMat%20Incident/Red%20Cross%20-%20How%20To%20Shelter-in-place%20Chemical.pdf
-- FEMA, Create Your Family Emergency Communication Plan:
-  https://www.ready.gov/sites/default/files/2020-03/create-your-family-emergency-communication-plan.pdf
+- FEMA: Create Your Family Emergency Communication Plan -
+  https://www.ready.gov/sites/default/files/2020-03/family-emergency-communication-planning-document.pdf
 
-Last reviewed: October 2026
+
+===========================
+Last reviewed: November 2026
+
 License: CC-BY-SA 4.0
-============================
+===========================

@@ -1,236 +1,294 @@
 # Long-Term Recovery Planning
 
-> **Beyond the Emergency** - When the immediate crisis passes, recovery begins. This can take months or years. Planning for long-term recovery helps you rebuild stronger.
+> **The disaster lasts hours. The recovery is months of photographs, phone calls and forms.** You cannot control how much was damaged. You can control the paper trail: document everything, register early, keep every receipt, and sign nothing on the doorstep.
 
-## Recovery Phases
+## Start here
 
-### Phase 1: Immediate (Days)
+1. **Do not go back in until it is safe.** Wait for officials to allow return, go in daylight, and stay out if you smell gas, see structural damage, or the power is on in a wet house.
+2. **Photograph and video everything before you move or throw out a single thing.** Every room, every wall, the water line, serial numbers.
+3. **Call your insurance company** and get a claim number. Do this even if you are not sure you are covered.
+4. **Register for disaster assistance** if your area has been declared (in the US: DisasterAssistance.gov or 1-800-621-3362). Registration is free.
+5. **Start a recovery notebook.** One place for claim numbers, names, dates, what was said, and an envelope for every receipt.
+6. **Start drying the house within 24 to 48 hours** if it got wet, once it is documented.
+7. **Sign nothing at the door.** Not with a contractor, not with anyone offering to "handle" your claim.
 
-- Safety assessment
-- Emergency shelter if needed
-- Family accounted for
-- Immediate needs met
-- Document damage
+## Get emergency help if
 
-### Phase 2: Short-term (Weeks)
+Call 911 (or your local emergency number) if:
 
-- Temporary housing arranged
-- Insurance claims started
-- Emergency assistance applied for
-- Basic utilities restored
-- Begin cleanup
+- **You smell gas or hear hissing.** Leave at once and call from outside.
+- **Anyone has a headache, dizziness, nausea or confusion** near a generator, pump or pressure washer. Get into fresh air first: it may be carbon monoxide.
+- **There are downed lines, sparking, or water near live electricity.**
+- **Someone is injured during cleanup,** or has chest pain or trouble breathing.
+- **Someone is thinking about suicide or cannot keep themselves safe.** In the US you can also call or text **988** at any hour.
 
-### Phase 3: Intermediate (Months)
+For distress that is not an emergency, the **Disaster Distress Helpline (US, call or text 1-800-985-5990)** offers free crisis counseling around the clock to anyone affected by a disaster.
 
-- Permanent housing plan
-- Major repairs underway
-- Financial recovery planning
-- Return to routines
-- Community rebuilding
+## The shape of recovery
 
-### Phase 4: Long-term (Years)
+| When | Practical work | How it often feels |
+|------|----------------|--------------------|
+| **First days** | Safety, shelter, finding people, first photos, first calls | Running on adrenaline. Relief, shock, strong community spirit. |
+| **First weeks** | Claims filed, assistance registered, drying and cleanup, temporary housing | Busy and purposeful, then tired. |
+| **Months 2 to 12** | Adjusters, appeals, estimates, contractors, waiting | Often the hardest stretch. Help thins out, the paperwork does not, and frustration, grief and exhaustion set in. |
+| **Year 1 and after** | Repairs finished, finances rebuilt, better prepared | Gradual steadiness, with dips at anniversaries and reminders. |
 
-- Full rebuilding complete
-- Financial stability restored
-- Emotional healing
-- Improved preparedness
-- New normal established
+Knowing that the low point usually comes months in, not on day one, helps you plan for it: pace yourself, and do not judge your recovery by how you feel in month three.
+
+## Returning home safely
+
+- **Wait for the all-clear,** and do not enter a damaged building until it has been checked by a building inspector.
+- **Go in daylight,** so you do not need lights. Use battery flashlights, never candles or open flames.
+- **Gas:** if you smell it or suspect a leak, leave immediately and call the gas company or 911 from outside. Only a professional turns gas back on.
+- **Electricity:** never turn power on or off, or use an electric tool, while standing in water. If you cannot reach the main breaker from a dry spot, call an electrician. Have the system inspected before power is restored.
+- **Generators and pressure washers** run outdoors only, at least 20 feet (6 m) from any door, window or vent.
+- **Air it out.** If the house has been closed up for several days, go in briefly to open doors and windows, then let it air for at least 30 minutes before you stay.
+- **Food and water:** throw out food that touched floodwater or lost refrigeration. Treat tap water as unsafe until officials say otherwise.
+- **Dress for it:** sturdy boots, long sleeves, work gloves, eye protection.
+- **Keep children and pets away** until cleanup is finished.
+
+See the Post-Event Cleanup Safety guide for the full procedure.
+
+## Mold: the 48-hour clock
+
+Mold starts growing on wet materials within a day or two, which is why drying comes straight after documenting.
+
+- **Dry the house within 24 to 48 hours if you can.** Open windows and doors. Put fans in windows or doorways blowing **outward,** and run dehumidifiers once the power is safe.
+- **If the house was flooded and closed up for several days, assume it has mold.**
+- **Throw away what cannot be cleaned and dried quickly:** carpet and padding, mattresses, upholstered furniture, pillows, stuffed toys, books and paper. Remove drywall and insulation that was soaked by floodwater or sewage.
+- **Protect yourself:** an N95 respirator or better, goggles without vent holes, gloves, boots.
+- **Clean hard surfaces** with soap and water. To kill mold on them, use no more than 1 cup (240 mL) of household bleach in 1 gallon (3.8 L) of water, with windows open. **Never mix bleach with ammonia or any other cleaner.**
+- **Do not paint or caulk over mold.** It will come through.
+- **Do not turn on heating or air conditioning** that may be contaminated until it has been checked.
+- **Call a professional** if the moldy area is larger than about 10 square feet (roughly 3 ft by 3 ft, or 1 square meter), if sewage was involved, or if the damage is extensive.
+
+**Who should stay out:** people with asthma, chronic lung disease or a weakened immune system should not clean up mold or stay in a moldy home. Keep children out as well.
+
+## Document the damage
+
+Evidence is what turns a loss into a payment. Before cleanup:
+
+- **Video a slow walk through every room,** talking as you go. Then take still photos: wide shots, close-ups, and the high-water mark on walls.
+- **Photograph make, model and serial numbers** of appliances and electronics.
+- **Keep samples** of ruined carpet, flooring and curtains for the adjuster.
+- **List what was lost,** room by room, with approximate age and cost. Bank and card statements, old photos and online order histories help rebuild the list.
+- **Keep damaged items until the adjuster has seen them,** unless they are a health hazard. Photograph those, then discard them.
+- **Keep every receipt:** hotel, meals, tarps, fans, fuel, cleaning supplies, repairs. Record your own hours of cleanup too.
+- **Back it up.** Send the photos to yourself and to someone outside the area.
+
+## Insurance claims
+
+1. **Report the loss right away** and write down the claim number, the adjuster's name and a direct phone number.
+2. **Prevent further damage.** Tarp the roof, board windows, pump out water. Keep receipts. Hold off on permanent repairs until the adjuster has inspected or the insurer agrees in writing.
+3. **Ask what your policy covers,** including living expenses while you are out of your home. Standard homeowners policies generally do not cover flood; that is a separate policy.
+4. **Meet the adjuster with your photos and list.** Ask for identification. Read the estimate line by line and say what is missing.
+5. **Put everything in writing.** After each phone call, send a short email: "To confirm what we discussed today..."
+6. **Do not accept a figure you believe is wrong.** Ask how it was calculated, send your own contractor estimates, and ask for a review. If you reach a dead end, your state insurance department takes complaints.
+
+**Flood insurance (US National Flood Insurance Program):** payment typically takes four to eight weeks. Your insurer may offer an advance of up to $5,000 before the adjuster visits, and up to $20,000 with documentation, deducted from the final payment. If you have a mortgage, the check will be made out to you and the mortgage company jointly, so call your lender early about how they release the money.
+
+A "public adjuster" is someone you hire, for a fee, to handle the claim on your behalf. Rules and fee limits vary by state. Check the license, read the contract, and never hire one who turns up uninvited. See the Legal & Insurance Readiness guide.
+
+## FEMA Individual Assistance (US)
+
+When the President declares a major disaster and includes Individual Assistance, people in the declared area can apply for federal help. It is meant to make a home safe and livable and to cover serious needs. FEMA says plainly that it is not a substitute for insurance and cannot cover all losses.
+
+**How to register:**
+
+- Online at **DisasterAssistance.gov**
+- By phone: **1-800-621-3362,** 7 a.m. to 10 p.m. local time, seven days a week
+- Through the FEMA mobile app
+- In person at a Disaster Recovery Center
+
+**Have ready:** a Social Security number (yours, another adult's or a minor child's in the household), the address of the damaged home, where you are staying now, a phone number and email, your insurance details, your household income, and bank details if you want direct deposit.
+
+**What it can include:** an upfront payment for essentials such as food, water, medicine and baby supplies; money for a hotel or rent while you are displaced; money toward repairing or replacing a primary home; and help with other disaster costs such as essential furniture and appliances, a vehicle, child care, medical and dental bills, moving and storage, and funeral expenses.
+
+**Know this before you start:**
+
+- **Each declaration has an application deadline.** Check yours and register early.
+- **You can qualify even if you are insured,** but by law FEMA cannot pay for what insurance covers. File the claim, then send FEMA the settlement or denial letter.
+- **An inspector may visit.** Ask to see the official ID badge. The visit can take up to an hour, and the inspector does not decide eligibility.
+- **FEMA does not charge application fees.** Anyone who asks for money to help you qualify is a scammer.
+- **Expect a decision letter** about 7 to 10 days after inspection. Read all of it. It says what was approved, what was not, and what else FEMA needs.
+- **You can appeal within 60 days of the date on the letter.** Send the documents the letter asks for, with your application number and disaster number on every page. Decisions usually come within 30 days and can take up to 90.
+
+## SBA disaster loans (US)
+
+Most federal recovery money for households is not a grant. It is a low-interest loan from the U.S. Small Business Administration, and despite the name, homeowners and renters can apply.
+
+| Loan | Limit |
+|------|-------|
+| Repair or replace a primary home | Up to $500,000 |
+| Replace personal property (owners and renters) | Up to $100,000 |
+| Business physical damage | Up to $2 million |
+
+Interest is fixed, and capped at 4 percent for applicants who cannot get credit elsewhere. Terms run up to 30 years. The first payment is deferred for 12 months, and no interest builds up during that time. There is no penalty for paying early, and a loan can be increased by up to 20 percent of the verified damage to pay for improvements that reduce future damage. Apply at lending.sba.gov or call 800-659-2955.
+
+A loan must be repaid, so borrow against a realistic budget. Applying does not oblige you to accept.
+
+## Other help worth asking about
+
+- **Disaster Legal Services:** free legal help for people with low incomes in declared disaster areas. Ask at a Disaster Recovery Center.
+- **Unemployment and food assistance:** disaster versions of both may open in declared areas. Ask at a Disaster Recovery Center.
+- **Taxes:** in the US, losses from a federally declared disaster may be deductible, and you can choose to claim them on the previous year's return to get a refund sooner (IRS Form 4684). The IRS may also extend filing deadlines for disaster areas.
+- **Your mortgage servicer, landlord and creditors:** call early, before you miss a payment. Ask what hardship options exist and get the answer in writing.
+- **If your disaster is not federally declared:** the Red Cross, local charities, faith groups and state social service agencies are the main sources of help.
+- **Replacing documents:** see the Important Documents Offline Kit guide.
+
+## Contractors and scams
+
+Disasters draw honest crews from far away, and dishonest ones too. The U.S. Federal Trade Commission's advice:
+
+- **Be skeptical of anyone who promises immediate cleanup or repairs,** especially at your door.
+- **If they want cash up front, walk away.**
+- **Check the license and proof of insurance** with your state or county.
+- **Get more than one written estimate.** Do not automatically take the lowest; ask why prices differ.
+- **Get a written contract and read it.** It should state the contractor's name, address, phone and license number, the start and finish dates, the payment schedule, and every promise made out loud. Never sign a contract with blank spaces.
+- **Never sign your insurance check over to a contractor.** Ask your bank about paying in stages as work is completed and approved.
+- **Pay by check or credit card,** never by cash, wire transfer, gift card, payment app or cryptocurrency. Keep the down payment modest, and make the final payment only when the work is finished and you are satisfied.
+- **You may have the right to cancel** within three business days if you signed at your home or away from the contractor's regular place of business.
+
+Also watch for people posing as FEMA staff, inspectors or insurance agents who ask for money or bank details, for rental listings that want a deposit before you have seen the place, and for fake charities. Report fraud in the US at ReportFraud.ftc.gov and to your state attorney general.
+
+## Emotional recovery
+
+Profound sadness, grief and anger are normal reactions to an abnormal event. So are poor sleep, trouble concentrating, a short temper, headaches and stomach trouble. Most people recover with time and support.
+
+- **Keep a routine:** regular meals, sleep and movement, even in temporary housing.
+- **Stay connected.** Recovery goes better alongside other people, including neighbors going through the same thing.
+- **Ration the paperwork.** Set a daily limit and one day a week with none.
+- **Go easy on alcohol,** and on news about the disaster.
+- **Do not blame yourself** for what happened or for what you could not save.
+- **Expect anniversaries and reminders to sting.** Heavy rain, sirens or the date itself can bring feelings back. Most people feel better within a week or two.
+- **Children** take their cue from you. See the Re-Establishing Normalcy for Kids guide.
+
+**Get professional help** if symptoms are not easing with time, if they interfere with daily life, or if you notice frequent crying, flashbacks, nightmares, feeling cut off from others, heavier drinking, or hopelessness. Ask your doctor, call or text the Disaster Distress Helpline (1-800-985-5990), or, for thoughts of suicide, call or text 988. See the Mental Health First Aid in Crisis guide.
+
+## Outside the United States
+
+FEMA, SBA loans, the National Flood Insurance Program and the phone numbers above are US programs. Elsewhere, the steps are the same but the doors are different: your insurer, your national or regional disaster relief agency, your local council, and the Red Cross or Red Crescent. Documentation, receipts, written contracts and caution about doorstep offers work everywhere. Emergency and crisis line numbers differ by country; write yours in the Quick Reference.
+
+## Recovery checklist
+
+**First week**
+
+- [ ] Home entered only after it was declared safe
+- [ ] Photos, video and serial numbers taken before cleanup
+- [ ] Insurance claim opened; claim number written down
+- [ ] Registered for disaster assistance
+- [ ] Recovery notebook and receipt envelope started
+- [ ] Drying started; soaked materials removed
+- [ ] Mortgage servicer or landlord and key creditors called
+
+**First month**
+
+- [ ] Adjuster and inspector visits done; estimates reviewed
+- [ ] Decision letters read; appeal dates marked on a calendar
+- [ ] Two or more written contractor estimates; licenses checked
+- [ ] Temporary housing settled; children back in school
+- [ ] One rest day a week protected
+
+**Months 2 to 12**
+
+- [ ] Appeals filed where needed
+- [ ] Repairs paid in stages, final payment held until complete
+- [ ] Tax relief looked into
+- [ ] Honest check on how everyone in the household is doing
+- [ ] Insurance coverage reviewed and gaps fixed for next time
+- [ ] Emergency supplies restocked and the family plan updated
+
+## Practice
+
+**10-minute drill:** Make your "before" record today, while nothing is wrong. Walk through your home with your phone recording video. Open every closet, cupboard and drawer, and say out loud what things are and roughly what they cost. Turn over one appliance and film its serial number label. Finish with the outside of the house and the car. Then send the video to a relative outside your area or save it to cloud storage. After a disaster, this ten minutes is worth more than any list written from memory.
+
+**What would you do?**
+
+1. *Two days after the storm, a crew in a truck with out-of-state plates stops at your house. They can tarp and repair your roof starting this afternoon, they say, at a discount for cash, and to save you the hassle you can simply sign your insurance check over to them when it comes.*
+
+   **Answer:** Every part of that offer is a warning sign: the doorstep pitch, the hurry, cash up front, and the insurance check. Thank them and take a card. A roof that is leaking now needs a tarp, which you or a known local roofer can put on. Keep the receipt for your claim. The repair itself waits for the adjuster, two or more written estimates, a license and insurance check, and a contract with a payment schedule.
+
+2. *Three weeks after you registered, a letter from FEMA arrives. The first line you read says you are not eligible. You are exhausted, and your instinct is to file it with the other bad news.*
+
+   **Answer:** Read the whole letter before you believe the first line. It says why, and what FEMA still needs. Often that is something fixable, such as a missing document: an insurance settlement or denial letter, or proof of identity or of home ownership. You have 60 days from the date on the letter to appeal. Send what it asks for with your application and disaster numbers on every page, and call 1-800-621-3362 or visit a Disaster Recovery Center if the reason is not clear.
+
+3. *Your finished basement took in a foot of water yesterday. The insurance adjuster cannot come for six days and a neighbor tells you to leave everything untouched so the adjuster "sees the full damage."*
+
+   **Answer:** Waiting six days invites mold, and mold damage you could have prevented may not be covered. Document, then act. Video and photograph everything, including the water line and serial numbers. Cut and keep samples of the carpet and flooring. Tell the insurer in writing what you are about to do, and ask about an advance payment. Then pump out, haul out the carpet, padding and soaked furniture, cut out wet drywall, and get fans and dehumidifiers running, with protective gear on and the power confirmed safe.
+
+## Quick Reference
+
+```
+LONG-TERM RECOVERY
+
+IN ORDER
+1. Safe to enter? Daylight, no
+   gas, power off if wet
+2. PHOTOS + VIDEO before cleanup
+3. Insurer: get a claim number
+4. Register for assistance
+5. Notebook + every receipt
+6. Dry out within 24-48 hours
+7. Sign nothing at the door
+
+US ASSISTANCE
+FEMA: DisasterAssistance.gov
+      1-800-621-3362 (free)
+Appeal: 60 days from the letter
+SBA loans: 800-659-2955
+  Home to $500,000
+  Belongings to $100,000
+
+CONTRACTORS
+- License + insurance checked
+- 2+ written estimates
+- Written contract, no blanks
+- No cash up front
+- NEVER sign over insurance check
+- Final payment when finished
+
+MOLD
+- N95, goggles, gloves
+- Toss what can't dry fast
+- Bleach max 1 cup per gallon
+- Never mix with ammonia
+- Over 10 sq ft: professional
+
+FEELING IT (US)
+Disaster Distress Helpline
+call/text 1-800-985-5990
+Suicide and crisis: 988
+
+Claim number: ________________
+FEMA application #: __________
+My local crisis line: ________
+```
+
+## Sources
+
+- [FEMA: Individual Assistance](https://www.fema.gov/assistance/individual)
+- [FEMA: Assistance for Housing and Other Needs](https://www.fema.gov/assistance/individual/housing)
+- [FEMA: Individuals and Households Program](https://www.fema.gov/assistance/individual/program)
+- [FEMA: How to Appeal a Decision](https://www.fema.gov/assistance/individual/after-applying/appeals)
+- [DisasterAssistance.gov: Application Checklist](https://www.disasterassistance.gov/get-assistance/application-checklist)
+- [DisasterAssistance.gov: Frequently Asked Questions](https://www.disasterassistance.gov/help/faqs)
+- [USA.gov: Disaster Assistance](https://www.usa.gov/disaster-assistance)
+- [U.S. Small Business Administration: Physical Damage Loans](https://www.sba.gov/funding-programs/disaster-assistance/physical-damage-loans)
+- [Federal Trade Commission: How to Avoid Scams After Weather Emergencies and Natural Disasters](https://consumer.ftc.gov/articles/how-avoid-scams-after-weather-emergencies-and-natural-disasters)
+- [FEMA National Flood Insurance Program: How Do I Start My Flood Claim?](https://www.floodsmart.gov/how-do-i-start-my-flood-claim)
+- [CDC: Reentering Your Flooded Home](https://www.cdc.gov/floods/safety/reentering-your-flooded-home-safety.html)
+- [CDC: Guidelines for Cleaning Safely After a Disaster](https://www.cdc.gov/natural-disasters/safety/index.html)
+- [CDC: Mold Clean Up Guidelines and Recommendations](https://www.cdc.gov/mold-health/about/clean-up.html)
+- [CDC: How to Safely Clean and Sanitize with Bleach](https://www.cdc.gov/natural-disasters/safety/how-to-safely-clean-and-sanitize-with-bleach.html)
+- [EPA: Mold Cleanup in Your Home](https://www.epa.gov/mold/mold-cleanup-your-home)
+- [IRS: Topic No. 515, Casualty, Disaster, and Theft Losses](https://www.irs.gov/taxtopics/tc515)
+- [Ready.gov: Coping with Disaster](https://www.ready.gov/coping-disaster)
+- [NIMH: Coping With Traumatic Events](https://www.nimh.nih.gov/health/topics/coping-with-traumatic-events)
+- [US Department of Veterans Affairs, National Center for PTSD: Anniversary Reactions](https://www.ptsd.va.gov/understand/what/anniversary_reactions.asp)
+- [CDC: Helping Children Cope with a Disaster (Disaster Distress Helpline)](https://www.cdc.gov/children-and-school-preparedness/before-during-after/helping-children-cope.html)
 
 ---
 
-## Financial Recovery
+Last reviewed: November 2026
 
-### Immediate Steps
-
-1. Document all losses (photos, lists)
-2. Contact insurance companies
-3. Apply for FEMA assistance (if declared disaster)
-4. Contact mortgage/rent holders
-5. Protect undamaged assets
-
-### Insurance Claims
-
-**Do:**
-- File claims immediately
-- Document everything
-- Keep all receipts
-- Take photos before repairs
-- Get multiple repair estimates
-- Follow up in writing
-
-**Don't:**
-- Throw away damaged items until documented
-- Make permanent repairs before adjuster visit
-- Accept first settlement without review
-
-### Financial Assistance Sources
-
-| Source | Type |
-|--------|------|
-| FEMA | Disaster assistance grants |
-| SBA | Low-interest disaster loans |
-| Insurance | Policy coverage |
-| Charities | Grants, assistance |
-| Community | Local relief funds |
-| State programs | Varies by state |
-
-### Protecting Finances
-
-- Contact creditors about hardship programs
-- Delay non-essential payments if needed
-- Avoid scams (disaster scams common)
-- Keep records of all expenses
-- Consider tax implications
-
----
-
-## Housing Recovery
-
-### Temporary Housing
-
-**Options:**
-- Stay with family/friends
-- FEMA temporary housing
-- Rental assistance programs
-- Hotels (may be covered)
-- Transitional shelters
-
-### Returning Home
-
-**Only return when:**
-- Officially cleared safe
-- Utilities restored safely
-- Structural integrity confirmed
-- Hazards removed
-
-### Rebuilding Decisions
-
-**Consider:**
-- Repair vs. rebuild
-- Building back stronger
-- Changing locations
-- Updated building codes
-- Mitigation improvements
-
----
-
-## Emotional Recovery
-
-### Normal Reactions
-
-It's normal to experience:
-- Grief and loss
-- Anger and frustration
-- Anxiety about future
-- Sleep difficulties
-- Difficulty concentrating
-- Relationship strain
-
-### Healing Takes Time
-
-- Recovery is not linear
-- Allow yourself to grieve
-- Anniversaries may be difficult
-- Seek support when needed
-- Professional help is okay
-
-### Supporting Children
-
-- Maintain routines
-- Honest, age-appropriate discussions
-- Extra attention and comfort
-- Watch for behavioral changes
-- School counseling may help
-
-### Getting Help
-
-**Resources:**
-- SAMHSA Disaster Distress Helpline: 1-800-985-5990
-- Local mental health services
-- Faith-based counseling
-- Support groups
-- Employee assistance programs
-
----
-
-## Community Recovery
-
-### Mutual Aid
-
-- Help neighbors rebuild
-- Share resources
-- Support local businesses
-- Participate in community planning
-- Volunteer with recovery efforts
-
-### Staying Informed
-
-- Attend community meetings
-- Follow official recovery plans
-- Know your rights
-- Advocate for your needs
-
----
-
-## Building Back Better
-
-### Improved Preparedness
-
-After recovery, strengthen:
-- Emergency supplies
-- Insurance coverage
-- Home resilience
-- Family plans
-- Financial reserves
-
-### Mitigation
-
-Consider upgrades:
-- Impact-resistant windows
-- Stronger roofing
-- Foundation improvements
-- Flood mitigation
-- Fire-resistant materials
-- Emergency power
-
----
-
-## Recovery Checklist
-
-### Week 1
-
-- [ ] Safety confirmed
-- [ ] Family accounted for
-- [ ] Insurance notified
-- [ ] Damage documented
-- [ ] Emergency assistance applied
-- [ ] Temporary housing if needed
-
-### Month 1
-
-- [ ] Claims in progress
-- [ ] Cleanup underway
-- [ ] Temporary repairs complete
-- [ ] Financial assistance received
-- [ ] Routines re-established
-
-### Month 6
-
-- [ ] Major repairs complete or underway
-- [ ] Financial plan in place
-- [ ] Children back in school
-- [ ] Work situation stable
-- [ ] Mental health addressed
-
-### Year 1
-
-- [ ] Rebuilding complete
-- [ ] Financial recovery on track
-- [ ] Emotional healing progressing
-- [ ] Preparedness improved
-- [ ] New normal established
-
----
-
-*Last updated: January 2026*
 *License: CC-BY-SA 4.0*

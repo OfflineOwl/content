@@ -152,6 +152,24 @@ Before leaving in freezing weather, protect your pipes: shut off the main water 
 - [ ] If you have a fireplace or stove: dry seasoned wood, a screen, and a metal ash bucket with a lid
 - [ ] If you have a fuel-burning heater made for indoor use: only the fuel its manufacturer specifies, stored outside living areas in approved containers
 
+## Practice
+
+**10-minute drill:** Press the test button on every smoke alarm and every CO alarm in the home, and write down any that stay silent or are missing (you want CO alarms outside sleeping areas and on every level). Then choose your warm room and walk everyone to it. Count the windows and doorways you would have to cover, and check that the blankets, towels, or plastic sheeting to do it are where you could find them in the dark. Light nothing and run nothing for this drill.
+
+**What would you do?**
+
+1. *It is the second night of an ice-storm outage and the house is down to 50°F (10°C). The gas oven still lights. A neighbor says they ran theirs all night with the oven door open and were fine.*
+
+   **Answer:** Leave the oven off. An oven or stovetop is on the never list whether it is gas or electric: fuel-burning ones make carbon monoxide, and all of them can start fires. Put the effort into one small room instead. Close it off, cover the windows, block the gap under the door, and get everyone into it in layers, hats, and sleeping bags. If that room still can't be kept warm, go to a warming center, a shelter, or friends who have heat, and go sooner if you have a baby, an older adult, or anyone who is ill.
+
+2. *Your kerosene heater is a model made for indoor use, the CO alarm next to it works, and the warm room is finally comfortable. It is bedtime. Leaving the heater on low overnight feels safer than letting the children get cold.*
+
+   **Answer:** Turn it off before anyone sleeps. An unvented heater puts its exhaust into the room, and people who are asleep can die of carbon monoxide without waking up. The alarm is a backup, not permission. Sleep in the warm room in sleeping bags or under several blankets, with hats and dry socks, huddled together. In the morning, refuel outdoors once the heater is cool. If the room gets too cold overnight for a baby or an older adult, that is the signal to go somewhere with heat.
+
+3. *Around midnight, three of you in the warm room have a headache and feel sick to the stomach. The fireplace has been burning all evening. The CO alarm is silent, and someone says it must be the flu that is going around.*
+
+   **Answer:** Treat it as carbon monoxide. Several people feeling sick at the same time is the clue, and CO poisoning is often mistaken for the flu. Get everyone outside into fresh air now, then call 911. Don't wait for the alarm to agree with you, and don't let anyone go to bed to sleep it off.
+
 ## Quick Reference
 
 ```
@@ -199,10 +217,10 @@ HYPOTHERMIA (below 95 F / 35 C):
 - [Ready.gov: Winter Weather](https://www.ready.gov/winter-weather)
 - [National Institute on Aging: Cold Weather Safety for Older Adults](https://www.nia.nih.gov/health/safety/cold-weather-safety-older-adults)
 
+*This guide doesn't replace first aid training or professional medical care.*
+
 ---
 
-Last reviewed: October 2026
-
-This guide doesn't replace first aid training or professional medical care.
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

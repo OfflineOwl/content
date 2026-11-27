@@ -292,6 +292,59 @@ AFTER POWER RETURNS:
 [ ] Throw out anything that touched floodwater
 [ ] Clean and sanitize the refrigerator before restocking
 
+PRACTICE
+--------
+
+10-MINUTE DRILL: Check your cold. (1) Look for an appliance
+thermometer in the refrigerator and one in the freezer. If
+either is missing, put it on the shopping list. (2) Read them:
+the refrigerator should be at 40°F (4°C) or below and the
+freezer at 0°F (-18°C) or below. (3) Write a list of what is in
+the freezer and tape it to the door. (4) Find your cooler and
+gel packs, and put a container of water in the freezer with room
+left for the ice to expand. (5) Decide where you would write
+down the time the power went out.
+
+WHAT WOULD YOU DO?
+
+1. You wake to blinking clocks. The power went off at some point
+   in the night and is back now. Nobody knows how long it was
+   out, and there is no thermometer in the refrigerator. The
+   milk smells fine and last night's chicken looks normal.
+
+   Answer: Smell and looks tell you nothing, and you never taste
+   to find out. With no time and no temperature, you can't know
+   the perishables stayed at 40°F or below, so the milk, the
+   chicken, and the other perishables go. When in doubt, throw
+   it out. Hard cheese, butter, uncut fruit and vegetables,
+   peanut butter, and ketchup can stay. In the freezer, food
+   that still has ice crystals can be refrozen or cooked, except
+   ice cream, which goes. Then buy two thermometers.
+
+2. Hour five of an outage, with no ice and no cooler. In the
+   refrigerator: milk, eggs, raw chicken, leftover stew, a block
+   of cheddar, butter, and ketchup. Your partner wants to cook
+   the chicken now so it isn't wasted.
+
+   Answer: It is past saving. Refrigerated perishables are
+   thrown out after 4 hours without power or another cold
+   source, and that covers the milk, eggs, chicken, and stew.
+   The rule says throw them out, not cook them late. The
+   cheddar, butter, and ketchup are on the keep list. Next
+   time, move the perishables into a cooler with ice before the
+   4 hours are up.
+
+3. The outage may last days, so you buy 50 pounds of dry ice for
+   the freezer. The plan is to set it on the back seat beside
+   the children, keep the windows up against the heat, and carry
+   it in bare-handed.
+
+   Answer: Change all three. Dry ice gives off carbon dioxide
+   gas, so it is never carried in a closed car: open the windows
+   and keep it away from the children. It is -109°F (-78°C), so
+   handle it only with gloves or tongs. At home, use it only in
+   a ventilated space, and don't let it touch food directly.
+
 QUICK REFERENCE
 ---------------
 
@@ -308,10 +361,12 @@ Refrigerator 40°F (4°C) or below
 Freezer 0°F (-18°C) or below
 
 2-HOUR RULE:
-Perishables above 40°F for 2+ hours (1 hour above 90°F): throw out
+Perishables above 40°F for 2+ hours
+(1 hour above 90°F): throw out
 
 REFREEZE:
-Only if ice crystals remain or the food is 40°F or below
+Only if ice crystals remain or the
+food is 40°F or below
 
 NEVER TASTE TO TEST.
 WHEN IN DOUBT, THROW IT OUT.
@@ -319,31 +374,28 @@ WHEN IN DOUBT, THROW IT OUT.
 SOURCES
 -------
 
-FoodSafety.gov: Food Safety During Power Outage
-https://www.foodsafety.gov/food-safety-charts/food-safety-during-power-outage
-
-CDC: Keep Food Safe After a Disaster or Emergency
-https://www.cdc.gov/food-safety/foods/keep-food-safe-after-emergency.html
-
-FDA: Food and Water Safety During Power Outages and Floods
-https://www.fda.gov/food/buy-store-serve-safe-food/food-and-water-safety-during-power-outages-and-floods
-
-USDA FSIS: Keep Your Food Safe During Emergencies
-https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/emergencies/keep-your-food-safe-during-emergencies
-
-USDA FSIS: Safe Minimum Internal Temperature Chart
-https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart
-
-Ready.gov: Food
-https://www.ready.gov/food
-
-FDA: Information Regarding Insulin Storage in an Emergency
-https://www.fda.gov/drugs/emergency-preparedness-drugs/information-regarding-insulin-storage-and-switching-between-products-emergency
-
-FDA: Safe Drug Use After a Natural Disaster
-https://www.fda.gov/drugs/emergency-preparedness-drugs/safe-drug-use-after-natural-disaster
+- FoodSafety.gov: Food Safety During Power Outage -
+  https://www.foodsafety.gov/food-safety-charts/food-safety-during-power-outage
+- CDC: Keep Food Safe After a Disaster or Emergency -
+  https://www.cdc.gov/food-safety/foods/keep-food-safe-after-emergency.html
+- CDC: Preventing Food Poisoning (cooking temperatures, 2-hour
+  rule) -
+  https://www.cdc.gov/food-safety/prevention/index.html
+- FDA: Food and Water Safety During Power Outages and Floods -
+  https://www.fda.gov/food/buy-store-serve-safe-food/food-and-water-safety-during-power-outages-and-floods
+- USDA FSIS: Keep Your Food Safe During Emergencies -
+  https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/emergencies/keep-your-food-safe-during-emergencies
+- USDA FSIS: Safe Minimum Internal Temperature Chart -
+  https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart
+- Ready.gov: Food -
+  https://www.ready.gov/food
+- FDA: Information Regarding Insulin Storage in an Emergency -
+  https://www.fda.gov/drugs/emergency-preparedness-drugs/information-regarding-insulin-storage-and-switching-between-products-emergency
+- FDA: Safe Drug Use After a Natural Disaster -
+  https://www.fda.gov/drugs/emergency-preparedness-drugs/safe-drug-use-after-natural-disaster
 
 ==================================
-Last reviewed: October 2026
+Last reviewed: November 2026
+
 License: CC-BY-SA 4.0
 ==================================

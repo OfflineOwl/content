@@ -1,6 +1,6 @@
 # Radiation Safety Fundamentals
 
-> You can't see, smell, or taste radiation. In almost every radiation emergency (a nuclear explosion, a "dirty bomb," or a nuclear power plant accident) the first protective step is the same: **Get inside, stay inside, stay tuned.**
+> **Get inside, stay inside, stay tuned.** You can't see, smell, or taste radiation. In almost every radiation emergency (a nuclear explosion, a "dirty bomb," or a nuclear power plant accident) the first protective step is the same.
 
 ## Do This Now
 
@@ -149,26 +149,51 @@ Skin redness or burns may show up within hours or days later. People often feel 
 
 ---
 
+## Practice
+
+**10-minute drill:** Find your spot. Walk through your home to the place that puts the most building between you and the outside: the basement, or the center of the house away from windows, outside walls, and the roof. Do the same in your head for work or school (in a tall building, the center of a middle floor). Then time the household closing every window and outside door, closing the fireplace damper, and switching off fans, air conditioners, and forced-air heating. Finish by finding your battery or hand-crank radio and checking that it works.
+
+**What would you do?**
+
+1. *You are driving on the highway when there is a blinding flash far behind you, and minutes later your phone warns of a nuclear explosion. Home is 25 minutes away. The next exit has a concrete office block with an underground parking garage.*
+
+   **Answer:** Take the exit. A car is not a shelter, and the aim is to be inside a sturdy building within minutes, not to get home. Brick or concrete is best: go down to the underground parking level, or to the center of the building away from windows and the roof. Stay at least 24 hours unless officials say otherwise or there is an immediate danger like fire or collapse. Don't go back out to collect family; schools and care facilities have their own shelter plans.
+
+2. *You reach a building after walking through falling dust. People are gathered in the basement, and your family is among them. Your coat and hair are dusty. There is a washroom with a sink but no shower, and you want to go straight to your family.*
+
+   **Answer:** Clean up first, then join them. Take off your outer layer carefully, without shaking it (that alone can remove up to 90% of radioactive material), and seal it in a plastic bag, away from people and pets. At the sink, wash your hands, face, and any skin that was uncovered with soap and water. Gently blow your nose and wipe your eyelids, eyelashes, and ears. Keep your hands away from your eyes, nose, and mouth until you have washed.
+
+3. *Twelve hours into sheltering, the street outside looks perfectly normal. The radio still says to stay inside. Your teenager wants to walk two blocks to check on a friend and fetch a phone charger from the car.*
+
+   **Answer:** Not yet. A normal-looking street means nothing, because radiation can't be seen, smelled, or tasted. Fallout radiation is highest at first and drops quickly, so the first hours are the ones to spend indoors. Stay inside for at least 24 hours unless officials say otherwise, and leave early only for an immediate danger like fire or collapse.
+
+---
+
 ## Quick Reference
 
 ```
 GET INSIDE, STAY INSIDE, STAY TUNED
 
 THREE PRINCIPLES
-TIME:      Less time exposed = less dose
-DISTANCE:  Farther from the source = less dose
-SHIELDING: More concrete, brick, earth = less dose
+TIME:      Less time exposed
+           = less dose
+DISTANCE:  Farther from the source
+           = less dose
+SHIELDING: More concrete, brick,
+           earth = less dose
 
 SHELTER PRIORITY:
 1. Basement / underground
 2. Center of a large building
-3. Center of middle floors of a high-rise
+3. Center of middle floors of a
+   high-rise
 NOT: a car, top floor, by windows
 
 DECONTAMINATION:
 1. Outer clothes off and bagged
 2. Shower: warm water, soap
-3. Shampoo, NO conditioner, no scrubbing
+3. Shampoo, NO conditioner,
+   no scrubbing
 4. Blow nose, wipe eyelids and ears
 5. Clean clothes
 
@@ -176,7 +201,8 @@ STAY SHELTERED:
 - At least 24 hours
 - Follow official instructions
 
-KI: ONLY if officials say so. Thyroid only.
+KI: ONLY if officials say so.
+Thyroid only.
 ```
 
 ---
@@ -184,18 +210,20 @@ KI: ONLY if officials say so. Thyroid only.
 ## Sources
 
 - [Ready.gov: Radiation Emergencies](https://www.ready.gov/radiation)
-- [Ready.gov: Nuclear Explosion](https://www.ready.gov/nuclear-explosion)
 - [CDC: What to Do: Get Inside](https://www.cdc.gov/radiation-emergencies/response/get-inside.html)
 - [CDC: What to Do for Different Types of Radiation Emergencies](https://www.cdc.gov/radiation-emergencies/about/what-to-do.html)
 - [CDC: How to Self-Decontaminate after a Radiation Emergency](https://www.cdc.gov/radiation-emergencies/prevention/self-decontaminate.html)
+- [CDC: Decontamination for Yourself and Others (radiation)](https://www.cdc.gov/radiation-emergencies/infographic/decontamination.html)
 - [CDC: Potassium Iodide (KI)](https://www.cdc.gov/radiation-emergencies/treatment/potassium-iodide.html)
 - [CDC: Acute Radiation Syndrome](https://www.cdc.gov/radiation-emergencies/signs-symptoms/acute-radiation-syndrome.html)
 - [FEMA: Planning Guidance for Response to a Nuclear Detonation, 3rd ed. (2022)](https://www.fema.gov/sites/default/files/documents/fema_nuc-detonation-planning-guide.pdf)
 - [HHS REMM: Nuclear Detonation](https://remm.hhs.gov/nuclearexplosion.htm)
 - [NRC: Use of Potassium Iodide](https://www.nrc.gov/about-nrc/emerg-preparedness/about-emerg-preparedness/potassium-iodide-use)
 
-Last reviewed: October 2026
+*This is general awareness information and does not replace professional medical care. Follow official guidance from authorities during any radiological emergency.*
+
+---
+
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*
-
-**Disclaimer:** This is general awareness information and does not replace professional medical care. Follow official guidance from authorities during any radiological emergency.

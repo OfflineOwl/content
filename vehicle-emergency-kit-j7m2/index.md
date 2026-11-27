@@ -1,487 +1,238 @@
 # Vehicle Emergency Kit
 
-> **Your Car Is a Survival Tool -- Equip It Like One** - Whether you are stranded on a remote highway, caught in a sudden storm, or forced to evacuate, the supplies in your vehicle can keep you alive. A well-stocked car emergency kit addresses roadside breakdowns, weather emergencies, and evacuation scenarios. Build yours now, before you need it.
+> **The kit matters most on the day you can't drive.** A breakdown, a blizzard, or an evacuation can leave you sitting in your car for hours. A box of supplies in the trunk and half a tank of fuel turn that from an emergency into a wait.
 
-## The Half-Tank Rule
+## Start here
 
-**Never let your fuel tank drop below half full.**
+1. **Treat half a tank as empty.** Refill at half, and fill up when a storm or evacuation is possible. Gas stations often can't pump during a power outage. For an electric vehicle, keep it charged the same way.
+2. **Put the basic seven in the car today:** jumper cables, flares or a reflective triangle, an ice scraper, a car phone charger, a blanket, a paper map, and cat litter or sand for traction. That is the Ready.gov list, and you probably own most of it.
+3. **Add water, food that keeps, a flashlight, and a first aid kit.**
+4. **Look at your spare.** Find the spare tire, jack, and lug wrench, and check the spare's pressure. Some cars have a sealant kit instead: know which you have.
+5. **Set two reminders a year** to swap the seasonal items and replace what has expired.
 
-This single habit gives you:
-- 150-250 miles of evacuation range at all times
-- Protection against fuel shortages during emergencies (gas stations lose power, supply chains break)
-- Reduced condensation in the tank during cold weather
-- Time to find fuel without panic
+## Get emergency help if
 
-During heightened threat periods (hurricane season, civil unrest, winter storms), keep your tank at three-quarters or above.
+Call 911 (or your local emergency number) if:
 
----
+- **Anyone is hurt,** or the vehicle is smoking or on fire. Get everyone out, move at least 100 feet (30 m) away and well clear of traffic, and never go back for belongings.
+- **You are stopped in a traffic lane** and can't move the vehicle.
+- **You are stranded in extreme cold or heat** and can't keep people safe, or anyone shows signs of hypothermia or heat stroke.
+- **People in a running, stopped car get a headache, dizziness, or nausea.** That may be carbon monoxide (CO). Shut off the engine and get into fresh air.
+- **Water is rising around the vehicle.**
+- **A child or pet is locked in a hot car.**
 
-## Core Vehicle Emergency Kit
+Give your road, direction of travel, and the nearest mile marker or exit. If a call won't connect, try texting 911: it works in some areas, and you should get an automatic reply if it doesn't. Outside the US, use your local emergency number (112 works across the EU).
 
-These items should live in your vehicle year-round.
+## If you break down
 
-### Breakdown & Repair
+1. **Signal and steer to the right shoulder,** as far off the road as you can get. Turn on your hazard lights.
+2. **On a highway, stay in the car with your seat belt on and call for help.** The inside of the car is usually the safest place on a fast road. Never stand or walk on the highway, even if traffic looks light.
+3. **Get out only if staying is more dangerous:** fire, smoke, or a car stuck where it will be hit. Leave by the side away from traffic and move well away from both the road and the vehicle.
+4. **Make the car visible.** Hazard lights at minimum. On a quieter road where you can do it safely, set triangles or LED flares behind the car. Truck drivers are required to place them about 10, 100, and 200 feet (3, 30, and 60 m) back on a divided highway, and farther back before a hill or curve.
+5. **Flat tire on a narrow shoulder?** Creep forward on the flat to a wider, safer spot before you stop. A ruined tire costs less than being hit.
 
-- [ ] Jumper cables (at least 12 feet, 8-gauge or heavier) or a portable jump starter
-- [ ] Tire pressure gauge
-- [ ] Tire repair kit (plug kit with reamer and insertion tool)
-- [ ] 12V portable air compressor
-- [ ] Spare tire (check pressure quarterly) and jack
-- [ ] Lug wrench that fits your vehicle's lug nuts
-- [ ] Basic tool kit: pliers, adjustable wrench, screwdrivers (Phillips and flathead), duct tape, zip ties, wire
-- [ ] Spare fuses (assorted sizes for your vehicle)
-- [ ] Tow strap or recovery strap (rated for your vehicle's weight)
-- [ ] WD-40 or penetrating oil
-- [ ] Quart of motor oil
-- [ ] Quart of coolant/antifreeze
-- [ ] Funnel
+**If a power line falls on your car,** stay inside until a trained person removes it.
 
-### Safety & Signaling
+## Stranded in winter
 
-- [ ] Reflective warning triangles (set of 3)
-- [ ] LED road flares or flare sticks (electronic, no fire risk)
-- [ ] High-visibility vest
-- [ ] Flashlight with extra batteries (or hand-crank flashlight)
-- [ ] Headlamp (frees your hands for repairs)
-- [ ] Whistle
-- [ ] Window breaker / seatbelt cutter tool (mount within driver's reach)
-- [ ] Fire extinguisher (small, rated B:C minimum -- mount securely)
-- [ ] Reflective tape
+These rules come from the National Weather Service, the CDC, and NHTSA, and they agree:
 
-### First Aid
+1. **Stay with the vehicle.** It is shelter, and rescuers can find a car more easily than a person. In wind-driven snow you become disoriented quickly. Leave only if you can clearly see a building close by.
+2. **Run the engine and heater about 10 minutes each hour.** That saves fuel and limits how much exhaust you sit in.
+3. **Clear snow from the exhaust pipe** before you start the engine, every time. A blocked tailpipe sends carbon monoxide into the car.
+4. **Open one window slightly** while the engine runs, for fresh air.
+5. **Be seen.** Tie a bright cloth, red if you have it, to the antenna or door. Turn on the dome light at night while the engine is running. After the snow stops, raise the hood.
+6. **Insulate.** Put on every layer, share blankets, and use floor mats or newspapers as extra insulation.
+7. **Keep blood moving** by working your arms, legs, fingers, and toes. Don't exhaust yourself shoveling or pushing the car.
+8. **Take turns sleeping** if there are two of you.
+9. **Don't eat snow.** It lowers your body temperature. Melt it first.
 
-- [ ] Vehicle first aid kit (compact, commercially available kits work well)
-- [ ] Any personal medications (rotate for expiration)
-- [ ] Tourniquet
-- [ ] Sunscreen
-- [ ] Insect repellent
-- [ ] Prescription glasses (spare pair)
+An electric vehicle makes no exhaust, but the heater draws down the battery that has to get you home. The same order applies: blankets and layers first, heat in short bursts.
 
-### Sustenance
+See the Extreme Cold guide for hypothermia and frostbite first aid.
 
-- [ ] Water: 1 gallon per person (replace every 6 months)
-- [ ] Water purification tablets or filter straw
-- [ ] Non-perishable food: energy bars, nuts, dried fruit, peanut butter crackers
-- [ ] Reusable water bottle
+## Stranded in heat
 
-### Shelter & Warmth
+A parked car in the sun becomes dangerously hot within minutes. The National Weather Service says it is never safe to leave a child, a person with a disability, or a pet in a parked car.
 
-- [ ] Emergency Mylar blankets (at least 2)
-- [ ] Compact sleeping bag or wool blanket
-- [ ] Rain poncho
-- [ ] Hand and toe warmers (chemical activated)
-- [ ] Compact tarp (8x10 feet minimum)
+- **If the air conditioning is gone, don't sit in a closed car in the sun.** Where you can get well off the road, sit in shade near the vehicle, on the side away from traffic. On a fast road with nowhere safe to stand, stay belted in with the windows open and call for help.
+- **Drink water regularly** and wet your skin and clothes.
+- **Heat exhaustion:** heavy sweating, weakness, cool clammy skin, nausea, dizziness, headache. Move to a cooler spot, loosen clothing, apply cool wet cloths, and sip water.
+- **Heat stroke is a 911 emergency:** confusion, slurred speech, a throbbing headache, body temperature above 103°F (39.4°C), hot red skin that may be dry or damp, or passing out. Cool the person with wet cloths while you wait. Do not give fluids.
 
-### Communication & Navigation
+## Floods and evacuations
 
+- **Turn around, don't drown.** Just 12 inches (30 cm) of rushing water can carry away most cars, and 2 feet (60 cm) can carry away SUVs and trucks. Six inches can make you lose control or stall. You can't see whether the road under the water is still there.
+- **Leave early** when an evacuation looks likely, with a full tank.
+- **Follow the recommended routes.** Shortcuts may be blocked. Know an alternate route before you need one, and carry it on paper.
+- **Take one car per household** if you can, to cut congestion.
+- **Take your pets.** If it isn't safe for you, it isn't safe for them. Only service animals may be allowed in some public shelters, so plan where pets can stay.
+- **No car?** Arrange a ride now with family, neighbors, or your local emergency management office.
+
+## The kit
+
+### Year-round
+
+- [ ] Jumper cables, or a jump starter you keep charged
+- [ ] Reflective triangles or LED flares
+- [ ] Flashlight or headlamp, with spare batteries
 - [ ] Phone charging cable and car charger
-- [ ] Portable battery bank (keep charged)
-- [ ] Paper road maps of your region (do not rely solely on GPS)
-- [ ] Written list of emergency contacts (do not rely on your phone's contact list)
-- [ ] AM/FM radio (hand-crank or battery powered)
-- [ ] Pen and notepad
+- [ ] First aid kit
+- [ ] Water: about 1 gallon (4 L) per person, in bottles that won't burst if frozen
+- [ ] High-calorie food that keeps: nuts, dried fruit, energy bars
+- [ ] Blanket
+- [ ] Paper road map and a compass. Don't depend on a phone with limited battery
+- [ ] Basic tool kit, knife or multi-tool, tire pressure gauge, and tow rope
+- [ ] Work gloves, rain poncho, and a high-visibility vest
+- [ ] Tissues, toilet paper, paper towels, and bags or a large can for an emergency toilet
+- [ ] Cash, a pen, and a written list of emergency contacts
 
-### Miscellaneous Essentials
+### Winter additions
 
-- [ ] Cash in small bills ($100-200)
-- [ ] Copies of important documents in a waterproof bag (ID, insurance, registration, medical info)
-- [ ] Trash bags (heavy-duty, multiple uses)
-- [ ] Paper towels or shop rags
-- [ ] Multi-tool or knife
-- [ ] Paracord (50 feet)
-- [ ] Work gloves
-- [ ] Lighter and waterproof matches
+- [ ] Snow shovel, ice scraper, and brush
+- [ ] Sack of sand or cat litter for traction
+- [ ] Extra blankets or a sleeping bag
+- [ ] Dry spare clothing: hat, mittens, socks, boots
+- [ ] Chemical hand and foot warmers
+- [ ] Small metal can and waterproof matches, to melt snow for drinking water
+- [ ] Winter-rated washer fluid
+- [ ] Tire chains or traction devices where they are required
 
----
+The National Weather Service list also includes a candle, for light and last-resort heat. Blankets and warmers come first. If you ever light a candle in a car, set it in a metal can on a flat surface, crack a window, and never sleep with it burning.
 
-## Portable Jump Starter vs. Jumper Cables
+### Summer additions
 
-Both have a place. Here is how to choose.
+- [ ] Double the water
+- [ ] Sunshade, wide-brimmed hat, and sunscreen
+- [ ] A light-colored cloth or towel to wet for cooling
 
-### Jumper Cables
+### People and pets
 
-**Pros:**
-- No charging required -- always ready
-- Inexpensive
-- No battery degradation over time
+- [ ] Medications you would need for a day or two, carried with you each trip, not stored in the car
+- [ ] Babies and children: diapers, wipes, formula, familiar snacks, a change of clothes, a comfort item
+- [ ] Spare glasses and any mobility or medical supplies
+- [ ] Pets: leash, carrier, collapsible bowl, food, and a photo of you with your pet
 
-**Cons:**
-- Require a second vehicle
-- Must be connected correctly to avoid damage
+**Car seats and coats:** a thick winter coat keeps the harness from fitting snugly. Buckle the child in first, then tuck a blanket or the coat over the top.
 
-**How to use jumper cables safely:**
-1. Position vehicles so batteries are close but vehicles do not touch
-2. Turn off both vehicles
-3. Connect red clamp to **dead** battery's positive (+) terminal
-4. Connect other red clamp to **good** battery's positive (+) terminal
-5. Connect black clamp to **good** battery's negative (-) terminal
-6. Connect other black clamp to an **unpainted metal surface** on the dead car's engine block -- NOT the dead battery's negative terminal
-7. Start the good vehicle, wait 2 minutes
-8. Start the dead vehicle
-9. Remove cables in reverse order
-10. Drive the revived vehicle for at least 20 minutes to recharge
+**What not to keep in the car:** spare gasoline (see the Fuel Storage Safety guide) and, in hot or freezing weather, lithium-ion power banks. Fire-safety guidance is to keep lithium batteries out of hot and cold vehicles. Carry the power bank with you, and follow the maker's storage limits for a jump starter.
 
-### Portable Jump Starter
+## The fuel habit
 
-**Pros:**
-- No second vehicle needed
-- Compact and lightweight
-- Many include USB ports, flashlights, and air compressors
+Three agencies give the same advice for three different reasons:
 
-**Cons:**
-- Must be kept charged (check quarterly)
-- Limited number of jump attempts per charge
-- Lithium batteries degrade in extreme heat
+- **Ready.gov:** keep at least half a tank at all times in case you must evacuate without warning, and a full tank when evacuation seems likely.
+- **National Weather Service:** keep the tank near full in winter to avoid ice in the tank and fuel lines.
+- **NHTSA:** if you get stuck in traffic or snow, you may need more fuel than you planned, to get home or to keep warm.
 
-**Recommendation:** Carry both. Jumper cables are your backup when the portable unit is dead.
+For electric and hybrid vehicles, cold weather reduces driving range. Keep the battery charged, plug in when the car is parked if you can, and keep gasoline in a hybrid.
 
----
+## Two skills to learn before you need them
 
-## Tire Repair on the Road
+### Jump-starting a car
 
-A flat tire in a disaster or evacuation scenario is more than an inconvenience -- it can be life-threatening.
+Read your owner's manual first. Some cars have special jump points, and some makers tell you not to jump-start at all.
 
-### Using a Plug Kit
+1. Park the cars close but not touching. Both off, parking brakes on.
+2. Red clamp to the dead battery's positive (+) terminal.
+3. Other red clamp to the good battery's positive (+) terminal.
+4. Black clamp to the good battery's negative (-) terminal.
+5. Last black clamp to bare, unpainted metal on the dead car, away from the battery. Not the dead battery's negative terminal: batteries give off hydrogen, and you want the final spark far from it.
+6. Start the working car, let it idle, then start the dead one.
+7. Remove the clamps in reverse order: black from the bare metal first, red clamps last.
 
-A tire plug kit can repair a puncture in the tread area in minutes without removing the tire.
+Wear eye protection, keep flames and cigarettes away, and never jump a battery that is frozen, cracked, or leaking.
 
-1. Locate the puncture (listen for hissing, look for embedded object)
-2. Remove the object with pliers
-3. Insert the reaming tool into the hole and work it in and out to prepare the opening
-4. Thread a plug strip through the insertion tool's eye
-5. Push the insertion tool into the hole until only about 1/2 inch of plug is visible
-6. Pull the tool straight out -- the plug stays in the tire
-7. Trim excess plug material flush with the tread
-8. Inflate with your 12V compressor to the correct PSI (check the door jamb sticker)
-9. Drive to a tire shop when possible -- plug repairs are temporary
+### Dealing with a flat
 
-**Limitations:** Plug kits cannot fix sidewall damage, large tears, or punctures at the tire's edge. In those cases, use your spare tire.
+- **Safe place first.** Level, firm ground, well away from traffic. If you don't have that, call for help instead.
+- **Follow the owner's manual.** Use the jack points it shows, loosen the wheel nuts slightly before you lift, and tighten them in a star pattern once the wheel is back on the ground. Never put any part of your body under a car held up by a jack.
+- **A compact spare is temporary.** Its speed and distance limits are printed on it. Drive gently and get the tire fixed.
+- **Sealant or a plug kit** is a temporary fix for a small puncture in the tread. Neither can fix a sidewall.
 
-### Changing a Flat Tire -- Step by Step
+## Keep it ready
 
-Practice this procedure at home so you can do it confidently on a dark roadside.
+- **Monthly:** check tire pressure, including the spare, when the tires are cold. Use the pressure on the driver's door placard, not the number on the tire. Tread should be at least 2/32 inch (1.6 mm).
+- **Twice a year:** swap seasonal items, replace water and food, test the flashlight, charge the jump starter, and check expiry dates.
+- **Before winter and before long trips,** have a mechanic check the battery, antifreeze, brakes, heater and defroster, lights, wipers, and the exhaust system. An exhaust leak is a carbon monoxide risk any time you are sitting with the engine running.
 
-1. **Pull completely off the road** onto a flat, stable surface. Turn on your hazard lights.
-2. **Set up warning signals.** Place reflective triangles at 50, 100, and 200 feet behind your vehicle on the traffic side.
-3. **Apply the parking brake.** Place a heavy object (rock, bag of sand) behind the tire diagonally opposite the flat to prevent rolling.
-4. **Locate your spare tire, jack, and lug wrench.** Check the owner's manual if you are unsure where they are stored.
-5. **Loosen the lug nuts one-quarter turn** counterclockwise while the tire is still on the ground. Do not remove them yet. If a nut is stuck, stand on the wrench handle carefully for leverage.
-6. **Position the jack** under the vehicle's designated jack point (consult the owner's manual -- wrong placement can bend the frame or cause the jack to collapse).
-7. **Raise the vehicle** until the flat tire is approximately 6 inches off the ground.
-8. **Remove the lug nuts completely** and set them somewhere safe (inside a cup or your pocket -- do not set them in the dirt where they can be lost).
-9. **Pull the flat tire off** and set it flat under the vehicle as a safety backup in case the jack fails.
-10. **Mount the spare tire**, lining up the bolt holes. Push it onto the bolts.
-11. **Hand-tighten the lug nuts** in a star or cross pattern -- not in a circle.
-12. **Lower the vehicle** until the tire touches the ground but does not bear the full weight.
-13. **Tighten the lug nuts firmly** in a star pattern using the wrench. Apply as much force as you can.
-14. **Lower the vehicle completely** and remove the jack.
-15. **Stow the flat tire and tools.** Check the spare's pressure with your gauge.
+## Practice
 
-**After the change:**
-- Temporary spare tires (donuts) should not exceed 50 mph or 50-70 miles
-- Re-torque lug nuts after 50-100 miles of driving
-- Get to a tire shop as soon as conditions allow
+**10-minute drill:** In your driveway, parked, engine off, in daylight, find and touch each of these: the hazard light switch, the hood release, the spare tire (or sealant kit), the jack and lug wrench, the page in the manual that shows the jack points, the battery terminals or jump posts, and your kit. Time it. Then text a family member your location from your phone's map app, so you know how. Do not jack up the car for this drill.
 
-### Maintaining Your Spare
+**What would you do?**
 
-- Check spare tire pressure every 3 months
-- Many spare tires are rated for a maximum of 50 mph and 70 miles
-- Know where your jack and lug wrench are stored
-- Practice changing a tire at home -- not on a dark highway
+1. *A blizzard has put your car in a drift on a rural road. Between gusts you can sometimes see a farmhouse light, perhaps half a mile off. Your phone shows one bar.*
 
----
+   **Answer:** Stay with the car. Half a mile in a whiteout is not "a building close by": people lose their bearings quickly in wind-driven snow, and the light will vanish the moment you step away. Call or text 911 with your road and direction. Clear the tailpipe, then run the engine about 10 minutes each hour with a window cracked. Tie a bright cloth outside, put on every layer, and keep moving your arms and legs.
 
-## Seasonal Additions
+2. *You get a flat on a busy interstate. The flat is on the driver's side, and the shoulder is barely wider than the car. You know how to change a tire.*
 
-### Winter Kit (November through March)
+   **Answer:** Knowing how is not the point; where is. Changing a traffic-side tire on a narrow shoulder puts your body a step from vehicles moving at highway speed. Put the hazards on and creep to the next exit or a wide, flat spot if one is close. Otherwise stay in the car with your seat belt on and call for help. A ruined tire and a wait cost far less than the alternative.
 
-Add these items when cold weather arrives:
+3. *You are evacuating ahead of a storm. Brown water is flowing across the road ahead. It looks about a foot deep, and the pickup in front of you just drove through.*
 
-- [ ] Ice scraper and snow brush
-- [ ] Compact folding shovel
-- [ ] Bag of sand, salt, or non-clumping kitty litter (traction on ice)
-- [ ] Extra wool blankets or sleeping bag rated to 0F
-- [ ] Extra hand and toe warmers (12+ pairs)
-- [ ] Candle and small metal can (emergency heat source inside vehicle -- crack a window)
-- [ ] Extra warm clothing: hat, gloves, insulated socks, jacket
-- [ ] Tire chains or traction devices (check local regulations)
-- [ ] Windshield washer fluid rated for below-freezing temperatures
+   **Answer:** Turn around. A foot of moving water can carry away most cars, and a truck making it through tells you nothing about your vehicle or about what the water is doing to the road underneath. Use your alternate route. This is why you leave early, with a full tank and a paper map.
 
-**Winter survival note:** If stranded in snow, **stay with your vehicle**. It is your shelter, your signaling device, and searchers will find it before they find you on foot. Run the engine 10-15 minutes per hour for heat. Crack a downwind window slightly to prevent carbon monoxide buildup. Clear snow from the exhaust pipe before running the engine.
+## Quick Reference
 
-### Summer Kit (May through September)
+```
+VEHICLE KIT: BASIC SEVEN
+Jumper cables / flares or triangle /
+ice scraper / phone charger /
+blanket / map / cat litter or sand
++ water, food, flashlight, first aid
 
-Add these items in hot weather:
+FUEL: half a tank = empty.
+Full before storms and evacuations.
 
-- [ ] Extra water (double your normal vehicle supply)
-- [ ] Sunshade for windshield
-- [ ] Broad-brimmed hat
-- [ ] Electrolyte packets
-- [ ] Spray bottle for misting (evaporative cooling)
-- [ ] Extra sunscreen
-- [ ] Light-colored, loose-fitting clothing
+BREAKDOWN
+Right shoulder, hazards on.
+Highway: stay in, belt on, call.
+Out only for fire or danger; exit
+away from traffic.
 
-**Summer survival note:** Heat kills faster than cold. If stranded, stay in shade (under the vehicle if no other option). Minimize exertion during peak heat (10 AM - 4 PM). Drink water before you feel thirsty. Signs of heat exhaustion: heavy sweating, weakness, nausea, dizziness. Signs of heat stroke: hot dry skin, confusion, loss of consciousness -- this is a life-threatening emergency.
+STRANDED IN SNOW
+1. Stay with the car
+2. Engine ~10 min per hour
+3. Clear the tailpipe first
+4. Window open a little
+5. Bright cloth; dome light at
+   night; hood up after snow stops
+6. Layers, move, don't eat snow
 
----
+HEAT: never leave a child or pet
+in a parked car. Shade + water.
+Confused or passing out = 911.
 
-## Evacuation Vehicle Preparation
+FLOOD: 12 in of moving water
+carries off most cars. Turn around.
 
-When an evacuation order is issued or anticipated, take these steps immediately.
+JUMP START
+Red: dead +, then good +
+Black: good -, then bare metal on
+the dead car. Remove in reverse.
+```
 
-### Before You Leave
+## Sources
 
-1. **Fill the tank completely** -- do not wait, stations will run dry
-2. **Check tire pressure** on all four tires and the spare
-3. **Check fluid levels** -- oil, coolant, windshield washer
-4. **Load your go-bag** and vehicle emergency kit
-5. **Secure loose items** in the vehicle -- they become projectiles in a crash
-6. **Charge all devices** -- phones, portable battery banks, jump starter
-7. **Print or write down** your evacuation route and at least two alternates
-8. **Fill water containers** -- as much as your vehicle can carry
-
-### Evacuation Route Planning
-
-- **Know at least three routes** to your evacuation destination
-- **Avoid highways if possible** during mass evacuations (gridlock is common)
-- **Identify fuel stops** along each route
-- **Note hospitals and emergency services** along the way
-- **Plan for 3x normal travel time** during evacuations
-- **Have a meet-up point** if family members are traveling separately
-
-### Driving in Evacuation Conditions
-
-- Leave early -- the first to leave has the best roads and fuel access
-- Drive defensively -- other drivers will be stressed, distracted, and aggressive
-- Keep headlights on at all times
-- Do not drive through standing water -- 6 inches can stall a car, 12 inches can float it
-- If roads are blocked, stop and reassess rather than taking unknown detours
-- Monitor AM radio for traffic and emergency updates
+- [Ready.gov: Car Safety](https://www.ready.gov/car)
+- [Ready.gov: Evacuation](https://www.ready.gov/evacuation)
+- [Ready.gov: Prepare Your Pets for Disasters](https://www.ready.gov/pets)
+- [National Weather Service: Before a Winter Storm (vehicle survival kit)](https://www.weather.gov/safety/winter-before)
+- [National Weather Service: During a Winter Storm](https://www.weather.gov/safety/winter-during)
+- [National Weather Service: Turn Around Don't Drown](https://www.weather.gov/safety/flood-turn-around-dont-drown)
+- [National Weather Service: Heat Cramps, Exhaustion, Stroke](https://www.weather.gov/safety/heat-illness)
+- [National Weather Service: Heat, Children and Pets in Vehicles](https://www.weather.gov/safety/heat-children-pets)
+- [CDC: Stay Safe During and After a Winter Storm](https://www.cdc.gov/winter-weather/safety/stay-safe-during-after-a-winter-storm-safety.html)
+- [NHTSA: Winter Driving Tips (PDF copy hosted by NYC DCAS)](https://www.nyc.gov/assets/dcas/downloads/pdf/fleet/NHTSA_winter_driving_tips.pdf)
+- [Connecticut DOT: Stay in Your Vehicle in Highway Emergencies](https://portal.ct.gov/dot/ctdot-press-releases/2025/ctdot-urges-motorists-to-stay-in-their-vehicles-in-highway-emergencies?language=en_US)
+- [49 CFR 392.22: Emergency Signals for Stopped Commercial Motor Vehicles](https://www.law.cornell.edu/cfr/text/49/392.22)
+- [NFPA: Educational Messages Desk Reference (car fires, lithium-ion batteries)](https://www.nfpa.org/-/media/project/storefront/catalog/files/home-fire-safety/emac/educationalmessagesdeskreference.pdf)
+- [AAA: How to Jump-Start a Car](https://mwg.aaa.com/via/car/how-to-jumpstart-car-keep-battery-healthy)
 
 ---
 
-## What to Do If Stranded
+Last reviewed: November 2026
 
-Being stranded is stressful. A clear plan reduces panic and improves outcomes.
-
-### Immediate Actions
-
-1. **Get off the road.** Pull as far onto the shoulder or off the pavement as possible.
-2. **Turn on hazard lights immediately.**
-3. **Assess yourself and passengers.** Check for injuries before anything else.
-4. **Deploy warning signals.** Set reflective triangles or LED flares behind the vehicle.
-5. **Raise the hood** -- this is a universal signal that you need assistance.
-6. **Call for help.** Dial 911 if there is an emergency. Call roadside assistance or a trusted contact. Text your GPS coordinates (or nearest mile marker and road name) to someone who can relay your location.
-7. **Stay with the vehicle.** In almost all cases, your car is your best shelter and the easiest thing for rescuers to spot.
-
-### If You Must Wait for Hours
-
-- **Conserve phone battery.** Send one text with your location, then lower brightness, close apps, and switch to airplane mode if signal is weak.
-- **Run the engine sparingly.** 10-15 minutes per hour for heat or cooling. **Crack a window** to prevent carbon monoxide buildup.
-- **In snow**, clear the exhaust pipe of snow before running the engine. Carbon monoxide poisoning is a real and deadly risk.
-- **Ration supplies.** Small sips of water, small bites of food. You do not know how long you will wait.
-- **Stay visible.** Tie a bright cloth to the antenna, side mirror, or door handle. Keep interior lights on at night if battery allows.
-- **Do not walk along highways at night.** Pedestrians are nearly invisible to drivers.
-
-### When to Leave the Vehicle
-
-Leave only if:
-- There is an immediate danger to staying (fire, rising floodwater, chemical spill)
-- You can see a safe building or help within clear walking distance
-- You have told someone exactly where you are going
-- You are dressed for the weather and terrain
-
-**If you must walk:** Leave a note on the dashboard with your name, the time you left, the direction you are heading, and your destination.
-
----
-
-## Signaling for Help from a Vehicle
-
-Your vehicle is a large, visible object. Use it to your advantage.
-
-### Daytime Signals
-
-- **Hood up** -- universally understood as "I need help"
-- **Bright fabric** (shirt, towel, bag) tied to the antenna or mirror
-- **Reflective triangles** placed behind the vehicle
-- **Horn** -- three short blasts repeated at intervals is a recognized distress signal
-- **Mirror or any reflective surface** -- angle it to flash sunlight at passing vehicles or aircraft
-- **SOS written in dirt, sand, or snow** near the vehicle in large letters visible from the air
-
-### Nighttime Signals
-
-- **Hazard lights** -- the most visible signal you have at night. Conserve battery by running the engine periodically.
-- **Interior dome light** -- makes occupants visible from outside
-- **Flashlight** -- flash three times toward approaching vehicles, then pause and repeat
-- **LED road flares** -- visible at greater distance than reflective triangles at night
-- **Phone flashlight** -- use the strobe function if your phone has one
-
-### Electronic Options
-
-- **Share your GPS coordinates** via text -- most phone map apps let you drop a pin and share a link
-- **If no cell signal,** try texting instead of calling. Text messages require less signal strength and may get through when calls cannot.
-- **Satellite communicators** (Garmin inReach, SPOT, Apple iPhone 14+ satellite SOS) can reach emergency services where there is no cell coverage
-- **Built-in vehicle SOS systems** (OnStar, BMW Assist, Hyundai Bluelink) -- know whether yours is active and how to trigger it
-
----
-
-## Kids and Pets in Vehicle Emergencies
-
-Children and animals are more vulnerable to temperature extremes, dehydration, and stress. Prepare specifically for them.
-
-### Children
-
-**Supplies to keep in the vehicle for kids:**
-- [ ] Snacks they will actually eat (rotate regularly)
-- [ ] Extra water or juice boxes
-- [ ] A light blanket and a change of clothes
-- [ ] Small activity (coloring book, toy, deck of cards) -- entertainment reduces panic
-- [ ] Diapers, wipes, and a change of clothes (for young children)
-- [ ] Any required medications (inhaler, EpiPen, allergy medication)
-- [ ] Comfort item (stuffed animal, familiar blanket)
-- [ ] Child-specific sunscreen and insect repellent
-
-**During an emergency with children aboard:**
-1. **Stay calm.** Children mirror adult emotions. Your composure is their security.
-2. **Explain simply and honestly** what is happening, using age-appropriate language. "The car has a flat tire, and we are going to fix it. You can help by holding the flashlight."
-3. **Give them a job.** Counting cars, holding a tool, watching for helpers -- any task reduces anxiety.
-4. **Keep them in car seats or seat belts** unless you are evacuating the vehicle.
-5. **In heat**, cool children first. Wet their clothing, provide shade, and give water frequently. Children overheat faster than adults.
-6. **In cold**, wrap children in layers and share body heat. Small bodies lose heat quickly.
-7. **Never leave children unattended in a vehicle** during an emergency, even briefly.
-
-### Pets
-
-**Supplies to keep in the vehicle for pets:**
-- [ ] Collapsible water bowl and water
-- [ ] Leash, collar with ID tags, and harness
-- [ ] Small bag of food
-- [ ] Waste bags
-- [ ] Pet carrier or crate (secured in the vehicle)
-- [ ] Copy of vaccination records
-- [ ] Any required medications
-- [ ] Recent photo of the pet (for identification if separated)
-
-**During an emergency with pets:**
-1. **Secure the animal.** A panicked pet can cause an accident, interfere with repairs, or escape into traffic. Crate or leash immediately.
-2. **Dogs must be leashed** at all times outside the vehicle.
-3. **Cats must stay in carriers.** A stressed cat in an open environment will bolt and may not be found.
-4. **In heat**, pets are at risk of heatstroke before you are. Provide water and shade. Wet the animal's paw pads and ears for cooling.
-5. **In cold**, small dogs and short-haired breeds need extra insulation. Wrap them in a blanket.
-6. **During evacuations**, bring pets with you. Do not leave them behind. Know which shelters along your route accept animals.
-
----
-
-## Essential Tools: A Closer Look
-
-### Flashlight
-
-Your vehicle flashlight should be dependable under harsh conditions.
-
-- **LED** -- far more efficient and durable than incandescent
-- **200+ lumens** minimum for roadside visibility
-- **Water-resistant** (IPX4 rating or better)
-- **Impact-resistant** housing (rubber-coated or aluminum)
-- **Lithium batteries** preferred -- longer shelf life and less prone to leaking than alkaline
-- Check it monthly; replace batteries annually or when dimming
-- Consider adding a **hand-crank flashlight** as a backup that never needs batteries
-
-### Reflective Warning Triangles
-
-These are inexpensive and potentially life-saving.
-
-- Set them at **50, 100, and 200 feet** behind your vehicle on the side closest to traffic
-- On curves, place the farthest triangle before the curve so approaching drivers see it with time to react
-- On hills, place the farthest triangle beyond the crest
-- Weighted bases prevent them from blowing over
-- LED-equipped triangles are significantly more visible at night
-
-### Fire Extinguisher
-
-A vehicle fire can become unsurvivable in under two minutes.
-
-- **Rating:** B:C minimum (flammable liquids and electrical). ABC rated is better for general use.
-- **Size:** 2.5 to 5 pounds. Larger is more effective but harder to store.
-- **Mounting:** Secure with a rated bracket. A loose extinguisher is a dangerous projectile in a collision.
-- **Inspection:** Check the pressure gauge monthly. If the needle is outside the green zone, replace the unit.
-- **PASS technique:** **P**ull the pin, **A**im at the base of the fire, **S**queeze the handle, **S**weep side to side.
-
-### Multi-Tool
-
-A quality multi-tool replaces several individual tools and fits in a glove box or center console.
-
-Essential features:
-- Knife blade (plain edge is more versatile than serrated for most tasks)
-- Pliers and wire cutters
-- Flathead and Phillips screwdrivers
-- Can/bottle opener
-- File
-
-Keep it accessible -- not buried in the trunk under luggage.
-
----
-
-## Vehicle Maintenance for Preparedness
-
-A vehicle that will not start is not a survival tool. Keep yours reliable.
-
-### Monthly Checks
-
-- Tire pressure (including spare)
-- All lights functioning (headlights, brake lights, turn signals, hazards)
-- Windshield wipers and washer fluid
-- Fuel level (maintain the half-tank rule)
-
-### Quarterly Checks
-
-- Engine oil level and condition
-- Coolant level
-- Battery terminals (clean corrosion with baking soda and water)
-- Portable jump starter charge level
-- Emergency kit food and water rotation
-- Expiration dates on medications and first aid supplies
-
-### Annual Checks
-
-- Full vehicle service per manufacturer schedule
-- Replace wiper blades
-- Inspect tire tread depth (penny test: insert penny head-down -- if you see all of Lincoln's head, replace tires)
-- Test fire extinguisher pressure gauge
-- Replace chemical hand warmers and any heat-degraded items
-- Update paper maps and emergency contact lists
-
----
-
-## Organizing Your Kit
-
-A disorganized kit is a slow kit. In an emergency, you need to find things fast.
-
-**Recommended organization:**
-1. **Trunk organizer or duffel bag** for the main kit -- prevents items from rolling around
-2. **Clear labeled bags** for subcategories (first aid, tools, food, warmth)
-3. **Glove box:** flashlight, window breaker, pen, emergency contacts, insurance/registration
-4. **Center console:** phone charger, cash, multi-tool
-5. **Under front seat:** fire extinguisher (secured with a bracket)
-6. **Door pocket:** high-vis vest, LED flare
-
-**Inspect the full kit every 6 months.** Replace expired food, rotate water, charge electronics, and confirm nothing has been borrowed and not returned.
-
----
-
-## Key Takeaways
-
-1. **Keep your tank at least half full** -- fuel is the most critical evacuation resource
-2. **Build a year-round core kit** and add seasonal items
-3. **Carry both jumper cables and a portable jump starter**
-4. **Know how to use every item** in your kit before an emergency
-5. **Maintain your vehicle** -- reliability is non-negotiable
-6. **Plan evacuation routes** in advance with alternates
-7. **Stay with your vehicle** when stranded unless you are certain help is within walking distance
-8. **Inspect and rotate** kit contents every 6 months
-
----
-
-*Last updated: March 2026*
 *License: CC-BY-SA 4.0*
-
-**Disclaimer:** This guide is for educational purposes. Always follow local law enforcement and emergency management directives during evacuations. This information is not a substitute for professional mechanical or emergency services.

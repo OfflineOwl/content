@@ -1,6 +1,6 @@
 # Pediatric Emergency Care
 
-> Children aren't small adults. Their airways block more easily, they get dehydrated and cold faster, and they can't always tell you what's wrong. This guide covers the emergencies most likely to hit a child, and when to get help right away.
+> **Children aren't small adults.** Their airways block more easily, they get dehydrated and cold faster, and they can't always tell you what's wrong. This guide covers the emergencies most likely to hit a child, and when to get help right away.
 
 ## Do this now
 
@@ -321,6 +321,72 @@ See the CPR & Rescue Breathing guide for full steps.
 
 ---
 
+## Practice
+
+**10-minute drill:** Practice the infant choking steps on a doll or stuffed animal, never on a real baby. Sit down and lay the doll face down along your forearm, head lower than the chest, with its jaw supported in your hand and your arm resting on your thigh. Give 5 back blows between the shoulder blades with the heel of your other hand. Turn it face up along your other forearm and give 5 chest thrusts with the heel of one hand, just below the nipple line. Repeat until you can do it without reading. Then save Poison Help (1-800-222-1222 in the US) in every phone in the house, and write each child's current weight where a babysitter would find it.
+
+**What would you do?**
+
+1. *It is 2 a.m. Your 6-week-old feels warm and the thermometer reads 100.6°F (38.1°C). She fed an hour ago and is sleeping peacefully. There is infant acetaminophen in the cabinet.*
+
+   **Answer:** Don't treat this at home, and don't wait for morning. In a baby under 3 months, a temperature of 100.4°F (38°C) or higher needs medical care right away, even if the baby seems well; it is on the call-911 list above. Leave the acetaminophen in the cabinet: under 2 years it is only given on a doctor's advice, and any fever in a baby under 12 weeks needs a doctor right away.
+
+2. *Your 2-year-old is playing happily on the floor next to an open TV remote. One of its coin-sized batteries is missing. He isn't coughing or crying.*
+
+   **Answer:** Assume he swallowed it and treat it as an emergency, even though he looks fine. A button battery stuck in the throat can cause severe damage in as little as 2 hours. Call Poison Help (1-800-222-1222) or the National Battery Ingestion Hotline (1-800-498-8666) right away, and expect to be sent for an X-ray immediately. Don't make him vomit, and ask before giving him anything to eat or drink.
+
+3. *Your 4-year-old falls off the couch and bumps her head on the floor. She cries at once, settles within a few minutes, and plays normally all evening. At bedtime, a relative insists you must keep her awake, or wake her every hour through the night.*
+
+   **Answer:** Let her sleep. She didn't pass out and has no danger signs, and a child with no danger signs doesn't need to be woken every few hours. Watch her closely over the next day or two. Call 911 or go to the emergency room if any warning sign appears: she gets drowsier or can't be woken, a headache that gets worse, repeated vomiting, a seizure, confusion or strange behavior, slurred speech, weakness, or one pupil larger than the other.
+
+---
+
+## Quick Reference
+
+```
+CHILD EMERGENCIES
+
+NOT BREATHING NORMALLY: 911 + CPR
+- 30 compressions, 2 breaths
+  (15:2 with two rescuers)
+- 100-120 compressions a minute
+- Child: 2 hands (1 if small),
+  about 2 in (5 cm) deep
+- Infant: heel of 1 hand or
+  2 thumbs, about 1.5 in (4 cm).
+  NOT 2 fingers
+- Alone, no phone, didn't see the
+  collapse: 2 min of CPR, then call
+
+CHOKING (can't cough, cry, breathe)
+- Over 1: 5 back blows,
+  5 abdominal thrusts, repeat
+- Under 1: 5 back blows, 5 chest
+  thrusts. NO abdominal thrusts
+- Goes unresponsive: start CPR
+
+FEVER: get care right away if
+- Under 3 months: 100.4 F (38 C)
+  or higher
+- Above 104 F (40 C) repeatedly
+- Looks very ill, stiff neck,
+  rash, trouble breathing,
+  unusually drowsy
+
+POISON HELP (US): 1-800-222-1222
+- Collapsed, seizing, can't be
+  woken, trouble breathing: 911
+- Do NOT make them vomit
+- Button battery: call right away
+
+NEVER GIVE
+- Aspirin to a child or teen with
+  flu, chickenpox, or other virus
+- Honey to a baby under 12 months
+```
+
+---
+
 ## Sources
 
 - [American Heart Association 2025 Guidelines, Part 6: Pediatric Basic Life Support (CPR, AED, choking)](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-basic-life-support)
@@ -347,8 +413,10 @@ See the CPR & Rescue Breathing guide for full steps.
 - [MedlinePlus: Pulse (normal resting heart rates by age)](https://medlineplus.gov/ency/article/003399.htm)
 - [MedlinePlus: Rapid Shallow Breathing (normal breathing rates)](https://medlineplus.gov/ency/article/007198.htm)
 
-Last reviewed: October 2026
-
 *This guide doesn't replace hands-on pediatric first aid and CPR training or professional medical care.*
+
+---
+
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

@@ -1,6 +1,6 @@
 # Go-Bag Essentials by Family Member
 
-> A go-bag is what each person grabs when you have to leave fast. It works alongside your household kit (see the 72-Hour Survival Checklist), which follows the Ready.gov basic kit. Each family member has different needs and can carry different amounts, so build a bag for each person.
+> **A go-bag is what each person grabs when you have to leave fast.** It works alongside your household kit (see the 72-Hour Survival Checklist), which follows the Ready.gov basic kit. Each family member has different needs and can carry different amounts, so build a bag for each person.
 
 ## Start Here
 
@@ -46,7 +46,7 @@ There's no official weight limit for adult go-bags. Use these rules of thumb:
 | Adults | Test-walk for at least 30 minutes. If you can't carry it comfortably, lighten it. |
 | Older adults | Essentials only; consider a rolling bag or have others carry heavy items |
 | Teens | Their own essentials plus a few shared items |
-| Children (school age) | No more than 10-20% of body weight (American Academy of Pediatrics backpack guideline) |
+| Children (school age) | No more than 15% of body weight (American Academy of Pediatrics backpack guideline) |
 | Young children | Comfort items only; adults carry the rest |
 
 ---
@@ -372,6 +372,72 @@ If officials tell you to evacuate, take your pets too. Many public shelters and 
 
 ---
 
+## Practice
+
+**10-minute drill:** Find the go-bags in the dark. After dark, switch off the lights and have everyone go and get their own bag without help, put it on, and meet at the main exit. Walk, don't run, and keep an adult with each young child. Once you are together, turn the lights back on and have each person pull out their flashlight, whistle, and emergency contact card. Note what went wrong (a bag nobody could find, a bag too heavy to lift, a dead flashlight, a missing card) and fix it this week.
+
+**What would you do?**
+
+1. *You have to leave on foot. The standard is 3 gallons of water per person for three days, and you want to do this properly, so you start tying gallon jugs to every bag, including the children's.*
+
+   **Answer:** Stop. Three gallons weighs about 25 pounds, which is more than most people can carry on foot along with everything else, and a bag that is too heavy won't get carried. On foot, each person carries the water they can manage (at least 1-2 liters for an adult), and the bags hold purification tablets or a filter so you can treat more on the way. The full 3-gallon supply is for the car, when you are driving out. A school-age child's whole bag should weigh no more than 15% of their body weight.
+
+2. *An evacuation order comes at dusk. The cat is hiding under a bed, and the nearest public shelter doesn't take pets. A neighbor says to leave food and water out for her, since you'll be home in a day or two.*
+
+   **Answer:** If officials tell you to evacuate, your pets go too. Get the cat into her carrier, which is the one item on the cat list marked essential, and take her go-bag with food, water, medications, and records. Many public shelters and hotels don't allow pets, which is why you work out where you could take them before you need to.
+
+3. *Your teenager's bag is packed, except for the prescription medication they take every day. That stays in the bathroom cabinet, and the plan is to grab it on the way out.*
+
+   **Answer:** That plan fails the first time you leave in a hurry, or the first time someone else has to grab the bag. Every go-bag needs its own supply of that person's medications, at least 7 days, along with a written medication list. Put the supply in the bag now, and refresh it and check the expiration dates every 6 months when you go through the bags.
+
+---
+
+## Quick Reference
+
+```
+GO-BAG: ONE FOR EACH PERSON
+
+EVERY BAG
+- Water you can carry (adult: at
+  least 1-2 liters) + tablets
+  or a filter
+- Medications (7+ days) + list
+- Document copies + contact card
+- Phone charger + backup battery
+- Flashlight, whistle, dust mask
+- Change of clothes, sturdy shoes
+- Food: 3 days, no cooking
+- Personal: glasses, hearing aid
+  batteries, comfort items,
+  baby and pet supplies
+
+WATER
+- Standard: 1 gallon/person/day
+- 3 days = 3 gallons = ~25 lb
+- Driving: load it in the car
+- On foot: carry what you can,
+  treat more
+- Never ration unless told to
+
+WEIGHT
+- Too heavy = won't get carried
+- Adults: test-walk 30+ minutes
+- School-age kids: max 15% of
+  body weight
+- Older adults: essentials only,
+  consider a rolling bag
+
+PETS
+- You evacuate, pets evacuate
+- Carrier, leash, food, records
+
+KEEP IT READY
+- Packed, near the main exit
+- Check every 6 months
+```
+
+---
+
 ## Sources
 
 - [Ready.gov: Build a Kit](https://www.ready.gov/kit)
@@ -381,6 +447,8 @@ If officials tell you to evacuate, take your pets too. Many public shelters and 
 - [American Red Cross: Survival Kit Supplies](https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html)
 - [HealthyChildren.org (American Academy of Pediatrics): Backpack Safety](https://www.healthychildren.org/English/safety-prevention/at-play/Pages/Backpack-Safety.aspx)
 
-Last reviewed: October 2026
+---
+
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

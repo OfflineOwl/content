@@ -28,6 +28,8 @@ Some areas use matching evacuation levels (Level 1 "Be Ready," Level 2 "Be Set,"
 
 Learn the terms your area uses, and find out your evacuation zone.
 
+No order yet and not sure whether to leave? OfflineOwl's Stay or Go tool walks through the decision step by step. If officials tell you to go, go.
+
 ### Fire Weather Alerts (US National Weather Service)
 
 - **Fire Weather Watch:** critical fire weather (such as strong wind and low humidity) is possible but not imminent.
@@ -208,15 +210,35 @@ Call 911 or get medical care right away for chest pain, severe shortness of brea
 - Throw out food that was exposed to heat, smoke, or soot.
 - Photograph damage for insurance.
 
+## Practice
+
+**10-minute drill:** Run a five-minute go. Set a timer for five minutes and tell the household a wildfire is coming. Everyone collects what the guide says to take, go bags, medications, phones, documents and pets, puts on long sleeves, long pants and sturdy shoes, and meets at the car. Don't drive anywhere. When the timer stops, look at what is missing or took too long: the cat that hid, the documents nobody could find, the car that was parked nose-in. Spend the other five minutes finding out your evacuation zone and tracing two ways out of the neighborhood on a paper map.
+
+**What would you do?**
+
+1. *An Evacuation Warning, not an Order, is issued for your zone. You live with your 82-year-old mother, who uses a walker, and two cats. The fire is still on the far side of the ridge, and the neighbors say they will wait for the Order.*
+
+   **Answer:** Leave now. A warning is the signal to go for anyone who needs extra time, and for people with pets or livestock. By the time an Order comes, smoke, fire and traffic may already be on your road. Load the cats and the go bags, close the windows and doors and leave them unlocked, and tell your out-of-area contact where you are going.
+
+2. *You are evacuating and the official route is bumper to bumper. Your map app shows an empty forest road over the hills that would save half an hour.*
+
+   **Answer:** Stay on the route officials gave you. A shortcut can be blocked or lead straight into the fire, and an empty road may be empty for a reason. Keep the headlights on, the windows up and the air on recirculate, and watch for fire crews and people on foot.
+
+3. *The fire is 60 miles away, but the sky is orange and the AQI is 170. Your seven-year-old has an outdoor soccer game, and you have a box of surgical masks in the cupboard.*
+
+   **Answer:** Skip the game and keep everyone indoors. An AQI of 151 to 200 is Unhealthy, and children are among the people most at risk. Surgical and ear-loop masks won't protect lungs from smoke; only a tight-sealing N95 or P100 with two head straps does, and those don't come in sizes that fit young children. Close the windows, set up a clean room with an air cleaner, and take it easy until the air improves.
+
 ## Quick Reference
 
 ```
-READY  - Before fire season: defensible
-         space, harden home, plan, go bags
+READY  - Before fire season:
+         defensible space, harden
+         home, plan, go bags
 SET    - Fire nearby: car packed and
          facing out. Set = time to go.
-GO     - Leave early. Don't wait to be
-         told if you could be threatened.
+GO     - Leave early. Don't wait to
+         be told if you could be
+         threatened.
 
 DEFENSIBLE SPACE
 Zone 0 (0-5 ft): nothing that burns
@@ -243,7 +265,7 @@ SMOKE
 
 ## Sources
 
-- [Ready, Set, Go! Program (International Association of Fire Chiefs)](https://wildlandfirersg.org/)
+- [Ready, Set, Go! Program (International Association of Fire Chiefs, Wildfire Resilience Hub)](https://wildfire-iafchub.hub.arcgis.com/)
 - [Ready, Set, Go! Personal Wildland Fire Action Guide (PDF)](https://www.cabq.gov/fire/documents/rsg-guide-2018.pdf)
 - [Ready.gov: Wildfires](https://www.ready.gov/wildfires)
 - [NFPA Firewise USA: Reducing Wildfire Risks in the Home Ignition Zone (PDF)](https://cd.bentoncountyor.gov/wp-content/uploads/2023/12/18._final_hiz_fw_oct_2017_nfpa-compressed.pdf)
@@ -260,6 +282,6 @@ SMOKE
 
 ---
 
-Last reviewed: October 2026
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

@@ -1,424 +1,241 @@
 # Food Canning & Preservation
 
-> **Preserve Your Harvest** - Knowing how to safely preserve food can extend your food supply for months or even years. This guide covers proven methods for canning, dehydrating, smoking, and fermenting foods at home.
-
-## Why Food Preservation Matters
-
-In an emergency, preserved food provides:
-- Long-term food security beyond what fresh supplies offer
-- Nutritional variety through the winter or during supply disruptions
-- The ability to store surplus harvest from your garden
-- Independence from refrigeration during power outages
-- Bartering value with neighbors and community
-
----
-
-## Water Bath Canning
-
-Water bath canning is the simplest preservation method. It works for **high-acid foods only** (pH below 4.6).
-
-### Safe Foods for Water Bath Canning
-
-- Jams and jellies
-- Pickles (cucumbers, peppers, onions, green beans)
-- Tomatoes (with added acid)
-- Fruit in syrup or juice
-- Salsa (tested recipes only)
-- Relishes and chutneys
-- Fruit butters (apple, pear)
-
-### Equipment Needed
-
-- [ ] Large pot with lid (deep enough to cover jars by 1-2 inches of water)
-- [ ] Canning rack or towel for bottom of pot
-- [ ] Glass canning jars with two-piece lids (ring and flat seal)
-- [ ] Jar lifter or sturdy tongs
-- [ ] Wide-mouth funnel
-- [ ] Clean cloths and towels
-- [ ] Timer
-
-### Step-by-Step Water Bath Process
-
-1. **Inspect jars** - Check for cracks, chips, or damage. Discard damaged jars.
-2. **Wash everything** - Jars, lids, rings, utensils in hot soapy water.
-3. **Prepare your recipe** - Follow a tested recipe exactly. Do not alter proportions of acid, sugar, or water.
-4. **Heat jars** - Place clean jars in hot (not boiling) water to prevent thermal shock.
-5. **Fill jars** - Use funnel, leave headspace as specified (usually 1/4 to 1/2 inch).
-6. **Remove air bubbles** - Slide a knife or chopstick around inside edges.
-7. **Wipe rims** - Clean jar rims with a damp cloth. Any residue prevents sealing.
-8. **Apply lids** - Place flat lid on jar, screw ring on fingertip-tight (not over-tight).
-9. **Process** - Lower jars into boiling water. Water must cover lids by 1-2 inches. Start timer when water returns to a full boil.
-10. **Remove and cool** - Lift jars out, place on towel. Do not tilt. Let cool 12-24 hours undisturbed.
-11. **Check seals** - Press center of lid. If it does not flex, the seal is good. Refrigerate any unsealed jars and use within a week.
-
-### Common Processing Times
+> **A sealed lid is not proof of a safe jar.** Done by a tested method, home canning keeps food for a year with no power. Done by guesswork, it can grow botulism toxin that you cannot see, smell, or taste. The difference is the canner, the recipe, and your altitude.
 
-| Food | Pint Jars | Quart Jars |
-|------|-----------|------------|
-| Strawberry jam | 10 min | 15 min |
-| Dill pickles | 10 min | 15 min |
-| Tomatoes (with acid) | 35 min | 45 min |
-| Apple butter | 10 min | 10 min |
-| Peaches in syrup | 20 min | 25 min |
-| Salsa (tested recipe) | 15 min | 20 min |
-
-**Note:** Adjust processing times for altitude. Add 5 minutes for 1,001-6,000 feet. Add 10 minutes above 6,000 feet.
-
----
-
-## Pressure Canning
-
-Pressure canning is **required** for low-acid foods. Without it, the botulism toxin can develop in sealed jars. This is non-negotiable for safety.
-
-### Foods That Require Pressure Canning
-
-- All vegetables (green beans, corn, peas, carrots)
-- Meat (chicken, beef, pork, fish)
-- Poultry
-- Soups and stews
-- Beans (non-pickled)
-- Stock and broth
-
-### Equipment Needed
-
-- [ ] Pressure canner (NOT a pressure cooker - they are different)
-- [ ] Canning jars, lids, and rings
-- [ ] Jar lifter
-- [ ] Accurate timer
-- [ ] Clean cloths
-
-### Step-by-Step Pressure Canning
-
-1. **Prepare food and jars** as with water bath method.
-2. **Fill jars** leaving 1-inch headspace for most items.
-3. **Remove air bubbles** and wipe rims clean.
-4. **Apply lids** fingertip-tight.
-5. **Add 2-3 inches of hot water** to pressure canner.
-6. **Load jars** on rack inside canner. Jars should not touch each other or the sides.
-7. **Lock lid** following your canner's instructions.
-8. **Heat until steam vents** steadily from the vent pipe (10 minutes).
-9. **Close vent** (place weight on or close petcock).
-10. **Build pressure** to the required PSI for your recipe and altitude.
-11. **Start timer** when correct pressure is reached. Maintain steady pressure throughout.
-12. **When time is up**, turn off heat. Let pressure drop to zero naturally. **Do not force-cool.**
-13. **Wait 10 minutes** after pressure reaches zero, then open lid away from you.
-14. **Remove jars** and cool undisturbed for 12-24 hours.
-15. **Check seals** as with water bath method.
+## Start here
 
-### Standard Pressure and Times
+1. **Sort the food by acid.** High-acid foods (most fruit, jams, pickles, sauerkraut, acidified tomatoes) go in a boiling-water canner. Low-acid foods (all plain vegetables, meat, poultry, fish, dried beans, soups, stock) go in a pressure canner. No amount of boiling makes green beans safe.
+2. **Get a tested recipe before you buy produce:** the USDA Complete Guide to Home Canning, the National Center for Home Food Preservation (NCHFP), or your state extension service. Print it. You will not have the internet in an outage.
+3. **Find your elevation.** Above 1,000 ft (305 m) every process needs more time or more pressure.
+4. **Check the equipment:** Mason-type jars with no chips, new flat lids, a rack, and for low-acid food a pressure canner that holds at least 4 quart jars, with its dial gauge tested this year.
+5. **Follow the recipe as written.** Do not change the jar size, thicken the food, add extra vegetables, or cut the vinegar or lemon juice.
 
-| Food | PSI (0-1000 ft) | Pints | Quarts |
-|------|-----------------|-------|--------|
-| Green beans | 10 lbs | 20 min | 25 min |
-| Carrots | 10 lbs | 25 min | 30 min |
-| Corn (whole kernel) | 10 lbs | 55 min | 85 min |
-| Chicken (bone-in) | 10 lbs | 65 min | 75 min |
-| Beef chunks | 10 lbs | 75 min | 90 min |
-| Vegetable soup | 10 lbs | 60 min | 75 min |
+## Get emergency help if
 
-**Altitude adjustment:** At 1,001+ feet, increase to 15 lbs PSI for weighted-gauge canners.
+Botulism is a medical emergency. Call 911 (or your local emergency number) or go to an emergency room now if anyone who ate home-canned, home-fermented, or home-preserved food has:
 
----
+- Double or blurred vision, or drooping eyelids
+- Slurred speech, trouble swallowing, or a very dry mouth
+- Muscle weakness that spreads down the body
+- Trouble breathing
 
-## Botulism Prevention
+Symptoms usually start 12 to 36 hours after eating, but can appear anywhere from 4 hours to 8 days later (WHO). Vomiting, stomach pain, or diarrhea may come first, and there is usually no fever. Do not wait to see if it passes: the treatment is an antitoxin that works best when given early. Say that home-canned food was eaten.
 
-**Botulism is rare but deadly.** The toxin is produced by *Clostridium botulinum* in low-acid, anaerobic (sealed) environments.
+## Why canning works, and how it fails
 
-### Critical Safety Rules
+*Clostridium botulinum* spores live in soil and ride in on vegetables. They survive hours of boiling. Inside a sealed jar they find what they need: moist, low-acid food, almost no oxygen (under 2 percent), and a temperature between 40 and 120°F (4 to 49°C). In those conditions they can produce a deadly toxin within 3 to 4 days (NCHFP).
 
-- **Always use tested recipes** from USDA, Ball, or your state extension service
-- **Never alter acid, sugar, or water ratios** in canning recipes
-- **Always pressure can low-acid foods** - water bath is NOT sufficient
-- **Never use jars that did not seal** without refrigerating immediately
-- **Discard any jar** with a broken seal, bulging lid, off smell, or cloudy liquid
-- **Boil home-canned low-acid foods** for 10 minutes before tasting or eating (destroys the toxin if present)
-- **When in doubt, throw it out** - no food is worth the risk
-
-### Signs of Spoilage
+There are only two ways to stop them:
 
-- Lid is bulging or unsealed
-- Liquid is cloudy or murky
-- Food has unusual color or texture
-- Bubbles rising in the jar
-- Bad or off smell when opened
-- Mold visible on food or lid
-
----
-
-## Dehydrating Foods
-
-Dehydrating removes moisture so bacteria, mold, and yeast cannot grow. Dehydrated food is lightweight and stores compactly.
-
-### Methods
-
-**Electric dehydrator (best results):**
-- Even temperature control
-- Consistent air flow
-- Set temperature by food type
+- **Acid.** The bacteria cannot grow at a pH of 4.6 or lower. High-acid foods only need boiling to kill molds, yeasts, and ordinary bacteria.
+- **Heat above boiling.** Low-acid food must reach 240 to 250°F (116 to 121°C), which takes 10 to 15 pounds of steam pressure. Boiling water stops at 212°F (100°C) at sea level, and lower as you climb: 208°F at 2,000 ft, 204°F at 4,000 ft, 201°F at 6,000 ft.
 
-**Oven drying:**
-- Set to lowest temperature (170F or less)
-- Prop door open slightly for air circulation
-- Place food on racks or parchment-lined trays
-- Takes longer and uses more energy
-
-**Sun drying:**
-- Works in hot, dry climates (90F+, low humidity)
-- Place food on screens or racks in direct sun
-- Cover with cheesecloth to keep insects off
-- Bring indoors at night
-- Takes 2-4 days
-
-**Air drying:**
-- Best for herbs, hot peppers, and flowers
-- Bundle and hang upside down in dry, ventilated area
-- Takes 1-2 weeks
-
-### Dehydrating Guide
-
-| Food | Preparation | Temperature | Time |
-|------|------------|-------------|------|
-| Apples | Slice 1/4 inch, treat with lemon water | 135F | 8-12 hrs |
-| Tomatoes | Slice or halve | 135F | 8-14 hrs |
-| Jerky (beef) | Slice 1/4 inch with grain | 160F | 4-6 hrs |
-| Herbs | Remove stems | 95-105F | 2-4 hrs |
-| Bananas | Slice 1/4 inch | 135F | 8-12 hrs |
-| Green beans | Blanch 4 min, slice | 125F | 8-14 hrs |
-| Mushrooms | Slice 1/4 inch | 125F | 6-10 hrs |
-
-### Testing for Dryness
-
-- **Fruits** should be pliable but not sticky, no moisture when squeezed
-- **Vegetables** should be brittle or crisp
-- **Jerky** should bend and crack but not snap in half
-- **Herbs** should crumble easily
-
-### Storage
-
-- Cool completely before storing
-- Pack into airtight containers (mason jars, vacuum-sealed bags, zip-lock bags with air removed)
-- Store in cool, dark, dry place
-- Label with contents and date
-- Most dehydrated foods last 6-12 months (longer if vacuum sealed)
-
----
-
-## Smoking and Curing Meats
-
-Smoking and curing are ancient preservation methods that also add incredible flavor.
-
-### Cold Smoking vs. Hot Smoking
-
-| | Cold Smoking | Hot Smoking |
-|---|---|---|
-| Temperature | Below 90F | 126-275F |
-| Duration | Hours to days | 1-8 hours |
-| Result | Preserved, not cooked | Cooked and smoked |
-| Best for | Bacon, salmon, sausage | Ribs, chicken, fish |
-| Requires curing first? | Yes | Optional |
-
-### Basic Dry Cure for Meat
-
-**Ingredients:**
-- 1 pound kosher salt
-- 8 ounces sugar
-- 2 ounces curing salt (#1 pink salt - 6.25% sodium nitrite)
-
-**Process:**
-1. Mix cure thoroughly
-2. Coat meat completely with cure mixture
-3. Place in non-reactive container (glass, plastic, stainless)
-4. Refrigerate or keep below 40F
-5. Cure time: approximately 7 days per inch of thickness
-6. Rinse thoroughly after curing
-7. Pat dry and allow to form a pellicle (tacky surface) before smoking
-
-### Simple Hot Smoking
-
-1. Soak wood chips in water for 30 minutes (hickory, apple, cherry, or oak)
-2. Set up smoker or grill for indirect heat
-3. Maintain temperature between 200-275F
-4. Place cured or seasoned meat on rack
-5. Add soaked wood chips to coals or smoker box
-6. Smoke until internal temperature reaches safe level:
-   - Poultry: 165F
-   - Pork: 145F
-   - Beef: 145F
-   - Fish: 145F
-7. Cool and store refrigerated (1-2 weeks) or frozen (2-3 months)
-
----
-
-## Fermentation Basics
-
-Fermentation uses beneficial bacteria to preserve food while adding probiotics and enhancing nutrition.
-
-### Sauerkraut
-
-**Ingredients:**
-- 1 medium cabbage (about 3 lbs)
-- 1.5 tablespoons kosher salt
-
-**Process:**
-1. Remove outer leaves and core from cabbage
-2. Shred cabbage finely
-3. Toss with salt in a large bowl
-4. Massage and squeeze cabbage for 5-10 minutes until it releases liquid
-5. Pack tightly into a clean jar, pressing down so liquid covers the cabbage
-6. Place a weight on top to keep cabbage submerged (a zip-lock bag filled with brine works)
-7. Cover loosely (gas needs to escape)
-8. Keep at room temperature (60-75F)
-9. Press down daily to keep cabbage under liquid
-10. Taste after 7 days - ferment 2-6 weeks to your preference
-11. Move to cold storage when flavor is right
-
-### Kimchi (Basic Version)
-
-**Ingredients:**
-- 1 napa cabbage, chopped
-- 2 tablespoons salt
-- 2 tablespoons red pepper flakes (gochugaru if available)
-- 4 cloves garlic, minced
-- 1 tablespoon grated ginger
-- 2 green onions, sliced
-- 1 tablespoon fish sauce or soy sauce (optional)
-
-**Process:**
-1. Salt cabbage and let sit 2 hours, then rinse and drain
-2. Mix pepper flakes, garlic, ginger, onions, and sauce into a paste
-3. Toss cabbage with paste until evenly coated
-4. Pack into jar, press down to submerge in liquid
-5. Ferment at room temperature 3-7 days
-6. Taste daily - refrigerate when desired flavor is reached
-
-### Fermented Pickles
-
-**Ingredients:**
-- Small firm cucumbers
-- 3 tablespoons kosher salt per quart of water
-- Garlic cloves, dill, peppercorns (optional)
-
-**Process:**
-1. Dissolve salt in water to make brine
-2. Pack cucumbers tightly in a jar with garlic and spices
-3. Pour brine over cucumbers until fully submerged
-4. Weight down to keep under brine
-5. Ferment at room temperature 3-7 days
-6. Refrigerate when sour enough for your taste
-
-### Fermentation Safety
-
-- **Always keep food submerged** under liquid - exposed food will mold
-- **Mold on the surface** can be skimmed off if the food below the liquid smells and looks fine
-- **Discard** if the food smells rotten (not just sour), is slimy, or has unusual colors
-- Fermented foods should smell tangy and pleasantly sour
-- Use clean equipment but perfect sterilization is not required
-
----
+| Food | Acid level | Canner |
+|------|-----------|--------|
+| Most fruit, jams, jellies, marmalades, fruit butters | High | Boiling water |
+| Pickles, relishes, sauerkraut (tested recipes) | High, from vinegar or fermenting | Boiling water |
+| Tomatoes | Borderline: some are above pH 4.6 | Either, but always add acid (below) |
+| Vegetables: green beans, corn, carrots, potatoes, peas, beets | Low | Pressure only |
+| Meat, poultry, fish, seafood | Low | Pressure only |
+| Dried beans, soups, stews, stock | Low | Pressure only |
+| Salsa and other mixtures | Depends on the proportions | Tested recipe only |
+
+**Tomatoes need added acid in every canner.** Per quart: 2 tablespoons bottled lemon juice, or 1/2 teaspoon citric acid, or 4 tablespoons of 5 percent vinegar. Per pint: half of those amounts. Use bottled juice, not fresh: its acidity is standardized.
+
+## Boiling-Water Canning (High-Acid Foods)
+
+1. **Set up.** Put the rack in the canner and fill it about halfway. Preheat the water to 140°F (60°C) for raw-packed food or 180°F (82°C) for hot-packed food. If the recipe's process time is under 10 minutes (some jams and pickles), sterilize the empty jars first: boil them 10 minutes, plus 1 minute per 1,000 ft of elevation above 1,000 ft.
+2. **Fill the jars** as the recipe says. Leave the stated headspace: usually 1/4 inch (6 mm) for jams and jellies, 1/2 inch (13 mm) for fruit and tomatoes. Remove air bubbles, wipe the rim, set the lid, and screw the band on as the lid maker directs.
+3. **Load upright** with a jar lifter. Add boiling water until it stands at least 1 inch (2.5 cm) over the jar tops, or 2 inches (5 cm) if the process runs longer than 30 minutes.
+4. **Bring to a vigorous boil, then start the timer.** Keep the lid on and a full gentle boil going the whole time. Top up with boiling water if needed.
+5. **If the boil stops, start the full time over** once it is boiling hard again.
+6. **Finish.** Turn off the heat, take off the lid, wait 5 minutes, then lift the jars straight up and set them on a towel with 1 inch between them, away from drafts.
+7. **Leave them alone for 12 to 24 hours.** Do not retighten bands or press the lids.
+
+An atmospheric steam canner can stand in for a boiling-water canner for high-acid foods, using the same tested recipe, but only when the process time (after altitude adjustment) is 45 minutes or less, because it can boil dry.
+
+## Pressure Canning (Low-Acid Foods)
+
+**The canner matters.** USDA processes were developed for stovetop pressure canners that hold at least 4 quart jars upright on a rack. The slow heat-up and natural cool-down are part of the kill time. Small pressure cookers and electric multi-cookers cool too fast and have not been tested; NCHFP does not recommend its canning processes for them, even if the appliance has a "canning" button.
+
+**Gauges.** A weighted gauge needs no testing. A dial gauge must be checked for accuracy every year (many county extension offices do it) and replaced if it is off by more than 2 pounds. A gauge that reads high gives you under-processed food.
+
+1. **Set up.** Put the rack and 2 to 3 inches (5 to 8 cm) of hot water in the canner, unless the recipe says otherwise.
+2. **Load the filled jars** (headspace is usually 1 to 1 1/4 inches, 2.5 to 3 cm). Fasten the lid. Leave the weight off or the petcock open.
+3. **Vent for 10 minutes.** Heat on high until steam flows freely from the vent, then let it blow for a full 10 minutes. Air trapped in the canner lowers the temperature at any given pressure.
+4. **Pressurize.** Put the weight on or close the petcock. Start timing when the dial reaches the target, or when the weight jiggles or rocks as the maker describes.
+5. **Hold steady** at or slightly above the target. **If the pressure ever drops below it, bring it back up and start the full time over.**
+6. **Cool naturally.** Turn off the heat and wait for the canner to drop to zero by itself. Never run cold water over it or open the vent early.
+7. **Open.** Remove the weight, wait 10 minutes, then lift the lid so it tilts away from your face. Cool the jars 12 to 24 hours.
+
+NCHFP warns against running a pressure canner on an outdoor propane burner or a gas range burner rated over 12,000 BTU.
+
+## Altitude: The Adjustment People Skip
+
+Water boils cooler as you go up, so a sea-level process under-heats the food. Boiling-water recipes add minutes. Pressure recipes add pounds. Two examples from NCHFP show how a tested recipe reads. They are examples only: every food, pack style, and jar size has its own numbers. Never borrow a time from another food.
+
+**Example 1: peaches, halved or sliced, boiling-water canner (minutes)**
+
+| Pack and jar | 0 to 1,000 ft | 1,001 to 3,000 ft | 3,001 to 6,000 ft | Above 6,000 ft |
+|--------------|---------------|-------------------|-------------------|----------------|
+| Hot pack, pints | 20 | 25 | 30 | 35 |
+| Hot pack, quarts | 25 | 30 | 35 | 40 |
+| Raw pack, pints | 25 | 30 | 35 | 40 |
+| Raw pack, quarts | 30 | 35 | 40 | 45 |
+
+**Example 2: snap green beans, pressure canner (pints 20 minutes, quarts 25 minutes)**
+
+| Gauge type | Elevation | Pressure |
+|------------|-----------|----------|
+| Dial | 0 to 2,000 ft | 11 lb |
+| Dial | 2,001 to 4,000 ft | 12 lb |
+| Dial | 4,001 to 6,000 ft | 13 lb |
+| Dial | 6,001 to 8,000 ft | 14 lb |
+| Weighted | 0 to 1,000 ft | 10 lb |
+| Weighted | Above 1,000 ft | 15 lb |
+
+(1,000 ft is 305 m. One pound of pressure is about 6.9 kPa.) NCHFP's own note on green beans: there is no safe option for processing them in a boiling-water canner.
+
+## Methods That Are Not Safe
+
+| Method | Why it fails |
+|--------|--------------|
+| Open-kettle canning (hot food into jars, lid on, no processing) | The sealed jar is never heat-processed; the lid may still seal over live spoilage organisms |
+| Oven, microwave, or dishwasher "canning" | Not tested processes; NCHFP says they do not prevent spoilage |
+| Boiling-water canning of vegetables, meat, or beans | 212°F does not kill botulism spores |
+| Electric multi-cookers and small pressure cookers | Untested; cool too quickly |
+| "Dry canning" vegetables without liquid, or oven-heating dry goods in jars | Under-processing and a botulism risk; not a tested method |
+| Canning powders | Useless as preservatives |
+| Changing a recipe: less vinegar, extra onions or peppers, thickeners, bigger jars | Changes the acid level or how fast heat reaches the center |
+| Reusing flat lids; wire-bail or zinc-cap jars | Not recommended; use new two-piece lids each time |
+
+## After Processing
+
+**Test every seal** after 12 to 24 hours, with the bands off. Press the center of the lid: it should not spring back. Tap it with a spoon: a clear ring is good, a dull thud is not. Look across it at eye level: it should curve slightly down.
+
+**A jar that did not seal** can be reprocessed within 24 hours with a new lid for the full original time, refrigerated and eaten within several days, or frozen.
+
+**Store jars** washed, labeled with contents and date, and with the bands off, so a failed seal shows and the bands do not rust on. Keep them clean, cool, dark, and dry: 50 to 70°F (10 to 21°C) is best, and never above 95°F (35°C). For best quality, can no more than you will eat in a year. Home-canned jars that touched floodwater must be thrown out.
+
+## Before You Open a Jar
+
+Look first. Throw the jar out, without tasting, if you see:
+
+- A lid that is loose, bulging, or flat when it should be dipped
+- Dried streaks of food running down from under the lid
+- Rising bubbles or an unnatural color
+- Liquid that spurts, or an off smell, when opened
+- Cotton-like mold on the food or under the lid
+
+**Low-acid foods and tomatoes can carry the toxin with no sign at all.** If you are not certain a jar of vegetables, meat, or tomatoes was canned by current USDA methods (a gift, an old family recipe, your own early batches), CDC and NCHFP say to boil it before eating: 10 minutes below 1,000 ft, plus 1 minute for each additional 1,000 ft. Boiling destroys the toxin. It is a last layer of protection, not a rescue: food that shows spoilage, or that was badly under-processed (vegetables done in boiling water, for example), goes in the trash.
+
+**Getting rid of a suspect jar:**
+
+- **Still sealed:** put it in a heavy garbage bag, close the bag, and put it in the regular trash. Do not open it.
+- **Unsealed, open, or leaking:** detoxify it first. Wearing disposable gloves, lay the jar and lid on their sides in a pot of 8 quarts or more, add water gently until it covers them by 1 inch, cover, and boil 30 minutes. Cool, then discard jar, lid, and food.
+- **Spills:** wet the area with 1 part unscented household bleach to 5 parts water and leave it 30 minutes. Wipe up with paper towels and bag them. Apply the bleach again for 30 minutes, then rinse. Throw the gloves away.
+
+## Canning When the Power Is Out
+
+Canning is harvest-season preparation, not an outage activity. It needs a steady, adjustable burner for the whole process, plenty of clean water, and fuel. A gas range you can light by hand will do it. A campfire cannot give the steady, adjustable heat the process depends on. If the freezer is thawing, canning its contents is rarely the right call: cook and eat what is still cold, share the rest, and see the Food Safety Without Refrigeration guide. For methods that need no jars at all, see the Preserving Food Without Electricity guide.
 
 ## Equipment Checklist
 
-### Water Bath Canning
+- [ ] Printed tested recipes (USDA guide or extension bulletins)
+- [ ] Your elevation, written inside the canner lid or on a card
+- [ ] Boiling-water canner or deep pot with a lid and rack
+- [ ] Pressure canner holding at least 4 quart jars, with rack
+- [ ] Dial gauge tested this year, or a weighted gauge
+- [ ] Mason-type jars, checked for nicks and cracks
+- [ ] New flat lids; clean, rust-free bands
+- [ ] Jar lifter, wide-mouth funnel, bubble remover, clean cloths
+- [ ] Timer and thermometer
+- [ ] Bottled lemon juice or citric acid for tomatoes
+- [ ] Marker and labels
 
-- [ ] Large stockpot (at least 12-quart)
-- [ ] Canning rack or folded towel
-- [ ] Mason jars (pint and quart sizes)
-- [ ] New flat lids for each use (rings are reusable)
-- [ ] Jar lifter
-- [ ] Wide-mouth funnel
-- [ ] Tested recipe source
+## Practice
 
-### Pressure Canning
+**10-minute drill:** Look up your elevation (a topographic map, your town's website, or the altimeter in a phone's compass app). Write it on a card with three lines from this guide: your boiling-water altitude band, your dial-gauge pressure for the green bean example, and your weighted-gauge pressure. Tape the card where the canner lives. Then take three jars off your shelf and run the seal tests on each: press, tap, and look.
 
-- [ ] Pressure canner with accurate gauge
-- [ ] Mason jars with lids and rings
-- [ ] Jar lifter
-- [ ] Timer
+**What would you do?**
 
-### Dehydrating
+1. *A neighbor gives you six quarts of home-canned green beans. The lids are tight. She mentions she boiled the jars for three hours, the way her mother did.*
 
-- [ ] Dehydrator or oven with low-temperature setting
-- [ ] Drying racks or parchment paper
-- [ ] Sharp knife or mandoline
-- [ ] Airtight storage containers
-- [ ] Vacuum sealer (optional but extends shelf life)
+   **Answer:** Do not eat them and do not taste them. Green beans are low-acid, botulism spores survive hours of boiling, and a tight seal only proves the jar is airtight, which is what the bacteria want. This is badly under-processed food, so the boil-before-eating rule does not make it safe. Bag the sealed jars and put them in the trash unopened. You can thank her without eating them.
 
-### Smoking
+2. *You are 40 minutes into a 75-minute pressure process when you notice the dial has slipped 2 pounds under the target. It may have been there for a minute.*
 
-- [ ] Smoker, charcoal grill, or DIY smokehouse
-- [ ] Wood chips (untreated hardwood only)
-- [ ] Meat thermometer
-- [ ] Curing salt (#1 pink salt)
-- [ ] Kosher salt
+   **Answer:** Bring the canner back to pressure and time the full 75 minutes again from zero. The tempting fix is to add a few minutes, but process times assume the temperature held the whole way. The food may be softer. It will be safe.
 
----
+3. *You live at 5,200 ft. Your grandmother's recipe card for green beans says 10 pounds. Your canner has a weighted gauge with 5, 10, and 15 pound settings.*
 
-## Tested Starter Recipes
+   **Answer:** Use 15 pounds, for the time a current tested recipe gives. A weighted gauge cannot be set in between, so above 1,000 ft you step up from 10 to 15. Sea-level pressure at 5,200 ft never reaches 240°F inside the jars. With a dial gauge the same beans would need 13 pounds. Take the time from a current tested recipe too, not from the card: CDC says to use current times and pressures for older recipes.
 
-### Basic Strawberry Jam
+## Quick Reference
 
-- 4 cups crushed strawberries
-- 4 cups sugar
-- 1 package powdered pectin
+```
+HIGH-ACID -> BOILING WATER
+  fruit, jam, pickles, kraut,
+  tomatoes WITH added acid
+LOW-ACID -> PRESSURE CANNER ONLY
+  vegetables, meat, fish, beans,
+  soup, stock
 
-1. Combine berries and pectin in pot, bring to a rolling boil
-2. Add sugar, return to boil for 1 minute
-3. Skim foam, ladle into hot jars (1/4 inch headspace)
-4. Water bath process: 10 minutes
+TOMATOES, PER QUART:
+  2 Tbsp bottled lemon juice
+  or 1/2 tsp citric acid
 
-### Dill Pickles
+BOILING WATER: 1 in. over jars
+  Time starts at full boil
+  Boil stops = start time over
 
-- 4 lbs pickling cucumbers
-- 6 cups water, 3 cups white vinegar, 6 tablespoons canning salt
-- Fresh dill, garlic cloves, peppercorns
+PRESSURE: vent 10 min first
+  Weighted: 10 lb; 15 above 1,000 ft
+  Dial: see recipe table (11-14 lb)
+  Pressure drops = start time over
+  Cool down naturally
 
-1. Pack cucumbers in hot jars with dill, garlic, and peppercorns
-2. Bring brine to boil, pour over cucumbers (1/2 inch headspace)
-3. Water bath process: 10 minutes (pints), 15 minutes (quarts)
+ABOVE 1,000 FT: ADJUST. ALWAYS.
 
-### Canned Tomatoes (Whole or Crushed)
+SEALS: 12-24 h, bands off,
+  lid dipped, no spring
+STORE: 50-70 F, dark, dry, 1 year
 
-- Fresh ripe tomatoes
-- 2 tablespoons bottled lemon juice per quart (1 tablespoon per pint)
+SUSPECT JAR: NEVER TASTE
+  Sealed: bag it, trash it
+  Open/leaking: boil 30 min first
+  Spill: bleach 1:5, 30 min, twice
 
-1. Blanch tomatoes in boiling water 60 seconds, peel
-2. Pack into jars, add lemon juice
-3. Add hot water leaving 1/2 inch headspace
-4. Water bath process: 45 minutes (quarts), 35 minutes (pints)
+BOTULISM SIGNS: double vision,
+  drooping lids, slurred speech,
+  weakness, hard to breathe
+  -> 911 NOW
+```
 
----
+## Sources
 
-## Storage and Labeling
-
-### Labeling Best Practices
-
-Every jar should have:
-- **Contents** (exactly what is inside)
-- **Date processed**
-- **Batch number** (if making multiple batches)
-- **Processing method** (WB or PC)
-
-### Storage Conditions
-
-- Cool (50-70F ideal), dark, and dry
-- Avoid temperature fluctuations
-- Do not store in direct sunlight
-- Do not stack jars more than two high
-- Check seals periodically (monthly)
-- Use oldest jars first (first in, first out)
-
-### Shelf Life
-
-| Method | Typical Shelf Life |
-|--------|-------------------|
-| Water bath canned (high acid) | 12-18 months |
-| Pressure canned (low acid) | 12-18 months |
-| Dehydrated foods | 6-12 months (vacuum sealed: 1-2 years) |
-| Smoked meats (refrigerated) | 1-2 weeks |
-| Smoked meats (frozen) | 2-3 months |
-| Fermented vegetables (refrigerated) | 4-6 months |
+- [NCHFP: USDA Complete Guide to Home Canning (2015 revision)](https://nchfp.uga.edu/resources/category/usda-guide)
+- [NCHFP: Ensuring Safe Canned Foods](https://nchfp.uga.edu/how/can/general-information/ensuring-safe-canned-foods/)
+- [NCHFP: Using Boiling Water Canners](https://nchfp.uga.edu/how/can/general-information/using-boiling-water-canners/)
+- [NCHFP: Using Pressure Canners](https://nchfp.uga.edu/how/can/general-information/using-pressure-canners/)
+- [NCHFP: Selecting the Correct Processing Time](https://nchfp.uga.edu/how/can/general-information/selecting-the-correct-processing-time/)
+- [NCHFP: Snap and Italian Beans](https://nchfp.uga.edu/how/can/canning-vegetables-and-vegetable-products/beans-snap-and-italian-pieces-green-and-wax/)
+- [NCHFP: Tomato Acidification Directions](https://nchfp.uga.edu/how/can/how-do-i-can-tomatoes/tomato-acidification-directions/)
+- [NCHFP: Equipment and Methods Not Recommended](https://nchfp.uga.edu/how/can/general-information/equipment-and-methods-not-recommended/)
+- [NCHFP: Can I Can in a Multi-Cooker?](https://nchfp.uga.edu/blog/can-i-can-in-a-multi-cooker)
+- [NCHFP: Recommended Jars and Lids](https://nchfp.uga.edu/how/can/general-information/recommended-jars-and-lids/)
+- [NCHFP: Cooling Jars and Testing Jar Seals](https://nchfp.uga.edu/how/can/general-information/cooling-jars-and-testing-jar-seals/)
+- [NCHFP: Storing Home Canned Foods](https://nchfp.uga.edu/how/can/general-information/storing-home-canned-foods/)
+- [NCHFP: Identifying and Handling Spoiled Canned Food](https://nchfp.uga.edu/how/can/general-information/identifying-and-handling-spoiled-canned-food/)
+- [NCHFP: For Safety's Sake](https://nchfp.uga.edu/how/can/general-information/for-safetys-sake/)
+- [NCHFP: Temperatures at Which Water Boils at Different Elevations](https://nchfp.uga.edu/how/can/general-information/temperatures-at-which-water-boils-at-different-elevations/)
+- [CDC: Home-Canned Foods and Botulism](https://www.cdc.gov/botulism/prevention/home-canned-foods.html)
+- [CDC: Botulism Symptoms](https://www.cdc.gov/botulism/signs-symptoms/index.html)
+- [WHO: Botulism Fact Sheet](https://www.who.int/news-room/fact-sheets/detail/botulism)
+- [Oregon State University Extension: Using Steam Canners](https://extension.oregonstate.edu/food/preservation/using-steam-canners-process-high-acid-or-acidified-foods-sp50-1005)
 
 ---
 
-*Last updated: March 2026*
+Last reviewed: November 2026
+
 *License: CC-BY-SA 4.0*

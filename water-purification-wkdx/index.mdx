@@ -1,375 +1,119 @@
-{/* Water Purification - Advanced Interactive Guide */}
-
-import { useState } from 'react'
-import { Droplets, Flame, FlaskConical, Sun, Filter, ThermometerSun, Mountain, AlertTriangle, CheckCircle, Clock, Beaker } from 'lucide-react'
-
-export const CriticalInfo = ({ children }) => (
-  <div className="bg-blue-900/20 border-2 border-blue-500 rounded-lg p-4 my-4 text-blue-100">
-    <div className="flex items-center gap-2 text-blue-400 font-bold mb-2">
-      <Droplets className="w-6 h-6" />
-      <span className="text-lg">CRITICAL - WATER IS LIFE</span>
-    </div>
-    {children}
-  </div>
-)
-
-export const MethodSelector = () => {
-  const [situation, setSituation] = useState(null)
-
-  const situations = [
-    { id: 'fire', label: 'I have fire/fuel available', icon: '🔥', method: 'boiling' },
-    { id: 'bleach', label: 'No fuel, but I have unscented bleach', icon: '🧴', method: 'bleach' },
-    { id: 'hiking', label: 'Backpacking/hiking', icon: '🎒', method: 'filter' },
-    { id: 'emergency', label: 'Building an emergency kit', icon: '🆘', method: 'kit' },
-    { id: 'sunny', label: 'No fuel or chemicals, but it is sunny', icon: '☀️', method: 'sodis' },
-    { id: 'saltwater', label: 'Only saltwater available', icon: '🌊', method: 'distillation' },
-    { id: 'chemicals', label: 'Water may contain fuel or chemicals', icon: '☣️', method: 'avoid' },
-  ]
-
-  const recommendations = {
-    boiling: { name: 'Boiling', desc: 'Most reliable: kills bacteria, viruses, and parasites. Rolling boil for 1 minute (3 minutes above 5,000 ft).', icon: <Flame className="w-8 h-8" /> },
-    bleach: { name: 'Household Bleach', desc: 'Per gallon: 8 drops of 6% or 6 drops of 8.25% unscented bleach. Double it if cloudy, colored, or very cold. Wait 30 minutes.', icon: <Droplets className="w-8 h-8" /> },
-    filter: { name: 'Filter + Chemical Backup', desc: 'A 0.3-micron (or smaller) filter removes bacteria and parasites. Add chlorine or chlorine dioxide afterward to cover viruses.', icon: <Filter className="w-8 h-8" /> },
-    kit: { name: 'Chlorine Dioxide Tablets + Bleach + Filter', desc: 'Light and long-lasting. Replace bleach yearly; chlorine dioxide is the only common chemical that handles Cryptosporidium (with a long wait).', icon: <FlaskConical className="w-8 h-8" /> },
-    sodis: { name: 'Solar Disinfection (SODIS)', desc: 'Clear water in clear PET bottles (2 L or smaller): 6 hours of sun, or 2 days if more than half cloudy. Slower and less certain than boiling.', icon: <Sun className="w-8 h-8" /> },
-    distillation: { name: 'Distillation', desc: 'Removes salt. Boiling, chemicals, and ordinary filters do not. A reverse-osmosis desalinator also works.', icon: <Beaker className="w-8 h-8" /> },
-    avoid: { name: "Don't Treat It - Find Another Source", desc: "Boiling and disinfectants don't remove fuel or toxic chemicals. Use stored or bottled water and contact the health department.", icon: <AlertTriangle className="w-8 h-8" /> },
-  }
-
-  return (
-    <div className="my-6 p-4 bg-gray-800/50 rounded-lg">
-      <h4 className="text-lg font-bold text-blue-300 mb-4">What's your situation?</h4>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-4">
-        {situations.map(s => (
-          <button
-            key={s.id}
-            onClick={() => setSituation(s.method)}
-            className={`p-3 rounded-lg text-left transition-all flex items-center gap-3 ${
-              situation === s.method
-                ? 'bg-blue-600 ring-2 ring-blue-400'
-                : 'bg-gray-700 hover:bg-gray-600'
-            }`}
-          >
-            <span className="text-2xl">{s.icon}</span>
-            <span>{s.label}</span>
-          </button>
-        ))}
-      </div>
-
-      {situation && (
-        <div className="mt-4 p-4 bg-green-900/30 border border-green-500 rounded-lg animate-fade-in">
-          <div className="flex items-center gap-3 text-green-400">
-            {recommendations[situation].icon}
-            <div>
-              <p className="font-bold text-xl">{recommendations[situation].name}</p>
-              <p className="text-green-200">{recommendations[situation].desc}</p>
-            </div>
-          </div>
-        </div>
-      )}
-    </div>
-  )
-}
-
-export const AltitudeCalculator = () => {
-  const [altitude, setAltitude] = useState(0)
-
-  // CDC: 3 minutes above 6,500 ft. EPA: 3 minutes above 5,000 ft.
-  // Using 5,000 ft satisfies both.
-  const getBoilTime = (alt) => {
-    if (alt < 5000) return 1
-    return 3
-  }
-
-  const getBoilTemp = (alt) => {
-    // USDA FSIS: the boiling point drops just under 1°F per 500 ft of elevation.
-    return Math.round(212 - (alt / 500) * 0.9)
-  }
-
-  const altitudes = [
-    { value: 0, label: 'Sea Level' },
-    { value: 5000, label: '5,000 ft' },
-    { value: 6500, label: '6,500 ft' },
-    { value: 10000, label: '10,000 ft' },
-    { value: 15000, label: '15,000 ft' },
-  ]
-
-  return (
-    <div className="my-6 p-4 bg-gray-800/50 rounded-lg">
-      <div className="flex items-center gap-2 text-amber-400 font-bold mb-4">
-        <Mountain className="w-6 h-6" />
-        <h4 className="text-lg">Altitude Boiling Calculator</h4>
-      </div>
-
-      <div className="flex flex-wrap gap-2 mb-4">
-        {altitudes.map(a => (
-          <button
-            key={a.value}
-            onClick={() => setAltitude(a.value)}
-            className={`px-4 py-2 rounded-lg transition-all ${
-              altitude === a.value
-                ? 'bg-amber-600 text-white'
-                : 'bg-gray-700 hover:bg-gray-600'
-            }`}
-          >
-            {a.label}
-          </button>
-        ))}
-      </div>
-
-      <div className="grid md:grid-cols-3 gap-4">
-        <div className="p-4 bg-gray-900/50 rounded-lg text-center">
-          <p className="text-gray-400 text-sm">Boiling Point (approx.)</p>
-          <p className="text-3xl font-mono font-bold text-amber-400">{getBoilTemp(altitude)}°F</p>
-          <p className="text-gray-500 text-sm">{Math.round((getBoilTemp(altitude) - 32) * 5/9)}°C</p>
-        </div>
-        <div className="p-4 bg-gray-900/50 rounded-lg text-center">
-          <p className="text-gray-400 text-sm">Required Boil Time</p>
-          <p className="text-3xl font-mono font-bold text-orange-400">{getBoilTime(altitude)} min</p>
-          <p className="text-gray-500 text-sm">rolling boil</p>
-        </div>
-        <div className="p-4 bg-gray-900/50 rounded-lg text-center">
-          <p className="text-gray-400 text-sm">Altitude</p>
-          <p className="text-3xl font-mono font-bold text-blue-400">{altitude.toLocaleString()}</p>
-          <p className="text-gray-500 text-sm">feet</p>
-        </div>
-      </div>
-
-      {altitude >= 5000 && (
-        <div className="mt-4 p-3 bg-amber-900/30 border border-amber-500 rounded-lg text-amber-200 text-sm">
-          <AlertTriangle className="w-4 h-4 inline mr-2" />
-          {altitude < 6500
-            ? 'CDC uses 6,500 ft as the cutoff for a 3-minute boil; EPA uses 5,000 ft. Boil for 3 minutes to satisfy both.'
-            : 'At high altitude, water boils at a lower temperature. Boil for 3 minutes.'}
-        </div>
-      )}
-    </div>
-  )
-}
-
-export const MethodSteps = ({ method }) => {
-  const [currentStep, setCurrentStep] = useState(0)
-
-  const methods = {
-    boiling: {
-      title: 'Boiling Method',
-      icon: <Flame className="w-6 h-6" />,
-      steps: [
-        { title: 'Collect Water', desc: 'Gather water in a heat-safe container (metal pot, kettle)' },
-        { title: 'Clear It', desc: 'If cloudy, let it settle, then pour through a clean cloth, paper towel, or coffee filter' },
-        { title: 'Heat to Rolling Boil', desc: 'Large bubbles break the surface continuously, even when stirred' },
-        { title: 'Keep Boiling', desc: '1 minute; 3 minutes if you are above 5,000 ft (about 1,500 m)' },
-        { title: 'Cool & Store', desc: 'Let cool with a lid on, then store in clean, covered containers' },
-      ]
-    },
-    chemical: {
-      title: 'Household Bleach (EPA Method)',
-      icon: <FlaskConical className="w-6 h-6" />,
-      steps: [
-        { title: 'Clear the Water', desc: 'If cloudy, let it settle, then filter through a clean cloth, paper towel, or coffee filter' },
-        { title: 'Check Your Bleach', desc: 'Regular unscented bleach labeled for disinfection, under a year old. No scented, color-safe, or added-cleaner types' },
-        { title: 'Add Bleach', desc: 'Per gallon: 8 drops of 6% or 6 drops of 8.25%. Per quart or liter: 2 drops. Double it if cloudy, colored, or very cold' },
-        { title: 'Stir and Wait 30 Minutes', desc: 'Minimum contact time for disinfection' },
-        { title: 'Smell Check', desc: 'A slight chlorine smell means it is ready. No smell? Repeat the dose and wait 15 more minutes. Still none? Find another source' },
-      ]
-    },
-    sodis: {
-      title: 'Solar Disinfection (SODIS)',
-      icon: <Sun className="w-6 h-6" />,
-      steps: [
-        { title: 'Get Clear Bottles', desc: 'Clear PET plastic bottles, 2 liters or smaller, without deep scratches' },
-        { title: 'Check Clarity', desc: 'Set the filled bottle on a newspaper headline and look down through it. Can not read it? Filter or settle the water first' },
-        { title: 'Fill & Cap', desc: 'Fill the bottle completely and close it tightly' },
-        { title: 'Place in Sunlight', desc: 'Lay bottles on their side in full sun, ideally on a roof or metal sheet, away from shade' },
-        { title: 'Wait', desc: '6 hours if clear or up to half cloudy; 2 days in a row if more cloudy. Not reliable in continuous rain' },
-      ]
-    }
-  }
-
-  const current = methods[method] || methods.boiling
-
-  return (
-    <div className="my-6 p-4 bg-gray-800/50 rounded-lg">
-      <div className="flex items-center gap-2 text-green-400 font-bold mb-4">
-        {current.icon}
-        <h4 className="text-lg">{current.title}</h4>
-      </div>
-
-      <div className="flex justify-between mb-4 gap-1">
-        {current.steps.map((step, i) => (
-          <button
-            key={i}
-            onClick={() => setCurrentStep(i)}
-            aria-label={`Step ${i + 1}: ${step.title}`}
-            className={`flex-1 h-2 rounded-full transition-all ${
-              i === currentStep
-                ? 'bg-green-500'
-                : i < currentStep
-                  ? 'bg-green-700'
-                  : 'bg-gray-600'
-            }`}
-          />
-        ))}
-      </div>
-
-      <div className="p-4 bg-gray-900/50 rounded-lg min-h-[120px]">
-        <div className="flex items-center gap-2 mb-2">
-          <span className="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center font-bold">
-            {currentStep + 1}
-          </span>
-          <h5 className="text-xl font-bold text-green-300">{current.steps[currentStep].title}</h5>
-        </div>
-        <p className="text-gray-300 ml-10">{current.steps[currentStep].desc}</p>
-      </div>
-
-      <div className="flex justify-between mt-4">
-        <button
-          onClick={() => setCurrentStep(Math.max(0, currentStep - 1))}
-          className="px-4 py-2 bg-gray-600 rounded hover:bg-gray-500 disabled:opacity-50"
-          disabled={currentStep === 0}
-        >
-          Previous
-        </button>
-        <span className="text-gray-400 self-center">
-          Step {currentStep + 1} of {current.steps.length}
-        </span>
-        <button
-          onClick={() => setCurrentStep(Math.min(current.steps.length - 1, currentStep + 1))}
-          className="px-4 py-2 bg-green-600 rounded hover:bg-green-500 disabled:opacity-50"
-          disabled={currentStep === current.steps.length - 1}
-        >
-          Next
-        </button>
-      </div>
-    </div>
-  )
-}
-
-export const EffectivenessChart = () => {
-  // Qualitative ratings from CDC (backcountry treatment guide, Yellow Book, home treatment systems).
-  const methods = [
-    { name: 'Boiling', bacteria: 'yes', viruses: 'yes', giardia: 'yes', crypto: 'yes', chemicals: 'no' },
-    { name: 'Bleach (chlorine)', bacteria: 'yes', viruses: 'yes', giardia: 'partial', crypto: 'no', chemicals: 'no' },
-    { name: 'Iodine', bacteria: 'yes', viruses: 'yes', giardia: 'partial', crypto: 'no', chemicals: 'no' },
-    { name: 'Chlorine dioxide', bacteria: 'yes', viruses: 'yes', giardia: 'yes', crypto: 'partial', chemicals: 'no' },
-    { name: 'UV device (clear water)', bacteria: 'yes', viruses: 'yes', giardia: 'yes', crypto: 'yes', chemicals: 'no' },
-    { name: 'Filter (0.3 micron or smaller)', bacteria: 'yes', viruses: 'no', giardia: 'yes', crypto: 'yes', chemicals: 'no' },
-    { name: 'Reverse osmosis', bacteria: 'yes', viruses: 'yes', giardia: 'yes', crypto: 'yes', chemicals: 'partial' },
-    { name: 'Distillation', bacteria: 'yes', viruses: 'yes', giardia: 'yes', crypto: 'yes', chemicals: 'partial' },
-  ]
-
-  const labels = {
-    yes: <span className="text-green-400">✅ Yes</span>,
-    partial: <span className="text-yellow-400">⚠️ Partly</span>,
-    no: <span className="text-red-400">❌ No</span>,
-  }
-
-  return (
-    <div className="my-6 overflow-x-auto">
-      <table className="w-full text-sm">
-        <thead>
-          <tr className="border-b border-gray-700">
-            <th className="text-left p-2">Method</th>
-            <th className="p-2">Bacteria</th>
-            <th className="p-2">Viruses</th>
-            <th className="p-2">Giardia</th>
-            <th className="p-2">Crypto</th>
-            <th className="p-2">Chemicals</th>
-          </tr>
-        </thead>
-        <tbody>
-          {methods.map(m => (
-            <tr key={m.name} className="border-b border-gray-800">
-              <td className="p-2 font-medium">{m.name}</td>
-              {['bacteria', 'viruses', 'giardia', 'crypto', 'chemicals'].map(type => (
-                <td key={type} className="p-2 text-center">{labels[m[type]]}</td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
-      <p className="text-gray-400 text-xs mt-2">
-        Partly: chlorine and iodine need a longer wait for Giardia; chlorine dioxide needs hours of contact for Cryptosporidium (follow the label). Reverse osmosis removes salt and many chemicals; distillation removes salt and most chemicals but not some that evaporate easily.
-      </p>
-    </div>
-  )
-}
-
-export const FilterDiagram = () => (
-  <div className="my-6 p-4 bg-gray-800/50 rounded-lg">
-    <h4 className="text-lg font-bold text-blue-300 mb-4 flex items-center gap-2">
-      <Filter className="w-5 h-5" />
-      Improvised Sand/Charcoal Filter
-    </h4>
-    <div className="flex flex-col md:flex-row gap-4 items-center">
-      <div className="w-48 mx-auto">
-        <svg viewBox="0 0 200 320" className="w-full">
-          {/* Bottle outline */}
-          <path d="M60 20 L60 10 L140 10 L140 20 L150 40 L150 300 L50 300 L50 40 Z"
-                fill="#1a1a2e" stroke="#4a5568" strokeWidth="2"/>
-
-          {/* Layers */}
-          <rect x="50" y="40" width="100" height="30" fill="#d4a574" stroke="#a67c52" strokeWidth="1"/>
-          <text x="100" y="58" textAnchor="middle" fill="#fff" fontSize="10">CLOTH</text>
-
-          <rect x="50" y="70" width="100" height="50" fill="#f4d03f" stroke="#d4ac0d" strokeWidth="1"/>
-          <text x="100" y="98" textAnchor="middle" fill="#333" fontSize="10">SAND</text>
-
-          <rect x="50" y="120" width="100" height="50" fill="#2c3e50" stroke="#1a252f" strokeWidth="1"/>
-          <text x="100" y="148" textAnchor="middle" fill="#fff" fontSize="10">CHARCOAL</text>
-
-          <rect x="50" y="170" width="100" height="40" fill="#7f8c8d" stroke="#5d6d7e" strokeWidth="1"/>
-          <text x="100" y="193" textAnchor="middle" fill="#fff" fontSize="10">GRAVEL</text>
-
-          <rect x="50" y="210" width="100" height="50" fill="#5d6d7e" stroke="#4a5568" strokeWidth="1"/>
-          <text x="100" y="238" textAnchor="middle" fill="#fff" fontSize="10">ROCKS</text>
-
-          {/* Output */}
-          <path d="M95 300 L95 310 L105 310 L105 300" fill="#1a1a2e" stroke="#4a5568" strokeWidth="2"/>
-          <path d="M100 310 L100 320" stroke="#3b82f6" strokeWidth="3"/>
-
-          {/* Water drops */}
-          <circle cx="100" cy="5" r="4" fill="#3b82f6"/>
-          <text x="100" y="3" textAnchor="middle" fill="#fff" fontSize="8">💧</text>
-        </svg>
-      </div>
-      <div className="flex-1 space-y-2">
-        <div className="flex items-center gap-2 p-2 bg-amber-900/30 rounded">
-          <div className="w-4 h-4 rounded bg-amber-600"></div>
-          <span className="text-sm"><strong>Cloth:</strong> Spreads water, keeps sand in place</span>
-        </div>
-        <div className="flex items-center gap-2 p-2 bg-yellow-900/30 rounded">
-          <div className="w-4 h-4 rounded bg-yellow-500"></div>
-          <span className="text-sm"><strong>Sand:</strong> Fine layer (2-3 inches)</span>
-        </div>
-        <div className="flex items-center gap-2 p-2 bg-gray-700 rounded">
-          <div className="w-4 h-4 rounded bg-gray-800"></div>
-          <span className="text-sm"><strong>Charcoal:</strong> May improve taste and odor (2-3 inches); hardwood, not briquettes</span>
-        </div>
-        <div className="flex items-center gap-2 p-2 bg-slate-700 rounded">
-          <div className="w-4 h-4 rounded bg-slate-500"></div>
-          <span className="text-sm"><strong>Gravel:</strong> Keeps charcoal in (1-2 inches)</span>
-        </div>
-        <div className="flex items-center gap-2 p-2 bg-slate-800 rounded">
-          <div className="w-4 h-4 rounded bg-slate-600"></div>
-          <span className="text-sm"><strong>Rocks:</strong> Drainage layer (2-3 inches)</span>
-        </div>
-        <div className="mt-4 p-3 bg-red-900/30 border border-red-500 rounded text-red-200 text-sm">
-          <AlertTriangle className="w-4 h-4 inline mr-2" />
-          <strong>Warning:</strong> An improvised filter only clears sediment. It does not remove germs or chemicals. Always boil or disinfect the water afterward.
-        </div>
-      </div>
-    </div>
-  </div>
-)
-
 # Complete Water Purification Guide
 
-<CriticalInfo>
-**Most people can survive only a few days without water, and less in heat.** Untreated water can carry germs that cause severe diarrhea, which drains the body of water even faster. This guide covers every practical way to make water safe to drink.
-</CriticalInfo>
+> **Critical skill.** Most people can survive only a few days without water, and less in heat. Untreated water can carry germs that cause severe diarrhea, which drains the body of water even faster. This guide covers every practical way to make water safe to drink.
 
-## ⚡ Do This Now
+<QuickTriage
+  questions={[
+    {
+      id: "water",
+      text: "What water do you have?",
+      options: [
+        { label: "Fresh water that may carry germs", next: "equipment" },
+        { label: "It may contain fuel or chemicals", result: "avoid" },
+        { label: "Only salt water", result: "distill" },
+        { label: "None to treat today. I am building a kit", result: "kit" }
+      ]
+    },
+    {
+      id: "equipment",
+      text: "What can you treat it with?",
+      options: [
+        { label: "Fuel and a pot", result: "boil" },
+        { label: "No fuel, but unscented household bleach", result: "bleach" },
+        { label: "A portable filter (hiking or backpacking)", result: "filter" },
+        { label: "No fuel or chemicals, but it is sunny", result: "sodis" }
+      ]
+    }
+  ]}
+  results={[
+    {
+      id: "boil",
+      title: "Boil It",
+      steps: [
+        "Cloudy? Let it settle, then pour through a clean cloth, paper towel or coffee filter",
+        "Bring it to a rolling boil for 1 minute",
+        "Above 5,000 ft (about 1,500 m), boil for 3 minutes",
+        "Let it cool with a lid on, then store in clean, covered containers"
+      ],
+      section: "Method 1: Boiling",
+      priority: "urgent"
+    },
+    {
+      id: "bleach",
+      title: "Use Household Bleach",
+      steps: [
+        "Use regular unscented bleach, less than a year old. Clear cloudy water first",
+        "Per gallon: 8 drops of 6% bleach or 6 drops of 8.25%. Per quart or liter: 2 drops",
+        "Double the dose if the water is cloudy, colored or very cold",
+        "Stir and wait 30 minutes. A slight chlorine smell means it is ready",
+        "No smell? Repeat the dose and wait 15 more minutes. Still none? Find another source"
+      ],
+      section: "Household bleach (EPA method)",
+      priority: "urgent"
+    },
+    {
+      id: "filter",
+      title: "Filter, Then Disinfect",
+      steps: [
+        "A filter of 0.3 micron or smaller removes parasites and bacteria",
+        "Most portable hiking filters do not remove viruses",
+        "After filtering, add bleach, iodine or chlorine dioxide, or boil the water"
+      ],
+      section: "Method 5: Filtration",
+      priority: "urgent"
+    },
+    {
+      id: "sodis",
+      title: "Solar Disinfection (SODIS)",
+      steps: [
+        "Use clear PET plastic bottles, 2 liters or smaller, and clear water",
+        "Fill completely, close, and lay the bottle on its side in full sun",
+        "At least 6 hours if clear or up to half cloudy. 2 days in a row if more than half cloudy",
+        "Slower and less certain than boiling. Not reliable in continuous rain"
+      ],
+      section: "Method 4: Solar Disinfection (SODIS)",
+      priority: "important"
+    },
+    {
+      id: "distill",
+      title: "Distill It",
+      steps: [
+        "Boiling, bleach and ordinary filters do not remove salt",
+        "Fill a pot halfway. Tie a cup to the lid handle so it hangs right-side up under the upside-down lid, clear of the water",
+        "Boil for 20 minutes. The water that drips into the cup is distilled",
+        "A reverse-osmosis desalinator also works"
+      ],
+      section: "Method 6: Distillation",
+      priority: "urgent"
+    },
+    {
+      id: "avoid",
+      title: "Don't Treat It. Find Another Source",
+      steps: [
+        "Chemical or fuel smell, oily sheen, floodwater or industrial runoff: don't drink it",
+        "Boiling and disinfecting do not remove fuel or toxic chemicals",
+        "Use stored or bottled water",
+        "Contact the local health department"
+      ],
+      section: "What Can Be in Water",
+      priority: "critical"
+    },
+    {
+      id: "kit",
+      title: "Stock Three Things",
+      steps: [
+        "Chlorine dioxide tablets: the only common chemical that works against Cryptosporidium, with a long wait",
+        "Unscented household bleach. Bleach weakens over time, so use bottles less than a year old",
+        "A filter. Look for an absolute pore size",
+        "Know your boil time: 1 minute, or 3 minutes above 5,000 ft (about 1,500 m)"
+      ],
+      section: "Choosing a Method",
+      priority: "important"
+    }
+  ]}
+/>
+
+## Do This Now
 
 1. **Use safe water first.** Drink stored or commercially bottled water before treating anything. If local officials have issued a boil-water or do-not-drink notice, follow it.
 2. **Rule out chemicals.** If the water may contain fuel, toxic chemicals, or radioactive material (chemical or fuel smell, oily sheen, floodwater, runoff from industrial sites), don't drink it. Boiling and disinfecting will not make it safe. Find another source.
@@ -380,74 +124,87 @@ export const FilterDiagram = () => (
 
 ---
 
-## 🎯 Find Your Best Method
+## Methods at a Glance
 
-Not sure which purification method to use? Select your situation:
+| Method | What it handles | Time | You need |
+|--------|-----------------|------|----------|
+| Boiling | Bacteria, viruses, and parasites | Rolling boil for 1 min (3 min above 5,000 ft), then cool | Heat source, pot |
+| Household bleach | Bacteria and viruses; weak against Giardia, not effective against Cryptosporidium | 30 min wait | Unscented bleach, dropper |
+| Chlorine dioxide tablets or drops | Bacteria, viruses, Giardia; Cryptosporidium only with a long wait | 30 min to several hours (follow the label) | Tablets or drops |
+| Iodine | Bacteria and viruses; not Cryptosporidium | At least 30 min | 2% tincture or tablets |
+| UV device (battery or USB pen) | Bacteria, viruses, and parasites in clear water | Per device, usually a minute or two per batch | Device, charged batteries |
+| Sunlight (SODIS) | Most germs in clear water; slower and less certain than boiling | 6 hours of sun, or 2 days if mostly cloudy | Clear plastic (PET) bottles, 2 L or smaller |
+| Portable filter | Parasites (1 micron or smaller); bacteria (0.3 micron or smaller); not viruses | Minutes | Filter, then a disinfectant |
+| Distillation | Germs, salt, heavy metals, and most chemicals | Slow; small amounts | Heat, pot, lid, cup |
 
-<MethodSelector />
+**Boiling is the most reliable method.** If you can't boil, filter first and then disinfect.
 
 ---
 
-## 📊 Method Effectiveness Comparison
+## What Can Be in Water
 
-<EffectivenessChart />
+- **Bacteria** (E. coli, Salmonella, cholera): common in water polluted by sewage or animal waste.
+- **Viruses** (norovirus, hepatitis A): too small for most portable filters.
+- **Parasites** (Giardia, Cryptosporidium): Cryptosporidium survives normal doses of bleach and iodine.
+- **Chemicals** (fuel, pesticides, industrial waste, heavy metals, salt): not removed by boiling, bleach, iodine, or UV. Boiling does not remove lead, and it can even concentrate some chemicals, such as nitrate.
+- **Sediment and cloudiness:** shields germs from bleach and UV light. Clear the water first.
 
-**Boiling is the most reliable method.** If you can't boil, filter first and then disinfect. Clear water is not necessarily safe: most germs are invisible, and chemicals such as fuel, pesticides, heavy metals, and salt are not removed by boiling, bleach, iodine, or UV. Boiling can even concentrate some chemicals, such as nitrate and lead.
+Clear water is not necessarily safe. Most germs are invisible.
 
 ---
 
-## 🔥 Method 1: Boiling
+## Method 1: Boiling
 
 **The gold standard.** Boiling kills bacteria, viruses, and parasites, including Cryptosporidium.
 
-<AltitudeCalculator />
+### Steps
 
-### Step-by-Step Guide
-
-<MethodSteps method="boiling" />
+1. **Collect water** in a heat-safe pot or kettle.
+2. **Clear it** if cloudy: let it settle, then pour through a clean cloth, paper towel, or coffee filter.
+3. **Bring to a rolling boil**: large bubbles breaking the surface continuously, even when stirred.
+4. **Keep it boiling for 1 minute.** Above 5,000 ft (about 1,500 m), boil for 3 minutes.
+5. **Let it cool** with a lid on. Don't add ice unless the ice was made from safe water.
+6. **Store** in clean, covered containers.
 
 Boiled water tastes flat. Pour it back and forth between two clean containers, or add a pinch of salt per quart or liter, to improve the taste.
+
+### Altitude
+
+Water boils at a lower temperature as you climb, just under 1°F lower for every 500 ft.
+
+| Altitude | Boiling point (approx.) | Boil time |
+|----------|-------------------------|-----------|
+| Sea level | 212°F (100°C) | 1 minute |
+| 5,000 ft (1,500 m) | 203°F (95°C) | 3 minutes |
+| 6,500 ft (2,000 m) | 200°F (93°C) | 3 minutes |
+| 10,000 ft (3,000 m) | 194°F (90°C) | 3 minutes |
+| 15,000 ft (4,600 m) | 185°F (85°C) | 3 minutes |
 
 **Why 5,000 ft?** CDC says to boil for 3 minutes above 6,500 ft. EPA says above 5,000 ft. Boiling for 3 minutes anywhere above 5,000 ft satisfies both.
 
 **Short on fuel?** CDC's travel guidance says you can heat water until it first starts to simmer, then take it off the heat and keep it covered for 30 minutes. A full rolling boil is still the most reliable choice when fuel allows.
 
-### Pros & Cons
+### Pros and cons
 
-<div className="grid md:grid-cols-2 gap-4 my-4">
-  <div className="p-4 bg-green-900/20 border border-green-500 rounded-lg">
-    <h4 className="text-green-400 font-bold flex items-center gap-2">
-      <CheckCircle className="w-5 h-5" /> Advantages
-    </h4>
-    <ul className="mt-2 space-y-1 text-green-200">
-      <li>• Kills every type of germ, including Cryptosporidium</li>
-      <li>• No special equipment needed</li>
-      <li>• Works on any water that is free of chemicals</li>
-    </ul>
-  </div>
-  <div className="p-4 bg-red-900/20 border border-red-500 rounded-lg">
-    <h4 className="text-red-400 font-bold flex items-center gap-2">
-      <AlertTriangle className="w-5 h-5" /> Limitations
-    </h4>
-    <ul className="mt-2 space-y-1 text-red-200">
-      <li>• Requires fuel and time</li>
-      <li>• Water must cool before drinking</li>
-      <li>• Doesn't remove chemicals or salt</li>
-    </ul>
-  </div>
-</div>
+**Pros:** kills every type of germ, needs no special equipment, works on any water that is free of chemicals.
+
+**Cons:** uses fuel and time, doesn't remove chemicals or salt, water must cool before drinking.
 
 ---
 
-## 💧 Method 2: Chemical Disinfection
+## Method 2: Chemical Disinfection
 
-Chemicals are light and cheap. They kill most bacteria and viruses, but they are weak against parasites, especially Cryptosporidium, and work poorly in cloudy or very cold water.
+Chemicals are light and cheap. They kill most bacteria and viruses, but they are weak against parasites, especially Cryptosporidium. They also work poorly in cloudy or very cold water.
 
-<MethodSteps method="chemical" />
+### Household bleach (EPA method)
 
-### Bleach Dosage Chart (EPA)
+**Use the right bleach:**
+- Regular, **unscented** liquid chlorine bleach whose label says it is suitable for disinfection or sanitization.
+- **Not** scented, color-safe, splashless, or "with cleaners" products.
+- Check the strength on the label (usually 6% or 8.25% sodium hypochlorite).
+- Use bleach that is less than a year old and stored at room temperature. Bleach weakens over time.
 
-Use regular, **unscented** liquid chlorine bleach labeled as suitable for disinfection or sanitization. Not scented, color-safe, splashless, or "with cleaners" products. Use bleach less than a year old.
+**Dose (EPA):**
 
 | Water volume | 6% bleach | 8.25% bleach |
 |--------------|-----------|--------------|
@@ -457,95 +214,148 @@ Use regular, **unscented** liquid chlorine bleach labeled as suitable for disinf
 | 4 gallons | 1/3 tsp | 1/4 tsp |
 | 8 gallons | 2/3 tsp | 1/2 tsp |
 
-**Double the dose if the water is cloudy, colored, or very cold.** If your bleach is 1% (sold in some countries), CDC's dose is 10 drops per quart or liter, 40 drops per gallon. If the chlorine taste is too strong after treatment, pour the water between clean containers and let it stand a few hours.
+**Double the dose if the water is cloudy, colored, or very cold.** For a gallon of cloudy water, that is 16 drops of 6% bleach or 12 drops of 8.25% bleach.
 
-### Chlorine Dioxide Tablets or Drops
+If your bleach is a different strength, such as the 1% bleach sold in some countries, use CDC's 1% dose: 10 drops per quart or liter, 40 drops per gallon. Otherwise follow the label's drinking-water directions.
 
-Kill bacteria, viruses, and Giardia, and are the only common chemical option that works against Cryptosporidium. That takes a long contact time, often several hours. Follow the product label for dose and wait time.
+**Steps:**
+1. Clear cloudy water first (settle, then filter through cloth or a coffee filter).
+2. Add the bleach with a clean dropper.
+3. Stir well and let it stand **30 minutes**.
+4. Smell it. A **slight chlorine smell** means it's ready.
+5. No smell? Repeat the dose and wait **another 15 minutes**. If it still doesn't smell of chlorine, don't drink it; find another source.
+6. Too strong? Pour it between clean containers and let it stand a few hours.
+
+### Chlorine dioxide tablets or drops
+
+- Kill bacteria, viruses, and Giardia, and are the only common chemical option that works against Cryptosporidium.
+- Cryptosporidium needs a long contact time, often several hours. Follow the product's label for dose and wait time.
+- A good choice for a go-bag or emergency kit.
 
 ### Iodine
 
-**2% tincture of iodine:** 5 drops per quart or liter of clear water, 10 drops if cloudy or colored. Wait at least 30 minutes. For iodine tablets, follow the label. Iodine does not kill Cryptosporidium.
+- **2% tincture of iodine:** 5 drops per quart or liter of clear water, 10 drops if cloudy or colored. Wait at least 30 minutes.
+- **Iodine tablets:** follow the label.
+- **Does not kill Cryptosporidium.**
+- **Don't use iodine if you are pregnant, have thyroid problems, or are sensitive to iodine.** No one should drink iodine-treated water for more than a few weeks at a time.
 
-<div className="my-4 p-4 bg-amber-900/20 border border-amber-500 rounded-lg">
-  <h4 className="text-amber-400 font-bold">⚠️ Iodine Warning</h4>
-  <span className="block text-amber-200 mt-2">
-    Don't use iodine if you are pregnant, have thyroid problems, or are sensitive to iodine. No one should drink iodine-treated water for more than a few weeks at a time.
-  </span>
-</div>
+### Pros and cons
 
----
+**Pros:** light, cheap, long shelf life (bleach about a year), no fuel needed.
 
-## 🔦 Method 3: UV Devices
-
-Battery or USB-powered UV pens and bottle caps damage germs' DNA so they can't cause infection. They work on bacteria, viruses, and parasites, but **only in clear water**: cloudy water shields germs, so filter it first.
-
-1. Treat small batches (about 1 liter at a time) in a wide-mouth container.
-2. Turn on the device and stir or shake for the time the manufacturer specifies.
-3. Wait for the completion signal. If the device fails mid-cycle, start again.
-
-UV devices need charged batteries and don't remove chemicals.
+**Cons:** weak or ineffective against Cryptosporidium (except chlorine dioxide with a long wait), needs clear water, affects taste, doesn't remove chemicals or salt.
 
 ---
 
-## ☀️ Method 4: Solar Disinfection (SODIS)
+## Method 3: UV Devices
+
+Battery or USB-powered UV pens and bottle caps damage germs' DNA so they can't cause infection.
+
+1. Use **clear** water. Cloudy water shields germs from the light, so filter it first.
+2. Treat small batches (about 1 liter at a time) in a wide-mouth container.
+3. Turn on the device and stir or shake for the time the manufacturer specifies.
+4. Wait for the completion signal. If the device fails mid-cycle, start again.
+
+**Pros:** works on bacteria, viruses, and parasites in clear water; fast; no taste.
+
+**Cons:** needs batteries or power; useless in cloudy water; small batches; doesn't remove chemicals.
+
+---
+
+## Method 4: Solar Disinfection (SODIS)
 
 Sunlight and heat can disinfect clear water in clear plastic bottles. It's free, but slower and less certain than boiling. Use it when you have no fuel, no chemicals, and no filter.
 
-<MethodSteps method="sodis" />
+**You need:**
+- Clear PET plastic bottles (soda or water bottles), **2 liters or smaller**, without deep scratches.
+- Clear water. Set the filled bottle on a newspaper headline and look down through it. If you can't read the headline, filter or settle the water first.
+- Strong, direct sunlight.
 
-### Exposure Times
+**Steps:**
+1. Fill the bottle completely and close it.
+2. Lay it on its side in full sun, ideally on a roof or a sheet of metal, away from shade.
+3. Leave it for the required time:
 
 | Sky | Exposure time |
 |-----|---------------|
 | Clear, or up to half cloudy | At least 6 hours |
 | More than half cloudy | 2 days in a row |
-| Continuous rain | ❌ Not reliable; use another method |
+| Continuous rain | Not reliable; use another method |
+
+4. Drink straight from the bottle or pour into a clean cup.
 
 **SODIS does not remove chemicals.** Don't use it on water that might contain fuel or industrial waste.
 
 ---
 
-## 🧪 Method 5: Filtration
+## Method 5: Filtration
 
 Filters physically remove germs and particles. What they catch depends on pore size.
 
+### What filters remove
+
 | Filter type | Removes | Doesn't remove |
 |-------------|---------|----------------|
-| Absolute pore size 1 micron or smaller, or NSF/ANSI 53 or 58 "cyst reduction" | Parasites (Giardia, Cryptosporidium) | Viruses, some bacteria |
+| Absolute pore size 1 micron or smaller, or certified to NSF/ANSI 53 or 58 for "cyst reduction" | Parasites (Giardia, Cryptosporidium) | Viruses, some bacteria |
 | Absolute pore size 0.3 micron or smaller | Parasites and bacteria | Viruses |
 | Ultrafilter (about 0.01 micron) | Parasites, bacteria, most viruses | Chemicals |
 | Reverse osmosis (RO) | Parasites, bacteria, viruses, salt, many chemicals | Check the label for which chemicals |
 | Activated carbon alone | Improves taste and odor; may reduce some chemicals | Germs (not rated for them) |
 
-**Most portable hiking filters do not remove viruses.** After filtering, add bleach, iodine, or chlorine dioxide, or boil the water. Filters labeled "purifier" are meant to remove viruses too; manufacturers make that claim and EPA does not independently test it. Look for an **absolute** pore size, and follow the manufacturer's instructions for cleaning, storing, and replacing the filter.
+- **Most portable hiking filters do not remove viruses.** After filtering, add bleach, iodine, or chlorine dioxide, or boil the water.
+- Filters labeled "purifier" are meant to remove viruses too. Manufacturers make that claim; EPA does not independently test it.
+- Look for **"absolute"** pore size. A "nominal" rating lets some germs of that size through.
+- Follow the manufacturer's instructions for cleaning, storing, and replacing the filter.
 
-### Build an Improvised Filter
+### Improvised sand and charcoal filter
 
-An improvised filter clears sediment so that disinfection works better. **It does not make water safe on its own.**
+An improvised filter clears sediment so that disinfection works better. **It does not remove germs or chemicals, and it does not make water safe on its own.**
 
-<FilterDiagram />
+```
+┌─────────────┐
+│   CLOTH     │ ← Top layer (spreads water, keeps sand in place)
+├─────────────┤
+│   SAND      │ ← Fine layer (2-3 inches)
+├─────────────┤
+│  CHARCOAL   │ ← May improve taste and odor (2-3 inches)
+├─────────────┤
+│   GRAVEL    │ ← Keeps charcoal in place (1-2 inches)
+├─────────────┤
+│   ROCKS     │ ← Drainage layer (2-3 inches)
+└──────┬──────┘
+       │
+    OUTPUT
+```
 
-Layer from bottom to top: rocks, gravel, crushed charcoal from a hardwood fire (not briquettes), fine sand, then cloth. Pour water slowly, re-filter if it's still cloudy, then **boil or disinfect it**. Campfire charcoal is not the activated carbon used in commercial filters and won't make chemically contaminated water safe.
+1. **Container:** a plastic bottle with the bottom cut off, or a bucket with a small hole.
+2. **Layer from bottom to top:** rocks, gravel, crushed charcoal from a hardwood fire (not briquettes), fine sand, then cloth.
+3. **Pour water slowly** through the top. Re-filter if it's still cloudy.
+4. **Then disinfect it** by boiling, bleach, or another method above.
+
+Campfire charcoal is not the activated carbon used in commercial filters. It won't make chemically contaminated water safe.
 
 ---
 
-## ♨️ Method 6: Distillation
+## Method 6: Distillation
 
-Distillation boils water and collects the steam that condenses. It removes germs, salt, heavy metals, and most chemicals, but not some chemicals that evaporate easily, such as certain solvents and fuels. It's the main home method for making seawater drinkable.
+Distillation boils water and collects the steam that condenses. It removes germs, salt, heavy metals, and most chemicals. It does not reliably remove some chemicals that evaporate easily, such as certain solvents and fuels. It's the main home method for making seawater drinkable.
 
-**Pot distillation (FEMA method):**
+### Pot distillation (FEMA method)
 
 1. Fill a pot about halfway with water.
 2. Tie a cup to the handle on the pot's lid so the cup hangs right-side up when the lid is upside down. Make sure the cup doesn't touch the water.
 3. Put the lid on upside down and boil the water for 20 minutes.
-4. The water that drips from the lid into the cup is distilled. Let it cool before handling.
+4. The water that drips from the lid into the cup is distilled.
 
-This yields only a small amount for the fuel used. A ground **solar still** (plastic sheet over a hole, container in the center) also works, but yields are small and unreliable, and digging can cost more sweat than it produces.
+This yields only a small amount for the fuel used. Let the cup cool before handling.
+
+### Solar still
+
+A plastic sheet stretched over a hole, with a container in the center, collects condensation from the ground and from plants placed in the hole. Yields are small and unreliable, and digging can cost you more sweat than the still produces. Treat it as a supplement, not a main supply.
 
 ---
 
-## 📋 Quick Decision Guide
+## Choosing a Method
 
 | Situation | Best choice |
 |-----------|-------------|
@@ -557,20 +367,17 @@ This yields only a small amount for the fuel used. A ground **solar still** (pla
 | Only salt water | Distill (or use a reverse-osmosis desalinator) |
 | Water may contain fuel or chemicals | Don't treat it. Find another source. |
 
----
+### Combining methods
 
-## 🔄 Combining Methods (Maximum Safety)
-
-For doubtful water sources, combine methods:
-
-1. **Settle and pre-filter** (cloth, coffee filter)
-2. **Filter** (commercial filter if you have one)
-3. **Disinfect** (boil, chemical, or UV)
+For doubtful water:
+1. **Settle and pre-filter** (cloth, coffee filter).
+2. **Filter** (commercial filter if you have one).
+3. **Disinfect** (boil, chemical, or UV).
 4. **Store safely** in a clean, covered container. Pour water out instead of dipping hands or cups in.
 
 ---
 
-## 👶 Special Cases
+## Special Cases
 
 - **Babies:** use ready-to-feed formula if you have it. If you must mix formula, use bottled water, or water that has been boiled and cooled.
 - **People with weakened immune systems:** Cryptosporidium can be severe for them. Boil water, or use bottled water, rather than relying on bleach or iodine.
@@ -580,15 +387,100 @@ For doubtful water sources, combine methods:
 
 ---
 
-## 🫙 Storing Treated Water
+## Storing Treated Water
 
-Use clean, food-grade containers with tight lids. Keep them cool and out of sunlight, away from gasoline, pesticides, and other chemicals. Label them with the date, and replace water you treated and stored yourself every 6 months. See the Water Storage and Rotation guide for details.
+- Use clean, food-grade containers with tight lids.
+- Keep them cool and out of sunlight, away from gasoline, pesticides, and other chemicals.
+- Label them with the date. Replace water you treated and stored yourself every 6 months.
+- See the Water Storage and Rotation guide for container cleaning and storage targets.
 
 ---
 
-## 🚑 If Someone Gets Sick
+## If Someone Gets Sick
 
 Diarrhea and vomiting after drinking untreated water can quickly cause dehydration. Get medical help, or call 911 or your local emergency number, for bloody diarrhea, a fever over 102°F (38.9°C), vomiting that prevents keeping fluids down, diarrhea lasting more than 3 days, confusion, or signs of severe dehydration (little or no urine, dizziness when standing). See the Foodborne Illness guide for rehydration.
+
+---
+
+## Summary
+
+| Method | Bacteria | Viruses | Giardia | Cryptosporidium | Chemicals and salt |
+|--------|----------|---------|---------|-----------------|--------------------|
+| Boiling | Yes | Yes | Yes | Yes | No |
+| Bleach (chlorine) | Yes | Yes | Partly (longer wait) | No | No |
+| Iodine | Yes | Yes | Partly (longer wait) | No | No |
+| Chlorine dioxide | Yes | Yes | Yes | Partly to yes (hours of contact) | No |
+| UV device (clear water) | Yes | Yes | Yes | Yes | No |
+| Filter, 0.3 micron or smaller | Yes | No | Yes | Yes | No |
+| Reverse osmosis | Yes | Yes | Yes | Yes | Salt and many chemicals |
+| Distillation | Yes | Yes | Yes | Yes | Salt and most chemicals |
+
+---
+
+## Practice
+
+**10-minute drill:** Do a dry run of the bleach dose. Find your household bleach and read the label: is it unscented, what strength is it (6% or 8.25%), and is it less than a year old? Write the dose for one gallon on the bottle with a marker: 8 drops for 6% bleach, 6 drops for 8.25%. Then use a clean dropper to count that dose into an empty jar, so you know your dropper works and what the dose looks like. Don't add water and don't drink anything: this is practice at measuring, and the jar gets rinsed out afterward. Finish by picking the pot you would boil water in, and look up your home's elevation. Above 5,000 ft (about 1,500 m) your boil time is 3 minutes, not 1.
+
+**What would you do?**
+
+1. *A flood has knocked out the water supply. Water from a rain barrel beside the garage looks clear, but it has a faint fuel smell and a slight sheen. You have a camp stove and plenty of gas, and everyone is thirsty.*
+
+   **Answer:** Don't drink it, and don't boil it "to be safe." Boiling and disinfecting kill germs, but they do not remove fuel or toxic chemicals, and no home method reliably fixes that. Drink stored or bottled water, look for another source, and contact the local health department. Save the stove for water whose only problem is germs.
+
+2. *You can't boil, so you treated a gallon of clear creek water with 8 drops of 6% bleach, stirred it, and waited 30 minutes. It has no chlorine smell at all. The children are asking for a drink.*
+
+   **Answer:** Not yet. A slight chlorine smell is the sign that the dose worked. With no smell, repeat the dose and wait another 15 minutes. If it still doesn't smell of chlorine, don't drink it; find another source. Check the bottle too: bleach weakens with age, and it should be unscented and less than a year old.
+
+3. *On a hiking trip you pump stream water through your backpacking filter. It comes out clear and tastes fine, and your friend says the filter is all you need.*
+
+   **Answer:** Clear is not the same as safe. Most portable hiking filters do not remove viruses, and some let bacteria through too. After filtering, add bleach, iodine, or chlorine dioxide, or boil the water. Filter first, then disinfect: that order covers the parasites that chemicals are weak against and the viruses the filter lets through.
+
+---
+
+## Quick Reference
+
+```
+MAKE WATER SAFE TO DRINK
+
+FIRST
+- Use bottled or stored water first
+- Fuel or chemical smell, oily
+  sheen, floodwater: do NOT drink.
+  Boiling and bleach won't fix it.
+- Cloudy? Let it settle, then pour
+  through cloth or a coffee filter
+
+BOIL (most reliable)
+- Rolling boil for 1 minute
+- Above 5,000 ft (1,500 m):
+  3 minutes
+- Cool with a lid on
+
+BLEACH (unscented, under 1 year old)
+- 6% bleach:    8 drops per gallon
+- 8.25% bleach: 6 drops per gallon
+- Either: 2 drops per quart or liter
+- Cloudy, colored or very cold
+  water: double the dose
+- Stir, then wait 30 minutes
+- Slight chlorine smell = ready
+- No smell: repeat the dose,
+  wait 15 more minutes
+- Still no smell: don't drink it
+
+FILTERS
+- Most don't remove viruses.
+  Filter, THEN disinfect or boil.
+
+CRYPTOSPORIDIUM
+- Bleach and iodine don't kill it.
+  Boil if you can.
+
+SALT WATER
+- Boiling won't remove salt. Distill.
+
+STORE in clean, covered containers
+```
 
 ---
 
@@ -601,14 +493,13 @@ Diarrhea and vomiting after drinking untreated water can quickly cause dehydrati
 - [CDC: About Home Water Treatment Systems](https://www.cdc.gov/drinking-water/about/about-home-water-treatment-systems.html)
 - [CDC: How to Create an Emergency Water Supply](https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html)
 - [FEMA: Food and Water in an Emergency (FEMA 477)](https://www.fema.gov/pdf/library/f&web.pdf)
-- [EPA: Will boiling my water help? (nitrate and lead)](https://www.epa.gov/mn/will-boiling-my-water-help)
+- [EPA: Will boiling my water help? (nitrate)](https://www.epa.gov/mn/will-boiling-my-water-help)
+- [EPA: Basic Information about Lead in Drinking Water](https://www.epa.gov/ground-water-and-drinking-water/basic-information-about-lead-drinking-water)
 - [USDA FSIS: High Altitude Cooking](https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/high-altitude-cooking)
 - [Eawag SODIS Manual](https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/publikationen/SWP/SODIS_manual_2016.pdf)
 
 ---
 
-<div className="text-center text-gray-500 text-sm mt-8">
-  Last reviewed: October 2026 | License: CC-BY-SA 4.0
+Last reviewed: November 2026
 
-  **Safe water saves lives. When in doubt, boil it, or find another source.**
-</div>
+*License: CC-BY-SA 4.0*

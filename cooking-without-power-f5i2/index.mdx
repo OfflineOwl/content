@@ -270,6 +270,75 @@ Bring food to a boil, simmer briefly, then move the covered pot into an insulate
 
 ---
 
+## Practice
+
+**10-minute drill:** Do a dry run of a no-power dinner with everything switched off and nothing lit. (1) Pick tonight's meal from the cupboard: one that can be eaten cold, or a one-pot meal. (2) Lay out what it needs: manual can opener, pot with lid, matches or lighter, food thermometer. (3) Carry the camp stove, unlit and with no fuel attached, to the spot where you would really cook, or walk out to the grill. Check that the spot is outdoors, flat, and well away from every window, door and vent. (4) Look over your fuel canisters and canned heat for rust, dents or leaks. (5) Press the test button on the CO alarm. Write down whatever was missing.
+
+**What would you do?**
+
+1. *An ice storm has taken the power out, and it is 20°F (-7°C) and windy outside. The camp stove is ready. Your partner suggests setting it up in the garage with the big door open, out of the wind.*
+
+   **Answer:** No. A garage is not safe for a camp stove even with the door open, and you can't see or smell carbon monoxide building up. Cook outdoors, in a spot sheltered from the wind but not enclosed, or don't cook at all: canned food can be eaten cold. For something warm indoors, use only what is made for indoor use, such as a chafing dish or fondue pot with canned heat, or the fireplace.
+
+2. *Night two of an outage. A generator is running just outside the back door. Your partner wakes with a headache and feels dizzy, your daughter says she feels sick, and the cat has vomited. "Must be a bug going round," your partner says.*
+
+   **Answer:** When several people or pets feel sick at the same time, suspect carbon monoxide, not a bug. Get everyone outside to fresh air right away, pets included, and call 911. Don't go back in until responders say it is safe. After that, the generator moves to at least 20 feet (6 m) from any window, door or vent, with its exhaust pointed away from the house.
+
+3. *You cooked a big pot of chili on the camp stove at noon and half of it is left. The refrigerator has been off since yesterday. The plan is to leave the pot covered on the counter and reheat it for supper at seven.*
+
+   **Answer:** Don't keep it. Food should not sit between 40°F and 140°F for more than 2 hours (1 hour if it is above 90°F), and without a refrigerator you have nowhere safe to hold leftovers. Eat cooked food promptly, cook only what will be eaten at that meal, and open something fresh for supper.
+
+---
+
+## Quick Reference
+
+```
+COOKING WITHOUT POWER
+
+OUTDOORS ONLY (carbon monoxide)
+- Charcoal and gas grills
+- Camp stoves
+- Generators: 20 ft (6 m) from
+  windows, doors and vents
+- Never in a garage, even with
+  the door open
+- Never heat the house with a
+  gas oven or a grill
+
+OK INDOORS
+- Fireplace with a clean,
+  working chimney
+- Chafing dish or fondue pot
+  with canned heat
+- Candle warmer (keeps food warm)
+- Battery CO alarm working
+
+CO ALARM, OR HEADACHE, DIZZINESS,
+NAUSEA, CONFUSION?
+- Everyone out to fresh air
+- Call 911. Stay out until
+  responders say it's safe
+
+NO FUEL? Canned food can be
+eaten cold.
+Heating in the can: label off,
+OPEN it first
+
+SAFE COOKING TEMPERATURES
+- Poultry, leftovers: 165°F (74°C)
+- Ground meat: 160°F (71°C)
+- Steaks, chops, roasts:
+  145°F (63°C) + 3 min rest
+- Fish: 145°F (63°C)
+
+NO REFRIGERATOR
+- Eat it now. No leftovers.
+- Out over 2 hours (1 hour
+  above 90°F): throw it out
+```
+
+---
+
 ## Sources
 
 - [CDC: Carbon Monoxide Poisoning Basics](https://www.cdc.gov/carbon-monoxide/about/index.html)
@@ -282,10 +351,11 @@ Bring food to a boil, simmer briefly, then move the covered pot into an insulate
 - [NFPA: Grilling Safety Tip Sheet](https://www.nfpa.org/downloadable-resources/safety-tip-sheets/grilling-safety-tip-sheet)
 - [NFPA: Educational Messages Desk Reference](https://www.nfpa.org/-/media/project/storefront/catalog/files/home-fire-safety/emac/educationalmessagesdeskreference.pdf)
 - [USDA FSIS: Safe Minimum Internal Temperature Chart](https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart)
+- [CDC: Preventing Food Poisoning (cooking temperatures, 2-hour rule)](https://www.cdc.gov/food-safety/prevention/index.html)
 - [FDA: Food and Water Safety During Power Outages and Floods](https://www.fda.gov/food/buy-store-serve-safe-food/food-and-water-safety-during-power-outages-and-floods)
 
 ---
 
-Last reviewed: October 2026
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

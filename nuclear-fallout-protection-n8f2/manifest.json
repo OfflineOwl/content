@@ -1,29 +1,50 @@
 {
   "id": "n8f2",
   "title": "Nuclear Fallout Protection",
-  "description": "Critical survival information for nuclear fallout events. Covers immediate actions, shelter selection, decontamination, and long-term protection strategies.",
+  "description": "What to do in the first minutes and days after a nuclear explosion: get inside, where to shelter, decontamination, and when it is safe to leave.",
   "version": "1.0.0",
   "formats": {
+    "md": {
+      "file": "index.md",
+      "description": "The guide in markdown. The source the other formats are built from",
+      "features": [
+        "offline"
+      ],
+      "requirements": [],
+      "priority": 1
+    },
     "mdx": {
       "file": "index.mdx",
-      "description": "Interactive guide with animations, diagrams, and step-by-step components",
-      "features": ["interactive", "animated", "components"],
-      "requirements": ["react", "mdx-runtime"],
-      "priority": 1
+      "description": "The same guide with a decision widget for the web reader",
+      "features": [
+        "interactive"
+      ],
+      "requirements": [
+        "react",
+        "mdx-runtime"
+      ],
+      "priority": 2
+    },
+    "html": {
+      "file": "index.html",
+      "description": "Self-contained page built from the markdown",
+      "features": [
+        "offline",
+        "interactive"
+      ],
+      "requirements": [],
+      "priority": 3
     },
     "txt": {
       "file": "index.txt",
       "description": "Plain text version for maximum compatibility and offline use",
-      "features": ["offline", "printable", "universal"],
+      "features": [
+        "offline",
+        "printable",
+        "universal"
+      ],
       "requirements": [],
-      "priority": 3
-    },
-    "pdf": {
-      "file": "print-version.pdf",
-      "description": "Professionally designed print version with diagrams and quick reference cards",
-      "features": ["printable", "designed", "offline"],
-      "requirements": [],
-      "priority": 2
+      "priority": 4
     }
   },
   "assets": {
@@ -47,30 +68,17 @@
   },
   "metadata": {
     "category": "survival",
-    "tags": ["nuclear", "fallout", "radiation", "shelter", "emergency", "cbr"],
+    "tags": [
+      "nuclear",
+      "fallout",
+      "radiation",
+      "shelter",
+      "emergency",
+      "cbr"
+    ],
     "estimatedReadTime": "8 minutes",
     "difficulty": "essential",
-    "lastUpdated": "2026-10-17",
+    "lastUpdated": "2026-11-27",
     "license": "cc-by-sa-4.0"
-  },
-  "formatSelection": {
-    "description": "System should select best format based on device capabilities",
-    "rules": [
-      {
-        "condition": "supports_mdx && supports_react",
-        "format": "mdx",
-        "reason": "Full interactive experience"
-      },
-      {
-        "condition": "supports_markdown",
-        "format": "txt",
-        "reason": "Readable fallback"
-      },
-      {
-        "condition": "default",
-        "format": "txt",
-        "reason": "Universal compatibility"
-      }
-    ]
   }
 }

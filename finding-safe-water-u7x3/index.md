@@ -225,6 +225,83 @@ Keep a list of water sources near your home:
 
 ---
 
+## Practice
+
+**10-minute drill:** Find your home's hidden water without draining a drop. (1) Find the main water valve, and make sure everyone old enough can reach it and knows how to close it. (2) At the water heater, find the drain valve at the bottom, the water intake valve, and the switch, breaker or gas control, and read the tank size on its label. Point to each one. Don't turn anything. (3) Name the highest and the lowest faucet in the house. (4) Lift the toilet tank lid and check whether a cleaner or tablet has been added. Write the valve location and the tank size on the Quick Reference card below.
+
+**What would you do?**
+
+1. *The radio reports a broken water main a few streets away, and says a sewer line may be damaged too. Your taps still run. Your first thought is to fill every pot and the bathtub before the pressure drops.*
+
+   **Answer:** Close your home's main water valve first. With broken water or sewer lines reported, what comes down the pipe now may be contaminated, and the valve keeps it out of your plumbing. The water that was already in your pipes and water heater is the water worth having. Drink your stored water first, then drain the pipes (open the highest faucet, collect at the lowest) and the heater tank.
+
+2. *Day three with no tap water in a heat wave. Four of you are down to one gallon of bottled water. The neighbor's pool is full and clear, and he says the chlorine makes it fine to drink.*
+
+   **Answer:** Pool water is for washing, cleaning and flushing, not for drinking. Don't answer the shortage by cutting what people drink either. Look for more. Check the hidden water at home first: the water heater tank, the pipes, ice cubes, the toilet tank if it is clear and no cleaner has been added, and the liquid in canned fruit and vegetables. Listen for official distribution points. After that, rain or a stream will do once it has been treated.
+
+3. *Your car has broken down on a back road in dry country. At the base of a rock outcrop you find a clear, cold trickle with animal tracks all around it. You have a metal bottle and a lighter.*
+
+   **Answer:** A good find, but don't drink it as it comes. Clear, cold water can still carry germs, and animals using a source proves nothing: wildlife spreads Giardia and Cryptosporidium. You have what you need to treat it, so make a fire, bring the water to a rolling boil for 1 minute (3 minutes above 5,000 ft), and let it cool.
+
+---
+
+## Quick Reference
+
+```
+FINDING SAFE WATER
+
+USE IN THIS ORDER
+1. Stored and bottled water
+2. Hidden water at home:
+   - Water heater tank
+   - Pipes: open highest faucet,
+     collect at the lowest
+   - Ice cubes
+   - Toilet TANK (not bowl), if
+     clear and no cleaner added
+   - Liquid in canned fruit and
+     vegetables
+3. Outdoors, ALWAYS treated: rain,
+   springs, wells, streams, lakes
+4. Last resort: ponds, snow, ice
+
+TREAT OUTDOOR WATER
+- Rolling boil for 1 minute
+  (3 min above 5,000 ft / 1,500 m)
+- Or disinfect: see the Water
+  Purification guide
+
+NEVER DRINK
+- Floodwater
+- Radiator, boiler or waterbed
+  water
+- Pool or hot tub water (washing
+  and cleaning only)
+- Water with a fuel or chemical
+  smell, oily sheen or green scum
+- Salt water, urine, alcohol
+
+WATER HEATER
+1. Power or gas off
+2. Water intake valve off
+3. Open a hot faucet
+4. Open drain valve, collect
+5. Refill before power back on
+
+REMEMBER
+- Don't ration drinking water.
+  Find more.
+- Broken water or sewer lines?
+  Close your main water valve
+- Plan 1 gallon per person a day
+
+MAIN WATER VALVE: ______________
+WATER HEATER SIZE: ________ gal
+NEAREST SOURCES: _______________
+```
+
+---
+
 ## Sources
 
 - [Ready.gov: Water](https://www.ready.gov/water)
@@ -239,6 +316,6 @@ Keep a list of water sources near your home:
 
 ---
 
-Last reviewed: October 2026
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

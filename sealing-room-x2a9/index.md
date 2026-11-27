@@ -1,6 +1,6 @@
 # When to Seal a Room
 
-> Sealing a room with plastic sheeting and duct tape is for **chemical** releases. It uses an **above-ground** room, because many toxic gases are heavier than air and sink into basements. For **radiation** (nuclear fallout, a dirty bomb, a nuclear plant release) do the opposite: go to the **basement or center** of the building. Sealing isn't needed.
+> **Sealing a room is for chemical releases.** It is done with plastic sheeting and duct tape, in an **above-ground** room, because many toxic gases are heavier than air and sink into basements. For **radiation** (nuclear fallout, a dirty bomb, a nuclear plant release) do the opposite: go to the **basement or center** of the building. Sealing isn't needed.
 
 ## Do This Now (Chemical Release)
 
@@ -172,6 +172,26 @@ Sealed rooms are meant for **short chemical releases**, usually a few hours, whi
 
 ---
 
+## Practice
+
+**10-minute drill:** Pick your room and walk to it: interior, above ground, with the fewest windows and vents. Pace out the floor and work out how many people it holds at about 10 square feet each. Count every opening you would have to cover: windows, the door, vents, exhaust fans, outlets. Then time the household closing and locking every outside window and door, closing the fireplace damper, and switching off the heating, air conditioning, and fans. Finish by checking where the plastic sheeting, duct tape, scissors, and towels are kept. Don't tape anything shut and don't seal anyone in: the drill is finding the room and the switches.
+
+**What would you do?**
+
+1. *An alert says a "dirty bomb" has gone off across town and tells everyone to shelter. Your partner grabs the plastic sheeting and tape and heads upstairs to the room you set up for sealing.*
+
+   **Answer:** Wrong plan for this danger. Sealing is for chemical releases. For radiation, taping wastes time and the upstairs room is the wrong place: go to the basement, or to the center of the building away from the roof and outer walls. Close windows, doors, and vents, and plan to stay at least 24 hours unless officials say otherwise.
+
+2. *Officials tell your neighborhood to shelter in place because of a chemical release. You have duct tape but no plastic sheeting. Your partner wants to make a quick run to the hardware store, or else give up on sealing and drive out through it.*
+
+   **Answer:** Stay in and use what you have. Close and lock windows and doors, turn off heating, air conditioning, and fans, and go to an interior room above ground. Stuff towels, sheets, or clothing into the vents and under the door, and cover small gaps with wax paper or aluminum foil. Officials said to shelter, so stay inside until they say it is safe or tell you to evacuate.
+
+3. *Five of you have been sealed in an upstairs bedroom for two hours after a chemical release. The room is stuffy, it is quiet outside, and the radio has given no all-clear. Someone wants to open the window a crack for some air.*
+
+   **Answer:** Keep it shut. The outside air is the hazard, and quiet tells you nothing. Stuffy is not the same as out of air: about 10 square feet of floor space per person gives enough air for up to about 5 hours at rest, so keep everyone sitting still and keep listening for instructions to unseal or evacuate. Call 911 if anyone has difficulty breathing, chest pain, or confusion. If eyes, noses, or throats start to burn, contaminated air may be getting in: cover your nose and mouth with a cloth and call 911 for advice.
+
+---
+
 ## Quick Reference
 
 ```
@@ -179,7 +199,8 @@ SEALING A ROOM = CHEMICAL RELEASE
 
 CHOOSE:
 - Interior room
-- ABOVE ground (NOT basement: gases sink)
+- ABOVE ground
+  (NOT basement: gases sink)
 - Fewest windows and vents
 - ~10 sq ft floor space per person
 
@@ -206,13 +227,15 @@ No sealing needed. Stay 24+ hours.
 - [CDC: What to Do to Shelter in Place for a Chemical Emergency](https://www.cdc.gov/chemical-emergencies/response/shelter-in-place.html)
 - [CDC: Chlorine fact sheet](https://www.cdc.gov/chemical-emergencies/chemical-fact-sheets/chlorine.html)
 - [CDC: Mustard Gas fact sheet](https://www.cdc.gov/chemical-emergencies/chemical-fact-sheets/mustard-gas.html)
-- [Ready.gov: Chemical Emergencies](https://www.ready.gov/chemical)
+- [Ready.gov: Chemicals and Hazardous Materials Incidents](https://www.ready.gov/hazmat)
 - [Ready.gov: Shelter](https://www.ready.gov/shelter)
 - [Ready.gov: Radiation Emergencies](https://www.ready.gov/radiation)
 - [CDC: What to Do: Get Inside (radiation)](https://www.cdc.gov/radiation-emergencies/response/get-inside.html)
 - [FEMA: Planning Guidance for Response to a Nuclear Detonation, 3rd ed. (2022)](https://www.fema.gov/sites/default/files/documents/fema_nuc-detonation-planning-guide.pdf)
 - [American Red Cross: How to Shelter-in-Place (Chemical Incident), 2007](https://rmp.nc.gov/LCF/Publications/AL_Resources/HazMat%20Incident/Red%20Cross%20-%20How%20To%20Shelter-in-place%20Chemical.pdf)
 
-Last reviewed: October 2026
+---
+
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

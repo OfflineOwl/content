@@ -248,6 +248,79 @@ Adjust portions for children, appetites, and diets.
 
 ---
 
+## Practice
+
+**10-minute drill:** Shop your own cupboards. Put on the table everything you already own that can be eaten with no refrigeration, no water and no cooking. Count how many days it would feed your household, and compare that with the several-day minimum. Find the manual can opener and open one can with it. Then find the oldest date in the pile, put that item at the front of the shelf, and write the purchase date on anything unmarked. The gaps you found are your shopping list.
+
+**What would you do?**
+
+1. *You have a small budget to start your supply. A warehouse store has 25-pound bags of rice and dried beans on sale, far more calories for the money than canned food. You have no camp stove and about three days of stored water.*
+
+   **Answer:** Buy the no-cook basics first: canned meat, fish, beans, fruit and vegetables, peanut butter, crackers. Rice and dried beans store well, but they need water, fuel and time to cook, and you are short of two of those. Add dry staples once the no-cook supply is in place, along with more water and a way to cook.
+
+2. *Rotating your shelves, you find three doubtful cans: green beans with a bulging lid, chili with a dent on the side seam, and soup a year past its date that looks perfect. You think about opening each one for a sniff and a taste.*
+
+   **Answer:** Never taste food to test it. The bulging can and the can dented on a seam go in the trash unopened. The soup is a different case: dates on most packages are about quality, not safety, so a sound can past its date can be opened. If the food inside looks or smells abnormal, don't eat it.
+
+3. *Day six of a long outage, and the food is going faster than planned. Someone proposes putting the whole household on half portions, including your pregnant sister and the five-year-old, and cutting everyone's water to match.*
+
+   **Answer:** Half right. Healthy adults can safely eat less than usual for a while. Children and pregnant women should not have their food rationed, so they keep eating normally. Water is never rationed for anyone. If water is running short, steer meals away from salty foods and toward canned foods with a lot of liquid.
+
+---
+
+## Quick Reference
+
+```
+EMERGENCY FOOD STORAGE
+
+HOW MUCH
+- Start: several days (at least 3)
+- Goal: 2 weeks
+- About 2,000 calories per adult
+  per day
+- Water: at least 1 gallon per
+  person per day
+
+STORE FIRST: NO-COOK FOOD
+- Canned meat, fish, beans, soup,
+  fruit, vegetables
+- Peanut butter, crackers, cereal
+- Dried fruit, nuts
+- Shelf-stable milk
+- Ready-to-feed infant formula
+- Special diets, pet food
+- Manual can opener
+
+THEN: DRY STAPLES
+Rice, beans, pasta. They need
+water, fuel and time to cook.
+
+KEEP IT
+- Cool, dry, dark, off the floor
+- Not in a garage or attic
+- Date it. Oldest in front.
+- Check at least twice a year
+
+THROW OUT
+- Bulging, leaking, rusted or
+  deeply dented cans
+- Any can dented on a seam
+- Formula past its date
+- Never taste food to test it
+
+OXYGEN ABSORBERS
+- Dry foods only. Never moist
+  food (botulism risk).
+
+IF SUPPLIES RUN SHORT
+- Never ration water
+- Don't ration food for children
+  or pregnant women
+- Water short? Skip salty foods
+```
+
+---
+
 ## Sources
 
 - [Ready.gov: Food](https://www.ready.gov/food)
@@ -257,14 +330,15 @@ Adjust portions for children, appetites, and diets.
 - [USDA FSIS: Food Product Dating](https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/food-product-dating)
 - [Utah State University Extension: Storing White Rice](https://extension.usu.edu/preserve-the-harvest/research/storing-white-rice)
 - [Utah State University Extension: Storing Wheat](https://extension.usu.edu/preserve-the-harvest/research/storing-wheat)
-- [Utah State University Extension: Storing Dry Beans](https://extension.usu.edu/preserve-the-harvest/dev/storing-dry-beans-1)
+- [Utah State University Extension: How Long Do Dried Beans Last?](https://extension.usu.edu/answers/articles/how-long-do-dried-beans-last)
 - [Utah State University Extension: Packaging Foods](https://extension.usu.edu/preserve-the-harvest/food-storage-packaging)
-- [Dietary Guidelines for Americans](https://www.dietaryguidelines.gov/)
+- [Utah State University Extension: A Guide to Food Storage for Emergencies](https://extension.usu.edu/preserve-the-harvest/files/Food-Storage-Booklet.pdf)
+- [Dietary Guidelines for Americans, 2020-2025 (estimated calorie needs)](https://www.dietaryguidelines.gov/sites/default/files/2020-12/Dietary_Guidelines_for_Americans_2020-2025.pdf)
 - [CDC: Preventing Botulism](https://www.cdc.gov/botulism/prevention/index.html)
 - [CDC: How to Create an Emergency Water Supply](https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html)
 
 ---
 
-Last reviewed: October 2026
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

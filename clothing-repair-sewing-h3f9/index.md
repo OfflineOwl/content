@@ -1,394 +1,217 @@
 # Clothing Repair & Sewing Basics
 
-> **Keep Your Gear Functional When Replacement Is Not an Option** - In an extended emergency, you cannot order new clothes or gear online. A torn jacket, broken zipper, or hole in your socks can go from minor annoyance to serious problem in cold or wet conditions. Basic sewing skills let you keep your clothing and equipment functional indefinitely.
+> **Three stitches fix almost everything.** A running stitch, a backstitch and a whipstitch, plus knowing how to sew on a button and a patch, will keep clothes, bedding, bags and tents in service for as long as you need them. None of it takes talent. It takes a needle, thread and ten minutes of practice.
 
-## Why Clothing Repair Matters in Emergencies
+## Start here
 
-- **Clothing is shelter** - Your clothes are your first layer of protection from the elements
-- **Hypothermia kills** - A torn jacket or missing button in cold weather can be life-threatening
-- **Gear failure compounds** - A small rip becomes a large tear; a loose seam becomes a blowout
-- **Replacement may be impossible** - Stores may be closed, supply chains disrupted for weeks or months
-- **Morale matters** - Well-maintained clothing and gear contribute to mental resilience
+1. **Put together a repair kit** that fits in a mint tin: needles, strong thread, a few buttons, safety pins and small scissors. The list is below.
+2. **Thread a needle and sew ten backstitches** on a scrap of cloth. That one stitch repairs most split seams.
+3. **Sew one button on properly,** with the spacer trick described below. An old shirt is perfect practice.
+4. **Fix the small thing now.** Look over your coat, your boots' laces, your pack straps and your sleeping bag. A loose button or a one-inch split is a five-minute job today and a lost button or a ruined seam next month.
 
-**The rule:** Fix it when the damage is small. A 5-minute repair now prevents a 30-minute repair later, or an irreparable failure at the worst possible time.
+## Why it matters when you cannot shop
 
----
+Clothing is the shelter you wear. A jacket that will not close, a split trouser seam or a sock with a hole stops doing its job exactly when the weather is worst: gaps let wind and wet in, and wet clothing loses heat far faster than dry (see the Extreme Cold Survival guide). Holes in socks rub into blisters, and blisters decide how far you can walk.
 
-## Sewing Kit Essentials
+Damage also grows. Each loose thread in a seam passes its load to the next stitch. Repair is easiest, strongest and least visible when the hole is still small.
 
-### Basic Emergency Sewing Kit
+## The kit
 
-Pack this in every bug-out bag, vehicle kit, and home emergency supply:
+- [ ] **Needles:** a mixed pack of ordinary hand-sewing needles ("sharps"), plus one or two large-eyed, heavy needles for thick cloth and yarn. Choose a length that is comfortable in your hand.
+- [ ] **Thread:** all-purpose polyester in black, white or gray, and one color that matches what you wear most. Polyester thread is strong and stands up to damp better than cotton.
+- [ ] **One spool of heavy thread** (button, upholstery or "outdoor" thread) for coats, packs and straps
+- [ ] **Small sharp scissors** or thread snips
+- [ ] **Safety pins,** several sizes. They are the instant repair, and they hold a patch in place while you sew.
+- [ ] **A few straight pins,** stuck through a scrap of felt
+- [ ] **Buttons:** 6 to 8 in a couple of sizes. Many shirts have a spare sewn inside the bottom hem or side seam.
+- [ ] **Patch fabric:** squares cut from worn-out jeans and shirts cost nothing. Add iron-on or adhesive repair patches if you like.
+- [ ] **A thimble** that fits the middle finger of your sewing hand, for pushing the needle through thick layers
+- [ ] **A needle threader,** for low light and cold hands
+- [ ] **A seam ripper,** kept capped
+- [ ] **Darning yarn or thick thread** if you wear wool socks
 
-- [ ] **Needles** - Assorted pack including:
-  - Sharp/standard needles (sizes 5-10) for general fabric
-  - Heavy-duty needles (leather/canvas needle) for thick materials
-  - Curved needle for hard-to-reach repairs
-- [ ] **Thread** - At least 3 colors:
-  - Black, white, and one matching your most critical clothing
-  - Heavy-duty polyester thread (more durable than cotton)
-  - Consider upholstery thread for gear repairs
-- [ ] **Scissors** - Small, sharp fabric scissors or thread snips
-- [ ] **Pins** - 10-15 straight pins and 5-10 safety pins (various sizes)
-- [ ] **Seam ripper** - For removing broken stitches cleanly
-- [ ] **Thimble** - Protects your finger when pushing through heavy fabric
-- [ ] **Buttons** - Assorted sizes, at least 6-8
-- [ ] **Patches** - Iron-on and sew-on patches in dark and light colors
-- [ ] **Tenacious Tape** - Gear repair tape (for quick fixes on nylon, Gore-Tex, and similar materials)
-- [ ] **Needle threader** - Helpful in low light or with cold hands
-- [ ] **Measuring tape or 12-inch ruler** - For even hems and patch sizing
+Good extras: adhesive fabric repair tape for rainwear, tents and sleeping bags (it fixes coated and slippery fabrics that tear when sewn), a spare zipper pull, and a short length of elastic.
 
-### Advanced Additions
+**No kit?** Unwaxed dental floss is a strong stand-in for heavy thread, the inner strands of paracord work as thread, and a safety pin or duct tape will hold a tear until you can sew it.
 
-- [ ] Fabric glue (Shoe Goo or Gear Aid Seam Grip)
-- [ ] Nylon webbing (1 inch) for strap repair
-- [ ] Side-release buckles (various sizes)
-- [ ] Velcro strips (hook and loop)
-- [ ] Elastic cord
-- [ ] Dental floss (excellent heavy-duty thread substitute)
-- [ ] Beeswax (for waterproofing thread and reducing friction)
-- [ ] Awl (for punching holes in leather or heavy canvas)
+## Before the first stitch
 
----
+**Thread the needle.**
 
-## Threading a Needle
+1. Cut a piece of thread 18 to 24 inches (45 to 60 cm) long, roughly fingertip to elbow. Longer thread tangles and knots.
+2. Cut the end clean, at an angle. Moisten it and pinch it flat.
+3. Push the end through the eye and pull a third of the thread through.
+4. **Single thread** (one long tail, one short) for most sewing. **Double thread** (pull the ends even and knot them together) for buttons and anything that takes strain.
 
-This is the foundation. Practice until you can do it quickly, even in poor lighting.
+**Knot the end.** Wrap the end of the thread twice around the tip of your forefinger, roll the loops off with your thumb so they twist together, and pull the twist down into a small knot. Or skip the knot and start with three tiny stitches on top of each other.
 
-1. Cut thread to roughly **18-24 inches** (arm's length). Longer thread tangles; shorter thread runs out too fast.
-2. Cut the thread end at an angle for a clean point.
-3. Wet the tip slightly (moisture stiffens the fibers).
-4. Hold the needle in one hand with the eye facing you.
-5. Push the thread through the eye.
-6. Pull through about 4-6 inches and leave a tail.
-7. **For general sewing:** Leave the thread single (do not double it).
-8. **For heavy-duty repairs or buttons:** Double the thread and tie the two ends together in a knot.
+**Finish off.** Every line of stitching ends the same way: take a small stitch on the back of the fabric, and before the loop closes, pass the needle through it and pull tight. Do that twice in the same spot. Trim the thread, leaving about a quarter inch (6 mm).
 
-**Tip:** If you struggle to thread the needle, use a needle threader. If you do not have one, try threading against a white background for better visibility.
+**Two rules for neat, strong work:** keep stitches small and even, and pull each one snug but not tight. Thread pulled too hard puckers the cloth and tears thin fabric.
 
-### Tying Off (Securing Your Stitches)
+Words used below: the **right side** is the outside of the garment, the **wrong side** is the inside. A **seam** is the line where two pieces are joined.
 
-To keep your stitches from unraveling:
+## The three stitches
 
-1. After your last stitch, make a small loop near the fabric surface
-2. Pass the needle through the loop twice
-3. Pull tight to form a knot against the fabric
-4. Repeat once more for security
-5. Cut the thread, leaving a 1/4-inch tail
+### Running stitch
 
----
+*The simplest stitch. Use it to hold a patch or hem in place before the real sewing, to gather cloth, and for light seams that take no strain.*
 
-## Essential Hand Stitches
+1. Bring the needle up from the wrong side to the right side.
+2. Push it down about 1/8 to 1/4 inch (3 to 6 mm) ahead.
+3. Bring it up again the same distance further on.
+4. Repeat in a straight line. You can rock the needle in and out several times before pulling the thread through.
 
-### Running Stitch
-
-**The most basic and versatile stitch.** Use for seams, hems, and general repairs.
-
-**How to sew it:**
-
-1. Bring the needle up through the fabric from the back side
-2. Push the needle back down through the fabric about 1/4 inch ahead
-3. Bring the needle up again 1/4 inch ahead of where it went down
-4. Continue in a straight line, keeping stitches even
-5. Pull thread snug (not too tight, or the fabric will pucker)
-
-**Tips:**
-- You can "load" multiple stitches onto the needle before pulling through
-- Aim for stitches about 1/4 inch long and 1/4 inch apart
-- Use for closing seams that have split open
+It looks like a dashed line: stitch, gap, stitch, gap. It is quick, and it is the weakest of the three, because one broken thread lets the whole line slide out.
 
 ### Backstitch
 
-**The strongest hand stitch.** Use when the seam needs to bear stress or load.
+*The strong one. Use it to re-sew split seams and anywhere the cloth gets pulled: trouser seats and inseams, underarms, pockets, straps.*
 
-**How to sew it:**
+1. Bring the needle up from the wrong side, one stitch length (about 1/8 inch or 3 mm) **ahead** of where you want the line to begin.
+2. Go **back** and push the needle down at the beginning of the line.
+3. Bring the needle up one stitch length **ahead** of where the thread first came up.
+4. Go back and push it down in the same hole where the last stitch ended.
+5. Repeat: always up one length ahead, then back down into the end of the previous stitch.
 
-1. Make one running stitch forward
-2. Bring the needle up one stitch length ahead of where the thread exits
-3. Insert the needle back at the point where the previous stitch ended (going backward)
-4. Bring the needle up one stitch length ahead again
-5. Repeat, always going back to meet the previous stitch
+On the right side it looks like an unbroken line, like machine stitching. On the wrong side the stitches overlap. Because every stitch doubles back on the one before, a single break does not unravel the seam.
 
-**Tips:**
-- This creates a continuous, overlapping line with no gaps
-- Use for repairing seams on pants, jacket shoulders, and pack straps
-- Takes longer than a running stitch but is significantly stronger
+**To mend a split seam:** turn the garment inside out. Pin the two layers together along the old stitching line, which you can see as a row of needle holes or a crease. Start about half an inch (1 to 1.5 cm) before the split, on stitching that is still sound, backstitch along the old line, and continue half an inch past the far end. Finish off.
 
-### Whip Stitch (Overcast Stitch)
+### Whipstitch
 
-**Use for joining two edges together or preventing fraying along a raw edge.**
+*The edge stitch. Use it to close a tear by joining two folded edges, to sew down the edge of a patch, and to re-fix a fallen hem.*
 
-**How to sew it:**
+1. Hold the two edges together (or lay the patch edge on the garment).
+2. Bring the needle through from back to front, catching both layers a little way in from the edge, about 1/8 inch (3 mm).
+3. Carry the thread **over the edge** and bring the needle through from back to front again, 1/8 to 1/4 inch (3 to 6 mm) further along.
+4. Repeat. The needle always enters from the same side, so the thread spirals over the edge in a row of small slanted stitches.
 
-1. Place the two fabric edges together
-2. Bring the needle up through both layers from back to front
-3. Loop the thread over the edge
-4. Insert the needle again from back to front, about 1/4 inch from the last stitch
-5. Repeat, creating diagonal stitches that wrap over the edge
+**To close a straight tear:** fold each torn edge under by 1/8 inch so the raw threads are hidden, bring the two folds together, and whipstitch along them. This shortens the cloth slightly, so use it for small tears in fabric that is otherwise strong. Worn or thin cloth needs a patch.
 
-**Tips:**
-- Quick and easy for closing tears where the fabric edges overlap
-- Works well for sleeping bag repairs, tent seams, and stuff sack closures
-- Keep tension consistent for a neat repair
+## Sewing on a button
 
-### Blanket Stitch
+A button sewn flat and tight against thick cloth strains its threads every time it is fastened. The fix is a **shank:** a short stem of thread that lets the button stand off the fabric.
 
-**Use for reinforcing edges, attaching patches, and decorative edging that prevents fraying.**
+1. Use **double thread,** knotted. Heavy thread for coats.
+2. Mark the spot. Look for the old needle holes, or fasten the garment and push a pin through the buttonhole.
+3. Take a small stitch on the right side at the mark, so the knot will be hidden under the button.
+4. Bring the needle up through one hole of the button.
+5. **Lay a toothpick, matchstick or pin across the top of the button,** between the holes, and sew over it. This spacer sets the length of the shank. For a thick coat, use something thicker, such as a second matchstick.
+6. Go down through the next hole and through the fabric. Repeat four to six times. On a four-hole button, do the same for the second pair, as two parallel bars or a cross, matching the other buttons.
+7. Bring the needle up through the fabric but **not** through the button, so it comes out underneath.
+8. Pull out the spacer and lift the button to take up the slack. Wind the thread tightly around the stitches under the button at least three times. That is the shank.
+9. Push the needle through to the wrong side and finish off.
 
-**How to sew it:**
+How long should the shank be? About the thickness of the cloth that will sit under the button, plus 1/8 inch (3 mm) for movement. On a thin shirt or a purely decorative button, no shank is needed: skip the spacer.
 
-1. Bring the needle up from the back, near the edge of the fabric
-2. Insert the needle from the front, about 1/4 inch from the edge and 1/4 inch to the right
-3. Before pulling the thread tight, catch the loop of thread under the needle
-4. Pull through - this creates an L-shaped stitch along the edge
-5. Repeat evenly along the edge
+**Shank buttons** (a loop on the back and no holes) are sewn through the loop four to six times with double thread, with the loop lined up along the direction of the buttonhole.
 
-**Tips:**
-- Excellent for securing patch edges
-- Prevents cut fabric from fraying further
-- Stronger edge reinforcement than a whip stitch
+## Patching a hole
 
----
+Use a patch when cloth is missing, or when the fabric around a tear is worn thin. Stitching thin cloth to itself only moves the tear.
 
-## Common Repairs
+1. **Choose patch fabric** of similar weight and stretch to the garment. Denim on denim, knit on knit.
+2. **Cut it large:** at least 1/2 inch (about 1.5 cm) beyond the damage on every side, and far enough to reach strong cloth. Add another 1/4 inch (6 mm) all round if you will turn the edges under. Round the corners, because points catch and lift.
+3. **Trim loose threads** from the hole.
+4. **Place it.** An inside patch (on the wrong side) shows least. An outside patch is stronger at knees and elbows and easier to sew. On woven fabric, fold the patch edges under by 1/4 inch so they cannot fray.
+5. **Pin it flat** with safety pins, with the garment lying flat. Put your hand or a piece of card inside a sleeve or leg so you do not sew it shut.
+6. **Whipstitch all the way round the edge** of the patch, with stitches 1/8 to 1/4 inch apart.
+7. **Sew down the hole itself.** Turn the garment over and whipstitch the edges of the hole to the patch, turning them under if you can. This second line of stitching is what stops the hole growing.
+8. Finish off on the wrong side.
 
-### Button Replacement
+For the knees of work trousers, a row of backstitch just inside the whipstitched edge makes the patch last much longer.
 
-Lost buttons are the most common clothing failure. Learn this well.
+**Waterproof and coated fabrics** (rain shells, tents, tarps, sleeping bag shells): every needle hole is a leak, and thin coated fabric tears along a line of stitching. Use adhesive repair tape on clean, dry fabric. Cut it with rounded corners and well beyond the tear on all sides (an inch, 2.5 cm, is a good margin), press it down hard, and put a second piece on the inside if you can.
 
-**For a flat (2-hole or 4-hole) button:**
+## Other quick fixes
 
-1. Thread the needle with doubled thread and knot the end
-2. Position the button where it belongs
-3. From the back of the fabric, push the needle up through one hole in the button
-4. Place a toothpick, match, or pin across the top of the button (this creates a thread shank so the button is not flush against the fabric)
-5. Push the needle down through the opposite hole and through the fabric
-6. Repeat 4-6 times through each pair of holes
-7. Remove the toothpick
-8. Bring the needle up between the button and the fabric
-9. Wrap the thread around the thread shank (the threads between button and fabric) 4-6 times
-10. Push the needle to the back and tie off
+- **Fallen hem:** fold it back along the old crease, pin, and sew with small stitches about 1/4 inch (6 mm) apart, using a single matching thread. Catch only a thread or two of the outer fabric on each stitch so it barely shows. Do not pull tight.
+- **Hole in a sock:** put something smooth and round inside (a ball, a jar, a smooth stone). Sew a ring of running stitch around the hole in sound fabric. Then lay parallel threads across the hole, close together, anchoring each in the fabric on either side. Turn the sock a quarter turn and weave a second set over and under the first. Leave the threads slightly loose, because a tight darn makes a hard ridge that rubs.
+- **Missing zipper pull:** thread a loop of cord, a small key ring or a paper clip through the slider.
+- **Stiff zipper:** check for trapped fabric first and ease it out without forcing. Then rub a pencil point, a bar of dry soap or a candle stub along the teeth.
+- **Broken strap or pack seam:** backstitch with heavy thread or dental floss, sewing a box shape with a cross inside it where the strap meets the bag.
+- **No time at all:** safety pins from the inside, or tape on the inside. Sew it properly at the next rest stop. Temporary fixes fail under load.
 
-**For a shank button (loop on the back):**
+## Sewing safely
 
-1. Thread the needle with doubled thread and knot the end
-2. From the back, push up through the fabric at the button location
-3. Pass the needle through the shank loop
-4. Push the needle back through the fabric, close to where it came up
-5. Repeat 4-6 times
-6. Tie off on the back
+Needles are small, sharp and easy to lose. Sew in good light, keep needles and pins in a case or stuck through a scrap of cloth (never in your mouth, a pocket or the sofa), and count them back in when you finish. Push with a thimble, not the palm of your hand. Keep the kit away from small children, and cap the seam ripper. If a needle or pin pricks you while you are mending dirty outdoor gear, wash the spot with soap and water.
 
-### Patching a Hole
+## Practice
 
-**For small holes (under 1 inch):**
+**10-minute drill:** Sit down with the kit, a scrap of cloth (an old tea towel or shirt tail) and a spare button. Thread a needle with double thread and knot it. Sew the button on with a toothpick spacer and wind the shank. Then tug it hard. Re-thread with single thread and sew a two-inch line of backstitch next to it. Turn the scrap over and check that the stitches overlap on the back. Time the whole thing. Most people are under ten minutes on the second try. Older children can learn it too, with an adult beside them.
 
-1. Cut a patch at least 1 inch larger than the hole in all directions
-2. Place the patch behind the hole (on the inside of the garment)
-3. Pin in place
-4. Using a running stitch or blanket stitch, sew around the perimeter of the patch
-5. For extra durability, sew a second row of stitches inside the first
+**What would you do?**
 
-**For larger holes or high-stress areas:**
+1. *Your child's only warm trousers have a two-inch tear at the knee. The cloth around it has worn thin and pale. You have ten minutes and plan to pull the edges together and stitch them tightly closed.*
 
-1. Cut a patch 2 inches larger than the hole in all directions
-2. Fold the patch edges under 1/4 inch to prevent fraying
-3. Pin the patch on the outside of the garment, centered over the hole
-4. Backstitch around the perimeter
-5. Add a second patch on the inside for maximum strength
+   **Answer:** Stitching alone will fail here. The cloth beside the tear is as weak as the tear, so tight stitches will pucker the knee and rip out a new hole next to the old one. Cut a patch that reaches at least half an inch into strong cloth on every side, pin it inside or out, whipstitch round its edge, then stitch the torn edges down to it.
 
-**Quick method with Tenacious Tape:**
-1. Cut a piece of tape 1 inch larger than the hole on all sides
-2. Round the corners (square corners peel up)
-3. Clean and dry the area
-4. Apply to the outside of the fabric, pressing firmly
-5. For durability, apply a second piece on the inside
+2. *A button has come off your winter coat. You find it, thread a needle with ordinary single thread, and start sewing it flat and tight against the cloth so it "won't come loose again."*
 
-### Zipper Repair
+   **Answer:** Flat and tight is why coat buttons come off. A thick buttonhole edge has to fit under the button; without room, every fastening pries at the threads. Use double thread (heavy thread if you have it), sew over a matchstick or toothpick, then pull the spacer out and wind the thread three or more times around the stem underneath. The button will stand slightly off the cloth, and it will stay on.
 
-Zippers are one of the most critical closure systems on jackets, sleeping bags, and packs.
+3. *The side seam of your rain jacket has split for three inches under the arm, and there is a small rip in the body fabric as well. You have needle, thread and a roll of repair tape, and rain is forecast.*
 
-**Zipper slider not closing the teeth:**
+   **Answer:** Use both, each where it belongs. The seam is where two pieces were joined and takes strain, so backstitch it from the inside along the old stitch line, starting and ending on sound stitching. The rip in the coated fabric gets tape, not stitches, because needle holes leak and thin coated cloth tears along a stitched line. If you have tape to spare, cover the re-sewn seam on the inside too, since the new needle holes can let water through.
 
-1. The slider has likely worn and spread open slightly
-2. Using pliers, gently squeeze the back of the slider (the side opposite the pull tab) to narrow the gap
-3. Squeeze evenly on both sides - too much will jam the zipper
-4. Test the zipper; repeat if still not closing properly
+## Quick Reference
 
-**Missing or broken zipper pull tab:**
+```
+CLOTHING REPAIR
 
-1. Attach a small key ring, paper clip, or loop of cord through the slider hole
-2. This provides a new grip to operate the zipper
+KIT
+Needles, polyester thread, heavy
+thread, scissors, safety pins,
+buttons, patches, thimble
 
-**Teeth not aligning (zipper separates after closing):**
+THREAD
+18-24 in (45-60 cm) at a time
+Single: most sewing
+Double: buttons, straps
 
-1. Zip the slider all the way to the bottom stop
-2. Realign the teeth manually
-3. Slowly zip upward
-4. If the slider continues to fail, the slider likely needs replacement
-5. Replacement sliders are available in repair kits - slide the old one off the bottom and slide the new one on
+WHICH STITCH
+Running   = hold in place, light
+Backstitch = split seams, strain
+Whipstitch = edges, patches,
+             tears, hems
 
-**Stuck zipper:**
+BACKSTITCH
+Up one stitch AHEAD,
+down into the END of the last.
+Start and end 1/2 in onto
+sound stitching.
 
-1. Check for fabric caught in the zipper
-2. Gently work the fabric free (do not yank)
-3. Lubricate the teeth with:
-   - Lip balm or chapstick
-   - Bar soap
-   - Candle wax
-   - Graphite from a pencil (rub the pencil along the teeth)
+BUTTON
+Double thread. Sew over a
+toothpick, 4-6 passes. Pull it
+out, wind thread 3+ times under
+the button. Finish on the back.
 
-### Hemming
+PATCH
+1/2 in (1.5 cm) past damage, all
+sides, onto strong cloth.
+Round corners. Whipstitch edge,
+then stitch hole edges down.
 
-When pants are too long or a hem has come undone:
+RAINWEAR, TENTS
+Tape, not stitches.
 
-1. Fold the fabric to the desired length
-2. Pin the fold in place
-3. Using a running stitch, sew 1/4 inch from the folded edge
-4. Keep stitches small on the outside if you want the hem to be less visible
-5. Press the hem flat if an iron or hot flat surface is available
+FINISH EVERY TIME
+Two small knots on the back.
+```
 
-**Quick hem:** Use Tenacious Tape or fabric glue along the inside of the fold for a no-sew hem that holds up to washing.
+## Sources
 
-### Darning Socks
-
-Holes in socks lead to blisters. Blisters lead to lost mobility. Fix your socks.
-
-**How to darn a hole:**
-
-1. Place a hard, round object inside the sock under the hole (a light bulb shape is traditional; a tennis ball, smooth rock, or your fist works)
-2. Thread a needle with thread matching the sock weight (or use thin yarn)
-3. Using a running stitch, sew straight lines across the hole, extending at least 1/2 inch into solid fabric on each side
-4. Space the lines about 1/8 inch apart
-5. Turn the sock 90 degrees
-6. Weave perpendicular lines over and under the first set of threads, creating a patch of woven fabric
-7. Tie off and trim
-
-**Tips:**
-- Use wool yarn to darn wool socks, synthetic thread for synthetic socks
-- A slightly padded darn is more comfortable than a flat one
-- Darn holes when they first appear - a small hole is a 5-minute fix
+- [Utah State University Extension: Sewing Skills Handbook (hand stitches, hems, buttons with thread shank)](https://extension.usu.edu/sewing/files/sewing_skills.pdf)
+- [Utah State University Extension: Basic Sewing Supplies](https://extension.usu.edu/sewing/research/basic-sewing-supplies.php)
+- [iFixit: How to Replace a Button on a Shirt](https://www.ifixit.com/Guide/How+to+Replace+a+Button+on+a+Shirt/149345)
+- [iFixit: How to Hand Sew a Small Hole in Clothing](https://www.ifixit.com/Guide/How+to+Hand+Sew+A+Small+Hole+in+Clothing/138651)
+- [iFixit: How to Patch a Hole in Pullover Hoodie with Fabric](https://www.ifixit.com/Guide/How+to+Patch+a+Hole+in+Pullover+Hoodie+with+Fabric/179544)
+- [iFixit: How to Darn a Sock](https://www.ifixit.com/Guide/How+to+Darn+a+Sock/168231)
 
 ---
 
-## Gear Repair
+Last reviewed: November 2026
 
-### Tent and Tarp Repair
-
-**Small punctures or tears:**
-
-1. Clean and dry the area thoroughly
-2. Apply Tenacious Tape or gear repair tape on both sides of the fabric
-3. Round all corners on the tape
-4. For seam leaks, apply seam sealer along the stitch line on the inside
-
-**Larger tears:**
-
-1. Cut a patch of similar fabric (many tents include repair fabric)
-2. Apply fabric glue (Gear Aid Seam Grip) around the edges of the tear
-3. Place the patch over the tear, press firmly
-4. Allow 8-12 hours to cure
-5. For added durability, sew the patch edges with a whip stitch after the glue dries
-
-### Backpack Repair
-
-**Torn shoulder straps or hip belt:**
-
-1. This is a high-stress repair - use heavy-duty thread or dental floss
-2. Use a backstitch along the tear
-3. Reinforce with a patch of nylon webbing or fabric on the inside
-4. Sew the patch in place with a backstitch around its perimeter
-
-**Broken buckles:**
-
-1. Remove the broken buckle
-2. If a replacement buckle is available, thread the webbing through the new buckle and sew in place
-3. If no replacement: tie the webbing in a secure knot, or use a carabiner as a temporary closure
-
-**Torn mesh pockets:**
-
-1. Use a whip stitch to close the tear
-2. Reinforce with Tenacious Tape if the fabric is too thin to hold stitches
-
-### Sleeping Bag Repair
-
-**Torn shell fabric:**
-
-1. Push insulation away from the tear
-2. Apply Tenacious Tape on the outside
-3. For down bags: pinch the opening closed before taping to prevent down loss
-
-**Zipper failure:**
-
-1. Follow zipper repair instructions above
-2. If the zipper cannot be fixed, use safety pins to close the bag
-3. In cold conditions, a non-functional sleeping bag zipper is a serious issue - prioritize this repair
-
----
-
-## Emergency Sewing Substitutes
-
-When your sewing kit is not available:
-
-| Need | Substitute |
-|---|---|
-| Thread | Dental floss, inner paracord strands, fishing line, thin wire |
-| Needle | Safety pin, thorn, fish hook (with barb filed down), thin wire |
-| Pins | Thorns, small twigs, toothpicks |
-| Scissors | Knife, razor blade, sharp rock edge |
-| Thimble | Folded leather, duct tape wrapped around finger, coin |
-| Patch material | Duct tape, Tenacious Tape, fabric from non-essential clothing |
-| Fabric glue | Tree resin (pine pitch), heated carefully and applied |
-
-**Dental floss** deserves special mention: it is extremely strong, widely available, and makes an excellent heavy-duty thread for gear repair. Pack it in every kit.
-
----
-
-## Quick-Fix vs. Permanent Repair
-
-**Quick fixes** (minutes, gets you through the day):
-- Tenacious Tape over a tear
-- Safety pins to close a gap
-- Duct tape patch
-- Tied fabric for a broken strap
-
-**Durable repairs** (15-30 minutes, lasts weeks to months):
-- Sewn patch with backstitch
-- Proper button replacement
-- Darned sock
-- Glued and sewn tent repair
-
-**Always do the permanent repair when you have time.** Quick fixes fail at the worst moments. Set aside time in camp to maintain and repair your gear properly.
-
----
-
-## Practice Checklist
-
-- [ ] Thread a needle and tie off in under 30 seconds
-- [ ] Sew a straight line of running stitches on scrap fabric
-- [ ] Sew a line of backstitches on scrap fabric
-- [ ] Replace a button on a shirt you own
-- [ ] Patch a hole using both sew-on and Tenacious Tape methods
-- [ ] Darn a sock (use an old sock with a hole)
-- [ ] Repair a zipper that is not closing properly
-- [ ] Practice sewing with gloves on (emergency conditions)
-- [ ] Sew using dental floss as thread
-- [ ] Hem a pair of pants
-
----
-
-## Key Takeaways
-
-1. **Repair early, repair small** - A 5-minute fix now prevents gear failure later
-2. **The backstitch is your strongest hand stitch** - Use it for any load-bearing seam
-3. **Carry Tenacious Tape** - It is the fastest field repair for nylon, Gore-Tex, and ripstop fabrics
-4. **Dental floss doubles as thread** - Strong, compact, and available everywhere
-5. **Zipper care prevents zipper failure** - Keep them clean, lubricated, and gently operated
-6. **Fix your socks** - Blisters from holey socks can cripple your mobility
-7. **Build your sewing kit now** - A basic kit costs under $10 and weighs almost nothing
-
----
-
-*Last updated: March 2026*
 *License: CC-BY-SA 4.0*
-
-**Disclaimer:** This guide is for educational purposes. Always use appropriate safety precautions when working with needles, scissors, and other sharp tools.

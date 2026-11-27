@@ -1,589 +1,377 @@
-{/* Quarantine vs Isolation - Advanced Interactive Guide */}
-
-import { useState, useEffect } from 'react'
-import { AlertTriangle, Shield, Home, User, Users, Thermometer, Clock, CheckCircle, XCircle, Heart, Activity, BedDouble, Pill, Phone, BookOpen, Smile, AlertCircle } from 'lucide-react'
-
-export const CriticalInfo = ({ children }) => (
-  <div className="bg-purple-900/20 border-2 border-purple-500 rounded-lg p-4 my-4 text-purple-100">
-    <div className="flex items-center gap-2 text-purple-400 font-bold mb-2">
-      <Shield className="w-6 h-6" />
-      <span className="text-lg">IMPORTANT DISTINCTION</span>
-    </div>
-    {children}
-  </div>
-)
-
-export const DecisionTool = () => {
-  const [answers, setAnswers] = useState({})
-  
-  const questions = [
-    { id: 'sick', question: 'Are you currently showing symptoms of illness?', yes: 'isolation', no: 'continue' },
-    { id: 'confirmed', question: 'Have you been diagnosed with a contagious disease?', yes: 'isolation', no: 'continue' },
-    { id: 'exposed', question: 'Have you been in close contact with someone who is sick?', yes: 'quarantine', no: 'continue' },
-    { id: 'travel', question: 'Have you traveled from an area with an active outbreak?', yes: 'quarantine', no: 'neither' },
-  ]
-  
-  const getResult = () => {
-    for (const q of questions) {
-      const answer = answers[q.id]
-      if (answer === 'yes' && (q.yes === 'isolation' || q.yes === 'quarantine')) {
-        return q.yes
-      }
-    }
-    
-    const allAnswered = questions.every(q => answers[q.id] !== undefined)
-    if (allAnswered) return 'neither'
-    return null
-  }
-  
-  const result = getResult()
-  const currentQuestion = questions.find(q => answers[q.id] === undefined && !result)
-  
-  const resetQuiz = () => setAnswers({})
-  
-  return (
-    <div className="my-6 p-4 bg-gray-800/50 rounded-lg">
-      <h4 className="text-lg font-bold text-blue-300 mb-4">Do I Need Isolation or Quarantine?</h4>
-      
-      {!result && currentQuestion && (
-        <div className="space-y-4">
-          <div className="p-4 bg-gray-900/50 rounded-lg">
-            <p className="text-lg mb-4">{currentQuestion.question}</p>
-            <div className="flex gap-3">
-              <button
-                onClick={() => setAnswers({ ...answers, [currentQuestion.id]: 'yes' })}
-                className="flex-1 py-3 bg-blue-600 hover:bg-blue-500 rounded-lg font-bold transition-all"
-              >
-                Yes
-              </button>
-              <button
-                onClick={() => setAnswers({ ...answers, [currentQuestion.id]: 'no' })}
-                className="flex-1 py-3 bg-gray-600 hover:bg-gray-500 rounded-lg font-bold transition-all"
-              >
-                No
-              </button>
-            </div>
-          </div>
-          
-          {/* Progress dots */}
-          <div className="flex justify-center gap-2">
-            {questions.map((q, i) => (
-              <div
-                key={q.id}
-                className={`w-3 h-3 rounded-full ${
-                  answers[q.id] !== undefined 
-                    ? 'bg-blue-500' 
-                    : q.id === currentQuestion.id 
-                      ? 'bg-blue-400 animate-pulse' 
-                      : 'bg-gray-600'
-                }`}
-              />
-            ))}
-          </div>
-        </div>
-      )}
-      
-      {result && (
-        <div className={`p-6 rounded-lg text-center ${
-          result === 'isolation' 
-            ? 'bg-red-900/30 border-2 border-red-500' 
-            : result === 'quarantine'
-              ? 'bg-yellow-900/30 border-2 border-yellow-500'
-              : 'bg-green-900/30 border-2 border-green-500'
-        }`}>
-          {result === 'isolation' && (
-            <>
-              <BedDouble className="w-12 h-12 mx-auto mb-3 text-red-400" />
-              <h5 className="text-2xl font-bold text-red-400 mb-2">ISOLATION Recommended</h5>
-              <p className="text-red-200">You are sick or have been diagnosed. Separate yourself from others until you've recovered.</p>
-            </>
-          )}
-          {result === 'quarantine' && (
-            <>
-              <Home className="w-12 h-12 mx-auto mb-3 text-yellow-400" />
-              <h5 className="text-2xl font-bold text-yellow-400 mb-2">QUARANTINE Recommended</h5>
-              <p className="text-yellow-200">You've been exposed and may become sick. Stay home and monitor for symptoms.</p>
-            </>
-          )}
-          {result === 'neither' && (
-            <>
-              <CheckCircle className="w-12 h-12 mx-auto mb-3 text-green-400" />
-              <h5 className="text-2xl font-bold text-green-400 mb-2">No Special Measures Needed</h5>
-              <p className="text-green-200">Based on your answers, you don't currently need isolation or quarantine.</p>
-            </>
-          )}
-          
-          <button
-            onClick={resetQuiz}
-            className="mt-4 px-4 py-2 bg-gray-600 hover:bg-gray-500 rounded-lg text-sm"
-          >
-            Start Over
-          </button>
-        </div>
-      )}
-    </div>
-  )
-}
-
-export const ComparisonTable = () => (
-  <div className="my-6 overflow-x-auto">
-    <table className="w-full">
-      <thead>
-        <tr className="border-b-2 border-gray-600">
-          <th className="p-3 text-left"></th>
-          <th className="p-3 text-center bg-red-900/20">
-            <BedDouble className="w-6 h-6 mx-auto mb-1 text-red-400" />
-            <span className="text-red-400">ISOLATION</span>
-          </th>
-          <th className="p-3 text-center bg-yellow-900/20">
-            <Home className="w-6 h-6 mx-auto mb-1 text-yellow-400" />
-            <span className="text-yellow-400">QUARANTINE</span>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr className="border-b border-gray-700">
-          <td className="p-3 font-bold">Who</td>
-          <td className="p-3 text-center text-red-200">People who ARE sick</td>
-          <td className="p-3 text-center text-yellow-200">People who were EXPOSED</td>
-        </tr>
-        <tr className="border-b border-gray-700">
-          <td className="p-3 font-bold">Confirmed Illness</td>
-          <td className="p-3 text-center"><CheckCircle className="w-5 h-5 mx-auto text-red-400" /></td>
-          <td className="p-3 text-center"><XCircle className="w-5 h-5 mx-auto text-gray-500" /></td>
-        </tr>
-        <tr className="border-b border-gray-700">
-          <td className="p-3 font-bold">Can Spread Disease</td>
-          <td className="p-3 text-center text-red-200">Yes (contagious)</td>
-          <td className="p-3 text-center text-yellow-200">Unknown (possible)</td>
-        </tr>
-        <tr className="border-b border-gray-700">
-          <td className="p-3 font-bold">Duration</td>
-          <td className="p-3 text-center text-red-200">Until recovered</td>
-          <td className="p-3 text-center text-yellow-200">Incubation period</td>
-        </tr>
-        <tr>
-          <td className="p-3 font-bold">Separation Level</td>
-          <td className="p-3 text-center text-red-200">Dedicated room/bathroom</td>
-          <td className="p-3 text-center text-yellow-200">Distance from others</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-)
-
-export const SymptomTracker = () => {
-  const [days, setDays] = useState([])
-  const [currentDay, setCurrentDay] = useState(1)
-  
-  const symptoms = [
-    { id: 'fever', label: 'Fever (100.4°F+)', icon: <Thermometer className="w-4 h-4" /> },
-    { id: 'cough', label: 'Cough', icon: <Activity className="w-4 h-4" /> },
-    { id: 'breathing', label: 'Difficulty breathing', icon: <Heart className="w-4 h-4" /> },
-    { id: 'fatigue', label: 'Fatigue', icon: <BedDouble className="w-4 h-4" /> },
-    { id: 'bodyaches', label: 'Body aches', icon: <User className="w-4 h-4" /> },
-    { id: 'other', label: 'Other symptoms', icon: <AlertCircle className="w-4 h-4" /> },
-  ]
-  
-  const [todaySymptoms, setTodaySymptoms] = useState({})
-  const [temperature, setTemperature] = useState('')
-  
-  const toggleSymptom = (symptomId) => {
-    setTodaySymptoms(prev => ({
-      ...prev,
-      [symptomId]: !prev[symptomId]
-    }))
-  }
-  
-  const saveDay = () => {
-    const hasSymptoms = Object.values(todaySymptoms).some(v => v)
-    const entry = {
-      day: currentDay,
-      symptoms: { ...todaySymptoms },
-      temperature: temperature || 'Not recorded',
-      hasSymptoms
-    }
-    setDays([...days, entry])
-    setCurrentDay(currentDay + 1)
-    setTodaySymptoms({})
-    setTemperature('')
-  }
-  
-  const hasDangerSigns = Object.values(todaySymptoms).filter(v => v).length >= 3 || todaySymptoms.breathing
-  
-  return (
-    <div className="my-6 p-4 bg-gray-800/50 rounded-lg">
-      <h4 className="text-lg font-bold text-blue-300 mb-4 flex items-center gap-2">
-        <Activity className="w-5 h-5" />
-        Daily Symptom Tracker (Day {currentDay})
-      </h4>
-      
-      {/* Previous days summary */}
-      {days.length > 0 && (
-        <div className="mb-4 flex gap-1 flex-wrap">
-          {days.map((d, i) => (
-            <div 
-              key={i}
-              className={`w-8 h-8 rounded flex items-center justify-center text-xs font-bold ${
-                d.hasSymptoms 
-                  ? 'bg-red-600' 
-                  : 'bg-green-600'
-              }`}
-              title={`Day ${d.day}: ${d.hasSymptoms ? 'Had symptoms' : 'No symptoms'}`}
-            >
-              {d.day}
-            </div>
-          ))}
-          <div className="w-8 h-8 rounded bg-blue-600 flex items-center justify-center text-xs font-bold animate-pulse">
-            {currentDay}
-          </div>
-        </div>
-      )}
-      
-      {/* Temperature input */}
-      <div className="mb-4">
-        <label className="text-sm text-gray-400 mb-1 block">Temperature (°F)</label>
-        <input
-          type="number"
-          step="0.1"
-          value={temperature}
-          onChange={(e) => setTemperature(e.target.value)}
-          placeholder="98.6"
-          className="w-32 px-3 py-2 bg-gray-900 border border-gray-600 rounded text-white"
-        />
-        {parseFloat(temperature) >= 100.4 && (
-          <span className="ml-2 text-red-400 text-sm">⚠️ Fever detected</span>
-        )}
-      </div>
-      
-      {/* Symptoms checklist */}
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-2 mb-4">
-        {symptoms.map(s => (
-          <button
-            key={s.id}
-            onClick={() => toggleSymptom(s.id)}
-            className={`p-3 rounded-lg text-left transition-all flex items-center gap-2 ${
-              todaySymptoms[s.id] 
-                ? 'bg-red-600 ring-2 ring-red-400' 
-                : 'bg-gray-700 hover:bg-gray-600'
-            }`}
-          >
-            {s.icon}
-            <span className="text-sm">{s.label}</span>
-          </button>
-        ))}
-      </div>
-      
-      {/* Warning if danger signs */}
-      {hasDangerSigns && (
-        <div className="mb-4 p-3 bg-red-900/50 border border-red-500 rounded-lg">
-          <AlertTriangle className="w-5 h-5 inline mr-2 text-red-400" />
-          <span className="text-red-200 font-bold">Seek medical attention if symptoms are severe or worsening</span>
-        </div>
-      )}
-      
-      <button
-        onClick={saveDay}
-        className="w-full py-3 bg-blue-600 hover:bg-blue-500 rounded-lg font-bold transition-all"
-      >
-        Log Day {currentDay} & Continue
-      </button>
-      
-      {days.length >= 5 && !days.slice(-3).some(d => d.hasSymptoms) && (
-        <div className="mt-4 p-4 bg-green-900/30 border border-green-500 rounded-lg text-center">
-          <CheckCircle className="w-8 h-8 mx-auto text-green-400 mb-2" />
-          <p className="text-green-400 font-bold">Looking Good!</p>
-          <p className="text-green-200 text-sm">No symptoms for several days. Consult health guidance for when to end quarantine.</p>
-        </div>
-      )}
-    </div>
-  )
-}
-
-export const DurationCalculator = () => {
-  const [disease, setDisease] = useState(null)
-  
-  const diseases = [
-    { id: 'covid', name: 'COVID-19', quarantine: 5, isolation: '5-10 days', incubation: '2-14 days' },
-    { id: 'flu', name: 'Influenza', quarantine: 7, isolation: '5-7 days', incubation: '1-4 days' },
-    { id: 'measles', name: 'Measles', quarantine: 21, isolation: '4 days after rash', incubation: '7-21 days' },
-    { id: 'chickenpox', name: 'Chickenpox', quarantine: 21, isolation: 'Until lesions crust', incubation: '10-21 days' },
-    { id: 'tuberculosis', name: 'Tuberculosis', quarantine: 'Varies', isolation: 'Until non-infectious', incubation: '2-12 weeks' },
-  ]
-  
-  const selected = diseases.find(d => d.id === disease)
-  
-  return (
-    <div className="my-6 p-4 bg-gray-800/50 rounded-lg">
-      <h4 className="text-lg font-bold text-amber-300 mb-4 flex items-center gap-2">
-        <Clock className="w-5 h-5" />
-        Duration Reference
-      </h4>
-      
-      <div className="flex flex-wrap gap-2 mb-4">
-        {diseases.map(d => (
-          <button
-            key={d.id}
-            onClick={() => setDisease(d.id)}
-            className={`px-4 py-2 rounded-lg transition-all ${
-              disease === d.id 
-                ? 'bg-amber-600 text-white' 
-                : 'bg-gray-700 hover:bg-gray-600'
-            }`}
-          >
-            {d.name}
-          </button>
-        ))}
-      </div>
-      
-      {selected && (
-        <div className="grid md:grid-cols-3 gap-4 animate-fade-in">
-          <div className="p-4 bg-yellow-900/30 border border-yellow-500 rounded-lg text-center">
-            <p className="text-yellow-300 text-sm mb-1">Quarantine Period</p>
-            <p className="text-2xl font-bold text-yellow-400">
-              {typeof selected.quarantine === 'number' ? `${selected.quarantine} days` : selected.quarantine}
-            </p>
-          </div>
-          <div className="p-4 bg-red-900/30 border border-red-500 rounded-lg text-center">
-            <p className="text-red-300 text-sm mb-1">Isolation Until</p>
-            <p className="text-2xl font-bold text-red-400">{selected.isolation}</p>
-          </div>
-          <div className="p-4 bg-blue-900/30 border border-blue-500 rounded-lg text-center">
-            <p className="text-blue-300 text-sm mb-1">Incubation Period</p>
-            <p className="text-2xl font-bold text-blue-400">{selected.incubation}</p>
-          </div>
-        </div>
-      )}
-      
-      <p className="mt-4 text-sm text-gray-400">
-        Note: These are general guidelines. Always follow current official health guidance for your specific situation.
-      </p>
-    </div>
-  )
-}
-
-export const SuppliesChecklist = () => {
-  const [checked, setChecked] = useState({})
-  
-  const categories = [
-    {
-      name: 'Sick Room Essentials',
-      icon: <BedDouble className="w-5 h-5" />,
-      items: ['Thermometer', 'Fever/pain medication', 'Fluids (water, electrolytes)', 'Tissues', 'Waste basket with lid', 'Phone and charger', 'Disinfectant', 'Clean towels']
-    },
-    {
-      name: 'Caregiver PPE',
-      icon: <Shield className="w-5 h-5" />,
-      items: ['Masks (N95 preferred)', 'Gloves', 'Eye protection', 'Gown or cover clothing', 'Hand sanitizer']
-    },
-    {
-      name: 'Mental Health',
-      icon: <Smile className="w-5 h-5" />,
-      items: ['Books/magazines', 'Entertainment devices', 'Phone for video calls', 'Comfort items', 'Journal/notebook']
-    }
-  ]
-  
-  const totalItems = categories.reduce((acc, cat) => acc + cat.items.length, 0)
-  const checkedCount = Object.values(checked).filter(v => v).length
-  
-  return (
-    <div className="my-6 p-4 bg-gray-800/50 rounded-lg">
-      <div className="flex items-center justify-between mb-4">
-        <h4 className="text-lg font-bold text-green-300 flex items-center gap-2">
-          <CheckCircle className="w-5 h-5" />
-          Supplies Checklist
-        </h4>
-        <span className="text-sm text-gray-400">{checkedCount}/{totalItems} items ready</span>
-      </div>
-      
-      <div className="h-2 bg-gray-700 rounded-full mb-4 overflow-hidden">
-        <div 
-          className="h-full bg-green-500 transition-all duration-300"
-          style={{ width: `${(checkedCount / totalItems) * 100}%` }}
-        />
-      </div>
-      
-      <div className="space-y-4">
-        {categories.map(cat => (
-          <div key={cat.name}>
-            <h5 className="font-bold text-gray-300 flex items-center gap-2 mb-2">
-              {cat.icon} {cat.name}
-            </h5>
-            <div className="grid grid-cols-2 gap-1">
-              {cat.items.map(item => (
-                <button
-                  key={item}
-                  onClick={() => setChecked({ ...checked, [item]: !checked[item] })}
-                  className={`p-2 text-left text-sm rounded transition-all flex items-center gap-2 ${
-                    checked[item] 
-                      ? 'bg-green-900/30 text-green-300 line-through opacity-75' 
-                      : 'bg-gray-700 hover:bg-gray-600'
-                  }`}
-                >
-                  {checked[item] ? <CheckCircle className="w-4 h-4" /> : <div className="w-4 h-4 border rounded" />}
-                  {item}
-                </button>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  )
-}
-
 # Quarantine vs Isolation Explained
 
-<CriticalInfo>
-**These terms are often confused but serve different purposes.** Understanding the difference helps you respond appropriately during disease outbreaks and protect your family.
-</CriticalInfo>
+> **Sick people isolate. Exposed people quarantine.** Both keep germs away from others while the risk lasts. When clinics are closed or far away and everyone is sharing rooms, doing this well at home can keep one sick person from becoming a sick household.
 
----
+<QuickTriage
+  questions={[
+    {
+      id: "situation",
+      text: "What is your situation?",
+      options: [
+        { label: "Someone here is sick", next: "danger" },
+        { label: "I was exposed but feel fine", result: "quarantine" },
+        { label: "I am caring for the sick person", result: "caregiver" },
+        { label: "They are improving. When can isolation end?", next: "illness" }
+      ]
+    },
+    {
+      id: "danger",
+      text: "Any of these: trouble breathing, bluish lips, chest pain, confusion or cannot be woken, a seizure, no urine, or any fever in a baby under 12 weeks?",
+      options: [
+        { label: "Yes", result: "emergency" },
+        { label: "No", result: "isolate" }
+      ]
+    },
+    {
+      id: "illness",
+      text: "What kind of illness was it?",
+      options: [
+        { label: "Fever, cough, sore throat", result: "end-respiratory" },
+        { label: "Vomiting or diarrhea", result: "end-stomach" },
+        { label: "Fever with a rash", result: "end-rash" }
+      ]
+    }
+  ]}
+  results={[
+    {
+      id: "emergency",
+      title: "Get Emergency Help Now",
+      steps: [
+        "Call 911 or your local emergency number",
+        "Tell the dispatcher the person may be contagious",
+        "Put a mask on them if they can tolerate it, and open a window",
+        "Have the symptom and medicine log ready to hand over"
+      ],
+      section: "Get emergency help if",
+      priority: "critical"
+    },
+    {
+      id: "isolate",
+      title: "Start Isolation",
+      steps: [
+        "Own room, door closed, window open if weather allows",
+        "One caregiver who is not pregnant, elderly, or chronically ill",
+        "Masks on the sick person and the caregiver",
+        "Own cup, towel, dishes, and lidded trash can",
+        "Log temperature twice a day, fluids, and every dose of medicine"
+      ],
+      section: "Set up the sick room",
+      priority: "urgent"
+    },
+    {
+      id: "quarantine",
+      title: "Quarantine and Watch",
+      steps: [
+        "Count from the last day you were exposed: that is day 0",
+        "Stay home and keep your distance from high-risk people",
+        "Take your temperature twice a day and write it down",
+        "Measles or another serious disease: call the health department right away",
+        "Symptoms start: switch to isolation"
+      ],
+      section: "Quarantine: When You Were Exposed",
+      priority: "important"
+    },
+    {
+      id: "caregiver",
+      title: "Protect the Caregiver",
+      steps: [
+        "Only one person gives care",
+        "Mask on before you open the door; keep visits short",
+        "Gloves for vomit, stool, blood, and soiled laundry",
+        "Soap and water for 20 seconds after every visit",
+        "Clean, then disinfect high-touch surfaces once a day"
+      ],
+      section: "Caring for Someone Who Is Sick",
+      priority: "urgent"
+    },
+    {
+      id: "end-respiratory",
+      title: "The 24-Hour Rule, Then 5 Days",
+      steps: [
+        "Stay apart until symptoms have been improving for 24 hours",
+        "AND there has been no fever for 24 hours without fever medicine",
+        "Then 5 days of added precautions: mask, distance, fresh air, handwashing",
+        "Fever returns or they feel worse: start the count again"
+      ],
+      section: "How long to stay apart",
+      priority: "important"
+    },
+    {
+      id: "end-stomach",
+      title: "48 Hours After the Last Symptoms",
+      steps: [
+        "Stay apart at least 48 hours after vomiting and diarrhea stop",
+        "No cooking or serving food for others during that time",
+        "Soap and water after every toilet visit; sanitizer is not enough",
+        "Keep up careful handwashing for 2 more weeks"
+      ],
+      section: "How long to stay apart",
+      priority: "important"
+    },
+    {
+      id: "end-rash",
+      title: "Keep Isolating and Get Advice",
+      steps: [
+        "Fever with a rash can be measles or chickenpox, which spread through the air",
+        "Call a clinician or the health department before going anywhere in person",
+        "Measles: isolate until 4 full days after the rash appeared",
+        "Chickenpox: isolate until every blister has crusted over"
+      ],
+      section: "How long to stay apart",
+      priority: "urgent"
+    }
+  ]}
+/>
 
-## 🤔 Which Do I Need?
+## Do this now
 
-Answer a few questions to find out:
+If someone in your home has a fever, cough, vomiting, diarrhea, or a rash with fever:
 
-<DecisionTool />
+1. **Check the emergency signs below first.** Isolation never means delaying emergency care.
+2. **Give them their own room** with the door closed, and their own bathroom if you have two.
+3. **Pick one caregiver:** a healthy adult who is not pregnant, elderly, or chronically ill. Everyone else stays out.
+4. **Mask up.** The sick person wears a mask whenever someone else is in the room or they leave it. The caregiver wears the best-fitting mask available, ideally an N95.
+5. **Let in fresh air and wash hands.** Open a window when the weather allows. Wash with soap and water after every visit to the room.
+6. **Start a log.** Write down when symptoms began, then temperature twice a day, fluids taken, and every dose of medicine with the time.
 
----
+Exposed to someone sick but feeling well? Go to "Quarantine: when you were exposed".
 
-## 📊 Side-by-Side Comparison
+## Get emergency help if
 
-<ComparisonTable />
+Call 911 (or your local emergency number), or get to care by any means, if the sick person has any of these. Tell the dispatcher the person may be contagious, and put a mask on them if they can tolerate it.
 
----
+**Adults:**
 
-## ⏱️ Duration Reference
+- Difficulty breathing or shortness of breath
+- Persistent pain or pressure in the chest or abdomen
+- Persistent dizziness, confusion, or you cannot wake them
+- Seizures
+- Not urinating
+- Severe muscle pain, severe weakness, or unsteadiness
 
-Different diseases have different quarantine and isolation periods:
+**Children:**
 
-<DurationCalculator />
+- Fast breathing, trouble breathing, or ribs pulling in with each breath
+- Bluish lips or face
+- Chest pain, or muscle pain so severe the child refuses to walk
+- Dehydration: no urine for 8 hours, dry mouth, no tears when crying
+- Not alert or not interacting when awake
+- Seizures
+- Fever above 104°F (40°C) that fever medicine does not bring down
+- **Any fever in a baby younger than 12 weeks**
 
----
+**Anyone:** fever or cough that improves and then returns or gets worse, or a chronic condition (asthma, diabetes, heart disease) that is getting worse.
 
-## 📝 Daily Symptom Tracker
+These are the CDC's flu warning signs, and the list is not complete. Anything severe or frightening is reason enough to get help.
 
-If you're in quarantine, track your symptoms daily. This helps you know when to seek care:
+## Isolation and Quarantine: The Difference
 
-<SymptomTracker />
+| | Isolation | Quarantine |
+|---|---|---|
+| **Who** | People who are sick or have tested positive | People who were exposed and are not sick (yet) |
+| **Why** | They can spread it now | They might be about to, sometimes before they feel ill |
+| **Where** | A sick room, away from the rest of the household | At home, apart from others where practical |
+| **How long** | Until they are no longer contagious | The disease's incubation period, counted from the last exposure |
+| **Ends early?** | No. Feeling better is not the same as not contagious | It turns into isolation the moment symptoms start |
 
----
+A memory hook: **I**solation is for the **I**ll. Quarantine is a waiting period.
 
-## 🏠 Setting Up for Isolation
+**Who decides.** For everyday illnesses, you do. For a short list of serious diseases (measles, infectious tuberculosis, pandemic flu, and a few others), health departments can issue isolation or quarantine orders that carry legal force. In the US, state, local, and tribal authorities enforce these within their borders. Laws differ by place and this guide is not legal advice: if a health department contacts you, follow its instructions and ask questions.
 
-### The Sick Room
+## Isolation: When You Are Sick
 
-<div className="my-4 p-4 bg-red-900/20 border border-red-500 rounded-lg">
-  <h4 className="text-red-400 font-bold mb-2">Isolation Room Setup</h4>
-  <ul className="space-y-1 text-red-200">
-    <li>• Dedicated room with door that closes</li>
-    <li>• Own bathroom if possible</li>
-    <li>• Good ventilation (open window if safe)</li>
-    <li>• All supplies within the room</li>
-    <li>• Single designated caregiver</li>
-  </ul>
-</div>
+### How long to stay apart
 
----
+**Flu, COVID-19, RSV, and other respiratory viruses.** The CDC's rule is the same for all of them. Stay home and away from others until **both** of these have been true for at least 24 hours:
 
-## ✅ Supplies Checklist
+- Your symptoms are getting better overall, and
+- You have had no fever without using fever-reducing medicine.
 
-Make sure you have everything ready:
+Then take **added precautions for the next 5 days**: a well-fitting mask around others, distance, fresh air, and careful handwashing. If the fever returns or you feel worse, go back to staying apart and start the count again. People with weakened immune systems can stay contagious longer.
 
-<SuppliesChecklist />
+The trap is the fever medicine. A temperature that is normal only because of acetaminophen or ibuprofen does not count.
 
----
+**Other illnesses have their own clocks:**
 
-## 🧠 Mental Health During Isolation
+| Illness | When it spreads | Stay apart until |
+|---|---|---|
+| Flu | From about 1 day before symptoms to 5 to 7 days after; most contagious in the first 3 days | The 24-hour rule above, then 5 days of precautions |
+| Norovirus and similar "stomach bugs" | While sick and after; the virus can stay in stool for 2 weeks or more | At least 48 hours after vomiting and diarrhea stop. No cooking for others during that time |
+| Measles | From 4 days before the rash to 4 days after | 4 full days after the rash appeared, and call the health department |
+| Chickenpox | From 1 to 2 days before the rash | Every blister has crusted over |
 
-Isolation and quarantine are emotionally challenging:
+**No test and no diagnosis?** Go by symptoms. Fever and cough: use the 24-hour rule. Vomiting or diarrhea: 48 hours after the last episode. Fever with a rash: keep the person isolated and get medical advice, because measles and chickenpox spread through the air.
 
-<div className="my-4 grid md:grid-cols-2 gap-4">
-  <div className="p-4 bg-gray-800/50 rounded-lg">
-    <h4 className="font-bold text-blue-300 mb-2">Common Challenges</h4>
-    <ul className="space-y-1 text-gray-300 text-sm">
-      <li>• Loneliness and boredom</li>
-      <li>• Anxiety about illness</li>
-      <li>• Cabin fever</li>
-      <li>• Disruption of routine</li>
-      <li>• Financial stress</li>
-    </ul>
-  </div>
-  <div className="p-4 bg-gray-800/50 rounded-lg">
-    <h4 className="font-bold text-green-300 mb-2">Coping Strategies</h4>
-    <ul className="space-y-1 text-gray-300 text-sm">
-      <li>• Video calls with family/friends</li>
-      <li>• Books, movies, games</li>
-      <li>• Light exercise if able</li>
-      <li>• Maintain daily routines</li>
-      <li>• Limit news consumption</li>
-    </ul>
-  </div>
-</div>
+### Set up the sick room
 
----
+Choose a room with a door and, if possible, a window, close to a bathroom. Put everything inside so nobody has to fetch and carry:
 
-## 📋 Quick Reference
+- [ ] Tissues and a lidded trash can lined with a plastic bag
+- [ ] Hand sanitizer (at least 60% alcohol) at the bedside
+- [ ] Drinks within reach, and a cup or bottle only they use
+- [ ] Thermometer
+- [ ] Masks
+- [ ] Their medicines, out of reach of children, with paper and pen for the dose log
+- [ ] Their own towel, washcloth, plate, and utensils
+- [ ] Phone and charger, a bell, or a whistle to call for help
+- [ ] Something to do: books, cards, a radio
+
+**No spare room?** In a studio, shelter, or tent, give the sick person the spot farthest from everyone else, near a window or door that can be opened. Everyone wears a mask, and nobody shares bedding, cups, or towels.
+
+**One bathroom?** The sick person wears a mask on the way, opens the window or runs the fan, and uses their own towel. The faucet, flush handle, and doorknob are cleaned and disinfected afterward.
+
+**Meals** are left at the door. The caregiver washes their dishes with dish soap and water as usual.
+
+## Caring for Someone Who Is Sick
+
+One caregiver means one person exposed. Rotating the job through the family exposes everyone.
+
+- **Keep visits short and avoid face-to-face contact.** When you hold a sick child, rest their chin on your shoulder so they do not cough in your face.
+- **Mask before you open the door.** Take it off by the straps after you leave and close the door. See the PPE Basics for Civilians guide for fit and safe removal.
+- **Wear disposable gloves** for vomit, stool, blood, and soiled laundry. Throw them away and wash your hands.
+- **Wash hands with soap and water for 20 seconds** after every visit. For vomiting or diarrhea illness, soap and water is the only reliable choice: hand sanitizer does not work well against norovirus.
+- **Push fluids** in small, frequent sips. The Pediatric Emergency Care guide covers oral rehydration for children.
+- **Never give aspirin to a child or teenager with a fever.**
+- **Laundry** can be washed with everyone else's. Use detergent, follow the label for water temperature, and dry everything completely. After vomiting or diarrhea, use hot water on the longest cycle and the highest dryer heat. Wash your hands afterward.
+
+### Clean, then disinfect
+
+Disinfectant does not work through dirt. Wash high-touch surfaces (doorknobs, light switches, bedside table, faucet, toilet handle) with soap or detergent first, then disinfect once a day:
+
+- **Standard bleach solution:** 5 tablespoons (1/3 cup) of regular unscented bleach per gallon of room-temperature water, or 4 teaspoons per quart (about 20 mL per liter). This assumes bleach labeled 5% to 9% sodium hypochlorite. Keep the surface wet for at least 1 minute. Mix fresh daily.
+- **After vomit or diarrhea:** the CDC's norovirus guidance calls for a stronger mix, 5 to 25 tablespoons per gallon, left on for at least 5 minutes.
+- Never mix bleach with ammonia or any other cleaner. Open a window and wear gloves.
+
+The Infection Prevention guide uses the same numbers and covers cleaning in more depth.
+
+## Quarantine: When You Were Exposed
+
+Quarantine exists because several diseases spread **before** the person knows they are sick: flu from about a day before symptoms, chickenpox 1 to 2 days before the rash, measles 4 days before the rash.
+
+**When it is used.** For everyday respiratory viruses, current CDC guidance centers on sick people staying home, not on quarantining everyone near them. Formal quarantine is for specific diseases, on a health department's advice. Measles is the clearest example: up to 9 in 10 unprotected people close to a case catch it, the virus can hang in a room's air for up to 2 hours after the sick person leaves, and exposed people without immunity may be asked to stay home for up to 21 days after their last exposure.
+
+**If you were exposed to something serious, act early.** For measles, a vaccine dose within 72 hours of exposure, or immune globulin within 6 days, may prevent the illness or make it milder. Call a clinician or the health department before you go anywhere in person.
+
+**How to quarantine at home:**
+
+1. Count from the **last** day you were exposed. That is day 0.
+2. Stay home. Keep your distance from others in the household where you can, especially babies, older adults, pregnant people, and anyone with a weak immune system.
+3. Take your temperature twice a day and write it down, with any new symptoms.
+4. If symptoms start, you are now in isolation. Move to the sick room rules above.
+5. Finish the full period even if you feel fine. Illness can start on the last day.
+
+| Disease | Time from exposure to illness |
+|---|---|
+| Norovirus | 12 to 48 hours |
+| Flu | About 2 days (range 1 to 4) |
+| Measles | Rash at about 14 days (range 7 to 21) |
+| Chickenpox | About 2 weeks (range 10 to 21 days) |
+
+A caregiver's exposure lasts as long as the sick person is contagious. Watch yourself for symptoms through their illness and for one incubation period after it.
+
+## People Who Need a Different Plan
+
+- **Babies and young children** cannot isolate alone. One adult isolates with them. Any fever in a baby under 12 weeks needs medical care right away.
+- **Older adults, pregnant people, and people with chronic illness or weak immune systems** should not be the caregiver. If one of them is the sick person, seek medical advice early.
+- **People who need hands-on help** (disability, dementia) cannot keep distance. The caregiver relies on a well-fitting mask, gloves, handwashing, and fresh air.
+- **Outside the US,** follow your national or regional health authority.
+
+## Getting Through It
+
+Days of separation are hard, and harder in a disaster. Loneliness, fear, and irritability are normal.
+
+- Keep contact going: talk through the door or window, by phone, or with notes.
+- Keep a routine: wake, wash, eat, and sleep at regular times, and get daylight.
+- Give children simple, honest explanations and a job, such as drawing cards for the person in the sick room.
+
+If you or someone you care for feels hopeless or is thinking about suicide or self-harm, **call or text 988** (US Suicide and Crisis Lifeline, 24 hours). The Disaster Distress Helpline is 1-800-985-5990, call or text. Other countries have their own crisis lines. See the Mental Health First Aid in Crisis guide.
+
+## Common Mistakes
+
+- **Ending isolation on a medicated temperature.** The 24 hours must be fever-free without medicine.
+- **Letting the recovered cook.** After a stomach bug, wait at least 48 hours, and keep washing with soap for the next 2 weeks.
+- **Sharing the caregiving.** One person, every time.
+- **Putting off emergency care** to avoid breaking isolation.
+
+## Practice
+
+**10-minute drill:** Walk your home and choose the sick room and the caregiver now, while everyone is well. Then check that the thermometer works and that you own masks that fit the adults. Put them in a box with a pen and a blank log sheet (time, temperature, fluids, medicine).
+
+**What would you do?**
+
+1. *Your partner has had the flu for four days. This morning's ibuprofen brought the fever down, they feel much better, and they want to eat dinner with everyone in the shelter's common room tonight.*
+
+   **Answer:** Not yet. The fever is down because of the medicine, so the 24-hour clock has not started. They stay apart until they have gone a full 24 hours with no fever and no fever medicine, and are improving overall. After that come 5 days of added precautions. If the fever comes back, the count restarts.
+
+2. *Your 10-year-old stopped vomiting last night. She is hungry, full of energy, and usually helps make breakfast for the three families sharing your house. You are short-handed.*
+
+   **Answer:** She stays out of the kitchen for at least 48 hours after her last symptoms, and you do not want her serving food even then if others can do it. Norovirus spreads easily through food, and the virus can stay in stool for 2 weeks or more after a person feels well. She washes with soap and water after every toilet visit, not sanitizer, and uses her own towel.
+
+3. *Your 70-year-old father has been isolating in the back bedroom with a cough. Tonight he cannot say what day it is and is too weak to stand. The roads are bad, and you worry about exposing the ambulance crew.*
+
+   **Answer:** Call 911 now. New confusion and severe weakness are emergency signs, and isolation never outranks them. Tell the dispatcher he has a contagious respiratory illness, put a mask on him if he tolerates it, and open the window. Have his symptom and medicine log ready to hand over.
+
+## Quick Reference
 
 ```
 ISOLATION = SICK
-├── Confirmed illness
-├── Stay separated until recovered  
-├── Caregiver uses PPE
-└── Dedicated room/bathroom
+QUARANTINE = EXPOSED, NOT SICK (YET)
 
-QUARANTINE = EXPOSED  
-├── Was exposed, may not be sick yet
-├── Monitor for symptoms daily
-├── Stay home during incubation period
-└── May still develop illness
+SICK ROOM
+- Own room, door shut, window open
+- One caregiver, not high-risk
+- Masks: sick person + caregiver
+- Soap and water after every visit
+- Own cup, towel, dishes, trash can
+- Log: temp 2x/day, fluids, doses
 
-BOTH REQUIRE:
-├── Staying home
-├── Separation from others
-├── Monitoring health
-└── Following official guidance
+STAY APART UNTIL
+Respiratory virus: 24 h improving
+  AND no fever without medicine,
+  then 5 days of precautions
+Stomach bug: 48 h after last
+  vomiting/diarrhea; no cooking
+Measles: 4 days after rash starts
+Chickenpox: all blisters crusted
+
+QUARANTINE
+Count from LAST exposure (day 0)
+Temp twice a day
+Symptoms start = isolate
+Measles exposure: call health dept
+  fast (vaccine within 72 h)
+
+BLEACH (5%-9%): 1/3 cup per gallon
+  or 4 tsp per quart, wet 1 min
+Vomit/diarrhea: 5-25 Tbsp/gal, 5 min
+
+CALL 911: trouble breathing, blue
+lips, chest pain, confusion, can't
+wake, seizure, no urine, any fever
+in a baby under 12 weeks
+
+Crisis line (US): call or text 988
 ```
 
----
+## Sources
 
-## ⚠️ When to Seek Medical Care
-
-<div className="my-4 p-4 bg-red-900/30 border-2 border-red-500 rounded-lg">
-  <h4 className="text-red-400 font-bold mb-3 flex items-center gap-2">
-    <AlertTriangle className="w-6 h-6" />
-    Emergency Warning Signs
-  </h4>
-  <ul className="space-y-2 text-red-200">
-    <li className="flex items-center gap-2">
-      <XCircle className="w-5 h-5 text-red-500" />
-      Difficulty breathing or shortness of breath
-    </li>
-    <li className="flex items-center gap-2">
-      <XCircle className="w-5 h-5 text-red-500" />
-      Persistent pain or pressure in chest
-    </li>
-    <li className="flex items-center gap-2">
-      <XCircle className="w-5 h-5 text-red-500" />
-      Confusion or inability to stay awake
-    </li>
-    <li className="flex items-center gap-2">
-      <XCircle className="w-5 h-5 text-red-500" />
-      Pale, gray, or blue-colored skin/lips
-    </li>
-    <li className="flex items-center gap-2">
-      <XCircle className="w-5 h-5 text-red-500" />
-      Severe or worsening symptoms
-    </li>
-  </ul>
-  <span className="block mt-3 text-red-300 font-bold">Call emergency services or go to emergency room immediately</span>
-</div>
+- [CDC: Preventing Spread of Respiratory Viruses When You're Sick](https://www.cdc.gov/respiratory-viruses/prevention/precautions-when-sick.html)
+- [CDC: Signs and Symptoms of Flu (emergency warning signs)](https://www.cdc.gov/flu/signs-symptoms/index.html)
+- [CDC: How Flu Spreads](https://www.cdc.gov/flu/spread/index.html)
+- [CDC: Caring for Someone Sick](https://www.cdc.gov/flu/takingcare/caring-for-someone.html)
+- [CDC (archived 2009 H1N1 home care pages): The Sick Room](https://archive.cdc.gov/www_cdc_gov/h1n1flu/homecare/sickroom.htm)
+- [CDC: How to Prevent Norovirus](https://www.cdc.gov/norovirus/prevention/index.html)
+- [CDC: About Norovirus](https://www.cdc.gov/norovirus/about/index.html)
+- [CDC: About Measles](https://www.cdc.gov/measles/about/index.html)
+- [CDC: Manual for the Surveillance of Vaccine-Preventable Diseases, Chapter 7: Measles](https://www.cdc.gov/surv-manual/php/table-of-contents/chapter-7-measles.html)
+- [CDC: About Chickenpox](https://www.cdc.gov/chickenpox/about/index.html)
+- [CDC: Legal Authorities for Isolation and Quarantine](https://www.cdc.gov/port-health/legal-authorities/isolation-quarantine.html)
+- [CDC: Cleaning and Disinfecting with Bleach](https://www.cdc.gov/hygiene/about/cleaning-and-disinfecting-with-bleach.html)
+- [CDC: When and How to Clean and Disinfect Your Home](https://www.cdc.gov/hygiene/about/when-and-how-to-clean-and-disinfect-your-home.html)
+- [988 Suicide and Crisis Lifeline](https://988lifeline.org/)
 
 ---
 
-<div className="text-center text-gray-500 text-sm mt-8">
-  Last updated: January 2026 | License: CC-BY-SA 4.0
-  
-  **Isolation protects others. Quarantine protects everyone.**
-</div>
+Last reviewed: November 2026
+
+*License: CC-BY-SA 4.0*

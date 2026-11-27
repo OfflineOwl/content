@@ -1,6 +1,6 @@
 # Infection Prevention Without Modern Healthcare
 
-> When clinics are closed and antibiotics are scarce, preventing infection is far easier than treating it. Clean hands, safe water, clean wounds, and keeping human waste away from food and water prevent most infections.
+> **Preventing infection is far easier than treating it.** That matters most when clinics are closed and antibiotics are scarce. Clean hands, safe water, clean wounds, and keeping human waste away from food and water prevent most infections.
 
 ## Do this now
 
@@ -263,12 +263,84 @@ Vitamin C, zinc, echinacea, elderberry, garlic, and similar products have not be
 
 ---
 
+## Practice
+
+**10-minute drill:** Read two labels, find one record, and wash once. (1) Find your household bleach and read the label: does it say 5% to 9% sodium hypochlorite? If no strength is listed, it isn't the one to disinfect with. (2) Check that your hand sanitizer says at least 60% alcohol. (3) Find out when each person in your household last had a tetanus shot, and write the dates with your emergency documents. (4) Set up handwashing without the tap: a jug of clean water, soap, and a clean towel. Have someone pour while you scrub for a timed 20 seconds, then swap. Don't mix any bleach for this drill; it is only reading, finding, and washing.
+
+**What would you do?**
+
+1. *The power went out at 8 last night. It is now noon, the kitchen is warm, and you kept the refrigerator closed the whole time. The leftover chicken and rice inside look and smell fine, and you hate to waste them.*
+
+   **Answer:** Throw them out. A closed refrigerator keeps food safe for only about 4 hours, and perishable food that has been above 40°F (4°C) for more than 2 hours isn't safe, however it looks or smells. You can't see, smell, or taste the germs that cause food poisoning. Eat from the shelf instead: canned goods, peanut butter, crackers.
+
+2. *Clearing flood debris, you step on a nail that goes through your boot and into your foot. The hole is small and barely bleeds. Your last tetanus shot was seven or eight years ago, and there is a lot of work left to do.*
+
+   **Answer:** Stop and treat it as the dirty, deep wound it is. Wash your hands, rinse the puncture with plenty of clean running water, wash the skin around it with soap, and cover it with a clean dressing. Then get medical care: a deep puncture should be checked by a clinician, and a dirty or deep wound more than 5 years after your last tetanus dose calls for a booster. Keep the foot out of floodwater, and check it every day for spreading redness, swelling, pus, red streaks, or fever.
+
+3. *A scrape on your daughter's forearm has turned red and swollen, and this morning a red streak runs from it toward her elbow. The clinic is closed because of the storm. In the cabinet is half a course of antibiotics left over from someone's dental infection last year.*
+
+   **Answer:** Leave the leftover pills alone unless a clinician, in person, by phone, or by radio, tells you to use them. Red streaks spreading from a wound mean get care now, by any means available: call 911 or your local emergency number. While you arrange that, clean the wound gently and put on a fresh dressing, raise the arm, give her plenty of fluids, and mark the edge of the redness with a pen. Watch for signs of sepsis: confusion, shortness of breath, a fast heart rate, shivering, extreme pain, or clammy skin.
+
+---
+
+## Quick Reference
+
+```
+INFECTION PREVENTION
+
+HANDS: soap + clean water, 20 sec
+- Before food, eating, wound care
+- After toilet, diapers, garbage,
+  caring for someone sick
+- No soap and water: sanitizer,
+  at least 60% alcohol
+
+WATER: rolling boil, 1 minute
+- 3 min above 5,000 ft (1,500 m)
+- Boiling won't remove fuel or
+  chemicals
+
+WOUNDS: rinse with clean running
+water, cover, check every day
+- Dirty or deep + no tetanus shot
+  in 5 years: get care
+- Animal bite: wash 15 min with
+  soap and water, get advice fast
+
+FOOD: above 40 F (4 C) for over
+2 hours = throw it out
+- 1 hour if above 90 F (32 C)
+- Closed fridge: about 4 hours
+- Full freezer: about 48 hours
+
+BLEACH FOR SURFACES (5%-9%)
+- 5 Tbsp (1/3 cup) per gallon,
+  or 4 tsp per quart
+- Clean first. Wet for 1 minute
+- Fresh batch daily. NEVER mix
+  with other cleaners
+
+TOILET: lined bucket with a lid.
+Latrine 100 ft (30 m) from water
+
+GET CARE NOW
+- Red streaks, redness growing
+  fast, or a wound with fever
+- Sepsis: infection + confusion,
+  short of breath, fast heart
+  rate, shivering, extreme pain,
+  or clammy skin
+```
+
+---
+
 ## Sources
 
 - [CDC: About Handwashing](https://www.cdc.gov/clean-hands/about/index.html)
 - [CDC: About Hand Sanitizer](https://www.cdc.gov/clean-hands/about/hand-sanitizer.html)
 - [CDC: Hand Hygiene FAQ (homemade sanitizer)](https://www.cdc.gov/clean-hands/faq/index.html)
 - [CDC: How to Make Water Safe in an Emergency](https://www.cdc.gov/water-emergency/about/index.html)
+- [EPA: Emergency Disinfection of Drinking Water (boil 3 minutes above 5,000 feet)](https://www.epa.gov/ground-water-and-drinking-water/emergency-disinfection-drinking-water)
 - [CDC: Floodwater After a Disaster or Emergency (wound care)](https://www.cdc.gov/floods/safety/floodwater-after-a-disaster-or-emergency-safety.html)
 - [CDC: Tetanus Clinical Guidance (booster timing)](https://www.cdc.gov/tetanus/hcp/clinical-guidance/index.html)
 - [CDC: Rabies Prevention](https://www.cdc.gov/rabies/prevention/index.html)
@@ -284,8 +356,10 @@ Vitamin C, zinc, echinacea, elderberry, garlic, and similar products have not be
 - [CDC: Sequence for Putting On and Removing PPE](https://www.cdc.gov/hai/pdfs/ppe/ppe-sequence.pdf)
 - [NCCIH: Colds, Flu, and Complementary Health Approaches](https://www.nccih.nih.gov/health/colds-flu-and-complementary-health-approaches)
 
-Last reviewed: October 2026
-
 *This guide doesn't replace professional medical care. Serious or spreading infections need treatment by a clinician.*
+
+---
+
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

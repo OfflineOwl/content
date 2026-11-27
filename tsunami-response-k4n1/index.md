@@ -103,6 +103,24 @@ There is no "all clear" alert level. When a warning is canceled, that doesn't me
 - **Keep a go bag ready,** but never let packing delay you.
 - **When traveling,** check where high ground is when you arrive at a coastal hotel or campground.
 
+## Practice
+
+**10-minute drill:** Walk your route to high ground. If you live, work or are staying in a tsunami hazard zone, pick your safe place first: outside the zone, or at least 100 feet (30 m) above sea level or 1 mile (1.6 km) inland. Then leave your front door on foot, with whoever would be with you, and time the walk. Notice what would slow you down: a locked gate, a bridge, a steep stretch for a stroller or a wheelchair. Do it again another day after dark. Not on the coast today? Do the traveler's version the next time you arrive somewhere by the sea: before you unpack, find the evacuation route signs and work out which way is uphill.
+
+**What would you do?**
+
+1. *You are on a beach. There was no shaking and no alert, but the sea is pulling back fast, leaving fish and rocks exposed far out. People are walking onto the wet sand with their phones out.*
+
+   **Answer:** Leave now, and tell the people near you to come. The ocean suddenly draining away is a natural warning, and one sign is enough. The water can come back within minutes, faster than anyone can run. Walk quickly to high ground or inland and keep going until you are out of the hazard zone, or at least 100 feet up or a mile in.
+
+2. *A strong earthquake rocks your beachfront rental for most of a minute. When it stops, the neighbors are loading their cars, and the only road out runs along the shore. The hill behind the houses is a ten-minute walk.*
+
+   **Answer:** Walk up the hill, right now, without packing. Long or strong shaking at the coast is the warning, and the first wave can arrive before any official alert. Roads after an earthquake can be cracked, blocked or jammed with everyone else's cars, and this one runs along the water. On foot you are certain of reaching high ground.
+
+3. *You evacuated to a hilltop an hour ago. A wave came in, small, barely over the seawall. Now your phone says the warning has been canceled, and people are heading down to check their houses and boats.*
+
+   **Answer:** Stay where you are. A tsunami is a series of waves that can arrive anywhere from 5 minutes to 2 hours apart, and the first is often not the largest. A canceled warning is not an all-clear: dangerous currents and flooding can go on for hours or days. Go back only when local officials say it is safe.
+
 ## Quick Reference
 
 ```
@@ -142,6 +160,7 @@ largest. Danger can last hours or days.
 
 - [National Weather Service: Tsunami Safety](https://www.weather.gov/safety/tsunami)
 - [National Weather Service: Tsunami Alerts and Natural Warnings](https://www.weather.gov/safety/tsunami-alerts)
+- [National Weather Service: Before a Tsunami](https://www.weather.gov/safety/tsunami-before)
 - [National Weather Service: During a Tsunami](https://www.weather.gov/safety/tsunami-during)
 - [National Weather Service: After a Tsunami](https://www.weather.gov/safety/tsunami-after)
 - [NOAA Tsunami Warning Centers: Tsunami FAQ](https://www.tsunami.gov/?page=tsunamiFAQ)
@@ -150,6 +169,6 @@ largest. Danger can last hours or days.
 
 ---
 
-Last reviewed: October 2026
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

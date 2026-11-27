@@ -1,378 +1,235 @@
 # Cyber Preparedness & Data Backup
 
-> **Protect Your Digital Life Before the Lights Go Out** - In an emergency, your digital information can be as critical as food and water. Medical records, contacts, maps, insurance documents, and communication tools all live on devices that need power and protection.
+> **Your phone may be the first thing a disaster takes.** It holds your contacts, your photos, the keys to your bank, and the codes that prove you are you. An hour of setup now means a flood, fire, theft, or ransomware attack costs you a device, not your records, your money, or your identity.
 
-## Why Digital Preparedness Matters
+## Start here
 
-Modern life depends on digital systems. When those systems go down -- whether from a power outage, cyberattack, natural disaster, or infrastructure failure -- you lose access to:
+1. **Turn on automatic backup on every phone,** then open the backup settings and check the date of the last one.
+2. **Photograph your key documents** (IDs, insurance policies, medical cards, prescriptions) and save them to a password-protected or encrypted USB drive. Keep it with your go-bag.
+3. **Print one page of phone numbers and policy numbers** for your kit: family, doctors, insurer, bank, utilities. No passwords on it.
+4. **Lock down your email first.** Give it a long, unique password and turn on multifactor authentication (MFA). Whoever controls your email can reset almost everything else.
+5. **Plan for losing the phone.** Save each important account's backup codes on paper in a locked place, so a destroyed phone does not lock you out.
 
-- **Financial accounts** (banking, payments)
-- **Communication** (phone, email, messaging)
-- **Navigation** (GPS, online maps)
-- **Medical information** (prescriptions, health records, provider contacts)
-- **Identity verification** (digital IDs, account recovery)
-- **Essential contacts** (phone numbers you have not memorized)
+## Act fast if
 
-**The goal:** Have your critical digital information accessible **offline, encrypted, and on devices you can keep charged**.
+- **You paid or gave card details to someone you now think is a scammer.** Call your bank or card issuer at once, then report it at ReportFraud.ftc.gov.
+- **You gave out a Social Security number or bank details, or get a letter about an aid application or account you never opened.** Go to IdentityTheft.gov for a step-by-step recovery plan and freeze your credit (free) with Equifax, Experian, and TransUnion.
+- **Your phone is lost or stolen.** From another device, use the maker's find-my-device service to lock or erase it, ask your carrier to suspend the line, and change your email password.
+- **A screen demands payment to unlock your files.** Disconnect the device from the internet and do not connect your backup drive to it. See the last scenario under Practice.
 
----
+These are US services. Elsewhere, contact your bank and your national fraud or consumer protection agency.
 
-## Backing Up Important Digital Files
+## What to Back Up
 
-### What to Back Up
+Start with what you would need in the first week after losing your home, then what could never be replaced.
 
-**Priority 1: Identity and Legal**
-- Government-issued ID (scans of driver's license, passport, birth certificates)
-- Social Security cards
-- Marriage/divorce certificates
-- Property deeds and vehicle titles
-- Will and power of attorney documents
-- Immigration documents
+| Priority | What | Why |
+|----------|------|-----|
+| 1. Identity | Photo IDs, passports, birth certificates, Social Security cards, immigration papers, pet ID and microchip numbers | Needed to apply for disaster aid, replace documents, and reunite families |
+| 2. Money and home | Insurance policies with claim phone numbers, lease or deed, vehicle titles, bank and loan account numbers, recent tax return, proof of income | Needed to file claims and keep payments and credit going |
+| 3. Medical | Medication list with doses, immunization records, insurance cards, doctors' and pharmacy numbers, advance directives | Helps any clinic or pharmacy treat you |
+| 4. Contacts | Family, out-of-area contact, employer, school, insurer, bank, utilities | Your phone's contact list may be gone |
+| 5. Irreplaceable | Family photos and videos, a room-by-room video of your home and belongings | Photos cannot be re-bought; the video supports insurance claims |
 
-**Priority 2: Financial**
-- Bank account numbers and routing numbers
-- Insurance policies (health, home, auto, life) with policy numbers and agent contacts
-- Credit card numbers and customer service phone numbers
-- Tax returns (last 3 years minimum)
-- Loan documents
+A phone camera or scanning app is enough. Save documents as PDF or JPEG with plain names, such as "passport-maria-2031.pdf". For what to keep on paper and how to store originals, see the Important Documents Offline Kit and Legal & Insurance Readiness guides.
 
-**Priority 3: Medical**
-- Prescription list (medication names, dosages, prescribing doctors)
-- Medical history summary
-- Allergies and blood type
-- Health insurance cards
-- Vaccination records
-- Advance directives and medical power of attorney
-- Copies of eyeglass/contact lens prescriptions
+## The 3-2-1 Rule
 
-**Priority 4: Practical**
-- Emergency contact list (printed AND digital)
-- Offline maps of your area and evacuation routes
-- Family photos (irreplaceable memories)
-- Home inventory (for insurance claims)
-- Pet records (vaccination, microchip numbers)
-- Password database (encrypted)
+One backup is not enough, because the things that destroy the original often destroy what sits beside it.
 
-### The 3-2-1 Backup Rule
+- **3 copies** of anything important: the original and two backups.
+- **2 different kinds of storage,** so one type of failure cannot take both.
+- **1 copy off-site,** outside your home.
 
-- **3** copies of your data
-- **2** different storage media types
-- **1** copy stored off-site (at a family member's home, in a safe deposit box, or in a secure cloud service)
+For a household, that can be as simple as: the phone or computer (original), an external drive at home (backup one), and a cloud service or a drive at a relative's house (backup two, off-site). In a regional disaster, "off-site" must mean outside the region: a drive at a neighbor's house floods with yours.
 
----
+| Where | Good for | Weakness | Make it safer |
+|-------|----------|----------|---------------|
+| **Cloud backup** | Survives fire, flood, and theft at home; reachable from any device | Useless without internet and your sign-in; you depend on the provider | Strong unique password plus MFA; keep backup codes on paper |
+| **External hard drive** | Whole-computer backups; no internet needed | Sits next to the computer, so the same fire, flood, thief, or power surge can take both | Unplug it after each backup; encrypt it |
+| **USB flash drive** | Small, shock-resistant, fits a go-bag | Easy to lose or steal | Encrypt or password-protect it; carry only what you need |
+| **Paper** | Works with no power, no device, no password | Burns, soaks, and can be read by anyone | Waterproof bag in a locked or fire-resistant box; no passwords in the go-bag copy |
 
-## Encrypted USB Drives
+Three habits make backups trustworthy:
 
-An encrypted USB drive is one of the best ways to keep critical documents portable and secure.
+- **Unplug the drive when the backup finishes.** A drive that stays connected can be hit by the same power surge, and by the same malware. Automatic backups can quietly copy corrupted or encrypted files over your good ones.
+- **Encrypt anything portable.** A lost USB drive full of ID scans is an identity-theft kit. Use your computer's built-in drive encryption or a drive with built-in encryption, and choose a passphrase you can recall under stress.
+- **Test it.** Twice a year, open a few files from each backup on a different device. A backup you have never restored from is a hope, not a backup.
 
-### Hardware-Encrypted vs. Software-Encrypted
+## What to Keep Offline
 
-| Feature | Hardware-Encrypted | Software-Encrypted |
-|---------|-------------------|-------------------|
-| **Security** | Encryption chip built into drive | Uses software on host computer |
-| **Ease of use** | Enter PIN on drive itself, works on any computer | Requires specific software installed |
-| **Cost** | $50-150 | Free (software) + cost of any USB drive |
-| **Tamper resistance** | Physical protection against brute force | Depends on software strength |
-| **Recommendation** | Best for primary backup | Good for secondary copies |
+Assume no internet and limited battery. What will you wish you had downloaded?
 
-### Recommended Approach
+- [ ] Contact list, on paper and saved in the phone itself, not only in a cloud account
+- [ ] Insurance cards and policy numbers with claim phone numbers
+- [ ] Medication list, allergies, and doctors' numbers
+- [ ] ID scans on the encrypted USB drive
+- [ ] Offline maps of your area and evacuation routes (see the Offline Maps & Navigation guide)
+- [ ] Your family plan: meeting places, out-of-area contact (see the Emergency Communications Plan guide)
+- [ ] Emergency contacts and medical information set up on your phone's lock screen
+- [ ] Guides, books, and a few things for children, downloaded in advance
 
-1. **Get a quality encrypted USB drive** (hardware-encrypted preferred)
-2. **Organize files in clear folders:**
-   ```
-   /EMERGENCY-DOCS/
-     /Identity/
-     /Financial/
-     /Medical/
-     /Insurance/
-     /Contacts/
-     /Maps/
-     /References/
-   ```
-3. **Update quarterly** -- set a calendar reminder
-4. **Test regularly** -- plug it in and verify files are readable
-5. **Store in your go-bag** or a fireproof/waterproof container
-6. **Use a strong PIN** (hardware) or passphrase (software) -- at least 8 characters
+Keeping the phone itself alive is covered in the Battery Management & Rotation guide.
 
-### Software Encryption Option (Free)
+## Passwords
 
-If using a regular USB drive, encrypt it with **VeraCrypt** (free, open-source):
+The US cybersecurity agency (CISA) gives three rules for a strong password:
 
-1. Download and install VeraCrypt on your computer
-2. Create an encrypted volume on the USB drive
-3. Mount the volume with your password to access files
-4. Dismount when done
-5. **Important:** You will need VeraCrypt installed on any computer to access the files, or carry the portable version of VeraCrypt on the unencrypted portion of the drive
+- **Long:** at least 16 characters.
+- **Random:** a random mix of letters, numbers, and symbols, or a passphrase of 4 to 7 unrelated words.
+- **Unique:** never reused. One breach then exposes one account, not all of them.
 
----
+Nobody can remember dozens of those, which is why CISA's advice is to use a password manager: it creates, stores, and fills in a different strong password for every account, and you remember only one long passphrase.
 
-## Offline Password Management
+**The disaster problem.** CISA advises against keeping passwords on paper, and for everyday use that is right. But a password manager, an authenticator app, and text-message codes all live on the same phone. If that phone is destroyed, you can be locked out of everything at the moment you most need your bank and your insurer. So keep a very short recovery sheet, treated like your passport:
 
-When the internet is down, you cannot access cloud-based password managers. **KeePass** solves this.
+- The backup or recovery codes for your email, your password manager, and your main bank account
+- Your phone carrier's customer-service number and account PIN
+- Stored in a locked, fire-resistant box or a safe deposit box, never in a wallet, and never as a plain file on a computer
 
-### Why KeePass?
+Tell one trusted person where it is.
 
-- **Fully offline** -- database stored locally, no internet required
-- **Free and open-source**
-- **Cross-platform** (KeePassXC for desktop, KeePassDX for Android, Strongbox for iOS)
-- **Strong encryption** (AES-256)
-- **Portable** -- database file can be carried on USB drive
+## Multifactor Authentication
 
-### Setting Up KeePass for Emergencies
+MFA adds a second step to signing in: a code sent by text or email, a code from an authenticator app that changes about every 30 seconds, or a fingerprint or face scan. A stolen password alone then gets a thief nowhere.
 
-1. **Install KeePassXC** on your computer (keepassxc.org)
-2. **Create a new database** with a strong master password
-3. **Organize entries into groups:**
-   - Financial (banking, investments)
-   - Insurance
-   - Medical portals
-   - Email accounts
-   - Government services
-   - Utilities
-   - Social media
-4. **For each entry, store:**
-   - Username
-   - Password
-   - URL
-   - Recovery codes
-   - Security question answers
-   - Customer service phone numbers
-5. **Copy the database file (.kbdx) to:**
-   - Your encrypted USB drive
-   - Your phone (using the mobile KeePass app)
-   - A secondary backup location
-6. **Memorize your master password** -- write nothing down
+- **Turn it on for email first,** then banking, then social media and shopping accounts. Look in each account's security settings for "two-step" or "two-factor" sign-in.
+- **Save the backup codes** the account offers when you turn MFA on, and put them on your recovery sheet.
+- **Add a second method** where the account allows it, so one lost device is not the end.
+- **Never read a code to anyone who contacts you.** A real company will not call, text, or message you asking for it.
 
-### Critical Password Security
+## Keep Devices Updated and Locked
 
-- Use a **unique, strong master password** (at least 16 characters)
-- **Never reuse** your master password anywhere else
-- Consider a **key file** in addition to your password for extra security (store the key file separately from the database)
-- Update your database whenever you change a password
+- Turn on automatic updates for the phone, computer, browser, and apps. Updates close the holes attackers use.
+- Lock every device with a passcode, not just a swipe.
+- Turn on the maker's find-my-device feature so you can lock or erase it remotely.
+- Install apps only from the official store.
 
----
+## Scams After Disasters
 
-## Protecting Identity Documents Digitally
+Scammers follow storms. They know you are tired, displaced, and expecting calls from strangers about money.
 
-### Scanning Best Practices
+| They say | The truth | Do this |
+|----------|-----------|---------|
+| "I'm with FEMA. There is a fee to apply, to be inspected, or to speed things up." | Federal agencies never charge for disaster assistance, inspections, or help with applications | Ask to see an official government ID badge. Call the FEMA Helpline yourself: 800-621-3362 |
+| "I need your bank account number to complete the inspection." | FEMA inspectors do not ask for bank information, and already have your registration number | Give nothing. Report it |
+| "We're working in your area. Pay cash now and we start tomorrow." | Legitimate contractors show a license and insurance and give a written contract | Get more than one written estimate. Never pay in full up front, and never by wire, gift card, payment app, cryptocurrency, or cash |
+| "Sign your insurance check over to us." | You stay in control of your insurance money | Never sign it over. Ask your bank about paying the contractor in stages as work is completed |
+| A text or email: "Your relief payment is ready. Click here." | Phishing. Flawless grammar proves nothing now that scammers use AI | Do not click. Type the agency's address yourself. Forward scam texts to 7726 and report at ReportFraud.ftc.gov |
+| "Donate to the victims," from a caller or a look-alike website | Scammers pose as charities, often with names close to real ones | Look the charity up at give.org or charitywatch.org. Pay by card or check, never cash, gift card, or wire |
 
-- Scan at **300 DPI minimum** (legible when zoomed)
-- Save as **PDF** (universal format)
-- Use **color scans** for IDs and important documents
-- Name files clearly: `passport-john-smith-2025.pdf`
-- Store in encrypted container (never unencrypted on a device)
+The pattern behind every row: **urgency, an unusual way to pay, and a request for information they should already have.** Any one of those is your cue to stop and verify through a number or website you find yourself.
 
-### Additional Protections
+If you get a FEMA letter or inspector visit about an application you never made, someone may have used your identity. Tell the inspector, call the FEMA Helpline, and go to IdentityTheft.gov.
 
-- **Watermark scans** with "COPY - NOT ORIGINAL" to reduce identity theft risk if files are stolen
-- **Keep originals** in a fireproof/waterproof safe or safety deposit box
-- **Share encrypted copies** with a trusted family member (and give them the password separately, in person)
-- **Review and update** scans when documents are renewed
+A **credit freeze** is free, does not affect your credit score, and stops anyone, including you, from opening new credit in your name until you lift it. Place it with each of the three US credit bureaus. A **fraud alert** is a lighter step: it lasts one year and tells lenders to verify your identity first.
 
----
+Outside the US, the same tactics apply. Use your own country's disaster agency, consumer protection office, and credit reporting services. See also the Verifying Information During Emergencies guide.
 
-## Phone Hardening Basics
+## If You Lose Your Devices
 
-Your phone is likely your most important emergency device. Harden it now.
+Work in this order, from a device you trust:
 
-### Essential Settings
+1. **Phone number.** Visit or call your carrier with ID to move your number to a new SIM or phone. Text-message codes follow the number.
+2. **Email.** Sign in using your backup codes, then change the password.
+3. **Bank and cards.** Check for charges you do not recognize.
+4. **Password manager,** then everything else.
+5. **Restore your files** from the cloud or your off-site drive.
 
-- [ ] **Enable full-device encryption** (enabled by default on modern iOS and Android)
-- [ ] **Set a strong lock screen** (6+ digit PIN or passphrase, not pattern or 4-digit)
-- [ ] **Enable biometrics** (fingerprint/face) for convenience, but know that a PIN/password is legally stronger
-- [ ] **Turn off lock screen previews** for sensitive apps (messages, email)
-- [ ] **Enable Find My Device** (helps locate or remotely wipe if stolen)
-- [ ] **Disable USB debugging** (Android) unless actively needed
-- [ ] **Review app permissions** -- revoke access to camera, microphone, location for apps that do not need them
-- [ ] **Keep your OS updated** -- security patches fix known vulnerabilities
-- [ ] **Install apps from official stores only**
+Scammers pose as support staff. Use only the recovery page on the provider's own website, and treat any paid "recovery service" as a scam.
 
-### Emergency-Specific Phone Setup
+## Keep It Current
 
-- [ ] **Download offline maps** (Google Maps, OsmAnd, or Organic Maps all support offline areas)
-- [ ] **Save critical contacts** to the device (not just cloud)
-- [ ] **Install KeePass mobile app** and sync your password database
-- [ ] **Download essential reference apps** that work offline
-- [ ] **Set up ICE (In Case of Emergency) contacts** on your lock screen
-- [ ] **Take screenshots of insurance cards** and store in a secure folder
-- [ ] **Enable battery saver mode** settings so you know how to activate them quickly
+- [ ] Monthly: confirm the phone's automatic backup ran
+- [ ] Every 3 months: back up the computer to the external drive, then unplug it
+- [ ] Every 6 months: update the USB drive and the printed contact page; open a few files to test
+- [ ] Yearly: re-scan renewed documents, re-record the home video, swap the off-site drive
+- [ ] After any password change on a key account: update the recovery sheet
 
----
+## Practice
 
-## Keeping Devices Charged
+**10-minute drill:** Put your phone in a drawer. Using only paper, your kit, or another person's device, try to produce: three family phone numbers, your home insurer's claim number and your policy number, the name and dose of every prescription in the house, and exactly how you would sign in to your email without your phone. Everything you could not produce goes on the printed page or the recovery sheet today.
 
-### Device Prioritization During Power Outages
+**What would you do?**
 
-When power is limited, prioritize charging in this order:
+1. *Two days after a hurricane, a man in a FEMA jacket with a clipboard says he can speed up your claim for a $150 processing fee, and needs your Social Security number and bank account "for the direct deposit."*
 
-1. **Phone** (communication, maps, flashlight, references)
-2. **Emergency radio** (if rechargeable)
-3. **Medical devices** (CPAP, glucose monitors, etc.)
-4. **Secondary phone or tablet** (backup communication, entertainment for children)
-5. **Laptop** (only if needed for specific tasks)
+   **Answer:** Say no and close the door. Federal agencies never charge for disaster assistance or inspections, and inspectors do not collect bank details. A jacket proves nothing; ask for an official government ID badge. Then call the FEMA Helpline yourself (800-621-3362) to check your application and report him.
 
-### Extending Battery Life
+2. *A house fire destroyed your phone and laptop. On a borrowed computer, your email asks for a code "sent to your phone." You search for the email company's support number and the top result offers instant account recovery for a small fee.*
 
-**Immediate actions when power goes out:**
-- Enable **airplane mode** if cell service is down (stops the radio from searching for towers, which drains battery fast)
-- Reduce **screen brightness** to minimum usable level
-- Turn off **Wi-Fi, Bluetooth, NFC, and location services** if not in use
-- Close **background apps**
-- Disable **push notifications** and email auto-sync
-- Switch to **dark mode** (saves battery on OLED screens)
-- Turn the phone **off** when not actively using it
+   **Answer:** Do not call it or pay. A support line found by searching may belong to a scammer who will take your money and your account. Use the backup codes from your recovery sheet. If you have none, get your number moved to a new SIM at your carrier's store with ID, so the text codes reach you, or use the recovery process on the provider's own website.
 
-**Expected battery life with conservation:**
+3. *Your laptop shows a message that your files are encrypted and demands payment. Your backup drive is in a drawer, last updated two months ago. Your instinct is to plug it in and check that the backup is still good.*
 
-| Usage Pattern | Typical Smartphone Battery Life |
-|---------------|-------------------------------|
-| Normal use | 8-14 hours |
-| Light use, screen dim | 24-36 hours |
-| Airplane mode, minimal use | 3-5 days |
-| Powered off, brief checks only | 7-14 days |
+   **Answer:** Keep the drive away from that computer. It is your only clean copy, and the same malware can encrypt it the moment it connects. Disconnect the laptop from the internet, check the drive only on a different, clean device, and get the laptop wiped by someone qualified before restoring. Report it at ic3.gov. Two months of lost files is the price of a backup schedule; an unplugged drive is the reason you have anything left.
 
-### Charging Options Without Grid Power
+## Quick Reference
 
-- **Portable power bank** (10,000-20,000 mAh provides 2-5 full phone charges)
-- **Solar charger** (foldable panel + power bank)
-- **Car charger** (12V outlet; run engine briefly to charge, conserve fuel)
-- **Hand-crank charger** (slow but reliable, no fuel or sunlight needed)
-- **AA battery pack** (USB charger that accepts AA batteries)
+```
+3-2-1 BACKUP
+  3 copies, 2 kinds of storage,
+  1 off-site (outside the region)
+  Unplug the drive after backing up
+  Encrypt anything portable
+  Test a restore twice a year
+
+PASSWORDS (CISA)
+  16+ characters, random, unique
+  Use a password manager
+  MFA on: email first, then bank
+
+RECOVERY SHEET (locked box)
+  Backup codes: email, password
+  manager, bank
+  Carrier number and account PIN
+
+GO-BAG
+  Encrypted USB with ID scans
+  1 page: phone and policy numbers
+  (no passwords)
+
+SCAM SIGNS
+  Urgency + odd payment + asks for
+  info they should already have
+  FEMA never charges fees
+  FEMA Helpline: 800-621-3362
+  Never pay by wire, gift card,
+  crypto, payment app, or cash
+  Never sign over an insurance check
+
+REPORT (US)
+  Fraud: ReportFraud.ftc.gov
+  Identity theft: IdentityTheft.gov
+  Scam text: forward to 7726
+  Online crime: ic3.gov
+  Freeze credit: free, 3 bureaus
+
+LOST EVERYTHING? Recover in order:
+  phone number > email > bank >
+  password manager > files
+```
+
+## Sources
+
+- [CISA: Secure Our World](https://www.cisa.gov/secure-our-world)
+- [CISA: Use Strong Passwords](https://www.cisa.gov/secure-our-world/use-strong-passwords)
+- [CISA: Turn On MFA](https://www.cisa.gov/secure-our-world/turn-mfa)
+- [CISA: Recognize and Report Phishing](https://www.cisa.gov/secure-our-world/recognize-and-report-phishing)
+- [CISA: Update Software](https://www.cisa.gov/secure-our-world/update-software)
+- [CISA / US-CERT: Data Backup Options (PDF)](https://www.cisa.gov/sites/default/files/publications/data_backup_options.pdf)
+- [Ready.gov: Financial Preparedness](https://www.ready.gov/financial-preparedness)
+- [Ready.gov: Get Tech Ready](https://www.ready.gov/get-tech-ready)
+- [Ready.gov: Cybersecurity](https://www.ready.gov/cybersecurity)
+- [Ready.gov: Build a Kit](https://www.ready.gov/kit)
+- [FTC: How to Avoid Scams After Weather Emergencies and Natural Disasters](https://consumer.ftc.gov/articles/how-avoid-scams-after-weather-emergencies-and-natural-disasters)
+- [FTC: How to Recognize and Avoid Phishing Scams](https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams)
+- [FTC: How to Donate Wisely and Avoid Charity Scams](https://consumer.ftc.gov/features/how-donate-wisely-and-avoid-charity-scams)
+- [FTC: What to Know About Credit Freezes and Fraud Alerts](https://consumer.ftc.gov/articles/what-know-about-credit-freezes-fraud-alerts)
+- [FEMA: Disaster Fraud](https://www.fema.gov/about/offices/security/disaster-fraud)
 
 ---
 
-## Alternative Communication Methods
+Last reviewed: November 2026
 
-When cell towers and internet go down, you need other ways to communicate.
-
-### Mesh Networking: Meshtastic
-
-**Meshtastic** is an open-source project that turns inexpensive LoRa radio modules into a mesh communication network.
-
-- **Range:** 1-10+ miles depending on terrain and antenna
-- **Cost:** $25-50 per device
-- **No cell service or internet required**
-- **Encrypted messaging**
-- **Mesh capability:** Messages hop through intermediate devices, extending range
-- **GPS position sharing** with group members
-- **Pairs with your phone** via Bluetooth
-
-**Getting started:**
-1. Purchase a compatible LoRa device (Heltec, LILYGO T-Beam, or RAK WisBlock)
-2. Flash Meshtastic firmware
-3. Install the Meshtastic app on your phone
-4. Pair via Bluetooth
-5. Share devices with family/neighbors to build your mesh network
-
-### Briar Messaging App
-
-**Briar** is a messaging app designed for emergencies and censorship resistance.
-
-- Works over **Wi-Fi, Bluetooth, and Tor** -- no internet infrastructure needed
-- **End-to-end encrypted**
-- Can sync messages when two phones are within **Bluetooth range** (approximately 30 feet)
-- Also works over **local Wi-Fi** (no internet required, just a router or phone hotspot)
-- Available for **Android** (iOS version in development)
-- **No phone number or email** required to create an account
-
-### Two-Way Radios
-
-- **FRS radios:** No license required, 1-2 mile range, available at any outdoor store
-- **GMRS radios:** Requires FCC license ($35, no exam), 5-25+ mile range with repeaters
-- **Ham radio (amateur):** Requires license (exam required), virtually unlimited range capabilities
-- **CB radio:** No license required, ~5 mile range, useful for vehicle-to-vehicle
-
----
-
-## Data You Should Have Offline
-
-Do not rely on being able to access the internet. Download and store these on your phone and encrypted USB drive.
-
-### Essential Offline Data
-
-- [ ] **Contact list** (printed copy AND on device -- do not rely on cloud sync)
-- [ ] **Offline maps** of your region, evacuation routes, and bug-out locations
-- [ ] **Medical records** (prescriptions, conditions, allergies, doctor contacts)
-- [ ] **Insurance documents** (policy numbers, agent phone numbers, coverage details)
-- [ ] **First aid reference guide**
-- [ ] **Emergency frequency list** (local NOAA, emergency broadcast, ham repeaters)
-- [ ] **Copies of ID documents** (encrypted)
-- [ ] **Family emergency plan** (meeting points, communication plan, out-of-area contacts)
-- [ ] **Local emergency resources** (shelter locations, hospitals, fire stations)
-- [ ] **Utility account information** (for reporting outages and filing claims)
-
-### Nice to Have Offline
-
-- [ ] **Survival reference guides** (water purification, first aid, shelter building)
-- [ ] **Field guides** (edible plants for your region, if relevant)
-- [ ] **Radio programming files** (for ham radio or GMRS)
-- [ ] **Entertainment** (ebooks, downloaded music, podcasts -- morale matters)
-- [ ] **Educational materials** for children (if applicable)
-- [ ] **Repair manuals** for your vehicle and major home systems
-
----
-
-## Cyber Threats During Emergencies
-
-Emergencies create opportunities for cyber criminals. Stay alert.
-
-### Common Scams After Disasters
-
-- **Phishing emails** posing as FEMA, Red Cross, or insurance companies
-- **Fake charity websites** soliciting donations
-- **Price-gouging scam sites** for emergency supplies
-- **Fake government aid applications** designed to steal personal information
-- **SMS scams** with urgent links about disaster relief
-
-### Protection Measures
-
-- **Never click links** in unsolicited emails or texts about disaster aid
-- **Go directly to official websites** (fema.gov, redcross.org) by typing the URL
-- **Do not share personal information** over the phone with unsolicited callers
-- **Verify charity legitimacy** at charitynavigator.org or give.org before donating
-- **Use multi-factor authentication** on critical accounts (email, banking)
-- **Monitor financial accounts** closely after a disaster (identity theft increases)
-
----
-
-## Checklist: Cyber Preparedness
-
-### Backup Setup
-
-- [ ] Encrypted USB drive prepared with all critical documents
-- [ ] KeePass database created and synced to phone and USB
-- [ ] 3-2-1 backup rule implemented
-- [ ] Printed copy of essential contacts and account numbers stored with emergency supplies
-- [ ] Offline maps downloaded for your region
-
-### Device Preparedness
-
-- [ ] Phone encryption verified
-- [ ] Strong lock screen PIN/password set
-- [ ] OS and apps updated
-- [ ] Offline maps and reference apps installed
-- [ ] ICE contacts configured on lock screen
-- [ ] At least one portable power bank fully charged
-- [ ] Car charger cable in vehicle
-
-### Communication Alternatives
-
-- [ ] At least one non-cell-network communication method available (FRS radio, Meshtastic, Briar)
-- [ ] Family communication plan established (meeting points, check-in schedule, out-of-area contact)
-- [ ] NOAA weather radio frequencies noted for your area
-- [ ] Contact list printed on paper as a backup
-
-### Maintenance Schedule
-
-- [ ] Monthly: Charge power banks and verify charge level
-- [ ] Quarterly: Update encrypted USB drive with current documents
-- [ ] Quarterly: Update KeePass database with any changed passwords
-- [ ] Quarterly: Refresh offline maps
-- [ ] Annually: Review and update all backed-up documents
-- [ ] Annually: Test all backup devices and verify file integrity
-- [ ] Annually: Review and update family emergency communication plan
-
----
-
-*Last updated: March 2026*
 *License: CC-BY-SA 4.0*

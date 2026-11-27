@@ -1,175 +1,379 @@
 # Emergency Defensive Driving
 
-> **Drive to Survive** - Emergency situations require different driving skills. Defensive driving techniques can help you navigate dangerous conditions safely.
+> **The safest emergency drive is the early one.** The road hazards that kill in a disaster are mostly avoidable ones: floodwater, ice, smoke and downed power lines. Leaving sooner, slowing down and turning around matter more than any driving trick.
 
-## Emergency Driving Principles
+<QuickTriage
+  questions={[
+    {
+      id: "hazard",
+      text: "What are you facing right now?",
+      options: [
+        { label: "Water over the road", result: "flood" },
+        { label: "Snow or ice", next: "ice-state" },
+        { label: "Smoke, fog or dust I can't see through", result: "visibility" },
+        { label: "A power line is down", next: "line-where" },
+        { label: "Traffic signals are dark", result: "signals" },
+        { label: "A driver is following or threatening me", result: "threat" }
+      ]
+    },
+    {
+      id: "ice-state",
+      text: "Are you still moving?",
+      options: [
+        { label: "Yes, driving on a slick road", result: "ice-driving" },
+        { label: "No, stuck or stranded", result: "stranded" }
+      ]
+    },
+    {
+      id: "line-where",
+      text: "Where is the power line?",
+      options: [
+        { label: "On or touching my vehicle", result: "line-on-car" },
+        { label: "On the road or ground ahead", result: "line-ahead" }
+      ]
+    }
+  ]}
+  results={[
+    {
+      id: "flood",
+      title: "Turn Around, Don't Drown",
+      steps: [
+        "Stop before the water and do not drive in, however shallow it looks",
+        "Turn around and find another route. Never go around a barricade",
+        "12 inches (30 cm) of moving water can carry away most cars",
+        "Already trapped in fast water: stay inside; if water rises inside, get on the roof and call 911"
+      ],
+      section: "Floodwater",
+      priority: "critical"
+    },
+    {
+      id: "ice-driving",
+      title: "Slow Down and Be Gentle",
+      steps: [
+        "Slow down and leave a 5 to 6 second gap",
+        "No cruise control. Gentle gas, gentle steering, early braking",
+        "With ABS: press the brake firmly and hold it. Do not pump",
+        "Skidding: ease off the gas and steer where you want the front to go"
+      ],
+      section: "Ice and snow",
+      priority: "urgent"
+    },
+    {
+      id: "stranded",
+      title: "Stay With the Car",
+      steps: [
+        "Stay in the vehicle and call for help if you have a signal",
+        "Clear snow from the exhaust pipe before running the engine",
+        "Run the engine about 10 minutes each hour, with a window open slightly",
+        "Tie a bright cloth to the antenna or door; dome light on at night while the engine runs"
+      ],
+      section: "Ice and snow",
+      priority: "urgent"
+    },
+    {
+      id: "visibility",
+      title: "Low Beams, Then Get Off the Road",
+      steps: [
+        "Switch to low beams and slow down. Never use high beams",
+        "If you can barely see, turn on hazard lights and pull into a lot or driveway",
+        "No lot: pull as far off the pavement as you can. Never stop in a travel lane",
+        "Parking brake on, foot off the brake pedal, and wait for it to clear"
+      ],
+      section: "Smoke, fog and dust",
+      priority: "urgent"
+    },
+    {
+      id: "line-on-car",
+      title: "Stay Inside the Vehicle",
+      steps: [
+        "If you can drive clear of the line, keep driving away from it",
+        "If not, stay in the car, call 911 and honk for attention",
+        "Warn everyone to stay at least 35 feet (10 m) back",
+        "Leave only if the car is on fire: jump clear, feet together, shuffle away"
+      ],
+      section: "Downed power lines",
+      priority: "critical"
+    },
+    {
+      id: "line-ahead",
+      title: "Stay Back and Go Around",
+      steps: [
+        "Assume the line is live, even if it is not sparking",
+        "Stay at least 35 feet (10 m) away and never drive over it",
+        "Do not drive through water that has a line in it",
+        "Take another route and report the line to 911 or the utility"
+      ],
+      section: "Downed power lines",
+      priority: "critical"
+    },
+    {
+      id: "signals",
+      title: "Treat It as an All-Way Stop",
+      steps: [
+        "Come to a full stop",
+        "Take turns with the other drivers, and do not assume they will stop",
+        "Watch for pedestrians and cyclists",
+        "Follow police or emergency workers over any signal"
+      ],
+      section: "Dark signals, damaged roads and storms",
+      priority: "important"
+    },
+    {
+      id: "threat",
+      title: "Do Not Go Home. Drive to Help",
+      steps: [
+        "Doors locked, windows up, no eye contact, no gestures",
+        "Do not drive home and do not get out of the car",
+        "Drive to a police station, fire station, hospital or busy public place",
+        "Call 911 and say where you are and where you are heading"
+      ],
+      section: "If someone threatens you on the road",
+      priority: "critical"
+    }
+  ]}
+/>
 
-### Core Concepts
+## Do this now
 
-1. **Awareness** - Know what's happening around you
-2. **Space** - Maintain distance from hazards
-3. **Escape routes** - Always have an out
-4. **Control** - Smooth inputs, no panic
+If you have to drive during an emergency:
 
-## Evacuation Driving
+1. **Decide whether to drive at all.** If officials tell you to evacuate, go now. If you have not been told to leave and the roads are hazardous, staying put is usually safer than driving.
+2. **Buckle everyone in.** Children under 13 ride in the back, in the right car seat, booster or belt for their size.
+3. **Lights on, speed down, gap up.** Turn on low-beam headlights and leave far more room than usual behind the vehicle ahead.
+4. **Take the official route.** Shortcuts may be blocked. Never drive around a barricade or into water covering the road.
+5. **Tell someone your route and when you expect to arrive.**
+6. **If you can't see or can't control the car, get off the road.** Pull over as far as you can, stop, and set the parking brake.
 
-### Before Departure
+## Get emergency help if
 
-- Full tank of fuel
-- Vehicle inspected
-- Route planned (plus alternates)
-- Supplies loaded
-- Communication plan set
+Call 911 (or your local emergency number) if:
 
-### During Evacuation
+- **Anyone is hurt,** or the vehicle is smoking or on fire. Get everyone out and well away from the car and from traffic.
+- **Your vehicle is caught in moving water** or water is rising around it.
+- **A power line is on or near your vehicle.** Stay inside and warn others to keep away.
+- **You are stopped in a traffic lane** and can't move the vehicle.
+- **Another driver is following or threatening you.** Keep driving toward a police station or a busy public place while you call.
+- **You are stranded in extreme cold or heat** and can't keep people safe.
 
-**Hazard awareness:**
-- Other panicked drivers
-- Emergency vehicles
-- Road debris
-- Damaged infrastructure
-- Flooded roads
+Outside the US and Canada the number differs: 112 works across the European Union and in many other countries, 999 in the UK, 000 in Australia. Know yours before you travel.
 
-### Traffic Management
+## Before you turn the key
 
-- Leave early (before crowds)
-- Use alternate routes
-- Be patient (panic causes accidents)
-- Don't block intersections
-- Let emergency vehicles pass
+Ten minutes of preparation matters more than any driving technique.
 
-## Driving Through Danger Zones
+- **Fuel.** Keep at least half a tank at all times, and fill up when an evacuation seems likely. Gas stations often can't pump in a power outage, and evacuation traffic burns fuel while going nowhere. Keep an electric vehicle charged the same way.
+- **Tires.** Check pressure once a month and before long trips, when the tires are cold (the car has sat for at least three hours). The right pressure is on the placard on the driver's door frame and in the owner's manual. It is not the number molded into the tire. Tread must be at least 2/32 inch (1.6 mm). AAA suggests replacing earlier: push a quarter into the groove with Washington's head down, and if you can see the top of his head you have less than 4/32 inch (3.2 mm) left. Check the spare too.
+- **See and be seen.** Working headlights, brake lights, turn signals and hazard flashers, good wiper blades, and a full washer reservoir.
+- **Clear the whole car** of snow, ice or ash before moving, including lights, cameras and the roof.
+- **Route.** Know two ways out of your area and carry a paper map. Plan on one car per household to cut congestion.
+- **Kit.** See the Vehicle Emergency Kit guide for what to keep in the trunk.
 
-### Civil Unrest Areas
+## What you see and what you do
 
-- Keep windows up, doors locked
-- Don't stop if avoidable
-- Stay on main roads
-- Maintain awareness
-- Don't engage with crowds
-- Have alternate route ready
+| What you see | Do this | Never |
+|--------------|---------|-------|
+| Water over the road | Stop, turn around, find another route | Drive in to "test" the depth, or go around a barricade |
+| Snow or ice | Slow down, leave 5 to 6 seconds of gap, brake and steer gently | Use cruise control |
+| Thick smoke, fog or dust | Low beams, slow down, pull fully off the road if you can't see | Use high beams, or stop in a travel lane |
+| Power line down | Stay back at least 35 feet (10 m), take another route | Drive over a line or through water that touches one |
+| Traffic signals dark | Stop, then take turns as at an all-way stop | Assume the other driver will stop |
+| Angry or following driver | No eye contact, no gestures, drive to a public place, call 911 | Drive home or get out of the car |
 
-### Suspicious Situations
+## Floodwater
 
-**If approached:**
-- Keep moving if safe
-- Don't roll down windows
-- Drive to police station if followed
-- Call 911 if threatened
+Driving into water is the most common way people die in floods. The National Weather Service says more than half of all flood drownings happen when a vehicle is driven into hazardous water.
 
-## Hazardous Conditions
+Water is heavier and stronger than it looks:
 
-### Flooded Roads
+- **6 inches (15 cm)** of fast-moving water can knock an adult off their feet, and is enough to make a car lose control or stall.
+- **12 inches (30 cm)** of rushing water can carry away most cars.
+- **2 feet (60 cm)** can carry away SUVs and pickup trucks.
 
-**TURN AROUND, DON'T DROWN**
-- 6 inches can sweep you off your feet
-- 12 inches can float a car
-- 2 feet will carry away most vehicles
-- Don't attempt to cross
+You also can't see what is under it. The road may have washed out or collapsed, which is exactly why the barricade is there.
 
-### Debris on Roads
+- **Turn Around, Don't Drown.** If water covers the road, stop and find another way. It does not matter that the vehicle ahead of you made it.
+- **Stay off bridges over fast-moving water.** Floodwater can wash a bridge out without warning.
+- **Be extra careful at night,** when water on a dark road is nearly invisible until you are in it.
+- **If your car is trapped in rapidly moving water, stay inside.** If water rises inside the car, get onto the roof and call or signal for help.
 
-- Slow down well in advance
-- Identify clear path
-- Watch for hidden hazards
-- Be prepared to stop
+The Flood Response and Water Safety guide covers flooding in full.
 
-### Damaged Roads
+## Ice and snow
 
-- Bridge damage may not be visible
-- Sinkholes can appear
-- Road surface may be compromised
-- When in doubt, don't proceed
+On a slick road everything takes longer: starting, turning, and above all stopping.
 
-## Vehicle as Shelter
+- **Slow down,** even if the road only looks wet.
+- **Stretch your following distance to 5 or 6 seconds.** Pick a sign the car ahead passes and count until you reach it.
+- **Do everything gently.** Press the gas slowly to keep traction. Start slowing well before you need to.
+- **No cruise control** on any slippery surface.
+- **Braking with antilock brakes (ABS):** press firmly and keep the pressure on. The pedal may pulse or vibrate; that is the system working. Do not pump. You can still steer while you brake.
+- **Braking without ABS:** if you feel the wheels start to lock, ease off and reapply.
+- **If you skid:** stay calm, ease off the gas, and steer where you want the front of the car to go. Don't slam the brakes.
+- **Hills:** build a little momentum on the flat before the climb, since extra gas on the slope just spins the wheels. Slow down at the crest and go down slowly.
+- **Snow plows:** stay behind them, where the road is better. Don't drive beside one or into the snow cloud it throws up.
 
-### When to Stay in Vehicle
+**If you get stuck or stranded, stay with the car.** You get lost quickly on foot in blowing snow. Run the engine about 10 minutes each hour for heat, clear snow from the exhaust pipe first, and open a window slightly while it runs so carbon monoxide can't build up. Tie a bright cloth to the antenna or door, and turn on the dome light at night while the engine is running. The Extreme Cold Survival guide has more.
 
-- Extreme weather (not tornado)
-- Stuck in safe location
-- Waiting for help
-- No better shelter available
+## Smoke, fog and dust
 
-### When to Leave Vehicle
+Low visibility causes chain-reaction crashes: one driver slows, and the next one does not see them in time.
 
-- Fire hazard
-- Flood water rising
-- Vehicle becoming unstable
-- Better shelter available
+- **Use low beams.** High beams bounce off fog, smoke and dust and blind you. Low beams also switch your tail lights on.
+- **Slow down and leave a long gap.** Follow the painted lines with your eyes.
+- **If you can barely see:** turn on your hazard lights and pull into a parking lot or driveway if there is one. If not, pull as far off the pavement as you can. Never stop in a travel lane.
+- **Once you are stopped off the road,** set the parking brake and take your foot off the brake pedal so drivers behind don't follow your tail lights into you. In fog the National Weather Service says to leave only your hazard flashers on. In a dust storm it says to turn all lights off.
+- **Dust storms:** don't drive into one if you can avoid it. The rule is "Pull Aside, Stay Alive."
+- **Wildfire smoke:** leave early, before smoke and traffic close the road. Drive with headlights on, windows up, and the air set to recirculate. Watch for fire crews and people on foot. See the Wildfire Preparedness guide for what to do if fire traps you in a vehicle.
 
-## Emergency Maneuvers
+## Downed power lines
 
-### Threshold Braking (No ABS)
+You cannot tell whether a line is live by looking at it. A line that isn't sparking or humming can still kill, and the ground around it can be energized up to 35 feet (10 m) away.
 
-- Apply firm, steady pressure
-- Just before lockup
-- If wheels lock, release slightly
-- Reapply
+- **Never drive over a downed line,** and don't drive through standing water that has a line in it.
+- **If a line falls across your car while you are driving, stay inside and keep driving away from the line.**
+- **If you can't drive clear, stay in the car.** Call 911, honk to get attention, and warn people not to touch the car or come near. Wait until a utility or emergency crew tells you the line is dead.
+- **Get out only if the car is on fire.** Jump clear so that you never touch the car and the ground at the same time, land with both feet together, and shuffle away in small steps without lifting your feet.
 
-### ABS Braking
+## Dark signals, damaged roads and storms
 
-- Firm, continuous pressure
-- Don't pump
-- Steer while braking
-- Pulsing is normal
+- **Signals out.** When a power outage leaves a traffic signal dark or flashing red, California's emergency agency and many US states tell drivers to treat it as an all-way stop: come to a full stop, then take turns. The exact rule varies by state and country, so check your local driver handbook. Directions from police or emergency workers always override the signal. Watch for pedestrians and cyclists, who are hard to see at an unlit intersection.
+- **Earthquake while driving.** Pull over, stop, and set the parking brake. Stay away from overpasses, bridges, power lines, signs and trees. Stay in the car until the shaking stops, then go on carefully, watching for cracked pavement and debris.
+- **Tornado.** A vehicle is not safe shelter. Drive to the closest sturdy shelter if you can. If you can't reach one, either get down in the car and cover your head, or leave the car for a low spot such as a ditch. See the Tornado Safety guide.
+- **Heavy rain.** Slow down to avoid hydroplaning, which is when the tires ride up on a film of water. Don't use cruise control. If the car starts to slide, look and steer where you want to go, and don't slam the brakes.
 
-### Evasive Steering
+## Evacuation traffic
 
-- Look where you want to go
-- Smooth, rapid steering input
-- Don't overcorrect
-- Hands at 9 and 3
+- **Leave early.** That is the whole strategy. Leaving early keeps you out of both the hazard and the worst traffic.
+- **Follow the recommended evacuation routes.** Officials may reverse lanes or close ramps, so follow signs and directions even when your map app disagrees.
+- **Expect to crawl.** Bring water, food, medications and a phone charger within reach, not buried in the trunk.
+- **Watch for** washed-out roads and bridges, downed lines, debris, and emergency vehicles.
+- **Stay calm and predictable.** Don't block intersections, use the shoulder as a lane, or tailgate. A fender-bender in an evacuation can strand hundreds of cars behind you.
+- **Stop to rest or change drivers** if you get drowsy on a long evacuation.
 
-## Vehicle Emergency Kit
+**If the car breaks down on a highway:** move fully onto the right shoulder if you can, turn on the hazard lights, call 911, and stay inside with your seat belt on. Standing beside a disabled car on a highway is more dangerous than sitting in it. The exception is smoke or fire: then everyone gets out and moves well away, upwind and clear of traffic.
 
-### In Car at All Times
+## If someone threatens you on the road
 
-- [ ] Jumper cables
-- [ ] Flashlight
-- [ ] First aid kit
-- [ ] Water
-- [ ] Blanket
-- [ ] Phone charger
-- [ ] Basic tools
-- [ ] Reflective triangles
+Your car's best safety feature in a confrontation is that it can leave.
 
-### For Emergency Situations
+- **Don't answer anger with anger.** Avoid eye contact with an angry driver, make no gestures, and give them room to go.
+- **Keep doors locked and windows up.**
+- **Leave space.** In traffic and when parking, leave enough room to pull out if someone approaches.
+- **If you feel at risk, don't drive home.** Drive to a public place such as a police station, fire station or hospital, and call 911. Stay in the locked car and use the horn to attract attention.
+- **If a crowd or disturbance is blocking the road ahead, turn around early** and take another route. Don't drive into or through a crowd.
 
-- [ ] Extra fuel container
-- [ ] Tow strap
-- [ ] Fire extinguisher
-- [ ] Maps (paper)
+Keep moving away from danger, and let the police handle the rest. This guide does not cover any use of a vehicle against people or other vehicles. That is dangerous, and the law on it varies by place.
+
+## People who need extra thought
+
+- **Children:** correct car seat or booster, in the back seat. Never leave a child alone in a parked car, in any weather.
+- **Older adults and people with disabilities or medical equipment:** leave at the first warning, and bring medications and devices in the cabin.
+- **Pets:** bring them, in a carrier or harness. Public shelters may accept only service animals, so plan where you will go.
+
+## Before-you-go checklist
+
+- [ ] Fuel at half a tank or more (full if evacuation is likely), or EV charged
+- [ ] Tire pressure checked this month, spare included
+- [ ] Headlights, brake lights, signals and hazard flashers working
+- [ ] Wipers good, washer fluid full
+- [ ] Windows, lights and roof cleared of snow, ice or ash
+- [ ] Two routes known, paper map in the car
+- [ ] Someone told your route and expected arrival time
+- [ ] Phone charged, charger in the car
+- [ ] Vehicle emergency kit, water, medications on board
+- [ ] Everyone buckled, children in the right seats
+
+## Practice
+
+**10-minute drill:** Do a parked walk-around today. Find the tire pressure placard on the driver's door frame and read the numbers. Check all four tires and the spare with a gauge. Sit in the driver's seat and find the hazard light switch, low beams and rear defroster without looking. Then open a paper map and trace two different routes out of your neighborhood with a finger. Nothing in this drill involves moving the car.
+
+**What would you do?**
+
+1. *It is raining hard at night and you are ten minutes from home. Brown water is flowing across a dip in the road. It looks only a few inches deep, and the pickup ahead of you just drove through.*
+
+   **Answer:** Turn around. You can't judge depth or current in the dark, and you can't see whether the road under the water is still there. Twelve inches of moving water carries away most cars, and the pickup sits higher than you do. A detour costs minutes. More than half of flood drownings happen in vehicles.
+
+2. *A storm brings a pole down and a wire lands across your hood. The engine has stalled. A passer-by runs toward you to help you out.*
+
+   **Answer:** Stay in the car and shout or signal for them to stay back, at least 35 feet. Inside, you are protected; stepping out makes your body the path between the car and the ground, and the ground near the car may be energized too. Call 911, honk to keep people away, and wait for the utility crew. Only fire changes this: then jump clear with feet together and shuffle away.
+
+3. *You honked at a car that cut you off. Now it is behind you, lights flashing, following every turn. Your street is next.*
+
+   **Answer:** Don't turn into your street, and don't stop to talk. Keep the doors locked, avoid eye contact, and drive at a normal speed toward a police station, fire station, hospital or other busy, well-lit place. Call 911 (hands-free, or have a passenger call) and tell the dispatcher where you are and where you are heading. Stay in the locked car when you get there and use the horn if they approach.
 
 ## Quick Reference
 
 ```
-EVACUATION DRIVING
+EMERGENCY DRIVING
 
-BEFORE:
-- Full tank
-- Route planned
-- Supplies loaded
+BEFORE YOU GO
+- Half a tank minimum; full if
+  evacuation is likely
+- Tires: check monthly, cold.
+  Tread at least 2/32 in (1.6 mm)
+- Leave early, official routes,
+  tell someone your route
 
-DURING:
-- Leave early
-- Stay alert
-- Use alternates
-- Stay calm
-
-FLOODED ROADS:
+WATER ON THE ROAD
 TURN AROUND, DON'T DROWN
-6" = knockdown
-12" = float car
-2' = carry away
+- 6 in (15 cm): knocks you down
+- 12 in (30 cm): carries most cars
+- 2 ft (60 cm): SUVs and trucks
+- Never go around a barricade
 
-EVASIVE ACTION:
-- Look where you want to go
-- Smooth inputs
-- Don't overcorrect
-- ABS = firm steady pressure
+ICE AND SNOW
+- Slow, 5-6 second gap, gentle
+- No cruise control
+- ABS: press firm, hold, steer
+- Skid: off the gas, steer where
+  you want to go
+- Stuck: stay with car, engine
+  10 min/hour, clear the tailpipe
+
+CAN'T SEE (smoke, fog, dust)
+- Low beams, slow down
+- Pull fully off road, parking
+  brake on, foot off brake
+
+POWER LINE ON CAR
+- Stay in. Call 911. Keep others
+  35 ft (10 m) back
+- Fire only: jump clear, feet
+  together, shuffle away
+
+SIGNALS DARK: stop, take turns
+
+THREATENED OR FOLLOWED
+- Doors locked, no eye contact
+- Do not drive home
+- Police station or busy place
+- Call 911
 ```
+
+## Sources
+
+- [National Weather Service: Turn Around Don't Drown](https://www.weather.gov/safety/flood-turn-around-dont-drown)
+- [Ready.gov: Floods](https://www.ready.gov/floods)
+- [Ready.gov: Evacuation](https://www.ready.gov/evacuation)
+- [Ready.gov: Car Safety](https://www.ready.gov/car)
+- [NHTSA: Winter Driving Tips (PDF copy hosted by NYC DCAS)](https://www.nyc.gov/assets/dcas/downloads/pdf/fleet/NHTSA_winter_driving_tips.pdf)
+- [AAA: Winter Driving Tips](https://exchange.aaa.com/safety/driving-advice/winter-driving-tips/)
+- [AAA: Wet Weather Driving Tips](https://exchange.aaa.com/safety/driving-advice/wet-weather-driving-tips/)
+- [AAA: Tire Safety and Maintenance](https://exchange.aaa.com/automotive/tire-safety/)
+- [AAA: Aggressive Driving](https://exchange.aaa.com/safety/driving-advice/aggressive-driving/)
+- [National Weather Service: During a Winter Storm](https://www.weather.gov/safety/winter-during)
+- [National Weather Service: Driving in Fog](https://www.weather.gov/safety/fog-driving)
+- [National Weather Service: Dust Storms](https://www.weather.gov/safety/wind-dust-storm)
+- [National Weather Service: During a Tornado](https://www.weather.gov/safety/tornado-during)
+- [CDC: Protect Yourself From Electrical Hazards](https://www.cdc.gov/natural-disasters/response/what-to-do-protect-yourself-from-electrical-hazards.html)
+- [OSHA: Working Safely Around Downed Electrical Wires](https://www.osha.gov/sites/default/files/downed_electrical_wires.pdf)
+- [Electrical Safety Foundation International: Downed Power Line Safety (copy hosted by the Kansas Corporation Commission)](https://www.kcc.ks.gov/images/PDFs/electric/ESFI-Downed-Power-Lines.pdf)
+- [Cal OES: When the Power Is Off, Treat Signals as Stop Signs](https://www.news.caloes.ca.gov/when-the-power-is-off-treat-signals-as-stop-signs)
+- [ShakeOut: Recommended Earthquake Safety Actions](https://dacc.nmsu.edu/about/shake-out/media/ShakeOut_Recommended_Earthquake_Safety_Actions-EN.pdf)
+- [Connecticut DOT: Stay in Your Vehicle in Highway Emergencies](https://portal.ct.gov/dot/ctdot-press-releases/2025/ctdot-urges-motorists-to-stay-in-their-vehicles-in-highway-emergencies?language=en_US)
 
 ---
 
-*Last updated: January 2026*
+Last reviewed: November 2026
+
 *License: CC-BY-SA 4.0*

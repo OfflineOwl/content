@@ -1,284 +1,224 @@
 # Hand-Powered & Solar Devices
 
-> **Energy Independence** - When batteries run out and the grid is down, devices that generate their own power become invaluable. This guide covers hand-crank and solar-powered equipment for emergencies.
+> **A crank is a promise of some power, not much power.** Hand-crank and pocket-solar gear does one job well: keeping a radio and a light alive when everything else is flat. Expect minutes of use for each minute of effort, and most of a sunny day for one phone charge, and it will not let you down.
 
-## Why Alternative Power Matters
+## Start here
 
-- Batteries eventually run out
-- Grid power may be down for weeks
-- Solar and hand-power are renewable
-- Critical devices need continuous power
-- Reduces dependency on fuel
+1. **Own one radio that gets NOAA Weather Radio** and can run three ways: a hand crank, ordinary AA cells, and USB charging. Charge it from the wall today.
+2. **Store spare AA cells with it.** Fresh batteries are the main plan. The crank is the backup for when they run out.
+3. **For phones, add a power bank** and, if your budget allows, a folding solar panel of 20 watts or more.
+4. **Every three months, top the radio up by USB and crank it for a minute.** Built-in batteries fade when ignored, and this is how you find out before the storm does.
+5. **Try it once for real:** tune in your local weather channel and see how long one minute of cranking keeps it playing.
 
----
+## Get emergency help if
 
-## Hand-Crank Devices
+Call 911 (or your local emergency number) if:
 
-### How They Work
+- **Someone relies on a powered medical device and its backup is running out.** Nothing in this guide can run medical equipment. Get to a place with power, or call for help while the device still works.
+- **A device or battery is smoking, burning, hissing, or swelling.** Get away from it, get everyone out, and call from outside.
 
-Turning a crank generates electricity through a small dynamo, stored in an internal battery.
+## Honest Expectations
 
-### Common Hand-Crank Devices
+Makers publish their own numbers, usually with "up to" in front. Two current crank radios with 2,600 mAh built-in batteries make these claims:
 
-| Device | Crank Time | Runtime | Priority |
-|--------|-----------|---------|----------|
-| Emergency radio | 1 min | 15-30 min | Essential |
-| Flashlight | 1 min | 10-30 min | Essential |
-| Phone charger | Varies | Minimal | Useful |
-| Lantern | 1-2 min | 10-20 min | Useful |
+| What you do | What the maker says you get | What that means |
+|-------------|-----------------------------|-----------------|
+| Crank for 1 minute | Up to 9 minutes of radio (one manual); 10 to 15 minutes of radio and flashlight (another maker's spec sheet) | An hour of news costs roughly 4 to 7 minutes of cranking, at low volume |
+| Leave the built-in solar panel in ideal sun for 1 hour | Up to 45 minutes of radio | A slow top-up for the radio itself, nothing more |
+| Plug into USB power | A full battery in about 5.5 hours | The best way to fill it, before the outage |
 
-### Best Hand-Crank Purchases
+Three things follow from those figures.
 
-**Emergency radio/flashlight combo:**
-- NOAA weather bands
-- AM/FM radio
-- Flashlight
-- USB charging port
-- Internal rechargeable battery
+**The crank beats the little solar panel.** By the same manual's numbers, one minute of cranking is worth about 12 minutes of ideal sun on the built-in panel. The panel on a radio or flashlight is a trickle charger for a device that sits on a windowsill, not a power source.
 
-**Recommended brands:**
-- Eton
-- Kaito
-- RunningSnail
-- Midland
+**The built-in battery is small.** 2,600 mAh at 3.7 volts is about 9.6 watt-hours (Wh). A current phone battery holds more than that: 4,500 mAh at 3.85 volts is about 17 Wh. So the radio's entire battery is roughly half a phone charge, whatever the box says about "charging your phone." Always do the sum: volts x amp-hours = watt-hours.
 
-### Hand-Crank Limitations
+**Cranking a phone back to life is not realistic.** The crank refills a battery that takes five and a half hours to fill from the wall. A few minutes of cranking can buy enough for a short text. It cannot give you an evening of scrolling, and it will not start a tablet or laptop.
 
-- Physical effort required
-- Limited power output
-- Internal batteries degrade over time
-- May not fully charge devices
-- Best as backup to solar
+## Crank Radios: What to Look For
 
----
+Ready.gov's basic kit lists a battery-powered or hand-crank radio and a NOAA Weather Radio with tone alert. One device can be both. The National Weather Service recommends these features:
 
-## Solar-Powered Devices
+- **All seven weather channels** (162.400 to 162.550 MHz). NOAA Weather Radio broadcasts around the clock from more than 1,000 transmitters across the US and its territories, and carries non-weather emergencies too.
+- **Tone alert.** The radio stays silent until the Weather Service sends a warning tone, then switches itself on. This is what wakes you at 3 a.m.
+- **SAME coding,** which lets you choose your county so you hear only the alerts that apply to you.
+- **The Public Alert or NWR All Hazards logo,** which shows the receiver meets a published standard. The Weather Service does not endorse brands.
+- **Battery backup.** Basic receivers start at about $20.
 
-### Understanding Solar Panels
+For an emergency kit, add four requirements of your own:
 
-**Panel types:**
-- Monocrystalline (most efficient)
-- Polycrystalline (less efficient, cheaper)
-- Thin-film (flexible, least efficient)
+- **It runs on ordinary AA or AAA cells** as well as its built-in pack. Built-in batteries age; AA cells can be swapped in seconds.
+- **AM and FM,** for local news when the weather channel has nothing new.
+- **USB charging in,** so you can fill it from a wall plug, car, power bank, or solar panel.
+- **A flashlight,** so one item covers two needs.
 
-**Key specifications:**
-- Wattage (W) - power output
-- Voltage (V) - typically 5V USB or 12V
-- Efficiency (%) - how much sunlight converted
+The weather band is a US and Canadian system. Elsewhere, choose a radio for your national broadcaster's emergency frequencies (AM, FM, or shortwave). For how to use the radio once you have it, see the Radio Use for Emergency Updates guide.
 
-### Solar Device Categories
+**Tip:** an alert radio that stays on a shelf should be plugged into the wall with batteries as backup. Tone alert only works if the radio has power while you sleep.
 
-#### Integrated Solar Devices
+## Lights
 
-Devices with built-in solar panels:
-- Solar lanterns
-- Solar flashlights
-- Solar-powered radios
-- Solar phone chargers (small panel)
+A crank or solar flashlight is a fine spare and a poor main light. For the light you will actually use, choose a small LED headlamp or lantern on AA or AAA cells, with spares: it is ready instantly and does not depend on your arm. Solar lanterns earn their place in a long outage: set them in the sun every morning and bring them in at dusk. See the Off-Grid Lighting Options guide.
 
-**Pros:** Convenient, all-in-one
-**Cons:** Small panels, slow charging
+## Charging a Phone From the Sun
 
-#### Portable Solar Panels
+A folding panel is the first solar item that can keep up with a phone. Use the same formula as any solar setup:
 
-Separate panels for charging devices:
+```
+Wh per day = panel watts
+             x peak sun hours
+             x 0.8 (losses)
+```
 
-| Size | Power | Best For |
-|------|-------|----------|
-| 5-10W | Low | Phone only |
-| 15-25W | Medium | Phone + small devices |
-| 50-100W | High | Multiple devices, batteries |
-| 100W+ | Very high | Power stations, 12V systems |
+Peak sun hours are the day's sunlight expressed as hours of full-strength sun. Thirty-year averages from the US national solar laboratory, for a panel facing south and tilted at the local latitude:
 
-#### Solar Power Stations
+| City | December | June |
+|------|----------|------|
+| Phoenix, AZ | 4.9 | 7.3 |
+| Miami, FL | 4.5 | 5.1 |
+| Chicago, IL | 2.4 | 5.7 |
+| Seattle, WA | 1.4 | 5.2 |
 
-Integrated solar panel + battery + inverter:
-- Jackery, Goal Zero, Bluetti brands
-- Various capacities
-- Can power larger devices
-- More expensive but versatile
+**Worked example: a 20 W folding panel.**
 
----
+- Chicago in June: 20 x 5.7 x 0.8 = about 91 Wh a day. On paper, around five phone charges.
+- Chicago in December: 20 x 2.4 x 0.8 = about 38 Wh. About two.
+- Seattle in December: 20 x 1.4 x 0.8 = about 22 Wh. One, on an average day, and none in a week of heavy cloud.
 
-## Solar Charging Setup
+Those are best-case figures for a well-aimed panel in the open. To get close to them:
 
-### Basic Phone Charging Setup
+- **Charge a power bank, not the phone.** Panel output rises and falls with every cloud. A power bank takes whatever arrives, and you charge the phone from it after dark.
+- **Aim the panel.** Face it toward the sun and prop it up at an angle; do not leave it flat. Re-aim it a few times a day.
+- **Keep every part of it out of shadow.** Even a small shadow can cut output sharply.
+- **Panel in the sun, battery in the shade.** Lithium-ion batteries should only be charged between 32°F and 105°F (0°C and 40°C), and a phone lying in direct summer sun can easily get hotter than that. Tuck the phone or power bank under the panel or run the cable indoors.
+- **Not on a dashboard.** A closed car in the sun is exactly the heat that damages batteries and can make them dangerous.
 
-**Components:**
-1. Solar panel (15-25W recommended)
-2. USB output
-3. Battery pack (optional but recommended)
+For bigger setups, power stations, and the full city table, see the Solar Power for Emergencies guide.
 
-**Why use battery pack:**
-- Stores power for cloudy periods
-- More efficient than direct charging
-- Protects devices from voltage fluctuations
-- Charge panel → battery → device
+## Charging a Phone by Crank
 
-### Optimizing Solar Charging
+When there is no sun, no power bank, and no car:
 
-**Placement:**
-- Direct sunlight (no partial shade)
-- Perpendicular to sun (adjust throughout day)
-- Clean panel surface
-- Avoid hot surfaces (reduces efficiency)
+1. Put the phone in low power mode and airplane mode first, so nothing is wasted.
+2. Plug it into the radio's USB port and crank at a steady pace. If the manual gives a cranking speed, use it.
+3. After several minutes, switch airplane mode off, send your text, and switch the phone off again.
+4. Take turns. Cranking is tiring.
 
-**Best charging times:**
-- Peak sun: 10am - 2pm
-- Best efficiency: 11am - 1pm
-- Adjust for your latitude and season
+Text instead of calling: texts are more likely to get through a congested network, and they take seconds.
 
-**Weather effects:**
-- Full sun: 100% output
-- Light clouds: 50-70% output
-- Heavy clouds: 10-25% output
-- Rain: Minimal output
+## What These Devices Cannot Do
 
----
+- Run or recharge medical equipment such as oxygen concentrators and CPAP machines
+- Charge laptops or tablets in any useful time
+- Power anything that heats or cools
+- Replace a stock of ordinary batteries
 
-## Recommended Equipment
+If you need more than a radio, a light, and a phone, you need a power station or generator. See the Solar Power for Emergencies and Generator Safety guides.
 
-### Essential Solar/Crank Kit
+## When Power Is Short, Charge in This Order
 
-- [ ] Hand-crank emergency radio with USB output
-- [ ] 20W+ folding solar panel
-- [ ] 10,000+ mAh power bank
-- [ ] Solar-powered lantern
-- [ ] USB charging cables
+1. A phone, enough for emergency calls and texts
+2. The radio
+3. One light per group of people
+4. A power bank, for tomorrow
+5. Everything else
 
-### Enhanced Kit
+Medical devices come before all of these, on their own tested backup.
 
-- [ ] 50-100W solar panel
-- [ ] Larger power station (500Wh+)
-- [ ] 12V charging capability
-- [ ] Multiple power banks
-- [ ] Solar battery charger (AA/AAA)
+## Care and Storage
 
----
+- **Top up built-in batteries every three months.** A lithium-ion battery left flat for a long time may not recover.
+- **Charge it fully by USB before first use,** as the manuals say, and again before any forecast storm.
+- **Take AA cells out for long storage** so a leak cannot ruin the radio. Tape them to it in a bag.
+- **Keep panels clean and dry,** and fold them only along their seams.
+- **Keep everything dry and out of hot cars.** Heat ages batteries quickly.
+- **Stop using any device whose battery swells, smells, leaks, or gets too hot.** Do not put it in the trash; take it to a battery recycler or hazardous waste site. The Battery Management & Rotation guide explains why.
 
-## Charging Priorities
+## Kit Checklist
 
-When power is limited:
+- [ ] Crank radio with weather band, tone alert, AA option, and USB charging
+- [ ] Spare AA or AAA cells for the radio and lights
+- [ ] LED headlamp or lantern for each person
+- [ ] Power bank, charged and dated
+- [ ] Folding solar panel, 20 W or more (optional)
+- [ ] Charging cable for every phone
+- [ ] Local weather channel written on a label on the radio
 
-### High Priority
-1. Medical devices
-2. Communication (phone for emergencies)
-3. Flashlight/headlamp
-4. Emergency radio
+## Practice
 
-### Medium Priority
-5. Power bank (for later use)
-6. Rechargeable batteries
-7. Tablets (if used for information)
+**10-minute drill:** Take out your radio. Switch to the weather band and step through the seven channels until one comes in clearly; write that channel on a piece of tape on the radio. Then crank steadily for exactly one minute, set the volume low, and time how long it plays before fading. Write that number on the tape too. Now you know your radio's real minutes-per-minute, not the box's.
 
-### Lower Priority
-8. Entertainment devices
-9. Non-essential electronics
+**What would you do?**
 
----
+1. *The power has been out all day. Your phone is at 4% and you want to tell your sister you are safe. The only power you have is a crank radio with a USB port. You plan to crank until the phone is back to half.*
 
-## Maintenance
+   **Answer:** Half a charge by hand is not realistic: the crank is built to keep a small radio going, not to fill a phone. Set the phone to low power and airplane mode, crank for several minutes, then send one short text and switch the phone off. Agree on a check-in time so it can stay off in between. Use the radio, not the phone, for news.
 
-### Solar Panel Care
+2. *It is a hot, sunny afternoon after a hurricane. You unfold the solar panel on the driveway and set your phone on top of it, in full sun, to charge while you clear debris.*
 
-- Keep clean (wipe with soft cloth)
-- Store properly when not in use
-- Check cables and connectors
-- Test periodically
-- Avoid physical damage
+   **Answer:** Move the phone. A phone in direct sun on hot pavement can quickly pass the 105°F (40°C) limit for safe charging. It may stop charging, and the heat damages the battery. Leave the panel in the sun and put the phone, or better a power bank, in the shade underneath or indoors at the end of the cable.
 
-### Hand-Crank Device Care
+3. *A severe storm warning is issued for tonight. You pull the crank radio out of the closet, where it has sat for four years. The display is blank, and a minute of cranking does nothing.*
 
-- Exercise periodically (prevents stiffness)
-- Don't over-crank
-- Keep clean and dry
-- Replace internal battery when degraded
-- Store with some charge
-
-### Power Bank Care
-
-- Keep charged (not fully empty)
-- Avoid extreme temperatures
-- Store at 40-60% for long-term
-- Replace every 2-3 years
-
----
-
-## DIY Solar Projects
-
-### Simple USB Solar Charger
-
-**Components:**
-- 6V solar panel
-- 5V voltage regulator
-- USB port
-- Basic wiring
-
-**For experienced DIYers only - improper assembly can damage devices.**
-
-### Window-Mounted Phone Charger
-
-- Suction cup solar panel
-- Direct USB output
-- Good for continuous low-power charging
-- Available commercially
-
----
-
-## Limitations to Understand
-
-### Solar Realities
-
-- Weather dependent
-- Limited winter output (shorter days, lower angle)
-- Need clear access to sun
-- Takes time to charge
-- Not instant power
-
-### Hand-Crank Realities
-
-- Labor intensive
-- Limited power output
-- Best for small devices
-- Fatigue factor
-- Backup, not primary
-
----
+   **Answer:** Do not give up on it, and do not rely on the crank. While you still have power, plug it into a USB charger; a deeply drained battery can take a while to wake. Put fresh AA cells in the battery compartment so it works either way. Then find your weather channel and switch on tone alert before bed. Afterwards, set a reminder to top it up every three months.
 
 ## Quick Reference
 
 ```
-SOLAR CHARGING TIPS
+CRANK RADIO (maker claims, "up to")
+  1 min crank = 9-15 min radio
+  1 hr sun on built-in panel
+    = 45 min radio
+  1 min crank = 12 min of that sun
+  Built-in battery: about 9.6 Wh
+  A phone battery: about 17 Wh
 
-Best conditions:
-- Direct sunlight
-- 10am - 2pm
-- Panel perpendicular to sun
-- Clean panel surface
+RADIO MUST-HAVES
+  7 NOAA weather channels
+  Tone alert + SAME county code
+  Runs on AA cells too
+  USB charging, AM/FM, flashlight
 
-Charging priority:
-1. Medical devices
-2. Phone (emergency use)
-3. Flashlight
-4. Radio
+SOLAR FOR PHONES
+  Wh/day = watts x sun hours x 0.8
+  20 W panel, Chicago:
+    June about 91 Wh (5 charges)
+    Dec  about 38 Wh (2 charges)
+  Charge a power bank, not the phone
+  Aim it. No shade on the panel.
+  Panel in sun, battery in shade
+  Charge at 32-105 F (0-40 C) only
 
-HAND-CRANK GUIDE
+CRANKING A PHONE
+  Low power + airplane mode
+  Crank several minutes, send a
+  text, switch off
 
-Typical ratio:
-1 minute cranking = 10-30 minutes use
+CHARGE ORDER
+  Medical (own backup) > phone >
+  radio > light > power bank
 
-Best for:
-- Radio
-- Flashlight
-- Emergency phone power
-
-Not practical for:
-- Full phone charging
-- Tablets
-- Laptops
+EVERY 3 MONTHS
+  USB top-up, crank 1 minute,
+  check spare AA cells
 ```
+
+## Sources
+
+- [Ready.gov: Build a Kit](https://www.ready.gov/kit)
+- [Ready.gov: Get Tech Ready](https://www.ready.gov/get-tech-ready)
+- [National Weather Service: NOAA Weather Radio](https://www.weather.gov/nwr/)
+- [National Weather Service: NOAA Weather Radio Receiver Information](https://www.weather.gov/nwr/nwr_receivers)
+- [National Laboratory of the Rockies (formerly NREL): Solar Radiation Data Manual for Flat-Plate and Concentrating Collectors (PDF)](https://docs.nlr.gov/docs/legosti/old/5607.pdf)
+- [National Laboratory of the Rockies (formerly NREL): PVWatts Version 5 Manual (PDF)](https://docs.nlr.gov/docs/fy14osti/62641.pdf)
+- [US Fire Administration: Battery Fire Safety](https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/batteries/)
+- [EPA: Used Household Batteries](https://www.epa.gov/recycle/used-household-batteries)
+- [Apple: Maximizing Battery Life and Lifespan (manufacturer guidance)](https://www.apple.com/batteries/maximizing-performance/)
+- [Midland: ER310 Emergency Crank Radio Owner's Manual (manufacturer data, PDF)](https://midlandusa.com/wp-content/uploads/2016/12/ER310-Manual-Final-04.3.18.pdf)
+- [Eton: FRX3+ Specification Sheet (manufacturer data, PDF)](https://cdn.shopify.com/s/files/1/2407/2229/files/SpecSheet_FRX3_Oct20_2022.pdf)
 
 ---
 
-*Last updated: January 2026*
+Last reviewed: November 2026
+
 *License: CC-BY-SA 4.0*

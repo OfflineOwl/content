@@ -1,265 +1,201 @@
 # Barter & Trade in Emergencies
 
-> **When Money Stops Working** - In a prolonged emergency, cash and credit become unreliable. Understanding how to trade goods and skills can mean the difference between going without and getting what you need.
+> **Your neighbors are the market.** In real disasters money rarely stops working. What happens is that shops close for a while, and the people on your street start lending, sharing and swapping. Doing that fairly and safely is a skill you can practice now.
 
-## Why Cash May Become Useless
+## Start here
 
-In a short-term emergency (a few days), **cash is still king**. ATMs go offline, card readers stop working, and businesses that remain open will only accept cash. Keep **small bills** ($1, $5, $10, $20) on hand for this phase.
+1. **Meet the neighbors.** Learn the names of the people in the three or four nearest homes and swap phone numbers. People trade with people they know. A Community Emergency Response Team (CERT) class is a good way to meet them and pick up useful skills.
+2. **List what you could offer.** Skills, tools and time count for more than stuff: can you fix a small engine, watch children, cook for twelve, run a chainsaw safely?
+3. **Write your never-trade list** before you are tired and under pressure: prescription medicines, your household's water and food reserve, and anything you depend on and cannot replace.
+4. **Keep a little extra of ordinary things you already use** (batteries, soap, shelf-stable food) and rotate it. That is the only trade stockpile worth having.
+5. **Keep small bills.** Cash is still the easiest thing to trade. See the Emergency Cash & Barter Basics guide.
 
-However, in an extended crisis (weeks to months), the value of cash degrades:
+## Get emergency help if
 
-- **Supply disruption:** When goods stop arriving, what is available matters more than what you can pay
-- **Loss of confidence:** If people doubt the crisis will end quickly, they stop accepting paper money
-- **Inflation:** If government prints money to respond to the crisis, prices skyrocket
-- **Practical value:** You cannot eat, drink, or stay warm with paper currency
+- **Someone threatens you or tries to take supplies by force.** Hand it over, get away, and call 911 (or your local emergency number) when you safely can. No supplies are worth an injury.
+- **Someone has taken a medicine that was not prescribed for them and becomes unwell.** Call 911 for collapse, seizure or trouble breathing. Otherwise call Poison Help at 1-800-222-1222 (US).
 
-### Historical Precedent
+## What trading really looks like
 
-| Event | Duration | What Happened to Currency |
-|-------|----------|--------------------------|
-| **Argentina 2001 economic collapse** | Months | Peso collapsed, barter clubs with millions of members formed |
-| **Venezuela 2016-present** | Years | Hyperinflation made currency nearly worthless; barter for food common |
-| **Bosnia 1992-1995** | 3 years | Currency worthless within weeks; ammunition, cigarettes, and fuel became de facto currency |
-| **Hurricane Katrina 2005** | Weeks | Cash briefly useful, then supplies and services became trade currency |
-| **Puerto Rico post-Maria 2017** | Months | Cash useless in many areas without functioning businesses; neighbor-to-neighbor trade essential |
+Forget the idea that paper money becomes worthless on day three. In the storms, earthquakes and outages this guide is written for, cash keeps its value and outside help arrives. The gap you are bridging is days to a few weeks, while shops, pumps and card readers are down.
 
----
+In that gap, most exchange is not really barter at all:
 
-## High-Value Trade Items
+- **Sharing comes first.** The thawing freezer becomes a street cookout. The household with a generator charges phones. Nobody keeps score, and everyone remembers.
+- **Lending comes second.** Ladders, tarps, chainsaws and coolers go out and come back.
+- **Swapping comes third:** you have spare batteries and need diapers, they have the reverse.
 
-Stock these items not just for personal use but as **trade goods**. Buy extra when prices are normal.
+Your reputation is the real currency. A household known for fair dealing gets offered help first, and one known for squeezing people gets left alone.
 
-### Tier 1: Highest Demand (Life Necessities)
+## What is actually useful to trade
 
-| Item | Why Valuable | Storage Notes |
-|------|-------------|---------------|
-| **Water purification** (filters, tablets, bleach) | Everyone needs clean water | Tablets: 5-year shelf life. Bleach: 6-12 months |
-| **Shelf-stable food** (rice, beans, canned goods) | Universal need | Rotate stock, check expiration |
-| **Medications** (OTC pain relievers, antibiotics for fish/veterinary, anti-diarrheal) | Medical needs do not stop in a crisis | Store cool and dry, rotate before expiration |
-| **Fuel** (gasoline, propane, kerosene) | Powers transportation, generators, heating, cooking | Store safely, use stabilizer for gasoline |
-| **Ammunition** (common calibers: 9mm, .22LR, 12-gauge, 5.56/.223) | Self-defense and hunting demand remains high | Store in cool, dry, sealed containers |
+| What | Examples | Why it works |
+|------|----------|--------------|
+| **Skills and labor** | First aid, childcare, cooking for a group, small-engine and plumbing repair, clearing debris, sewing, translating, driving an errand | Cannot be stolen, does not run out, and is usually what people lack most |
+| **Power and charging** | Phone charging from a power bank, car or solar panel | Everyone needs it, and sharing costs you little |
+| **Tools on loan** | Ladder, hand tools, wheelbarrow, tarp, cooler, camp stove (outdoors only) | You keep the tool. Agree when it comes back. |
+| **Everyday consumables** | Batteries, soap, toilet paper, diapers, wipes, menstrual products, trash bags, duct tape | Small, useful to nearly everyone, easy to judge |
+| **Food** | Sealed, shelf-stable packaged food; garden produce; eggs | Share perishables early, while they are still cold |
+| **Transport and information** | A ride, a fuel run, news from a battery radio | Costs little, means a lot |
+| **Comfort** | Coffee, tea, sweets, books, games, toys | Morale is a real need by day four |
 
-### Tier 2: High Demand (Comfort and Utility)
+Notice what is at the top. In a neighborhood with no power, the person who can get a generator running or calm a frightened child is worth more than a garage full of goods.
 
-| Item | Why Valuable | Storage Notes |
-|------|-------------|---------------|
-| **Batteries** (AA, AAA, D, 9V) | Powers flashlights, radios, essential devices | Long shelf life (alkaline: 5-10 years) |
-| **Lighters and matches** | Fire is fundamental | Bic lighters last years in storage; store matches dry |
-| **Coffee and tea** | Morale item with addictive demand | Vacuum-sealed whole beans last 1-2 years |
-| **Alcohol** (liquor, not beer/wine) | Morale, medicinal (disinfectant), high trade value | Hard liquor stores indefinitely sealed |
-| **Tobacco** (cigarettes, rolling tobacco) | Addictive demand creates reliable trade value | Sealed cigarettes last 1-2 years; rolling tobacco longer in airtight containers |
-| **Soap, hygiene supplies** | Disease prevention, comfort | Bar soap lasts indefinitely; stock shampoo, toothpaste, feminine hygiene |
-| **Toilet paper** | As seen in 2020, this is a high-demand comfort item | Store in sealed bins to prevent moisture damage |
+## What not to trade
 
-### Tier 3: Valuable Utility Items
+**Prescription medicines.** The FDA's rule is short: do not share medicines. A drug that is right for one person can be dangerous for another because of dose, allergies, other medicines or pregnancy. In the US, passing on controlled medicines such as opioid painkillers is also illegal. A sealed, in-date, over-the-counter product in its original box is a different matter, as long as the adult taking it reads the label.
 
-| Item | Why Valuable |
-|------|-------------|
-| **Duct tape** | Repairs, sealing, construction |
-| **Plastic sheeting / tarps** | Shelter, rain collection, insulation |
-| **Rope and cordage** | Construction, securing loads, shelter |
-| **Seeds** (non-GMO, open-pollinated) | Long-term food production |
-| **Manual tools** (saws, axes, wrenches) | No power needed |
-| **Candles** | Light and minimal heat |
-| **Salt and spices** | Food preservation and flavor |
-| **Sewing kits** | Clothing repair |
-| **Reading glasses** | Commonly needed, hard to improvise |
-| **Fishing line and hooks** | Food acquisition |
+**Animal drugs as people medicine.** Antibiotics sold for aquarium fish are unapproved products that have not been evaluated for safety or effectiveness. The FDA says plainly that animal drugs should not be used to treat people. Do not trade for them and do not offer them.
 
----
+**Your reserve.** Water, food, fuel and batteries below what your own household needs to get through. Decide the line in advance and do not go under it.
 
-## Precious Metals as Trade Currency
+**The last of anything you cannot replace:** your only glasses, the batteries for a medical device or the radio, the tool you depend on.
 
-### Junk Silver Coins
+**Home-canned low-acid food from someone you do not know well.** Vegetables, meat and fish that were canned wrongly can carry botulism toxin, which you cannot see, smell or taste. The CDC's advice is not to eat food if you do not know it was safely canned.
 
-**"Junk silver"** refers to pre-1965 US coins (dimes, quarters, half dollars) that contain **90% silver**. These are the most practical precious metal for emergency trade because:
+**Fuel in the wrong container.** Only pass fuel along in a container made for it, outdoors, away from flames. See the Fuel Storage Safety guide.
 
-- **Recognizable:** People know what a US quarter looks like
-- **Small denominations:** A pre-1965 dime contains roughly $2-3 worth of silver (varies with market), making small transactions possible
-- **Verifiable:** Weight and size are standardized and well-known
-- **Divisible:** Different coin sizes allow different transaction values
-- **Historically proven:** Silver has been used as currency for thousands of years
+**Information.** What you have, how much, and where it is kept is nobody's business.
 
-### Silver vs. Gold
+### About "trade goods" stockpiles
 
-| Factor | Silver | Gold |
-|--------|--------|------|
-| **Affordability** | Buy in small amounts | Expensive per unit |
-| **Small transactions** | A dime works for small trades | Even 1/10 oz gold is too valuable for most trades |
-| **Recognition** | US coins easily recognized | Bars/rounds harder to verify |
-| **Practicality** | Better for day-to-day barter | Better for large transactions or wealth preservation |
+Some preparedness writing tells you to hoard alcohol, tobacco, ammunition, or silver and gold coins as future currency. Do not.
 
-**Recommendation:** Focus on **junk silver coins** (pre-1965 dimes and quarters) for barter purposes. Gold is better suited for preserving wealth than for daily trade.
+- It ties up money that would do far more good as cash, water, food and medicine.
+- It makes your home a target and brings disputes to your door.
+- Selling or handing on alcohol, tobacco, firearms and ammunition is regulated, and the rules vary by place.
+- Precious metals are hard for a neighbor to value or verify, and useless for buying a loaf of bread.
 
-### How Much to Keep
+None of the official preparedness guidance behind this guide recommends any of it. Small bills and useful skills do the job better.
 
-- **Starter amount:** $50-100 face value in pre-1965 silver coins
-- **Solid position:** $200-500 face value
-- Store in a **secure, hidden location** (not a bank safe deposit box -- inaccessible in a crisis)
+## Fair dealing
 
----
+- **Ask what they need first.** The best trades start with "what are you short of?", not "what will you give me?"
+- **Say the terms out loud before anything changes hands:** what, how much, and when. For work, say what "done" means.
+- **Trade by usefulness, not shop price.** Both sides should walk away better off.
+- **Show the true condition:** the date on the can, the charge left in the battery, the leak in the tarp.
+- **Never profit from desperation.** A parent who needs water for a baby gets water. Charging frightened people the most they will pay is the fastest way to become the house nobody helps, and in many US states a business that does it during a declared emergency can be reported to the state attorney general for price gouging.
+- **Write down loans and running deals:** who, what, when it is due back. A notebook saves friendships.
+- **It is fine to say no,** politely and without explaining what you have.
 
-## Skills as Currency
+For more than a couple of households, a regular swap table works well: one known place, one set hour each day, a board for "need" and "offer" notes. The Community Mutual Aid Basics guide covers organizing a street.
 
-In a prolonged emergency, **what you can do** becomes as valuable as what you have. Develop tradeable skills now.
+One note for normal times: in the US the IRS treats the fair market value of goods and services received by bartering as income. That matters if swapping becomes a regular business, not for a borrowed ladder. Ask a tax professional if it applies to you.
 
-### Most Valuable Emergency Skills
+## Staying safe when you trade
 
-| Skill | Why Valuable |
-|-------|-------------|
-| **Medical/first aid** | Injuries and illness do not stop; trained help is scarce |
-| **Mechanical repair** | Fixing generators, vehicles, water pumps |
-| **Electrical knowledge** | Solar setup, wiring, battery systems |
-| **Water purification** | Finding and treating safe drinking water |
-| **Food preservation** | Canning, smoking, drying, fermting |
-| **Hunting and fishing** | Food acquisition |
-| **Gardening/farming** | Food production |
-| **Welding and metalwork** | Fabrication and repair |
-| **Carpentry** | Shelter repair and construction |
-| **Security/self-defense training** | Personal and community protection |
-| **Ham radio operation** | Long-distance communication |
-| **Teaching** | Transferring skills to others multiplies community capability |
+Most trades between neighbors need no precautions at all. With people you do not know, the aim is to avoid trouble, not to win a confrontation.
 
-### How to Trade Skills
+- **Trade with people you know first.** Strangers last.
+- **Daylight, and somewhere open:** the front yard, the corner, the swap table. Not inside your home, and not where your supplies are kept.
+- **Bring one other adult,** and tell your household where you are going and when you will be back.
+- **Carry only what you are trading.**
+- **Keep the conversation on the trade.** Do not discuss what else you have.
+- **If it feels wrong, leave.** There will be another trade.
+- **If someone turns threatening:** stay calm, give them what they want, move away, and call for help.
 
-- **Establish clear terms before starting work** (what you will do, what you expect in return)
-- **Do quality work** -- your reputation is your most valuable long-term asset
-- **Start small** to build trust with new trade partners
-- **Consider ongoing arrangements** (e.g., "I will fix your generator if you share eggs weekly for a month")
+**Walk-away signs:**
 
----
+- They want to see everything you have before choosing.
+- They insist on coming inside.
+- More people turn up than you agreed.
+- They push you to decide right now, or to meet after dark or somewhere out of sight.
+- They are offering prescription drugs, weapons, or goods that look stolen.
 
-## Setting Up Fair Trades
+The Personal Safety & De-Escalation guide has more on getting out of a tense encounter.
 
-### Determining Value
+## People who need extra thought
 
-There is no price list in a barter economy. Value is determined by:
+- **Children** do not trade on their own, and should know not to tell others what the family has.
+- **Older adults and people with disabilities** may not be able to come to a swap. Check on them and offer help without asking for anything back. They often hold skills and local knowledge the street needs.
+- **People who rely on medicines or powered medical devices** come first for charging and transport, and never trade their supply.
+- **Babies:** only pass on infant formula that is unopened and in date.
 
-1. **Scarcity** -- How hard is the item to find right now?
-2. **Need** -- How urgently does the other person need what you have?
-3. **Replaceability** -- Can they get it elsewhere?
-4. **Labor involved** -- How much effort went into producing/obtaining it?
-5. **Shelf life** -- Will it last, or must it be used soon?
+## Ready-to-trade checklist
 
-### Negotiation Principles
+- [ ] I know the households nearest me by name and have their phone numbers
+- [ ] A written list of skills, tools and spare time we can offer
+- [ ] A written never-trade list, agreed by the household
+- [ ] A small rotated surplus of things we already use
+- [ ] Small bills set aside
+- [ ] Name marked on tools that may go out on loan
+- [ ] A notebook and pen for loans and deals
+- [ ] A safe, open place nearby picked out for trading with strangers
 
-- **Know what your items are worth to you** before approaching a trade
-- **Never reveal desperation** -- it weakens your position
-- **Start by asking what they have to offer** rather than naming your price
-- **Be willing to walk away** -- the best trades happen when neither party is desperate
-- **Offer bundled deals** (e.g., "I will trade 5 lighters and a bottle of ibuprofen for 20 lbs of rice")
-- **Keep some items hidden** -- never show your full inventory
+## Practice
 
-### Record Keeping
+**10-minute drill:** Take one sheet of paper. On the front, each person in the household writes three things they could do for a neighbor and three things the house has spare. On the back, write the never-trade list together. Then pick one small, real exchange to do this week: lend a tool, swap garden produce, or simply knock next door and trade phone numbers.
 
-Even in barter, **keep records:**
-- What was traded
-- With whom
-- Date
-- Any ongoing obligations
-- This protects both parties and prevents disputes
+**What would you do?**
 
----
+1. *Day four of an outage. A neighbor you hardly know has hurt his back. He offers a full propane cylinder in exchange for some of the strong painkillers left over from your surgery.*
 
-## Trade Security
+   **Answer:** The propane is tempting and the answer is still no. A prescription painkiller is dosed for one person and can stop another person's breathing, and passing it on is illegal. Offer something you can safely give: a sealed over-the-counter pain reliever for him to read and decide on, a meal, a phone charge. If the pain is severe, he needs a clinic or, in an emergency, 911.
 
-Barter situations can be dangerous. People under stress may resort to theft or violence.
+2. *You own the only generator on the street. A family you have never spoken to asks to charge their phones and the battery for their child's nebulizer. They say they have nothing to trade.*
 
-### Before the Trade
+   **Answer:** Say yes and ask for nothing. A medical need is not a bargaining position, and an hour of charging costs you almost nothing. Keep the generator outdoors and have them bring the devices to you. You have also just met a family who will remember it when you need a hand next week.
 
-- **Trade with known people first** (neighbors, community members, church groups)
-- **Meet in a neutral, public location** when trading with strangers
-- **Bring a partner** -- never trade alone with someone you do not know
-- **Do not reveal where you live or where your supplies are stored**
-- **Arrange trades during daylight hours**
+3. *A man you do not know comes to the door offering fuel for food. He wants to step inside and see what you have so he can choose. Two more men wait by his truck.*
 
-### During the Trade
+   **Answer:** Three walk-away signs at once: wanting to see your supplies, wanting to come in, and extra people. Keep the door between you, say politely that you have nothing to trade today, and end the conversation. Do not explain or argue. If he will not leave or you feel threatened, call 911. If you later want fuel, trade through people you know, outside, in daylight.
 
-- **Inspect all goods before finalizing** -- verify quality and quantity
-- **Complete the exchange simultaneously** (both parties hand over goods at the same time)
-- **Trust your instincts** -- if something feels wrong, walk away
-- **Have an exit plan** if the situation turns hostile
-- **Do not carry more trade goods than needed** for that specific transaction
+## Quick Reference
 
-### Red Flags
+```
+BARTER & TRADE
 
-- The other party wants to see your **full supply** before choosing
-- They insist on coming to **your home**
-- They want to **delay their end** of the trade ("I will bring it tomorrow")
-- They are **evasive about where they got** their trade goods
-- Multiple people show up when you expected one
-- They pressure you to **rush the deal**
+ORDER OF THINGS
+1. Share   2. Lend   3. Swap
+Cash (small bills) still works.
 
----
+BEST TO OFFER
+- Skills and labor
+- Phone charging
+- Tools on loan
+- Batteries, soap, diapers
+- Sealed shelf-stable food
 
-## Building a Trade Network
+NEVER TRADE
+- Prescription medicine
+- Fish/pet antibiotics
+- Water and food you need
+- Last of what you can't replace
+- Details of what you have
 
-The most successful traders in any disaster scenario built **networks before the crisis**.
+DON'T STOCKPILE AS "CURRENCY"
+Alcohol, tobacco, ammunition,
+silver, gold
 
-### Start Now
+FAIR
+- Ask what they need
+- Terms said out loud first
+- Show true condition
+- No profit from desperation
+- Write down loans
 
-- Get to know your neighbors and their skills
-- Join community organizations (churches, neighborhood associations, volunteer groups)
-- Participate in local farmers markets and swap meets
-- Join or form a **mutual aid group** with complementary skills and supplies
-- Learn who in your area has medical training, mechanical skills, farming knowledge
+SAFE (with strangers)
+- Daylight, open place
+- Not inside your home
+- Bring one adult
+- Carry only the trade
+- Feels wrong? Leave.
+- Threatened? Give it up,
+  get away, call 911.
+```
 
-### During a Crisis
+## Sources
 
-- **Establish a regular trading post** (a known time and place for community trading)
-- **Use a bulletin board system** (physical, at a community gathering point) for posting needs and offers
-- **Build a reputation for fairness** -- word spreads fast in small communities
-- **Specialize** -- become known as the person who can do or provide something specific
+- [Ready.gov: Financial Preparedness](https://www.ready.gov/financial-preparedness)
+- [Ready.gov: Get Involved](https://www.ready.gov/get-involved)
+- [FDA: Use Medicines Wisely](https://www.fda.gov/consumers/womens-health/use-medicines-wisely)
+- [FDA: Ornamental Fish Drugs and You](https://www.fda.gov/animal-veterinary/animal-health-literacy/ornamental-fish-drugs-and-you)
+- [CDC: Preventing Botulism](https://www.cdc.gov/botulism/prevention/index.html)
+- [IRS: Topic No. 420, Bartering Income](https://www.irs.gov/taxtopics/tc420)
+- [CFPB: Recognizing and Preventing Fraud After a Natural Disaster](https://www.consumerfinance.gov/ask-cfpb/how-do-i-recognize-and-prevent-against-fraud-after-a-natural-disaster-en-1529/)
 
 ---
 
-## What NOT to Trade
+Last reviewed: November 2026
 
-Some items should generally be kept, not traded, even for high value:
-
-- **Your primary firearm or self-defense tools**
-- **Your last supply of any critical medication**
-- **Your family's minimum food and water reserves**
-- **Information about your full supply inventory or storage locations**
-- **Items that could be used against you** (give careful thought to trading weapons or ammunition with strangers)
-
----
-
-## Checklist: Barter Preparedness
-
-### Supplies to Stock for Trade
-
-- [ ] Extra lighters (buy in bulk -- they are cheap now)
-- [ ] Extra batteries (variety of sizes)
-- [ ] Small bottles of liquor (airline-size bottles are ideal trade units)
-- [ ] OTC medications (pain relievers, anti-diarrheal, cold medicine)
-- [ ] Coffee (vacuum-sealed)
-- [ ] Hygiene supplies (travel-size soap, toothpaste, shampoo)
-- [ ] Salt (cheap, lightweight, essential for food preservation)
-- [ ] Sewing kits
-- [ ] Pre-1965 silver dimes and quarters
-- [ ] Seeds in sealed packets
-- [ ] Duct tape (individual rolls)
-- [ ] Fishing supplies (line, hooks, weights)
-
-### Skills to Develop
-
-- [ ] Basic first aid and wound care
-- [ ] At least one hands-on repair skill (mechanical, electrical, or carpentry)
-- [ ] Food preservation (canning, dehydrating, smoking)
-- [ ] Water purification methods
-- [ ] Gardening basics (even container gardening counts)
-- [ ] Basic sewing and clothing repair
-
-### Security Preparations
-
-- [ ] Identify safe trade locations in your neighborhood
-- [ ] Establish a buddy system for trading
-- [ ] Practice situational awareness skills
-- [ ] Have a communication plan with your household for trade outings
-- [ ] Keep trade goods stored separately from your main supplies
-
----
-
-*Last updated: March 2026*
 *License: CC-BY-SA 4.0*

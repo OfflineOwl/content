@@ -1,6 +1,6 @@
 # Emergency Communications Plan (Offline)
 
-> When cell networks are jammed or down and the internet is out, how will your family reach each other? This guide sets up layers of backup, from texting an out-of-town contact to two-way radios to meeting places and notes, so you're never relying on one system.
+> **Never rely on one system.** When cell networks are jammed or down and the internet is out, how will your family reach each other? This guide sets up layers of backup, from texting an out-of-town contact to two-way radios to meeting places and notes.
 
 ## Start Here
 
@@ -384,7 +384,27 @@ Practice every few months, and review the plan at least once a year:
 
 ---
 
-## Summary: Communication Failure Response
+## Practice
+
+**10-minute drill:** Text the out-of-town contact. Pick a time, and have every person in the household send the contact a check-in text in the plan's format: where you are, how you are, what you plan to do. Start it with the word "Drill" so nobody worries, for example: "Drill. Green. Home. Staying put." Ask the contact to reply to each person. Then have everyone write the contact's number from memory and check it against their paper card. Fix what you find: a wrong number, a missing card, someone who isn't sure how to send a text.
+
+**What would you do?**
+
+1. *A severe storm is moving through after dark and calls aren't connecting. Your phone is at 30 percent, so you switch it to airplane mode to save the battery until morning.*
+
+   **Answer:** Take it out of airplane mode. A phone that is off or in airplane mode doesn't receive Wireless Emergency Alerts, and tonight is when you need them. Save the battery other ways: lower the screen brightness, close apps you don't need, and skip video and games. Airplane mode is only for stretches when you have arranged a check-in time and aren't waiting on alerts.
+
+2. *Your son has fallen from a ladder and isn't responding. The network is jammed. Your first thought is to text "Black" to the family group so that someone comes.*
+
+   **Answer:** Call 911 first, and keep trying even if the network is busy. "Black" means a life-threatening emergency, and the rule attached to it is to call 911 first and text the family second. A status word tells your family what is happening; it doesn't send help.
+
+3. *After an earthquake, phones and internet are down across town. Your partner was at work and you have heard nothing for three hours. You are about to get in the car and drive around looking.*
+
+   **Answer:** Follow the plan, because it is the only thing that tells each of you where the other will be. Leave a note at home in the agreed spot, go to the neighborhood meeting place, and wait the agreed time. If nobody comes, move on to the meeting place outside your neighborhood. Keep trying a text to the out-of-town contact as you go, since a text may send once the network frees up.
+
+---
+
+## Quick Reference
 
 ```
 COMMUNICATION PLAN QUICK REFERENCE
@@ -394,12 +414,15 @@ Life in danger? CALL 911 first.
 When phones work:
 1. Text first (uses less capacity)
 2. Keep messages short
-3. Text the out-of-town contact your status
-4. Keep the phone ON for emergency alerts
+3. Text the out-of-town contact
+   your status
+4. Keep the phone ON for
+   emergency alerts
 
 When phones don't work:
 1. Try a landline
-2. Use FRS/GMRS radio (privacy codes OFF)
+2. Use FRS/GMRS radio
+   (privacy codes OFF)
 3. Listen to NOAA Weather Radio / AM-FM
 4. Go to the meeting places; leave notes
 
@@ -422,10 +445,11 @@ Distress: 3 whistle blasts / 3 flashes
 
 ## Sources
 
-- [FEMA: Create Your Family Emergency Communication Plan](https://www.ready.gov/sites/default/files/2020-03/create-your-family-emergency-communication-plan.pdf)
+- [FEMA: Create Your Family Emergency Communication Plan (FEMA P-1094, copy hosted by the National Weather Service)](https://www.weather.gov/media/ilx/Hydro/FSAW/family-emergency-communication-plan.pdf)
 - [Ready.gov: Make a Plan](https://www.ready.gov/plan)
 - [Ready.gov: Emergency Alerts](https://www.ready.gov/alerts)
-- [FEMA: Wireless Emergency Alerts](https://www.fema.gov/emergency-managers/practitioners/integrated-public-alert-warning-system/public/wireless-emergency-alerts)
+- [National Weather Service: Wireless Emergency Alerts](https://www.weather.gov/wrn/wea)
+- [FEMA Fact Sheet: Wireless Emergency Alerts](https://www.ready.gov/sites/default/files/2020-08/wea-fact-sheet.pdf)
 - [National Weather Service: NOAA Weather Radio](https://www.weather.gov/nwr/)
 - [eCFR: 47 CFR Part 95 Subpart B, Family Radio Service](https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-95/subpart-B)
 - [eCFR: 47 CFR Part 95 Subpart E, General Mobile Radio Service](https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-95/subpart-E)
@@ -435,6 +459,8 @@ Distress: 3 whistle blasts / 3 flashes
 - [eCFR: 47 CFR 1.1102, FCC application fees ($35 personal licenses)](https://www.ecfr.gov/current/title-47/section-1.1102)
 - [FCC: Portable Radio Fundamentals for CERT (privacy codes)](https://transition.fcc.gov/pshs/docs/clearinghouse/references/cert-radio-fundamentalsIG-pt1.doc)
 
-Last reviewed: October 2026
+---
+
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

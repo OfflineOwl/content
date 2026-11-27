@@ -1,6 +1,6 @@
 # 72-Hour Survival Checklist (Urban & Rural)
 
-> After a disaster, help may not reach you right away. This checklist follows the Ready.gov basic disaster supplies kit so your household can manage on its own for at least three days. For staying at home, aim for two weeks.
+> **After a disaster, help may not reach you right away.** This checklist follows the Ready.gov basic disaster supplies kit so your household can manage on its own for at least three days. For staying at home, aim for two weeks.
 
 ## Start Here: The Core Kit
 
@@ -344,28 +344,58 @@ The core kit above is your household supply. Each person should also have a go-b
 
 ---
 
-## Printable Summary
+## Practice
+
+**10-minute drill:** Run a kit check against the clock. Set a timer for ten minutes and have everyone go to where the kit is kept. Each person puts a hand on one thing: the water, a flashlight, the radio, the medications, the manual can opener, the document copies. Switch the flashlight and the radio on. Then count the water: you want 3 gallons for every person in the household. Write down whatever was missing, dead, or took too long to find, and fix it this week.
+
+**What would you do?**
+
+1. *It is day two of a power outage and the taps are dry. You have about half the water you should have, so you plan to cut everyone to a cup or two a day to make it last the week.*
+
+   **Answer:** Don't ration drinking water unless authorities tell you to. Let everyone drink what they need today and look for more tomorrow. Children, nursing mothers, and people who are sick may need more than the standard gallon, not less. Then go after more water: the tank of your water heater holds usable water, and water from a stream, pond, or well can be used if you treat all of it before drinking, which is what the purification supplies in the kit are for.
+
+2. *An ice storm has cut the power and the house is getting cold. Your neighbor offers to wheel a generator into your attached garage and leave the big door open, and suggests lighting the camp stove in the kitchen in the meantime.*
+
+   **Answer:** Say no to both. A generator runs outdoors only, at least 20 feet from the house, with the exhaust pointed away from windows, doors, and vents. It never goes in a garage, basement, or porch, and an open door doesn't change that. Grills and camp stoves are for outdoors too, because of carbon monoxide. Stay warm with sleeping bags, extra blankets, and warm clothes, and make sure there are carbon monoxide alarms on every level of the home.
+
+3. *A hurricane is forecast to arrive in two days. Your kit is complete: three days of water and food for everyone. You decide you are finished and can skip the crowded stores.*
+
+   **Answer:** Three days is the minimum, and it is the amount for leaving with. For staying at home, the Red Cross recommends a two-week supply, which is about 14 gallons of water per person. While the taps still run, fill a bathtub liner or extra containers. Check that there is at least a 7-day supply of every prescription, recharge the backup batteries, and add no-cook food if you can get it.
+
+---
+
+## Quick Reference
 
 ```
 72-HOUR KIT (Ready.gov basic kit)
 Per person:
 
-WATER: 1 gallon/day = 3 gallons for 72 hrs
-       (2 weeks at home = ~14 gallons)
-FOOD: Several days, no-cook + can opener
-MEDS: 7+ days of prescriptions, glasses
-RADIO: Battery/crank + NOAA weather radio
+WATER: 1 gallon/day
+  = 3 gallons for 72 hrs
+  (2 weeks at home = ~14 gallons)
+FOOD: Several days, no-cook
+  + can opener
+MEDS: 7+ days of prescriptions,
+  glasses
+RADIO: Battery/crank
+  + NOAA weather radio
 LIGHT: Flashlight, extra batteries
-POWER: Phone chargers + backup battery
+POWER: Phone chargers
+  + backup battery
 FIRST AID kit + WHISTLE
-DOCUMENTS: ID, insurance, bank (copies), cash
-SHELTER-IN-PLACE: Dust mask, plastic, duct tape
-SANITATION: Wipes, garbage bags, ties
+DOCUMENTS: ID, insurance, bank
+  (copies), cash
+SHELTER-IN-PLACE: Dust mask,
+  plastic, duct tape
+SANITATION: Wipes, garbage bags,
+  ties
 TOOLS: Wrench/pliers, maps
-FAMILY: Kids, pets, medical/disability needs
+FAMILY: Kids, pets,
+  medical/disability needs
 
-NEVER run generators, grills, or camp stoves
-indoors. Generators 20+ feet from the house.
+NEVER run generators, grills, or
+camp stoves indoors.
+Generators 20+ feet from the house.
 ```
 
 ---
@@ -380,6 +410,8 @@ indoors. Generators 20+ feet from the house.
 - [American Red Cross: Survival Kit Supplies](https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html)
 - [CPSC: Carbon Monoxide Information Center](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center)
 
-Last reviewed: October 2026
+---
+
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

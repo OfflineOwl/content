@@ -1,418 +1,270 @@
 # Essential Knots & Rope Skills
 
-> **Critical Survival Skills for Any Emergency** - Rope is one of the most versatile tools in any survival kit. Knowing how to tie the right knot for the right situation can help you build shelter, secure gear, perform rescues, and solve countless problems when modern conveniences fail.
+> **Seven knots cover nearly every job around a home, camp or car.** The hard part is not tying them. It is knowing which one to use, and what each one must never be trusted with. A knot used for the wrong job is the one that lets go.
 
-## Why Knots Matter in Emergencies
+## Start here
 
-In a survival or disaster scenario, rope and cord are invaluable:
-- **Shelter building** - Lashing poles, securing tarps, hanging ridgelines
-- **Rescue operations** - Hauling, lowering, creating safety lines
-- **Gear management** - Securing loads, hanging food away from animals
-- **First aid** - Improvised splints, slings, tourniquets (last resort)
-- **Water** - Lowering buckets into wells, creating clotheslines for filtration
+1. **Get a practice cord.** About 6 feet (2 m) of rope as thick as a pencil, and a chair leg or broom handle to tie to. Thin, slippery string makes learning harder.
+2. **Learn three first:** the bowline (a loop), two half hitches (tie to something) and the sheet bend (join two ropes). Those three solve most problems.
+3. **Tie, load, untie.** After each knot, pull hard on it, then take it apart. A good knot holds and still comes undone.
+4. **Open Knot Camp.** OfflineOwl's Knot Camp app teaches the square knot, clove hitch, bowline, taut-line hitch and two half hitches step by step in 3D, each at the spot in a campsite where you would use it. Use it alongside this guide: words here, moving rope there.
+5. **Look over the rope you own** using the inspection list below, and throw out what fails.
 
-**The golden rule of knots:** A good knot is easy to tie, holds under load, and can be untied when you need it released.
+## What these knots are not for
+
+These are utility knots for tying things down, up and together. They are **not climbing, rescue or life-safety instructions.**
+
+- **Never trust your weight, or anyone else's, to a knot learned from a page.** Climbing, lowering a person, and working at height need rated equipment and hands-on training.
+- **Do not lift loads over people,** tow vehicles, or pull down hanging tree limbs with household rope.
+- **Do not tie rope around a person's chest, waist or neck.** A loop that tightens can stop breathing.
+- **Cords and children:** cords, loops and hammocks are a strangulation hazard for young children. Supervise practice and put the rope away afterward.
+- **Someone in the water or through ice?** Call 911 (or your local emergency number). Reach or throw from solid ground: a line with something that floats tied to the end. Do not go in after them.
+
+## Rope words
+
+| Word | Meaning |
+|------|---------|
+| **Working end** | The end you are tying with |
+| **Standing part** | The long part of the rope that is not moving, usually the part that will take the load |
+| **Bight** | A U-shaped bend in the rope, without crossing |
+| **Loop** | A circle made by crossing the rope over itself |
+| **Turn** | One pass around an object. A **round turn** goes around twice. |
+| **Hitch** | A knot that ties a rope to an object |
+| **Bend** | A knot that joins two ropes |
+| **Dress** | To tidy a knot so the parts lie neatly, with no crossed strands |
+| **Set** | To pull a knot tight on every strand before you load it |
+| **Tail** | The short end left sticking out of a finished knot |
+
+Dress and set every knot, and make it a habit to **leave a tail at least as long as your hand is wide.** Short tails pull through.
+
+## Which knot when
+
+| Job | Knot |
+|-----|------|
+| Tie up a bundle, a bandage or a parcel | Square knot |
+| Quick, adjustable tie to a post; start of a lashing | Clove hitch |
+| A fixed loop that will not tighten | Bowline |
+| Adjustable tension on a tent or tarp line | Taut-line hitch |
+| Tie a line to a tree, ring or rail | Two half hitches |
+| Join two ropes, even of different thickness | Sheet bend |
+| Stop a rope end pulling through a hole | Figure-eight knot |
+
+## 1. Square knot (reef knot)
+
+**For:** tying the two ends of one cord around something: a bundle of firewood, a rolled sleeping mat, a bandage or sling, a parcel. It lies flat, which is why it suits bandages.
+
+**Not for:** joining two ropes that will carry a load. It can roll over on itself ("capsize") and slide apart without warning, and it gets worse if the ropes differ in size or are slippery. To join ropes, use the sheet bend.
+
+1. Hold one end in each hand, with the cord around the bundle.
+2. Cross the **right** end over the left end and tuck it under, as in the first half of tying a shoe.
+3. Now take the end that is on the **left** (the same end you just moved), cross it over the other end, and tuck it under.
+4. Pull both ends to tighten.
+
+**Remember:** "Right over left, left over right."
+
+**Check:** the knot is flat and symmetrical, like two bights hooked through each other, and each end lies alongside its own standing part. If the ends stick out sideways, at right angles to the rope, you have tied a granny knot, which slips. Untie it and reverse the second step.
+
+**To untie a tight one:** pull one end back hard along its own standing part until the knot straightens, then slide it off.
+
+## 2. Clove hitch
+
+**For:** a fast tie to a post, rail or pole that you may want to adjust, such as a boat line dropped over a dock post for a moment, or a lantern line. It is also the usual start and finish for lashing poles together.
+
+**Not for:** anything you will walk away from. A clove hitch can slip when the pull changes direction or the pole is smooth, and it can also jam tight under a heavy strain. Do not use it alone to hold something that matters.
+
+1. Pass the working end around the post.
+2. Bring it across the front, **over the standing part,** making an X, and go around the post a second time.
+3. Tuck the working end **under the turn you have just made,** so it comes out between the two turns.
+4. Pull the working end and the standing part in opposite directions.
+
+**Check:** two neat turns side by side, with one diagonal strand crossing over them. The two ends leave the knot from the middle, pointing opposite ways.
+
+**Make it safer:** finish with two half hitches around the standing part (knot 5).
+
+## 3. Bowline
+
+**For:** a fixed loop at the end of a rope that will not slide tighter: a loop to drop over a post or hook, to hang a hammock or a food bag, to tie through a handle or ring. It stays easy to untie even after a hard pull.
+
+**Not for:** a line you may need to release while it is under strain. A bowline cannot be tied or untied with load on the standing part. It can also shake loose when the rope is slack and flapping, so it is the wrong choice for a line that is repeatedly loaded and unloaded unless you secure the tail. Not for supporting a person.
+
+1. Decide how big the loop should be, and hold the standing part in your left hand at that distance from the end.
+2. Make a **small loop** in the standing part with a twist of the wrist, so that the part leading to the working end lies **on top** of the standing part. This small loop is the "hole."
+3. Bring the working end **up through the hole** from underneath. (The rabbit comes out of the hole.)
+4. Pass it **behind the standing part.** (Around the back of the tree.)
+5. Bring it **back down through the hole,** beside where it came up. (Back into the hole.)
+6. Hold the working end together with the side of the big loop next to it, and pull the standing part to set the knot.
+
+**Check:** the tail finishes **inside** the big loop, lying alongside the loop's edge, and a collar of rope wraps around the standing part. If the whole thing pulls out straight, the small loop was made the wrong way round: remake it with the other part on top.
+
+**Make it safer:** leave a long tail, and tie the tail around the neighboring side of the loop with a half hitch or two.
+
+## 4. Taut-line hitch
+
+**For:** a loop whose size you can adjust by hand and that grips when the line is tight. It is the knot for tent and tarp guylines and a clothesline you want to tension.
+
+**Not for:** heavy, overhead or critical loads. It holds by friction, so it slides on slick modern cord such as polypropylene. Check it and re-tighten.
+
+1. Pass the working end around the stake or anchor and bring it back alongside the standing part.
+2. Wrap the working end around the standing part, **inside the loop,** going over and around.
+3. Wrap it around a **second time inside the loop,** placing this turn closer to the stake than the first.
+4. Now carry the working end past both wraps to the **outside of the loop** (the side away from the stake) and make one more turn around the standing part **in the same direction,** tucking the end under itself to form a half hitch.
+5. Snug the three turns together. Slide the whole knot away from the stake to tighten the line, toward it to loosen.
+
+**Check:** two turns on the stake side, one on the far side, all wound the same way. Pull the standing part: the knot should bite. Push the knot with your fingers: it should slide.
+
+**If it slips:** add a third turn inside the loop, or switch to a rougher or thicker cord.
+
+## 5. Two half hitches
+
+**For:** tying a rope to a tree, post, rail or ring and leaving it: a clothesline, a tarp corner to a tree, the free end of a tie-down. Simple and dependable.
+
+**Not for:** around a person or an animal's neck or body. This knot slides up and cinches tight on whatever it is tied to.
+
+1. Pass the working end around the post or through the ring.
+2. Bring it over the standing part, around behind it, and back out through the gap between the rope and the post. That is one half hitch.
+3. Make a second half hitch the same way, a little further from the post, going around the standing part **in the same direction** as the first.
+4. Pull the working end to snug both hitches together and slide them up to the post.
+
+**Check:** on the standing part the two hitches look like a clove hitch: two turns with a diagonal across them. If the two turns mirror each other, the second went the wrong way. Redo it.
+
+**Make it stronger:** take the rope **twice** around the post before the hitches (a round turn and two half hitches). The extra turn takes the strain while you tie, even one-handed, and makes the knot more secure.
+
+## 6. Sheet bend
+
+**For:** joining two ropes to make a longer one, including ropes of different thickness or material. Also for tying a line to the corner of a tarp that has no grommet: bunch the corner into a bight and tie to that.
+
+**Not for:** critical loads, or lines that will be slack and shaken. It can work loose when not under tension. Leave long tails and check it.
+
+1. Make a **bight** in the end of the **thicker** (or stiffer) rope and hold it in one hand.
+2. Pass the end of the thinner rope **up through the bight** from underneath.
+3. Take it **around behind both parts of the bight.**
+4. Bring it across the front and **tuck it under itself,** between its own standing part and the bight. It does not go back down through the bight.
+5. Hold the bight and pull the thinner rope's standing part to set.
+
+**Check:** both short tails are on the **same side** of the knot. If they are on opposite sides, the knot is less reliable. Retie it.
+
+**Double sheet bend:** when the ropes are very different in size, or slippery, go around the bight **twice** in step 3 before tucking under.
+
+## 7. Figure-eight knot
+
+**For:** a stopper at the end of a rope, to keep it from pulling through a grommet, a pulley or your hands, or to give a better grip. It is bulkier than a plain overhand knot and much easier to untie after it has been jammed.
+
+**Not for:** anything except stopping. This is the single-rope stopper, not the climbing tie-in that shares its name. It can shake loose over time, so leave a tail and look at it now and then.
+
+1. Near the end, pass the working end **over** the standing part to form a loop.
+2. Continue **under** the standing part and around it.
+3. Bring the working end back to the front and pass it **down through the loop** you made in step 1.
+4. Pull both ends. It should look like the number 8.
+
+## Rope: choosing, checking and looking after it
+
+| Rope | Good for | Watch out for |
+|------|----------|---------------|
+| **Nylon** (including paracord) | General use, lines that take a jerk; it stretches | Stretch makes it poor for a line that must stay tight |
+| **Polyester** | Tarp ridgelines, clotheslines, anything outdoors for a long time; low stretch | Little give under a sudden jerk |
+| **Polypropylene** (the light, often yellow or blue rope) | It floats, so throw lines and boat use | Slippery, so friction knots slide; breaks down in sunlight |
+| **Natural fiber** (manila, sisal, cotton) | Holds knots very well; fine for lashing and garden use | Rots if stored damp; weaker for its size |
+
+Paracord is light utility cord for guylines, lashing and repairs. It is not a rope for holding a person. The breaking strength printed on any rope is not a safe load: the safe working load is a small fraction of it, a knot weakens the rope where it bends, and old rope is weaker than new.
+
+**Inspect before you rely on it.** Run the whole length through your hands and look as you go. Retire a rope, or cut out the bad section, if you find:
+
+- Cut, broken or badly fuzzed fibers, or a sheath worn through to the core
+- A spot that feels thinner, flatter, lumpy or stiffer than the rest
+- Powdery dust between the strands when you twist them open, a sign of internal wear
+- Discoloration, rot, mildew smell, or brittle sun-bleached fibers
+- Melted, glazed or hard shiny patches from heat or friction
+- Any contact with acid, bleach, battery fluid, fuel or other chemicals
+- A history you do not know
+
+A rope that has held a severe shock load should be retired from any serious use. When in doubt, demote it to tying up garden stakes.
+
+**Care:**
+
+- Keep rope off the ground where you can, and do not step on it. Grit works into the fibers and cuts them from inside.
+- Store it dry, loosely coiled or hanked, out of sunlight and away from heat, fuel, bleach and chemicals.
+- Wash dirty rope by hand in cool water with a little mild soap, rinse well, and air dry out of direct sun. No dryer, no heater.
+- Stop ends from fraying: wrap a nylon, polyester or polypropylene rope end with tape, cut through the tape, and melt the cut end carefully with a flame, outdoors, keeping molten drips off your skin. A whipping (a tight binding of thin twine around the end) lasts longer and is the only option for natural fiber.
+- Untie knots before storage, so the rope dries through and lies straight.
+
+## Practice
+
+**10-minute drill:** Sit by a chair with your practice cord. (1) Tie a clove hitch on the chair leg, then lock it with two half hitches. (2) Tie a bowline in the other end and tug the loop hard in every direction. (3) Untie both. (4) Now do all of it again with your eyes closed, because the first time you really need a knot it will be dark or raining. Time each round and write the times down. When you can do it blind in under two minutes, add the sheet bend with a shoelace as the thinner rope, or learn the next knot in Knot Camp.
+
+**What would you do?**
+
+1. *You are rigging a tarp before rain and your rope is ten feet too short. You have a second, thinner cord. Your hands already know one joining knot from childhood: the square knot.*
+
+   **Answer:** Use a sheet bend, doubled, with the bight made in the thicker rope and both tails on the same side. A square knot joining two ropes can capsize and slip apart, and different thicknesses make that more likely. It would hold just long enough for you to stop watching it. Leave tails a hand-width long and check the join after the first gusts.
+
+2. *It is 2 a.m. and windy. The guyline on the windward corner of your tarp, tied with a taut-line hitch in slick yellow rope from the garage, has slid loose for the third time.*
+
+   **Answer:** The knot is tied right; the rope is wrong for it. A taut-line hitch works by friction and polypropylene is slippery. Quick fixes, in order: add a third wrap inside the loop; or tension the line by hand and tie it off with two half hitches around the standing part so it cannot slide; or swap in a rougher cord such as nylon paracord. Tightening the same slipping knot a fourth time is the move to avoid.
+
+3. *After a storm, a large broken limb is hanging in the tree over your neighbor's driveway. He has found an old rope in his shed, faded and stiff, and wants to throw a bowline over the limb and pull it down while you stand by.*
+
+   **Answer:** Stop on two counts. The rope fails inspection: faded and stiff means sun and age damage, and its history is unknown. And the job is outside what these knots are for. A hung-up limb can fall or swing in ways nobody standing under it can predict. Keep people and cars out from under it, mark the area off, and call a tree service, or the utility if wires are anywhere near.
+
+## Quick Reference
+
+```
+KNOTS: WHICH ONE
+
+Bundle, bandage ..... SQUARE
+  Right over left, left over
+  right. NEVER to join ropes.
+
+Quick tie to a post . CLOVE HITCH
+  Around, cross over, around,
+  tuck under. Back it up.
+
+Loop that won't slip  BOWLINE
+  Up the hole, round the tree,
+  back down. Tail inside loop.
+  Can't untie under load.
+
+Tent/tarp tension ... TAUT-LINE
+  2 turns inside the loop,
+  1 outside, same direction.
+  Slips on slick rope.
+
+Tie to tree or ring . 2 HALF
+  HITCHES. Same direction twice.
+  Round turn first = stronger.
+
+Join two ropes ...... SHEET BEND
+  Bight in the THICK rope.
+  Tails on the same side.
+
+Stop a rope end ..... FIGURE 8
+
+EVERY KNOT: dress it, set it,
+leave a hand-width tail.
+
+RETIRE ROPE IF: cut or fuzzy,
+stiff, thin spot, powdery inside,
+faded, melted, chemicals,
+unknown history.
+
+NOT FOR: climbing, lowering or
+holding people, overhead loads.
+```
+
+## Sources
+
+- [Animated Knots by Grog: Bowline](https://www.animatedknots.com/bowline-knot)
+- [Animated Knots by Grog: Square Knot (Reef Knot)](https://www.animatedknots.com/square-knot)
+- [Animated Knots by Grog: Clove Hitch](https://www.animatedknots.com/clove-hitch-knot-rope-end)
+- [Animated Knots by Grog: Midshipman's Hitch (taut-line variants and slipping)](https://www.animatedknots.com/midshipmans-hitch-knot)
+- [Animated Knots by Grog: Two Half Hitches](https://www.animatedknots.com/two-half-hitches-knot)
+- [Animated Knots by Grog: Sheet Bend](https://www.animatedknots.com/sheet-bend-knot)
+- [Animated Knots by Grog: Figure 8 Knot](https://www.animatedknots.com/figure-8-knot)
+- [Animated Knots by Grog: Rope Care](https://www.animatedknots.com/rope-care)
+- [Scout Life (Scouting America): How to Tie a Taut-Line Hitch](https://scoutlife.org/outdoors/outdoorarticles/5964/how-to-tie-a-taut-line-hitch/)
+- [OSHA 29 CFR 1926.251: Rigging Equipment (fiber rope inspection and removal criteria)](https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.251)
 
 ---
 
-## The 10 Essential Survival Knots
+Last reviewed: November 2026
 
-### 1. Bowline - The "King of Knots"
-
-**Use:** Creates a fixed loop that will not slip or bind under load. Ideal for rescue loops, tying around a person, securing to a post.
-
-**When to use it:**
-- Creating a rescue loop to throw or place around someone
-- Tying a line to a fixed anchor point
-- Any time you need a loop that absolutely will not tighten
-
-**How to tie:**
-
-1. Form a small loop in the standing part of the rope (the "rabbit hole")
-2. Pass the working end up through the loop (the "rabbit comes out of the hole")
-3. Bring the working end around behind the standing part (the "rabbit goes around the tree")
-4. Pass the working end back down through the small loop (the "rabbit goes back in the hole")
-5. Tighten by pulling the working end and the standing part simultaneously
-
-**Memory aid:** "The rabbit comes out of the hole, goes around the tree, and goes back in the hole."
-
-**Key points:**
-- The loop will NOT slip tighter under load
-- Can be untied even after heavy loading
-- Add a stopper knot to the tail for critical applications
-
----
-
-### 2. Clove Hitch
-
-**Use:** Quick attachment to a pole, post, or stake. Good starting knot for lashings.
-
-**When to use it:**
-- Beginning a lashing on shelter poles
-- Tying a line to a stake or post quickly
-- Temporary attachment that may need quick adjustment
-
-**How to tie:**
-
-1. Wrap the rope around the post
-2. Cross the working end over the standing part
-3. Wrap around the post again
-4. Tuck the working end under the second wrap (under the X you just made)
-5. Pull both ends to tighten
-
-**Key points:**
-- Fast to tie and untie
-- Can slip under variable loads - best as a starting point, not a sole anchor
-- Works best when load is steady and perpendicular to the post
-
----
-
-### 3. Taut-Line Hitch
-
-**Use:** Creates an adjustable loop that grips under tension but slides when loosened. The go-to knot for tent guylines.
-
-**When to use it:**
-- Tensioning tent or tarp guylines
-- Creating an adjustable ridgeline
-- Any line that needs periodic tightening
-
-**How to tie:**
-
-1. Pass the working end around a stake or anchor
-2. Bring the working end back and wrap it twice around the standing part (inside the loop, toward the anchor)
-3. Pass the working end above the two wraps and make one more wrap around the standing part (outside the loop)
-4. Pull the working end through to complete the hitch
-5. Slide the knot along the standing part to adjust tension
-
-**Key points:**
-- Grips firmly under load
-- Slides freely when you push the knot to adjust
-- Essential for keeping tarps and tents taut in changing weather
-
----
-
-### 4. Square Knot (Reef Knot)
-
-**Use:** Joining two ends of the same rope, typically for bundling or bandaging. Not for joining two different ropes under load.
-
-**When to use it:**
-- Tying bandages
-- Bundling firewood or gear
-- Tying a rope around a package
-
-**How to tie:**
-
-1. Hold one end in each hand
-2. Cross right over left, tuck under
-3. Cross left over right, tuck under
-4. Pull both ends to tighten
-
-**Memory aid:** "Right over left, left over right."
-
-**Warning:**
-- **Do NOT use to join two ropes that will bear a load** - it can capsize and fail
-- Use a sheet bend instead for joining two ropes
-- If it looks twisted rather than flat, you have a granny knot - retie it
-
----
-
-### 5. Figure-Eight Knot
-
-**Use:** Stopper knot to prevent rope from sliding through a hole, grommet, or pulley. Also the basis for the figure-eight loop.
-
-**When to use it:**
-- Preventing rope ends from pulling through a tarp grommet
-- Creating a stopper at the end of any critical line
-- Climbing and rescue applications (figure-eight on a bight)
-
-**How to tie (basic stopper):**
-
-1. Make a loop by crossing the working end over the standing part
-2. Pass the working end under the standing part
-3. Bring the working end back through the original loop from the top
-4. Pull tight - it should look like the number 8
-
-**Figure-eight on a bight (creates a loop):**
-
-1. Double the rope to form a bight
-2. Tie a figure-eight using the doubled rope
-3. This creates a strong, fixed loop
-
-**Key points:**
-- Stronger than a simple overhand knot
-- Easier to untie after loading than an overhand knot
-- Standard in climbing and rescue for good reason
-
----
-
-### 6. Sheet Bend
-
-**Use:** Joining two ropes together, especially ropes of different diameters or materials.
-
-**When to use it:**
-- Extending a rope by joining two together
-- Connecting ropes of different thicknesses
-- Tying a rope to a tarp or sail grommet/loop
-
-**How to tie:**
-
-1. Make a bight (U-shape) in the thicker rope
-2. Pass the thinner rope up through the bight from underneath
-3. Wrap the thinner rope around the back of both parts of the bight
-4. Tuck the thinner rope under itself (but over the bight)
-5. Pull tight
-
-**Double sheet bend (for extra security):**
-- Same as above, but wrap around the bight twice before tucking
-- Use when ropes are very different in size or when the connection is critical
-
-**Key points:**
-- The correct knot for joining two ropes (unlike the square knot)
-- Works even with different rope sizes
-- Both free ends should exit on the same side for maximum strength
-
----
-
-### 7. Trucker's Hitch
-
-**Use:** Creates a powerful mechanical advantage for tensioning a line. The best knot system for securing loads and creating very tight lines.
-
-**When to use it:**
-- Securing a load to a vehicle or sled
-- Creating an extremely tight ridgeline for a tarp
-- Any time you need to pull a line much tighter than hand strength alone allows
-
-**How to tie:**
-
-1. Tie one end of the rope to a fixed anchor
-2. Pass the rope over or around the load to a second anchor point
-3. Create a slip loop (or alpine butterfly) in the standing part of the rope, midway
-4. Pass the working end around the second anchor point
-5. Thread the working end through the slip loop
-6. Pull down on the working end - the loop acts as a pulley, giving you a 2:1 or 3:1 mechanical advantage
-7. Lock off with two half hitches around the standing part
-
-**Key points:**
-- Provides a significant mechanical advantage for tensioning
-- The "must-know" knot for tying down loads
-- Practice the slip loop portion until it becomes second nature
-
----
-
-### 8. Timber Hitch
-
-**Use:** Dragging or hoisting logs, poles, and cylindrical objects. Grips tighter under load.
-
-**When to use it:**
-- Dragging logs for firewood or shelter building
-- Starting a diagonal lashing
-- Hoisting long poles or lumber
-
-**How to tie:**
-
-1. Pass the working end around the log or pole
-2. Bring the working end around the standing part
-3. Twist the working end around itself three or more times (wrapping around the part of the rope touching the log)
-4. Pull the standing part to tighten - the twists will grip the log
-
-**Key points:**
-- The more load applied, the tighter it grips
-- Easy to untie once load is removed
-- Add a half hitch further along the log for better control when dragging
-
----
-
-### 9. Prusik Knot
-
-**Use:** A friction hitch that grips a rope when loaded but slides when unloaded. Used for ascending ropes and creating adjustable attachments.
-
-**When to use it:**
-- Climbing up a fixed rope in a rescue scenario
-- Creating an adjustable attachment point on a ridgeline
-- Backup safety on a rappel or lowering system
-
-**How to tie:**
-
-1. You need a loop of thinner cord (a prusik loop) and a thicker main rope
-2. Wrap the loop around the main rope three times
-3. Each wrap should sit neatly beside the previous one
-4. Pass the loop back through itself
-5. Pull the knot tight around the main rope
-6. Test: it should grip when you pull down on the loop, slide when you push the wraps up
-
-**Key points:**
-- The cord must be thinner than the rope it grips
-- Three wraps is standard; add more on slippery rope
-- Critical for self-rescue situations
-- The prusik loop should be made from accessory cord (5-7mm)
-
----
-
-### 10. Two Half Hitches
-
-**Use:** Securing a rope to a post, ring, or tree. Simple, reliable, and quick.
-
-**When to use it:**
-- Tying off a line to a tree or post
-- Securing the end of a trucker's hitch
-- Quick attachment to a ring or carabiner
-
-**How to tie:**
-
-1. Pass the working end around the post or through the ring
-2. Bring the working end over and around the standing part, then through the loop (this is one half hitch)
-3. Repeat step 2 below the first half hitch (second half hitch)
-4. Pull tight
-
-**Key points:**
-- Two hitches in the same direction create a more secure knot
-- Easy to untie
-- Add a third half hitch for extra security on critical applications
-
----
-
-## Rope Care & Maintenance
-
-### Inspecting Your Rope
-
-Before each use, check for:
-- **Fraying** - Outer sheath damage exposing inner core
-- **Flat spots** - Indicate internal core damage
-- **Stiffness** - Chemical contamination or UV degradation
-- **Discoloration** - May indicate heat or chemical damage
-- **Cuts or abrasion** - Weakened sections that could fail under load
-
-### Storage
-
-- **Coil properly** - Butterfly coil or figure-eight coil to prevent kinks
-- **Keep dry** - Hang to dry completely before storing
-- **Avoid UV** - Store out of direct sunlight
-- **Keep clean** - Rinse mud and dirt; grit abrades internal fibers
-- **Avoid chemicals** - Keep away from gasoline, bleach, acids
-
-### When to Retire Rope
-
-Replace rope that has:
-- Visible core damage or significant sheath wear
-- Been shock-loaded (a sudden, heavy fall)
-- Been exposed to chemicals
-- Exceeded its recommended service life
-- Any damage you are uncertain about
-
-**When in doubt, throw it out.** Rope failure can be fatal.
-
----
-
-## Paracord: The Survival Rope
-
-550 paracord (Type III) is the most versatile cordage for your kit.
-
-### Specifications
-- **Minimum breaking strength:** 550 pounds
-- **Construction:** 7 inner strands inside a braided outer sheath
-- **Diameter:** Approximately 4mm (5/32 inch)
-
-### Survival Uses
-
-- **Shelter** - Ridgelines, guylines, lashing
-- **Fishing** - Inner strands work as fishing line
-- **Snares** - Inner strands for small game traps
-- **Sewing** - Inner strands for heavy-duty repair
-- **Fire** - Inner strands as tinder; use for bow drill
-- **Tourniquet** - Last resort, improvised (flat material is better)
-- **Clothesline** - Drying gear and clothes
-- **Boot laces** - Replacement laces
-- **Gear repair** - Replacing broken zippers pulls, pack straps
-- **Perimeter alarm** - String between trees with noise makers
-
-### How Much to Carry
-
-A minimum of **50 feet** in your kit. Ideally, carry **100 feet** or more. Consider wearing a paracord bracelet (8-12 feet) as backup.
-
----
-
-## Lashing Techniques for Shelter Building
-
-Lashing is the method of binding poles together with rope or cord. These three lashings, combined with the knots above, allow you to build nearly any shelter structure.
-
-### Square Lashing (Joining Poles at Right Angles)
-
-**Use:** Connecting a horizontal pole to a vertical pole at 90 degrees.
-
-1. Start with a clove hitch on the vertical pole, below the joint
-2. Wrap rope over the horizontal pole, behind the vertical, under the horizontal, in front of the vertical - making a square pattern
-3. Repeat for 3-4 complete wrapping turns, keeping them tight
-4. Make 2-3 frapping turns (wrap between the poles, around the lashing itself, pulling it tight)
-5. Finish with a clove hitch on the horizontal pole
-
-### Diagonal Lashing (Joining Poles at Angles)
-
-**Use:** Connecting poles that cross at angles other than 90 degrees, or poles that do not touch at the crossing point.
-
-1. Start with a timber hitch around both poles at the crossing
-2. Make 3-4 wrapping turns in one diagonal direction
-3. Make 3-4 wrapping turns in the other diagonal direction
-4. Make 2-3 frapping turns between the poles
-5. Finish with a clove hitch
-
-### Tripod Lashing (Three-Pole Foundation)
-
-**Use:** Creating a stable tripod for shelter, hanging pots, or support structures.
-
-1. Lay three poles side by side
-2. Start with a clove hitch on an end pole
-3. Wrap loosely around all three poles, 6-8 times
-4. Make frapping turns between each pair of poles (2 turns each gap)
-5. Finish with a clove hitch
-6. Stand the tripod up and spread the legs
-
----
-
-## Quick-Reference: Which Knot When?
-
-| Situation | Recommended Knot |
-|---|---|
-| Rescue loop around a person | Bowline |
-| Starting a lashing | Clove hitch |
-| Tent/tarp guyline tension | Taut-line hitch |
-| Tying a bandage | Square knot |
-| Stopper at end of rope | Figure-eight |
-| Joining two ropes | Sheet bend |
-| Securing a heavy load | Trucker's hitch |
-| Dragging a log | Timber hitch |
-| Climbing a fixed rope | Prusik |
-| Tying off to a tree | Two half hitches |
-
----
-
-## Practice Checklist
-
-- [ ] Tie each of the 10 knots at least 10 times
-- [ ] Practice tying in low light and with gloves on
-- [ ] Build a small tarp shelter using only rope and knots
-- [ ] Practice the trucker's hitch until you can do it quickly
-- [ ] Make a prusik loop from accessory cord
-- [ ] Lash two poles together with a square lashing
-- [ ] Build a tripod from found materials
-- [ ] Time yourself tying each knot - aim for under 15 seconds
-- [ ] Practice the bowline one-handed (rescue scenario)
-- [ ] Inspect and properly coil your rope after practice
-
----
-
-## Key Takeaways
-
-1. **Learn the bowline first** - It is the single most useful survival knot
-2. **The right knot matters** - A wrong knot can slip, bind, or fail under load
-3. **Practice regularly** - Knots must be muscle memory, not a reference exercise
-4. **Carry paracord** - Minimum 50 feet in every kit, every bag, every vehicle
-5. **Inspect your rope** - Damaged rope is dangerous rope
-6. **Learn lashing** - Combined with knots, it lets you build structures from raw materials
-7. **Tie, load, untie** - A good knot does all three reliably
-
----
-
-*Last updated: March 2026*
 *License: CC-BY-SA 4.0*
-
-**Disclaimer:** This guide is for educational purposes. Practice all knots and techniques in safe conditions before relying on them in emergencies. Rope and knot failure can result in serious injury or death.

@@ -1,6 +1,6 @@
 # Recognizing CBR Warning Signs
 
-> Chemical, biological, and radiological (CBR) incidents are rare. Each one looks different and needs a different first move. Chemical signs show up fast, biological signs can take days, and radiation can't be sensed at all.
+> **Each threat needs a different first move.** Chemical, biological, and radiological (CBR) incidents are rare, and each one looks different. Chemical signs show up fast, biological signs can take days, and radiation can't be sensed at all.
 
 ## Do This Now
 
@@ -154,6 +154,26 @@ Siren signals and when they're used differ from community to community, and ther
 
 ---
 
+## Practice
+
+**10-minute drill:** Stand outside your front door and work out two things: which way the wind is blowing (watch a flag, smoke, or the treetops), and where the low ground is around you. Point to the direction you would walk to go upwind and away from the low spots. Then go back in and walk to two places: the interior room above ground you would use for a chemical release, and the basement or center spot you would use for radiation. Finish by checking that every phone in the household is switched on and out of airplane mode, so alerts can reach it.
+
+**What would you do?**
+
+1. *On a crowded station platform, several people start coughing and rubbing their eyes at the same moment, and one collapses. A thin mist hangs near the floor at the far end. You smell nothing. The quickest way out of the crowd is the stairs down into the underpass.*
+
+   **Answer:** Several people with the same symptoms at once is a chemical warning sign, and no smell doesn't mean safe. Don't go down: many toxic gases are heavier than air and collect in low places. Cover your nose and mouth with cloth, move away upwind, and get up and out to a building, into an interior room above ground. Take off your clothes (cut off anything that would go over your head), bag them, and wash with soap and water, ideally within 10 minutes. Call 911.
+
+2. *The evening news says officials have confirmed that an explosion downtown spread radioactive material. You are at home a mile away. You feel fine, you see no dust, and your first thought is to load the car and drive out of the city.*
+
+   **Answer:** Stay in. Feeling fine and seeing nothing tells you nothing, because radiation can't be seen, smelled, or tasted, and a car is not a shelter. Go to the basement or the center of the building, close windows and doors, and turn off heating, air conditioning, and fans. Stay inside at least 24 hours unless officials say otherwise, and keep listening to emergency broadcasts. If you were outdoors when it happened, take off your outer layer of clothing and wash.
+
+3. *You open an envelope at work and a fine white powder spills across the desk and onto your sleeve. A coworker comes over with paper towels and suggests giving it a sniff to see whether it is only detergent.*
+
+   **Answer:** Don't touch it, smell it, or clean it up, and get your coworker away from it too. Cover your mouth and nose with a mask or two or three layers of fabric. Take off and bag your clothes, wash with soap and water, and put on clean clothes. Report it to 911 or local authorities. A biological agent usually gives no immediate sign, so feeling well afterward proves nothing: follow public health instructions, and don't treat yourself with stockpiled antibiotics.
+
+---
+
 ## Quick Reference
 
 ```
@@ -164,8 +184,9 @@ CHEMICAL (fast):
 - Dead birds, insects, animals
 - Many people sick at once
 - Burning eyes, coughing, twitching
--> Move UPWIND, get inside, room ABOVE ground,
-   seal it. Clothes off, wash within 10 min.
+-> Move UPWIND, get inside, room
+   ABOVE ground, seal it. Clothes
+   off, wash within 10 min.
 
 BIOLOGICAL (slow):
 - Many people sick days later
@@ -180,16 +201,17 @@ RADIOLOGICAL (can't sense it):
 -> Get inside, BASEMENT or CENTER,
    outer clothes off, stay 24+ hours.
 
-CALL 911 for breathing trouble, seizures,
-collapse, burns, or to report a release.
+CALL 911 for breathing trouble,
+seizures, collapse, burns, or to
+report a release.
 ```
 
 ---
 
 ## Sources
 
-- [Ready.gov: Chemical Emergencies](https://www.ready.gov/chemical)
-- [Ready.gov: Bioterrorism](https://www.ready.gov/bioterrorism)
+- [Ready.gov: Chemicals and Hazardous Materials Incidents](https://www.ready.gov/hazmat)
+- [Ready.gov: Biohazard Exposure](https://www.ready.gov/biohazard)
 - [Ready.gov: Radiation Emergencies](https://www.ready.gov/radiation)
 - [Ready.gov: Emergency Alerts](https://www.ready.gov/alerts)
 - [CDC: What to Do in a Chemical Emergency](https://www.cdc.gov/chemical-emergencies/response/index.html)
@@ -197,11 +219,13 @@ collapse, burns, or to report a release.
 - [CDC: Mustard Gas fact sheet](https://www.cdc.gov/chemical-emergencies/chemical-fact-sheets/mustard-gas.html)
 - [CDC: Chlorine fact sheet](https://www.cdc.gov/chemical-emergencies/chemical-fact-sheets/chlorine.html)
 - [CDC: Acute Radiation Syndrome](https://www.cdc.gov/radiation-emergencies/signs-symptoms/acute-radiation-syndrome.html)
-- [FEMA: Wireless Emergency Alerts](https://www.fema.gov/emergency-managers/practitioners/integrated-public-alert-warning-system/public/wireless-emergency-alerts)
+- [FCC: Wireless Emergency Alerts (WEA)](https://www.fcc.gov/consumers/guides/wireless-emergency-alerts)
 - [NWS Quad Cities: Outdoor Warning Siren Guidelines](https://www.weather.gov/media/dvn/QC%20Siren%20Guidelines_final.pdf)
 
-Last reviewed: October 2026
+*This is general awareness information and does not replace professional medical care. Follow official guidance from authorities during any actual CBR event.*
+
+---
+
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*
-
-**Disclaimer:** This is general awareness information and does not replace professional medical care. Follow official guidance from authorities during any actual CBR event.

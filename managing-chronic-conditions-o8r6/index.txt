@@ -1,332 +1,639 @@
 MANAGING CHRONIC CONDITIONS IN EMERGENCIES
 ==========================================
 
-When regular medical care is unavailable, managing chronic health 
-conditions becomes critical. This guide covers preparedness and
-emergency management for common conditions.
+A disaster does not pause diabetes, heart disease, asthma, kidney
+failure, or epilepsy. It takes away the things that keep them
+quiet: the pharmacy, the fridge, the wall socket, the clinic. The
+people who do well are the ones who wrote a list, built a small
+buffer, and decided in advance what they would do when the power
+or the pills ran short.
 
-GENERAL PREPARATION
+
+START HERE
+----------
+
+Five steps that give most of the protection. All can be started
+today.
+
+1. WRITE A ONE-PAGE MEDICATION LIST. Every medicine, the dose,
+   when you take it, and what it is for. Add allergies, your
+   conditions, your doctor, and your pharmacy. Keep a copy in
+   your wallet, one in your kit, and a photo on your phone.
+
+2. BUILD A BUFFER. Ask your doctor, pharmacist, or insurer how to
+   keep an emergency supply. Aim for at least a week, two if you
+   can: CDC advises 1 to 2 weeks of diabetes supplies, and the
+   National Kidney Foundation advises 2 weeks of medicines for
+   people on dialysis. Use the oldest first so nothing expires.
+
+3. ASK ONE QUESTION NOW: "What should I do if I miss doses or run
+   out?" The answer is different for every medicine. Write it on
+   your list. An emergency is the wrong time to guess.
+
+4. PLAN FOR POWER AND COLD. If you rely on a device that plugs in
+   (oxygen concentrator, CPAP, nebulizer, home dialysis, powered
+   wheelchair) or a medicine that lives in the fridge (insulin),
+   decide today what replaces the socket and the fridge. Details
+   are below.
+
+5. WEAR MEDICAL ID. A bracelet or necklace speaks for you when you
+   cannot. Emergency crews look for one.
+
+
+GET EMERGENCY HELP IF
+---------------------
+
+Call 911 (or your local emergency number) for any of these. Do
+not drive yourself.
+
+HEART ATTACK
+- Chest pressure, squeezing, or pain that lasts more than a few
+  minutes or comes and goes
+- Pain or discomfort in an arm, the back, neck, jaw, or stomach
+- Shortness of breath, cold sweat, nausea, lightheadedness
+- Women more often have the less typical signs: shortness of
+  breath, nausea or vomiting, back or jaw pain, unusual tiredness
+
+STROKE (BE FAST)
+- Balance lost, Eyesight changed, Face drooping, Arm drifting
+  down, Speech slurred or strange: Time to call 911
+- Note the time the symptoms started. Treatment depends on it.
+
+BREATHING
+- An asthma or COPD flare where your medicines are not relieving
+  the symptoms, or breathing is still very hard
+- A child who is drowsy or confused, has blue lips or skin, or a
+  racing heartbeat
+- Oxygen or a ventilator has failed and the backup is running out
+
+DIABETES
+- Someone with low blood sugar who has passed out or cannot
+  swallow (give glucagon if you have it and know how, and call)
+- Blood sugar that stays at 300 mg/dL or higher, fruity-smelling
+  breath, vomiting with nothing staying down, or trouble
+  breathing. These are signs of diabetic ketoacidosis (DKA).
+
+SEIZURE
+- Lasts longer than 5 minutes, or another follows soon after
+- The person does not wake up, has trouble breathing, or is hurt
+- First seizure ever, in water, during pregnancy, or in someone
+  with diabetes who loses consciousness
+
+MENTAL HEALTH
+- Thoughts of suicide or self-harm: in the US call or text 988,
+  any time. In immediate danger, call 911.
+
+DIALYSIS
+- Missed treatments plus trouble breathing, chest pain, or
+  severe weakness
+
+Outside the US, use your local emergency number. Crisis lines
+differ by country.
+
+
+THE MEDICATION LIST
 -------------------
 
-FOR ALL CHRONIC CONDITIONS:
+In a shelter or an unfamiliar emergency room, nobody has your
+records. The list is how a stranger keeps you alive, and how a
+pharmacist can refill you without a phone call.
 
-1. MEDICATION SUPPLY
-   - Maintain 30-day minimum supply
-   - Ideally 90-day supply
-   - Know generic names of all medications
-   - Store properly (temperature, humidity)
-   - Check expiration dates quarterly
-   - Rotate stock (use oldest first)
+Include:
+[ ] Name and date of birth
+[ ] Every medicine: name (brand and generic), dose, time of day
+[ ] What each one is for
+[ ] Allergies and bad reactions
+[ ] Conditions and major surgeries
+[ ] Devices: make, model, serial number, settings (insulin pump
+    rates, oxygen flow, CPAP pressure)
+[ ] Doctor, specialist, pharmacy, and supplier phone numbers
+[ ] Insurance card copy and photo ID copy
+[ ] Emergency contacts
 
-2. DOCUMENTATION
-   - List of all medications with doses
-   - Prescribing physician information
-   - Pharmacy information
-   - Diagnosis list
-   - Recent lab values
-   - Allergies
-   - Emergency contacts
+Store it with copies of your prescriptions in a sealed plastic
+bag. Update it every time a prescription changes.
 
-3. EQUIPMENT
-   - Backup supplies for monitoring devices
-   - Extra batteries
-   - Backup power options
-   - Manual alternatives when possible
+A blank version is at the end of this guide.
 
-4. KNOWLEDGE
-   - Understand your condition
-   - Know warning signs of complications
-   - Know when to seek emergency care
-   - Have a contingency plan
+
+SUPPLY, REFILLS, AND RUNNING LOW
+--------------------------------
+
+BEFORE:
+- Refill as early as your plan allows, and keep the buffer in
+  one grab bag with the list.
+- Check dates every few months and replace what is close to
+  expiring.
+- When a storm or evacuation is forecast, refill before it
+  arrives, not after.
+
+IF YOU ARE RUNNING LOW:
+- DO NOT skip doses, split pills, or stop a medicine on your own
+  to make it last. Some medicines are dangerous to stop suddenly,
+  including anti-seizure medicines and many psychiatric
+  medicines. Missed insulin is one of the two most common causes
+  of DKA.
+- Act while you still have several days left. Go to any open
+  pharmacy with your bottles or your list. In a declared
+  emergency, some US states let pharmacists give an emergency
+  supply without a new prescription. Rules vary by state and
+  country, so ask.
+- Ask shelter medical staff, a clinic, or a hospital. Getting a
+  prescription replaced is a valid reason to be seen.
+- No insurance and in a US disaster area? The federal Emergency
+  Prescription Assistance Program (EPAP), when it is activated,
+  gives a free 30-day supply of most prescription medicines,
+  plus medical supplies and some equipment. Call 855-793-7470
+  to check whether it is active and to find a pharmacy.
+- Only a doctor or pharmacist should change a dose or switch you
+  to a different medicine.
+
+
+MEDICINES AFTER FLOOD, FIRE, OR HEAT
+------------------------------------
+
+From the US Food and Drug Administration (FDA):
+
+- FLOOD OR UNSAFE WATER: throw away any medicine that touched
+  it, even in its original container with the cap on. Throw
+  away anything wet or changed in appearance.
+- FIRE OR HIGH HEAT: heat can weaken medicines. Plan to replace
+  them.
+- THE EXCEPTION: if a medicine is life-sustaining and you cannot
+  replace it yet, it may be used if it looks unchanged. Replace
+  it as soon as you can.
+- MIXING A MEDICINE THAT COMES AS A POWDER: use only purified or
+  bottled water.
+
+
+INSULIN AND OTHER COLD-STORED MEDICINES
+---------------------------------------
+
+Insulin does not instantly spoil when the fridge dies. Knowing
+the real limits stops people from throwing away good insulin, or
+freezing it by accident.
+
+FDA guidance for insulin in an emergency:
+
+- NORMAL STORAGE: in a refrigerator, about 36 to 46°F
+  (2 to 8°C).
+- NO FRIDGE: insulin in the manufacturer's vial or cartridge,
+  opened or unopened, can be left unrefrigerated at 59 to 86°F
+  (15 to 30°C) for up to 28 days and still work.
+- KEEP IT AS COOL AS YOU CAN, away from direct heat and direct
+  sunlight.
+- NEVER FREEZE IT. Do not use insulin that has been frozen. If
+  you use ice, keep the insulin from touching it: wrap it in a
+  towel or put it in a second container.
+- ABOVE 86°F (30°C): it loses strength over time. In an
+  emergency you may still have to use it. Check your blood sugar
+  more often, and replace it as soon as you can.
+- INSULIN PUMPS: discard pump insulin that has been above
+  98.6°F (37°C).
+- AFTERWARD: once you have a fresh supply, throw away insulin
+  that sat at room temperature or in extreme heat or cold.
+
+SWITCHING INSULIN: if your usual insulin is not available, FDA
+publishes emergency guidance on switching between types. It
+should be done under a doctor's care whenever possible, with
+close blood sugar checks. Print that page for your kit (see
+Sources) and ask your doctor now what your own fallback is.
+
+OTHER REFRIGERATED MEDICINES: check the label or ask a
+pharmacist. If the medicine is life-sustaining and you have no
+replacement, FDA says it may be used until you can get a new
+supply.
+
+A COOLER PLAN: keep a small cooler and reusable ice packs with
+your kit. Freeze water bottles ahead of a storm.
+
 
 DIABETES
 --------
 
-PREPARATION:
-- 30-90 day supply of medication
-- Extra glucose meter and test strips
-- Backup insulin storage (if applicable)
-- Glucose tablets/gel
-- Glucagon kit
-- Medical ID bracelet
-- Sharps container
-- Alcohol wipes
+KIT (CDC list, 1 to 2 weeks' worth, in a waterproof bag):
+[ ] Insulin and syringes or pen needles
+[ ] Other diabetes and prescription medicines
+[ ] Blood sugar meter, strips, lancets, spare batteries
+[ ] Pump and glucose monitor supplies, written pump settings
+[ ] Glucagon
+[ ] Ketone strips
+[ ] Glucose tablets or other fast sugar
+[ ] Alcohol wipes
+[ ] Empty hard plastic container for used sharps
+[ ] Small cooler and ice packs
 
-EMERGENCY MANAGEMENT:
+LOW BLOOD SUGAR (below 70 mg/dL, or shaky, sweaty, hungry,
+dizzy, confused, irritable, fast heartbeat):
+1. Take 15 to 20 grams of fast sugar:
+   - 4 glucose tablets or 1 tube of glucose gel, or
+   - 1/2 cup (4 oz / 120 mL) of regular fruit juice, or
+   - 1/2 can (4 to 6 oz) of regular, not diet, soda, or
+   - 1 tablespoon of sugar or honey
+2. Wait 15 minutes and recheck.
+3. Still low? Repeat.
+4. If your next meal is more than an hour away, eat a snack.
+- Passed out or cannot swallow: do not put food or drink in the
+  mouth. Give glucagon if you have it and call 911.
+- Kidney disease too? Use apple, grape, or cranberry juice, not
+  orange juice.
 
-Blood Sugar Monitoring:
-- Monitor more frequently during stress
-- Illness and stress raise blood sugar
-- Document readings
+HIGH BLOOD SUGAR AND DKA:
+- Stress, illness, and missed insulin all push blood sugar up.
+- If you are sick, or your blood sugar is 250 mg/dL or above,
+  check blood sugar every 4 to 6 hours and check for ketones.
+- Early signs of DKA: great thirst, urinating far more than
+  usual. Later: fast deep breathing, fruity breath, flushed
+  face, nausea, vomiting, stomach pain, tiredness.
+- High ketones are a medical emergency. See the 911 list above.
 
-If Running Low on Insulin:
-- Ration carefully
-- Focus on preventing ketoacidosis
-- Reduce carbohydrate intake
-- Stay hydrated
-- Monitor closely for DKA symptoms
-- Seek medical help ASAP
+IN A SHELTER: tell the person in charge that you have diabetes.
+They can help with medical care and with keeping insulin cool.
 
-Low Blood Sugar (Hypoglycemia):
-Symptoms: Shakiness, sweating, confusion, irritability, hunger
-Treatment:
-1. Give 15-20g fast-acting sugar
-   - Glucose tablets (3-4)
-   - Juice (4 oz)
-   - Regular soda (4 oz)
-   - Hard candy
-2. Wait 15 minutes
-3. Recheck blood sugar
-4. Repeat if still low
-5. Follow with protein/complex carb
+US HELP LINE: American Diabetes Association, 1-800-DIABETES
+(800-342-2382).
 
-High Blood Sugar (Hyperglycemia):
-Symptoms: Thirst, frequent urination, fatigue, blurred vision
-Treatment:
-1. Take prescribed medication
-2. Stay hydrated (water)
-3. Monitor for DKA
-4. Seek medical care if very high
 
-Diabetic Ketoacidosis (DKA) - EMERGENCY:
-Symptoms: Fruity breath, nausea/vomiting, abdominal pain,
-         rapid breathing, confusion
-Action: Seek emergency medical care immediately
+HEART DISEASE, BLOOD PRESSURE, AND STROKE
+-----------------------------------------
 
-HEART DISEASE / HYPERTENSION
-----------------------------
+- Keep taking your medicines on schedule. Disasters bring heat,
+  cold, heavy lifting, poor sleep, and salty food all at once.
+- Stock low-sodium canned and packaged food. Emergency food is
+  often very salty.
+- Keep a home blood pressure monitor and spare batteries if you
+  use one.
+- Pace cleanup work. Take breaks and share heavy jobs.
 
-PREPARATION:
-- Medication supply (blood pressure, cholesterol, blood thinners)
-- Blood pressure monitor with batteries
-- Aspirin (unless contraindicated)
-- Nitroglycerin if prescribed
-- Low-sodium food options
-- Medical ID
+SUSPECTED HEART ATTACK:
+1. Call 911 first. Do not take anything first and wait to see
+   if it helps.
+2. The dispatcher may tell you to chew an aspirin and will check
+   that it is safe for you. Follow their instructions.
+3. If you have been prescribed nitroglycerin, use it as
+   prescribed.
+4. Sit down, stay calm, unlock the door.
 
-EMERGENCY MANAGEMENT:
+SUSPECTED STROKE:
+- Call 911 and note the time symptoms began.
+- Do NOT give aspirin. Some strokes are bleeds, and aspirin can
+  make them worse.
 
-Daily Management:
-- Monitor blood pressure if possible
-- Take medications consistently
-- Limit sodium intake
-- Stay as active as possible
-- Manage stress
 
-If Running Low on Medication:
-- Prioritize blood pressure medications
-- Monitor BP closely
-- Reduce sodium strictly
-- Reduce physical exertion
-- Seek medication access urgently
+ASTHMA AND COPD
+---------------
 
-Warning Signs - Heart Attack:
-- Chest pain/pressure
-- Pain in arm, jaw, neck, back
-- Shortness of breath
-- Cold sweats
-- Nausea
+- Keep a written action plan from your doctor. It tells you
+  what to take as symptoms worsen and when to get help.
+- Keep a spare reliever (rescue) inhaler in the kit. Check the
+  expiry date and the dose counter.
+- If you use a nebulizer, ask your doctor what to use when
+  there is no power.
+- Smoke, dust, mold, and cold air after a disaster are all
+  triggers. See the Air Filtration for Emergencies guide.
 
-Action:
-1. Chew aspirin (325mg) if not allergic
-2. Nitroglycerin if prescribed
-3. Sit or lie down
-4. Seek emergency care immediately
+IN A FLARE:
+1. Use your reliever inhaler as soon as symptoms start.
+2. Follow your action plan.
+3. Call 911 if your medicines are not relieving the symptoms or
+   breathing is still very hard.
 
-Warning Signs - Stroke (FAST):
-F - Face drooping
-A - Arm weakness
-S - Speech difficulty
-T - Time to call emergency
 
-Action: Seek emergency care immediately
+OXYGEN AND POWERED MEDICAL DEVICES
+----------------------------------
 
-ASTHMA / COPD
--------------
+ANSWER THESE BEFORE AN OUTAGE (from the FDA's home-device
+booklet). Ask the manufacturer or supplier, and write the
+answers down:
+[ ] Does the device have a backup? How long does it run, and
+    where is it?
+[ ] Can it run on another power source? Which?
+[ ] How long can I safely be without it?
+[ ] What if power fails in the middle of a treatment?
+[ ] What batteries does it use, how many, how long do they last?
+[ ] Do my supplies or medicines need to stay cold?
+[ ] Do I have at least 3 days of supplies?
 
-PREPARATION:
-- Rescue inhaler (albuterol) - multiple
-- Maintenance inhalers
-- Peak flow meter
-- Nebulizer with backup power option
-- Spacer
-- Prednisone course (if prescribed for emergencies)
-- N95 masks
-- Air purifier if power available
+THEN:
+- Tell your power company, and your fire department, that
+  someone in the home depends on electrical medical equipment.
+  Ask to be on the priority restoration list. A place on the
+  list is not a promise: plan as if the power will stay off.
+- Have more than one backup plan, and a place to go that has
+  power: a relative, a shelter that can meet medical needs, or a
+  hospital. Leave while your backup still has plenty of time
+  left on it.
+- Keep the device's make, model, and serial number with your
+  list.
 
-EMERGENCY MANAGEMENT:
+OXYGEN:
+- Keep a backup that needs no electricity, normally a large
+  oxygen tank, and know how to switch to it. Show a neighbor.
+- Portable concentrator: keep spare batteries charged and a car
+  charger.
+- DO NOT turn your flow rate down to make a battery or tank last
+  longer. Stay on the prescribed rate and move to backup or to
+  power.
+- Oxygen makes everything burn faster. Keep flames and heat
+  sources at least 5 feet (1.5 m) away. No candles, no smoking,
+  no gas stove while using it. Use flashlights.
+- Watch tank gauges and call your supplier early. Deliveries are
+  slow after a disaster.
 
-Asthma Attack:
-1. Sit upright
-2. Stay calm
-3. Use rescue inhaler (2 puffs)
-4. Wait 1 minute
-5. Repeat up to 3 times if needed
-6. Seek emergency care if not improving
+CPAP, BIPAP, NEBULIZER:
+- Find out whether it has a battery option or a car adapter.
+- Keep distilled water if it has a humidifier.
 
-Severe Attack Signs - EMERGENCY:
-- Rescue inhaler not helping
-- Can't speak in full sentences
-- Lips turning blue
-- Using accessory muscles to breathe
-- Getting worse despite treatment
+VENTILATOR:
+- Keep a hand-operated resuscitation bag at the bedside.
+- Ask your care team about external batteries.
+- When backup power is running low, go to a hospital or a home
+  with electricity.
 
-Environmental Management:
-- Avoid smoke/air pollution
-- Stay indoors during poor air quality
-- Use N95 mask if must go out
-- Identify and avoid triggers
+GENERATORS: outdoors only, at least 20 feet (6 m) from windows,
+doors, and vents, never in a garage. See the Generator Safety
+guide.
 
-EPILEPSY
+AFTER THE POWER RETURNS: check the device and its cords for
+damage and check that the settings are still correct before you
+rely on it.
+
+
+DIALYSIS
 --------
 
-PREPARATION:
-- Anti-seizure medication supply
-- Diastat (rectal diazepam) if prescribed
-- Soft padding/pillow
-- Medical ID
-- Seizure diary/documentation
+BEFORE (National Kidney Foundation and CDC):
+[ ] Ask your unit for its disaster plan and read it.
+[ ] Keep a list of other dialysis units and hospitals near you
+    and near where you would evacuate to.
+[ ] Keep your phone number and address current with the unit.
+[ ] Keep 2 weeks of medicines and the foods for the emergency
+    diet.
+[ ] Register with your water and power companies for priority
+    restoration.
+[ ] Wear medical ID.
+[ ] Review the emergency diet with your renal dietitian now.
+[ ] Home hemodialysis: 2 weeks of supplies, and practice coming
+    off the machine in an emergency.
+[ ] Peritoneal dialysis: 2 weeks of supplies, and know how to do
+    manual exchanges if the cycler cannot run.
 
-EMERGENCY MANAGEMENT:
+IF YOU CANNOT GET TO DIALYSIS:
+1. Call your unit. If it is closed or you cannot reach it, call
+   the Kidney Community Emergency Response (KCER) hotline,
+   866-901-3773, or the National Kidney Foundation,
+   855-653-2273, to find an open unit. You can dialyze at a
+   different unit.
+2. No transport? Contact police or emergency medical services
+   for help getting there.
+3. Start the emergency diet right away. It is stricter than
+   your normal diet, it is meant for a few days, and it is not
+   a substitute for dialysis:
+   - Fluid: 2 cups (16 oz, about 475 mL) a day
+   - Protein: half of what you usually eat
+   - No salt and NO SALT SUBSTITUTES (they are made of
+     potassium)
+   - No high-potassium foods, and no orange juice
+4. In a shelter, tell the person in charge that you need
+   dialysis.
 
-During a Seizure (for caregivers):
-1. Clear area of hazards
-2. Protect head (pillow underneath)
-3. Do NOT restrain
-4. Do NOT put anything in mouth
-5. Turn on side after convulsions stop
-6. Time the seizure
-7. Stay until fully recovered
+Why it matters: without dialysis, fluid and potassium build up.
+Too much fluid makes it hard to breathe. Too much potassium can
+cause dangerous heart rhythms.
 
-Seek Emergency Care If:
-- Seizure lasts more than 5 minutes
-- Second seizure follows quickly
-- Person doesn't regain consciousness
-- Person is injured
-- Person is pregnant
-- First known seizure
 
-If Running Low on Medication:
-- Do NOT stop suddenly (can cause severe seizures)
-- Taper very slowly if must reduce
-- Seek medication access urgently
-- Avoid triggers (lack of sleep, alcohol)
+EPILEPSY AND SEIZURES
+---------------------
 
-KIDNEY DISEASE
---------------
+- Keep taking anti-seizure medicine on schedule. Missed doses
+  and lost sleep are common seizure triggers.
+- Keep rescue medicine with the kit if it has been prescribed,
+  and make sure someone else knows how to give it.
 
-PREPARATION:
-- Medication supply
-- Dialysis supplies if applicable
-- Low sodium/potassium/phosphorus foods
-- Emergency dialysis plan
-- Fluid restriction supplies
+SEIZURE FIRST AID:
+1. Stay with the person. Time the seizure.
+2. Ease them to the ground. Move hard or sharp things away.
+3. Put something soft under the head. Remove eyeglasses and
+   loosen anything tight around the neck.
+4. Roll them gently onto one side to keep the airway clear.
+5. Check for a medical ID bracelet.
+6. Afterward, stay until they are fully alert. Tell them
+   calmly what happened.
 
-EMERGENCY MANAGEMENT:
+DO NOT:
+- Hold them down
+- Put anything in the mouth
+- Give mouth-to-mouth during the seizure
+- Give food or water until they are fully alert
 
-Dietary Restrictions:
-- Strictly limit potassium if kidney failure
-  (bananas, oranges, potatoes, tomatoes)
-- Limit sodium
-- Limit phosphorus
-- Monitor fluid intake
-
-Warning Signs - EMERGENCY:
-- Severe shortness of breath
-- Severe swelling
-- Chest pain
-- Confusion
-- Dangerous blood pressure
-
-Dialysis Patients:
-- Know your dialysis center's emergency plan
-- Have backup facility information
-- Know emergency dialysis access points
-- Have emergency dialysis kit if peritoneal
 
 MENTAL HEALTH CONDITIONS
 ------------------------
 
-PREPARATION:
-- Medication supply (critical)
-- Written crisis plan
-- Support contacts list
-- Calming items/activities
-- Documentation of medications/doses
-- Therapist/psychiatrist contact info
+- Treat psychiatric medicines like any other critical medicine:
+  keep the buffer, keep the list, do not stop suddenly. A
+  prescriber can lower a dose slowly and safely if it has to
+  change.
+- Write a short crisis plan: your warning signs, what helps,
+  who to call.
+- Keep sleep, meals, and contact with people as regular as you
+  can. Avoid alcohol and drugs.
+- US crisis lines: call or text 988 (Suicide and Crisis
+  Lifeline). Disaster Distress Helpline: call or text
+  1-800-985-5990.
+- See the Mental Health First Aid in Crisis guide.
 
-EMERGENCY MANAGEMENT:
 
-Medication Continuity:
-- Do NOT stop psychiatric medications suddenly
-- Withdrawal can be dangerous
-- If rationing needed, consult professional
-- Some medications need slow tapering
+AT A SHELTER
+------------
 
-Managing Increased Stress:
-- Maintain routines as much as possible
-- Connect with support system
-- Use coping strategies you've learned
-- Physical activity helps
-- Limit news/stress exposure
-- Get adequate sleep
+- Tell the staff your conditions when you arrive. Say it even
+  if you feel fine.
+- Ask where medicines can be kept cold, and where you can plug
+  in or charge medical equipment. US shelters are expected to
+  provide refrigeration for medicines where possible and to
+  give power priority to life-sustaining equipment.
+- If you need a nurse, oxygen, wound care, or help with daily
+  care, ask about a medical needs shelter.
+- Keep your medicines and devices with you, in their labeled
+  containers.
 
-Crisis Warning Signs:
-- Thoughts of self-harm
-- Severe anxiety/panic
-- Hearing/seeing things
-- Unable to function
-- Feeling out of control
+CHILDREN: send a copy of the list and a spare supply to school
+or daycare, and make sure the adults there know the plan.
 
-Crisis Resources:
-- 988 Suicide & Crisis Lifeline
-- Crisis text line: Text HOME to 741741
-- Local emergency services
+OLDER ADULTS: many medicines means many chances to miss one. A
+filled weekly pill organizer plus the list makes a handover to
+a helper possible.
 
-GENERAL EMERGENCY TIPS
-----------------------
 
-MEDICATION RATIONING:
-- Consult medical professional if possible
-- Prioritize life-sustaining medications
-- Understand which medications are most critical
-- Know which can be stretched vs. which cannot
-- Document any changes in dosing
+PRACTICE
+--------
 
-SEEKING CARE:
-- Community health centers
-- Hospital emergency departments
-- Evacuation shelters with medical services
-- Veterinarians (human physiology knowledge)
-- Pharmacists (medication advice)
-- Telehealth when communications available
+10-MINUTE DRILL: Set a timer for 10 minutes. Collect every
+medicine bottle and device in the house and write the list from
+the labels, using the template below. Photograph it. Then ask
+out loud: "If the power went out for three days tonight, which
+item on this list is in trouble first?" Whatever you answer is
+your next task.
 
-DOCUMENTATION TEMPLATE:
-Name: _______________________
-Date of Birth: _______________
-Blood Type: _________________
-Allergies: __________________
+WHAT WOULD YOU DO?
+
+1. The power has been out for two summer days. Your insulin has
+   been in a dead fridge and the kitchen is about 80°F (27°C).
+   A neighbor says it is ruined and offers to bury it in a bag
+   of ice.
+
+   ANSWER: It is not ruined, and the ice is the real danger.
+   Insulin in its original vial or cartridge can sit at 59 to
+   86°F for up to 28 days. Freezing destroys it. Keep it in the
+   coolest shaded spot or in a cooler where it cannot touch the
+   ice, keep using it, check blood sugar more often, and replace
+   it when you can.
+
+2. Your father's oxygen concentrator is on its battery, which
+   lasts about three hours. The utility estimates eight hours.
+   He wants to turn the flow down to make the battery last.
+
+   ANSWER: Do not turn it down. The prescribed flow is the
+   dose. Switch to the backup tank now and call the oxygen
+   supplier. If the backup will not cover the gap, move him
+   somewhere with power, or to a hospital, while there is still
+   time on the clock. Call 911 if he becomes short of breath.
+   No candles near the oxygen.
+
+3. You evacuated in a hurry. You have four days of blood
+   pressure and anti-seizure pills, and the roads home will be
+   closed for at least a week. Taking half doses would stretch
+   them to eight days.
+
+   ANSWER: Do not halve them. A half dose of seizure medicine
+   can mean a seizure. Four days is enough time to solve this
+   properly: take the bottles to any open pharmacy today and ask
+   for an emergency supply, ask the shelter's medical staff, or
+   call your doctor's office. If you are uninsured in a US
+   disaster area, ask about EPAP.
+
+
+QUICK REFERENCE
+---------------
+
+RUNNING LOW: don't skip, split, or stop. Go to any pharmacy
+with your bottles or list while you still have days left.
+
+INSULIN: fridge 36-46°F. No fridge: OK at 59-86°F up to 28
+days. Never freeze. Keep off the ice. Hotter than 86°F: still
+use if you must, check sugar more often, replace soon.
+
+LOW BLOOD SUGAR (under 70): 15-20 g fast sugar (4 glucose
+tablets, 1/2 cup juice, 1/2 can regular soda). Wait 15 min.
+Recheck. Repeat. Passed out: nothing by mouth, glucagon, 911.
+
+DKA: sugar stays 300+, fruity breath, vomiting, hard to
+breathe -> 911.
+
+HEART ATTACK: call 911 FIRST. Aspirin if dispatcher says so.
+STROKE: BE FAST. Note the time. No aspirin.
+
+SEIZURE: time it, cushion head, roll on side, nothing in the
+mouth. Over 5 minutes -> 911.
+
+OXYGEN: never turn the flow down. Backup tank. Flames 5 ft
+away. Leave for power before the backup runs out.
+
+DIALYSIS MISSED: fluid 2 cups a day, half protein, no salt,
+no salt substitute, no high-potassium food.
+KCER 866-901-3773. NKF 855-653-2273.
+
+US CRISIS: call or text 988.
+
+
+MY MEDICATION LIST
+------------------
+
+Name: ____________________  Date of birth: ______________
+Allergies: ______________________________________________
 
 Conditions:
-1. ___________________________
-2. ___________________________
-3. ___________________________
+1. ______________________________________________________
+2. ______________________________________________________
+3. ______________________________________________________
 
-Medications:
-1. _____________ Dose: _______ Frequency: _______
-2. _____________ Dose: _______ Frequency: _______
-3. _____________ Dose: _______ Frequency: _______
+Medicines (name / dose / when / what for):
+1. ______________________________________________________
+2. ______________________________________________________
+3. ______________________________________________________
+4. ______________________________________________________
+5. ______________________________________________________
 
-Emergency Contacts:
-Primary: ____________________
-Physician: __________________
-Pharmacy: __________________
+Devices (make / model / serial / settings):
+_________________________________________________________
+
+If I miss doses, my doctor says:
+_________________________________________________________
+
+Doctor: ____________________  Phone: ___________________
+Pharmacy: __________________  Phone: ___________________
+Device supplier: ___________  Phone: ___________________
+Power company: _____________  Phone: ___________________
+Emergency contact: _________  Phone: ___________________
+Backup place with power: ________________________________
+
+
+SOURCES
+-------
+
+- FDA: Insulin Storage and Switching Between Products in an
+  Emergency -
+  https://www.fda.gov/drugs/emergency-preparedness-drugs/information-regarding-insulin-storage-and-switching-between-products-emergency
+- FDA: Safe Drug Use After a Natural Disaster -
+  https://www.fda.gov/drugs/emergency-preparedness-drugs/safe-drug-use-after-natural-disaster
+- FDA: Home Use Devices: How to Prepare for and Handle Power
+  Outages for Medical Devices that Require Electricity -
+  https://www.fda.gov/media/80782/download
+- CDC: Managing Insulin in an Emergency -
+  https://www.cdc.gov/diabetes/articles/managing-insulin-in-emergency.html
+- CDC: Diabetes Care During Emergencies -
+  https://www.cdc.gov/diabetes/articles/diabetes-care-emergencies.html
+- CDC: Diabetic Ketoacidosis -
+  https://www.cdc.gov/diabetes/about/diabetic-ketoacidosis.html
+- NIDDK: Low Blood Glucose (Hypoglycemia) -
+  https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/low-blood-glucose-hypoglycemia
+- American Diabetes Association: Hypoglycemia -
+  https://diabetes.org/living-with-diabetes/hypoglycemia-low-blood-glucose
+- American Heart Association: Warning Signs of a Heart Attack -
+  https://www.heart.org/en/health-topics/heart-attack/warning-signs-of-a-heart-attack
+- American Heart Association: Aspirin and Heart Disease -
+  https://www.heart.org/en/health-topics/heart-attack/treatment-of-a-heart-attack/aspirin-and-heart-disease
+- CDC: Signs and Symptoms of Stroke -
+  https://www.cdc.gov/stroke/signs-symptoms/index.html
+- NHLBI: Asthma Attacks -
+  https://www.nhlbi.nih.gov/health/asthma/attacks
+- American Lung Association: Using Oxygen Safely -
+  https://www.lung.org/lung-health-diseases/lung-procedures-and-tests/oxygen-therapy/using-oxygen-safely
+- American Lung Association: Power Outages -
+  https://www.lung.org/clean-air/emergencies-and-natural-disasters/power-outages
+- National Kidney Foundation: Planning for Emergencies -
+  https://www.kidney.org/kidney-topics/planning-emergencies-guide-people-kidney-disease
+- CDC: What to Do When You Need Dialysis During an Emergency -
+  https://www.cdc.gov/kidney-disease/caring/index.html
+- CDC: First Aid for Seizures -
+  https://www.cdc.gov/epilepsy/first-aid-for-seizures/index.html
+- NIMH: Mental Health Medications -
+  https://www.nimh.nih.gov/health/topics/mental-health-medications
+- 988 Suicide and Crisis Lifeline - https://988lifeline.org/
+- HHS ASPR: Emergency Prescription Assistance Program -
+  https://www.aspr.gov/EPAP/Pages/about-epap.aspx
+- Ready.gov: People with Disabilities -
+  https://www.ready.gov/disability
+- US Department of Justice: The ADA and Emergency Shelters -
+  https://archive.ada.gov/pcatoolkit/chap7shelterprog.htm
+
 
 ==========================================
-Last updated: January 2026
+Last reviewed: November 2026
+
+This guide does not replace your own doctor's instructions. Ask
+your care team to review your emergency plan.
+
 License: CC-BY-SA 4.0
 ==========================================
-
-DISCLAIMER: This information is educational. Always consult your
-healthcare provider about managing your specific conditions. This
-is not a substitute for professional medical advice.

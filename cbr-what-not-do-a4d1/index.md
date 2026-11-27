@@ -1,8 +1,8 @@
 # What NOT to Do During a CBR Event
 
-> In chemical, biological, and radiological (CBR) emergencies, the most dangerous mistakes are usually reasonable-sounding instincts: going to the basement, going outside to look, driving to get the kids. This guide lists the ones to avoid and what to do instead.
+> **The most dangerous mistakes sound reasonable.** In chemical, biological, and radiological (CBR) emergencies they are usually ordinary instincts: going to the basement, going outside to look, driving to get the kids. This guide lists the ones to avoid and what to do instead.
 
-## The Five Most Dangerous Mistakes
+## Start here: the five most dangerous mistakes
 
 1. **Using the wrong shelter room.**
    - **Chemical release:** do NOT go to the basement. Many toxic gases are heavier than air and sink. Use a sealed interior room **above ground**.
@@ -212,6 +212,26 @@
 
 ---
 
+## Practice
+
+**10-minute drill:** Walk the household to two spots and say the rule out loud at each one. First, the room you would use for a chemical release: interior, above ground, not the basement. Second, the spot you would use for radiation: the basement or the center of the building, away from windows. Then have everyone send one text to the rest of the household from where they stand, the way they would instead of going out to find each other, and check that every phone is switched on and out of airplane mode. Nothing gets taped or sealed for this drill.
+
+**What would you do?**
+
+1. *Officials warn that radioactive fallout is heading for your area and tell everyone to get inside now. Your two children are at school ten minutes away, and the car is in the driveway.*
+
+   **Answer:** Don't go. Fallout is invisible and at its most dangerous in the first hours, a car gives little protection from radiation, and the school has its own shelter plan. Go to the basement or the center of your building and text; don't drive. Stay inside at least 24 hours unless officials say otherwise.
+
+2. *A phone alert says a chemical release nearby means everyone should shelter in place. Out of tornado habit, the family heads for the basement, and someone reaches for the box fan to keep the air moving.*
+
+   **Answer:** Wrong room, and leave the fan off. Many toxic gases are heavier than air and collect in low areas, so use an interior room above ground, as high as practical, and seal it. Fans and the heating and cooling system pull contaminated air inside, so turn them all off. Seal, don't ventilate, until officials give the all-clear. Then air the building out.
+
+3. *After news of a "dirty bomb" explosion in a nearby city, a neighbor offers you potassium iodide tablets from his emergency kit and suggests the whole family take a double dose to be safe.*
+
+   **Answer:** Thank him and wait. Potassium iodide protects only the thyroid, and only from radioactive iodine. It does nothing against other radioactive materials or fallout on the ground, and too much can cause severe illness or death. Take it only if public health or emergency officials, or your doctor, tell you to, and never more than they say. What protects you now is the right spot indoors: the basement or the center of the building.
+
+---
+
 ## Quick Reference
 
 ```
@@ -219,7 +239,8 @@ DON'T DO THIS:
 
 GENERAL:
 - Panic or freeze
-- Ignore warnings ("I don't smell anything")
+- Ignore warnings
+  ("I don't smell anything")
 - Call 911 just for information
 - Spread rumors
 
@@ -255,22 +276,25 @@ ALWAYS:
 
 ## Sources
 
-- [Ready.gov: Chemical Emergencies](https://www.ready.gov/chemical)
-- [Ready.gov: Bioterrorism](https://www.ready.gov/bioterrorism)
+- [Ready.gov: Chemicals and Hazardous Materials Incidents](https://www.ready.gov/hazmat)
+- [Ready.gov: Biohazard Exposure](https://www.ready.gov/biohazard)
 - [Ready.gov: Radiation Emergencies](https://www.ready.gov/radiation)
 - [CDC: What to Do in a Chemical Emergency](https://www.cdc.gov/chemical-emergencies/response/index.html)
-- [CDC: About Getting Clean (chemical)](https://www.cdc.gov/chemical-emergencies/response/get-clean.html)
+- [CDC: About Getting Chemicals Off Your Body](https://www.cdc.gov/chemical-emergencies/response/get-chemical-off-body.html)
 - [CDC: Chlorine fact sheet](https://www.cdc.gov/chemical-emergencies/chemical-fact-sheets/chlorine.html)
 - [CDC: What to Do: Get Inside (radiation)](https://www.cdc.gov/radiation-emergencies/response/get-inside.html)
 - [CDC: How to Self-Decontaminate after a Radiation Emergency](https://www.cdc.gov/radiation-emergencies/prevention/self-decontaminate.html)
+- [CDC: Decontamination for Yourself and Others (radiation)](https://www.cdc.gov/radiation-emergencies/infographic/decontamination.html)
 - [CDC: Potassium Iodide (KI)](https://www.cdc.gov/radiation-emergencies/treatment/potassium-iodide.html)
 - [FEMA: Planning Guidance for Response to a Nuclear Detonation, 3rd ed. (2022)](https://www.fema.gov/sites/default/files/documents/fema_nuc-detonation-planning-guide.pdf)
-- [FEMA: Wireless Emergency Alerts](https://www.fema.gov/emergency-managers/practitioners/integrated-public-alert-warning-system/public/wireless-emergency-alerts)
+- [FCC: Wireless Emergency Alerts (WEA)](https://www.fcc.gov/consumers/guides/wireless-emergency-alerts)
 - [CPSC: Carbon Monoxide Information Center](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center)
 - [American Red Cross: How to Shelter-in-Place (Chemical Incident), 2007](https://rmp.nc.gov/LCF/Publications/AL_Resources/HazMat%20Incident/Red%20Cross%20-%20How%20To%20Shelter-in-place%20Chemical.pdf)
 
-Last reviewed: October 2026
+*This is general awareness information. Follow official guidance during any actual CBR event.*
+
+---
+
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*
-
-**Disclaimer:** This is general awareness information. Follow official guidance during any actual CBR event.

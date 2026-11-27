@@ -1,6 +1,6 @@
 # Treating Burns, Cuts, and Fractures
 
-> Burns, cuts, and broken bones are among the most common injuries in any emergency. The right first steps limit damage, ease pain, and prevent infection.
+> **The right first steps limit damage, ease pain, and prevent infection.** Burns, cuts, and broken bones are among the most common injuries in any emergency.
 
 ## Do this now
 
@@ -272,6 +272,73 @@ After splinting, check beyond the injury (fingers or toes):
 
 ---
 
+## Practice
+
+**10-minute drill:** Splint a healthy forearm. With a willing family member, build the forearm splint from the Splinting section using only what is in the house: a rolled magazine or newspaper for the support, a towel for padding, strips of cloth or bandanas to tie it, and a shirt or scarf for the sling. Do the circulation check on the fingers before and after: color, temperature, feeling, movement. Tie it firmly but not tight, and undo it at once if the hand tingles or changes color. Afterward, note what was hard to find and add it to your first aid kit.
+
+**What would you do?**
+
+1. *Your 5-year-old pulls a mug of fresh tea onto her forearm. The skin is red and blistering over an area larger than her palm. Her grandmother heads to the kitchen for ice and butter.*
+
+   **Answer:** No ice and no butter. Hold the arm under cool, clean running water right away for 5 to 20 minutes, aiming for 20, and take off anything tight near the burn unless it's stuck to the skin. Keep the rest of her covered and warm while you cool the burn, and watch for shivering. Then cover the burn loosely with plastic wrap or a clean, dry, non-stick dressing, and don't break the blisters. A blistered burn larger than her palm needs emergency care, so call 911 or get her there.
+
+2. *A neighbor's dog bites your hand, leaving a small, gaping cut that stops bleeding with pressure. It is evening, the clinic is closed, and you have wound-closure strips in your kit.*
+
+   **Answer:** Don't close it. Strips are only for a small, clean, straight, shallow cut, never for a bite; clinicians often leave bites open to lower the infection risk. Rinse the wound under clean running water, wash the skin around it with soap, and cover it with a clean dressing. Have it checked as soon as possible, find out when you last had a tetanus shot, and watch it every day for signs of infection.
+
+3. *On a hike, your friend falls on an outstretched arm. His forearm is bent at an angle it shouldn't be. Another hiker offers to pull it straight "so it sets properly" before you splint it.*
+
+   **Answer:** No. Don't straighten it. Splint it in the position you found it, with a padded rigid support from the elbow past the wrist so the joints above and below the break can't move, then support the arm in a sling. Check his fingers before and after for color, warmth, feeling, and movement. If the hand turns pale, blue, or purple, or goes numb, loosen the ties and recheck; if it doesn't improve right away, call 911. A suspected fracture needs an X-ray, so get him to care as soon as possible.
+
+---
+
+## Quick Reference
+
+```
+BURNS, CUTS, FRACTURES
+
+BURN
+1. Stop the burning. Electrical:
+   power off before you touch
+2. Cool running water, 5-20 min
+   (aim for 20). NO ice
+3. Rings, watches, tight clothes
+   off. Leave anything stuck
+4. Cover loosely: plastic wrap or
+   a clean, dry, non-stick dressing
+5. No butter. Don't break blisters
+CALL 911: deep, bigger than their
+  palm, face, hands, feet,
+  genitals, joints, electrical,
+  chemical, smoke inhalation
+
+CUT
+1. Press firmly. Don't lift to look
+2. Soaked through? Add a pad on
+   top. Don't remove the first one
+3. Spurting, pooling, or still
+   bleeding after 10 min: 911
+4. Stopped: rinse under clean
+   running water, then cover
+GET CARE: deep, gaping, on the
+  face, a bite, a puncture,
+  embedded object, infection
+
+BROKEN BONE
+1. Don't straighten it
+2. Splint as found. Immobilize the
+   joints above and below. Pad it
+3. Check beyond it: color, warmth,
+   feeling, movement
+4. Pale, blue, or numb: loosen the
+   ties. No better right away: 911
+CALL 911: bone through the skin,
+  thigh, hip, pelvis, neck, back,
+  signs of shock
+```
+
+---
+
 ## Sources
 
 - [2024 American Heart Association and American Red Cross Guidelines for First Aid](https://www.ahajournals.org/doi/10.1161/CIR.0000000000001281)
@@ -285,8 +352,10 @@ After splinting, check beyond the injury (fingers or toes):
 - [American Red Cross: Fractures](https://www.redcross.org/take-a-class/resources/learn-first-aid/fractures)
 - [Poison Control: First Aid for Poisonings](https://www.poison.org/first-aid-for-poisonings)
 
-Last reviewed: October 2026
-
 *This guide doesn't replace hands-on first aid training or professional medical care.*
+
+---
+
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

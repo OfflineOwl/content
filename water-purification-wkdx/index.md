@@ -13,7 +13,7 @@
 
 ---
 
-## Quick Reference
+## Methods at a Glance
 
 | Method | What it handles | Time | You need |
 |--------|-----------------|------|----------|
@@ -35,7 +35,7 @@
 - **Bacteria** (E. coli, Salmonella, cholera): common in water polluted by sewage or animal waste.
 - **Viruses** (norovirus, hepatitis A): too small for most portable filters.
 - **Parasites** (Giardia, Cryptosporidium): Cryptosporidium survives normal doses of bleach and iodine.
-- **Chemicals** (fuel, pesticides, industrial waste, heavy metals, salt): not removed by boiling, bleach, iodine, or UV. Boiling can even concentrate some, such as nitrate and lead.
+- **Chemicals** (fuel, pesticides, industrial waste, heavy metals, salt): not removed by boiling, bleach, iodine, or UV. Boiling does not remove lead, and it can even concentrate some chemicals, such as nitrate.
 - **Sediment and cloudiness:** shields germs from bleach and UV light. Clear the water first.
 
 Clear water is not necessarily safe. Most germs are invisible.
@@ -198,7 +198,7 @@ Filters physically remove germs and particles. What they catch depends on pore s
 
 ### Improvised sand and charcoal filter
 
-An improvised filter clears sediment so that disinfection works better. **It does not make water safe on its own.**
+An improvised filter clears sediment so that disinfection works better. **It does not remove germs or chemicals, and it does not make water safe on its own.**
 
 ```
 ┌─────────────┐
@@ -306,6 +306,73 @@ Diarrhea and vomiting after drinking untreated water can quickly cause dehydrati
 
 ---
 
+## Practice
+
+**10-minute drill:** Do a dry run of the bleach dose. Find your household bleach and read the label: is it unscented, what strength is it (6% or 8.25%), and is it less than a year old? Write the dose for one gallon on the bottle with a marker: 8 drops for 6% bleach, 6 drops for 8.25%. Then use a clean dropper to count that dose into an empty jar, so you know your dropper works and what the dose looks like. Don't add water and don't drink anything: this is practice at measuring, and the jar gets rinsed out afterward. Finish by picking the pot you would boil water in, and look up your home's elevation. Above 5,000 ft (about 1,500 m) your boil time is 3 minutes, not 1.
+
+**What would you do?**
+
+1. *A flood has knocked out the water supply. Water from a rain barrel beside the garage looks clear, but it has a faint fuel smell and a slight sheen. You have a camp stove and plenty of gas, and everyone is thirsty.*
+
+   **Answer:** Don't drink it, and don't boil it "to be safe." Boiling and disinfecting kill germs, but they do not remove fuel or toxic chemicals, and no home method reliably fixes that. Drink stored or bottled water, look for another source, and contact the local health department. Save the stove for water whose only problem is germs.
+
+2. *You can't boil, so you treated a gallon of clear creek water with 8 drops of 6% bleach, stirred it, and waited 30 minutes. It has no chlorine smell at all. The children are asking for a drink.*
+
+   **Answer:** Not yet. A slight chlorine smell is the sign that the dose worked. With no smell, repeat the dose and wait another 15 minutes. If it still doesn't smell of chlorine, don't drink it; find another source. Check the bottle too: bleach weakens with age, and it should be unscented and less than a year old.
+
+3. *On a hiking trip you pump stream water through your backpacking filter. It comes out clear and tastes fine, and your friend says the filter is all you need.*
+
+   **Answer:** Clear is not the same as safe. Most portable hiking filters do not remove viruses, and some let bacteria through too. After filtering, add bleach, iodine, or chlorine dioxide, or boil the water. Filter first, then disinfect: that order covers the parasites that chemicals are weak against and the viruses the filter lets through.
+
+---
+
+## Quick Reference
+
+```
+MAKE WATER SAFE TO DRINK
+
+FIRST
+- Use bottled or stored water first
+- Fuel or chemical smell, oily
+  sheen, floodwater: do NOT drink.
+  Boiling and bleach won't fix it.
+- Cloudy? Let it settle, then pour
+  through cloth or a coffee filter
+
+BOIL (most reliable)
+- Rolling boil for 1 minute
+- Above 5,000 ft (1,500 m):
+  3 minutes
+- Cool with a lid on
+
+BLEACH (unscented, under 1 year old)
+- 6% bleach:    8 drops per gallon
+- 8.25% bleach: 6 drops per gallon
+- Either: 2 drops per quart or liter
+- Cloudy, colored or very cold
+  water: double the dose
+- Stir, then wait 30 minutes
+- Slight chlorine smell = ready
+- No smell: repeat the dose,
+  wait 15 more minutes
+- Still no smell: don't drink it
+
+FILTERS
+- Most don't remove viruses.
+  Filter, THEN disinfect or boil.
+
+CRYPTOSPORIDIUM
+- Bleach and iodine don't kill it.
+  Boil if you can.
+
+SALT WATER
+- Boiling won't remove salt. Distill.
+
+STORE in clean, covered containers
+```
+
+---
+
 ## Sources
 
 - [EPA: Emergency Disinfection of Drinking Water](https://www.epa.gov/ground-water-and-drinking-water/emergency-disinfection-drinking-water)
@@ -315,12 +382,13 @@ Diarrhea and vomiting after drinking untreated water can quickly cause dehydrati
 - [CDC: About Home Water Treatment Systems](https://www.cdc.gov/drinking-water/about/about-home-water-treatment-systems.html)
 - [CDC: How to Create an Emergency Water Supply](https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html)
 - [FEMA: Food and Water in an Emergency (FEMA 477)](https://www.fema.gov/pdf/library/f&web.pdf)
-- [EPA: Will boiling my water help? (nitrate and lead)](https://www.epa.gov/mn/will-boiling-my-water-help)
+- [EPA: Will boiling my water help? (nitrate)](https://www.epa.gov/mn/will-boiling-my-water-help)
+- [EPA: Basic Information about Lead in Drinking Water](https://www.epa.gov/ground-water-and-drinking-water/basic-information-about-lead-drinking-water)
 - [USDA FSIS: High Altitude Cooking](https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/high-altitude-cooking)
 - [Eawag SODIS Manual](https://www.eawag.ch/fileadmin/Domain1/Abteilungen/sandec/publikationen/SWP/SODIS_manual_2016.pdf)
 
 ---
 
-Last reviewed: October 2026
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

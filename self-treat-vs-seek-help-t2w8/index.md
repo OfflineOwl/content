@@ -1,6 +1,6 @@
 # When to Self-Treat vs. Seek Help
 
-> In an emergency you may have to handle medical problems yourself. Knowing which problems can't wait, and which you can safely manage, can save a life.
+> **You may have to handle medical problems yourself.** In an emergency, knowing which problems can't wait, and which you can safely manage, can save a life.
 
 ## Do this now
 
@@ -230,24 +230,67 @@ Take a first aid and CPR course from the American Red Cross, the American Heart 
 
 ---
 
+## Practice
+
+**10-minute drill:** Do a BE FAST walk-through with your household. One person reads the six letters from the table above while another plays the patient: check their balance, ask about their vision, have them smile, raise both arms, and repeat a simple phrase. Then say out loud what the T means: call 911 right away and write down the time the symptoms started. Finish by writing a card for the fridge with the numbers this guide uses (911 or your local emergency number, Poison Help 1-800-222-1222, and 988 in the US) and the nearest fire station or hospital you could send someone to if the phones are down.
+
+**What would you do?**
+
+1. *Your 62-year-old father has had a squeezing pressure in his chest for 20 minutes and has broken into a cold sweat. He says it's indigestion and that you can drive him to the hospital "if it's not gone in an hour."*
+
+   **Answer:** Call 911 now. Chest pressure that lasts more than a few minutes, with a cold sweat, is on the heart attack list, and it can't be safely managed at home or waited out. Keep him resting while you wait. If he is alert, isn't allergic to aspirin, and hasn't been told by a clinician not to take it, he can chew one regular 325 mg aspirin or 2 to 4 low-dose (81 mg) aspirin; if you're unsure, skip the aspirin. If he becomes unresponsive and isn't breathing normally, start CPR and send for an AED.
+
+2. *At a potluck, a friend breaks out in itchy hives and takes an antihistamine. Twenty minutes later her voice is hoarse and she says she feels dizzy. She carries an epinephrine auto-injector, but says she would rather take another antihistamine and lie down.*
+
+   **Answer:** This is no longer a mild reaction. A hoarse voice and dizziness mean treat it as anaphylaxis: help her use her epinephrine auto-injector right away, and call 911. Antihistamines are too slow and don't replace epinephrine.
+
+3. *Three days into an outage, the cut on your brother's shin is red and warm. Last night you drew a pen line around the edge of the redness. This morning the redness is well past the line, and he says he feels shivery and unwell. The roads are bad, and he wants to give it one more day.*
+
+   **Answer:** Don't give it another day. Redness spreading past your mark, a fever, or feeling ill each mean this is past managing at home, and an infection plus shivering or feeling very cold is a possible sign of sepsis, which is an emergency. Call 911, or send someone for help if the phones are down. While you wait, keep watching him for confusion, shortness of breath, a fast heart rate, extreme pain, or clammy skin, and write down what you see and when.
+
+---
+
 ## Quick Reference
 
-| Problem | Manage yourself? | Get help when |
-|---------|------------------|---------------|
-| Small cut | Yes | Won't stop bleeding, gaping, bite, infected |
-| Deep wound | Control bleeding | Always |
-| Minor burn | Yes | Face, hands, feet, genitals, joints, large, electrical, chemical |
-| Large or deep burn | Cool and cover | Always (call 911) |
-| Sprain | Yes | Can't bear weight, deformed, numb |
-| Possible fracture | Splint | As soon as possible; open fracture is an emergency |
-| Mild fever | Yes | Baby under 3 months, stiff neck, rash, confusion, more than 3 days |
-| Mild dehydration | Yes | Can't keep fluids down, confused, baby or frail adult |
-| Mild allergy | Yes | Any breathing, throat, or fainting symptoms (call 911) |
-| Chest pain | No | Always (call 911) |
-| Stroke signs | No | Always (call 911) |
-| Severe bleeding | Pressure, tourniquet | Always (call 911) |
-| Unresponsive | CPR if not breathing normally | Always (call 911) |
-| Trouble breathing | No | Always (call 911) |
+```
+MANAGE IT OR GET HELP?
+
+ALWAYS CALL 911
+- Chest pain
+- Stroke signs (BE FAST)
+- Trouble breathing
+- Unresponsive (CPR if not
+  breathing normally)
+- Severe bleeding (pressure,
+  tourniquet)
+- Large or deep burn (cool, cover)
+
+ALWAYS GET CARE
+- Deep wound: control bleeding
+- Possible fracture: splint, care
+  as soon as possible. Open
+  fracture is an emergency
+
+MANAGE YOURSELF, BUT GET HELP IF
+SMALL CUT: won't stop bleeding,
+  gaping, bite, infected
+MINOR BURN: face, hands, feet,
+  genitals, joints, large,
+  electrical, chemical
+SPRAIN: can't bear weight,
+  deformed, numb
+MILD FEVER: baby under 3 months,
+  stiff neck, rash, confusion,
+  more than 3 days
+MILD DEHYDRATION: can't keep
+  fluids down, confused, baby
+  or frail adult
+MILD ALLERGY: any breathing,
+  throat, or fainting symptoms
+  (call 911)
+
+WHEN IN DOUBT, SEEK HELP
+```
 
 ---
 
@@ -275,8 +318,10 @@ Take a first aid and CPR course from the American Red Cross, the American Heart 
 - [988 Suicide & Crisis Lifeline](https://988lifeline.org/)
 - [911.gov: Frequently Asked Questions About Calling 911](https://www.911.gov/calling-911/frequently-asked-questions/)
 
-Last reviewed: October 2026
-
 *This guide doesn't replace hands-on training or professional medical care. When emergency services or a clinician are available, use them.*
+
+---
+
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

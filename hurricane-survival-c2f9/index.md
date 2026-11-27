@@ -67,6 +67,8 @@ Leave if:
 - Your home isn't sturdy enough to withstand the expected winds
 - You live high in a high-rise building, where winds are stronger and power loss can strand you without elevators
 
+No order yet and not sure whether to leave? OfflineOwl's Stay or Go tool walks through the decision step by step. If officials order your zone out, go.
+
 ### Prepare Early (Days Out)
 
 - [ ] Build or refresh your kit: water (at least 1 gallon per person per day for several days), food, medications, first aid, flashlights, batteries, radio
@@ -151,6 +153,24 @@ From 2013 to 2023, nearly as many people in the US died from causes after a hurr
 - Photograph damage for insurance. In the US, apply for FEMA assistance if a disaster is declared.
 - Check on neighbors, especially older adults.
 
+## Practice
+
+**10-minute drill:** Find your zone and your room. First, look up your hurricane evacuation zone on your city, county or state emergency management website, or call the office, and write the zone where everyone will see it, such as on the refrigerator. Note whether your home is also in a storm surge or flood zone. Second, decide where you would go if your zone were ordered out, and trace two routes there on a map. Third, walk to the room you would shelter in if you stayed: small, interior, away from windows, on the lowest floor that won't flood. Time how long it takes to get everyone there, pets included.
+
+**What would you do?**
+
+1. *A hurricane warning is in effect and your zone has been ordered to evacuate. The forecast says the storm is "only a Category 1," and the neighbors, who rode out a Category 3 years ago, are staying.*
+
+   **Answer:** Leave, and leave early. The category measures wind only. Evacuation orders are given mostly because of water, and storm surge and flooding can kill in any category, including a tropical storm. Don't wait to see whether the storm strengthens. You often only need to go tens of miles, to friends, a hotel or a shelter outside the zones.
+
+2. *You have been in your interior room for hours. Suddenly the wind and rain stop and the sky brightens. You can see a tree down across the driveway and want to check the damage.*
+
+   **Answer:** Stay inside. If the eye is passing over, the storm is only half done: the wind will come back from the other direction and quickly return to hurricane force. Wait until officials or the weather radio say the storm has passed.
+
+3. *The power has been out for two days and the house is stifling. A neighbor offers to set up your generator just inside the open garage door, so a short cord reaches the refrigerator.*
+
+   **Answer:** No. A generator never runs in a garage, even with the door open, because carbon monoxide builds up and drifts into the house. Put it outdoors, at least 20 feet from windows, doors and vents, and run an outdoor-rated cord straight from the generator to the refrigerator. Never plug it into a wall outlet. Have a battery-powered CO alarm working, and if anyone gets a headache or feels dizzy, sick or weak, get everyone into fresh air and call 911.
+
 ## Quick Reference
 
 ```
@@ -202,6 +222,6 @@ AFTER
 
 ---
 
-Last reviewed: October 2026
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

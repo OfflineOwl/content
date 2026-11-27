@@ -149,14 +149,33 @@ Assume all floodwater contains sewage, animal waste, chemicals, fuel, and debris
 - Children shouldn't help with flood or mold cleanup. People with asthma, other lung conditions, or weakened immune systems should avoid it too.
 - Take breaks, and stay hydrated.
 
+## Practice
+
+**10-minute drill:** Find your high ground on a dry day. First, look up whether your home sits in a flood zone, and mark the nearest higher ground on a map. (If you aren't sure flooding is one of your hazards, OfflineOwl's Know Your Risks tool is a quick way to check.) Second, trace two ways to get there from home that avoid underpasses, low roads and bridges over streams. Third, walk through your home to the highest level you could wait on, and look at the attic from below without going in: does it have a way out onto the roof? If it doesn't, it is a closed attic and not part of your plan. Tell everyone in the household what you found.
+
+**What would you do?**
+
+1. *You are driving home at night in heavy rain. Ahead, water covers a dip in the road. It looks only a few inches deep, the pickup in front of you just drove through, and the detour adds 20 minutes.*
+
+   **Answer:** Turn around and take the detour. You can't tell how deep the water is or whether the road underneath is still there, least of all at night. A foot of rushing water can carry away most cars, and a truck making it through says nothing about your car. More than half of flood drownings happen in vehicles driven into floodwater.
+
+2. *Water has filled the ground floor and is coming up the stairs. Everyone is on the second floor. Someone suggests climbing into the attic to get farther above it. The attic has no window and no way onto the roof.*
+
+   **Answer:** Stay out of the attic. A closed attic is a trap if the water keeps rising. Stay on the highest floor, call 911 (or your local emergency number) with your exact location and stay on the line until someone answers, and signal from a window with a bright cloth or a flashlight. Go onto the roof only if the water keeps rising and there is no other option. Don't try to swim for it.
+
+3. *Your car stalls in water flowing fast across the road and is pushed against a guardrail. The bank is about 30 feet away, and your passenger wants to get out and wade to it.*
+
+   **Answer:** Stay in the car. Six inches of moving water can knock an adult down, and this water is moving a car. Call 911. If water starts rising inside the car, climb onto the roof and call or signal for help from there. Leaving the car on foot is for water that isn't moving fast, when you can get out safely and reach higher ground.
+
 ## Quick Reference
 
 ```
 TURN AROUND, DON'T DROWN
 
-6 inches of moving water = knocks you down
-12 inches of rushing water = carries away most cars
-2 feet of rushing water = carries away SUVs, trucks
+MOVING WATER
+- 6 inches: knocks you down
+- 12 inches: carries away most cars
+- 2 feet: carries away SUVs, trucks
 
 DURING A FLOOD
 - Get to higher ground now
@@ -173,7 +192,8 @@ AFTER A FLOOD
 - Cover wounds; wash with soap and water
 - Don't enter if power may be on
 - Don't drink tap water until cleared
-- Generators outside, 20+ ft from openings
+- Generators outside, 20+ ft from
+  doors, windows, vents
 - Dry out within 24-48 hours (mold)
 ```
 
@@ -192,6 +212,6 @@ AFTER A FLOOD
 
 ---
 
-Last reviewed: October 2026
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

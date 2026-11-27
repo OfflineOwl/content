@@ -1,157 +1,206 @@
 # Message Relay When Phones Are Down
 
-> **Getting the Word Out** - When normal phone service fails, alternative methods can get critical messages through to family and emergency services.
+> **Text, don't call.** In the first hours of a disaster the phone network is usually jammed, not dead. A short text, an out-of-area relay person and a battery plan get your message through when voice calls will not.
 
-## Understanding Phone Failures
+## Do this now
 
-### What Can Fail
+1. **Life in danger? Call 911** (or your local emergency number) and keep trying. See the next section if the call will not connect.
+2. **Everyone else gets a text, not a call.** Send one short message: who you are, where you are, how you are, what you will do next. "Sam. At work, not hurt. Staying here. Next text 3 pm."
+3. **Text your out-of-area contact** and let them pass the news around. One message out, many people informed.
+4. **Stop redialing.** If a call fails, wait at least 10 seconds before trying again. Rapid redials make the jam worse for everyone, including you.
+5. **Protect the battery.** Low power mode on, screen dim, no video, no scrolling. Decide when you will next check the phone and leave it alone until then.
+6. **Leave a paper note** where your family will look (inside the front door, at your meeting place) before you move anywhere.
 
-- Cell towers damaged
-- Networks congested
-- Power out to towers
-- Internet backbone down
-- Local switching stations
+## Get emergency help if
 
-### What Might Still Work
+Call 911 if someone is seriously hurt, trapped, or in immediate danger. When the network is failing:
 
-- Text often works when calls don't
-- WiFi calling (if internet works)
-- Landlines (sometimes)
-- Satellite phones
-- Ham radio
+- **Call first.** A voice call gives the 911 center the most information. US rules require carriers to put through a 911 call from any compatible mobile phone, whether or not it has an active service plan.
+- **Call will not connect? Text 911.** Put the location and the emergency in the first message. Text-to-911 only works where the local 911 center accepts it. If it does not, you get an automatic bounce-back message telling you to reach help another way. Do not wait for a reply that is not coming.
+- **No signal at all, and your phone has satellite SOS?** Go outside, into the open, and follow the prompts (see below).
+- **Nothing works?** Send someone to the nearest fire station, hospital or police station, or use the signals in the Signal Flags, Whistles & Visual Signals guide.
+- **Deaf, hard of hearing or speech disabled:** if text-to-911 is not available, use a TTY or a relay service.
 
-## Text vs. Call
+Outside the US, 112 reaches emergency services across the European Union and from mobile phones in many other countries.
 
-### Why Texts Work Better
+## Why texts get through when calls fail
 
-- Less bandwidth required
-- Queues and retries automatically
-- Goes through gaps in service
-- Doesn't require constant connection
+A voice call needs an open channel for as long as you talk. When everyone in a city calls at once, there are not enough channels and you hear a busy tone or nothing. A text is a tiny packet of data. FEMA's guidance says it requires far less bandwidth than a call, and that texts may be saved and sent automatically once capacity frees up.
 
-### Best Practices
+That gives you four rules:
 
-- Try text before calling
-- Keep messages short
-- Include essential info only
-- Don't send repeatedly (clogs system)
+- **Send once and wait.** A text stuck on "sending" is in the queue. Sending it five more times adds five more messages to the jam.
+- **No photos, video or voice messages.** Each one is vastly larger than a line of text.
+- **Keep any call short** and to vital information only.
+- **Try again off-peak.** The Red Cross advises calling during off-peak hours for the best chance of getting through.
 
-## Out-of-Area Contact System
+## The out-of-area contact
 
-### How It Works
+Pick one relative or friend who lives far enough away that the same disaster will not hit them. FEMA says outside your community or state; Washington State's emergency agency says at least 100 miles.
 
-1. Designate someone 100+ miles away
-2. Everyone contacts that person
-3. They relay status between family members
-4. Works when local networks are down
+**Why it works:** local lines jam because everyone nearby is calling everyone nearby. FEMA notes it may be easier to make a long-distance call than to call across town. And one hub means each person sends one message instead of chasing five people.
 
-### Why It Works
+**How to run it:**
 
-- Long distance often works when local doesn't
-- Different infrastructure
-- Not affected by same emergency
-- Central coordination point
+1. Each family member texts the contact: name, place, condition, plan, time of next message.
+2. The contact keeps a simple log and relays it: "Dad is at work, fine, staying. Maya is at school, fine, school is holding students."
+3. If the contact cannot be reached, everyone falls back to the agreed meeting places. See the Emergency Communications Plan guide.
 
-### Setting Up OAC
+Choose someone who answers their phone, can text, and will write things down. Give them your meeting places and the numbers for schools and workplaces. Have a second contact in a different region.
 
-Choose someone who:
-- Lives far away
-- Is reliable
-- Understands the system
-- Has your emergency info
-- Will be available
+**A relay does not have to be family.** A neighbor whose phone uses a different carrier, a coworker with a working landline, or a licensed ham radio operator can pass a short written message along. Write it down so it survives the hand-off.
 
-## Alternative Message Methods
+## Read the signal
 
-### Internet-Based
+What your phone shows tells you which problem you have.
 
-When internet works but phones don't:
-- Email
-- Social media messages
-- Messaging apps (WhatsApp, Signal)
-- WiFi calling features
+| What you see | What is probably happening | Best move |
+|--------------|---------------------------|-----------|
+| Signal bars, but calls fail or drop | Network is jammed | Text. Wait 10 seconds or more between call attempts. |
+| Text stuck on "sending" | Jammed or weak signal | Leave it. It can send on its own when capacity frees up. |
+| No bars, but Wi-Fi works somewhere | Cell sites are down, internet is not | Wi-Fi calling, messaging apps, email, social media |
+| No bars, no Wi-Fi | Local networks are down or without power | Satellite texting if you have it. Otherwise save the battery and go to notes and meeting places. |
+| Landline is silent | Internet-based home phone lost power | It needs a backup battery. A corded phone on a traditional copper line may still work. |
 
-### Radio-Based
+Do not leave a safe place just to hunt for a signal.
 
-- Ham radio (requires license)
-- GMRS/FRS radios (short range)
-- CB radio (limited)
-- Emergency radio services
+## Satellite texting on ordinary phones
 
-### Physical Methods
+Some recent phones can reach a satellite when there is no cell or Wi-Fi coverage. It is slow, text-only and needs open sky, but it works when every tower is down. What the makers and carriers themselves document:
 
-- Leave written notes
-- Message boards at meeting points
-- Runners between locations
-- Visual signals
+- **iPhone 14 or later: Emergency SOS via satellite.** Apple says to try calling the emergency number first; if the call will not connect, you can text emergency services by satellite. You must be outside with a clear view of the sky and horizon. It is available in the US, Canada, the UK and a growing list of other countries, and is free for two years after the phone is activated.
+- **iPhone 14 or later with iOS 18: Messages via satellite** (US, Canada, Mexico, Japan). It sends texts, emoji and Tapbacks, not photos, audio or group messages. Apple says a message might take 30 seconds in ideal conditions, that iMessage must be switched on before you leave coverage, and that this feature should not be used for emergencies. Use Emergency SOS for those.
+- **Google Pixel 9 and later (except Pixel 9a): Satellite SOS.** With no mobile or Wi-Fi network, the option appears when you dial the emergency number. You answer a short questionnaire and point the phone as the screen directs. Google warns that trees, terrain and buildings can block the connection. Google Messages must be your default messaging app.
+- **Carrier satellite service.** T-Mobile's T-Satellite, for example, offers texting on compatible phones "in most outdoor areas" where you can see the sky, on some plans or as a paid add-on, and warns that service, including text to 911, may be delayed, limited or unavailable.
 
-## Emergency Message Services
+Models, countries and prices change. Check your phone maker's and carrier's own support pages, and **run the built-in demo now** so the first time is not the real one. Both Apple and Google build a practice demo into the phone.
 
-### Red Cross Safe and Well
+## Make the battery last
 
-- Register your status online or by phone
-- Family can search for you
-- redcross.org/safeandwell
+- **Low power mode, dim screen, close apps.** No video or games: they drain the battery and load the network.
+- **No signal bars? The phone burns power searching.** FCC and FEMA tips say turning it off stops that drain. Airplane mode does the same and lets you keep the flashlight and clock.
+- **But a phone that is off or in airplane mode cannot receive Wireless Emergency Alerts or messages.** So set check-in times (say, the first five minutes of every hour) and switch it on then. Keep a battery radio for alerts in between. See the Radio Use for Emergency Updates guide.
+- **Charge from what you have:** a power bank, a solar charger, a laptop's USB port, or the car. Run the car only outdoors, never in a closed garage, because of carbon monoxide.
+- **One phone on, the rest off.** A household that runs one phone at a time stretches its total battery much further.
 
-### FEMA Apps
+The Battery Management guide has more detail.
 
-- Report your status
-- Find family
-- Disaster information
+## Alerts still reach you
 
-### Social Media
+Wireless Emergency Alerts (WEA) are sent to every capable phone in a targeted area. Ready.gov says they are not affected by network congestion, need no sign-up and cost nothing. They arrive with a distinct sound and vibration, repeated twice. Check your phone's notification settings for "Emergency Alerts" or "Government Alerts" and leave them on. Children's phones receive them too, so explain what the sound means.
 
-- Safety check features (Facebook)
-- Public posts (if appropriate)
-- Last resort (privacy concerns)
+Other one-way channels: text SHELTER and a ZIP code to 43362 to find open shelters (US), and the FEMA app carries National Weather Service alerts for up to five locations.
 
-## Message Relay Protocol
+## When nothing electronic works
 
-### What to Include
+- **Leave notes.** Date, time, who you are, where you are going, when you will check back. Put one inside the front door and one at each meeting place, in a plastic bag.
+- **Go to the meeting places** at the agreed times.
+- **Hand a written message to someone traveling out of the area** and ask them to text or call your out-of-area contact when they get a signal.
+- **Use the neighborhood.** See the Community Communication guide for message boards, radios and check-in rounds, and the Family Signaling guide for door signs and whistle signals.
 
-Essential information:
-- Who you are
-- Your location (general)
-- Your status
-- Who you're with
-- What you need
-- Where you're going
+## Finding someone you cannot reach
 
-### Example Message
+Be persistent and try more than one route. The American Red Cross suggests: text, then call off-peak, email, check their social media, call relatives and the places where they are known (employer, school, place of worship, neighbors), and even send a letter, since mail may be forwarded.
 
-"John Smith family, all 4 safe. At home, no power. Staying put. Will check in daily. Need nothing now. Contact Mom."
+- **Social media safety check-ins** let one post tell everyone you are safe.
+- **Red Cross reunification help** is available through your local chapter or redcross.org/find, mainly for people who are older, have a disability or medical condition, or were separated from members of their own household by the disaster. The Red Cross no longer points people to its old "Safe and Well" website.
+- **Loved ones outside the US:** the Red Cross Restoring Family Links helpline is 1-844-782-9441.
 
-### Keep It Brief
+## People who need extra thought
 
-Every word counts when systems are strained.
+- **Children:** a paper card with the out-of-area contact in every backpack. Have them practice sending the check-in text. A child without a phone should know to ask a teacher or another responsible adult to send it.
+- **Older relatives who do not text:** teach them before the emergency, including your out-of-area contact.
+- **People who rely on relay services or captioned phones:** these depend on internet or mobile service. FEMA suggests keeping a backup that works on an analog line where one exists.
+- **Drivers:** pull over. Never text or read texts while driving.
+
+## Set this up today
+
+- [ ] Out-of-area contact chosen, briefed, and saved in every phone
+- [ ] Group text created for the household
+- [ ] Paper contact card in every wallet and backpack
+- [ ] Emergency alerts switched on in every phone's settings
+- [ ] Wi-Fi calling switched on, if your carrier offers it
+- [ ] Satellite SOS demo completed, if your phone has the feature
+- [ ] Power bank charged; car charger in the car
+- [ ] Meeting places and note locations agreed
+
+## Practice
+
+**10-minute drill:** Run a relay test at dinner. Everyone puts their phone in low power mode and sends the out-of-area contact one text: "TEST. Name. Where I am. I'm OK." The contact replies to the group with everyone's status. Time it from first text to full roll call. Then each person finds two things on their own phone: the emergency alerts setting and, if the phone has one, the satellite SOS demo. Never test by contacting 911.
+
+**What would you do?**
+
+1. *A strong earthquake has just stopped. You are unhurt at work. You call your partner and get a fast busy tone. You hit redial. And again. Six tries, nothing.*
+
+   **Answer:** Stop dialing. The network is jammed and every redial adds to it. Send one text with your name, place, condition and plan, then text the out-of-area contact the same thing. Put the phone down for a while. A text can deliver itself when capacity frees up; a call cannot.
+
+2. *Second evening of a regional blackout. Your phone shows no bars and 18 percent battery. You have been checking it every few minutes in case service comes back.*
+
+   **Answer:** Every check, and every minute it spends hunting for a tower, is draining it. Switch it off or to airplane mode and turn it on only at the times your family agreed. Because a phone that is off cannot receive emergency alerts, put the battery radio on for news. If the car is outdoors, a short charge there is fine. Not in the garage.
+
+3. *Your car has slid off a forest road into a ravine. Your passenger has a badly injured leg. No signal. Your phone supports satellite features. You are under dense trees, and you start typing a satellite message to your sister to ask her to call for help.*
+
+   **Answer:** Go straight to emergency services, not through your sister. Dial 911 first: the phone will offer the satellite emergency option if there is no network. The ordinary satellite messaging feature is not meant for emergencies. You will need open sky, so get to the nearest clearing you can reach safely, follow the on-screen pointing instructions, and stay put once the message is through. If you must leave your passenger to reach open sky, tell them, keep them warm, and come back.
 
 ## Quick Reference
 
 ```
-COMMUNICATION PRIORITY
+WHEN PHONES ARE FAILING
 
-1. Text (works best)
-2. Out-of-area contact
-3. Internet messaging
-4. Social media
-5. Physical message
+LIFE IN DANGER
+1. Call 911. Keep trying.
+2. Won't connect? TEXT 911
+   (location first). Bounce-back
+   = not available here.
+3. No signal: satellite SOS,
+   open sky, follow prompts.
 
-OUT-OF-AREA CONTACT:
-- Someone 100+ miles away
-- Central message hub
-- Everyone contacts them
-- They relay information
+EVERYONE ELSE
+- TEXT, don't call
+- Who / where / how / next
+- Send once. Wait.
+- Failed call: wait 10 sec+
+- No photos or video
 
-MESSAGE CONTENT:
-- Who you are
-- Where you are
-- Your status
-- Who's with you
-- What you need
-- Where you're going
+OUT-OF-AREA CONTACT
+Name: __________________
+Phone: _________________
+Backup: ________________
+
+BATTERY
+- Low power mode, dim screen
+- No bars = off or airplane mode
+- On at: ____ past each hour
+- Off = no alerts: use radio
+- Car charging: outdoors only
+
+NOTHING WORKS
+- Note inside front door
+- Meeting place at agreed times
+- Message with a traveler
+
+Shelters (US): text SHELTER +
+ZIP to 43362
 ```
+
+## Sources
+
+- [FEMA: Create Your Family Emergency Communication Plan, P-1094 (copy hosted by the National Weather Service)](https://www.weather.gov/media/ilx/Hydro/FSAW/family-emergency-communication-plan.pdf)
+- [FCC and FEMA: Emergency Communications Tips](https://www.fcc.gov/emergency)
+- [Ready.gov: Get Tech Ready](https://www.ready.gov/get-tech-ready)
+- [Ready.gov: Emergency Alerts](https://www.ready.gov/alerts)
+- [FCC: Text to 911, What You Need to Know](https://www.fcc.gov/consumers/guides/what-you-need-know-about-text-911)
+- [eCFR: 47 CFR 9.10, 911 service requirements for wireless carriers](https://www.ecfr.gov/current/title-47/section-9.10)
+- [Apple Support: Use Emergency SOS via satellite on your iPhone](https://support.apple.com/en-us/101573)
+- [Apple Support: Use Messages via satellite on your iPhone](https://support.apple.com/en-us/120930)
+- [Google Pixel Help: Use Satellite SOS](https://support.google.com/pixelphone/answer/15254448?hl=en)
+- [T-Mobile: T-Satellite](https://www.t-mobile.com/coverage/satellite-phone-service)
+- [American Red Cross: Contact and Locate Loved Ones](https://www.redcross.org/get-help/disaster-relief-and-recovery-services/contact-and-locate-loved-ones.html)
+- [Washington Emergency Management Division: Disaster Preparedness Guide (out-of-area contact)](https://mil.wa.gov/asset/5cfaec1448a37)
+- [European Commission: 112, the EU emergency number](https://digital-strategy.ec.europa.eu/en/policies/112)
 
 ---
 
-*Last updated: January 2026*
+Last reviewed: November 2026
+
 *License: CC-BY-SA 4.0*

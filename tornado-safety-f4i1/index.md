@@ -156,6 +156,24 @@ Keep these in or near your shelter spot:
 - [ ] Pet carrier and leash
 - [ ] Copies of ID and insurance documents
 
+## Practice
+
+**10-minute drill:** Walk to your shelter spot and time it. Have someone call "Tornado warning!" when nobody expects it, and start a timer. Everyone goes straight to the shelter spot, bringing pets, then gets down, face down, and covers their head and neck. Stop the timer when the last person is in position. Then look at what slowed you down and fix it: a cluttered closet, a pet carrier in the garage, shoes and helmets upstairs. Check the kit while you are there. Run it again at night, starting from bed. If you live in a mobile home, the drill is the trip to your sturdy building or community shelter: time it door to door.
+
+**What would you do?**
+
+1. *It is 9 p.m. and your phone sounds a Tornado Warning for your area. You step onto the porch: heavy rain, no siren, nothing to see.*
+
+   **Answer:** Go to your shelter spot now. Many tornadoes are wrapped in rain or come at night and can't be seen, and sirens are meant for people outdoors, so hearing nothing means nothing. The warning is the signal. Get low, cover your head and neck, and stay there until the warning expires.
+
+2. *You live in a mobile home with tie-downs. A Tornado Watch is issued for this evening. The sky is quiet, dinner is on, and the community shelter is a ten-minute drive away.*
+
+   **Answer:** Go now, while it is calm. Even a tied-down mobile home can't withstand tornado winds, and the plan is to be in a sturdy building before warnings are issued and the storms arrive. A warning may come only minutes before the tornado, and you would be spending those minutes on the road.
+
+3. *You are driving on the highway when a Tornado Warning comes through. Ahead, cars have stopped under an overpass and people are climbing up under the bridge.*
+
+   **Answer:** Don't join them. An overpass gives no extra protection, has proved deadly, and the stopped cars trap everyone behind them. Drive to the closest sturdy building if you can safely reach one. If debris or extreme wind catches you first, pull over out of the traffic lanes, keep your seat belt on, and get your head down below the windows, covered with your arms and a coat. Or, if you can safely reach a spot noticeably lower than the roadway, lie flat there and cover your head.
+
 ## Quick Reference
 
 ```
@@ -165,8 +183,10 @@ Don't wait for a siren or to see it.
 BEST SHELTER
 1. Basement, storm cellar, or safe room
 2. Small interior room, lowest floor,
-   no windows (bathroom, closet, hallway)
-3. Avoid gyms, auditoriums, big open rooms
+   no windows (bathroom, closet,
+   hallway)
+3. Avoid gyms, auditoriums, big open
+   rooms
 
 PROTECT YOURSELF
 - Get down, face down
@@ -189,8 +209,10 @@ NEVER under an overpass.
 AFTER:
 Stay sheltered until warning expires.
 Downed lines = live. Gas smell = leave.
-Text, don't call. Flashlights, not candles.
-Generators outside, 20+ ft from openings.
+Text, don't call.
+Flashlights, not candles.
+Generators outside, 20+ ft from
+doors, windows, vents.
 ```
 
 ## Sources
@@ -207,6 +229,6 @@ Generators outside, 20+ ft from openings.
 
 ---
 
-Last reviewed: October 2026
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

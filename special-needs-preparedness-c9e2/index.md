@@ -1,397 +1,276 @@
 # Special Needs Preparedness
 
-> **Everyone Deserves a Plan** - Standard emergency plans assume able-bodied adults. This guide covers how to prepare for the unique needs of elderly family members, infants, people with disabilities, and those with special dietary or medical requirements.
+> **Standard emergency plans assume everyone can hear the alarm, walk down the stairs, and go three days without a wall socket.** More than 1 in 4 US adults has some type of disability, and nearly every household has someone that plan fails: a baby, a grandparent, a person who depends on a daily medicine or a machine. This guide builds the plan around the person.
 
-## Why Special Needs Planning Is Different
+## Start here
 
-Standard emergency checklists often overlook:
-- Medications that require refrigeration or resupply
-- Mobility limitations that affect evacuation
-- Communication barriers (hearing, vision, cognitive)
-- Power-dependent medical equipment
-- Infant and child-specific supply needs
-- Dietary restrictions that limit food options
-- Service animal considerations
+1. **Find the first thing that fails.** For each person, ask: if the power, the pharmacy, the elevator, or the caregiver disappeared tonight, what goes wrong first, and how soon? That answer is your priority.
+2. **Build a support network.** Pick people nearby who agree to check on you and help in a disaster. Give at least one of them a spare key, show them where supplies are, and teach them to run the equipment and give the medicines.
+3. **Write a one-page care sheet** (see below) and keep copies in the go-bag, with each helper, and on your phone.
+4. **Back up power and cold storage.** Tell the power company, get a spare battery, and keep a cooler and ice packs with the kit.
+5. **Decide where you would go and how you would get there,** including accessible transport. Plan to leave early.
+6. **Ask your local emergency management office** about voluntary registries for people who will need help, and ask your utility about its priority restoration list.
 
-**FEMA estimates that over 25% of the U.S. population has a disability or access need that affects emergency planning.** If you care for someone with special needs, planning ahead is not optional - it is essential.
+## Get emergency help if
 
----
+Call 911 (or your local emergency number) if:
 
-## Preparing for Elderly Family Members
+- **Life-sustaining equipment is failing** (ventilator, oxygen) and the backup will not last
+- **Someone cannot be moved out of danger** such as fire, smoke, or rising water. Tell the dispatcher exactly where the person is in the building and what help they need to move.
+- **Anyone has trouble breathing, chest pain, signs of a stroke, a seizure longer than 5 minutes, or cannot be woken**
+- **A person with dementia is missing.** Search the immediate area first. If they are not found within 15 minutes, call 911 and say that a vulnerable adult with dementia is missing.
+- **A baby under 3 months has a temperature of 100.4°F (38°C) or higher,** or any baby is very sleepy, hard to wake, or has far fewer wet diapers than usual. Call the pediatrician right away, or go to an emergency room if you cannot reach one.
 
-### Medication Management
+Do not wait to see whether a situation improves when the person involved cannot get themselves out. Call early.
 
-**Build a 30-day emergency medication supply:**
-- Talk to your doctor about prescribing a 90-day supply to build a buffer
-- Rotate stock so medications do not expire
-- Keep a written list of all medications, dosages, and schedules
-- Include the prescribing doctor's name, phone number, and pharmacy information
-- Store copies of prescriptions separately from medications
+## The one-page care sheet
 
-**Medication storage checklist:**
-- [ ] 30-day supply of all prescription medications
-- [ ] Over-the-counter medications (pain relief, antacids, laxatives)
-- [ ] Medications requiring refrigeration: plan for ice packs and an insulated bag
-- [ ] Written medication list with dosages and schedule
-- [ ] Copies of prescriptions
-- [ ] Pill organizer for daily management
-- [ ] Measuring devices (syringes, cups) if needed
+If you were hurt or separated, a stranger would have to take over using only this page.
 
-**Temperature-sensitive medications:**
-- Insulin, some heart medications, and certain antibiotics require refrigeration
-- A quality cooler with ice packs can maintain safe temperatures for 24-48 hours
-- Freeze water bottles to use as long-lasting ice packs
-- Know which medications become dangerous if they get too warm or too cold
+- [ ] Name, date of birth, recent photo
+- [ ] Conditions, allergies, and what an emergency looks like for this person
+- [ ] Every medicine: name, dose, time, and how it is given
+- [ ] Equipment: make, model, serial number, settings, and supplier's phone number
+- [ ] How the person communicates, and what yes and no look like
+- [ ] How to move or transfer them safely, in their own words if possible
+- [ ] Diet, swallowing problems, and feeding method
+- [ ] What upsets them and what calms them
+- [ ] Daily routine: waking, meals, medicines, sleep
+- [ ] Doctors, pharmacy, insurance, and Medicare or Medicaid numbers
+- [ ] Emergency contacts, including one outside your area
+- [ ] Copies of legal papers such as power of attorney or guardianship
 
-### Mobility Equipment
+## Power-dependent equipment
 
-**Prepare backup and alternatives:**
-- [ ] Manual wheelchair as backup for powered chairs
-- [ ] Extra batteries or charging solution for powered mobility devices
-- [ ] Portable ramps for navigating debris or uneven ground
-- [ ] Walking aids (cane, walker) even if not regularly used
-- [ ] Sturdy shoes or boots that support safe walking
-- [ ] Knee or ankle braces if applicable
+This covers oxygen concentrators, ventilators, CPAP and BiPAP, suction and feeding pumps, nebulizers, home dialysis, powered wheelchairs, and stair lifts.
 
-**Wheelchair and walker maintenance:**
-- Keep tires inflated and check regularly
-- Store a basic repair kit (tire patch, pump, Allen wrenches)
-- Know the weight capacity and limitations
-- Practice navigating rough terrain if able
+**Ask the manufacturer or supplier now** (questions from the FDA's home-device booklet), and write the answers on the care sheet:
 
-### Dietary Needs
+- Does the device have a backup system? How long does it run?
+- Can it run on another power source, such as batteries or a car adapter?
+- How long can the person safely be without it?
+- What should we do if power fails in the middle of a treatment?
+- Can we change the batteries ourselves? What type, and how many?
+- Do we have at least 3 days of supplies for it?
 
-Many elderly individuals have dietary restrictions or requirements:
-- **Low-sodium diets** - Stock low-sodium canned goods and unsalted crackers
-- **Diabetic diets** - Ensure balanced options with controlled carbohydrates
-- **Soft food diets** - Stock pureed soups, applesauce, yogurt (shelf-stable), oatmeal
-- **High-protein needs** - Canned fish, peanut butter, protein drinks
-- **Denture wearers** - All emergency food must be manageable without natural teeth
-- **Hydration** - Elderly individuals are more susceptible to dehydration; stock electrolyte solutions
+**Then:**
 
-### Cognitive Considerations
+- **Tell the power company** that someone depends on electrical medical equipment and ask to be listed for priority restoration. Tell the fire department too. Being on a list is not a promise, so plan as if the power will stay off.
+- **Keep spare batteries charged** and buy an extra one for any battery-powered device.
+- **Oxygen:** keep a backup supply that needs no electricity and know how to switch to it. Never turn the flow rate down to stretch a battery or tank. Keep flames and heat sources at least 5 feet (1.5 m) away, which means no candles in that room.
+- **Have a place to go that has power,** and leave while the backup still has plenty of time on it.
+- **After an outage,** check the device and cords for damage and check the settings before relying on it again.
 
-For individuals with dementia or Alzheimer's:
-- Keep routines as normal as possible during emergencies
-- Maintain familiar comfort items (photos, blankets, a favorite cup)
-- Use a wristband or necklace with identification and medical information
-- Never leave the person unattended during evacuation
-- Prepare a one-page profile with their photo, name, medical conditions, and contact information in case you become separated
-- Familiar music or recordings can reduce anxiety
+See the Managing Chronic Conditions guide for insulin, dialysis, and oxygen in detail, and the Generator Safety guide before running any generator.
 
----
+## Medicines
 
-## Infant and Baby Emergency Planning
+- Keep at least several days of every prescription on hand, and ask the doctor or pharmacist how to build a larger emergency supply.
+- Keep the written list with doses, times, and allergies in the kit.
+- For medicines that must stay cold, keep a cooler and ice packs ready.
+- A filled weekly pill organizer makes it possible for someone else to take over.
 
-### Essential Infant Supply Kit
+## Planning by need
 
-- [ ] Formula (ready-to-feed is safest - no water mixing needed)
-- [ ] Bottles and nipples (at least 4 sets)
-- [ ] Diapers (minimum 7-day supply: approximately 70 diapers for newborns)
-- [ ] Wipes (unscented preferred)
-- [ ] Diaper rash cream
-- [ ] Changes of clothing in current size AND the next size up
-- [ ] Blankets (at least 2)
-- [ ] Pacifiers (if used)
-- [ ] Infant medications (fever reducer, gas drops)
-- [ ] Baby carrier or sling (keeps hands free during evacuation)
-- [ ] Portable crib, playpen, or safe sleep surface
+### Mobility
 
-### Formula and Feeding
+- Keep a lightweight manual wheelchair as a backup to a power chair if you can.
+- Keep an extra battery, a tire patch kit or sealant, a spare inner tube, and a portable air pump.
+- Keep a spare cane or walker, and keep the one you use beside the bed.
+- Show helpers how to fold, lift, and operate the chair, and how you want to be moved. The person being moved gives the instructions.
+- If you live above the ground floor, an elevator will not work in a fire or outage. Arrange now with neighbors or building management for who will help you down, and tell them where your backup chair is kept.
+- Store the go-bag where it can be reached from a seated position, near the exit.
 
-**If you are formula feeding:**
-- Stock ready-to-feed formula (does not require clean water or mixing)
-- Powdered formula is lighter but requires clean water and precise measurement
-- An opened container of powdered formula should be used within 30 days
-- Prepared formula must be used within 2 hours at room temperature
-- If clean water is uncertain, boil water for 1 minute, cool to body temperature, then mix
+### Deaf or hard of hearing
 
-**If you are breastfeeding:**
-- Breastfeeding is the safest option during emergencies (no water or equipment needed)
-- Stress can temporarily reduce supply - stay hydrated and try to rest
-- Hand expression is a critical skill if separated from a pump
-- Store a small manual breast pump as backup
-- If you supplement, keep formula on hand as well
+- Use a weather radio with a text display and a flashing alert, and turn on emergency alerts on your phone.
+- **Smoke alarms:** strobe-light alarms warn you when awake. When you are asleep, a pillow or bed shaker triggered by the alarm is what wakes you. For people who are hard of hearing, an alert device with a loud, low-pitched sound also works.
+- Keep extra hearing-aid batteries or a charger in the kit, plus pen and paper.
+- Keep a battery lantern so you can still sign or lip-read when the lights are out.
 
-**Starting solid foods (6+ months):**
-- Stock shelf-stable baby food pouches or jars
-- Mashed banana, avocado, and cooked sweet potato travel well
-- Infant cereal (just add water)
+### Blind or low vision
 
-### Clothing and Sizing
+- Label supplies in Braille or large print.
+- Keep a list of your supplies and plan in a form you can use without sight: audio, Braille, or a file on a flash drive.
+- Keep a spare cane and spare glasses in the kit.
+- Walk the route out of the building, and to your meeting place, until you can do it by touch.
 
-Babies grow fast. Rotate your emergency kit every 2-3 months to account for growth:
-- **Current size** - 3-4 full outfits
-- **Next size up** - 2-3 full outfits
-- Include hats, socks, and layering options for cold weather
-- One warm sleeper or bunting for cold conditions
-- Rain protection (plastic poncho or bag in emergencies)
+### Speech and communication
 
-### Safe Sleep in Emergencies
+- Plan how you will evacuate with your communication device, and write down its model and where it came from.
+- Keep laminated cards with key phrases or pictures for when the device is flat or lost: "I need help," "I am in pain," "I need my medicine," "I need water," plus yes and no.
+- Pack a spare charger.
 
-- The safest sleep position is **on the back, on a firm flat surface**
-- Avoid co-sleeping in stressful or exhausted conditions (higher SIDS risk)
-- A portable playpen, Pack 'n Play, or even a firm pad on the floor in a box is safer than a soft surface
-- Keep blankets, pillows, and stuffed animals away from sleeping infants
-- Dress in layers rather than using loose blankets
+### Intellectual and developmental disabilities, autism, sensory needs
 
-### Diapering Without Running Water
+- Shelters are loud, bright, and crowded. Pack noise-canceling headphones and familiar comfort items and snacks.
+- Pack a sheet and twine, or a small pop-up tent, to make a private space.
+- Keep phones and tablets charged and loaded with favorite videos or activities, and pack spare chargers.
+- Practice the plan in small steps, more than once. A drill that has been rehearsed is far less frightening than one that is new.
 
-- Disposable diapers are more practical in emergencies (no laundry needed)
-- Stock diaper bags for disposal and sanitation
-- Baby wipes can substitute for bathing temporarily
-- If using cloth diapers: bring a wet bag system and plan for hand washing
-- Diaper rash cream is essential - rashes worsen quickly without proper hygiene
+### Dementia
 
----
+- Do not leave the person alone. New surroundings increase confusion and wandering.
+- Use an ID bracelet and put name labels in clothing. Keep a recent photo with you.
+- Pack a favorite item, easy-to-change clothes, shoes with Velcro, and incontinence supplies if needed.
+- In a shelter, choose a quiet corner away from the exits.
+- When the person is agitated, check physical needs first (heat, thirst, pain, a full bladder). Then name the feeling and reassure. Stay calm yourself: they read your mood.
+- Tell shelter or hotel staff about the diagnosis.
 
-## Disability-Specific Planning
+### Older adults
 
-### Power-Dependent Medical Equipment
+- Check which of the sections above apply: many older adults have several needs at once.
+- Ask clinics that provide regular treatment, such as dialysis or infusions, for their emergency plan, and find a backup provider.
+- Keep copies of Medicare, Medicaid, and insurance cards.
+- Switch benefit payments to direct deposit or a Direct Express card so a disrupted mail service does not cut off income. In the US, call 800-333-1795.
+- Stock food that suits dentures, swallowing problems, or a low-salt or diabetic diet. See the No-Cook Meal Planning guide.
 
-Many people rely on equipment that requires electricity:
-- CPAP/BiPAP machines
-- Oxygen concentrators
-- Electric wheelchairs and scooters
-- Ventilators
-- Feeding pumps
-- Suction machines
-- Home dialysis equipment
-- Nebulizers
+### Babies
 
-**Power backup strategies:**
-- [ ] Battery backup (UPS) rated for your equipment's power draw
-- [ ] Extra batteries specific to your medical device
-- [ ] Car adapter/inverter to charge from a vehicle
-- [ ] Portable solar panel and battery bank for smaller devices
-- [ ] Generator (with fuel stored safely) for critical equipment
-- [ ] Register with your utility company as a medical-priority customer
-- [ ] Contact your local emergency management office to be on their special needs registry
+- **Feeding:** breastfeeding is the safest way to feed a baby in an emergency. If you use formula, store ready-to-feed formula, which needs no water. Never water formula down and never make your own. See the Emergency Nutrition for Children guide.
+- **Safe sleep away from home:** pack a portable crib or bassinet and a fitted sheet. Put the baby on their back, on a firm, flat surface made for babies, in your room but not in your bed. Keep pillows, blankets, and soft toys out of the sleep space. If you have no crib, ask shelter staff: organizations such as the Red Cross may be able to supply one.
+- **Warmth:** dress the baby in layers. Do not cover the head or let the baby overheat. A sweaty baby or a hot chest means too many layers.
+- **Diapers:** count how many you use in a day and store that number for each day you are planning for, plus wipes, rash cream, and bags for disposal. Babies grow fast, so check sizes every two to three months and pack clothes one size up.
+- **Carrying:** a sling or carrier keeps your hands free in an evacuation.
 
-**CPAP users specifically:**
-- A battery backup designed for CPAP can run the device for 1-3 nights
-- Turn off heated humidifier to conserve battery
-- Know your device's wattage requirements for selecting a battery
-- Some CPAP devices have DC power adapters for car batteries
+If someone in the household is pregnant, see the Emergency Childbirth guide.
 
-### Hearing Impairments
+## Service animals
 
-- **Visual alert systems** - Ensure smoke detectors have strobe lights and bed-shaker alarms
-- **Written communication** - Keep paper and markers in your emergency kit
-- **Text-based emergency alerts** - Enable wireless emergency alerts on your phone
-- **Hearing aid batteries** - Stock a 6-month supply; they are small and inexpensive
-- **Backup hearing aids** - Keep an older pair if available
-- **Cochlear implant users** - Extra batteries and a backup processor if possible
-- **Communication card** - Carry a card that says "I am deaf/hard of hearing. Please write or use gestures."
+Under the US Americans with Disabilities Act (ADA), a service animal is a dog trained to do specific work or tasks for a person with a disability.
 
-### Vision Impairments
+- **Emergency shelters generally must admit service animals,** even with a "no pets" rule.
+- **Staff may ask only two questions:** is the dog required because of a disability, and what work or task has it been trained to perform? They may not ask about your disability or require papers, certification, or a vest.
+- **A service animal can be asked to leave** only if it is out of control and the handler does not correct it, or it is not housebroken. Keep it leashed or otherwise under control.
+- **Emotional support and comfort animals are not service animals under the ADA.** Not all shelters accept pets, so plan a pet-friendly place for them. See the Pet Preparedness and Care guide.
+- **Pack for the animal:** food, extra water, bowls, a collar with an ID tag, medical records, medicines, and waste bags.
 
-- **Backup glasses** - Keep an older prescription as an emergency spare
-- **Magnification aids** - Handheld magnifier in the emergency kit
-- **Large-print emergency info** - Print key documents in large type
-- **Tactile markers** - Use raised stickers or tape on essential supplies
-- **White cane** - Keep one accessible even if not used daily
-- **Familiar layout** - Practice the evacuation route so it can be navigated by feel
-- **Guide for printed materials** - If you rely on a screen reader, keep critical info also in audio or Braille format
+These are US rules, and state and local law can add to them. Other countries have their own laws.
 
-### Mobility Impairments
+## At a shelter
 
-- **Multiple evacuation routes** - Plan at least two routes out of your home, including ones that avoid stairs
-- **Stair evacuation devices** - If you live above the ground floor, investigate evacuation chairs
-- **Accessible transportation** - Pre-arrange accessible vehicle access (paratransit services, neighbors with accessible vehicles)
-- **Transfer boards and sliding sheets** - Keep on hand for emergency movement
-- **Practiced lifts and carries** - If you need physical assistance, practice safe transfer techniques with your helpers
-- **Ground-level supplies** - Store emergency supplies where they can be reached from a seated position
+Tell staff what you need as soon as you arrive. In the US, the Department of Justice's ADA guidance says:
 
-### Cognitive and Developmental Disabilities
+- People with disabilities should generally be housed in the regular shelter with their families, not sent to a separate one, unless they need medical care it cannot give.
+- Shelters should provide a refrigerator for medicines where possible, and give priority for electricity to people who use life-sustaining equipment, plus a chance to charge wheelchair batteries.
+- You can ask for a cot that suits a wheelchair transfer, a quieter area if noise or stress worsens a condition, and food that fits a medical diet.
 
-- **Visual schedules** - Use picture-based instructions for emergency procedures
-- **Comfort items** - Familiar objects reduce anxiety (specific toy, blanket, music)
-- **Sensory considerations** - Shelters are loud and bright; pack noise-canceling headphones and a sleep mask
-- **Simple language instructions** - Write emergency steps in clear, short sentences
-- **Practice drills** - Regular practice reduces panic and builds familiarity
-- **Identification** - Medical alert bracelet or ID card with condition, medications, and emergency contacts
-- **Caregiver information packet** - If the primary caregiver is unavailable, someone else must understand the person's needs, routines, and triggers
+Keep medicines, devices, and the care sheet with you, not in a vehicle.
 
-### Communication Aids
+## If the caregiver is the one who is hurt
 
-For individuals who use augmentative and alternative communication (AAC):
-- Charge AAC devices fully and keep a car charger available
-- Print a low-tech backup communication board (picture symbols for basic needs)
-- Include key phrases: "I need help," "I am in pain," "I need my medication," "I need water"
-- Store the communication board in the emergency kit, not just on an electronic device
-- Teach first responders or shelter staff how to use the communication system
+1. Name two or three backup caregivers who know the person.
+2. Give each one the care sheet and a hands-on lesson with the equipment and medicines.
+3. Have them spend ordinary time together, so they are not strangers on the worst day.
+4. Update the sheet when anything changes.
+5. Look after yourself. A caregiver who has not slept or eaten makes mistakes. See the Mental Health First Aid in Crisis guide.
 
----
+## When it is time to leave
 
-## Service Animals
+**Leave early.** Moving a person who needs help takes longer, accessible transport runs out first, and elevators stop when the power does.
 
-### Emergency Kit for Service Animals
+| Time you have | Take |
+|---------------|------|
+| 5 minutes | The person, their medicines, the care sheet, mobility aid, service animal |
+| 30 minutes | Add chargers and spare batteries, medical supplies, comfort items, the go-bag. Call your support network. |
+| A day | Add prescription refills, arranged accessible transport, a confirmed destination with power, a call to the equipment supplier |
 
-- [ ] 7-day supply of food and water
-- [ ] Bowls (collapsible save space)
-- [ ] Leash, harness, and service animal vest/ID
-- [ ] Vaccination records and veterinary contact
-- [ ] Any medications the animal requires
-- [ ] Waste bags
-- [ ] Familiar blanket or toy for comfort
-- [ ] Photo of you with your service animal (proof of ownership)
+## Kit additions
 
-### Legal Protections
+- [ ] Several days or more of every medicine, and the list
+- [ ] Cooler and ice packs for cold medicines
+- [ ] Care sheet, ID, insurance and benefit cards, legal papers (copies in a waterproof bag)
+- [ ] Device chargers, spare batteries, car adapter
+- [ ] Medical supplies for at least 3 days
+- [ ] Spare glasses, hearing aids and batteries, cane
+- [ ] Wheelchair patch kit, inner tube, pump
+- [ ] Communication cards, pen and paper
+- [ ] Headphones, comfort items, familiar snacks
+- [ ] Incontinence supplies, wipes, gloves
+- [ ] Baby supplies: ready-to-feed formula, diapers, portable crib, fitted sheet
+- [ ] Service animal food, water, ID tag, records
+- [ ] Medical alert bracelet or tag, worn
 
-- **Service animals must be allowed in public shelters** under the ADA
-- Emotional support animals may not have the same access rights
-- Keep documentation accessible but know that shelters cannot require proof of disability
-- If denied access, ask to speak with shelter management and reference ADA Title II
-- Have a backup plan (friend, family, pet-friendly hotel) in case access issues arise
+## Practice
 
----
+**10-minute drill:** The stranger test. Hand the one-page care sheet (or whatever notes you have today) to a friend or neighbor who does not know the routine. Give them ten minutes and ask them to tell you, using only the page: which medicines are due tonight and how they are given, how to switch the main device to its backup, and who to call. Every question they have to ask you is a line missing from the sheet. Add it.
 
-## Special Dietary Needs in Emergencies
+**What would you do?**
 
-### Common Dietary Restrictions
+1. *A hurricane is 36 hours out and evacuation is "recommended" but not yet mandatory. Your father uses a power wheelchair, you live on the second floor, and the building has one elevator. He says, "Let's wait and see if they make it mandatory."*
 
-**Celiac disease / Gluten-free:**
-- Stock gluten-free canned soups, rice, rice crackers, nut butters
-- Label all emergency food clearly
-- Avoid cross-contamination with shared cooking equipment
+   **Answer:** Go now. Once the power fails the elevator stops, and a power chair on the second floor is stuck there. Accessible transport is limited and is the first thing to run out, and roads and shelters fill. Waiting for the mandatory order is the tempting move because leaving is hard work, but the people who need the most help should be the first to leave, not the last. Take the chair's charger, his medicines, and the care sheet.
 
-**Severe food allergies:**
-- Stock clearly labeled allergen-free foods
-- Keep multiple EpiPens or epinephrine auto-injectors (check expiration dates monthly)
-- Carry a written allergy card visible in the emergency kit
-- Alert shelter staff immediately upon arrival
+2. *You arrive at a shelter with your sister and her guide dog. A volunteer at the door says, "No pets. Unless you have the certification papers."*
 
-**Diabetes:**
-- Balance carbohydrate intake in emergency food stores
-- Stock glucose tablets or gel for hypoglycemia
-- Keep blood glucose monitor with extra batteries and test strips
-- Insulin storage requires cold chain maintenance (cooler with ice)
+   **Answer:** Stay calm and ask for the shelter manager. In the US, a service dog must generally be admitted despite a no-pets rule, and staff may ask only whether the dog is required because of a disability and what task it is trained to do. No papers, certificate, or vest can be required. Keep the dog leashed and under control, since a dog that is out of control can be excluded. Do not leave the dog in the car, and do not let your sister be separated from her guide.
 
-**Renal / kidney diet:**
-- Stock low-sodium, low-potassium, low-phosphorus food options
-- Canned fruit in juice (not syrup), white rice, and white bread are generally kidney-friendly
-- Avoid nuts, potatoes, tomatoes, and high-potassium foods
+3. *It is the first night in a crowded shelter with your four-month-old. There is no crib. You are exhausted, and a kind neighbor offers to make room for you both on her air mattress.*
 
-**Dysphagia / swallowing difficulties:**
-- Stock thickening agents for liquids
-- Pureed canned foods and smooth soups
-- Avoid dry, crumbly, or hard textures
-- Keep a suction device available if choking risk is high
+   **Answer:** Thank her, and do not put the baby on it. Babies are at higher risk of sleep-related death when they sleep on an adult bed, and a soft air mattress shared with an exhausted adult is no better. Ask shelter staff or the Red Cross for a portable crib or bassinet. The baby sleeps on their back, on a firm, flat surface made for babies, with no pillows or loose blankets, next to you but not with you. If you are too tired to stay awake while holding the baby, hand the baby to another adult or lay them down first.
+
+## Quick Reference
+
+```
+BEFORE
+- What fails first? Power, medicine,
+  stairs, hearing the alert, carer
+- Support network: spare key, knows
+  the equipment and medicines
+- One-page care sheet: bag, phone,
+  helpers
+- Power company + fire dept told
+- Spare battery, cooler, ice packs
+- Place to go that has power
+
+LEAVE EARLY
+5 MIN: person, medicines, care
+  sheet, mobility aid, service dog
+30 MIN: + chargers, batteries,
+  supplies, comfort items
+
+CALL 911
+- Life-support device failing
+- Cannot move out of danger
+- Dementia + missing 15 minutes
+- Baby under 3 months, 100.4 F+:
+  doctor or ER now
+
+OXYGEN: never turn the flow down.
+Flames 5 ft away. No candles.
+
+BABY SLEEP: on the back, firm flat
+baby surface, own space, nothing
+soft. Not an adult bed.
+
+SERVICE DOG (US): shelters must
+admit. Two questions only. No
+papers needed. Keep it leashed.
+
+AT SHELTER: say what you need.
+Ask for fridge, power, quiet spot.
+```
+
+## Sources
+
+- [Ready.gov: People with Disabilities](https://www.ready.gov/disability)
+- [Ready.gov: Older Adults](https://www.ready.gov/older-adults)
+- [CDC: Disability Impacts All of Us](https://www.cdc.gov/disability-and-health/articles-documents/disability-impacts-all-of-us-infographic.html)
+- [FDA: Home Use Devices: How to Prepare for and Handle Power Outages for Medical Devices that Require Electricity (PDF)](https://www.fda.gov/media/80782/download)
+- [American Lung Association: Power Outages](https://www.lung.org/clean-air/emergencies-and-natural-disasters/power-outages)
+- [American Lung Association: Using Oxygen Safely](https://www.lung.org/lung-health-diseases/lung-procedures-and-tests/oxygen-therapy/using-oxygen-safely)
+- [NFPA: Smoke Alarms for People Who Are Deaf or Hard of Hearing (PDF)](https://www.nfpa.org/-/media/Project/Storefront/Catalog/Files/Safety-tip-sheets/SmokeAlarmsDisabilitySafetyTips.pdf)
+- [Alzheimer's Association: In a Disaster](https://www.alz.org/help-support/caregiving/safety/in-a-disaster)
+- [ADA.gov: ADA Requirements: Service Animals](https://www.ada.gov/resources/service-animals-2010-requirements/)
+- [ADA.gov: Frequently Asked Questions about Service Animals and the ADA](https://www.ada.gov/resources/service-animals-faqs/)
+- [US Department of Justice: The ADA and Emergency Shelters](https://archive.ada.gov/pcatoolkit/chap7shelterprog.htm)
+- [CDC: Counseling Families on Disaster Preparedness and Infant Safe Sleep (PDF)](https://www.cdc.gov/reproductive-health/media/pdfs/emergency/Script-Parents-Caregivers-Infants-Safe-Sleep-508.pdf)
+- [CDC: Providing Care for Babies to Sleep Safely](https://www.cdc.gov/sudden-infant-death/sleep-safely/index.html)
+- [CDC: Infant and Young Child Feeding in Emergencies Toolkit](https://www.cdc.gov/infant-feeding-emergencies-toolkit/php/index.html)
+- [American Academy of Pediatrics (HealthyChildren.org): Fever: When to Call the Pediatrician](https://www.healthychildren.org/English/health-issues/conditions/fever/Pages/When-to-Call-the-Pediatrician.aspx)
 
 ---
 
-## Evacuation Planning for Mobility-Impaired Individuals
+Last reviewed: November 2026
 
-### Pre-Planning Steps
-
-1. **Identify helpers** - Recruit at least three people who can assist with evacuation (neighbors, friends, family). Share your needs and plan with each of them.
-2. **Map accessible routes** - Identify evacuation routes that accommodate wheelchairs, walkers, or slow movement. Avoid routes that require stairs.
-3. **Pre-position supplies** - Keep a go-bag near the exit, not upstairs or in a hard-to-reach area.
-4. **Register with local services** - Many communities maintain a special needs registry for priority evacuation. Contact your local emergency management agency.
-5. **Practice the plan** - Run through your evacuation at least twice a year with your helper network.
-
-### Evacuation Kit Additions
-
-In addition to standard go-bag items:
-- [ ] Extra medications (7-day supply minimum)
-- [ ] Medical device chargers and batteries
-- [ ] Written medical summary (conditions, medications, doctors, allergies)
-- [ ] Copy of health insurance card
-- [ ] Portable commode or urinal if needed
-- [ ] Incontinence supplies if applicable
-- [ ] Transfer equipment (gait belt, sliding board)
-- [ ] Comfort items to reduce stress
-
-### Shelter Considerations
-
-- Call ahead if possible to confirm accessibility
-- Request ground-floor placement and proximity to accessible restrooms
-- Bring your own cot or air mattress if shelter cots are not suitable
-- Advocate for your needs - shelter staff may not be aware of accessibility requirements
-- Keep medical summary visible so responders can quickly assess your needs
-- Identify a quiet area in the shelter for rest if you have sensory or cognitive needs
-
----
-
-## Caregiver Backup Plans
-
-### Why Backup Plans Are Critical
-
-If the primary caregiver becomes incapacitated, injured, or separated during an emergency, someone else must step in immediately. Without a plan, the person with special needs is at serious risk.
-
-### Creating a Caregiver Backup Plan
-
-1. **Identify 2-3 backup caregivers** who understand the person's needs
-2. **Create a detailed care document** that includes:
-   - Daily routine (wake time, meals, medication schedule, bedtime)
-   - Medication names, dosages, and administration instructions
-   - Dietary restrictions and food preferences
-   - Communication methods and cues
-   - Behavioral triggers and calming strategies
-   - Medical equipment operation instructions
-   - Emergency contacts (doctors, specialists, pharmacy)
-3. **Share the document** with all backup caregivers and keep a copy in the emergency kit
-4. **Practice handoffs** - Have backup caregivers spend time with the person so they are familiar with each other
-5. **Update regularly** as needs, medications, or routines change
-
-### Caregiver Self-Care
-
-- You cannot help others if you are overwhelmed
-- Build rest into your emergency plan
-- Accept help from others and delegate tasks
-- Keep your own medications and supplies stocked
-- Identify respite options even during emergencies
-
----
-
-## Emergency Documentation Packet
-
-Every person with special needs should have a packet readily accessible containing:
-
-- [ ] One-page medical summary (conditions, medications, allergies, doctors)
-- [ ] Photo identification
-- [ ] Recent photograph
-- [ ] Health insurance cards (copies)
-- [ ] List of emergency contacts with phone numbers
-- [ ] Power of attorney or guardianship documents (copies)
-- [ ] Medical equipment model numbers and supplier contact info
-- [ ] Communication board or instructions for communication aids
-- [ ] Specific behavioral or care instructions for responders
-- [ ] Service animal documentation
-
-**Store copies in three locations:**
-1. The emergency go-bag
-2. With a trusted neighbor, friend, or family member
-3. Digitally on a phone or USB drive in a waterproof bag
-
----
-
-## Quick Reference: Priority Actions
-
-**If you have 5 minutes before evacuation:**
-1. Grab the medication bag
-2. Grab the emergency documentation packet
-3. Secure mobility equipment
-4. Take the service animal and their supplies
-5. Ensure the person with special needs is with a caregiver
-
-**If you have 30 minutes:**
-- Complete the 5-minute actions above
-- Pack the full special-needs go-bag
-- Charge medical devices and grab backup batteries
-- Contact backup caregivers
-- Secure the home
-
-**If you have 24 hours:**
-- Complete all actions above
-- Refill prescriptions
-- Contact medical equipment suppliers about portable alternatives
-- Arrange accessible transportation
-- Notify your special-needs registry contact
-- Prepare the shelter plan and pack comfort items
-
----
-
-*Last updated: March 2026*
 *License: CC-BY-SA 4.0*

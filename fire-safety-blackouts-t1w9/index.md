@@ -180,6 +180,24 @@ A multipurpose "ABC" extinguisher (rated at least 2-A:10-B:C) works on ordinary 
 - [ ] Generators outdoors only, far from the house
 - [ ] Keep exits and hallways clear
 
+## Practice
+
+**10-minute drill:** Press the test button on every smoke alarm and CO alarm, and note any that stay silent. Then walk your escape plan from each bedroom: point out two ways out of the room, check that the window opens and the screen comes off, walk to the outside meeting place, and count heads. Time it against the two minutes you may have. Do it once in daylight, then again after dark using only the flashlight kept by each bed. Walk, don't run, and don't climb out of any window for the drill.
+
+**What would you do?**
+
+1. *The power is out and you are frying supper on the gas stove by lantern light. The oil in the pan catches fire. The sink is one step away, and the pan handle is within reach.*
+
+   **Answer:** No water, and don't carry the pan anywhere. Slide a lid over the pan, turn off the heat, and leave the pan covered where it sits. If the fire isn't out at once, or it has spread beyond the pan, get everyone out, close the doors behind you, and call 911 from outside.
+
+2. *The smoke alarm sounds at 2 a.m. on the third night of an outage. Everyone makes it to the mailbox. You can see smoke but no flames, and your teenager wants to run back in for the phones and the cat.*
+
+   **Answer:** Nobody goes back inside, for anything. A home fire can become deadly in just a few minutes. Stay at the meeting place, count heads, and call 911 from outside, using a neighbor's phone if yours are still in the house. Tell the firefighters that the cat is inside and where it is likely to be.
+
+3. *The flashlights are fading on the second night. Someone suggests borrowing the batteries from the hallway smoke alarm until morning, and leaving a candle on the bathroom shelf as a night light for the children.*
+
+   **Answer:** Neither. Batteries never come out of an alarm to power something else, and an outage is exactly when fire risk goes up. A candle is never left burning unattended, never used in a bathroom or where people sleep, and is blown out when you leave the room or go to bed. Share the light you have instead: put the best flashlight where the children can reach it, use a battery "flameless" candle if you own one, and add spare batteries to the list for tomorrow.
+
 ## Quick Reference
 
 ```
@@ -231,6 +249,6 @@ Only small fires. In doubt, get out.
 
 ---
 
-Last reviewed: October 2026
+Last reviewed: November 2026
 
 *License: CC-BY-SA 4.0*

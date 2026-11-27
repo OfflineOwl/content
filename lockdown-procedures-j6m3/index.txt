@@ -1,220 +1,471 @@
 LOCKDOWN PROCEDURES
 ===================
 
-Lockdown means securing yourself in place to protect against an
-external threat. This guide covers proper lockdown procedures.
+Locks, lights, out of sight. A lockdown puts a locked door between
+you and a violent person and keeps you silent and unseen until
+police reach you. Getting away is better whenever a safe way out
+exists. Lockdown is what you do when it doesn't.
 
-WHEN TO LOCKDOWN
-----------------
 
-LOCKDOWN MAY BE APPROPRIATE FOR:
-- Active threat in area
-- Civil unrest nearby
-- Dangerous person reported
-- Police activity
-- Unknown external threat
+DO THIS NOW
+-----------
 
-LOCKDOWN IS NOT:
-- Shelter-in-place (for chemical/biological)
-- Evacuation (for fire, flood)
-- Hiding (different techniques)
+If you hear gunfire, or an attacker is in or right outside the
+building:
 
-BASIC LOCKDOWN PROTOCOL
------------------------
+1. RUN if there is a safe way out. Leave your belongings. Go even
+   if others won't. Keep your hands empty and visible.
+2. CAN'T GET OUT? LOCK DOWN.
+   - Get into the nearest room with a door that locks.
+   - LOCKS: lock the door, then block it with heavy furniture.
+   - LIGHTS: off. Close blinds and cover door windows.
+   - OUT OF SIGHT: away from the door and windows, low, behind
+     something solid.
+3. GO SILENT. Phone on silent with vibration off (not powered
+   down). No talking. Turn off radios, TVs, and screens.
+4. CALL OR TEXT 911 when you can do it without being heard.
+   Say WHERE you are first.
+5. DO NOT OPEN THE DOOR for a voice. Wait for police to unlock it
+   or for 911 to confirm who is outside.
+6. FIGHT only as a last resort, when your life is in immediate
+   danger and you can neither run nor hide.
 
-IMMEDIATE ACTIONS:
 
-1. GET INSIDE
-   - Enter nearest secure room
-   - Close and lock door
-   - Stay away from windows
-   - Keep others out of danger
+GET EMERGENCY HELP
+------------------
 
-2. SECURE THE SPACE
-   - Lock all doors
-   - Barricade if possible
-   - Turn off lights
-   - Close blinds/curtains
+Call 911 (112 in the EU, 999 in the UK, 000 in Australia, or your
+local emergency number) as soon as it is safe. Don't assume
+someone else has called.
 
-3. STAY QUIET
-   - Silence phones (not off)
-   - Minimize movement
-   - Whisper if communication needed
-   - Control children/pets
+TELL THE DISPATCHER:
+- Where the attacker is (building, floor, room, direction of
+  travel)
+- How many attackers, if more than one
+- What they look like
+- What weapons you saw or heard, and how many
+- How many people are with you, and whether anyone is hurt
 
-4. WAIT FOR ALL-CLEAR
-   - Listen for official communication
-   - Don't open for unknown persons
-   - Be prepared for extended wait
+IF YOU CAN'T SPEAK SAFELY:
+- Call anyway and leave the line open so the dispatcher can
+  listen.
+- Or text 911. The rule is "call if you can, text if you can't."
+  Put your location and the emergency in the first message. Use
+  plain words, no abbreviations, emojis, or photos.
+- Text-to-911 works in many US areas, not all. If it isn't
+  available where you are, you should get an automatic reply
+  telling you to call. A text also gives a less exact location
+  than a voice call, so type your address or room.
 
-HOME LOCKDOWN
--------------
 
-SECURE ENTRY POINTS:
-- Lock all exterior doors
-- Lock all windows
-- Close garage doors
-- Secure any pet doors
+WHICH WORD MEANS WHAT
+---------------------
 
-ESTABLISH SAFE AREA:
-- Interior room preferred
-- Room with lockable door
-- Away from windows
-- Access to communication
+Schools and workplaces use different words for different threats.
+Mixing them up costs time. Many US schools use the Standard
+Response Protocol, which keeps five actions apart:
 
-GATHER FAMILY:
-- Account for all members
-- Bring to safe area
-- Keep pets contained
-- Have supplies accessible
+LOCKDOWN - "Locks, lights, out of sight."
+  The threat is INSIDE or very close to the building. Lock the
+  room, lights off, stay silent and hidden, don't open the door.
 
-COMMUNICATION:
-- Call 911 if threat imminent
-- Text if calling risks detection
-- Monitor emergency broadcasts
-- Contact out-of-area contact when safe
+SECURE - "Get inside. Lock outside doors." (older name: lockout)
+  The threat is OUTSIDE the building, such as police activity
+  nearby. Everyone comes in, outside doors are locked, and work
+  or class carries on as normal inside.
 
-WORKPLACE/SCHOOL LOCKDOWN
--------------------------
+HOLD - "In your room or area."
+  Hallways need to stay clear, for example for a medical
+  emergency. Stay where you are and carry on.
 
-TYPICAL PROCEDURE:
+EVACUATE - leave for a named location.
 
-RUN-HIDE-FIGHT (if active threat):
+SHELTER - for a hazard such as a tornado or a chemical release.
+  This is NOT a lockdown. See the Shelter in Place guide.
 
-RUN:
-- If safe path exists, evacuate
-- Leave belongings
-- Help others if possible
-- Call 911 when safe
+Your building may use other words. Find out what it calls each of
+these, and what the signal for each sounds like, before you need
+to know.
 
-HIDE:
-- If cannot escape, hide
-- Find lockable room
-- Barricade door
-- Turn off lights
-- Silence phone
-- Stay out of sight
+WHEN POLICE TELL A NEIGHBORHOOD TO "STAY INSIDE" OR "SHELTER IN
+PLACE" during a search, that is a SECURE at home: get in, lock the
+outside doors and windows, stay away from the windows, follow
+official alerts, and don't go out to look.
 
-FIGHT:
-- Only as absolute last resort
-- If confronted directly
-- Use any available objects
-- Commit fully to action
 
-FOLLOWING INSTRUCTIONS:
-- Follow official lockdown procedures
-- Know your building's plan
-- Know emergency exits
-- Know rally points
+WHY IT WORKS
+------------
 
-BARRICADE TECHNIQUES
---------------------
+- These attacks are short. The US Department of Homeland Security
+  notes they are often over within 10 to 15 minutes, before
+  police arrive. What you do in the first minute matters
+  more than anything that follows.
+- A room that is locked, dark, and silent looks unoccupied. That
+  is the whole aim of "locks, lights, out of sight."
+- A locked and blocked door costs an attacker time, and time is
+  what police need.
+- Distance is the best protection of all. That is why RUN comes
+  first.
 
-PURPOSE:
-- Delay entry
-- Create obstacle
-- Buy time
 
-METHODS:
-- Furniture against door (heavy items)
-- Door blocked open = remove hinge pins
-- Use belt/cord to secure door handles
-- Stack items high, low, throughout
+RUN
+---
 
-EFFECTIVE BARRIERS:
-- Heavy desks or tables
-- Filing cabinets
-- Chairs (wedged under handles)
-- Multiple items together
+- Know two ways out of any building you spend time in.
+- Move as soon as you recognize danger. Don't wait to be sure the
+  noise was gunfire, and don't stop to collect belongings.
+- Take others with you if they'll come. Don't stay because they
+  won't.
+- Warn people away from walking into the area.
+- Keep your hands empty and visible. Follow police instructions.
+- Don't stop to move the wounded while the attacker is close.
+- Call 911 once you are safe.
 
-COMMUNICATION DURING LOCKDOWN
+IF YOU'RE IN A HALLWAY OR OPEN AREA when a lockdown is called:
+get into the nearest room that can be secured. If you can't reach
+one, get out of sight, or leave the building and move well away
+from it.
+
+
+HIDE: HOW TO LOCK DOWN A ROOM
 -----------------------------
 
-911 CALL:
-If safe to call:
-- State location
-- State situation
-- State number of people
-- Stay on line if possible
+A GOOD ROOM:
+- Is out of the attacker's view
+- Has a door that locks and solid walls
+- Doesn't trap you if you need to move again
 
-IF CALLING IS UNSAFE:
-- Text 911 (where available)
-- Silent alert apps
-- Wait until safe to call
+SECURE IT:
+- Lock the door. Know how in advance: some doors lock only from
+  the outside or with a key.
+- Block it with the heaviest furniture in the room: desks,
+  cabinets, tables.
+- If the door has no lock, blocking it is all you have, so do
+  that first.
+- Cover or stay out of view of any window in or beside the door.
+- Lights off. Blinds closed.
 
-VERIFYING ALL-CLEAR:
-- Don't trust unknown voices
-- Verify through official channels
-- May need to see credentials
-- When in doubt, stay locked down
+THEN:
+- Stay low and out of sight of the door, behind solid objects
+  such as desks and cabinets.
+- Silence every phone, including vibration and alarms. Dim the
+  screens.
+- Don't answer knocks or voices. If a fire alarm sounds, look for
+  real signs of fire, such as smoke, before you decide to move.
+  Your building's plan should say what to do.
+- Stay ready to move. Hiding is not giving up. If the situation
+  changes and a safe way out opens, take it.
 
-SPECIAL CONSIDERATIONS
+
+FIGHT: THE LAST RESORT
 ----------------------
 
-WITH CHILDREN:
-- Keep calm (they mirror adults)
-- Simple explanations
-- Practice lockdowns as drills
-- Have quiet activities ready
-- Reassure safety
+Official US guidance (Ready.gov and DHS) includes fighting back
+only when you cannot run or hide and your life is in immediate
+danger. If it comes to that, the guidance is to commit fully and
+act together with the others in the room. This guide does not go
+further than that. Everything above is designed so you never
+reach this point.
 
-WITH ELDERLY/DISABLED:
-- Assist to safe location
-- Ensure medications accessible
-- Plan for mobility limitations
-- Consider hearing/vision issues
 
-PETS:
-- Contain to prevent noise
-- May need treats to keep quiet
-- Keep away from doors
+WHEN POLICE ARRIVE
+------------------
 
-ENDING LOCKDOWN
----------------
+The first officers are there to stop the attacker. They will go
+past injured people, and they do not yet know who the attacker
+is.
 
-ALL-CLEAR SIGNALS:
-- Official announcement
-- Verified messenger
-- Known authority figure
-- Emergency services present
+- Stay calm and do exactly what they say.
+- Put down anything in your hands: phones, bags, jackets.
+- Raise your hands, spread your fingers, and keep your hands
+  visible.
+- Don't run toward officers, grab them, point, or shout.
+- Don't stop to ask them questions on your way out. Leave in the
+  direction they came from.
+- Medical teams follow behind the first officers.
+- Expect to be kept at an assembly point until police have
+  identified and spoken to witnesses. Don't leave until they say
+  you may.
 
-DON'T END EARLY:
-- Unknown voices may be threat
-- Sounds of normalcy not enough
-- Wait for verification
-- When in doubt, stay locked
 
-AFTER LOCKDOWN:
-- Account for all persons
-- Report any injuries
-- Document incident
-- Debrief with family/team
-- Address emotional needs
+HOW A LOCKDOWN ENDS
+-------------------
+
+- It ends when police or a known official UNLOCKS your door from
+  the outside. In schools using the Standard Response Protocol,
+  staff and students are trained not to open the door at all.
+- A voice saying "police, it's safe, open up" is not proof. Call
+  or text 911 and ask the dispatcher whether officers are at your
+  door.
+- Quiet is not proof either. Clearing a building room by room can
+  take a long time after the danger is over.
+- Don't leave because you are tired, hungry, or need a bathroom.
+  Use a bin or a corner if you must.
+
+
+HELP THE WOUNDED
+----------------
+
+Look after your own safety first. Then:
+
+- Move the injured to a safer spot if you can do it without
+  exposing yourself.
+- Heavy bleeding can kill within about five minutes. Press hard
+  and directly on the wound with cloth or your hands, and don't
+  let go. Use a tourniquet on an arm or leg if you have one and
+  know how. See the Bleeding Control guide.
+- Tell 911 how many are hurt and how badly.
+
+
+AT WORK AND IN PUBLIC PLACES
+----------------------------
+
+- Learn the plan: the alarm or announcement, the exits, the rooms
+  that lock, the assembly point.
+- In a shop, cinema, or place of worship, note two exits when you
+  arrive.
+- If you are staff, customers and visitors will copy you. Lead
+  them out or into a room.
+- If you supervise others, account for them once you are safe and
+  report who is missing.
+
+
+SCHOOLS AND PARENTS
+-------------------
+
+WHAT STUDENTS ARE TAUGHT in a lockdown:
+- Move away from sight
+- Maintain silence
+- Do not open the door
+
+WHAT TEACHERS DO: bring in students from the hallway if it is
+safe, lock the door, turn out the lights, move everyone out of
+sight, keep silence, and leave the door closed.
+
+IF YOU ARE A PARENT AND THE SCHOOL LOCKS DOWN:
+- Don't go to the school. You are unlikely to be let onto the
+  campus, and cars and crowds can get in the way of police and
+  ambulances.
+- Don't call your child. A ringing or buzzing phone can give away
+  a hidden room. Early in a lockdown it may not be safe for
+  students to text at all.
+- Watch for messages from the school or district. Keep your
+  contact details with the school up to date.
+- If students are moved off site, you will be told where to
+  collect them. Bring photo ID and expect a wait.
+
+DRILLS should always be announced as drills and should suit the
+children's ages. A drill practices the actions. It does not need
+to simulate an attack. If a drill frightened your child, tell the
+school.
+
+TALKING TO CHILDREN: keep it short and calm. "If the teacher says
+lockdown, we get quiet, we hide, and we wait for the police to
+open the door. The grown-ups have a plan." Then answer the
+questions they ask, at their level.
+
+
+AT HOME
+-------
+
+THREAT OUTSIDE (violence nearby, police searching the area):
+- Bring everyone in. Lock doors, windows, and the garage.
+- Stay away from windows. Close blinds.
+- Follow official alerts and local radio.
+- Don't go out to look, and don't open the door to anyone you
+  can't identify.
+
+SOMEONE BREAKING IN OR INSIDE:
+- Get out if you can do it safely and call from a neighbor's
+  home.
+- If you can't, get everyone into one room, lock and block the
+  door, lights off, and call 911 with your address first.
+- Don't go to investigate. No property is worth a life.
+
+See the Safe Room Setup guide for choosing and preparing that
+room, and the Home Security During Civil Unrest guide for
+disturbances in your street. The Family Emergency Action Plan
+guide covers meeting places and how you'll contact each other.
+
+Laws on self-defense differ between states and countries. Learn
+the ones that apply to you. This guide does not give legal
+advice.
+
+
+PEOPLE WHO NEED EXTRA THOUGHT
+-----------------------------
+
+YOUNG CHILDREN:
+- Stay close, speak in a whisper, and give them one job: "stay
+  quiet like a mouse."
+- A quiet toy, a snack, or a screen with the sound off helps.
+
+PEOPLE WITH LIMITED MOBILITY:
+- Agree in advance who helps whom, and which lockable room is
+  nearest to where they usually are.
+- If you can't get out, hiding early is better than moving late.
+
+DEAF OR HARD OF HEARING:
+- Make sure the building's alert reaches you by light, vibration,
+  or a buddy.
+- Text-to-911 can be your first choice. Tell the dispatcher you
+  are deaf or hard of hearing.
+
+MEDICAL NEEDS:
+- Keep urgent medication (inhaler, glucose, epinephrine) on you,
+  not in a locker or another room.
+
+PETS AT HOME:
+- Bring them into the room if it costs no time. Don't go looking.
+
+
+AFTERWARD
+---------
+
+- Check in with family by text.
+- Get checked for injuries. Adrenaline hides them.
+- Tell police what you saw when they ask.
+- Strong reactions are normal for days or weeks: poor sleep,
+  jumpiness, anger, sadness, trouble concentrating, fear of
+  crowds or of being alone. Children may become clingy or slip
+  back into younger behavior.
+- Keep routines, limit news and video of the event, and talk
+  about it when you or they are ready.
+- Get help if the reactions don't ease or get in the way of daily
+  life. In the US, call or text 988 (Suicide and Crisis Lifeline)
+  at any hour, or the Disaster Distress Helpline at
+  1-800-985-5990 (call or text). Other countries have their own
+  crisis lines.
+
+
+CHECKLIST: BEFORE YOU NEED IT
+-----------------------------
+
+[ ] I know two exits from my workplace, school, and regular places
+[ ] I know which rooms near me lock, and how
+[ ] I know my building's words and signals for lockdown, secure,
+    and evacuate
+[ ] I can silence my phone, including vibration, without looking
+[ ] I know whether text-to-911 works in my area
+[ ] My household has one room at home to gather in and a phrase
+    that sends everyone there
+[ ] My children's school has my current phone number, and I know
+    how it will contact me
+[ ] I have taken a bleeding control or first aid class
+
+
+PRACTICE
+--------
+
+10-MINUTE DRILL:
+At work or school, sit where you usually sit and answer three
+questions without getting up: Where are my two nearest exits?
+Which is the nearest room that locks? What would I push against
+its door? Then get up and check. Try the lock. See which way the
+door opens. Finally, time yourself putting your phone on silent
+with vibration off. Do the same at home with your household.
+
+WHAT WOULD YOU DO?
+
+1. You are at your desk when you hear several sharp bangs from
+   the lobby. Colleagues gather at the window, arguing about
+   whether it was fireworks. The stairwell exit is twenty steps
+   away, in the opposite direction from the noise.
+
+   Answer: Go, now, down the stairs. Waiting to be sure is the
+   common mistake, and these events are measured in minutes. Tell
+   the others "I'm leaving, come with me" and keep moving if they
+   don't. Leave your bag. Call 911 once you are well clear, and
+   keep your hands visible when you meet police.
+
+2. You have been locked in a storeroom with four other people for
+   25 minutes. It has gone quiet. A voice outside says, "Police.
+   It's all clear. Open the door."
+
+   Answer: Don't open it on a voice. Stay silent and out of sight,
+   and call or text 911 to ask whether officers are at your door.
+   Real police can wait while the dispatcher confirms it. When the
+   door does open, show empty hands with fingers spread and do
+   what you are told.
+
+3. A text arrives from your child's school: "We are in LOCKDOWN.
+   Police are on scene." You are five minutes away by car.
+
+   Answer: Stay where you are, and don't call your child's phone.
+   You are unlikely to be let near the building, your car could be
+   in the way of responders, and a ringing phone could give away a
+   hidden classroom. Watch for the school's next message. If
+   students are moved, go to the reunification site they name and
+   bring photo ID.
+
 
 QUICK REFERENCE
 ---------------
 
-LOCKDOWN STEPS:
-1. Get inside secure room
-2. Lock and barricade door
-3. Turn off lights
-4. Stay away from windows
-5. Silence phones
-6. Stay quiet
-7. Wait for verified all-clear
+ATTACKER IN OR NEAR THE BUILDING:
+RUN   - Safe way out? Go now. Leave things. Hands visible.
+HIDE  - LOCKS: lock and block the door
+        LIGHTS: off, blinds closed
+        OUT OF SIGHT: low, away from door and windows
+        SILENT: phone muted, vibration off
+FIGHT - Last resort only, life in immediate danger.
 
-IF ACTIVE THREAT:
-RUN (if safe path)
-HIDE (if cannot escape)
-FIGHT (absolute last resort)
+911: Location first. Attackers, description, weapons, injured.
+Can't talk: leave the line open, or text 911 where available.
 
-DON'T:
-- Open door for unknown person
-- Make noise
-- Assume it's over without verification
-- Leave without all-clear
+DON'T OPEN THE DOOR for a voice. Police unlock it, or 911
+confirms.
+
+POLICE ARRIVE: Drop everything. Hands up, fingers spread.
+Don't run at them. Do what they say.
+
+WORDS:
+LOCKDOWN = threat inside. Locks, lights, out of sight.
+SECURE   = threat outside. Get inside, lock outside doors.
+SHELTER  = weather or chemical. Different rules.
+
+PARENTS: Don't go to the school. Don't call your child.
+Wait for the school's message. Bring ID to reunification.
+
+BLEEDING: Press hard, don't let go.
+
+US CRISIS LINES: 988, or 1-800-985-5990 (call or text)
+
+
+SOURCES
+-------
+
+- Ready.gov: Attacks in Crowded and Public Spaces -
+  https://www.ready.gov/public-spaces
+- US Department of Homeland Security: Active Shooter, How to
+  Respond (booklet) -
+  https://www.dhs.gov/xlibrary/assets/active_shooter_booklet.pdf
+- CISA: Active Shooter Preparedness -
+  https://www.cisa.gov/topics/physical-security/active-shooter-preparedness
+- The "I Love U Guys" Foundation: Standard Response Protocol -
+  https://iloveuguys.org/The-Standard-Response-Protocol.html
+- The "I Love U Guys" Foundation: SRP K12 2025 Operational
+  Guidance -
+  https://iloveuguys.org/downloads/SRP%20K12%202025%20Operational%20Guidance%20V4.2.pdf
+- The "I Love U Guys" Foundation: SRP Information for Parents and
+  Guardians -
+  https://iloveuguys.org/downloads/SRP-K12-2025-Parent-Handout_EN.pdf
+- SchoolSafety.gov: Emergency Planning -
+  https://www.schoolsafety.gov/emergency-planning
+- Minnesota Department of Public Safety: Text-to-911 -
+  https://dps.mn.gov/divisions/ecn/programs/911/Pages/text-to-911.aspx
+- US Department of Homeland Security: Stop the Bleed -
+  https://www.dhs.gov/stopthebleed
+- Ready.gov: Coping with Disaster -
+  https://www.ready.gov/coping-disaster
+
 
 ===================
-Last updated: January 2026
+Last reviewed: November 2026
+
+This guide is general safety information. It does not replace
+your school's or workplace's own emergency plan, or training
+from local police.
+
 License: CC-BY-SA 4.0
 ===================
