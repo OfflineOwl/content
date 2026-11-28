@@ -115,6 +115,7 @@
   --bg-primary: #0e1524;
   --bg-secondary: #162036;
   --bg-card: #1d2943;
+  --accent: #f0a030;
   --text-primary: #ece8dc;
   --text-secondary: #9ba6bd;
   --border: #24304a;
@@ -124,10 +125,38 @@
   background: #0e1524 !important;
   color: #ece8dc !important;
 }
+:root[data-theme="dark"] h1,
+:root[data-theme="dark"] .title,
+:root[data-theme="dark"] .stat-value {
+  color: #f0a030 !important;
+}
+:root[data-theme="dark"] .stat,
+:root[data-theme="dark"] .score-box,
+:root[data-theme="dark"] .panel,
+:root[data-theme="dark"] .ctrl-btn {
+  background: #162036 !important;
+  border: 1.5px solid #24304a !important;
+  color: #ece8dc !important;
+}
+:root[data-theme="dark"] .board,
+:root[data-theme="dark"] .grid,
+:root[data-theme="dark"] .game-board {
+  background: #162036 !important;
+  border-color: #24304a !important;
+}
+:root[data-theme="dark"] .cell:not([class*="cell-"]):not(.red):not(.yellow):not(.p1):not(.p2):not(.revealed):not(.mine):not(.flagged):not(.correct):not(.present):not(.absent):not(.selected):not(.highlighted):not(.fixed):not(.given):not(.conflict):not(.error):not(.x):not(.o) {
+  background: #1d2943;
+  color: #ece8dc;
+}
+:root[data-theme="dark"] .btn:not(.btn-secondary):not(.btn-red):not(.btn-blue):not(.btn-green):not(.btn-yellow) {
+  background: #f0a030 !important;
+  color: #0e1524 !important;
+}
 :root[data-theme="light"] {
   --bg-primary: #eef0e6;
   --bg-secondary: #fafbf6;
   --bg-card: #e3e6d8;
+  --accent: #4b5a25;
   --text-primary: #1e2420;
   --text-secondary: #5b635c;
   --border: #c9ccbd;
@@ -138,7 +167,8 @@
   color: #1e2420 !important;
 }
 :root[data-theme="light"] h1,
-:root[data-theme="light"] .title {
+:root[data-theme="light"] .title,
+:root[data-theme="light"] .stat-value {
   color: #4b5a25 !important;
 }
 :root[data-theme="light"] .subtitle,
@@ -150,7 +180,6 @@
   color: #5b635c !important;
 }
 :root[data-theme="light"] .stat,
-:root[data-theme="light"] .stats,
 :root[data-theme="light"] .score-box,
 :root[data-theme="light"] .panel,
 :root[data-theme="light"] .card-panel,
@@ -168,13 +197,27 @@
 :root[data-theme="light"] .option-btn {
   background: #fafbf6 !important;
   color: #1e2420 !important;
-  border-color: #c9ccbd !important;
+  border: 1.5px solid #c9ccbd !important;
 }
 :root[data-theme="light"] .board,
 :root[data-theme="light"] .grid,
 :root[data-theme="light"] .game-board {
   background: #e3e6d8 !important;
-  border-color: #c9ccbd !important;
+  border: 1.5px solid #c9ccbd !important;
+}
+:root[data-theme="light"] .cell:not([class*="cell-"]):not(.red):not(.yellow):not(.p1):not(.p2):not(.revealed):not(.mine):not(.flagged):not(.correct):not(.present):not(.absent):not(.selected):not(.highlighted):not(.fixed):not(.given):not(.conflict):not(.error):not(.x):not(.o) {
+  background: #d4d8c8;
+  color: #1e2420;
+  border-color: #b8bca9;
+}
+:root[data-theme="light"] .btn:not(.btn-secondary):not(.btn-red):not(.btn-blue):not(.btn-green):not(.btn-yellow) {
+  background: #4b5a25 !important;
+  color: #fafbf6 !important;
+}
+:root[data-theme="light"] .btn-secondary {
+  background: #fafbf6 !important;
+  color: #1e2420 !important;
+  border: 1.5px solid #1e2420 !important;
 }
 :root[data-theme="light"] input[type="text"],
 :root[data-theme="light"] input[type="number"],
