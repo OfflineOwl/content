@@ -131,6 +131,7 @@
     <button class="btn" id="newBtn" onclick="newGame()" style="display:none;">New Game</button>
 
     <script>
+    const _owlStore = (() => { const m = {}; return { getItem(k) { try { return window.localStorage.getItem(k); } catch { return Object.prototype.hasOwnProperty.call(m, k) ? m[k] : null; } }, setItem(k, v) { m[k] = String(v); try { window.localStorage.setItem(k, v); } catch {} } }; })();
         const words = [
             'WATER', 'RADIO', 'LIGHT', 'STORM', 'FLOOD', 'QUAKE', 'ALERT',
             'CACHE', 'EVADE', 'COVER', 'SCOUT', 'GUARD', 'ROUTE', 'STOCK',
@@ -143,7 +144,7 @@
         let currentCol = 0;
         let guesses = [];
         let gameActive = false;
-        let stats = JSON.parse(localStorage.getItem('wordguess-stats') || '{"played":0,"won":0,"streak":0}');
+        let stats = JSON.parse(_owlStore.getItem('wordguess-stats') || '{"played":0,"won":0,"streak":0}');
         
         updateStats();
         
@@ -314,7 +315,7 @@
         }
         
         function saveStats() {
-            localStorage.setItem('wordguess-stats', JSON.stringify(stats));
+            _owlStore.setItem('wordguess-stats', JSON.stringify(stats));
             updateStats();
         }
         

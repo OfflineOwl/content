@@ -396,6 +396,7 @@
     </footer>
 
     <script>
+    const _owlStore = (() => { const m = {}; return { getItem(k) { try { return window.localStorage.getItem(k); } catch { return Object.prototype.hasOwnProperty.call(m, k) ? m[k] : null; } }, setItem(k, v) { m[k] = String(v); try { window.localStorage.setItem(k, v); } catch {} } }; })();
         // Audio context for sound effects
         let audioCtx = null;
 
@@ -445,7 +446,7 @@
         let playerIndex = 0;
         let round = 0;
         let score = 0;
-        let highScore = parseInt(localStorage.getItem('simon-high-score') || '0');
+        let highScore = parseInt(_owlStore.getItem('simon-high-score') || '0');
         let isPlaying = false;
         let isPlayerTurn = false;
         let currentSpeed = 'normal';
@@ -595,7 +596,7 @@
             let newRecord = false;
             if (score > highScore) {
                 highScore = score;
-                localStorage.setItem('simon-high-score', highScore);
+                _owlStore.setItem('simon-high-score', highScore);
                 document.getElementById('highScore').textContent = highScore;
                 newRecord = true;
             }

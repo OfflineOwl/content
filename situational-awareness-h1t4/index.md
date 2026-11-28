@@ -1,0 +1,269 @@
+# Situational Awareness Fundamentals
+
+> **Situational awareness is paying attention on purpose: noticing what is going on around you, understanding what it means, and acting a little earlier than everyone else.** It is a habit, not a talent, and most of it comes down to knowing your exits, noticing what changed, and looking up from your phone.
+
+## Start Here
+
+Five habits give you most of the benefit. Start today.
+
+1. FIND TWO WAYS OUT every time you enter a building, a train, or a crowd. It takes five seconds.
+2. PHONE DOWN WHILE YOU MOVE. Put it away when you cross a street, walk through a parking lot, use stairs, or stand on a platform.
+3. ASK "WHAT IS NORMAL HERE?" Then notice anything that changes: a sound, a smell, the mood, the way people are moving.
+4. ACT ON THE EARLY SIGNAL. If something feels wrong, make a small, cheap move right away: step aside, cross the street, leave.
+5. AGREE ON A MEETING PLACE with the people you are with, in case you get separated.
+
+---
+
+## Get Emergency Help If
+
+Call 911 (or your local emergency number) if:
+
+- Someone is threatening you, following you, or trying to get into your home or car.
+- You see fire or smoke, smell gas, or see a downed power line.
+- Someone is hurt or collapses.
+- An attack is under way. Get away first, then call.
+
+Not an emergency, but worth reporting? Tell local police or a person in charge (staff, security, a manager). Say WHO or WHAT you saw, WHEN, WHERE, and WHY it concerned you.
+
+Outside the US, learn the local emergency number when you arrive.
+
+---
+
+## What It Is, and What It Is Not
+
+The US Cybersecurity and Infrastructure Security Agency (CISA) defines situational awareness as "observing what is occurring around you and understanding what you see and hear."
+
+Researchers who study pilots, drivers, and control-room operators break it into three steps (the model comes from the human-factors scientist Mica Endsley):
+
+1. NOTICE what is around you.
+2. UNDERSTAND what it means for you.
+3. ANTICIPATE what is likely to happen next.
+
+Everything depends on step one. You can't understand or anticipate what you never noticed.
+
+IT IS NOT PARANOIA. You are not expecting an attack. You are doing what a good driver does with the mirrors: a glance, often, without stress.
+
+IT IS NOT ABOUT HOW PEOPLE LOOK. The Department of Homeland Security is explicit that race, ethnicity, sex, national origin, religion, and disability are not suspicious. Behavior and situations are what count.
+
+IT IS MOSTLY NOT ABOUT CRIME. In an emergency, the things you most need to notice are hazards: rising water, a wind shift, the smell of smoke or gas, a sagging wire, a crowd getting too tight, a road that is emptier or fuller than it should be.
+
+---
+
+## The Phone Problem
+
+Your attention is narrower than it feels. In a well-known experiment at a US university, researchers had a clown ride a unicycle across a campus square. People walking while talking on a phone were far less likely to notice the clown than people walking without one. Many walked right past him.
+
+If a phone can hide a unicycling clown, it can hide a car, a step, or a person who has been behind you for three blocks.
+
+- Stop walking to read or type. Step to the side first.
+- Keep at least one ear free of headphones in streets, stations, and parking lots.
+- Look up at every transition: doorways, crossings, stairs, platforms, elevators, the walk to your car.
+- Finish the call before you get out of the car, or after you are inside.
+
+---
+
+## Know Your Exits
+
+This is the single most useful habit, and emergency agencies all teach it. Ready.gov says to identify exits and places to take cover wherever you go, including work, school, and special events. The CDC tells travelers to locate emergency exits when they arrive at any gathering. The U.S. Fire Administration says to know two ways out of every room at home, and that you may have less than 2 minutes to escape a home fire once the alarm sounds.
+
+- The door you came in is the one everybody will run for. Find another.
+- In a restaurant, theater, or hall, look for the lit exit signs before you sit down.
+- In a hotel, find the stairs on your floor before you unpack.
+- In a crowd, stay toward the edges. See the Crowd Safety & Avoidance guide.
+- On a road trip or evacuation, know a second route.
+- WHEN AN ALARM SOUNDS, GO. Don't wait to see what other people do. They are waiting to see what you do.
+
+---
+
+## What Is Normal, and What Changed
+
+Every place has a normal pattern: how loud it is, how fast people move, who is usually there, what it smells like. Security trainers call this the baseline. You already know the baseline of your own street, your workplace, and your regular store without trying.
+
+Awareness is noticing a change from it:
+
+- SOUND: sudden quiet, shouting, breaking glass, an alarm.
+- MOVEMENT: people hurrying in one direction, a crowd bunching up, traffic backing up where it never does.
+- SMELL: smoke, gas, fuel, something burning.
+- MOOD: a line that was patient and is now angry; an argument getting louder.
+- THINGS: an unattended bag, a vehicle where none should be, a door propped open that is always shut, water where it was dry.
+- WEATHER: the wind shifting, the sky darkening, the river higher than this morning.
+
+A change is not proof of danger. It is a reason to look up, work out what is happening, and check where your exits are.
+
+---
+
+## Early Warning Signs in People
+
+With strangers you can't know intent, only behavior. CISA lists these physical signs that a person may be becoming hostile:
+
+- Argumentative or uncooperative behavior
+- Clenched jaw or balled fists
+- Pacing or restlessness
+- Trembling or shaking
+- Coming into other people's personal space
+- Dress or behavior that doesn't fit the place or situation
+- Threats to hurt themselves or others
+- Showing a weapon or threatening to use one
+
+Two cautions come with the list. First, none of these means much alone. People have bad days, and some of this is a person asking for help. Second, the right response is almost never to confront. It is to make distance, leave if you can, and tell someone who can help. A threat or a weapon means leave now and call 911.
+
+See the Personal Safety & De-Escalation guide.
+
+---
+
+## Trust the Early Signal
+
+You will often notice that something is off before you can say why. The mistake is waiting for proof.
+
+- Make the cheap move early. Crossing the street, taking the next elevator, stepping into an open shop, or leaving an event ten minutes sooner costs almost nothing.
+- You don't owe anyone an explanation for leaving.
+- Don't let politeness hold you in place. "I don't want to seem rude" has kept many people standing somewhere they wanted to leave.
+- Check yourself too. If the only thing bothering you is what a person looks like, that is not a warning sign. Look for behavior.
+
+---
+
+## Two Popular Models
+
+You will meet these in classes and books. Both are teaching models that many people find useful. Neither is a scientific finding, and you don't need the jargon to be aware.
+
+COOPER'S COLOR CODES. Jeff Cooper, a firearms instructor, described states of mind by color: white (switched off), yellow (relaxed but paying attention), orange (something specific has your attention), red (acting). The useful idea is that "yellow" is a calm state you can keep up all day in public, and that nobody can or should stay on high alert for long.
+
+THE OODA LOOP. Air Force colonel John Boyd described decisions as a cycle: observe, orient, decide, act. It comes from air combat. The useful idea for ordinary life is that a good decision made early beats a perfect one made late, and that you can't decide well about something you never observed.
+
+---
+
+## Everyday Places
+
+WALKING:
+
+- Head up at crossings and corners. Walk where it is lit and where other people are.
+- If you think someone is following you, change direction or cross the street. If they do the same, go into an open business or toward a group of people and call 911. Don't lead them home.
+
+PARKING LOTS AND GARAGES:
+
+- Have your keys in your hand before you leave the building.
+- Look around as you walk, get in, lock the doors, and go. Don't sit and scroll.
+- Park leaving enough room to pull out.
+
+DRIVING:
+
+- Check mirrors often, and leave space in front of you at lights.
+- If an angry driver fixes on you, avoid eye contact, don't gesture, and drive to a police station or busy public place. See the Emergency Defensive Driving guide.
+
+STORES, RESTAURANTS, EVENTS:
+
+- Exits first. Then note where staff and first aid are.
+- Notice the mood of lines and crowds, especially when supplies are short.
+
+AT HOME:
+
+- Know your neighbors and what is normal on your street. People who know each other notice trouble sooner.
+- Notice changes: an unfamiliar vehicle that stays, a gate open, a smell of gas, a smoke alarm sounding next door.
+
+DURING A DISASTER:
+
+- Keep one ear on official information. See the Understanding Sirens & Alert Systems guide.
+- Keep checking the hazard itself: water level, wind, smoke, road conditions, fuel in the tank, daylight left.
+- Leave early. The people who get out easily are the ones who noticed first.
+
+---
+
+## Reporting What You See
+
+- EMERGENCY: call 911.
+- NOT AN EMERGENCY: tell local police or the person in charge. Describe WHO or WHAT you saw, WHEN, WHERE, and WHY it is concerning.
+- UNATTENDED BAG OR PACKAGE: don't touch it. Move away and tell staff or police.
+- Report what someone is DOING, not what they look like.
+
+---
+
+## Family and People Who Need Extra Thought
+
+CHILDREN: Make it a game, not a fear. "Who can find two exits first?" works at any restaurant. Teach young children their full name and a parent's phone number, and what to do if lost: stay where you are and ask a staff member or a parent with children for help. Pick a meeting place at every outing.
+
+TEENS: The phone rule matters most for them. Agree on it together and keep it yourself.
+
+OLDER ADULTS: Scan for trip hazards as well as exits: curbs, steps, wet floors, poor lighting.
+
+PEOPLE WITH LOW VISION OR HEARING LOSS: Lean on the senses and tools you have, such as vibration alerts and a companion who knows to tell you what has changed. Ask staff where the exits are when you arrive.
+
+EVERYONE: Awareness should feel like checking your mirrors, not like standing guard. If, after a frightening event, you find you can't relax anywhere, are startled by everything, or can't sleep, that is a common stress reaction and it usually eases. If it doesn't, talk to a doctor or counselor. See the Mental Health Crisis guide. In the US you can call or text 988 at any time.
+
+---
+
+## Practice
+
+**10-minute drill:** Play the exit-and-memory game. Sit somewhere ordinary: a cafe, a waiting room, or your own living room with the household. Take two minutes to find every way out and to note three things that are "normal" for the place. Then close your eyes, or turn your back, and answer from memory: Where is the nearest exit? The second one? How many people are in the room? What is directly behind you? Open your eyes and check. Do it once a week somewhere new and you will start doing it without thinking.
+
+### What Would You Do?
+
+1. You are in a big store when the fire alarm starts. Nobody moves. Shoppers look at each other, and a cashier keeps scanning.
+
+   **Answer:** Go now. Walk to the nearest exit, which may not be the door you came in by, and take the people with you along. A room full of people waiting for someone else to react is normal human behavior, and it is how minutes get lost. If it turns out to be a false alarm, you spent five minutes in a parking lot.
+
+2. You are walking home at dusk, reading messages. When you finally look up, you realize the same person has been behind you through two turns. Your building is one block away.
+
+   **Answer:** Don't go home, and don't turn to confront them. Put the phone to work: call someone, or 911 if you feel threatened. Cross the street or change direction once. If they follow, go into an open shop or toward a group of people and call 911 from there. If they don't follow, you lost two minutes. The real lesson is the two turns you didn't notice because of the phone.
+
+3. At a train station you notice two things: a backpack sitting alone under a bench with no one near it, and a man nearby whose clothes and language mark him as a foreigner.
+
+   **Answer:** Only one of these is a warning sign. An unattended bag is a situation worth reporting: don't touch it, move away, and tell station staff or police what you saw and where. The man's appearance tells you nothing. What a person looks like is not suspicious; what a person does can be.
+
+---
+
+## Quick Reference
+
+```
+FIVE HABITS:
+1. Two ways out, every place
+2. Phone down while moving
+3. What is normal here? What changed?
+4. Act early: small move, right away
+5. Agreed meeting place
+
+THREE STEPS:
+Notice -> Understand -> Anticipate
+
+CHANGES WORTH A SECOND LOOK:
+Sudden quiet or shouting. People hurrying
+one way.
+Smoke or gas smell. Angry mood in a line.
+Unattended bag. Rising water. Wind shift.
+
+IF SOMETHING FEELS WRONG:
+Make distance. Go toward people and light.
+Don't go home if followed. Call 911 if
+threatened.
+
+ALARM SOUNDS:
+Go. Don't wait for others.
+
+REPORT (non-emergency):
+Who or what, when, where, why.
+Behavior, not appearance.
+
+US: Emergency 911. Crisis line: call or
+text 988.
+```
+
+---
+
+## Sources
+
+- [CISA De-escalation Series: Recognize (PDF)](https://www.cisa.gov/sites/default/files/2025-09/De-escalation_Series_1-Recognize_508_202509.pdf)
+- [Ready.gov: Attacks in Crowded and Public Spaces](https://www.ready.gov/public-spaces)
+- [DHS "If You See Something, Say Something": Recognize the Signs](https://www.dhs.gov/see-something-say-something/recognize-the-signs)
+- [DHS: How to Report Suspicious Activity](https://www.dhs.gov/see-something-say-something/how-to-report-suspicious-activity)
+- [CDC Travelers' Health: Travel to Mass Gatherings](https://wwwnc.cdc.gov/travel/page/travel-to-mass-gatherings)
+- [U.S. Fire Administration: Home Fire Escape Plans](https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/)
+- [AAA: Aggressive Driving](https://exchange.aaa.com/safety/driving-advice/aggressive-driving/)
+- [Hyman and others (2010), "Did You See the Unicycling Clown? Inattentional Blindness While Walking and Talking on a Cell Phone," Applied Cognitive Psychology](https://doi.org/10.1002/acp.1638)
+- [988 Suicide and Crisis Lifeline](https://988lifeline.org/)
+
+---
+
+Last reviewed: November 2026
+
+This guide doesn't replace instructions from local emergency officials or professional training.
+
+*License: CC-BY-SA 4.0*

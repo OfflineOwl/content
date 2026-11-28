@@ -1,0 +1,293 @@
+# Indoor Air Quality in Emergencies
+
+> **In an emergency you close the house up against what is outside and then start burning things inside to stay warm, fed, and lit.** That combination is what kills. The air you can't smell is the air to worry about: carbon monoxide (CO) has no color, no odor, and gives no warning except an alarm or a headache.
+
+## Do This Now
+
+If a CO ALARM SOUNDS, or people in the same building get a headache, dizziness, nausea, weakness, or confusion while anything is burning fuel:
+
+1. Get everyone outside into fresh air immediately. Don't stop to find the source or open windows.
+2. Call 911 (or your local emergency number) or the fire department from outside.
+3. Count heads. Make sure everyone, including pets, is out.
+4. Stay out until responders say it is safe to go back in.
+5. Get medical care for anyone with symptoms, and say you suspect carbon monoxide.
+
+If SMOKE, ASH, OR DUST is outside:
+
+1. Close windows and outside doors.
+2. Set air conditioning to recirculate.
+3. Run a HEPA air cleaner or box-fan filter in one closed room.
+4. Burn nothing indoors: no candles, no gas or wood stove, no frying.
+
+If officials say to SHELTER IN PLACE for a chemical release:
+
+1. Get inside. Close and lock windows and doors.
+2. Turn OFF heating, cooling, and all fans.
+3. Go to an interior room above ground level and seal it. See the "When to Seal a Room" guide.
+
+---
+
+## Get Emergency Help If
+
+Call 911 or your local emergency number, from outside if CO or gas is possible, when:
+
+- A CO alarm is sounding. Never ignore it, even if everyone feels fine.
+- Two or more people feel sick at the same time indoors.
+- Someone is confused, very drowsy, has chest pain, faints, or can't be woken.
+- Someone has trouble breathing, or an asthma attack that isn't responding to their medicine.
+- You smell gas or hear hissing. Leave first. Don't touch light switches or anything that could spark.
+
+For questions about a chemical exposure in the US, call Poison Control: 1-800-222-1222. Outside the US, use your local emergency and poison numbers.
+
+---
+
+## Close Up or Air Out?
+
+Every indoor air problem comes down to one question: is the threat coming from OUTSIDE or being made INSIDE?
+
+THREAT IS OUTSIDE (smoke, ash, dust, chemical release): -> Close up. Filter the air inside. Burn nothing.
+
+THREAT IS INSIDE (CO, gas leak, fumes, moisture, mold cleanup): -> Air out, or get out.
+
+The dangerous case is BOTH AT ONCE: a house closed tight against smoke or cold, with a fuel heater, stove, or generator running. Closing up traps whatever you make indoors. So:
+
+- Close up tight ONLY while nothing inside is burning fuel.
+- If you must use an indoor-rated fuel heater, give it fresh air even though it costs you some heat or lets in some smoke.
+- A filter is not ventilation. Air cleaners and N95 masks trap particles. They do not remove CO or other gases.
+- When the outside air improves, even for a few hours, open the windows and flush the house.
+- A sealed room is a short-term measure, usually a few hours. Unseal and ventilate when officials give the all-clear.
+- Heat counts too. If a closed-up home gets dangerously hot, go to a cooling or cleaner-air center.
+
+---
+
+## Carbon Monoxide
+
+CO is made whenever gas, oil, kerosene, propane, wood, or charcoal burns. In the US it kills more than 400 people a year in accidents not linked to fires, and sends more than 100,000 to emergency departments. Portable generators alone are linked to more than 100 deaths a year, many of them during power outages.
+
+NEVER USE THESE INDOORS, including in a garage, basement, crawlspace, shed, tent, or camper, even with doors and windows open:
+
+- Portable generators. Outdoors only, at least 20 feet (6 m) from the house, exhaust pointed away from windows, doors, and vents. See the "Generator Safety" guide.
+- Charcoal or gas grills. Never burn charcoal in a fireplace.
+- Camp stoves, fuel lanterns, and patio or "tank-top" heaters.
+- A gas oven or stovetop used for heat, even for a short time.
+- Gasoline-powered tools and other small engines.
+- A car or truck running in an attached garage, even with the garage door open.
+
+WHAT IT FEELS LIKE: The most common symptoms are headache, dizziness, weakness, upset stomach, vomiting, chest pain, and confusion. It is often described as the flu without the fever.
+
+Clues that it is CO and not illness:
+
+- More than one person is sick at the same time.
+- You feel better when you leave the building.
+- Something that burns fuel is running.
+
+People who are asleep or have been drinking can die without ever noticing symptoms. Infants, older adults, and people with heart disease, anemia, or breathing problems get sick sooner.
+
+HOW MUCH IS TOO MUCH (CO in parts per million, per the US Consumer Product Safety Commission):
+
+- 1 to 70 ppm: most people notice nothing. Some people with heart disease may get chest pain.
+- Above 70 ppm: headache, fatigue, and nausea become noticeable.
+- Sustained above 150 to 200 ppm: disorientation, unconsciousness, and death are possible.
+
+You cannot sense any of these levels. Only an alarm can.
+
+CO ALARMS:
+
+- Put one on every level of the home and outside each sleeping area. Interconnected alarms, where one sounds them all, are best.
+- Use battery-powered or battery-backup alarms so they work in an outage. In the US, choose one that meets UL 2034.
+- Don't put them in the kitchen, right above a fuel-burning appliance, next to a heating vent, or behind furniture or curtains.
+- Test them as the manufacturer says, and check the batteries when you change the clocks in spring and fall. The test button checks the electronics, not the sensor.
+- Replace the alarm when the manufacturer says to, or every 5 years. The date is on the back.
+- An alarm is a backup, not permission. It does not make it safe to run a generator or grill indoors.
+
+AFTER AN ALARM: Don't use the suspected appliance until a qualified technician has checked it. If the alarm sounds again within 24 hours, get out and call again.
+
+---
+
+## Heaters, Stoves, and Fireplaces
+
+See the "Emergency Heating" guide for full details.
+
+VENTED IS SAFER. A fireplace, wood stove, or furnace sends its exhaust up a chimney or flue. Have chimneys and fuel-burning appliances inspected every year. A blocked or cracked flue puts CO into the house.
+
+UNVENTED (VENT-FREE) KEROSENE OR PROPANE HEATERS release their exhaust, and water vapor with it, into the room. Use one only for emergency heat, only if the manufacturer says it is for indoor use, and:
+
+- Open a window about an inch (2 to 3 cm), or keep the door to the rest of the house open.
+- Never sleep in a room with one running. Turn it off when you leave the room.
+- Use only the fuel the manufacturer specifies. Refuel outdoors, with the heater off and cool.
+- Keep a working CO alarm nearby.
+
+COOKING: a gas range is for cooking, not heating. During an outage, cook on a camp stove or grill outdoors only.
+
+LIGHT: use flashlights and battery lanterns. Candles add smoke particles to closed-up air and start fires.
+
+---
+
+## Smoke, Ash, and Dust
+
+Fine particles are the main health threat in wildfire smoke. The "Air Filtration" and "Wildfire Preparedness" guides cover this in depth. The short version:
+
+1. Keep windows and doors closed. Use fans and air conditioning on recirculate to stay cool.
+2. Make one clean room. Run a portable HEPA air cleaner sized for the room on high. If you can't get one, strap a 20 by 20 inch MERV 13 furnace filter to the back of a 20-inch box fan made in 2012 or later (UL or ETL mark). No extension cord.
+3. With central air, use a MERV 13 filter if the system can take it, and set the fan to ON instead of AUTO.
+4. Don't add particles: no smoking, candles, incense, frying, broiling, wood fires, or aerosol sprays. Don't vacuum unless the vacuum has a HEPA filter.
+5. Run kitchen and bathroom exhaust fans only briefly. They pull smoky air in through every gap.
+
+MASKS: outdoors in smoke or ash, a NIOSH-approved N95 or P100 with two head straps and a tight seal protects your lungs. Surgical masks, cloth, and ear-loop masks don't seal. None of them stops CO or other gases.
+
+GO SOMEWHERE WITH CLEANER AIR if you can't keep the home cool, the power is out, or smoke keeps getting in.
+
+---
+
+## Chemical Release Outside
+
+This is the one time you shut ventilation OFF completely and seal a room with plastic and tape. Use an interior room ABOVE ground level, because many toxic gases are heavier than air and settle in basements. The "When to Seal a Room" guide has the steps, the supplies, and how long a sealed room lasts.
+
+Do NOT seal a room for carbon monoxide or a gas leak inside your own home. The source is in there with you. Get out.
+
+Radiation emergencies are different again: go to the basement or the center of the building. Sealing isn't needed.
+
+---
+
+## Moisture and Mold
+
+A closed-up home fills with water vapor from cooking, showers, wet clothes, and unvented heaters. After a flood or a leak, mold can start on anything that stays wet for more than a day or two.
+
+KEEP IT DRY:
+
+- Dry wet areas and belongings within 24 to 48 hours.
+- Aim for indoor humidity below 60 percent, ideally 30 to 50.
+- Water beading on windows or walls means the air is too humid. Wipe it up and let some air through.
+- Run the bathroom fan or open a window when showering or cooking, if the outside air is safe to breathe.
+- After a flood, open doors and windows to dry the house when the weather allows.
+- Don't run a central heating or cooling system that got wet or moldy. It will spread mold through the house. Have it checked.
+
+CLEANING UP MOLD:
+
+- Smaller than about 10 square feet (a patch 3 by 3 feet, or about 1 square meter): most people can do it themselves.
+- Larger, or caused by sewage or flood water: get a professional if you can.
+- Wear an N95 respirator, goggles without vent holes, and long gloves.
+- Scrub hard surfaces with detergent and water, then dry them completely. Dead mold still causes reactions, so it has to be removed, not just sprayed.
+- Throw out things that soaked up water and can't be cleaned and dried, such as carpet, padding, and ceiling tiles.
+- Clean visible mold BEFORE pointing fans or dehumidifiers at it. Blowing air across mold spreads it.
+- Bleach is not needed for routine mold cleanup. If you use it, mix no more than 1 cup (240 mL) per gallon (3.8 L) of water, open windows, and NEVER mix bleach with ammonia or any other cleaner. The fumes are toxic.
+- Don't paint or caulk over mold. It peels, and the mold keeps growing.
+- Air cleaners don't fix mold. Fixing the water does.
+
+WHO SHOULD STAY AWAY FROM MOLD CLEANUP: people with asthma or other breathing problems, people with weakened immune systems, children, and pregnant people.
+
+Running a generator or other gasoline engine during cleanup? Keep it outdoors. Generators go at least 20 feet (6 m) from the building, exhaust pointed away.
+
+---
+
+## Air Quality Kit
+
+- [ ] CO alarms with battery backup: every level, outside each sleeping area
+- [ ] Smoke alarms, tested
+- [ ] Spare batteries for both
+- [ ] N95 or P100 respirators that fit each adult
+- [ ] Portable HEPA air cleaner, or a 20-inch box fan (2012 or later) and 20 by 20 inch MERV 13 filters
+- [ ] Spare filter for the central air system
+- [ ] Plastic sheeting, duct tape, and scissors for sealing a room
+- [ ] Flashlights and battery lanterns instead of candles
+- [ ] Goggles without vents and long gloves for cleanup
+- [ ] Battery or hand-crank radio
+
+---
+
+## Practice
+
+**10-minute drill:** Walk the house and press the test button on every CO alarm and smoke alarm. Turn each CO alarm over and read the date. Then check the map: is there one on every level and outside every sleeping area? Write down what is missing or expired. Finish by agreeing on the spot outside where everyone meets if an alarm sounds.
+
+### What Would You Do?
+
+1. Second night of a winter outage. A kerosene heater is running in the living room. At 3 a.m. the CO alarm goes off. Nobody feels sick, and it is 15°F (-9°C) outside.
+
+   **Answer:** Everyone goes outside now, with coats and blankets grabbed on the way, and you call 911 from there. Don't stop to hunt for the cause, don't open windows and wait, and don't assume the alarm is faulty. Sleeping people can be poisoned without symptoms, so feeling fine proves nothing. Sit in a car parked outside (not in the garage) or go to a neighbor's until responders clear the house. Afterward, never sleep with that heater running.
+
+2. Wildfire smoke is thick, the power is out, and the house is closed up. You have a camp stove and want a hot meal. Shutting the kitchen door and cooking fast seems like a fair compromise.
+
+   **Answer:** No. A camp stove indoors makes carbon monoxide, and a closed-up house is exactly where it builds fastest. Your air cleaner and N95 do nothing against it. Eat cold food, or put on an N95 and cook outside, well away from doors and windows.
+
+3. Three days after a basement flood there is a musty smell and a gray patch about 2 feet (60 cm) across on the drywall. Your plan: aim a fan at it, spray bleach, repaint. Your daughter has asthma.
+
+   **Answer:** Change the plan. Blowing a fan at visible mold spreads it, bleach may kill mold but doesn't remove it, and paint over mold peels. The patch is small enough to handle yourself: wear an N95, goggles without vent holes, and gloves. Drywall that soaked up flood water usually can't be cleaned, so cut out the moldy section and bag it. Scrub hard surfaces with detergent and water, then bring in fans and a dehumidifier. Your daughter stays out of the basement until it is clean and dry. If the flood water was sewage, call a professional.
+
+---
+
+## Quick Reference
+
+```
+CO ALARM OR HEADACHE / DIZZY / NAUSEA /
+CONFUSED:
+-> Everyone OUT. Call 911 from outside.
+   Count heads.
+-> Don't go back in until cleared.
+
+NEVER INDOORS OR IN A GARAGE:
+Generator, grill, camp stove, charcoal,
+gas oven for heat,
+running car. Generator 20+ ft (6 m) from
+the house.
+
+CLOSE UP OR AIR OUT?
+Threat outside (smoke, ash, chemical):
+close up, filter,
+burn nothing.
+Threat inside (CO, gas, fumes, damp): air
+out or get out.
+Filters and N95s do NOT stop CO.
+
+CO ALARMS:
+Every level + outside sleeping areas.
+Battery backup.
+Replace per maker or every 5 years.
+
+UNVENTED HEATER:
+Indoor-rated only. Window open an inch. CO
+alarm.
+Never while sleeping.
+
+SMOKE:
+Windows shut, AC on recirculate, one clean
+room,
+HEPA or box fan + MERV 13. Leave if too
+hot.
+
+CHEMICAL RELEASE:
+Fans and HVAC off. Interior room ABOVE
+ground. Seal it.
+
+MOLD:
+Dry within 24-48 hours. Humidity under
+60%.
+Under 10 sq ft: N95, goggles, gloves,
+detergent and water.
+Never mix bleach with ammonia. Don't paint
+over it.
+```
+
+---
+
+## Sources
+
+- [CDC: Carbon Monoxide Poisoning Basics](https://www.cdc.gov/carbon-monoxide/about/index.html)
+- [CPSC: Carbon Monoxide Questions and Answers](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center/Carbon-Monoxide-Questions-and-Answers)
+- [CPSC: Carbon Monoxide Information Center](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center)
+- [EPA: Protect Your Family and Yourself From Carbon Monoxide Poisoning](https://www.epa.gov/indoor-air-quality-iaq/protect-your-family-and-yourself-carbon-monoxide-poisoning)
+- [EPA: Improving Indoor Air Quality](https://www.epa.gov/indoor-air-quality-iaq/improving-indoor-air-quality)
+- [EPA: Create a Clean Room to Protect Indoor Air Quality During a Wildfire](https://www.epa.gov/emergencies-iaq/create-clean-room-protect-indoor-air-quality-during-wildfire)
+- [EPA: Protect Your Lungs From Wildfire Smoke and Ash (2026)](https://www.epa.gov/system/files/documents/2026-06/protect-your-lungs-factsheet.pdf)
+- [Washington State Department of Health: Smoke From Fires](https://doh.wa.gov/community-and-environment/air-quality/smoke-fires/protect-yourself-and-others)
+- [CDC: What to Do to Shelter in Place for a Chemical Emergency](https://www.cdc.gov/chemical-emergencies/response/shelter-in-place.html)
+- [EPA: A Brief Guide to Mold, Moisture and Your Home](https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home)
+- [EPA: Flood Cleanup to Protect Indoor Air and Your Health](https://www.epa.gov/emergencies-iaq/flood-cleanup-protect-indoor-air-and-your-health)
+- [CDC: Mold Cleanup](https://www.cdc.gov/mold-health/about/clean-up.html)
+
+---
+
+Last reviewed: November 2026
+
+This guide doesn't replace professional medical care or a qualified technician's inspection of fuel-burning appliances.
+
+*License: CC-BY-SA 4.0*

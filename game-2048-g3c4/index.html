@@ -153,9 +153,10 @@
     </div>
 
     <script>
+    const _owlStore = (() => { const m = {}; return { getItem(k) { try { return window.localStorage.getItem(k); } catch { return Object.prototype.hasOwnProperty.call(m, k) ? m[k] : null; } }, setItem(k, v) { m[k] = String(v); try { window.localStorage.setItem(k, v); } catch {} } }; })();
         let grid = [];
         let score = 0;
-        let best = parseInt(localStorage.getItem('2048-best') || '0');
+        let best = parseInt(_owlStore.getItem('2048-best') || '0');
         let gameOver = false;
         
         document.getElementById('best').textContent = best;
@@ -231,7 +232,7 @@
                 
                 if (score > best) {
                     best = score;
-                    localStorage.setItem('2048-best', best);
+                    _owlStore.setItem('2048-best', best);
                     document.getElementById('best').textContent = best;
                 }
                 

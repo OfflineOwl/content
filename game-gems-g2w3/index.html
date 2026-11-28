@@ -186,6 +186,7 @@
     </div>
 
     <script>
+    const _owlStore = (() => { const m = {}; return { getItem(k) { try { return window.localStorage.getItem(k); } catch { return Object.prototype.hasOwnProperty.call(m, k) ? m[k] : null; } }, setItem(k, v) { m[k] = String(v); try { window.localStorage.setItem(k, v); } catch {} } }; })();
         const canvas = document.getElementById('gameCanvas');
         const ctx = canvas.getContext('2d');
         
@@ -214,7 +215,7 @@
         let selected = null;
         let animating = false;
         let particles = [];
-        let highScore = parseInt(localStorage.getItem('gems-high') || '0');
+        let highScore = parseInt(_owlStore.getItem('gems-high') || '0');
         let gameRunning = false;
         let comboCount = 0;
         
@@ -688,7 +689,7 @@
             
             if (score > highScore) {
                 highScore = score;
-                localStorage.setItem('gems-high', highScore);
+                _owlStore.setItem('gems-high', highScore);
                 document.getElementById('highScore').textContent = highScore;
             }
             
@@ -707,7 +708,7 @@
             
             if (score > highScore) {
                 highScore = score;
-                localStorage.setItem('gems-high', highScore);
+                _owlStore.setItem('gems-high', highScore);
                 document.getElementById('highScore').textContent = highScore;
             }
             

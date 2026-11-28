@@ -292,6 +292,7 @@
     </footer>
 
     <script>
+    const _owlStore = (() => { const m = {}; return { getItem(k) { try { return window.localStorage.getItem(k); } catch { return Object.prototype.hasOwnProperty.call(m, k) ? m[k] : null; } }, setItem(k, v) { m[k] = String(v); try { window.localStorage.setItem(k, v); } catch {} } }; })();
         const canvas = document.getElementById('gameCanvas');
         const ctx = canvas.getContext('2d');
         
@@ -313,7 +314,7 @@
         let nextDirection = 'right';
         let food = null;
         let score = 0;
-        let highScore = parseInt(localStorage.getItem('snake-high-score') || '0');
+        let highScore = parseInt(_owlStore.getItem('snake-high-score') || '0');
         let gameRunning = false;
         let gameLoop = null;
         let speed = 150;
@@ -524,7 +525,7 @@
             
             if (score > highScore) {
                 highScore = score;
-                localStorage.setItem('snake-high-score', highScore);
+                _owlStore.setItem('snake-high-score', highScore);
                 document.getElementById('highScore').textContent = highScore;
             }
             

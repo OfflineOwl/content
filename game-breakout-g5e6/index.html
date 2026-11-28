@@ -346,6 +346,7 @@
     </div>
 
     <script>
+    const _owlStore = (() => { const m = {}; return { getItem(k) { try { return window.localStorage.getItem(k); } catch { return Object.prototype.hasOwnProperty.call(m, k) ? m[k] : null; } }, setItem(k, v) { m[k] = String(v); try { window.localStorage.setItem(k, v); } catch {} } }; })();
         const canvas = document.getElementById('gameCanvas');
         const ctx = canvas.getContext('2d');
         
@@ -379,7 +380,7 @@
         
         // Load saved settings
         function loadSettings() {
-            const saved = localStorage.getItem('breakout-settings');
+            const saved = _owlStore.getItem('breakout-settings');
             if (saved) {
                 try {
                     settings = { ...settings, ...JSON.parse(saved) };
@@ -389,7 +390,7 @@
         }
         
         function saveSettings() {
-            localStorage.setItem('breakout-settings', JSON.stringify(settings));
+            _owlStore.setItem('breakout-settings', JSON.stringify(settings));
         }
         
         function updateSettingsUI() {
@@ -435,7 +436,7 @@
         let score = 0, lives = 3, level = 1, startingLives = 5;
         let gameRunning = false, gamePaused = false, waitingToLaunch = false;
         let animationId = null;
-        let highScore = parseInt(localStorage.getItem('breakout-high') || '0');
+        let highScore = parseInt(_owlStore.getItem('breakout-high') || '0');
         let baseSpeed = 2.5; // Base ball speed (slower starting point)
         
         // Active powerup effects
@@ -1157,7 +1158,7 @@
             
             if (score > highScore) {
                 highScore = score;
-                localStorage.setItem('breakout-high', highScore);
+                _owlStore.setItem('breakout-high', highScore);
                 document.getElementById('highScore').textContent = highScore;
             }
             

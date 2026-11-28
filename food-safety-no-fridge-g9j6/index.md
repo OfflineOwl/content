@@ -1,0 +1,334 @@
+# Food Safety Without Refrigeration
+
+> **When the power goes out, your refrigerator and freezer start a countdown.** This guide covers how long food stays safe, what to keep, and what to throw out.
+
+## Do This Now
+
+1. Note the time the power went out.
+2. Keep the refrigerator and freezer doors CLOSED.
+  - Refrigerator: keeps food safe about 4 hours.
+  - Full freezer: about 48 hours.
+  - Half-full freezer: about 24 hours.
+3. If the outage will last more than 4 hours, move milk, meat, fish, eggs, leftovers, and other perishables into a cooler with ice or frozen gel packs, and keep them at 40°F (4°C) or below.
+4. Get dry ice or block ice for a long outage.
+5. Never taste food to decide if it's safe.
+6. When the power returns, check temperatures and follow the charts below. When in doubt, throw it out.
+
+---
+
+## The Key Numbers
+
+REFRIGERATOR: 40°F (4°C) or below FREEZER: 0°F (-18°C) or below DANGER ZONE: 40°F - 140°F (4°C - 60°C) Bacteria multiply rapidly in this range.
+
+2-HOUR RULE: Throw out perishable food left at room temperature for 2 hours or more (1 hour if it's above 90°F / 32°C).
+
+4-HOUR RULE: Throw out refrigerated perishable food (meat, poultry, fish, eggs, milk, cut fruit and vegetables, leftovers) after 4 hours without power or another cold source like ice.
+
+Keep an appliance thermometer in both the refrigerator and the freezer. It's the only way to know the real temperature.
+
+---
+
+## During the Outage
+
+REFRIGERATOR:
+
+- Keep the door closed. An unopened refrigerator stays cold about 4 hours, whether it's full or not.
+- After 4 hours, move perishables to a cooler with ice.
+
+FREEZER:
+
+- Keep the door closed. A full freezer holds about 48 hours; a half-full freezer about 24 hours.
+- Group food together so it stays cold longer.
+- Post a list of contents on the door so you don't have to open it to look.
+
+ICE AND COOLERS:
+
+- Block ice lasts longer than cubes.
+- Fifty pounds of dry ice should keep a full 18-cubic-foot freezer cold for 2 days.
+- Dry ice is -109°F (-78°C): handle it only with gloves or tongs, and never let it touch food directly.
+- Dry ice gives off carbon dioxide gas. Use it only in a ventilated space, never in a closed car or small closed room, and keep it away from children and pets.
+- Keep a thermometer in the cooler. Add ice to keep it at 40°F or below.
+- Keep the cooler in the coolest, shadiest spot and open it as little as possible.
+
+PRIORITY FOR COLD STORAGE:
+
+1. Medicines that need refrigeration
+2. Breast milk and opened infant formula
+3. Meat, poultry, fish, eggs, and dairy
+4. Leftovers
+5. Condiments last (many keep fine without cold)
+
+REFRIGERATED MEDICINES:
+
+- Check the label or call a pharmacist.
+- FDA says insulin in vials or cartridges can be kept unrefrigerated at 59-86°F (15-30°C) for up to 28 days and still work. Keep it away from extreme heat and freezing.
+- If a medicine needed to sustain life looks normal but got warm, FDA advises using it until you can get a replacement. Replace other refrigerated medicines that got warm as soon as you can.
+
+BEFORE AN OUTAGE (IF YOU HAVE WARNING):
+
+- Freeze containers of water. They keep food cold and become drinking water as they melt.
+- Freeze leftovers, milk, and meat you won't need right away.
+- Have coolers, ice, and gel packs ready.
+- Store food and bottled water off the floor, above possible flood levels.
+
+---
+
+## When to Throw Out Refrigerated Food
+
+These lists follow the FoodSafety.gov chart for food held above 40°F (4°C) for more than 2 hours.
+
+THROW OUT:
+
+Meat, poultry, seafood:
+
+- Raw or cooked meat, poultry, fish, seafood, soy meat substitutes
+- Thawing meat or poultry
+- Meat, tuna, shrimp, chicken, or egg salads
+- Gravy, stuffing, broth
+- Lunchmeat, hot dogs, bacon, sausage, dried beef
+- Pizza with any topping
+- Canned hams labeled "Keep Refrigerated"
+- Opened canned meat and fish
+- Casseroles, soups, stews
+
+Dairy and cheese:
+
+- Milk, cream, sour cream, buttermilk, evaporated milk, yogurt, eggnog, soy milk
+- Soft cheeses (brie, mozzarella, Monterey Jack, cottage, cream cheese, ricotta, queso fresco, blue, and similar)
+- Shredded cheeses and low-fat cheeses
+- Opened baby formula
+
+Eggs:
+
+- Fresh shell eggs, hard-cooked eggs, egg dishes, egg products
+- Custards, puddings, quiche
+
+Fruits and vegetables:
+
+- Cut fresh fruit and cut fresh vegetables
+- Pre-cut, pre-washed packaged greens
+- Cooked vegetables, cooked tofu, baked potatoes, potato salad
+- Opened vegetable juice
+- Commercial garlic in oil
+- Sliced or shredded coconut
+
+Sauces and dressings:
+
+- Opened creamy dressings
+- Opened spaghetti sauce
+- Fish sauce, oyster sauce
+- Opened mayonnaise, tartar sauce, horseradish if held above 50°F (10°C) for more than 8 hours
+
+Grains and baked goods:
+
+- Cooked pasta, rice, and potatoes; fresh pasta; pasta salads
+- Refrigerator biscuit, roll, and cookie dough
+- Cheesecake, cream-filled pastries, pies with egg or milk fillings
+
+USUALLY SAFE TO KEEP (if they look and smell normal):
+
+- Hard cheeses (cheddar, Colby, Swiss, Parmesan, provolone, Romano)
+- Processed cheeses; grated Parmesan or Romano in a can or jar
+- Butter and margarine
+- Uncut fresh fruit and vegetables; fresh mushrooms and herbs
+- Opened fruit juice and opened canned fruit
+- Dried fruit
+- Peanut butter, jelly, relish, mustard, ketchup, olives, pickles
+- Worcestershire, soy, barbecue, and hoisin sauces
+- Opened vinegar-based dressings
+- Bread, rolls, cakes, muffins, tortillas, waffles, pancakes, bagels
+- Fruit pies
+
+Throw out anything with an unusual smell, color, or texture, or that feels warm, even if it's on the "keep" list.
+
+---
+
+## Freezer Food Rules
+
+STILL HAS ICE CRYSTALS AND FEELS REFRIGERATOR-COLD, OR IS AT 40°F (4°C) OR BELOW:
+
+- Safe to refreeze or cook. Quality may suffer.
+- Exception: throw out ice cream and frozen yogurt.
+
+THAWED AND HELD ABOVE 40°F FOR MORE THAN 2 HOURS:
+
+- Throw out: meat, poultry, seafood, soups, stews, casseroles, milk, eggs and egg products, soft and shredded cheeses, cheesecake, frozen meals and pizza, cakes or pies with custard or cheese filling, and ice cream.
+- OK to refreeze: hard cheeses; breads, rolls, muffins, and cakes without custard fillings; pie crusts and bread dough (quality suffers); flour, cornmeal, and nuts; waffles, pancakes, and bagels; fruit and fruit juice (throw out if moldy, yeasty-smelling, or slimy).
+- Vegetables and vegetable juice: refreeze only if they were above 40°F for less than 6 hours.
+
+If your freezer thermometer reads 40°F or below when the power comes back, the food is safe and can be refrozen.
+
+---
+
+## Food That Touched Floodwater
+
+THROW OUT:
+
+- Any food that may have touched floodwater or stormwater
+- Food in packaging that isn't waterproof: cardboard boxes (including juice, milk, and formula boxes), screw caps, snap lids, pull tops, crimped caps
+- Home-canned food
+- Cans that are bulging, leaking, punctured, deeply rusted, or badly dented
+- Wooden cutting boards, baby bottle nipples, and pacifiers that touched floodwater
+
+CAN BE SAVED: Undamaged, commercially prepared all-metal cans and retort pouches:
+
+1. Remove the labels.
+2. Wash off mud and silt, and rinse with clean water.
+3. Sanitize: boil for 2 minutes, or soak 15 minutes in 1 cup of unscented bleach per 5 gallons of water.
+4. Air-dry, re-label with the contents and expiration date, and use soon.
+
+---
+
+## Assessing Food Safety
+
+DON'T RELY ON:
+
+- Smell or appearance (many germs don't change either)
+- Taste (never taste questionable food)
+
+DO RELY ON:
+
+- A food thermometer or appliance thermometer
+- How long the food was above 40°F
+- The charts above
+
+WHEN IN DOUBT, THROW IT OUT. Getting sick costs more than the food, especially when medical care and clean water are hard to get.
+
+---
+
+## Shelf-Stable Alternatives
+
+STOCK THESE FOR OUTAGES:
+
+```
+Instead of:          Stock this:
+Fresh milk           Shelf-stable (UHT) milk, powdered milk
+Fresh eggs           Powdered eggs (for cooking)
+Fresh meat           Canned meat, fish, or poultry; jerky
+Lunch meat           Canned tuna or chicken
+Fresh vegetables     Canned or dried vegetables
+Cheese               Grated Parmesan in a can or jar
+Butter               Shelf-stable butter or cooking oil
+Infant formula       Ready-to-feed formula (needs no water)
+```
+
+---
+
+## Preserving Food Without Electricity
+
+SHORT OUTAGE (hours to a day or two):
+
+- Keep the refrigerator and freezer closed
+- Use coolers with ice for perishables
+- Eat perishable food first, then frozen food, then shelf-stable food
+
+LONGER OUTAGE:
+
+- Rely on shelf-stable supplies
+- Cook and eat thawing meat while it is still at 40°F or below
+- Only cure, smoke, dry, or pickle food if you follow a tested recipe (USDA or the National Center for Home Food Preservation). Improvised curing and canning can cause botulism.
+
+---
+
+## Cooking Temperatures (USDA)
+
+Use a food thermometer:
+
+- Poultry (all, including ground): 165°F (74°C)
+- Ground beef, pork, lamb: 160°F (71°C)
+- Beef, pork, lamb steaks, chops, roasts: 145°F (63°C), then rest 3 minutes
+- Fish and shellfish: 145°F (63°C)
+- Egg dishes: 160°F (71°C)
+- Leftovers and casseroles: 165°F (74°C)
+
+Cook outdoors only with grills and camp stoves. Never use them indoors or in a garage (carbon monoxide). See the Cooking Without Power guide.
+
+---
+
+## Food Safety Checklist
+
+DURING THE OUTAGE:
+
+- [ ] Note the time the power went out
+- [ ] Keep the refrigerator and freezer closed
+- [ ] After 4 hours, move perishables to a cooler with ice
+- [ ] Get dry ice or block ice for a long outage
+- [ ] Keep thermometers in the refrigerator, freezer, and cooler
+- [ ] Eat perishables first, then frozen food, then shelf-stable food
+
+AFTER POWER RETURNS:
+
+- [ ] Check refrigerator and freezer thermometers
+- [ ] Throw out perishables that were above 40°F for 2+ hours
+- [ ] Refreeze only food with ice crystals or at 40°F or below
+- [ ] Throw out anything that touched floodwater
+- [ ] Clean and sanitize the refrigerator before restocking
+
+---
+
+## Practice
+
+**10-minute drill:** Check your cold. (1) Look for an appliance thermometer in the refrigerator and one in the freezer. If either is missing, put it on the shopping list. (2) Read them: the refrigerator should be at 40°F (4°C) or below and the freezer at 0°F (-18°C) or below. (3) Write a list of what is in the freezer and tape it to the door. (4) Find your cooler and gel packs, and put a container of water in the freezer with room left for the ice to expand. (5) Decide where you would write down the time the power went out.
+
+### What Would You Do?
+
+1. You wake to blinking clocks. The power went off at some point in the night and is back now. Nobody knows how long it was out, and there is no thermometer in the refrigerator. The milk smells fine and last night's chicken looks normal.
+
+   **Answer:** Smell and looks tell you nothing, and you never taste to find out. With no time and no temperature, you can't know the perishables stayed at 40°F or below, so the milk, the chicken, and the other perishables go. When in doubt, throw it out. Hard cheese, butter, uncut fruit and vegetables, peanut butter, and ketchup can stay. In the freezer, food that still has ice crystals can be refrozen or cooked, except ice cream, which goes. Then buy two thermometers.
+
+2. Hour five of an outage, with no ice and no cooler. In the refrigerator: milk, eggs, raw chicken, leftover stew, a block of cheddar, butter, and ketchup. Your partner wants to cook the chicken now so it isn't wasted.
+
+   **Answer:** It is past saving. Refrigerated perishables are thrown out after 4 hours without power or another cold source, and that covers the milk, eggs, chicken, and stew. The rule says throw them out, not cook them late. The cheddar, butter, and ketchup are on the keep list. Next time, move the perishables into a cooler with ice before the 4 hours are up.
+
+3. The outage may last days, so you buy 50 pounds of dry ice for the freezer. The plan is to set it on the back seat beside the children, keep the windows up against the heat, and carry it in bare-handed.
+
+   **Answer:** Change all three. Dry ice gives off carbon dioxide gas, so it is never carried in a closed car: open the windows and keep it away from the children. It is -109°F (-78°C), so handle it only with gloves or tongs. At home, use it only in a ventilated space, and don't let it touch food directly.
+
+---
+
+## Quick Reference
+
+```
+REFRIGERATOR WITHOUT POWER:
+About 4 hours, door closed
+
+FREEZER WITHOUT POWER:
+Full: about 48 hours
+Half-full: about 24 hours
+Door closed
+
+SAFE TEMPERATURES:
+Refrigerator 40°F (4°C) or below
+Freezer 0°F (-18°C) or below
+
+2-HOUR RULE:
+Perishables above 40°F for 2+ hours
+(1 hour above 90°F): throw out
+
+REFREEZE:
+Only if ice crystals remain or the
+food is 40°F or below
+
+NEVER TASTE TO TEST.
+WHEN IN DOUBT, THROW IT OUT.
+```
+
+---
+
+## Sources
+
+- [FoodSafety.gov: Food Safety During Power Outage](https://www.foodsafety.gov/food-safety-charts/food-safety-during-power-outage)
+- [CDC: Keep Food Safe After a Disaster or Emergency](https://www.cdc.gov/food-safety/foods/keep-food-safe-after-emergency.html)
+- [CDC: Preventing Food Poisoning (cooking temperatures, 2-hour rule)](https://www.cdc.gov/food-safety/prevention/index.html)
+- [FDA: Food and Water Safety During Power Outages and Floods](https://www.fda.gov/food/buy-store-serve-safe-food/food-and-water-safety-during-power-outages-and-floods)
+- [USDA FSIS: Keep Your Food Safe During Emergencies](https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/emergencies/keep-your-food-safe-during-emergencies)
+- [USDA FSIS: Safe Minimum Internal Temperature Chart](https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart)
+- [Ready.gov: Food](https://www.ready.gov/food)
+- [FDA: Information Regarding Insulin Storage in an Emergency](https://www.fda.gov/drugs/emergency-preparedness-drugs/information-regarding-insulin-storage-and-switching-between-products-emergency)
+- [FDA: Safe Drug Use After a Natural Disaster](https://www.fda.gov/drugs/emergency-preparedness-drugs/safe-drug-use-after-natural-disaster)
+
+---
+
+Last reviewed: November 2026
+
+*License: CC-BY-SA 4.0*

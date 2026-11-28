@@ -1,0 +1,299 @@
+# Fuel Storage Safety
+
+> **Stored fuel is the most dangerous thing most households keep.** Gasoline gives off ignitable vapor at any temperature you will ever store it at, and that vapor is heavier than air: it flows along the floor until it finds a pilot light. Store less than you think you need, keep it out of the house, and use the right container.
+
+## Start Here
+
+1. FIND EVERY FUEL CONTAINER YOU OWN. Anything kept inside the house or basement moves out today: liquid fuel to a detached shed or garage, propane cylinders outdoors.
+2. CHECK EACH CONTAINER. It must be made and labeled for that fuel, with the cap and vent closed tight and no leaks. Replace anything improvised: milk jugs, drink bottles, glass, unmarked cans.
+3. LOOK AT WHAT IS NEAR IT. No water heater, furnace, dryer, pilot light, electric motor, or anything else that makes heat or sparks.
+4. ADD UP THE GALLONS and find your local limit. Fire departments commonly cite a limit of about 25 to 30 gallons (95 to 115 liters) of gasoline at a home. Your fire department's non-emergency line can tell you the rule where you live.
+5. DATE EVERY CAN with tape and a marker, and put a fire extinguisher (rated at least 2-A:10-B:C) where you can reach it on the way out, not beside the fuel.
+
+---
+
+## Get Emergency Help If
+
+Call 911 (or your local emergency number) from a safe distance if:
+
+- Fuel is burning and the fire is not out within seconds. Get everyone out and away. Never put water on burning gasoline, diesel, or kerosene.
+- A propane cylinder is in or next to a fire. Do not go near it. Move everyone far away.
+- You smell propane and closing the cylinder valve does not stop it, or you cannot reach the valve safely.
+- Liquid fuel has spilled indoors, into a basement, or into a drain, or more has spilled than you can soak up with a bag of cat litter.
+- Someone's clothing is on fire. Stop, drop, and roll; cool the burn with cool water; call.
+- Someone has swallowed fuel and is coughing, choking, drowsy, or short of breath. Do NOT make them vomit.
+- A carbon monoxide (CO) alarm sounds, or people near a running engine or heater get a headache, dizziness, or nausea. Get to fresh air first.
+
+Swallowed fuel with no symptoms yet: call Poison Help at 1-800-222-1222 (US, free, 24 hours). Outside the US, use your local emergency number or poison center.
+
+---
+
+## Know Your Fuels
+
+The FLASH POINT is the lowest temperature at which a liquid gives off enough vapor to ignite. It is the number that explains why gasoline is in a class of its own.
+
+```
+FUEL        FLASH POINT             WHAT IT MEANS
+----------  ----------------------  ----------------------
+Gasoline    about -45°F (-43°C)     Ignitable vapor even
+                                    in deep cold. Class I
+                                    flammable liquid.
+Kerosene    100 to 162°F            Must be warmed before
+            (38 to 72°C)            it flashes. Class II
+                                    combustible liquid.
+Diesel      at or above 100°F       Class II combustible
+            (38°C)                  liquid, like kerosene.
+Propane     a gas at normal         Stored as a liquid
+            temperatures            under pressure. Leaks
+                                    as a heavy gas.
+```
+
+WHAT ACTUALLY BURNS IS THE VAPOR, NOT THE LIQUID.
+
+- Gasoline vapor and propane are both heavier than air. They sink, spread along the ground, and collect in basements, pits, and low corners.
+- The ignition source does not have to be close. A water heater pilot, a furnace, a dryer, or a motor switching on can light vapor that has drifted to it.
+- An "empty" can is full of vapor. Some fire codes count empty containers as full ones.
+
+DIESEL AND KEROSENE ARE SAFER, NOT SAFE. They are harder to light, but once burning they are every bit as serious, and even a small amount of gasoline mixed into kerosene sharply raises the risk of fire or explosion.
+
+---
+
+## Containers
+
+- USE ONLY CONTAINERS LISTED FOR THAT FUEL. Look for a UL or ASTM mark. Listed cans are built to hold vapor and to vent safely as the fuel warms.
+- 5 GALLONS (19 LITERS) OR SMALLER. That is the largest portable can fire codes typically approve for home storage.
+- COLOR IS THE CONVENTION, THE LABEL IS THE RULE. In the US, red means gasoline and blue means kerosene; diesel cans are usually yellow. Never put kerosene in a red can or gasoline in a blue one, and write the fuel and the date on every can.
+- NEVER glass, drink bottles, milk jugs, buckets, or bags. Children drink from drink bottles, and kerosene and lamp oil look like water or juice.
+- LEAVE THE SAFETY PARTS ALONE. US cans made since 2023 must have a flame mitigation device, usually a small screen in the opening. It stops a flame outside from flashing back into the can. Do not pull it out. Buy cans with child-resistant caps.
+- FILL TO THE FILL LINE, NOT THE BRIM. Fuel expands as it warms.
+- CLOSE THE CAP AND THE VENT every time, and replace any can that is cracked, swollen, rusted, or weeping at the seams.
+
+---
+
+## Where to Store It
+
+NEVER:
+
+- In the house, the basement, or a crawl space. Not even a small amount.
+- Near a water heater, furnace, dryer, or any appliance with a flame, a hot surface, or a motor.
+- In a vehicle.
+
+BEST:
+
+- A detached shed or detached garage that is cool and well ventilated.
+- Out of direct sun, where a can cannot fall or be hit by a car, and away from the door you would escape through.
+- Locked, or out of children's reach.
+
+ATTACHED GARAGE: many codes allow a small amount (10 gallons or 38 liters is a common cap), kept well away from the water heater and furnace. A detached building is safer.
+
+KEEP FUELS APART. Store kerosene away from gasoline so the two can never be confused. Keep propane cylinders at least 10 feet (3 meters) from liquid fuels.
+
+Apartments, condos, and rented storage units usually have their own, tighter rules. Ask before you store any fuel there.
+
+---
+
+## How Much You May Keep
+
+YOUR LOCAL FIRE CODE DECIDES, and it varies. Examples published by US fire departments that apply the International Fire Code:
+
+- Gasoline and other flammable liquids: 25 to 30 gallons (95 to 115 liters) in total, in containers of 5 gallons or less, none in the basement, and often no more than 10 gallons in an attached garage.
+- Diesel, kerosene, and lamp oil: 60 gallons (227 liters) or more, outside the dwelling.
+- Portable propane cylinders: one department allows about 25 gallons of total capacity (about five grill-size cylinders), stored outside the home, and no more than two 1-pound camping cylinders indoors.
+- Fuel in the tanks of vehicles and equipment does not count.
+
+These are ceilings, not targets. Every extra gallon is more to burn. Outside the US, limits, container standards, and can colors differ: follow your national or local fire service.
+
+WORK OUT WHAT YOU NEED. Example: the generator manual says 8 hours on a 4-gallon tank at half load. Eight hours a day is 4 gallons a day, so 20 gallons lasts 5 days. That is already near the limit for many homes, which is why it pays to run a generator in shifts, not around the clock. See the Generator Safety guide.
+
+YOUR CAR IS YOUR BEST GAS CAN. Its tank is sealed, crash-tested, and does not count toward the limit. Keep it at least half full, and full when a storm or evacuation is likely. Gas stations often cannot pump during a power outage.
+
+---
+
+## Shelf Life and Rotation
+
+GASOLINE GOES STALE. The lightest parts evaporate and the rest slowly forms varnish that clogs carburetors. Old gasoline can make an engine hard or impossible to start, which is the last thing you want from a generator.
+
+- Plan to use stored gasoline within about 6 months.
+- A fuel stabilizer, added when the gasoline is fresh, slows the decay. Follow the label for the dose and the storage time it claims. Stabilizer cannot rescue fuel that has already gone stale.
+- Rotate. Pour the oldest can into your car's tank and refill the can with fresh fuel. A can dated March is due by September.
+
+DIESEL AND KEROSENE: apply the same 6-month rotation unless your supplier tells you otherwise, and keep containers sealed so water and dirt stay out. For heaters, buy only water-clear 1-K kerosene from a dealer who can certify the grade.
+
+PROPANE DOES NOT GO STALE, which makes it the easiest fuel to keep for years. The cylinder is what ages. In the US a cylinder must be requalified 12 years after the manufacture date stamped on its collar, and every 5, 7, or 12 years after that depending on the test. Refillers will refuse an out-of-date cylinder. Exchange services handle this for you.
+
+OLD OR CONTAMINATED FUEL goes to a household hazardous waste collection site. Never pour it down a drain, onto the ground, into a storm sewer, or put it in the trash.
+
+---
+
+## Propane Cylinders
+
+- OUTDOORS ONLY. Never in the house, basement, crawl space, or garage, and that includes small camping cylinders whenever you have the choice. Leaking propane sinks and pools indoors until something lights it.
+- UPRIGHT, on its foot ring, on a firm, level surface. Upright keeps the pressure relief valve in vapor, where it is designed to work.
+- VALVE CLOSED when not in use, with the plug or cap in place.
+- AWAY FROM HEAT: out of strong sun where you can, away from flames and ignition sources, and not under or beside the grill.
+- AWAY FROM DOORS, WINDOWS, VENTS, AND LOW SPOTS where leaking gas could drift inside or collect.
+- CHECK FOR LEAKS WITH SOAPY WATER (1 part dish soap to 2 parts water) brushed on the valve, hose, and connections. Bubbles mean a leak. Never test with a flame. If you find a leak, close the cylinder valve. If the leak does not stop, move away and call the fire department.
+- DO NOT USE A DAMAGED CYLINDER: dents, bulges, cuts, heavy rust or pitting (look at the bottom), a missing or bent collar or foot ring, or a leaking valve.
+- TRANSPORT IT UPRIGHT AND SECURED, valve closed and capped, in the trunk or truck bed with the vehicle ventilated. Go straight home. Never leave a cylinder in a parked car.
+
+A grill-size cylinder is for outdoor appliances. Never bring one indoors to run a heater or stove. See the Emergency Heating guide.
+
+---
+
+## Filling, Carrying, and Refueling
+
+AT THE PUMP:
+
+1. Engine off. No smoking.
+2. Take the can OUT of the vehicle and set it on the ground, away from the vehicle. A can in a truck bed, on a bed liner, or on carpet is insulated, so static charge builds up as fuel flows and can spark at the nozzle.
+3. Touch the nozzle to the can before you open it.
+4. Keep the nozzle in contact with the rim of the can the whole time you fill. Fill slowly, to the fill line.
+5. Cap it tight and wipe off any drips before loading.
+
+IN THE VEHICLE:
+
+- Carry only a small amount, in a listed can, closed and sealed.
+- Upright and tied down so it cannot tip or slide.
+- In the trunk or truck bed, never in the passenger compartment, with windows open for ventilation.
+- Unload it as soon as you arrive. Touch the metal of the vehicle before you lift the can out, to discharge static.
+
+REFUELING A GENERATOR, MOWER, OR HEATER:
+
+- Outdoors only.
+- TURN IT OFF AND LET IT COOL FIRST. Fuel spilled on a hot engine or muffler can ignite, and engines stay hot long after they stop. Never refuel a running or hot generator, however much you want the lights back.
+- Use a funnel or the can's spout. Do not overfill.
+- Wipe up spills and move the can well away before you restart.
+- At night use a battery light, never a candle, lighter, or fuel lantern.
+- Kerosene heaters: refuel outside the home, off and cool, and never above the "full" mark.
+
+NEVER:
+
+- Use gasoline to start or revive a fire, a grill, or a fire pit. The flame can flash back into the can and shoot burning fuel out of the opening like a blowtorch.
+- Use gasoline as a cleaner, solvent, or degreaser.
+- Siphon by mouth. Fuel that reaches the lungs can cause pneumonia and can kill.
+- Wear fuel-soaked clothes. Take them off, let them dry outdoors away from heat, then wash them.
+
+---
+
+## Spills
+
+1. Stop the source if it is safe, and keep people, pets, flames, and running engines away.
+2. Outdoors, cover a small spill with cat litter, sand, or another absorbent. Sweep it up and take it to a household hazardous waste site.
+3. Do not hose fuel away. That spreads it into soil, drains, and waterways.
+4. Indoors, or any spill you cannot handle with a bag of cat litter: leave, and call the fire department.
+
+---
+
+## Firewood
+
+- Season split wood for at least 6 months before burning. It burns best below 20 percent moisture.
+- Store it outdoors, off the ground, with only the top covered. Covering the sides traps moisture.
+- Keep the main stack away from the house, not against a wall or under a deck.
+- Never start a wood fire with gasoline or kerosene.
+
+---
+
+## Fuel Storage Checklist
+
+- [ ] No fuel inside the house, basement, or crawl space
+- [ ] Liquid fuel in a detached shed or garage, cool and ventilated
+- [ ] Listed containers, 5 gallons or less, labeled and dated
+- [ ] Caps and vents closed; no cracked or leaking cans
+- [ ] Nothing that makes heat or sparks nearby
+- [ ] Total quantity within the local fire code
+- [ ] Kerosene apart from gasoline; propane 10 feet from both
+- [ ] Propane cylinders outdoors, upright, valves closed, in date
+- [ ] Gasoline rotated within about 6 months
+- [ ] Fire extinguisher (2-A:10-B:C or larger) on the way out
+- [ ] Cat litter or other absorbent on hand for spills
+- [ ] Fuel locked away from children
+
+---
+
+## Practice
+
+**10-minute drill:** Walk your property with a notepad and do a fuel census. For every container write down the fuel, the size, the date, and the nearest thing that could light it. Add up the gallons. Then find the date stamped on the collar of your propane cylinder (month and year, such as 04 19) and add 12 years. Finish by timing how long it takes to put your hand on the fire extinguisher from where the fuel is kept. Do not open or move any containers for this drill.
+
+### What Would You Do?
+
+1. A hurricane is three days out. At the gas station your neighbor is filling six 5-gallon cans lined up in the back of his SUV, and says he will just leave them in the car in the garage until the storm passes.
+
+   **Answer:** Three problems. Cans must come out and sit on the ground to be filled; inside a carpeted vehicle, static can spark at the nozzle. Fuel should never ride in the passenger compartment or be stored in a vehicle. And 30 gallons parked in an attached garage is at or over the limit in many places, often a few feet from a water heater. The better plan: fill the car's own tank, fill fewer cans on the ground, and store them in a detached shed.
+
+2. It is 10 p.m. on the second night of an outage, raining, and the generator has just run dry. The family wants the power back. The engine is ticking hot and you have a full can and a flashlight.
+
+   **Answer:** Wait. Refueling a hot generator is how outage fires start: fuel hits the muffler and ignites in your hands. Leave it off until it has cooled down, use the flashlight and never a flame, refuel outdoors, wipe any spill, and move the can away before restarting. Next time, top it up at a set time in daylight and shut it down before bed.
+
+3. A hard freeze is coming. You plan to carry the spare grill cylinder down to the basement so it stays warm and does not get stolen.
+
+   **Answer:** Leave it outside. Cold does not harm a propane cylinder, but a slow leak indoors does harm you: propane is heavier than air, so it pools on the basement floor until the furnace or water heater lights it. Keep it upright outdoors, away from doors and windows, and chain it to something if theft worries you.
+
+---
+
+## Quick Reference
+
+```
+STORE:
+- Never in the house or basement
+- Detached shed or garage, away from heat
+  and sparks
+- Listed cans, 5 gal or less, labeled and
+  dated
+- Red = gasoline, blue = kerosene, yellow
+  = diesel
+- Check your local limit (often 25-30 gal
+  gasoline)
+- Use gasoline within about 6 months
+
+PROPANE:
+- Outdoors only, upright, valve closed
+- Leak check with soapy water, never a
+  flame
+
+FILLING AND REFUELING:
+- Can on the ground, nozzle touching the
+  rim
+- Trunk or truck bed, tied down, unload at
+  once
+- Engine OFF and COOL before refueling
+- Never gasoline on a fire or as a cleaner
+
+EMERGENCY:
+- Fuel fire: get out, call 911, never
+  water
+- Propane smell you can't stop: get away,
+  call 911
+- Swallowed fuel: do NOT induce vomiting.
+  Poison Help (US) 1-800-222-1222
+```
+
+---
+
+## Sources
+
+- [NFPA: Educational Messages Desk Reference (gasoline, propane, transport)](https://www.nfpa.org/-/media/project/storefront/catalog/files/home-fire-safety/emac/educationalmessagesdeskreference.pdf)
+- [CPSC: Fuel Container Safety Tips](https://www.cpsc.gov/Newsroom/News-Releases/2023/CPSC-Promotes-Fuel-Container-Safety-During-National-Consumer-Protection-Week-March-5-11)
+- [CPSC: Kerosene Heater Safety (Publication 5052)](https://www.cpsc.gov/s3fs-public/5052.pdf)
+- [CDC NIOSH: Fire Hazard from Filling Portable Gas Cans in Pickup Trucks and Cars](https://stacks.cdc.gov/view/cdc/11557/cdc_11557_DS1.pdf)
+- [CDC NIOSH Pocket Guide: Gasoline](https://www.cdc.gov/niosh/npg/npgd0299.html)
+- [CDC NIOSH Pocket Guide: Kerosene](https://www.cdc.gov/niosh/npg/npgd0366.html)
+- [Lehi City Fire Department (Utah): Home Fuel Storage Limits](https://www.lehi-ut.gov/departments/fire-department/fire-prevention/home-fuel-storage-limits/)
+- [Unified Fire Authority (Utah): Allowable Home Storage for Flammable and Combustible Liquids](https://unifiedfireut.gov/wp-content/uploads/Fuel-Storage-Home-Pamphlet.pdf)
+- [Kansas State Fire Marshal: Fire Fact 091, Flammable Liquid Use](https://www.firemarshal.ks.gov/DocumentCenter/View/359/Fire-Fact-091---Flammable-Liquid-Use-PDF)
+- [US DOT PHMSA: Requalification Guidance for Propane Cylinders (copy hosted by the City of Orangeburg, SC)](https://www.orangeburg.sc.us/sites/default/files/uploads/foodtrucksrequal_propane_cylinders.pdf)
+- [North Carolina Department of Agriculture: Proper Storage of Propane Containers](https://www.ncagr.gov/divisions/standards/lp-gas/lp-gas-faq-and-interests-consumers/standards-proper-storage-propane-containers)
+- [New Jersey Division of Codes and Standards: Propane Gas Grill Do's and Don'ts](https://www.nj.gov/dca/codes/alerts/pdfs/p_gas_g_dos_donts.pdf)
+- [LSU AgCenter: Preparing Small Engines for Storage](https://www.lsuagcenter.com/topics/lawn_garden/commercial_horticulture/equipment/small%20engines/preparing-small-engines-for-storage)
+- [EPA: Household Hazardous Waste](https://www.epa.gov/hw/household-hazardous-waste-hhw)
+- [EPA Burn Wise: Best Wood-Burning Practices](https://www.epa.gov/burnwise/best-wood-burning-practices)
+- [Ready.gov: Evacuation](https://www.ready.gov/evacuation)
+- [Poison Control: Dangerous Household Hydrocarbons](https://www.poison.org/articles/dangerous-household-hydrocarbons)
+- [America's Poison Centers: Seasonal Poisoning Hazards](https://poisoncenters.org/prevention/seasonal-poisoning-hazards)
+
+---
+
+Last reviewed: November 2026
+
+This guide doesn't replace your local fire code or the instructions on your equipment and fuel containers.
+
+*License: CC-BY-SA 4.0*

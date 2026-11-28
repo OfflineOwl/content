@@ -1,0 +1,324 @@
+# Water Storage & Rotation
+
+> **Stored water is your first line of defense when the taps stop or the water becomes unsafe.** This guide covers how much to store, which containers to use, and how to keep stored water safe.
+
+## Do This Now
+
+1. Count people and pets. Plan at least 1 gallon (about 4 liters) per person per day.
+2. Start with a 3-day supply. Build toward 2 weeks if you have space.
+3. Easiest and safest: buy commercially bottled water and keep it sealed until you need it.
+4. Filling your own containers? Use food-grade containers, wash and sanitize them, fill with chlorinated tap water, and label them "drinking water" with the date.
+5. Store in a cool, dark place, away from gasoline, pesticides, and other chemicals.
+6. Replace water you bottled yourself every 6 months. Use store-bought water by its expiration or "use by" date.
+7. Storm or outage coming? Fill extra containers and the bathtub (see EMERGENCY WATER EXPANSION below).
+
+---
+
+## How Much to Store
+
+MINIMUM: 1 gallon per person per day, for drinking and sanitation.
+
+- A normally active person needs about 3/4 gallon of fluid a day for drinking alone.
+- The rest covers basic hygiene and food preparation.
+
+STORE MORE FOR:
+
+- Hot climates (drinking needs can double in very hot weather)
+- Pregnant or nursing women
+- Children
+- People who are sick
+- Pets
+
+STORAGE TARGETS:
+
+- 3 days: minimum for every household (CDC, Ready.gov)
+- 2 weeks: recommended if you have space (CDC, FEMA)
+- Longer: add a way to collect and treat rainwater or other sources
+
+FAMILY EXAMPLE (4 people, 1 gallon each per day):
+
+- 3 days: 12 gallons
+- 2 weeks: 56 gallons
+- 1 month (30 days): 120 gallons
+
+Add more for pets and hot weather.
+
+---
+
+## Container Options
+
+BEST: COMMERCIALLY BOTTLED WATER
+
+- Safest and most reliable option
+- Keep it sealed in the original container until you need it
+- Observe the expiration or "use by" date
+
+FOOD-GRADE WATER STORAGE CONTAINERS:
+
+Food-Grade Jugs (1-7 gallons)
+
+- Pros: Portable, affordable, stackable
+- Cons: Many containers needed
+- Best for: Portable supply, go-bag, evacuation
+
+Stackable Bricks (about 3-5 gallons)
+
+- Pros: Stackable, modular, portable
+- Cons: Cost more per gallon
+- Best for: Organized storage in small spaces
+
+55-Gallon Drums
+
+- Pros: Large capacity, lower cost per gallon
+- Cons: Over 450 lb when full, need a pump to get water out, can't be moved
+- Best for: Primary home storage
+
+IBC Totes (about 275 gallons)
+
+- Pros: Very large capacity
+- Cons: Very heavy, need space and a sturdy base; buy food-grade totes that held only food or water
+- Best for: Large-scale home storage
+
+Water Storage Tanks (100+ gallons)
+
+- Pros: Built for purpose, various sizes
+- Cons: Expensive, fixed location
+- Best for: Permanent installation
+
+REUSING CONTAINERS:
+
+OK to reuse (after washing and sanitizing):
+
+- 2-liter plastic soda bottles
+- Food-grade buckets or jugs with tight lids that held only food or water
+
+DON'T USE:
+
+- Milk jugs or cardboard containers that held milk or fruit juice (milk protein and fruit sugar can't be fully washed out and feed bacteria; cardboard leaks)
+- Any container that held toxic chemicals, including bleach, pesticides, or petroleum products
+- Non-food-grade plastic
+- Glass (heavy and breaks)
+- Containers that can't be sealed tightly
+
+Pick containers with tight-closing caps and, if possible, a narrow opening so hands and scoops stay out.
+
+---
+
+## Preparing Containers
+
+NEW FOOD-GRADE CONTAINERS: Wash and rinse, or follow the manufacturer's instructions.
+
+REUSED CONTAINERS (CDC method):
+
+1. Wash with dish soap and water. Rinse well.
+2. Mix 1 teaspoon of unscented liquid household chlorine bleach (5-9% sodium hypochlorite) into 1 quart (4 cups) of water.
+3. Pour the solution into the container, cap it, and shake so it touches every inside surface.
+4. Wait at least 30 seconds, then pour it out.
+5. Let the container air-dry, or rinse it with clean, safe water.
+
+---
+
+## Filling Containers
+
+CHLORINATED TAP WATER (most city water):
+
+- Fill straight from the tap. Nothing else needs to be added.
+- Don't touch the inside of the cap or container with your fingers.
+
+WELL WATER OR OTHER UNCHLORINATED WATER:
+
+- Have the well tested if you can.
+- Disinfect before storing. With unscented bleach, EPA's dose is 8 drops of 6% bleach or 6 drops of 8.25% bleach per gallon (2 drops per quart or liter). Double it if the water is cloudy, colored, or very cold. Stir, wait 30 minutes, then seal.
+- See the Water Purification guide for other methods.
+
+COMMERCIAL WATER PRESERVERS:
+
+- Follow the product's instructions and replacement interval.
+
+LABEL EVERY CONTAINER: "DRINKING WATER" plus the date you filled it.
+
+---
+
+## Storage Conditions
+
+KEEP IT:
+
+- Cool: about 50-70°F (10-21°C)
+- Dark: out of direct sunlight
+- Away from gasoline, kerosene, paint, pesticides, and other chemicals (plastic can absorb their vapors)
+- Where it won't freeze (freezing can crack containers)
+- Off the floor on a shelf or pallet, where you can inspect it and where it is safer from floods
+
+AVOID:
+
+- Direct sunlight (algae growth, plastic breakdown)
+- Hot attics, cars, and sheds
+- Garages with fuel, chemicals, or freezing temperatures
+
+GOOD LOCATIONS:
+
+- Interior closets
+- Under beds
+- Cool basements that don't flood
+- Several places in the house, so one damaged area doesn't take all your water
+
+---
+
+## Rotation Schedule
+
+- Water you bottled yourself: replace every 6 months.
+- Commercially bottled water: use by its expiration or "use by" date; keep it sealed.
+- Commercial water preservers: follow the product label.
+
+ROTATION PROCESS:
+
+1. Label every container with the fill date.
+2. Use the oldest water first.
+3. Use rotated-out water for cooking, cleaning, or plants.
+4. Wash, sanitize, and refill containers right away.
+5. Set a reminder (for example, when clocks change in spring and fall).
+
+WHY ROTATION MATTERS:
+
+- Chlorine in tap water fades over time
+- Containers can crack, leak, or lose their seal
+- Old containers you never check can fail when you need them
+
+---
+
+## Using Stored Water Safely
+
+- Pour water out, or use a clean scoop each time. Don't dip hands or cups into the container.
+- Keep the container covered between uses.
+- Open one container at a time.
+
+55-GALLON DRUMS:
+
+- Siphon or drum pump (manual or battery) and a bung wrench
+- Fill smaller containers for daily use
+- Practice getting water out before an emergency
+
+IBC TOTES:
+
+- Valve at the bottom
+- Raise the tote on a sturdy platform for gravity flow
+- Fill smaller containers for daily use
+
+LARGE TANKS:
+
+- Gravity feed if elevated, pump if not
+- Know how to get water out without power
+
+---
+
+## Check Before Drinking
+
+LOOK FOR:
+
+- Unusual color or cloudiness
+- Strange smell or taste
+- Anything floating in it
+- Cracked containers or broken seals
+
+IF WATER SEEMS OFF:
+
+- Don't drink it as-is
+- Use it for flushing or cleaning, or
+- Treat it (boil or disinfect) before drinking, or
+- Discard it and use another container
+
+---
+
+## Emergency Water Expansion
+
+When a storm, outage, or water shutoff is forecast:
+
+1. Fill every clean, food-grade container you have with tap water
+2. Fill pitchers, pots, and bottles
+3. Fill the bathtub (a tub liner keeps it cleaner). Use tub water for flushing and washing, or treat it before drinking
+4. Freeze containers of water (leave room for expansion). They help keep food cold and become drinking water as they melt
+5. Know how to drain your water heater and pipes (see the Finding Safe Water guide)
+
+---
+
+## Don't Ration Drinking Water
+
+If supplies run low, drink what you need today and look for more for tomorrow. Don't ration drinking water unless officials tell you to. Cut back on other uses instead, and reduce your need by staying cool and resting. See the Water Rationing guide.
+
+---
+
+## Water Storage Checklist
+
+- [ ] Calculate your amount (1 gal/person/day, plus pets)
+- [ ] Buy bottled water or food-grade containers
+- [ ] Wash and sanitize reused containers
+- [ ] Fill with chlorinated tap water (or disinfect other water)
+- [ ] Label "drinking water" with the date
+- [ ] Store cool, dark, and away from chemicals
+- [ ] Set a 6-month replacement reminder
+- [ ] Keep a pump, scoop, or spigot for large containers
+- [ ] Keep a way to treat water (bleach, filter, fuel for boiling)
+
+---
+
+## Practice
+
+**10-minute drill:** Count it and date it. (1) Count every gallon of stored drinking water in the house. Divide by the number of people, plus pets, to get the days you have at 1 gallon each per day. Compare that with the 3-day minimum and the 2-week goal. (2) Find your oldest container and read its date: the fill date you wrote on it, or the "use by" date on store-bought water. (3) Put anything you filled yourself more than 6 months ago, and anything with no date at all, in a row to be emptied, washed, sanitized, and refilled this week. (4) Write today's date on every container that has none, and set a 6-month reminder.
+
+### What Would You Do?
+
+1. You are about to fill containers for storage. In the recycling are four rinsed gallon milk jugs and an empty bleach bottle with a good tight cap. They look clean.
+
+   **Answer:** Use neither. Milk protein can't be fully washed out of a jug and feeds bacteria, and no container that held a chemical, bleach included, should ever hold drinking water. Use 2-liter soda bottles or food-grade containers. Wash them, sanitize them with 1 teaspoon of unscented bleach in 1 quart of water, shake, wait at least 30 seconds, and pour it out.
+
+2. A big storm is due tomorrow. In the basement you find six jugs of tap water labeled 14 months ago. The water looks clear, the taps are still running, and you are tempted to count the jugs as they are and get on with other jobs.
+
+   **Answer:** Refill them today while the tap still works. Water you bottled yourself is replaced every 6 months, and these are long overdue. Use the old water for cleaning or plants, wash and sanitize the jugs, refill, and write the new date on them. Then fill every other clean container and the bathtub. If you ever have to open old water after the taps are off and it looks, smells, or tastes off, don't drink it as it is: treat it first, or keep it for flushing.
+
+3. The only empty shelf is in the garage, next to the mower's gasoline can and a jug of weed killer. The garage is hot in summer and freezes in winter.
+
+   **Answer:** Not there. Plastic can absorb vapors from gasoline and pesticides, stored water should stay cool (about 50-70°F), and freezing can crack containers. Find room inside instead: an interior closet, under the beds, or a cool basement that doesn't flood. Split the supply between several spots so one damaged area doesn't take all your water.
+
+---
+
+## Quick Reference
+
+```
+AMOUNT:
+1 gallon per person per day
+Minimum 3 days; goal 2 weeks
+
+CONTAINERS:
+Bottled water, food-grade
+containers, or clean soda bottles
+Never milk or juice jugs, or
+chemical containers
+
+SANITIZE CONTAINERS:
+1 tsp unscented bleach per quart
+of water, shake, wait 30 seconds
+
+CONDITIONS:
+Cool (50-70°F), dark, away from
+chemicals
+
+REPLACE:
+Self-filled water every 6 months
+Store-bought water by its date
+```
+
+---
+
+## Sources
+
+- [CDC: How to Create an Emergency Water Supply](https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html)
+- [Ready.gov: Water](https://www.ready.gov/water)
+- [FEMA: Food and Water in an Emergency (FEMA 477)](https://www.fema.gov/pdf/library/f&web.pdf)
+- [EPA: Emergency Disinfection of Drinking Water](https://www.epa.gov/ground-water-and-drinking-water/emergency-disinfection-drinking-water)
+- [FDA: Food and Water Safety During Power Outages and Floods](https://www.fda.gov/food/buy-store-serve-safe-food/food-and-water-safety-during-power-outages-and-floods)
+
+---
+
+Last reviewed: November 2026
+
+*License: CC-BY-SA 4.0*

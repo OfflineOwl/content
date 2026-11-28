@@ -343,6 +343,7 @@
     </footer>
 
     <script>
+    const _owlStore = (() => { const m = {}; return { getItem(k) { try { return window.localStorage.getItem(k); } catch { return Object.prototype.hasOwnProperty.call(m, k) ? m[k] : null; } }, setItem(k, v) { m[k] = String(v); try { window.localStorage.setItem(k, v); } catch {} } }; })();
         // Survival-themed emoji pairs
         const survivalEmojis = [
             '💧', '🔦', '🏠', '🩹', '🔥', '🧭', '📻', '🥫',
@@ -481,17 +482,17 @@
             
             // Save best score
             const key = `memory-best-${gridSize}`;
-            const best = localStorage.getItem(key);
+            const best = _owlStore.getItem(key);
             const score = moves * 10 + elapsed; // Lower is better
             
             if (!best || score < parseInt(best)) {
-                localStorage.setItem(key, score);
-                localStorage.setItem(`${key}-moves`, moves);
-                localStorage.setItem(`${key}-time`, timeStr);
+                _owlStore.setItem(key, score);
+                _owlStore.setItem(`${key}-moves`, moves);
+                _owlStore.setItem(`${key}-time`, timeStr);
                 document.getElementById('bestScore').textContent = '🏆 New Best Score!';
             } else {
-                const bestMoves = localStorage.getItem(`${key}-moves`);
-                const bestTime = localStorage.getItem(`${key}-time`);
+                const bestMoves = _owlStore.getItem(`${key}-moves`);
+                const bestTime = _owlStore.getItem(`${key}-time`);
                 document.getElementById('bestScore').textContent = `Best: ${bestMoves} moves in ${bestTime}`;
             }
 

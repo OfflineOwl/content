@@ -1305,7 +1305,8 @@ body {
 
     if (f.type === 'select') {
       var control
-      if (f.options.length <= 4 && f.style !== 'menu') {
+      var isSegmented = f.options.length <= 4 && f.style !== 'menu'
+      if (isSegmented) {
         var buttons = f.options.map(function (o) {
           var seg = h('button', { type: 'button', class: 'owl-segment', role: 'radio', text: o.label })
           seg.addEventListener('click', function () { values[f.id] = o.value; paint(); update() })
@@ -1325,7 +1326,10 @@ body {
           update()
         })
       }
-      return h('div', null, h('label', { class: 'owl-field-label', id: id + '-label', for: id, text: f.label }), control, hint)
+      var fieldLabel = isSegmented
+        ? h('div', { class: 'owl-field-label', id: id + '-label', text: f.label })
+        : h('label', { class: 'owl-field-label', id: id + '-label', for: id, text: f.label })
+      return h('div', null, fieldLabel, control, hint)
     }
 
     // number: a stepper that works with thumbs, a keyboard, or a number pad
@@ -1335,16 +1339,17 @@ body {
       min: f.min, max: f.max, step: step, 'aria-describedby': f.hint && id + '-hint',
     })
     input.value = values[f.id]
-    function set(v, rewrite) {
+    function set(v, rewrite, snap) {
       if (!isFinite(v)) v = f.value
-      v = Math.min(f.max, Math.max(f.min, Math.round(v / step) * step))
+      if (snap) v = Math.round(v / step) * step
+      v = Math.min(f.max, Math.max(f.min, v))
       v = Number(v.toFixed(6))
       values[f.id] = v
       if (rewrite) input.value = v
       update()
     }
-    input.addEventListener('input', function () { if (input.value !== '') set(parseFloat(input.value), false) })
-    input.addEventListener('blur', function () { set(parseFloat(input.value), true) })
+    input.addEventListener('input', function () { if (input.value !== '') set(parseFloat(input.value), false, false) })
+    input.addEventListener('blur', function () { set(parseFloat(input.value), true, false) })
     // Small counts sit on one row (label left, stepper right) so a long list stays short.
     var row = !f.unit && f.max < 1000
     return h(
@@ -1354,9 +1359,9 @@ body {
       h(
         'div',
         { class: 'owl-stepper' },
-        button(null, { kind: 'icon', icon: 'minus', label: 'Less: ' + f.label, onclick: function () { set(values[f.id] - step, true) } }),
+        button(null, { kind: 'icon', icon: 'minus', label: 'Less: ' + f.label, onclick: function () { set(values[f.id] - step, true, true) } }),
         h('div', { class: 'owl-input-wrap' }, input, f.unit && h('span', { class: 'owl-unit', text: f.unit })),
-        button(null, { kind: 'icon', icon: 'plus', label: 'More: ' + f.label, onclick: function () { set(values[f.id] + step, true) } })
+        button(null, { kind: 'icon', icon: 'plus', label: 'More: ' + f.label, onclick: function () { set(values[f.id] + step, true, true) } })
       ),
       hint
     )
@@ -1772,7 +1777,19 @@ function rationPlan(v) {
   })
   const waterPerDay = people * (v.hot ? 2 : 1)
   const waterDays = waterPerDay > 0 ? Math.floor((v.water / waterPerDay) * 10) / 10 : 0
-  return { fixed, flexible, eaters, people, levels, waterPerDay, waterDays, rationable: pool.length }
+  return {
+    fixed,
+    flexible,
+    eaters,
+    people,
+    levels,
+    waterPerDay,
+    waterDays,
+    rationable: pool.length,
+    expecting,
+    pregDropped: v.preg - expecting,
+    medicalDropped: v.medical - protectedAdults,
+  }
 }
 
 Owl.app({
@@ -1850,7 +1867,7 @@ Owl.app({
             }
             const [full, threeQuarter, half] = p.levels
             const target = v.days
-            const waterShort = target > 0 ? p.waterDays < target : p.waterDays < full.days
+            const waterShort = target > 0 ? p.waterDays < target : v.water === 0 || p.waterDays < full.days
             const foodTone = target === 0 || v.food === 0 ? undefined : full.days >= target ? 'ok' : half.days >= target && p.flexible > 0 ? 'caution' : 'critical'
 
             let verdict
@@ -1870,7 +1887,9 @@ Owl.app({
 
             const notes = []
             if (v.babies > 0) notes.push('Babies under 12 months need breast milk or infant formula, which is not in the food total. Never water formula down.')
-            if (v.preg > 0) notes.push('Pregnancy and breastfeeding are counted at 452 extra calories a day, the highest figure in the guidelines.')
+            if (p.expecting > 0) notes.push('Pregnancy and breastfeeding are counted at 452 extra calories a day, the highest figure in the guidelines.')
+            if (p.pregDropped > 0) notes.push('Count each pregnant or breastfeeding woman in the adult women groups above so her calories are included.')
+            if (p.medicalDropped > 0) notes.push('Count each adult needing a full ration in the adult groups above so their calories are included.')
             if (v.hot) notes.push('In very hot temperatures water needs can double, so this uses 2 gallons per person per day.')
             notes.push('Calorie needs use the top of the Dietary Guidelines range for each group. Treat every figure as an estimate.')
 

@@ -127,6 +127,7 @@
     </div>
 
     <script>
+    const _owlStore = (() => { const m = {}; return { getItem(k) { try { return window.localStorage.getItem(k); } catch { return Object.prototype.hasOwnProperty.call(m, k) ? m[k] : null; } }, setItem(k, v) { m[k] = String(v); try { window.localStorage.setItem(k, v); } catch {} } }; })();
         const texts = [
             "Emergency preparedness is essential for survival. Keep a kit ready with water food and first aid supplies. Know your evacuation routes and have a plan for your family.",
             "When disaster strikes remain calm and assess the situation. Check for injuries and provide first aid if needed. Listen to emergency broadcasts for official information.",
@@ -144,7 +145,7 @@
         let timeLeft = 60;
         let timer = null;
         let testStarted = false;
-        let best = parseInt(localStorage.getItem('typing-best') || '0');
+        let best = parseInt(_owlStore.getItem('typing-best') || '0');
         
         document.getElementById('best').textContent = best;
         
@@ -245,7 +246,7 @@
             
             if (wpm > best) {
                 best = wpm;
-                localStorage.setItem('typing-best', best);
+                _owlStore.setItem('typing-best', best);
                 document.getElementById('best').textContent = best;
                 document.getElementById('newRecord').style.display = 'block';
             } else {

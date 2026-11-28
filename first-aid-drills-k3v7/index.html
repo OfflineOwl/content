@@ -1305,7 +1305,8 @@ body {
 
     if (f.type === 'select') {
       var control
-      if (f.options.length <= 4 && f.style !== 'menu') {
+      var isSegmented = f.options.length <= 4 && f.style !== 'menu'
+      if (isSegmented) {
         var buttons = f.options.map(function (o) {
           var seg = h('button', { type: 'button', class: 'owl-segment', role: 'radio', text: o.label })
           seg.addEventListener('click', function () { values[f.id] = o.value; paint(); update() })
@@ -1325,7 +1326,10 @@ body {
           update()
         })
       }
-      return h('div', null, h('label', { class: 'owl-field-label', id: id + '-label', for: id, text: f.label }), control, hint)
+      var fieldLabel = isSegmented
+        ? h('div', { class: 'owl-field-label', id: id + '-label', text: f.label })
+        : h('label', { class: 'owl-field-label', id: id + '-label', for: id, text: f.label })
+      return h('div', null, fieldLabel, control, hint)
     }
 
     // number: a stepper that works with thumbs, a keyboard, or a number pad
@@ -1335,16 +1339,17 @@ body {
       min: f.min, max: f.max, step: step, 'aria-describedby': f.hint && id + '-hint',
     })
     input.value = values[f.id]
-    function set(v, rewrite) {
+    function set(v, rewrite, snap) {
       if (!isFinite(v)) v = f.value
-      v = Math.min(f.max, Math.max(f.min, Math.round(v / step) * step))
+      if (snap) v = Math.round(v / step) * step
+      v = Math.min(f.max, Math.max(f.min, v))
       v = Number(v.toFixed(6))
       values[f.id] = v
       if (rewrite) input.value = v
       update()
     }
-    input.addEventListener('input', function () { if (input.value !== '') set(parseFloat(input.value), false) })
-    input.addEventListener('blur', function () { set(parseFloat(input.value), true) })
+    input.addEventListener('input', function () { if (input.value !== '') set(parseFloat(input.value), false, false) })
+    input.addEventListener('blur', function () { set(parseFloat(input.value), true, false) })
     // Small counts sit on one row (label left, stepper right) so a long list stays short.
     var row = !f.unit && f.max < 1000
     return h(
@@ -1354,9 +1359,9 @@ body {
       h(
         'div',
         { class: 'owl-stepper' },
-        button(null, { kind: 'icon', icon: 'minus', label: 'Less: ' + f.label, onclick: function () { set(values[f.id] - step, true) } }),
+        button(null, { kind: 'icon', icon: 'minus', label: 'Less: ' + f.label, onclick: function () { set(values[f.id] - step, true, true) } }),
         h('div', { class: 'owl-input-wrap' }, input, f.unit && h('span', { class: 'owl-unit', text: f.unit })),
-        button(null, { kind: 'icon', icon: 'plus', label: 'More: ' + f.label, onclick: function () { set(values[f.id] + step, true) } })
+        button(null, { kind: 'icon', icon: 'plus', label: 'More: ' + f.label, onclick: function () { set(values[f.id] + step, true, true) } })
       ),
       hint
     )
@@ -1925,6 +1930,7 @@ function mountTrainer(el, api) {
       run.inSet = 0
       run.lastAt = null
       run.intervals = []
+      run.feedback = ''
     }
     if (run.inSet === 0 && run.beatStart == null) startBeat(at)
     if (run.lastAt != null) {
@@ -2008,8 +2014,11 @@ function mountTrainer(el, api) {
       )
     )
     if (beat === 'off') {
+      var expected = SET_SIZE * SETS - (mode === 'breaths' ? SETS : 1)
+      var rank = expected > 0 ? run.inRange / expected : 0
       var prev = store.get('cpr-best', null)
-      if (!prev || share > prev.share) store.set('cpr-best', { share: share, inRange: run.inRange, judged: run.judged })
+      var prevRank = prev ? (prev.rank != null ? prev.rank : prev.share) : -1
+      if (!prev || rank > prevRank) store.set('cpr-best', { rank: rank, share: share, inRange: run.inRange, judged: run.judged })
     }
     api.resized()
   }
@@ -2034,8 +2043,8 @@ function mountTrainer(el, api) {
       hint.textContent = 'About 1 second each. Tap again when your hands are back on the chest.'
       live.textContent = run.feedback
     } else {
-      count.textContent = run.inSet + ' / ' + SET_SIZE
-      hint.textContent = mode === 'breaths' ? 'Set ' + run.set + ' of ' + setsTotal : 'Push ' + run.total + ' of ' + SET_SIZE * SETS
+      count.textContent = mode === 'breaths' ? run.inSet + ' / ' + SET_SIZE : run.total + ' / ' + SET_SIZE * SETS
+      hint.textContent = mode === 'breaths' ? 'Set ' + run.set + ' of ' + setsTotal : 'Keep pushing, steady pace'
       live.textContent = run.feedback
     }
     var rate = run && !run.done && run.phase === 'push' ? paceOf(run.intervals) : null

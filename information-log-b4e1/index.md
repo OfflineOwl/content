@@ -1,0 +1,321 @@
+# Emergency Information Log
+
+> **Write it down while it is happening.** In a long emergency, "when did the power go out?", "who had the last dose?", and "what did the insurance company say?" all have answers that matter, and nobody will remember them. A notebook and a pencil will.
+
+## Start Here
+
+1. PICK THE LOG TODAY. A bound notebook and two pencils or pens, kept with your emergency kit. Bound pages stay in order and don't get lost.
+2. WRITE THE FIRST LINE as soon as an emergency starts: date, time, where you are, who is with you, and what happened.
+3. GIVE EVERY ENTRY FOUR PARTS: the TIME, WHAT happened or what you were told, the SOURCE, and what you DID about it.
+4. KEEP A SEPARATE PAGE FOR MEDICINES. Every dose: who got it, what, how much, when, and who gave it.
+5. PHOTOGRAPH DAMAGE BEFORE YOU CLEAN, MOVE, OR THROW OUT ANYTHING, and note in the log what you photographed.
+6. PHOTOGRAPH THE LOG PAGES ONCE A DAY, so the record survives if the notebook does not.
+
+One line per entry is enough. A short log you keep beats a detailed one you abandon.
+
+---
+
+## Get Emergency Help If
+
+The log never comes before a life. Call 911 (or your local emergency number) first, act, and write afterward.
+
+- Once help is on the way, the log becomes useful to the responders. Write down when the symptoms or injury started, what medicines the person has had and when, and the time any tourniquet went on. Hand the page to the crew. See the Bleeding Control & Tourniquet Use guide.
+- If you find from the log that someone has had a double dose of a medicine, call Poison Help at 1-800-222-1222 (US, free, 24 hours) right away. Outside the US, call your local poison center or emergency number.
+
+---
+
+## Why Bother
+
+Professional responders log everything. FEMA's Incident Command System gives every team an Activity Log form (ICS 214) for the date, the time, and "notable activities." Its stated purpose is basic documentation of what was done and a reference for the review afterward. A household needs the same thing for the same reasons.
+
+DURING THE EMERGENCY, a log lets you:
+
+- Hand over cleanly. When one adult sleeps and another takes over, the page says what has been done.
+- Avoid medicine mistakes. When several people care for one patient, a log kept with the medicine is how you prevent a double dose.
+- Run the clocks that keep you safe (see the next section).
+- Tell confirmed facts from rumor, because every entry names its source.
+- Make better decisions. Writing down "decided to stay, because the road is flooded" makes you check that the reason is still true tomorrow.
+
+AFTER THE EMERGENCY, the same pages support:
+
+- Your insurance claim: what was damaged, when you found it, what you spent.
+- Disaster assistance. FEMA tells survivors to keep receipts and records of all repair, cleanup, and disaster-related costs for at least three years.
+- Tax relief. The IRS notes that good records of a loss are needed for tax purposes, federal assistance, and insurance, and that the more accurately a loss is estimated, the more loan and grant money may be available.
+- Your own lessons for next time.
+
+---
+
+## The Clocks Worth Running
+
+Some safety rules depend on a start time. If you don't write the start time down, you can't use the rule.
+
+- POWER WENT OUT. With the door kept closed, a refrigerator keeps food safe for up to 4 hours. A full freezer holds for up to 48 hours, a half-full one up to 24. Log the minute the power failed and the "safe until" time next to it. See the Food Safety Without Refrigeration guide.
+- A MEDICINE WAS GIVEN. The label says how long to wait before the next dose. Only the log says when the last one was.
+- A TOURNIQUET WENT ON. Responders need the time.
+- SYMPTOMS STARTED. "Vomiting since 14:00, three times" is what a doctor will ask for.
+- A WARNING WAS ISSUED. Note when it expires. Sirens do not sound an all-clear.
+- A WATER NOTICE WAS ISSUED (boil water, do not drink). Note who issued it and when, and log the time it is lifted.
+- THE NEXT CHECK-IN with family or your out-of-town contact. See the Emergency Communications Plan (Offline) guide.
+
+---
+
+## How to Write an Entry
+
+TIME - WHAT - SOURCE - ACTION
+
+- TIME: use the 24-hour clock (14:30, not 2:30), as responders do. It removes the a.m./p.m. mistake. Write the date at the top of every page.
+- WHAT: the fact, in a few words. Numbers where you have them.
+- SOURCE: how you know. Mark each item as something you SAW yourself, HEARD from a named person, or got from an OFFICIAL channel (radio station, alert, agency). Mark rumors "unconfirmed." See the Verifying Information During Emergencies guide.
+- ACTION: what you did or decided, and why, in one phrase.
+
+GOOD HABITS:
+
+- Write at the time, not that evening from memory.
+- Stick to facts. "Water at second porch step" is useful next week. "Flooding is terrible" is not.
+- Cross out mistakes with a single line. Don't erase or tear out pages. A record that has clearly never been tidied up is easier for others to trust.
+- Log quiet periods too: "06:00 no change overnight."
+- Name one log keeper at a time, and say so out loud when you hand over. An older child can do this job well.
+
+SAMPLE:
+
+Tue 14 Oct  Day 1  Home. All 4 of us + dog.
+
+```
+17:52 Power out, whole street. SAW.
+      Fridge + freezer shut. Fridge
+      food safe until 21:52.
+18:05 County alert (text): flash flood
+      warning until 23:00. OFFICIAL.
+      Moved car to top of hill.
+18:40 Water in back yard, 10 ft from
+      door. SAW. Photo taken.
+19:15 Neighbor (Dana): bridge on Mill
+      Rd closed. HEARD, unconfirmed.
+19:30 Radio 1010 AM: Mill Rd bridge
+      closed. OFFICIAL. Decided to stay:
+      only other route floods first.
+20:00 Texted Aunt Rosa (out of town):
+      all OK, staying. Next check 08:00.
+21:50 Fridge hits 4 h. Moved milk and
+      meat to cooler with ice.
+```
+
+---
+
+## The Medicine Page
+
+Poison centers recommend exactly this: decide who gives each dose, keep a log with the medicine, and mark every dose as it is given.
+
+- Columns: date, time, person, medicine and strength, amount given, given by.
+- Keep the page with the medicines, not in a drawer across the room.
+- Write the dose down when you give it, not later.
+- If you don't know when the last dose was given, don't guess. Ask whoever else has been caring for the person. If you still can't tell, call Poison Help (1-800-222-1222 in the US), a pharmacist, or a doctor before giving more.
+- On the inside cover, list each person's regular medicines, doses, allergies, and conditions. Take the notebook with you to a clinic, shelter, or hospital.
+
+For long-term conditions, see the Managing Chronic Conditions in Emergencies guide.
+
+---
+
+## The Damage and Money Pages
+
+Start these the moment it is safe to look around. See the Post-Event Cleanup Safety and Legal & Insurance Readiness guides for the full process.
+
+BEFORE YOU CLEAN UP:
+
+- Take photos and video of every damaged room and item, wide shots and close-ups, outside and inside.
+- After a flood, photograph the water line on walls, furniture, and appliances.
+- Write down or photograph the make, model, and serial number of damaged appliances and electronics.
+- Keep small samples of damaged carpet, flooring, drywall, or curtains for the insurance adjuster.
+- Make a written list of what was damaged as you go, room by room.
+- Then throw out anything that is a health risk, such as spoiled food and moldy cushions. Photograph first, discard second.
+- No photos of how things were before? The IRS suggests sketching each room and marking where the furniture and belongings stood, and checking old phone photos for items in the background.
+
+THE EXPENSE LIST:
+
+- Save every receipt for repairs, cleanup, supplies, and replaced items. Keep them in one envelope taped inside the notebook.
+- Log each expense: date, what, where bought, amount.
+- Keep contractors' written contracts, invoices, and receipts.
+- If you receive disaster assistance, record what you spent it on, and keep everything for at least three years.
+
+THE CONTACT LIST:
+
+- Log every call or visit with your insurer, FEMA, the utility, a contractor, or a landlord: date, time, the person's name, what they told you, and any claim or reference number.
+- Report the loss to your insurance company as soon as you can, and log when you did.
+- After a call that matters, ask for it in writing.
+
+This is record-keeping, not legal advice. For a dispute, talk to your insurer, your state insurance regulator, or a lawyer.
+
+---
+
+## Paper, Phone, or Both
+
+Use both, with paper as the main record.
+
+- PAPER needs no battery, works in the dark with a flashlight, and can be handed to someone. A pencil never runs dry. Keep the notebook in a zip-top bag.
+- THE PHONE is for photos and video, which carry their own date and time. A voice memo works when your hands are busy: say the date and time first.
+- BACK UP. Photograph the day's pages each evening. When you get a connection, send the photos to yourself or your out-of-town contact, or save them to cloud storage.
+- PROTECT IT. The log holds health details, names, and claim numbers. Keep it with you. Don't write passwords, PINs, or full account numbers in it.
+
+---
+
+## Common Mistakes
+
+- RECONSTRUCTING LATER. Times and order are the first things memory loses.
+- NO SOURCE. A week on, you can't tell what you saw from what someone said.
+- CLEANING UP BEFORE PHOTOGRAPHING. The evidence goes out with the carpet.
+- LOSING RECEIPTS. Envelope, taped inside the cover.
+- PHONE ONLY. A dead battery takes the whole record with it.
+- WRITING TOO MUCH. If an entry takes more than a minute, shorten it.
+
+---
+
+## Ready-to-Copy Templates
+
+```
+INSIDE COVER
+Household: _________________________
+Address: ___________________________
+Out-of-town contact: _______________
+Insurer + policy no.: ______________
+Insurer claims phone: ______________
+Doctor / pharmacy: _________________
+Person | Medicines | Allergies
+_______|___________|________________
+_______|___________|________________
+```
+
+```
+DAILY PAGE
+Date: ________ Day ___ Place: ______
+Who is here: _______________________
+Log keeper: ________________________
+```
+
+```
+TIME | WHAT | SOURCE | ACTION
+-----|------|--------|--------------
+     |      |        |
+     |      |        |
+     |      |        |
+```
+
+```
+Water left: ______ Food left: ______
+Fuel / batteries: __________________
+Next check-in: _____ with __________
+Tomorrow first: ____________________
+```
+
+```
+MEDICINE PAGE
+DATE|TIME|WHO|MEDICINE|AMOUNT|BY
+----|----|---|--------|------|-----
+    |    |   |        |      |
+```
+
+```
+DAMAGE LIST
+ITEM | ROOM | MAKE/SERIAL | PHOTO?
+-----|------|-------------|-------
+     |      |             |
+```
+
+```
+EXPENSES (receipts in envelope)
+DATE | WHAT | WHERE | AMOUNT
+-----|------|-------|-------
+     |      |       |
+```
+
+```
+CONTACTS
+DATE/TIME | WHO + ORG | SAID | REF #
+----------|-----------|------|------
+          |           |      |
+```
+
+---
+
+## Practice
+
+**10-minute drill:** Set up the notebook tonight. Copy the inside-cover block and fill it in. Then run a pretend outage for ten minutes: write the first line (date, time, place, who is home), and log each thing you would do, with its time and source. Include one clock: "power out 18:40, fridge safe until 22:40." Finish by photographing the page. You now know whether your pencil is sharp, whether the notebook is where you thought it was, and how short an entry can be.
+
+### What Would You Do?
+
+1. It is 02:00 on the second night of an outage. Your child's fever is back. Your partner, now asleep, gave a dose of fever medicine "sometime after dinner." Nothing was written down, and the child is miserable.
+
+   **Answer:** Don't guess and give another dose. Wake your partner and ask what was given, how much, and when, then check the label for how long to wait between doses. If you can't work it out, call Poison Help (1-800-222-1222 in the US) or a pharmacist before giving more. Then start the medicine page with what you now know, so nobody has to do this again tomorrow night.
+
+2. The flood water has gone down. The carpet and sofa are soaked and already smell, the adjuster can't come until Thursday, and a neighbor with a truck offers to haul everything to the dump right now.
+
+   **Answer:** Take twenty minutes first. Photograph and film each room wide and close, including the water line on the walls. Record serial numbers from the appliances. Cut and bag a small piece of the carpet and keep it. List the items. After that, get the wet, moldy things out: flood insurance guidance is to discard health-risk items once they are documented, not to live with them until the adjuster comes. Tell your insurer what you are doing if you can reach them, log the date, and keep the dump receipt.
+
+3. Day five. An insurance representative tells you by phone that your hotel costs are covered. You are driving and tired, and you say thanks and hang up. Two weeks later a different representative says there is no record of that.
+
+   **Answer:** The fix is at the time of the first call, which is why it belongs in a drill. Pull over or call back the same day, and write down the date, time, the person's name, what they said, and the claim or reference number. Ask them to confirm it by email or letter. A dated note made the same day is far stronger than a memory two weeks old. If the answers still conflict, ask for a supervisor and, if needed, contact your state's insurance regulator.
+
+---
+
+## Quick Reference
+
+```
+EVERY ENTRY
+TIME - WHAT - SOURCE - ACTION
+- 24-hour clock, date on every page
+- SAW / HEARD / OFFICIAL
+- One line. Write it now, not later.
+- Cross out, never erase.
+
+RUN THESE CLOCKS
+- Power out: fridge food 4 h (door
+  shut). Freezer 48 h full, 24 h half
+- Medicine: time of every dose
+- Tourniquet: time on
+- Warning: expiry time
+- Next family check-in
+
+MEDICINE PAGE
+Who / what / how much / when / by whom
+Keep it WITH the medicines.
+Unsure of last dose? Don't guess.
+Poison Help (US): 1-800-222-1222
+
+DAMAGE
+1. Photos + video BEFORE cleanup
+2. Water line, serial numbers
+3. Keep a sample of carpet/flooring
+4. List items. Then discard.
+5. Keep ALL receipts, 3+ years
+
+CALLS
+Date, time, name, what was said,
+reference number. Ask for it in
+writing.
+
+BACK UP: photo of pages every day.
+```
+
+---
+
+## Sources
+
+- [FEMA: ICS Form 214, Activity Log](https://training.fema.gov/emiweb/is/icsresource/assets/ics%20forms/ics%20form%20214,%20activity%20log%20(v3.1).pdf)
+- [FEMA: Disaster Survivor's Checklist](https://www.fema.gov/fact-sheet/disaster-survivors-checklist)
+- [FEMA: Do I Need to Document Flood-Damaged Items?](https://www.fema.gov/node/do-i-need-document-flood-damaged-items)
+- [FEMA National Flood Insurance Program: Document Damage](https://www.floodsmart.gov/recover/document-damage)
+- [FEMA National Flood Insurance Program: How Do I Start My Flood Claim?](https://www.floodsmart.gov/how-do-i-start-my-flood-claim)
+- [Ready.gov: Recovering from Disaster](https://www.ready.gov/recovering-disaster)
+- [IRS: Reconstructing Records After a Natural Disaster or Casualty Loss](https://www.irs.gov/newsroom/reconstructing-records-after-a-natural-disaster-or-casualty-loss)
+- [FTC: How To Avoid Scams After Weather Emergencies and Natural Disasters](https://consumer.ftc.gov/articles/how-avoid-scams-after-weather-emergencies-and-natural-disasters)
+- [CDC: Keeping Food Safe After an Emergency (power outages)](https://www.cdc.gov/food-safety/foods/keep-food-safe-after-emergency.html)
+- [Poison Control: Medication Errors, Double Dosing](https://www.poison.org/articles/medication-errors-double-dosing)
+- [Ready.gov: Build a Kit](https://www.ready.gov/kit)
+- [Ready.gov: Get Tech Ready](https://www.ready.gov/get-tech-ready)
+
+---
+
+Last reviewed: November 2026
+
+This guide doesn't replace medical advice, or advice from your insurer or a lawyer about a claim.
+
+*License: CC-BY-SA 4.0*

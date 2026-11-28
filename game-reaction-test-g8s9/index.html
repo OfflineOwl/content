@@ -126,11 +126,12 @@
     <div class="history" id="history"></div>
 
     <script>
+    const _owlStore = (() => { const m = {}; return { getItem(k) { try { return window.localStorage.getItem(k); } catch { return Object.prototype.hasOwnProperty.call(m, k) ? m[k] : null; } }, setItem(k, v) { m[k] = String(v); try { window.localStorage.setItem(k, v); } catch {} } }; })();
         let state = 'idle'; // idle, waiting, ready, result, early
         let startTime = 0;
         let timeout = null;
         let results = [];
-        let bestTime = parseInt(localStorage.getItem('reaction-best') || '9999');
+        let bestTime = parseInt(_owlStore.getItem('reaction-best') || '9999');
         
         if (bestTime < 9999) {
             document.getElementById('best').textContent = bestTime + 'ms';
@@ -197,7 +198,7 @@
             // Update best
             if (time < bestTime) {
                 bestTime = time;
-                localStorage.setItem('reaction-best', bestTime);
+                _owlStore.setItem('reaction-best', bestTime);
             }
             document.getElementById('best').textContent = bestTime + 'ms';
             

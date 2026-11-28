@@ -156,6 +156,7 @@
     <button class="btn" onclick="startGame()">Start Game</button>
 
     <script>
+    const _owlStore = (() => { const m = {}; return { getItem(k) { try { return window.localStorage.getItem(k); } catch { return Object.prototype.hasOwnProperty.call(m, k) ? m[k] : null; } }, setItem(k, v) { m[k] = String(v); try { window.localStorage.setItem(k, v); } catch {} } }; })();
         const colors = [
             { name: 'RED', hex: '#e94560' },
             { name: 'BLUE', hex: '#3b82f6' },
@@ -167,7 +168,7 @@
         
         let score = 0;
         let streak = 0;
-        let best = parseInt(localStorage.getItem('color-best') || '0');
+        let best = parseInt(_owlStore.getItem('color-best') || '0');
         let gameActive = false;
         let timeLeft = 100;
         let timerInterval = null;
@@ -306,7 +307,7 @@
             
             if (score > best) {
                 best = score;
-                localStorage.setItem('color-best', best);
+                _owlStore.setItem('color-best', best);
                 document.getElementById('best').textContent = best;
             }
         }

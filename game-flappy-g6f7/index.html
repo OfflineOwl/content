@@ -98,6 +98,7 @@
     </div>
 
     <script>
+    const _owlStore = (() => { const m = {}; return { getItem(k) { try { return window.localStorage.getItem(k); } catch { return Object.prototype.hasOwnProperty.call(m, k) ? m[k] : null; } }, setItem(k, v) { m[k] = String(v); try { window.localStorage.setItem(k, v); } catch {} } }; })();
         const canvas = document.getElementById('gameCanvas');
         const ctx = canvas.getContext('2d');
         
@@ -110,7 +111,7 @@
         let owl = { x: 80, y: 200, velocity: 0, size: 30 };
         let pipes = [];
         let score = 0;
-        let best = parseInt(localStorage.getItem('flappy-best') || '0');
+        let best = parseInt(_owlStore.getItem('flappy-best') || '0');
         let gameRunning = false;
         let gameStarted = false;
         let animationId = null;
@@ -267,7 +268,7 @@
             
             if (score > best) {
                 best = score;
-                localStorage.setItem('flappy-best', best);
+                _owlStore.setItem('flappy-best', best);
                 document.getElementById('best').textContent = best;
                 document.getElementById('highScoreMsg').textContent = '🏆 New High Score!';
             } else {

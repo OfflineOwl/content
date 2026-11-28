@@ -47,25 +47,6 @@
       "priority": 4
     }
   },
-  "assets": {
-    "images": [
-      {
-        "file": "shelter-diagram.svg",
-        "alt": "Diagram showing safe and danger zones within a house during nuclear fallout",
-        "type": "diagram"
-      },
-      {
-        "file": "radiation-decay.svg",
-        "alt": "Chart showing radiation decay over time following the 7-10 rule",
-        "type": "chart"
-      },
-      {
-        "file": "protection-factors.svg",
-        "alt": "Bar chart comparing protection factors of different shelter types",
-        "type": "chart"
-      }
-    ]
-  },
   "metadata": {
     "category": "survival",
     "tags": [
