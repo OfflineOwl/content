@@ -110,6 +110,128 @@
         }
         .mode-toggle button.active { background: #e94560; }
     </style>
+<style id="owl-theme-bridge">
+:root[data-theme="dark"] {
+  --bg-primary: #0e1524;
+  --bg-secondary: #162036;
+  --bg-card: #1d2943;
+  --text-primary: #ece8dc;
+  --text-secondary: #9ba6bd;
+  --border: #24304a;
+  color-scheme: dark;
+}
+:root[data-theme="dark"] body {
+  background: #0e1524 !important;
+  color: #ece8dc !important;
+}
+:root[data-theme="light"] {
+  --bg-primary: #eef0e6;
+  --bg-secondary: #fafbf6;
+  --bg-card: #e3e6d8;
+  --text-primary: #1e2420;
+  --text-secondary: #5b635c;
+  --border: #c9ccbd;
+  color-scheme: light;
+}
+:root[data-theme="light"] body {
+  background: #eef0e6 !important;
+  color: #1e2420 !important;
+}
+:root[data-theme="light"] h1,
+:root[data-theme="light"] .title {
+  color: #4b5a25 !important;
+}
+:root[data-theme="light"] .subtitle,
+:root[data-theme="light"] .stat-label,
+:root[data-theme="light"] .instructions,
+:root[data-theme="light"] .hint,
+:root[data-theme="light"] .info,
+:root[data-theme="light"] .label {
+  color: #5b635c !important;
+}
+:root[data-theme="light"] .stat,
+:root[data-theme="light"] .stats,
+:root[data-theme="light"] .score-box,
+:root[data-theme="light"] .panel,
+:root[data-theme="light"] .card-panel,
+:root[data-theme="light"] .info-box,
+:root[data-theme="light"] .modal-content,
+:root[data-theme="light"] .game-over,
+:root[data-theme="light"] .overlay-content,
+:root[data-theme="light"] .difficulty-btn,
+:root[data-theme="light"] .mode-btn,
+:root[data-theme="light"] .ctrl-btn,
+:root[data-theme="light"] .key,
+:root[data-theme="light"] .letter-btn,
+:root[data-theme="light"] .num-btn,
+:root[data-theme="light"] .choice-btn,
+:root[data-theme="light"] .option-btn {
+  background: #fafbf6 !important;
+  color: #1e2420 !important;
+  border-color: #c9ccbd !important;
+}
+:root[data-theme="light"] .board,
+:root[data-theme="light"] .grid,
+:root[data-theme="light"] .game-board {
+  background: #e3e6d8 !important;
+  border-color: #c9ccbd !important;
+}
+:root[data-theme="light"] input[type="text"],
+:root[data-theme="light"] input[type="number"],
+:root[data-theme="light"] textarea,
+:root[data-theme="light"] select {
+  background: #fafbf6 !important;
+  color: #1e2420 !important;
+  border-color: #1e2420 !important;
+}
+:root.owl-embedded body,
+:root.owl-embedded .container,
+:root.owl-embedded .game-container {
+  min-height: auto !important;
+}
+</style>
+<script id="owl-theme-bridge-js">
+(function () {
+  var root = document.documentElement;
+  var media = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+  var fromUrl = null;
+  try { fromUrl = new URLSearchParams(window.location.search).get("theme"); } catch (e) {}
+  var pinned = root.getAttribute("data-owl-theme") || fromUrl;
+  if (pinned !== "light" && pinned !== "dark") pinned = null;
+  function apply(theme) {
+    var t = theme || pinned || (media && media.matches ? "dark" : "light");
+    root.setAttribute("data-theme", t);
+  }
+  apply();
+  if (media && media.addEventListener) media.addEventListener("change", function () { if (!pinned) apply(); });
+  window.addEventListener("message", function (event) {
+    var d = event.data;
+    if (d && d.type === "owl:theme" && (d.theme === "light" || d.theme === "dark")) {
+      pinned = d.theme;
+      apply(d.theme);
+    }
+  });
+  if (window.parent !== window) {
+    root.classList.add("owl-embedded");
+    var lastH = 0;
+    function sendHeight() {
+      if (!document.body) return;
+      var h = Math.max(480, Math.ceil(document.body.getBoundingClientRect().height));
+      if (Math.abs(h - lastH) > 2) {
+        lastH = h;
+        try { window.parent.postMessage({ type: "resize", height: h }, "*"); } catch (e) {}
+      }
+    }
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", sendHeight);
+    else sendHeight();
+    window.addEventListener("load", sendHeight);
+    if (window.ResizeObserver) {
+      var startObs = function () { if (document.body) new ResizeObserver(sendHeight).observe(document.body); };
+      if (document.body) startObs(); else document.addEventListener("DOMContentLoaded", startObs);
+    }
+  }
+})();
+</script>
 </head>
 <body>
     <h1>💣 Minesweeper</h1>
